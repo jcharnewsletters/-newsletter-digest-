@@ -75,12 +75,12 @@ GitHub runs the schedule (free) and hosts the website (free).
    |---|---|
    | `GMAIL_ADDRESS` | the dedicated Gmail address |
    | `GMAIL_APP_PASSWORD` | the 16-character app password (no spaces) |
-   | `ALERT_RECIPIENT` | jchar2017@gmail.com |
+   | `ALERT_RECIPIENT` | jchar.newsletters@gmail.com |
    | `ANTHROPIC_API_KEY` | the `sk-ant-...` key |
 5. Same page, **Variables** tab → New repository variable:
    | Variable | Value |
    |---|---|
-   | `SITE_URL` | `https://<your-github-username>.github.io/newsletter-digest/` |
+   | `SITE_URL` | `https://jcharnewsletters.github.io/-newsletter-digest-/` |
 6. Enable the website: repo → **Settings → Pages** → Source: "Deploy from a
    branch" → Branch: `main`, folder: `/docs` → Save.
 
@@ -105,7 +105,7 @@ GitHub runs the schedule (free) and hosts the website (free).
    Run workflow** → batch `ai-am`. Confirm:
    - the workflow goes green,
    - the site updated at your `SITE_URL`,
-   - the alert email arrived at jchar2017@gmail.com.
+   - the alert email arrived at jchar.newsletters@gmail.com.
 
 Done. The five daily schedules take over from here:
 
