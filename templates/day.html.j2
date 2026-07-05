@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Newsletter Digest{% if date %} — {{ date }}{% endif %}</title>
+<link rel="stylesheet" href="{{ root }}style.css">
+</head>
+<body>
+<header>
+  <h1>📰 Newsletter Digest</h1>
+  {% if date %}<p class="date">{{ date }}{% if not is_latest %} (archive){% endif %}</p>{% endif %}
+  <nav class="filters">
+    <button class="filter active" data-cat="all">All</button>
+    <button class="filter" data-cat="stocks">📈 Stocks</button>
+    <button class="filter" data-cat="crypto">🪙 Crypto</button>
+    <button class="filter" data-cat="ai">🤖 AI</button>
+  </nav>
+</header>
+
+<main>
+{% if not batches %}
+  <p class="empty">No digests yet — the first scheduled run will populate this page.</p>
+{% endif %}
+
+{% for b in batches %}
+<section class="batch" data-cat="{{ b.category }}">
+  <h2><span class="badge badge-{{ b.category }}">{{ b.category }}</span> {{ b.label }}</h2>
+
+  {% if b.digest.top_stories %}
+  <div class="top-stories">
+    <h3>⭐ Top stories across your newsletters</h3>
+    {% for story in b.digest.top_stories %}
+    <article class="story">
+      <h4>{{ story.title }}</h4>
+      <ul>
+        {% for p in story.points %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+      {% if story.unique_angles %}
+      <ol class="angles">
+        {% for a in story.unique_angles %}
+        <li><strong>{{ a.newsletter }}:</strong> {{ a.point }}</li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      <p class="covered-by">Covered by: {{ story.covered_by | join(", ") }}</p>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% for nl in b.digest.by_newsletter %}
+  {% if nl["items"] %}
+  <div class="newsletter-card">
+    <h3>{{ nl.newsletter }}</h3>
+    {% for item in nl["items"] %}
+    <h4>{{ loop.index }}. {{ item.title }}</h4>
+    <ul>
+      {% for p in item.points %}<li>{{ p }}</li>{% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  {% set links = [] %}
+  {% for issue in b.issues %}{% for l in issue.summary.links %}{% if links.append(l) %}{% endif %}{% endfor %}{% endfor %}
+  {% if links %}
+  <details class="links">
+    <summary>🔗 Read more at the sources</summary>
+    <ul>
+      {% for l in links[:12] %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+</section>
+{% endfor %}
+</main>
+
+{% if days %}
+<footer>
+  <h3>Archive</h3>
+  <ul class="archive">
+    {% for d in days %}<li><a href="{{ root }}archive/{{ d }}.html">{{ d }}</a></li>{% endfor %}
+  </ul>
+</footer>
+{% endif %}
+
+<script>
+document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cat = btn.dataset.cat;
+  document.querySelectorAll('.batch').forEach(s => {
+    s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
+  });
+}));
+</script>
+</body>
+</html>

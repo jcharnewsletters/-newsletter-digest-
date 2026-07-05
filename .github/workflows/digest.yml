@@ -1,0 +1,124 @@
+name: Newsletter digest
+
+on:
+  schedule:
+    # Two crons per batch (Eastern Time shifts between UTC-4 and UTC-5 with
+    # daylight saving). A guard step below computes the current ET time and
+    # runs a cron only when it lands in its batch's window, so exactly one
+    # fires per batch per day. Runs are scheduled ~35 min before each alert
+    # deadline because GitHub cron can start several minutes late.
+    - cron: "40 12 * * *"   # stocks-am  @ 8:40 AM EDT
+    - cron: "40 13 * * *"   # stocks-am  @ 8:40 AM EST
+    - cron: "55 12 * * *"   # crypto-am  @ 8:55 AM EDT
+    - cron: "55 13 * * *"   # crypto-am  @ 8:55 AM EST
+    - cron: "20 13 * * *"   # ai-am      @ 9:20 AM EDT
+    - cron: "20 14 * * *"   # ai-am      @ 9:20 AM EST
+    - cron: "20 22 * * *"   # crypto-pm  @ 6:20 PM EDT
+    - cron: "20 23 * * *"   # crypto-pm  @ 6:20 PM EST
+    - cron: "20 1 * * *"    # ai-pm      @ 9:20 PM EDT
+    - cron: "20 2 * * *"    # ai-pm      @ 9:20 PM EST
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Batch to run"
+        required: true
+        type: choice
+        options: [stocks-am, crypto-am, ai-am, crypto-pm, ai-pm]
+      dry_run:
+        description: "Dry run (print email instead of sending, don't save state)"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine batch
+        id: pick
+        shell: python
+        run: |
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          # cron expression -> (batch, target ET hour, target ET minute)
+          CRON_MAP = {
+              "40 12 * * *": ("stocks-am", 8, 40),
+              "40 13 * * *": ("stocks-am", 8, 40),
+              "55 12 * * *": ("crypto-am", 8, 55),
+              "55 13 * * *": ("crypto-am", 8, 55),
+              "20 13 * * *": ("ai-am", 9, 20),
+              "20 14 * * *": ("ai-am", 9, 20),
+              "20 22 * * *": ("crypto-pm", 18, 20),
+              "20 23 * * *": ("crypto-pm", 18, 20),
+              "20 1 * * *": ("ai-pm", 21, 20),
+              "20 2 * * *": ("ai-pm", 21, 20),
+          }
+
+          out = open(os.environ["GITHUB_OUTPUT"], "a")
+          event = os.environ.get("GITHUB_EVENT_NAME")
+          if event == "workflow_dispatch":
+              print(f"batch=${{ inputs.batch }}", file=out)
+              print("run=true", file=out)
+          else:
+              cron = "${{ github.event.schedule }}"
+              batch, hh, mm = CRON_MAP[cron]
+              now = datetime.now(ZoneInfo("America/New_York"))
+              delta = (now.hour * 60 + now.minute) - (hh * 60 + mm)
+              # Correct-offset cron lands 0..~15 min after target; the
+              # wrong-DST twin lands ±60 min away and is rejected here.
+              if -5 <= delta < 45:
+                  print(f"batch={batch}", file=out)
+                  print("run=true", file=out)
+              else:
+                  print(f"Skipping: cron '{cron}' is the wrong DST twin "
+                        f"(ET now {now:%H:%M}, target {hh:02d}:{mm:02d}).")
+                  print("run=false", file=out)
+
+      - name: Set up Python
+        if: steps.pick.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.pick.outputs.run == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Run batch
+        if: steps.pick.outputs.run == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_RECIPIENT: ${{ secrets.ALERT_RECIPIENT }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="--dry-run"; fi
+          python -m src.run_batch --batch "${{ steps.pick.outputs.batch }}" $FLAGS
+
+      - name: Commit site and state
+        if: steps.pick.outputs.run == 'true' && inputs.dry_run != true
+        run: |
+          git config user.name "digest-bot"
+          git config user.email "digest-bot@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Digest: ${{ steps.pick.outputs.batch }} $(date -u +%F)"
+          # Retry once in case another batch pushed meanwhile.
+          git push || (git pull --rebase && git push)

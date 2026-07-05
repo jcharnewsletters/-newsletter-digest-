@@ -1,0 +1,85 @@
+:root {
+  --bg: #fafaf7;
+  --card: #ffffff;
+  --ink: #1c1e21;
+  --muted: #6b7280;
+  --accent: #0f6b54;
+  --border: #e5e7eb;
+  --stocks: #1d4ed8;
+  --crypto: #b45309;
+  --ai: #7c3aed;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.5rem 1rem 4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+header h1 { margin: 0 0 .25rem; font-size: 1.9rem; }
+.date { color: var(--muted); margin: 0 0 1rem; }
+.filters { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.filter {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 999px;
+  padding: .35rem .9rem;
+  font-size: .95rem;
+  cursor: pointer;
+}
+.filter.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.batch {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.batch h2 { margin-top: 0; font-size: 1.35rem; }
+.badge {
+  font-size: .7rem;
+  font-family: system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #fff;
+  border-radius: 4px;
+  padding: .15rem .5rem;
+  vertical-align: middle;
+}
+.badge-stocks { background: var(--stocks); }
+.badge-crypto { background: var(--crypto); }
+.badge-ai { background: var(--ai); }
+
+.top-stories {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  margin-bottom: 1.25rem;
+}
+.top-stories h3 { margin: .25rem 0 .75rem; }
+.story { margin-bottom: 1rem; }
+.story h4 { margin: 0 0 .35rem; }
+.covered-by { color: var(--muted); font-size: .85rem; margin: .25rem 0 0; }
+.angles { font-size: .95rem; }
+
+.newsletter-card { border-top: 1px dashed var(--border); padding-top: .9rem; margin-top: .9rem; }
+.newsletter-card h3 { margin: 0 0 .5rem; color: var(--accent); }
+.newsletter-card h4 { margin: .6rem 0 .25rem; font-size: 1rem; }
+
+ul, ol { margin: .25rem 0 .75rem; padding-left: 1.25rem; }
+li { margin-bottom: .3rem; }
+
+.links summary { cursor: pointer; color: var(--muted); }
+.empty { color: var(--muted); font-style: italic; }
+
+footer { margin-top: 2.5rem; }
+.archive { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .75rem; }
+.archive a { color: var(--accent); }
+
+@media (max-width: 600px) {
+  body { padding: 1rem .75rem 3rem; }
+  .batch { padding: 1rem; }
+}

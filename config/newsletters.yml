@@ -1,0 +1,212 @@
+# Registry of every newsletter the digest tracks.
+#
+# Fields per entry:
+#   id:               short unique slug (used in filenames and state tracking)
+#   name:             display name shown on the website and in alert emails
+#   category:         ai | crypto | stocks
+#   batch:            which scheduled run this newsletter belongs to
+#   cadence:          daily | weekly  (weekly gets a longer inbox lookback and
+#                     is skipped without complaint when no new issue exists)
+#   senders:          substrings matched case-insensitively against the email
+#                     "From" header. After you subscribe, run
+#                     `python -m src.list_senders` to see the real addresses
+#                     and correct these if needed.
+#   subject_contains: (optional) extra filter on the subject line — needed when
+#                     two newsletters share one sender (TLDR, CoinMarketCap).
+#   url:              the newsletter's homepage, linked from the site.
+
+batches:
+  stocks-am:
+    deadline_et: "09:15"
+    label: "Morning Stocks"
+  crypto-am:
+    deadline_et: "09:30"
+    label: "Morning Crypto"
+  ai-am:
+    deadline_et: "10:00"
+    label: "Morning AI"
+  crypto-pm:
+    deadline_et: "19:00"
+    label: "Evening Crypto"
+  ai-pm:
+    deadline_et: "22:00"
+    label: "Evening AI"
+
+newsletters:
+  # ---------- AI — morning batch (by 10:00 AM ET) ----------
+  - id: the-neuron
+    name: "The Neuron"
+    category: ai
+    batch: ai-am
+    cadence: daily
+    senders: ["theneuron", "theneurondaily"]
+    url: https://www.theneurondaily.com/
+
+  - id: rundown-ai
+    name: "The Rundown AI"
+    category: ai
+    batch: ai-am
+    cadence: daily
+    senders: ["therundown"]
+    url: https://www.therundown.ai/
+
+  - id: superhuman
+    name: "Superhuman (Zain Kahn)"
+    category: ai
+    batch: ai-am
+    cadence: daily
+    senders: ["superhuman"]
+    url: https://www.superhuman.ai/
+
+  - id: tldr-ai
+    name: "TLDR AI"
+    category: ai
+    batch: ai-am
+    cadence: daily
+    senders: ["tldrnewsletter", "tldr.tech"]
+    subject_contains: ["TLDR AI"]
+    url: https://tldr.tech/ai
+
+  - id: bens-bites
+    name: "Ben's Bites"
+    category: ai
+    batch: ai-am
+    cadence: daily
+    senders: ["bensbites"]
+    url: https://www.bensbites.com/
+
+  # ---------- AI — evening batch (by 10:00 PM ET) ----------
+  - id: everyday-ai
+    name: "Everyday AI"
+    category: ai
+    batch: ai-pm
+    cadence: daily
+    senders: ["youreverydayai", "everydayai"]
+    url: https://read.youreverydayai.com/
+
+  - id: lennys-newsletter
+    name: "Lenny's Newsletter"
+    category: ai
+    batch: ai-pm
+    cadence: weekly
+    senders: ["lennysnewsletter", "lenny@substack"]
+    url: https://www.lennysnewsletter.com/
+
+  - id: the-batch
+    name: "The Batch (DeepLearning.AI)"
+    category: ai
+    batch: ai-pm
+    cadence: weekly
+    senders: ["deeplearning.ai", "thebatch"]
+    url: https://www.deeplearning.ai/the-batch/
+
+  - id: ai-daily-brief
+    name: "AI Daily Brief"
+    category: ai
+    batch: ai-pm
+    cadence: daily
+    senders: ["aidailybrief"]
+    url: https://aidailybrief.beehiiv.com/
+
+  # ---------- Crypto — morning batch (by 9:30 AM ET) ----------
+  - id: cmc-spotlight
+    name: "CMC Spotlight"
+    category: crypto
+    batch: crypto-am
+    cadence: daily
+    senders: ["coinmarketcap"]
+    subject_contains: ["Spotlight"]
+    url: https://coinmarketcap.com/newsletter/
+
+  - id: cmc-market-pulse
+    name: "CMC Market Pulse"
+    category: crypto
+    batch: crypto-am
+    cadence: weekly
+    senders: ["coinmarketcap"]
+    subject_contains: ["Market Pulse"]
+    url: https://coinmarketcap.com/newsletter/
+
+  - id: coindesk-daybook
+    name: "CoinDesk Daybook"
+    category: crypto
+    batch: crypto-am
+    cadence: daily
+    senders: ["coindesk"]
+    url: https://www.coindesk.com/newsletters/daybook-us
+
+  - id: tldr-crypto
+    name: "TLDR Crypto"
+    category: crypto
+    batch: crypto-am
+    cadence: daily
+    senders: ["tldrnewsletter", "tldr.tech"]
+    subject_contains: ["TLDR Crypto"]
+    url: https://tldr.tech/crypto
+
+  # ---------- Crypto — evening batch (by 7:00 PM ET) ----------
+  - id: decrypt-daily
+    name: "Decrypt Daily Hash"
+    category: crypto
+    batch: crypto-pm
+    cadence: daily
+    senders: ["decrypt.co", "decryptmedia"]
+    url: https://decrypt.co/newsletters/daily-hash
+
+  - id: bitcoin-magazine
+    name: "Bitcoin Magazine"
+    category: crypto
+    batch: crypto-pm
+    cadence: daily
+    senders: ["bitcoinmagazine", "btcmedia"]
+    url: https://bitcoinmagazine.com/newsletter
+
+  # ---------- Stocks — morning batch (by 9:15 AM ET) ----------
+  - id: opening-bell
+    name: "Opening Bell Daily (Phil Rosen)"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["openingbell"]
+    url: https://www.openingbelldailynews.com/
+
+  - id: yahoo-finance
+    name: "Yahoo Finance"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["yahoo"]
+    url: https://finance.yahoo.com/
+
+  - id: wall-street-breakfast
+    name: "Wall Street Breakfast (Seeking Alpha)"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["seekingalpha"]
+    subject_contains: ["Wall Street Breakfast"]
+    url: https://seekingalpha.com/free-investing-newsletters
+
+  - id: bloomberg-morning
+    name: "Bloomberg Morning Briefing: Americas"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["bloomberg"]
+    url: https://www.bloomberg.com/account/newsletters/morning-americas
+
+  - id: cnbc-5-things
+    name: "CNBC: 5 Things to Know"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["cnbc"]
+    url: https://www.cnbc.com/5-things-to-know/
+
+  - id: investopedia
+    name: "Investopedia"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["investopedia"]
+    url: https://www.investopedia.com/news

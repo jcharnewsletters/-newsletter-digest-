@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Newsletter Digest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>📰 Newsletter Digest</h1>
+  
+  <nav class="filters">
+    <button class="filter active" data-cat="all">All</button>
+    <button class="filter" data-cat="stocks">📈 Stocks</button>
+    <button class="filter" data-cat="crypto">🪙 Crypto</button>
+    <button class="filter" data-cat="ai">🤖 AI</button>
+  </nav>
+</header>
+
+<main>
+
+  <p class="empty">No digests yet — the first scheduled run will populate this page.</p>
+
+
+
+</main>
+
+
+
+<script>
+document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cat = btn.dataset.cat;
+  document.querySelectorAll('.batch').forEach(s => {
+    s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
+  });
+}));
+</script>
+</body>
+</html>
