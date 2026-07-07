@@ -1,0 +1,39 @@
+# Newsletter registry.
+# senders: case-insensitive substrings matched against the From: header.
+# After subscribing, run `python -m src.list_senders` to verify these patterns
+# against the real senders in the inbox and adjust as needed.
+
+batches:
+  stocks-am:  { deadline: "09:15", run_at: "08:40", days: weekdays, label: "Morning Stocks" }
+  crypto-am:  { deadline: "09:30", run_at: "08:55", days: daily,    label: "Morning Crypto" }
+  ai-am:      { deadline: "10:00", run_at: "09:25", days: daily,    label: "Morning AI" }
+  crypto-pm:  { deadline: "19:00", run_at: "18:25", days: daily,    label: "Evening Crypto" }
+  ai-pm:      { deadline: "22:00", run_at: "21:25", days: daily,    label: "Evening AI" }
+
+newsletters:
+  # ---- stocks-am ----
+  - { name: Opening Bell,          batch: stocks-am, cadence: daily,  senders: [openingbell] }
+  - { name: Yahoo Finance,         batch: stocks-am, cadence: daily,  senders: [yahoo] }
+  - { name: Wall Street Breakfast, batch: stocks-am, cadence: daily,  senders: [seekingalpha] }
+  - { name: Bloomberg,             batch: stocks-am, cadence: daily,  senders: [bloomberg] }
+  - { name: CNBC 5 Things,         batch: stocks-am, cadence: daily,  senders: [cnbc] }
+  - { name: Investopedia,          batch: stocks-am, cadence: daily,  senders: [investopedia] }
+  # ---- crypto-am ----
+  - { name: CMC Spotlight,         batch: crypto-am, cadence: daily,  senders: [coinmarketcap] }
+  - { name: CMC Market Pulse,      batch: crypto-am, cadence: weekly, senders: [coinmarketcap], subject_contains: [market pulse] }
+  - { name: CoinDesk Daybook,      batch: crypto-am, cadence: daily,  senders: [coindesk] }
+  - { name: TLDR Crypto,           batch: crypto-am, cadence: daily,  senders: [tldr] , subject_contains: [crypto] }
+  # ---- ai-am ----
+  - { name: The Neuron,            batch: ai-am,     cadence: daily,  senders: [theneuron] }
+  - { name: The Rundown AI,        batch: ai-am,     cadence: daily,  senders: [therundown] }
+  - { name: Superhuman,            batch: ai-am,     cadence: daily,  senders: [superhuman] }
+  - { name: TLDR AI,               batch: ai-am,     cadence: daily,  senders: [tldr], subject_not_contains: [crypto] }
+  - { name: Ben's Bites,           batch: ai-am,     cadence: daily,  senders: [bensbites] }
+  # ---- crypto-pm ----
+  - { name: Decrypt Daily Hash,    batch: crypto-pm, cadence: daily,  senders: [decrypt] }
+  - { name: Bitcoin Magazine,      batch: crypto-pm, cadence: daily,  senders: [bitcoinmagazine, btcmedia] }
+  # ---- ai-pm ----
+  - { name: Everyday AI,           batch: ai-pm,     cadence: daily,  senders: [youreverydayai, everydayai] }
+  - { name: Lenny's Newsletter,    batch: ai-pm,     cadence: weekly, senders: [lenny] }
+  - { name: The Batch,             batch: ai-pm,     cadence: weekly, senders: [deeplearning] }
+  - { name: AI Daily Brief,        batch: ai-pm,     cadence: daily,  senders: [aidailybrief, beehiiv] }

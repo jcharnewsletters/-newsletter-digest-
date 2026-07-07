@@ -1,0 +1,74 @@
+name: Newsletter digest
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "Batch to run manually"
+        required: true
+        type: choice
+        options: [stocks-am, crypto-am, ai-am, crypto-pm, ai-pm]
+  schedule:
+    # Two crons per batch: one lands correct during EDT (UTC-4), the other
+    # during EST (UTC-5). src/guard.py approves only the one within ±25 min
+    # of the batch's Eastern run_at — DST can never shift or double-fire.
+    - cron: "40 12 * * 1-5"   # stocks-am 08:40 ET (EDT)
+    - cron: "40 13 * * 1-5"   # stocks-am 08:40 ET (EST)
+    - cron: "55 12 * * *"     # crypto-am 08:55 ET (EDT)
+    - cron: "55 13 * * *"     # crypto-am 08:55 ET (EST)
+    - cron: "25 13 * * *"     # ai-am     09:25 ET (EDT)
+    - cron: "25 14 * * *"     # ai-am     09:25 ET (EST)
+    - cron: "25 22 * * *"     # crypto-pm 18:25 ET (EDT)
+    - cron: "25 23 * * *"     # crypto-pm 18:25 ET (EST)
+    - cron: "25 1 * * *"      # ai-pm     21:25 ET (EDT)
+    - cron: "25 2 * * *"      # ai-pm     21:25 ET (EST)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Decide which batch is due
+        id: guard
+        run: |
+          if [ -n "${{ inputs.batch }}" ]; then
+            echo "batch=${{ inputs.batch }}" >> "$GITHUB_OUTPUT"
+            echo "Manual run: ${{ inputs.batch }}"
+          else
+            python -m src.guard
+          fi
+
+      - name: Run batch
+        if: steps.guard.outputs.batch != 'none'
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_RECIPIENT: ${{ secrets.ALERT_RECIPIENT }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python -m src.run_batch --batch "${{ steps.guard.outputs.batch }}"
+
+      - name: Commit digests and site
+        if: steps.guard.outputs.batch != 'none'
+        run: |
+          git config user.name "digest-bot"
+          git config user.email "actions@github.com"
+          git add data docs
+          git diff --cached --quiet || git commit -m "digest: ${{ steps.guard.outputs.batch }} $(date -u +%F)"
+          git pull --rebase origin main
+          git push
