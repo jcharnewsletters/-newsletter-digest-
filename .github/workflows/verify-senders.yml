@@ -1,0 +1,29 @@
+name: Verify senders
+
+# Manually-triggered check: logs into the inbox with the secrets already
+# stored in this repo and prints, for each configured newsletter, how many
+# recent emails matched and a sample subject. Nothing is sent or published;
+# output goes to this run's log. Use it to confirm config/newsletters.yml
+# matches the real inbox without needing the app password on your own machine.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: List senders
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python -m src.list_senders
