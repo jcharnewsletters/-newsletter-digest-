@@ -24,9 +24,9 @@ def send_alert(batch, category, date_str, digest, dry_run=False) -> None:
         print(html[:2000])
         return
 
-    sender = os.environ["GMAIL_ADDRESS"]
-    password = os.environ["GMAIL_APP_PASSWORD"]
-    recipient = os.environ["ALERT_RECIPIENT"]
+    sender = os.environ["GMAIL_ADDRESS"].strip()
+    password = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
+    recipient = os.environ["ALERT_RECIPIENT"].strip()
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject

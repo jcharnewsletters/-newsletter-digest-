@@ -29,8 +29,8 @@ class Issue:
 
 def fetch_issues(newsletters, state) -> list:
     """Return unprocessed Issues for the given newsletters, oldest first."""
-    address = os.environ["GMAIL_ADDRESS"]
-    password = os.environ["GMAIL_APP_PASSWORD"]
+    address = os.environ["GMAIL_ADDRESS"].strip()
+    password = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
 
     max_lookback = max(LOOKBACK_HOURS[n.cadence] for n in newsletters)
     since = (datetime.now(timezone.utc) - timedelta(hours=max_lookback)).date()

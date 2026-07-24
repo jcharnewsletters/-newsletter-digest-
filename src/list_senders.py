@@ -20,16 +20,41 @@ def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-    address = os.environ["GMAIL_ADDRESS"]
-    password = os.environ["GMAIL_APP_PASSWORD"]
-    since = (datetime.now(timezone.utc) - timedelta(days=10)).date()
+    address = os.environ.get("GMAIL_ADDRESS", "").strip()
+    password = os.environ.get("GMAIL_APP_PASSWORD", "")
 
+    if not address or not password:
+        missing = [k for k in ("GMAIL_ADDRESS", "GMAIL_APP_PASSWORD")
+                   if not os.environ.get(k, "").strip()]
+        print("Setup problem: these are empty or not set -> " + ", ".join(missing))
+        print("Set them as GitHub Actions secrets (or env vars when running locally).")
+        sys.exit(1)
+
+    # Gmail app passwords are 16 chars with NO spaces; Google shows them grouped
+    # like 'abcd efgh ijkl mnop', so tolerate a value pasted with spaces.
+    if " " in password:
+        print("Note: GMAIL_APP_PASSWORD had spaces in it; using it with spaces removed.")
+        password = password.replace(" ", "")
+
+    since = (datetime.now(timezone.utc) - timedelta(days=10)).date()
     _, newsletters = load_config()
     matched = defaultdict(list)   # newsletter.id -> [subjects]
     senders = Counter()
     unmatched = []
 
-    with MailBox("imap.gmail.com").login(address, password) as mailbox:
+    try:
+        mailbox = MailBox("imap.gmail.com").login(address, password)
+    except Exception as e:
+        print(f"IMAP login FAILED for {address}: {e}\n")
+        print("Checklist:")
+        print("  - GMAIL_APP_PASSWORD must be a 16-char Google *app password*,")
+        print("    NOT your normal Gmail password.")
+        print("  - Generate it at https://myaccount.google.com/apppasswords")
+        print("    (2-Step Verification must be on first).")
+        print("  - Make sure GMAIL_ADDRESS is the exact inbox address.")
+        sys.exit(1)
+
+    with mailbox:
         for msg in mailbox.fetch(AND(date_gte=since), mark_seen=False,
                                  headers_only=True, bulk=True):
             senders[msg.from_] += 1
