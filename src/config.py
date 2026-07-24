@@ -33,14 +33,17 @@ class Newsletter:
     senders: list
     url: str
     subject_contains: list = field(default_factory=list)
+    subject_excludes: list = field(default_factory=list)
 
     def matches(self, from_header: str, subject: str) -> bool:
         from_l = (from_header or "").lower()
         if not any(s.lower() in from_l for s in self.senders):
             return False
-        if self.subject_contains:
-            subj_l = (subject or "").lower()
-            return any(s.lower() in subj_l for s in self.subject_contains)
+        subj_l = (subject or "").lower()
+        if self.subject_contains and not any(s.lower() in subj_l for s in self.subject_contains):
+            return False
+        if self.subject_excludes and any(s.lower() in subj_l for s in self.subject_excludes):
+            return False
         return True
 
 

@@ -21,11 +21,12 @@ Gmail inbox ──IMAP──▶ fetch ─▶ clean ─▶ summarizer sub-agents 
 
 | Batch | Alert by | Newsletters |
 |---|---|---|
-| `stocks-am` | 9:15 AM | Opening Bell, Yahoo Finance, Wall Street Breakfast, Bloomberg, CNBC, Investopedia |
-| `crypto-am` | 9:30 AM | CMC Spotlight, CMC Market Pulse, CoinDesk Daybook, TLDR Crypto |
-| `ai-am` | 10:00 AM | The Neuron, The Rundown AI, Superhuman, TLDR AI, Ben's Bites |
+| `stocks-am` | 9:15 AM | Opening Bell, Yahoo Finance, Wall Street Breakfast, Bloomberg, Investopedia Pre-Market, CNBC Morning Squawk |
+| `crypto-am` | 9:30 AM | CMC Spotlight, CMC Market Pulse, CoinDesk Daybook, CoinDesk Headlines, TLDR Crypto |
+| `ai-am` | 10:00 AM | The Neuron, The Rundown AI, Superhuman, TLDR AI, TAAFT, ultrathink |
+| `tech-am` | 10:00 AM | The Code, Techpresso, The Rundown Tech, TLDR (main) |
 | `crypto-pm` | 7:00 PM | Decrypt Daily Hash, Bitcoin Magazine |
-| `ai-pm` | 10:00 PM | Everyday AI, Lenny's Newsletter, The Batch, AI Daily Brief |
+| `ai-pm` | 10:00 PM | Everyday AI, Lenny's Newsletter, The Batch, AI Daily Brief, Dharmesh @ simple.ai |
 
 Scheduling runs on GitHub Actions (`.github/workflows/digest.yml`) with two
 cron entries per batch and a guard step so daylight-saving changes never shift

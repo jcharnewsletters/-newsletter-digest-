@@ -72,10 +72,12 @@ def main() -> int:
     print(f"Synthesized digest: {len(digest['top_stories'])} top stories, "
           f"{len(digest['by_newsletter'])} newsletter sections.")
 
-    # 4. Persist digest + rebuild site
-    save_batch_digest(today, batch, digest, summarized)
-    build_site()
-    print("Site rebuilt under docs/.")
+    # 4. Persist digest + rebuild site (skipped in dry-run so no committed
+    #    files are mutated; the email preview below is enough to eyeball output)
+    if not args.dry_run:
+        save_batch_digest(today, batch, digest, summarized)
+        build_site()
+        print("Site rebuilt under docs/.")
 
     # 5. Alert email
     category = batch.newsletters[0].category if batch.newsletters else "ai"

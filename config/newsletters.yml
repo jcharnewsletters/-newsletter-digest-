@@ -1,19 +1,26 @@
 # Registry of every newsletter the digest tracks.
 #
+# Sender patterns below are the REAL From-addresses the user confirmed after
+# subscribing (2026-07). Some newsletters share a sending address, so those are
+# disambiguated by the subject line:
+#   - TLDR / TLDR AI / TLDR Crypto all come from dan@tldrnewsletter.com
+#   - CoinDesk Daybook & Headlines both come from newsletters@coindesk.com
+#   - Several AI/stocks newsletters share @mail.beehiiv.com but have distinct
+#     local parts (ultrathink@, agentai@, aidailybrief@, opening-bell@), so the
+#     full local+domain is matched.
+#
 # Fields per entry:
-#   id:               short unique slug (used in filenames and state tracking)
-#   name:             display name shown on the website and in alert emails
-#   category:         ai | crypto | stocks
-#   batch:            which scheduled run this newsletter belongs to
-#   cadence:          daily | weekly  (weekly gets a longer inbox lookback and
-#                     is skipped without complaint when no new issue exists)
-#   senders:          substrings matched case-insensitively against the email
-#                     "From" header. After you subscribe, run
-#                     `python -m src.list_senders` to see the real addresses
-#                     and correct these if needed.
-#   subject_contains: (optional) extra filter on the subject line — needed when
-#                     two newsletters share one sender (TLDR, CoinMarketCap).
-#   url:              the newsletter's homepage, linked from the site.
+#   id / name / category / batch / cadence / url  — as before
+#   senders:          substrings matched (case-insensitively) against the email
+#                     "From" address. Prefer the full local@domain when a domain
+#                     is shared by several newsletters.
+#   subject_contains: (optional) ALL-of-none / any-of filter — the subject must
+#                     contain at least one of these.
+#   subject_excludes: (optional) reject the email if the subject contains any of
+#                     these (used to carve "plain TLDR" out from "TLDR AI"/etc.).
+#
+# After the first real emails arrive, run `python -m src.list_senders` to
+# confirm every newsletter is matching (esp. the subject-based ones).
 
 batches:
   stocks-am:
@@ -25,6 +32,9 @@ batches:
   ai-am:
     deadline_et: "10:00"
     label: "Morning AI"
+  tech-am:
+    deadline_et: "10:00"
+    label: "Morning Tech"
   crypto-pm:
     deadline_et: "19:00"
     label: "Evening Crypto"
@@ -39,7 +49,7 @@ newsletters:
     category: ai
     batch: ai-am
     cadence: daily
-    senders: ["theneuron", "theneurondaily"]
+    senders: ["theneuron@newsletter.theneurondaily.com", "theneurondaily.com"]
     url: https://www.theneurondaily.com/
 
   - id: rundown-ai
@@ -47,7 +57,7 @@ newsletters:
     category: ai
     batch: ai-am
     cadence: daily
-    senders: ["therundown"]
+    senders: ["news@daily.therundown.ai", "daily.therundown.ai"]
     url: https://www.therundown.ai/
 
   - id: superhuman
@@ -55,7 +65,7 @@ newsletters:
     category: ai
     batch: ai-am
     cadence: daily
-    senders: ["superhuman"]
+    senders: ["superhuman@mail.joinsuperhuman.ai", "joinsuperhuman.ai"]
     url: https://www.superhuman.ai/
 
   - id: tldr-ai
@@ -63,17 +73,25 @@ newsletters:
     category: ai
     batch: ai-am
     cadence: daily
-    senders: ["tldrnewsletter", "tldr.tech"]
+    senders: ["dan@tldrnewsletter.com"]
     subject_contains: ["TLDR AI"]
     url: https://tldr.tech/ai
 
-  - id: bens-bites
-    name: "Ben's Bites"
+  - id: taaft
+    name: "There's An AI For That (TAAFT)"
     category: ai
     batch: ai-am
     cadence: daily
-    senders: ["bensbites"]
-    url: https://www.bensbites.com/
+    senders: ["theresanaiforthat.com"]
+    url: https://theresanaiforthat.com/
+
+  - id: ultrathink
+    name: "ultrathink"
+    category: ai
+    batch: ai-am
+    cadence: daily
+    senders: ["ultrathink@mail.beehiiv.com"]
+    url: https://www.ultrathink.ai/
 
   # ---------- AI — evening batch (by 10:00 PM ET) ----------
   - id: everyday-ai
@@ -81,7 +99,7 @@ newsletters:
     category: ai
     batch: ai-pm
     cadence: daily
-    senders: ["youreverydayai", "everydayai"]
+    senders: ["info@youreverydayai.com", "youreverydayai.com"]
     url: https://read.youreverydayai.com/
 
   - id: lennys-newsletter
@@ -89,7 +107,7 @@ newsletters:
     category: ai
     batch: ai-pm
     cadence: weekly
-    senders: ["lennysnewsletter", "lenny@substack"]
+    senders: ["lenny@substack.com"]
     url: https://www.lennysnewsletter.com/
 
   - id: the-batch
@@ -97,7 +115,7 @@ newsletters:
     category: ai
     batch: ai-pm
     cadence: weekly
-    senders: ["deeplearning.ai", "thebatch"]
+    senders: ["thebatch@deeplearning.ai", "deeplearning.ai"]
     url: https://www.deeplearning.ai/the-batch/
 
   - id: ai-daily-brief
@@ -105,8 +123,51 @@ newsletters:
     category: ai
     batch: ai-pm
     cadence: daily
-    senders: ["aidailybrief"]
+    senders: ["aidailybrief@mail.beehiiv.com"]
     url: https://aidailybrief.beehiiv.com/
+
+  - id: simple-ai
+    name: "Dharmesh @ simple.ai"
+    category: ai
+    batch: ai-pm
+    cadence: weekly
+    senders: ["agentai@mail.beehiiv.com"]
+    url: https://simple.ai/
+
+  # ---------- Tech — morning batch (by 10:00 AM ET) ----------
+  - id: the-code
+    name: "The Code"
+    category: tech
+    batch: tech-am
+    cadence: daily
+    senders: ["superhumancode@news.codenewsletter.ai", "codenewsletter.ai"]
+    url: https://www.codenewsletter.ai/
+
+  - id: techpresso
+    name: "Techpresso"
+    category: tech
+    batch: tech-am
+    cadence: daily
+    senders: ["techpresso@dupple.com"]
+    url: https://techpresso.co/
+
+  - id: rundown-tech
+    name: "The Rundown Tech"
+    category: tech
+    batch: tech-am
+    cadence: daily
+    senders: ["crew@technews.therundown.ai", "technews.therundown.ai"]
+    url: https://www.therundown.ai/
+
+  - id: tldr-tech
+    name: "TLDR (Tech)"
+    category: tech
+    batch: tech-am
+    cadence: daily
+    senders: ["dan@tldrnewsletter.com"]
+    subject_contains: ["TLDR"]
+    subject_excludes: ["TLDR AI", "TLDR Crypto"]
+    url: https://tldr.tech/
 
   # ---------- Crypto — morning batch (by 9:30 AM ET) ----------
   - id: cmc-spotlight
@@ -114,8 +175,7 @@ newsletters:
     category: crypto
     batch: crypto-am
     cadence: daily
-    senders: ["coinmarketcap"]
-    subject_contains: ["Spotlight"]
+    senders: ["spotlight@newsletters.coinmarketcap.com"]
     url: https://coinmarketcap.com/newsletter/
 
   - id: cmc-market-pulse
@@ -123,8 +183,7 @@ newsletters:
     category: crypto
     batch: crypto-am
     cadence: weekly
-    senders: ["coinmarketcap"]
-    subject_contains: ["Market Pulse"]
+    senders: ["marketpulse@newsletters.coinmarketcap.com"]
     url: https://coinmarketcap.com/newsletter/
 
   - id: coindesk-daybook
@@ -132,15 +191,25 @@ newsletters:
     category: crypto
     batch: crypto-am
     cadence: daily
-    senders: ["coindesk"]
+    senders: ["newsletters@coindesk.com"]
+    subject_contains: ["Daybook"]
     url: https://www.coindesk.com/newsletters/daybook-us
+
+  - id: coindesk-headlines
+    name: "CoinDesk Headlines"
+    category: crypto
+    batch: crypto-am
+    cadence: daily
+    senders: ["newsletters@coindesk.com"]
+    subject_contains: ["Headlines"]
+    url: https://www.coindesk.com/newsletters/
 
   - id: tldr-crypto
     name: "TLDR Crypto"
     category: crypto
     batch: crypto-am
     cadence: daily
-    senders: ["tldrnewsletter", "tldr.tech"]
+    senders: ["dan@tldrnewsletter.com"]
     subject_contains: ["TLDR Crypto"]
     url: https://tldr.tech/crypto
 
@@ -150,7 +219,7 @@ newsletters:
     category: crypto
     batch: crypto-pm
     cadence: daily
-    senders: ["decrypt.co", "decryptmedia"]
+    senders: ["hi@mail-daily.decrypt.co", "mail-daily.decrypt.co"]
     url: https://decrypt.co/newsletters/daily-hash
 
   - id: bitcoin-magazine
@@ -158,7 +227,7 @@ newsletters:
     category: crypto
     batch: crypto-pm
     cadence: daily
-    senders: ["bitcoinmagazine", "btcmedia"]
+    senders: ["news@bitcoinmagazine.com", "bitcoinmagazine.com"]
     url: https://bitcoinmagazine.com/newsletter
 
   # ---------- Stocks — morning batch (by 9:15 AM ET) ----------
@@ -167,15 +236,15 @@ newsletters:
     category: stocks
     batch: stocks-am
     cadence: daily
-    senders: ["openingbell"]
+    senders: ["opening-bell@mail.beehiiv.com"]
     url: https://www.openingbelldailynews.com/
 
   - id: yahoo-finance
-    name: "Yahoo Finance"
+    name: "Yahoo Finance Morning Brief"
     category: stocks
     batch: stocks-am
     cadence: daily
-    senders: ["yahoo"]
+    senders: ["finance-morning-brief@newsletters.yahoo.net", "newsletters.yahoo.net"]
     url: https://finance.yahoo.com/
 
   - id: wall-street-breakfast
@@ -183,30 +252,30 @@ newsletters:
     category: stocks
     batch: stocks-am
     cadence: daily
-    senders: ["seekingalpha"]
+    senders: ["account@seekingalpha.com"]
     subject_contains: ["Wall Street Breakfast"]
     url: https://seekingalpha.com/free-investing-newsletters
 
   - id: bloomberg-morning
-    name: "Bloomberg Morning Briefing: Americas"
+    name: "Bloomberg"
     category: stocks
     batch: stocks-am
     cadence: daily
-    senders: ["bloomberg"]
+    senders: ["noreply@news.bloomberg.com", "news.bloomberg.com"]
     url: https://www.bloomberg.com/account/newsletters/morning-americas
 
-  - id: cnbc-5-things
-    name: "CNBC: 5 Things to Know"
-    category: stocks
-    batch: stocks-am
-    cadence: daily
-    senders: ["cnbc"]
-    url: https://www.cnbc.com/5-things-to-know/
-
   - id: investopedia
-    name: "Investopedia"
+    name: "Investopedia Pre-Market"
     category: stocks
     batch: stocks-am
     cadence: daily
-    senders: ["investopedia"]
+    senders: ["newsletters@mail.investopedia.com", "mail.investopedia.com"]
     url: https://www.investopedia.com/news
+
+  - id: cnbc-morning-squawk
+    name: "CNBC Morning Squawk"
+    category: stocks
+    batch: stocks-am
+    cadence: daily
+    senders: ["morningsquawk@response.cnbc.com"]
+    url: https://www.cnbc.com/morning-squawk/

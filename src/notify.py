@@ -12,7 +12,7 @@ from email.mime.text import MIMEText
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 465
 
-_EMOJI = {"stocks": "📈", "crypto": "🪙", "ai": "🤖"}
+_EMOJI = {"stocks": "📈", "crypto": "🪙", "ai": "🤖", "tech": "💻"}
 
 
 def send_alert(batch, category, date_str, digest, dry_run=False) -> None:

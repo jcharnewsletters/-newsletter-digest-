@@ -10,7 +10,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from .config import SITE_DIR, SUMMARIES_DIR, TEMPLATES_DIR
 
-BATCH_ORDER = ["stocks-am", "crypto-am", "ai-am", "crypto-pm", "ai-pm"]
+BATCH_ORDER = ["stocks-am", "crypto-am", "ai-am", "tech-am", "crypto-pm", "ai-pm"]
 
 
 def save_batch_digest(date_str, batch, digest, summarized) -> None:

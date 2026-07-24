@@ -13,6 +13,8 @@ on:
     - cron: "55 13 * * *"   # crypto-am  @ 8:55 AM EST
     - cron: "20 13 * * *"   # ai-am      @ 9:20 AM EDT
     - cron: "20 14 * * *"   # ai-am      @ 9:20 AM EST
+    - cron: "25 13 * * *"   # tech-am    @ 9:25 AM EDT
+    - cron: "25 14 * * *"   # tech-am    @ 9:25 AM EST
     - cron: "20 22 * * *"   # crypto-pm  @ 6:20 PM EDT
     - cron: "20 23 * * *"   # crypto-pm  @ 6:20 PM EST
     - cron: "20 1 * * *"    # ai-pm      @ 9:20 PM EDT
@@ -23,7 +25,7 @@ on:
         description: "Batch to run"
         required: true
         type: choice
-        options: [stocks-am, crypto-am, ai-am, crypto-pm, ai-pm]
+        options: [stocks-am, crypto-am, ai-am, tech-am, crypto-pm, ai-pm]
       dry_run:
         description: "Dry run (print email instead of sending, don't save state)"
         required: false
@@ -59,6 +61,8 @@ jobs:
               "55 13 * * *": ("crypto-am", 8, 55),
               "20 13 * * *": ("ai-am", 9, 20),
               "20 14 * * *": ("ai-am", 9, 20),
+              "25 13 * * *": ("tech-am", 9, 25),
+              "25 14 * * *": ("tech-am", 9, 25),
               "20 22 * * *": ("crypto-pm", 18, 20),
               "20 23 * * *": ("crypto-pm", 18, 20),
               "20 1 * * *": ("ai-pm", 21, 20),

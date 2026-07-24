@@ -23,33 +23,27 @@ This inbox exists only to receive newsletters; the agent reads it automatically.
 
 Open each link **while signed into the new Gmail** and enter the new address:
 
-**AI**
-- [ ] The Rundown AI — https://www.therundown.ai/
-- [ ] The Neuron — https://www.theneurondaily.com/
-- [ ] Superhuman — https://www.superhuman.ai/
-- [ ] TLDR AI — https://tldr.tech/ai
-- [ ] Ben's Bites — https://www.bensbites.com/
-- [ ] Everyday AI — https://read.youreverydayai.com/
-- [ ] Lenny's Newsletter — https://www.lennysnewsletter.com/
-- [ ] The Batch — https://www.deeplearning.ai/the-batch/
-- [ ] AI Daily Brief — https://aidailybrief.beehiiv.com/
+This is the current tracked set (matches `config/newsletters.yml`). If you add
+or drop a newsletter later, tell Claude Code the sender address and it updates
+the config.
 
-**Crypto**
-- [ ] TLDR Crypto — https://tldr.tech/crypto
-- [ ] CoinDesk Daybook US — https://www.coindesk.com/newsletters/daybook-us
-- [ ] CMC newsletters (Spotlight + Market Pulse) — https://coinmarketcap.com/newsletter/
-- [ ] Decrypt Daily Hash — https://decrypt.co/newsletters/daily-hash
-- [ ] Bitcoin Magazine — https://bitcoinmagazine.com/newsletter
+**AI** (morning 10 AM: Rundown, Neuron, Superhuman, TLDR AI, TAAFT, ultrathink;
+evening 10 PM: Everyday AI, Lenny's, The Batch, AI Daily Brief, Dharmesh/simple.ai)
+- The Rundown AI, The Neuron, Superhuman, TLDR AI, There's An AI For That,
+  ultrathink, Everyday AI, Lenny's Newsletter, The Batch, AI Daily Brief,
+  Dharmesh @ simple.ai
 
-**Stocks**
-- [ ] Opening Bell Daily — https://www.openingbelldailynews.com/
-- [ ] Yahoo Finance newsletters — https://finance.yahoo.com/newsletters/
-- [ ] Wall Street Breakfast — https://seekingalpha.com/free-investing-newsletters
-- [ ] Bloomberg Morning Briefing: Americas — https://www.bloomberg.com/account/newsletters/morning-americas
-- [ ] CNBC 5 Things — https://www.cnbc.com/5-things-to-know/
-- [ ] Investopedia — https://www.investopedia.com/news (newsletter signup in page footer)
+**Tech** (morning 10 AM)
+- The Code, Techpresso, The Rundown Tech, TLDR (main)
 
-Click the confirmation link in each welcome email.
+**Crypto** (morning 9:30 AM: CMC Spotlight, CMC Market Pulse, CoinDesk Daybook,
+CoinDesk Headlines, TLDR Crypto; evening 7 PM: Decrypt Daily Hash, Bitcoin Magazine)
+
+**Stocks** (morning 9:15 AM)
+- Opening Bell (Phil Rosen), Yahoo Finance Morning Brief, Wall Street Breakfast,
+  Bloomberg, Investopedia Pre-Market, CNBC Morning Squawk
+
+Make sure you've clicked the confirmation link in each welcome email.
 
 ## Step 3 — Get an Anthropic API key (~5 min)
 
@@ -73,9 +67,9 @@ GitHub runs the schedule (free) and hosts the website (free).
    New repository secret**:
    | Secret name | Value |
    |---|---|
-   | `GMAIL_ADDRESS` | the dedicated Gmail address |
+   | `GMAIL_ADDRESS` | jchar.newsletter@gmail.com |
    | `GMAIL_APP_PASSWORD` | the 16-character app password (no spaces) |
-   | `ALERT_RECIPIENT` | jchar.newsletters@gmail.com |
+   | `ALERT_RECIPIENT` | jchar.newsletter@gmail.com |
    | `ANTHROPIC_API_KEY` | the `sk-ant-...` key |
 5. Same page, **Variables** tab → New repository variable:
    | Variable | Value |
@@ -99,23 +93,32 @@ GitHub runs the schedule (free) and hosts the website (free).
    set GMAIL_APP_PASSWORD=...
    python -m src.list_senders
    ```
-   If any newsletter shows under "NOT matched", tell Claude Code the sender
-   address and it will fix `config/newsletters.yml`.
+   It prints a match count and sample subject for each newsletter. Any line
+   showing **0 MATCHES** means the sender/subject pattern needs fixing — tell
+   Claude Code what you see and it will correct `config/newsletters.yml`.
+   (The subject-based ones — the three TLDR variants and the two CoinDesk
+   feeds — are the most likely to need a tweak.)
 3. Test one live batch from GitHub: repo → **Actions → Newsletter digest →
    Run workflow** → batch `ai-am`. Confirm:
    - the workflow goes green,
    - the site updated at your `SITE_URL`,
-   - the alert email arrived at jchar.newsletters@gmail.com.
+   - the alert email arrived at jchar.newsletter@gmail.com.
 
-Done. The five daily schedules take over from here:
+Done. The six daily schedules take over from here:
 
 | Alert | Deadline (ET) | Covers |
 |---|---|---|
-| Morning Stocks | 9:15 AM | Opening Bell, Yahoo Finance, Wall Street Breakfast, Bloomberg, CNBC, Investopedia |
-| Morning Crypto | 9:30 AM | CMC Spotlight, CMC Market Pulse, CoinDesk Daybook, TLDR Crypto |
-| Morning AI | 10:00 AM | The Neuron, The Rundown, Superhuman, TLDR AI, Ben's Bites |
+| Morning Stocks | 9:15 AM | Opening Bell, Yahoo Finance, Wall Street Breakfast, Bloomberg, Investopedia Pre-Market, CNBC Morning Squawk |
+| Morning Crypto | 9:30 AM | CMC Spotlight, CMC Market Pulse, CoinDesk Daybook, CoinDesk Headlines, TLDR Crypto |
+| Morning AI | 10:00 AM | The Neuron, The Rundown AI, Superhuman, TLDR AI, TAAFT, ultrathink |
+| Morning Tech | 10:00 AM | The Code, Techpresso, The Rundown Tech, TLDR (main) |
 | Evening Crypto | 7:00 PM | Decrypt Daily Hash, Bitcoin Magazine |
-| Evening AI | 10:00 PM | Everyday AI, Lenny's, The Batch, AI Daily Brief |
+| Evening AI | 10:00 PM | Everyday AI, Lenny's, The Batch, AI Daily Brief, Dharmesh @ simple.ai |
 
-Weekly newsletters (The Batch, Lenny's, CMC Market Pulse) simply appear in
-their batch on the day they publish and are silently skipped otherwise.
+Weekly newsletters (The Batch, Lenny's, CMC Market Pulse, Dharmesh @ simple.ai)
+simply appear in their batch on the day they publish and are silently skipped
+otherwise.
+
+> **Morning Tech time:** I defaulted the new Tech digest to a 10:00 AM ET
+> alert (alongside AI). If you'd prefer it earlier, later, or in the evening,
+> just say so and I'll change the one schedule.
