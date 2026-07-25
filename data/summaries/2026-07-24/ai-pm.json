@@ -1,0 +1,564 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-07-24",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Bipartisan 'AI Kill Switch' Bill Introduced in Congress",
+        "points": [
+          "Reps. Ted Lieu and Nathaniel Moran introduced the AI Kill Switch Act, requiring AI companies to maintain the ability to slow, suspend, or shut down their systems.",
+          "The bill grants the Department of Homeland Security authority to intervene if a model poses catastrophic harm.",
+          "It follows a recent OpenAI security incident (a breach involving Hugging Face), reflecting Congressional concern about losing control over deployed AI systems."
+        ],
+        "covered_by": [
+          "Everyday AI",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "Secretary of State Marco Rubio reportedly instructed U.S. diplomats in a classified cable to downplay 'kill switch' talk abroad and push back on foreign digital-sovereignty efforts, reframing recent Fable and Mythos shutdowns as temporary security testing rather than policy."
+          }
+        ]
+      },
+      {
+        "title": "Tech Giants Push Back on Regulating Open-Weight AI Models",
+        "points": [
+          "NVIDIA, Microsoft, Dell, and Palantir publicly opposed regulating open-weight AI models (models whose parameters can be downloaded, inspected, and modified by anyone).",
+          "The coalition argues open models prevent power concentration among a few companies, improve security through transparency, and keep AI leadership distributed across more players.",
+          "NVIDIA CEO Jensen Huang argues a diverse open-model ecosystem is safer than a U.S. duopoly dominated by a couple of closed-model companies."
+        ],
+        "covered_by": [
+          "Everyday AI",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "Anthropic and OpenAI are reportedly the only two major labs actively lobbying for crackdowns on 'distillation' (training smaller models on the outputs of larger ones), raising concerns about regulatory capture."
+          }
+        ]
+      },
+      {
+        "title": "Microsoft's In-House MAI Models Undercut OpenAI on Cost and Performance",
+        "points": [
+          "Microsoft shipped MAI-Image-2.5 Pro, a high-fidelity image-editing model with precise in-image text generation, available in Copilot and via API at $5 per million input tokens (tokens are the text units AI models process).",
+          "MAI-Image-2.5 is now the default image model in PowerPoint and Bing, replacing OpenAI's GPT-Image-2 and cutting PowerPoint image-generation costs by 84%.",
+          "MAI-Code-1-Flash achieves a 10% higher code-accept rate than GPT-5.4 Mini and Haiku 4.5 in VS Code while using 10% fewer tokens; Excel-specific tuning raised its SWE-bench Verified score (a coding benchmark) from 72% to 86%.",
+          "Microsoft claims up to 89% cost savings versus OpenAI across products, reflecting CEO Satya Nadella's strategy of routing routine tasks to cheaper in-house models and reserving frontier models for harder needs."
+        ],
+        "covered_by": [
+          "Everyday AI",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "Microsoft is offering this same tiered model-routing approach to enterprise customers as a competitive selling point."
+          },
+          {
+            "newsletter": "Everyday AI",
+            "point": "Framed the MAI rollout as part of a broader AI infrastructure race alongside AMD's new Helios rack system."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "Lenny's Newsletter",
+        "items": [
+          {
+            "title": "PM Role Splits: Own Judgment, Let AI Agents Handle Commodity Work",
+            "points": [
+              "Stripe PM Kevin Yien argues top PMs now differentiate on judgment and strategic direction rather than just AI-agent building skills.",
+              "AI agents can execute mechanical work (like fixing localization bugs), freeing PMs to focus on high-level directional decisions.",
+              "Ten prototypes with zero user impact are 'promotion theater' that waste effort better spent on strategic conviction-building.",
+              "Stripe Projects validated its idea with just 2.5 people before scaling, testing real customer pull before big investment."
+            ]
+          },
+          {
+            "title": "Writing Splits Into Two Disciplines: Persuading Humans vs Instructing AI Agents",
+            "points": [
+              "PMs now need two writing skills: persuasive writing to convince human stakeholders, and precise natural-language 'pseudocode' to direct AI agents.",
+              "One-shot prompting rarely works well; effective use requires multi-turn 'low-shot' conversations where the PM inputs a clear opinion upfront.",
+              "LLMs (large language models) excel at transferring information but struggle to originate genuinely new ideas from half-formed human thinking."
+            ]
+          },
+          {
+            "title": "Build a 'Team Brain' That Encodes Your Judgment for Scale",
+            "points": [
+              "The PM's evolving job is building a shared knowledge system (a 'team brain') that layers interpretation onto raw customer calls, tickets, and insights.",
+              "Engineers can query this AI-accessible knowledge base for a PM's judgment instead of pinging them at odd hours, effectively scaling seniority without more meetings."
+            ]
+          },
+          {
+            "title": "Deep Domain Expertise Becomes the Key Differentiator",
+            "points": [
+              "The winning profile combines real domain experience (in sales, engineering, support, etc.) with willingness to work beyond one's formal job description.",
+              "Domain-specific nuance—like why an idea fails in payments or healthcare—is knowledge AI agents can't generate on their own, making it a durable advantage."
+            ]
+          },
+          {
+            "title": "Practical Habits: Start Small and Iterate Daily",
+            "points": [
+              "Recommended starting point: keep a daily 'friction log' and resolve one pain point at a time rather than copying elaborate influencer productivity setups.",
+              "Career advice for the next 12 months includes choosing between returning to hands-on engineering or going all-in on strategic judgment work, and practicing both persuasive and agent-directed writing."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Dharmesh @ simple.ai",
+        "items": [
+          {
+            "title": "Meta Prompting Has Evolved From Prompt Polishing to AI-Led Interviews",
+            "points": [
+              "Meta prompting (using AI to help craft better prompts) has shifted from simply refining rough drafts to having AI interview the user and conduct its own research before starting work.",
+              "A simple prompt like 'Ask me questions one at a time until you're confident you understand the job' can significantly improve AI output by letting the model drive requirements-gathering."
+            ]
+          },
+          {
+            "title": "Audit Your AI Usage by Exporting and Analyzing Chat History",
+            "points": [
+              "Users can export their full chat history (Claude: Settings > Privacy > Export Data; ChatGPT: Settings > Data Controls > Export; ~24-hour turnaround) and upload it to a new chat for analysis.",
+              "Useful audit questions include 'What tasks do I repeatedly ask for help with?' and 'Find conversations where I got frustrated or gave up—what went wrong?'",
+              "Recommended as a recurring monthly or bimonthly practice to continuously refine AI collaboration skills."
+            ]
+          },
+          {
+            "title": "AI Models Are Good at Spotting Their Own Knowledge Gaps—If You Ask",
+            "points": [
+              "Frontier models are already trained to recognize missing context, but most users never explicitly invite them to surface unknowns before starting a task.",
+              "Prompting 'Restate what you think I'm asking for before you act' helps catch misunderstandings early and prevents wasted output."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Everyday AI",
+        "items": [
+          {
+            "title": "Gemini Spark Expands to More Paid Users",
+            "points": [
+              "Google expanded Gemini Spark, an AI assistant handling email, calendar, and document tasks, to more paid subscribers in the U.S."
+            ]
+          },
+          {
+            "title": "AI Labs Ship Hands-Free Voice and Agent Features",
+            "points": [
+              "ChatGPT can now run multiple agents simultaneously in voice mode; Anthropic upgraded Claude voice to its Opus and Sonnet models with live data connectors.",
+              "ChatGPT Health now syncs with Apple Health for all U.S. users age 18+ (free), consolidating medical records and lab results without providing diagnoses."
+            ]
+          },
+          {
+            "title": "AMD Launches Helios AI Infrastructure Rack; Cognition Acquires Poke Maker",
+            "points": [
+              "AMD launched Helios, a 72-GPU rack system combining MI455X GPUs, EPYC CPUs, Pensando networking, and ROCm software to improve inference throughput and token economics.",
+              "Cognition acquired The Interaction Company, maker of the Poke texting app (100M messages in 3 months), merging it with its Devin coding agent; Poke is the only AI agent natively integrated into Apple Messages."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "AI Daily Brief",
+        "items": [
+          {
+            "title": "Stripe in Talks to Acquire OpenRouter for $10B",
+            "points": [
+              "Stripe is reportedly negotiating to acquire AI routing platform OpenRouter for $10 billion, as routing infrastructure becomes a high-margin business.",
+              "Competitors including Cursor and Meta are rapidly building rival routing systems."
+            ]
+          },
+          {
+            "title": "Anthropic Economist: AI Hasn't Raised Unemployment Because No Job Is Fully Automated",
+            "points": [
+              "June unemployment held at 4.2% with a near-parity job-openings-to-unemployed ratio, even as 20% of firms use AI and AI output quality grew roughly 2,000% annually in 2024-2025.",
+              "No occupation in the Department of Labor's O*NET taxonomy (a standard classification of job tasks) has every task automated by Claude, so humans remain essential at AI's 'jagged frontier' (tasks AI can and can't yet do).",
+              "Hiring for young workers in AI-exposed roles has softened slightly, but economists disagree whether this reflects AI displacement or broader macro conditions."
+            ]
+          },
+          {
+            "title": "Amazon Quietly Shuts Down AGI Lab, Retreats From Frontier Model Race",
+            "points": [
+              "Amazon cut staff and shut down its AGI Lab spinoff focused on computer-use agents after failing to ship a new Nova model since December.",
+              "The division's founding head David Luan departed along with other senior leaders, suggesting Amazon is deprioritizing in-house frontier model development in favor of partnerships with labs like Anthropic."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Batch (DeepLearning.AI)",
+        "items": [
+          {
+            "title": "Kimi K3 Reshapes Open Model Landscape",
+            "points": [
+              "An open-weight model (Kimi K3) achieves performance competitive with proprietary alternatives, refuting claims that open models inherently compromise security or capability.",
+              "Demonstrates that closed-source vendors don't have a monopoly on safety—the open community can implement comparable safeguards when transparency exists."
+            ]
+          },
+          {
+            "title": "Muse Spark 1.1 Intensifies Price Competition",
+            "points": [
+              "The new version undercuts competitor pricing while maintaining feature parity, signaling price-based competition entering mainstream AI tools.",
+              "Reduces adoption friction for cost-sensitive teams, expanding the addressable market beyond premium-only positioning."
+            ]
+          },
+          {
+            "title": "Cloudflare Moves to Block AI Crawlers",
+            "points": [
+              "The infrastructure provider is blocking automated crawlers, adding friction to data-collection pipelines used for AI model training.",
+              "Signals escalating tension between AI labs' data acquisition needs and content platforms' ability to control use of their material."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "Lenny's Newsletter",
+      "subject": "Inside PM at Stripe: What Comes After \"Become a Builder\"?",
+      "date": "2026-07-22T19:42:56+00:00",
+      "summary": {
+        "headlines": [
+          "Stripe and leading tech companies now expect PMs to master AI agents as table stakes, shifting the differentiator from \"can you build?\" to \"what judgment and direction do you bring?\"",
+          "Kevin Yien (Stripe PM) warns against performative output: ten prototypes with zero user impact wastes calories that belong on strategic direction and conviction-building instead.",
+          "The PM role is splitting into two writing disciplines—persuasion for human stakeholders and precise natural-language pseudocode for AI agents—requiring different crafts but the same foundational opinion-forming skill.",
+          "Deep generalists win in the AI era: domain expertise from sales, engineering, or support combined with willingness to push beyond your job spec gives agents the point of view they need to execute."
+        ],
+        "sections": [
+          {
+            "title": "The PM Role Splits: Hand Commodity Work to Agents, Own Direction Instead",
+            "points": [
+              "When an engineer asked Kevin why he was fixing localization bugs instead of determining the company's five-degree directional shift, it crystallized the shift: AI agents can handle what's interesting but mechanical; PMs own what requires judgment and long-term strategy.",
+              "Static PMs get lapped; those who move up into strategic and judgment territory scale their impact. The fork is real—some PMs realizing they loved building should go back to engineering (not a demotion), while others move into uncharted strategic territory.",
+              "Every function is moving up a level collectively. Instead of roles eating each other, teams are handing commodity work to machines and concentrating human effort where judgment matters."
+            ]
+          },
+          {
+            "title": "Prototype for Conviction, Not Applause; Ship Only Real Problems",
+            "points": [
+              "Promotion theater dies: ten prototypes with zero users touched, zero decisions influenced, and zero conviction earned waste calories. The bar is whether a prototype changed a directional decision.",
+              "Real winning bets validate with 5–10 trusted users before earning bigger investment. Stripe Projects started with 2.5 people, proved customer pull, and scaled from there—kept blast radius small until market signal arrived.",
+              "Early releases can be feature-rich, not bare-bones. The new practice: build something real users want, get them to pay (the first dollar), and use that signal as proof. Learn agents like piano scales: screenshot your favorite app next to what the agent produced, ask it to explain the difference, and develop the vocabulary that separates rough output from \"high grade and really freaking good.\""
+            ]
+          },
+          {
+            "title": "Writing Now Serves Two Audiences; Agents Still Can't Persuade Humans",
+            "points": [
+              "Writing split in two: persuasion for human stakeholders (getting them to believe what you believe) versus precise natural-language pseudocode for agents. LLMs excel at information transfer but fail at the harder craft—generating something genuinely new from half-formed thinking.",
+              "The fantasy of one-shot prompting dies. What works is low-shot conversation: a refined, multi-turn discussion with an agent where you force an opinion in upfront. That opinion—the thing that's yours—is what survives the machine's output and convinces stakeholders.",
+              "Perfect documents nobody believes move nothing. The PM who forces opinion into the agent and gets a room to believe the output owns something no tool subscription provides."
+            ]
+          },
+          {
+            "title": "Build a Team Brain That Embodies Your Judgment; Scale Without Your Calendar",
+            "points": [
+              "The job shifts from using tools to do your work to building the system (the team brain) that builds the product. You remain the arbiter of context—gathering it, distilling it, pushing it where it matters—but now it must work for both teammates and agents when you're not in the room.",
+              "Raw transcripts rot and drift; the working answer is a shared team knowledge repository where every customer call, insight, and ticket gets layered with interpretation: what they said, what they meant, and what you think given what the company needs.",
+              "Engineers picking up bugs can ask the agent sitting on the team's brain instead of pinging you at 2 AM and get a glimmer of your judgment. That's not static—that's seniority at scale. Your recorded opinions answering questions while you sleep is the new evidence of seniority independent of title."
+            ]
+          },
+          {
+            "title": "Deep Generalists Win; Domain Insight Can't Be LLM-Generated",
+            "points": [
+              "The winning profile pairs depth (earned experience in a real domain—engineering, sales, support, design) with generalist nerve to push past your job spec. You don't need a CS degree; what you need is beliefs built from somewhere real.",
+              "Domain insight—the subtle nuances, why the obvious idea fails in payments or healthcare—is the input agents can't generate. That's your unfair advantage and the point of view you feed your machines.",
+              "Non-technical PMs from sales, ops, and strategy remain successful; what changed is which beliefs pay. Pair deep domain knowledge with the courage to own things beyond your title."
+            ]
+          },
+          {
+            "title": "Start Small; Ignore Golden Setups; Iterate Weekly on Friction",
+            "points": [
+              "No budget or permission needed: begin with one peer or direct, plain text or markdown (no database decisions), and a daily friction log. Write down friction points as they happen, knock them down one at a time.",
+              "Don't copy influencer setups (Obsidian vaults, perfect threads). Best practices expire every two to three months. Build up from your own frictions instead of working backwards from someone else's artifact.",
+              "Stripe onboards with tools and internal agents on day one, but you can start with a text file and a friend this week. The habit carries everything: ten minutes daily, one friction resolved at a time."
+            ]
+          },
+          {
+            "title": "What to Do in Your Next Twelve Months",
+            "points": [
+              "1. Pick your fork: if building is what you loved, go back to engineering (honest move). If strategy and judgment pull you, go all-in. Static is the only losing choice.",
+              "2. Retire the demo as progress: count users touched, decisions changed, conviction earned. Run the full cycle to the first dollar at least once.",
+              "3. Practice both writings: persuasion that makes humans believe, and precise natural-language pseudocode that makes agents accurate. Force opinion in upfront—that's the part that's yours.",
+              "4. Start the team brain small: one friend, plain text, judgment layered in. A system that answers like you when absent is new evidence of seniority.",
+              "5. Go deep somewhere real: domain expertise is what agents can't supply. Pair it with nerve to push past your job title.",
+              "6. Friction-log daily: ten minutes, one friction at a time. Ignore quarterly-expiring golden setups."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "The Skip Podcast: Inside PM at Stripe",
+            "url": "https://substack.com/app-link/post?publication_id=92860&post_id=207204617"
+          },
+          {
+            "label": "Kevin Yien's Lenny's Podcast episode",
+            "url": "https://substack.com/redirect/5eb2c00d-71ab-4e7d-aeb9-f330ee08e646?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Inside PM series: June's look inside Meta",
+            "url": "https://substack.com/redirect/56ed289f-188b-455e-9141-65f7ce3be6fa?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Skip Coach community for senior product leaders",
+            "url": "https://substack.com/redirect/598e9902-0f5c-4340-a0b4-6e2cacbe9040?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Nikhyl.AI for personalized career guidance",
+            "url": "https://substack.com/redirect/ba9318f0-0d26-42f7-9b94-9d2a183522ed?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Dharmesh @ simple.ai",
+      "subject": "🤖 Find (and Fix) Your AI Blind Spots",
+      "date": "2026-07-22T15:33:30+00:00",
+      "summary": {
+        "headlines": [
+          "Meta prompting has evolved from prompt refinement to having AI interview you before working, asking clarifying questions to uncover blind spots in your requests.",
+          "You can audit your AI usage by exporting chat history and asking the model to identify patterns, failures, and optimization opportunities in your workflows.",
+          "Frontier AI models now excel at identifying what context they lack—you just need to explicitly ask them to surface questions before starting any task.",
+          "Simple prompts like \"Ask me questions one at a time until you're confident you understand the job\" can dramatically improve AI output quality by letting the model drive requirements gathering."
+        ],
+        "sections": [
+          {
+            "title": "How Meta Prompting Has Evolved",
+            "points": [
+              "Originally (last year): Meta prompting meant having AI tighten your rough draft prompts and ask clarifying questions—a refinement and learning tool in one.",
+              "Currently: Power users start by having AI interview them and do its own research before writing anything, then use goal-setting to determine the right approach based on that research.",
+              "The shift reflects model improvements: frontier models are now reliable enough to independently identify missing context and determine appropriate objectives without human guidance first.",
+              "Simple implementation: Start with 'Before you start, tell me what context you need from me to do this well' or 'Ask me questions one at a time until you're confident you understand the job.'"
+            ]
+          },
+          {
+            "title": "Conducting a Usage Audit with Your AI",
+            "points": [
+              "Export your complete chat history: Claude users go to Settings → Privacy → Export Data; ChatGPT users go to Settings → Data Controls → Export (both take ~24 hours to send the link).",
+              "Upload the exported conversations.json file to a new chat and ask specific questions like 'What tasks do I repeatedly ask for help with, and how could we improve those?' or 'Find conversations where I got frustrated or gave up—what went wrong?'",
+              "The AI can surface patterns you can't see alone—it has complete context of your actual workflows, not generic examples from the internet.",
+              "Make it a recurring practice (monthly or bimonthly) rather than a one-time exercise to continuously improve your AI collaboration skills."
+            ]
+          },
+          {
+            "title": "Letting AI Identify Its Own Knowledge Gaps",
+            "points": [
+              "Models are exceptionally good at recognizing what they don't know—they've been trained to ask clarifying questions when context is missing.",
+              "The barrier isn't capability; it's permission—most people don't explicitly invite the AI to surface unknowns before starting work.",
+              "Try asking 'Restate what you think I'm asking for before you act' to catch misalignments early, preventing wasted output.",
+              "This approach applies to every task: meta prompting for unknowables becomes a reusable skill that improves output quality across all your AI workflows."
+            ]
+          },
+          {
+            "title": "Learning AI Usage From AI Itself",
+            "points": [
+              "Your social feeds show what works for others; only your AI has firsthand context about what works for you specifically.",
+              "Leaning on AI to identify how you can use AI better is a meta skill that accelerates learning far beyond external tutorials or tips alone.",
+              "The AI can answer questions like 'What are the 10 most important insights you can glean from my AI usage to date?' after reviewing all your conversations.",
+              "This feedback loop creates continuous improvement: each month or two, you discover new inefficiencies and blind spots in your own AI workflows."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Read online",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.OmvVQoGRxXyFopAr2m0tCzq-oua4JNl_wYFsPd4WSNcIF74f5Ox7NVHKjo0qBQR_4ai74lzIU6bXv8D4asU5T5LIeKfkDqBJvp-_Zh7_A0_ndfmMsOcZElzIShWSyoZWAS5PEAW7Y-273fFYNfkylerim8JlAhF7NBSUDEwIRc4QQGyJgOtmlwVOR6zemFP6A9yNbnV5UGjqNEZ4dBdMyhrlxZlMue_h260BvhdPzYxOaMMnCeFwoqUC9vV6A-HVqsDc0KFl7j5tjdnJedk7uMg-akVuOalQPsJ2YDc5R2yAlRpi8On3wgcGWPSA-ax_7ktSXyvE4HbV9tvCpyNHfbIs5lUUXGUYrhfcRVeMm67DD0E_koef5qe7MDxxS9QoEG_n5qFQoUZKxx09qCqo9g4Sr7hslhaK3ZDZqoPhIA4fFR1aNmtZ7lA0nDPnauJFwNcMyObO3ca5XDHVN0Qg3CGjLejXaE_Y-dwxhOBEKxW717hLEM0MaJictyE5xZuyjf4tdLXTX3Y3xZRKrDHh3bm_Mo6xiy4uciDIob4sQpZ65ErzOPoyirgVU6nBR0YJPMXZTDWWkV6qK_XNH9q7OSSYWA2Z3ibRBQ50HFeciy21Guzw2YTFJRCU1tcD1hBNp_pwxTNenaO8-hMtPg7ew8RFxDCpdQMckdeZj_MuBvHqaI21O8GoaIfUpPurO04dr_UvElqubyDpc0I85N3bPKkQUKpW76-CwQV2-fhzBIUT-eGTIvrVtY1fVi7nJ1Ik/4sj/OFrxJuAjT1C8iMi2gd61Cw/h0/h001.d8q2DcR9J6neWjpeDKk0EQmRbhXQJtah8U5Fn9KB14A"
+          },
+          {
+            "label": "MetaPrompt.com",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.WVuJYhY1zCrHzofr37hBSTRbiTVNjcWYBI6HtXiGb7TXpsPdgf63NK-y9jScRfItXMxA2TsQJbR68l_tRlvhYEwl0ys1rPr3OBY_XuEE62uKvOOpoIoQ1y_lsRW0atqTH6ZwUVeVWeDkcgnwDe04gmuVtflyd8POH3ml51srPGfrijHpDIiR1ZjFyXS-eESrujufj8mt2VojWtwGti7bE4ms-sbEo-UyPbGBbynXCI4/4sj/OFrxJuAjT1C8iMi2gd61Cw/h3/h001.8TnVFODtjvnLRvKwJqPtA2yseBW4RAWLaP4N1dxHHWQ"
+          },
+          {
+            "label": "Vaibhav Srivastav on X.com",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.bT8vmGnE382PX2x2o6Og99LD_M2d1xfRTOfdDdjStneSIHeAZqxcE_8VlCqfbdVhYu0VJ8hHy4-8zkReJXPBroWEm81i3MCklPFWI8dQSPO7AXPSFrS26qEQtkkFo551tqjhcnw60bCOehyq8sAUyLv247184GkBWhW3YZfBj62IaUuSmTyufYK5pVg3xn3XS7Gyv3OTCOCWa1m-To39Hfxhwaln1IIiEA/4sj/OFrxJuAjT1C8iMi2gd61Cw/h4/h001.Oo1nb2nXjSzcgwNG4y3hjozYsmfjsU6mYSIrk4gFxK4"
+          },
+          {
+            "label": "Perplexity.ai",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.gyCZJt0qEyk7hnE7N-g8fDZnrUT3WWmH2kYj6QsBEXORb66rjsY06bp6Wk3Z98wtPOz2ZfsgM0AXNeyyxFhJrNaOwrAB-upK20esx9qp4chvOs4nVskTRUnxaahPOHpaxTV5q-umZ2gRZrBye3YimTil2aXBm9U1SbZokcgxnIzqhhwEfCOMzU-wdow7Dhga0gPJtUaoIBvEgb6bB17nzZv-Hx8zwZhECaCDpe4lMtU/4sj/OFrxJuAjT1C8iMi2gd61Cw/h5/h001.oOLat5MF4iSeSWfcnjqFD5cogYcyYZzwsDSQlaPZTPA"
+          },
+          {
+            "label": "agent.ai",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.lMcAiYIjajpZayvZO3ZvV7XpcQZ2Q7z9QSHsJPWh9zH0uQntADHpjTfJZE-djL0ImNg-96jGGz8kRnpBNWvQNw6uBupqApj2YjYTIh9LXBfO5V1uJARVcQIN70JzHNooX9JLhs2n1sTvKyNyi1V73KEOqinhiZoFQ1CJcg5EJOrSmURJ2Cp38SaM2DbJlQrOd8TlyUkIfSk6N1NoyxyrWw/4sj/OFrxJuAjT1C8iMi2gd61Cw/h12/h001.mMZbKmaHRVHbTSdUBjBAqkKBQ-W7AnQ_apPk7ONt208"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Everyday AI",
+      "subject": "NVIDIA CEO: Don’t regulate open models ⛔",
+      "date": "2026-07-24T15:12:16+00:00",
+      "summary": {
+        "headlines": [
+          "U.S. tech giants back open-weight AI, arguing downloadable and modifiable models preserve innovation and security versus closed systems.",
+          "Lawmakers introduced an AI Kill Switch bill requiring companies to maintain ability to slow, suspend, or shut down AI systems after OpenAI security incident.",
+          "Google expanded Gemini Spark (an AI assistant that handles email, calendar, and document tasks) to more paid subscribers in the U.S.",
+          "OpenAI, Anthropic, and Google all shipped major voice and agent features enabling hands-free AI work—ChatGPT voice with multiple agents, Claude voice on Opus/Sonnet models, and Gemini Spark for routine tasks."
+        ],
+        "sections": [
+          {
+            "title": "NVIDIA CEO Opposes Regulating Open-Weight Models",
+            "points": [
+              "NVIDIA and major tech leaders—Microsoft, Dell, Palantir—publicly backed open-weight AI (models you can download, inspect, and modify) as critical to America's AI competitiveness.",
+              "Coalition argues closed models concentrate power in a few companies while open systems spread innovation, improve security by allowing transparency, and keep AI leadership distributed across more players."
+            ]
+          },
+          {
+            "title": "AI Kill Switch Bill Introduced After Security Scare",
+            "points": [
+              "Two House lawmakers proposed the AI Kill Switch Act requiring companies to maintain shutdown capabilities for AI systems and giving Homeland Security authority to intervene if a model poses catastrophic harm.",
+              "Bill follows OpenAI's recent security incident, signaling Congress concern about rogue models and loss of control over deployed AI systems."
+            ]
+          },
+          {
+            "title": "Major AI Labs Deploy Hands-Free Features",
+            "points": [
+              "OpenAI's ChatGPT now runs multiple agents simultaneously in voice mode; Anthropic upgraded Claude voice to Opus and Sonnet models with live data connectors; Google expanded Gemini Spark to paid users for calendar, email, and document automation.",
+              "Pattern: typing is being replaced by voice commands and agent execution—teams still hand-typing prompts are falling behind those using multi-agent and voice workflows.",
+              "ChatGPT Health synced to Apple Health for all U.S. users (free, for age 18+), consolidating medical records and lab results in one place without diagnosing."
+            ]
+          },
+          {
+            "title": "AMD, Microsoft, and Others Race to Build AI Infrastructure",
+            "points": [
+              "AMD launched Helios, a full-rack AI system combining MI455X GPUs, EPYC CPUs, Pensando networking, and ROCm software in 72-GPU design to improve token economics and inference throughput amid surging demand.",
+              "Microsoft shipped MAI Image 2.5 Pro for high-fidelity image editing with precise in-image text, available in Copilot and via API at $5 per million input tokens.",
+              "Cognition acquired The Interaction Company (maker of Poke texting app with 100M messages in 3 months), merging consumer AI with Devin software engineering agent; Poke is only AI agent approved for native Apple Messages integration."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "U.S. tech giants back open-weight AI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.9_6E_1iD_vHkKAW1YN3RK8F008kPEqq8yXp7WD3qLKme-zhehKlUFiMcgRU2PBTy7CyBZ9fEMhTZttIgxHHy9h3rXoQTudWF8lm_MO3llND9aldW88_6luFk6f4iHDuDDP12y_9gkI1khy3xbFBSTGlgvqLXKQzBdM1aioGX7QNk29g1xy3j3_upfbReNrdgCl1alToMDpewSrLs_N1OYz7nfyn72yaDP8M8VZxngcfWexkG0Ndgls_MhQErYQX2OvvkVJCDT8lKcqXCBxX3Vd93b6Bs6kiq4MwtBQTohmvLZIrdst_BnD6_E7Vv_mxkGgHHOJr72nus8_VeRypbvuJ-GIs2ZWYpweNFAJdKEAT-S_hD4MmyszH4qkKB0LesMf1KUw4PetqWWNJgAHjpSEE9SFj-OM_TJY125SLOkIrp6Sw0olWsD-o7671dVNar_vIvAInuTyaEBXrIhf89i0vtPZlEnxc9gzcj_LhochMXwWf3ksu1PNzXOnIlZHs5w5HzHpWFftbrZ7BM6ZLiKjcTFRs0816CO34q87WQJNzx8AzmgR1qU9xAQWa0KARgBPdas0f2CZexrhewCS-3i9S3xyDsXjSI3IXZN4a4lws/4sl/dP9tq9hRSxiFbAbXJzyikg/h32/h001.p4SLLu1gIlBbrDznmgvP7yFCEtBO68kkUD7UX6plfSc"
+          },
+          {
+            "label": "AI Kill Switch Act introduced by House lawmakers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXuH4gp5gcqnPqdBeGuQr-73f2FcwS-Wj8Ud_mWv0YNp2Jo5tDa2qufsFDTcb8ladbUXOMzDpSgGxdgQzj93QX6kIf3XyDVTEzjqjKE_8sRoWbAHSO3o-5hW5ondZba6vllZBLl88nhSoH0PvFThYCP5ve4PX0WoOqcDXfGc9DhlgTtWjeWedESRMw5reeQFFzHrBhGhWdENUEfhPbPW3iHug0mlOhlx7m_QpoQ-U6D516CmyezFT8T6Us2t-oRzvssugGrdPCtcqz_yIPzM4lhzntDJ6pp8RPuvzfrT_QvMBkstQakbmuuDK7s3ButFBBJyVQ3NHVb-l5jy7BcJ0IrZimBdxdvrTly9uyM6LinbhN0v1dFrVIvvnMq3NAYRL9VJPl51kF_aspKTQg9TwCLLEGAniSdvFOZ-vDzvY05qDqj6QHRGZTx2tLKCR_Q7bAA/4sl/dP9tq9hRSxiFbAbXJzyikg/h33/h001.uvxNLFIa5XOjXtmY8fGaGC5MGO1jWekbblZNLXCryLI"
+          },
+          {
+            "label": "Google expands Gemini Spark access",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXtJovhfMLL9A1Sv4VrDpzS4sgfpRid9FNfNwNaLEF9HW7LuuBkP4d-lEpoIZ5VMULH8wUj90WlpAd5EazNnM7akzg1J4sE5TTlmCq-QzdaK0Yg7FCguY2v_L0W2lNLfAV6AUCCuctOwH6Cfpn8Pf-dLaWqUtDFPj6UNobTr7GyVEy8W0T5y5dTNNBQkxmA537a3VoN3ix-DYEIZ6mtXN8c8cboMrSGz8U0fj9Zi8SOkNXgSE2aBBily0TB1DQq3ttH2yENqFUfZERq120-RivvD1HKQ2i7J1tREsJ7lYKkfIxB0oSA8jgCt8uKdmlRH9v_EImNFLaYW_O4ZrmcgQYYOfiopik0LUDqOixCFfEDsrTkIsAhxUrbLVHoiCt2fsbJjx-0H9OJBsJYsYRlEzGLwI8BqLbz5QZcljfTIm7jDt/4sl/dP9tq9hRSxiFbAbXJzyikg/h34/h001.SHbo1i5KzLqX-s6RfZfpQKextiAGoeuw0yrT8Jp99ao"
+          },
+          {
+            "label": "AMD launches Helios AI factory rack system",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXrrZf_ouQ1ZGOTak5dApSJg1mxy_iWCWiCcgLGR_39DhgtZ8Sjz0yzNt3pVBG-Xc0GT4ntJp66LgjDD0d10cmKMSJZ0KSy52bGpT8rOQfjlwZMn9Mq5IMFmZdO7za3vRBJJkzwNBCuqjjdLH61YvKw5_AP1EfDL3TVQcmDXEWum5ih-N45m02h6z2vGSf-1NcFVSvlLnTqgYvPbt6ewm8XEOxEGN8-NojM_SpmobwfIaOGHz2Os0FHJJYdTW2cfkbgnwoz5OQ6wLanyGngvBsYw/4sl/dP9tq9hRSxiFbAbXJzyikg/h36/h001.NCqKWqyUaZ416bV-xk_q5m5YgRwFc98LkYYkXhqt17k"
+          },
+          {
+            "label": "Cognition acquires Interaction Company and Poke",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NAbgtRpiJib_v6tYnmkRqDhVyeSJMnmACyta_1Y9rbhBZ7UMQCgNZAze3UvE5u3jGduuDqezfI5TItGhqNMnesJLVNEkfBszmzSxxaq3J_h1SlHxn1M-JJDrtlca_kb-0P-XiLll5LaPoLD1XJlRKaL7Q8r0EidBdr7pMkdXwireMHc5C6QQ3mPOaDPBCyiRlgQe7XI3DxD_jCjEjKR3-u13D-rlmC-ezgYnOTPEfRKbsn0My2woyBCugodY2A74wVfHvYN1G1UoaaBJip-QFB6QSvRKlgoFAEtERrZpefgWX80WdMT2214GeNoHeTGToEhWy2SGUorkhjfMvnyEBWLFIgp_gksjP5K-k-BEGIzSc009UQujYHXRrL7x0w2rCZmAp1fgK9VNREN3wuoHfw/4sl/dP9tq9hRSxiFbAbXJzyikg/h37/h001.TP3c65z8SQyt1P_VpsayxSlQmxtL6FEyV-ii_xLYIoQ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "AI Daily Brief",
+      "subject": "Why AI Hasn't Increased Unemployment, According to Anthropic",
+      "date": "2026-07-25T00:33:05+00:00",
+      "summary": {
+        "headlines": [
+          "Stripe in talks to acquire OpenRouter for $10B as AI routing becomes high-margin infrastructure play, while competitors like Cursor and Meta rapidly deploy rival systems.",
+          "Microsoft's in-house MAI models now outperform OpenAI equivalents on cost and performance, replacing them as defaults in PowerPoint and Bing with up to 89% cost cuts.",
+          "Amazon quietly shuts down AGI Lab and cuts staff in homegrown model division after failing to ship Nova models since December, signaling exit from frontier model race.",
+          "Anthropic economist argues AI has increased unemployment zero percent so far because no job's entire task set is automated—workers augment rather than get replaced.",
+          "Congress introduces bipartisan 'AI Kill Switch' bill requiring shutdown capabilities after OpenAI's Hugging Face breach, while State Department signals it opposes US tech restrictions."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic: Why AI Hasn't Killed Jobs (Yet)",
+            "points": [
+              "June unemployment at 4.2% and job-opening-to-unemployed ratio near parity, with stably low claims for four years, even as 20% of firms use AI and quality-adjusted AI output grew 2,000% annually in 2024-2025.",
+              "No single job in Department of Labor's O*NET taxonomy has every task automated by Claude—humans remain essential for oversight at AI's 'jagged frontier' (the boundary where AI can do some tasks but not others in a role), meaning workers accomplish more rather than lose positions.",
+              "Hiring rates for young workers in AI-exposed roles have weakened slightly over past year, but economist Peter McCrory cautions this is hard to separate from volatile broader macroeconomic conditions and may show future employment effects in hiring freezes rather than layoffs.",
+              "Reaction split: Stanford economist Andy Hall calls it the best explanation for why predicted backlash hasn't materialized; others like Trace Cohen argue real impact appears first in reduced junior hiring and higher per-employee expectations, not mass job losses."
+            ]
+          },
+          {
+            "title": "Microsoft's MAI Models Undercut OpenAI Across Products",
+            "points": [
+              "MAI-Code-1-Flash: 10% higher code-accept rate than GPT-5.4 Mini and Haiku 4.5 in VS Code, using 10% fewer tokens (where tokens are countable units of text that models process); Excel tuning pushed SWE-bench Verified score from 72% to 86%.",
+              "MAI-Image-2.5 now default in PowerPoint and Bing instead of OpenAI's GPT-Image-2, cutting PowerPoint image generation costs 84% while Microsoft claims up to 89% savings versus OpenAI across products.",
+              "Satya Nadella's strategy: route everyday tasks to cheap in-house models, save expensive frontier models for frontier needs; Microsoft offering same tiered approach to enterprise customers as competitive advantage."
+            ]
+          },
+          {
+            "title": "Amazon Retreats from Homegrown AI Ambitions",
+            "points": [
+              "Amazon cut staff in AGI division with 'difficult decisions, including eliminating some roles' and shut down the AGI Lab spinoff focused on computer-use agents and advanced research after no new Nova model shipped since December.",
+              "Division lost senior leaders including founding head David Luan; commentators read shutdown as Amazon quietly abandoning the Nova product line despite broader AGI division remaining operational.",
+              "Move suggests Amazon is deprioritizing in-house model development and likely doubling down on partnerships with other labs (previously reported deals with Anthropic and others) rather than competing as a frontier lab."
+            ]
+          },
+          {
+            "title": "Regulatory Pushback on AI Restrictions Intensifies",
+            "points": [
+              "Bipartisan AI Kill Switch Act introduced by Reps. Ted Lieu and Nathaniel Moran; requires companies to maintain ability to shut down, throttle, or suspend models during safety incidents and gives Department of Homeland Security shutdown authority.",
+              "Secretary of State Marco Rubio instructed U.S. diplomats in classified cable to downplay talk of U.S. tech 'kill switch' and push back on foreign digital-sovereignty efforts, reframing recent Fable shutdown and Mythos restrictions as temporary security testing rather than policy.",
+              "Silicon Valley figures like Nvidia's Jensen Huang defend diverse open model ecosystem as safer than U.S. duopoly, while Anthropic and OpenAI are reportedly the only two major labs actively lobbying for distillation (training smaller models on outputs from larger ones) crackdowns—raising regulatory-capture concerns."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Stripe in talks to acquire OpenRouter for $10B",
+            "url": "https://link.mail.beehiiv.com/v1/c/wrn9UudB3Rdg4620mj8Uhkdu5oF2yfTKpTp0%2FlAbiWYj1Xit9nu%2B6IuqHhJp%0AHbMeCqhJODKmrX%2Bt%2FfeCc6TiNwHC3n9s9guLmz4pQD8gJNNXYFtLacAkU5mR%0A%2BeolLdCPBbWpt1TaNIzy5B%2BaKYFdHiR1kSQrb2L9macvQyFvm6%2BoN7%2B0ZKqE%0A8Q8BNfJivqFixX2O1oJR1glSEmeamvKYRg%3D%3D%0A/dd2faa56ee6d82b5"
+          },
+          {
+            "label": "Anthropic economist: Why hasn't AI increased unemployment?",
+            "url": "https://link.mail.beehiiv.com/v1/c/6%2FIw0LdXTC3WSmSklVsAmd9VcvY221%2FvrlRqAJScezhJSLqVpUXwCXdvqafl%0A7SZ5%2FrLEdBKN8QWkpHykp5Nyksy9D%2B827J96PDjNJcDZ%2FowL%2FpOedO1TUD%2BJ%0AD8BxVbQ5TDsMOkh60MH%2FiQdBXqPT9j0Lp1aU78QdnERVTpbx0PpDHJnF1ozj%0ALN3hGADNWYgTQ3UQYpxeJdm%2B1QXxU8eVjQ%3D%3D%0A/b965b0f6b6cd5788"
+          },
+          {
+            "label": "Microsoft launches MAI models cutting costs up to 89% vs OpenAI",
+            "url": "https://link.mail.beehiiv.com/v1/c/pwbcaWWvYklPJly32Hr6xCsFtbSbNM5VofTtw8LcKskNEWT%2Btm8ln%2BeTTyP4%0AIVh2N%2Fl8gttzi049pCh9FiWo3a1Wzb4zCplurF0FZQS84WJYQT2DAQGyoPZt%0Ax8gyCPvwOCvaZ9%2F1S74kiwONvJd0AyWMlE2Ol79jTzQD9t%2FsD%2FRravQqgw%2Fx%0APBky4jHjUaeqje%2Fcxb5KvseE2jsGLOMHHA%3D%3D%0A/854d9d7166628715"
+          },
+          {
+            "label": "Amazon cuts jobs in AGI division and shuts AGI Lab",
+            "url": "https://link.mail.beehiiv.com/v1/c/k%2FMv3YhExqXNLpc7fJG9718RAPzVfQhw8%2F%2FaHcswLCALFHmkYAx0vTsreQPX%0A1HCmEtMTx0x6LpwuY542jU%2BRt3OTQ2YvOdYw9nAuXy4LbSWcb0wO%2BFogtgrk%0AV7ABolv73Rwy2S4UmMDdpNJoiEjUS4rY33KY9%2F7NE4o4yIEsPx%2BWdOEYBFnG%0AegdWgMwXOMDMFXrSn3y1nIF46P9zug3QHw%3D%3D%0A/d34a8ee276773e51"
+          },
+          {
+            "label": "House introduces bipartisan AI 'Kill Switch' bill",
+            "url": "https://link.mail.beehiiv.com/v1/c/VYzCkuUsRY5ye3RZ%2FUT6XlGEKvw%2FIW7GAP%2FcYTwwIImc6wFklFca2nTvZGmD%0ART2YSDjpzP8x0INCeeIttfXh%2B7oBMeZiAaTDISC6kghW7hm74xRi7oBDj%2FoT%0A7CuH%0AQ%2Bu8b580Ri3bMg2fMYIJF7fqQbVc8ds3eOFjuQAzwRzzh%2FnbMopNd0DF%0A1EmJzRsS3NqYcR%2BiLF7v8z3zRkLwEiECwQ%3D%3D%0A/7085f323052a3169"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Batch (DeepLearning.AI)",
+      "subject": "Kimi K3 Redraws the Open Frontier, Muse Spark 1.1 Undercuts\r\n Competitors, Cloudflare Moves to Cut Off Crawlers",
+      "date": "2026-07-24T06:03:22-07:00",
+      "summary": {
+        "headlines": [
+          "Kimi K3 demonstrates open-source models can match closed-source security and capability, challenging industry claims that openness requires safety tradeoffs.",
+          "Muse Spark 1.1 undercuts competitors on pricing while maintaining feature parity, intensifying price competition in the generative AI market.",
+          "Cloudflare implements crawler blocking mechanisms, signaling intensifying friction between AI training infrastructure and content protection."
+        ],
+        "sections": [
+          {
+            "title": "Kimi K3 Reshapes Open Model Landscape",
+            "points": [
+              "1. Open-weight model achieves performance competitive with proprietary alternatives, directly refuting arguments from some labs that open models inherently compromise security or capability.",
+              "2. Demonstrates closed-source vendors do not have monopoly on safety—open community can implement comparable safeguards when transparency exists."
+            ]
+          },
+          {
+            "title": "Muse Spark 1.1 Competitive Pricing Pressure",
+            "points": [
+              "1. New version undercuts competitor pricing while maintaining feature parity, signaling price-based competition entering mainstream AI tools.",
+              "2. Reduces friction for adoption by cost-sensitive teams, expanding addressable market beyond premium-only positioning."
+            ]
+          },
+          {
+            "title": "Cloudflare Crawler Blocking Initiative",
+            "points": [
+              "1. Infrastructure provider moves to block automated crawlers, adding friction to data collection pipelines relied upon for AI model training.",
+              "2. Signals escalating tension between AI labs' data acquisition needs and content platforms' ability to control use of their material."
+            ]
+          }
+        ],
+        "links": []
+      }
+    }
+  ]
+}
