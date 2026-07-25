@@ -34,8 +34,12 @@ class Newsletter:
     url: str
     subject_contains: list = field(default_factory=list)
     subject_excludes: list = field(default_factory=list)
+    # {header_name: substring} — used to split newsletters that share a From
+    # address and have teaser subjects (e.g. the TLDR feeds, told apart by the
+    # list id in their List-Unsubscribe header). ALL listed headers must match.
+    header_contains: dict = field(default_factory=dict)
 
-    def matches(self, from_header: str, subject: str) -> bool:
+    def matches(self, from_header: str, subject: str, headers: dict = None) -> bool:
         from_l = (from_header or "").lower()
         if not any(s.lower() in from_l for s in self.senders):
             return False
@@ -44,7 +48,21 @@ class Newsletter:
             return False
         if self.subject_excludes and any(s.lower() in subj_l for s in self.subject_excludes):
             return False
+        if self.header_contains:
+            headers = headers or {}
+            for name, needle in self.header_contains.items():
+                if needle.lower() not in headers.get(name.lower(), "").lower():
+                    return False
         return True
+
+
+def header_map(msg) -> dict:
+    """Flatten an imap_tools message's headers into {lowercase_name: value}."""
+    out = {}
+    for key, val in (getattr(msg, "headers", None) or {}).items():
+        joined = " ".join(val) if isinstance(val, (list, tuple)) else (val or "")
+        out[key.lower()] = joined
+    return out
 
 
 @dataclass

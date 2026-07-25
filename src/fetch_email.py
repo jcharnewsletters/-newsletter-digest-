@@ -12,7 +12,7 @@ from imap_tools import MailBox, AND
 
 from . import state as state_mod
 from .clean import html_to_text
-from .config import LOOKBACK_HOURS
+from .config import LOOKBACK_HOURS, header_map
 
 IMAP_HOST = "imap.gmail.com"
 
@@ -38,7 +38,7 @@ def fetch_issues(newsletters, state) -> list:
     issues = []
     with MailBox(IMAP_HOST).login(address, password, initial_folder="INBOX") as mailbox:
         for msg in mailbox.fetch(AND(date_gte=since), mark_seen=False, bulk=True):
-            newsletter = _match(newsletters, msg.from_, msg.subject)
+            newsletter = _match(newsletters, msg.from_, msg.subject, header_map(msg))
             if newsletter is None:
                 continue
             message_id = msg.headers.get("message-id", (msg.uid,))[0].strip()
@@ -64,9 +64,9 @@ def fetch_issues(newsletters, state) -> list:
     return _latest_per_newsletter(issues)
 
 
-def _match(newsletters, from_header, subject):
+def _match(newsletters, from_header, subject, headers):
     for n in newsletters:
-        if n.matches(from_header, subject):
+        if n.matches(from_header, subject, headers):
             return n
     return None
 

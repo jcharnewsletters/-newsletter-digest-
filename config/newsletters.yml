@@ -74,7 +74,10 @@ newsletters:
     batch: ai-am
     cadence: daily
     senders: ["dan@tldrnewsletter.com"]
-    subject_contains: ["TLDR AI"]
+    # TLDR AI/Crypto/Tech share this sender with teaser-only subjects; the list
+    # id in the List-Unsubscribe header is the reliable discriminator.
+    header_contains:
+      list-unsubscribe: "l=eedf6b14-3de3-11ed-9a32-0241b9615763"
     url: https://tldr.tech/ai
 
   - id: taaft
@@ -165,8 +168,8 @@ newsletters:
     batch: tech-am
     cadence: daily
     senders: ["dan@tldrnewsletter.com"]
-    subject_contains: ["TLDR"]
-    subject_excludes: ["TLDR AI", "TLDR Crypto"]
+    header_contains:
+      list-unsubscribe: "l=cfa2d55a-b7be-11e8-a3c9-06b79b628af2"
     url: https://tldr.tech/
 
   # ---------- Crypto — morning batch (by 9:30 AM ET) ----------
@@ -186,22 +189,14 @@ newsletters:
     senders: ["marketpulse@newsletters.coinmarketcap.com"]
     url: https://coinmarketcap.com/newsletter/
 
-  - id: coindesk-daybook
-    name: "CoinDesk Daybook"
+  # CoinDesk sends Daybook and Headlines from one address with teaser subjects
+  # and no header that separates them, so they're captured as a single feed.
+  - id: coindesk
+    name: "CoinDesk"
     category: crypto
     batch: crypto-am
     cadence: daily
     senders: ["newsletters@coindesk.com"]
-    subject_contains: ["Daybook"]
-    url: https://www.coindesk.com/newsletters/daybook-us
-
-  - id: coindesk-headlines
-    name: "CoinDesk Headlines"
-    category: crypto
-    batch: crypto-am
-    cadence: daily
-    senders: ["newsletters@coindesk.com"]
-    subject_contains: ["Headlines"]
     url: https://www.coindesk.com/newsletters/
 
   - id: tldr-crypto
@@ -210,7 +205,8 @@ newsletters:
     batch: crypto-am
     cadence: daily
     senders: ["dan@tldrnewsletter.com"]
-    subject_contains: ["TLDR Crypto"]
+    header_contains:
+      list-unsubscribe: "l=514b3efb-6f16-11ec-96e5-06b4694bee2a"
     url: https://tldr.tech/crypto
 
   # ---------- Crypto — evening batch (by 7:00 PM ET) ----------

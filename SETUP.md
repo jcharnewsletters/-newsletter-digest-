@@ -109,7 +109,7 @@ Done. The six daily schedules take over from here:
 | Alert | Deadline (ET) | Covers |
 |---|---|---|
 | Morning Stocks | 9:15 AM | Opening Bell, Yahoo Finance, Wall Street Breakfast, Bloomberg, Investopedia Pre-Market, CNBC Morning Squawk |
-| Morning Crypto | 9:30 AM | CMC Spotlight, CMC Market Pulse, CoinDesk Daybook, CoinDesk Headlines, TLDR Crypto |
+| Morning Crypto | 9:30 AM | CMC Spotlight, CMC Market Pulse, CoinDesk, TLDR Crypto |
 | Morning AI | 10:00 AM | The Neuron, The Rundown AI, Superhuman, TLDR AI, TAAFT, ultrathink |
 | Morning Tech | 10:00 AM | The Code, Techpresso, The Rundown Tech, TLDR (main) |
 | Evening Crypto | 7:00 PM | Decrypt Daily Hash, Bitcoin Magazine |

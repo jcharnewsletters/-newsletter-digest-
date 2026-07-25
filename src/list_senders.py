@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 
 from imap_tools import MailBox, AND
 
-from .config import load_config
+from .config import load_config, header_map
 
 # Senders that fan out into several distinct newsletters (same From address,
 # teaser-only subjects). We dump list-identifying headers for these so their
@@ -74,7 +74,9 @@ def main() -> None:
         for msg in mailbox.fetch(AND(date_gte=since), mark_seen=False,
                                  headers_only=True, bulk=True):
             senders[msg.from_] += 1
-            hit = next((n for n in newsletters if n.matches(msg.from_, msg.subject)), None)
+            hdrs = header_map(msg)
+            hit = next((n for n in newsletters
+                        if n.matches(msg.from_, msg.subject, hdrs)), None)
             if hit:
                 matched[hit.id].append(msg.subject)
             else:
