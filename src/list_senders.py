@@ -15,6 +15,21 @@ from imap_tools import MailBox, AND
 
 from .config import load_config
 
+# Senders that fan out into several distinct newsletters (same From address,
+# teaser-only subjects). We dump list-identifying headers for these so their
+# feeds can be told apart by header instead of subject.
+AMBIGUOUS_SENDERS = ["dan@tldrnewsletter.com", "newsletters@coindesk.com"]
+DIAG_HEADERS = ["list-id", "list-unsubscribe", "feedback-id", "x-campaign-id",
+                "x-campaignid", "x-newsletter", "x-list", "to"]
+
+
+def _header(msg, name: str) -> str:
+    for k, v in (msg.headers or {}).items():
+        if k.lower() == name:
+            val = v[0] if isinstance(v, (list, tuple)) else v
+            return (val or "").replace("\r", " ").replace("\n", " ").strip()
+    return ""
+
 
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
@@ -41,6 +56,7 @@ def main() -> None:
     matched = defaultdict(list)   # newsletter.id -> [subjects]
     senders = Counter()
     unmatched = []
+    diag = defaultdict(list)      # ambiguous sender -> [(subject, {header: value})]
 
     try:
         mailbox = MailBox("imap.gmail.com").login(address, password)
@@ -64,6 +80,12 @@ def main() -> None:
             else:
                 unmatched.append(f"{msg.from_}  |  {msg.subject}")
 
+            from_l = (msg.from_ or "").lower()
+            for amb in AMBIGUOUS_SENDERS:
+                if amb in from_l:
+                    diag[amb].append((msg.subject,
+                                      {h: _header(msg, h) for h in DIAG_HEADERS}))
+
     print("== Per-newsletter match check (last 10 days) ==")
     for n in newsletters:
         subs = matched.get(n.id, [])
@@ -78,6 +100,17 @@ def main() -> None:
     print("\n== All senders seen (for reference) ==")
     for sender, count in senders.most_common():
         print(f"{count:3d}  {sender}")
+
+    print("\n== Header discriminators for shared senders ==")
+    print("(used to tell apart newsletters that share one From address)")
+    for amb in AMBIGUOUS_SENDERS:
+        print(f"\n--- {amb} ({len(diag.get(amb, []))} emails) ---")
+        for subject, headers in diag.get(amb, []):
+            print(f"  SUBJECT: {(subject or '')[:70]}")
+            for h in DIAG_HEADERS:
+                val = headers.get(h, "")
+                if val:
+                    print(f"    {h}: {val[:110]}")
 
 
 if __name__ == "__main__":
