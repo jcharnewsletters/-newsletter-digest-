@@ -95,20 +95,29 @@ def synthesize_batch(batch_label: str, summarized: list) -> dict:
         for s in summarized
     ]
     client = anthropic.Anthropic()
-    response = client.messages.create(
+    user_content = (
+        f"Batch: {batch_label}\n\n"
+        "Per-newsletter summaries (JSON):\n" + json.dumps(payload, indent=2)
+    )
+    # Sonnet 5 runs "thinking" by default, which shares the max_tokens budget
+    # with the output — on content-heavy batches that truncated the JSON mid-
+    # object. Disable thinking so the whole budget goes to the digest, give
+    # generous headroom, and stream (required for large max_tokens).
+    with client.messages.stream(
         model=SYNTH_MODEL,
-        max_tokens=16000,
+        max_tokens=32000,
+        thinking={"type": "disabled"},
         system=SYSTEM_PROMPT,
         output_config={"format": {"type": "json_schema", "schema": DIGEST_SCHEMA}},
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Batch: {batch_label}\n\n"
-                "Per-newsletter summaries (JSON):\n"
-                + json.dumps(payload, indent=2)
-            ),
-        }],
-    )
+        messages=[{"role": "user", "content": user_content}],
+    ) as stream:
+        response = stream.get_final_message()
+
+    if response.stop_reason == "max_tokens":
+        raise RuntimeError(
+            "Synthesis output hit the max_tokens limit and was truncated. "
+            "Increase SYNTH max_tokens or split the batch."
+        )
     text = next(b.text for b in response.content if b.type == "text")
     return json.loads(text)
 
