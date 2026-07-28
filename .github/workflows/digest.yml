@@ -79,13 +79,17 @@ jobs:
               batch, hh, mm = CRON_MAP[cron]
               now = datetime.now(ZoneInfo("America/New_York"))
               delta = (now.hour * 60 + now.minute) - (hh * 60 + mm)
-              # Correct-offset cron lands 0..~15 min after target; the
-              # wrong-DST twin lands ±60 min away and is rejected here.
-              if -5 <= delta < 45:
+              # Run at or after the target ET time (10-min grace), with NO upper
+              # bound, so a run GitHub fires hours late still goes through. The
+              # only thing rejected is firing too EARLY (which happens to one of
+              # the two daylight-saving cron twins). The other twin — and any
+              # late run — is de-duplicated by run_batch's "already ran today"
+              # check, guaranteeing exactly one digest per batch per day.
+              if delta >= -10:
                   print(f"batch={batch}", file=out)
                   print("run=true", file=out)
               else:
-                  print(f"Skipping: cron '{cron}' is the wrong DST twin "
+                  print(f"Skipping: too early for '{batch}' "
                         f"(ET now {now:%H:%M}, target {hh:02d}:{mm:02d}).")
                   print("run=false", file=out)
 
