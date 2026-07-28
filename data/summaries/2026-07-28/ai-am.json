@@ -1,0 +1,663 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-07-28",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Moonshot AI releases Kimi K3, the largest open-weight model ever",
+        "points": [
+          "Full model weights and technical paper released publicly for research, personal, and commercial use, with safety guardrails included (model weights are the numerical values that power an AI system).",
+          "Model has 2.8 trillion parameters, a 1-million-token context window (ability to process ~1 million words before responding), and native visual understanding.",
+          "Uses Mixture-of-Experts architecture (specialized network sections activated per task) delivering 2.5x more intelligence per unit of compute versus prior approaches.",
+          "Moonshot also open-sourced supporting infrastructure: attention kernels, a MoE communication library, and agent-environment scaling tools.",
+          "Demand was so high after its debut 11 days ago that Moonshot suspended new subscriptions.",
+          "U.S. officials accused Moonshot of distilling (copying behavior from) American models to build K3; Beijing rejected this as 'AI hegemony,' making the release a geopolitical flashpoint as Washington debates open-model restrictions.",
+          "Expected to increase pricing and performance pressure on U.S. labs like OpenAI and Anthropic, which typically keep frontier models closed or paywalled."
+        ],
+        "covered_by": [
+          "Superhuman (Zain Kahn)",
+          "The Neuron",
+          "There's An AI For That (TAAFT)",
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Free weights don't mean free compute — running K3 requires enterprise-grade GPUs far beyond consumer hardware; Moonshot's license permits commercial hosting and resale of the model."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "K3 is specifically a Mixture-of-Experts model, a technique that activates only specialized sub-networks per task rather than the whole model."
+          }
+        ]
+      },
+      {
+        "title": "Open-weight AI policy debate intensifies (Anthropic, Nvidia alliance)",
+        "points": [
+          "Anthropic CEO Dario Amodei clarified the company has 'never advocated for a ban on open-weights models' and supports their public value, despite this exposing U.S. firms to more competition.",
+          "Anthropic instead favors upstream controls: restricting chip access, cracking down on industrial-scale distillation (training smaller models to copy larger ones' outputs/behavior), and mandatory safety testing above a capability threshold.",
+          "The Nvidia-led 'Open Weights and American AI Leadership' letter grew from 25 to 50 signatories, with OpenAI and Google newly joining.",
+          "Nvidia formed a separate 36-37 member Open Secure AI Alliance (including Microsoft, IBM, Cisco, Cloudflare) focused on open-source models as a cybersecurity asset — notably excluding OpenAI, Google, and Anthropic.",
+          "The alliance was prompted by the Hugging Face security breach, where closed, permission-locked AI tools reportedly hindered defenders' real-time response; Hugging Face's own forensic response used the open GLM 5.2 model.",
+          "Underlying tension: infrastructure vendors profit when more organizations build on open models, while OpenAI and Anthropic argue closed weights better prevent misuse — meaning the debate is really about who defines a 'secure' AI system and whether outsiders can audit it."
+        ],
+        "covered_by": [
+          "Superhuman (Zain Kahn)",
+          "The Neuron",
+          "There's An AI For That (TAAFT)",
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Frames the split as 'open defense vs. closed control,' arguing every company's stance conveniently doubles as a claim to be the 'safest' policy for its own business model."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Anthropic's proposed safety testing threshold would apply specifically to 'all models above a capability threshold,' not open-weight models categorically."
+          }
+        ]
+      },
+      {
+        "title": "Nvidia's major AI investments: Safe Superintelligence and OpenAI's Ohio data center",
+        "points": [
+          "Nvidia is investing up to $5 billion in Ilya Sutskever's stealth-mode Safe Superintelligence (SSI) startup, confirming the lab's research is 'worth scaling.'",
+          "SSI also gains access to Nvidia's Vera Rubin compute platform, raising its processing capacity by an order of magnitude.",
+          "Nvidia is reportedly discussing a $250 billion financing guarantee to help OpenAI lease a 10-gigawatt Ohio data center campus (enough electricity for roughly 750,000 homes).",
+          "The deal would shift OpenAI from renting servers to owning independent computing infrastructure, while locking Nvidia into years of guaranteed chip demand."
+        ],
+        "covered_by": [
+          "Superhuman (Zain Kahn)",
+          "There's An AI For That (TAAFT)",
+          "The Rundown AI",
+          "Staying Ahead"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Microsoft launches MAI-Cyber-1-Flash cybersecurity model",
+        "points": [
+          "New specialized model achieves 96% accuracy on CyberGym benchmarks for finding bugs in large codebases, outperforming Anthropic's Mythos by 12 points.",
+          "Costs 50% less than competing models and can handle 90% of typical security workflows.",
+          "Paired with 'Project Perception,' which deploys agent teams to simulate attacks, investigate threats, and auto-repair flaws without human intervention — CEO Mustafa Suleyman calls this 'continuous, real-time, cost-efficient' defense.",
+          "Powers a platform called MDASH for vulnerability identification and remediation.",
+          "Release timing follows the high-profile Hugging Face security incident, positioning Microsoft as a first mover in specialized security models."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Sam Altman: AI development has entered 'the singularity'",
+        "points": [
+          "Altman claims the singularity — the theoretical point where AI surpasses human intelligence — is no longer just theoretical.",
+          "Cites startup development cycles collapsing from about one year to roughly ten weeks as evidence.",
+          "Comments made on a podcast, reframing his decade-old vision of transformative AI as a present reality rather than a future prediction."
+        ],
+        "covered_by": [
+          "There's An AI For That (TAAFT)",
+          "The Rundown AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Publishers revolt against Google AI Overviews",
+            "points": [
+              "Google's AI Overviews now answer queries directly in 43% of searches (up from 15% last year), eliminating click-throughs to source websites.",
+              "USA Today CEO Mike Reed: 'It's time to take a stand and say enough is enough'; Reuters, Politico, and People are debating cutting off Google's access to their content.",
+              "The shift undermines the ad-supported click economy funding journalism, threatening both news outlets and the AI systems that rely on their content for training.",
+              "Reddit executives are reassessing their $60M annual Google licensing deal (signed 2024), questioning whether it still provides enough value."
+            ]
+          },
+          {
+            "title": "Sam Altman heads to Washington to preview OpenAI's most powerful model",
+            "points": [
+              "Meeting with senior officials this week amid the Trump administration's June executive order establishing a voluntary 30-day pre-release window for vetting new AI models.",
+              "Regulatory landscape remains unsettled as tech companies, publishers, and government compete to shape AI governance."
+            ]
+          },
+          {
+            "title": "Workflow: Repurposing Reddit posts into viral content",
+            "points": [
+              "Add /.json to any Reddit URL to extract thread data, then feed it to ChatGPT with a prompt to identify pain points and generate viral two-line hooks matching your top-performing style.",
+              "Send those hooks plus your best past posts to Claude with a prompt to write 5 new posts matching your voice, structure, and pacing without copying wording.",
+              "Leverages Reddit's existing audience insights and conversation data to accelerate content creation at scale."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "OpenAI study: job boundaries dissolving faster than titles update",
+            "points": [
+              "43.5% of ChatGPT work involves tasks outside a user's official job category — marketers analyze data, operators code, managers research — before HR updates any title.",
+              "Pattern suggests skills now define actual work while job titles only reflect the org chart, with upskilling happening task-by-task via AI tools rather than formal training programs."
+            ]
+          },
+          {
+            "title": "Claude shared chats and Artifacts surfaced in Google Search",
+            "points": [
+              "Shared Claude conversations and Artifacts (generated content/outputs) appeared in Google Search results, exposing legal questions, personal data, and application credentials.",
+              "Raises privacy concerns about how easily shared AI chat links can become publicly indexed."
+            ]
+          },
+          {
+            "title": "METR's expenditure-horizon metric for AI agent ROI",
+            "points": [
+              "New metric shifts the question from 'can the agent do the task?' to 'does it cost less than a human after supervision and retry costs?'",
+              "Framed as the financial reality every AI agent pilot must eventually confront once budgets tighten."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "There's An AI For That (TAAFT)",
+        "items": [
+          {
+            "title": "Fujitsu's PHOTON architecture boosts model efficiency 475x",
+            "points": [
+              "Compresses conversation history into summaries instead of having the model reread entire chats each turn (the standard transformer/attention-based approach).",
+              "Yields up to 475x more output from identical hardware without requiring additional computational resources."
+            ]
+          },
+          {
+            "title": "Anthropic deleted 80% of Claude Code's instruction prompt",
+            "points": [
+              "Newer models handle nuanced judgment better than explicit rules, examples, and repetitive guardrails, according to Anthropic's findings.",
+              "Signals a shift toward AI relying on learned judgment rather than hard-coded instructions."
+            ]
+          },
+          {
+            "title": "OpenAI's workplace AI usage analysis",
+            "points": [
+              "Analyzed 800,000 user chats to determine which job categories benefit most from AI assistance, finding significant variation across roles.",
+              "Data has implications for workforce planning, showing which sectors face disruption versus genuine productivity gains."
+            ]
+          },
+          {
+            "title": "InkLeaf dual-screen E Ink tablet",
+            "points": [
+              "Combines two E Ink (low-power, paper-like display technology) screens on one hinge for simultaneous reading and note-taking.",
+              "Stylus supports variable pressure and page-flicking; AI handwriting search can find any phrase across all notebooks, lasting a full day without eye strain."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Cognition acquires Poke SMS assistant for Devin",
+            "points": [
+              "Acquired The Interaction Company, maker of Poke, an SMS-based assistant that processed over 100 million messages in three months.",
+              "Integration into Cognition's Devin coding agent is planned."
+            ]
+          },
+          {
+            "title": "Cursor launches $7/month 'Start' plan in India",
+            "points": [
+              "Offers only Cursor's own models to help developers build cloud agents.",
+              "Signals expansion into price-sensitive emerging markets."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Claude Opus 5 review: capability gains without practical improvements",
+            "points": [
+              "Tops independent leaderboards by a single point but costs the same as its predecessor and offers no new practical capabilities to users.",
+              "Reviewer complaints about timidity and hedging didn't hold up in standard chat tests: the model refused to fabricate a nonexistent fact 3 out of 3 times and held its reasoning under pushback.",
+              "Ran roughly twice as long as GPT-5.6 Sol on a grammar question, but the extra length contained useful edge cases rather than padding.",
+              "Volunteered honest self-assessment of its weaknesses (confidently stating wrong things, lack of life experience) without being prompted.",
+              "Industry now competing on price, speed, and tone rather than raw capability — described as an 'intelligence overhang' where models keep improving but use cases haven't expanded."
+            ]
+          },
+          {
+            "title": "Cursor's India pricing tier detail",
+            "points": [
+              "₹649/month Start plan covers only Grok 4.5 and Composer via local payment methods, significantly undercutting the standard $20 USD pricing."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Google releases Gemini Distillation Service",
+            "points": [
+              "Lets users train smaller, faster 'student' models that learn from larger 'teacher' models.",
+              "Optimized for high-volume, latency-sensitive applications and complex reasoning tasks."
+            ]
+          },
+          {
+            "title": "Cogent releases VR-1 autonomous cyber reasoning model",
+            "points": [
+              "Can investigate environments and execute attack chains autonomously.",
+              "Achieves 2x improvement over baseline models on realistic enterprise attack scenarios."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "📈 Top Chinese lab ramps up pressure",
+      "date": "2026-07-28T11:33:27+00:00",
+      "summary": {
+        "headlines": [
+          "Moonshot AI releases full weights of Kimi K3 model for free download, democratizing frontier AI and intensifying competition with US labs like OpenAI",
+          "Nvidia invests up to $5B in Ilya Sutskever's secretive Safe Superintelligence startup and launches Open Secure AI Alliance focused on open-source AI cybersecurity",
+          "Sam Altman heads to Washington to preview OpenAI's most powerful model amid Trump administration's finalizing regulatory stance on AI",
+          "Google's AI Overviews now appear in 43% of searches (up from 15%), prompting major publishers including Reuters and USA Today to consider cutting off search access to their content",
+          "Reddit reassessing $60M annual Google licensing deal as executives question the value of providing content for AI model training"
+        ],
+        "sections": [
+          {
+            "title": "1. Moonshot AI Releases Frontier Model Weights Publicly",
+            "points": [
+              "Kimi K3 model weights and technical paper now available for research, personal use, and commercial deployment (model weights are the numerical values that power AI systems) with safety guardrails in place",
+              "Model experienced such high demand upon debut 11 days ago that the lab suspended new subscriptions, indicating strong market demand",
+              "Largest open-weight model ever released; competitors like OpenAI and Anthropic typically keep frontier models proprietary or limited to paying customers",
+              "Expected to increase pricing and performance pressure on top US labs competing for market share"
+            ]
+          },
+          {
+            "title": "2. Publishers Revolt Against Google AI Overviews Dominance",
+            "points": [
+              "Google's AI Overviews answer user queries directly, now appearing in 43% of searches (up from 15% last year), eliminating the click-through to source websites",
+              "USA Today CEO Mike Reed: 'It's time to take a stand and say enough is enough'—other publications including Reuters, Politico, and People are debating cutting off Google's access to their content",
+              "The shift destroys the ad-supported click economy that funds journalism; if publishers cut access, both the information supply chain and AI systems that rely on it will face erosion",
+              "Reddit executives are questioning whether their $60M annual Google licensing deal (signed 2024) provides enough value to justify providing training data"
+            ]
+          },
+          {
+            "title": "3. Policy and Investment Momentum Shifting",
+            "points": [
+              "Nvidia backing Safe Superintelligence with up to $5B investment after lab confirmed research 'worth scaling'; SSI is founded by former OpenAI chief scientist Ilya Sutskever and operates in stealth mode",
+              "Nvidia leading newly-formed Open Secure AI Alliance focused on promoting open-source AI as a cybersecurity asset, addressing growing concern over AI's cyber risks",
+              "Sam Altman meeting senior Washington officials this week to preview OpenAI's most powerful model; Trump administration signed June executive order establishing voluntary 30-day pre-release window to vet new models",
+              "Regulatory landscape remains unsettled as multiple stakeholders (tech companies, publishers, government) compete to shape AI governance"
+            ]
+          },
+          {
+            "title": "4. How to Repurpose Reddit Posts into Viral Content",
+            "points": [
+              "Add /.json to any Reddit URL and copy thread data; paste into ChatGPT to extract pain points and generate viral hooks using prompt: 'Analyze this Reddit JSON. Extract biggest pain points and write 5 viral two-line hooks that match the style of my top-performing hooks'",
+              "Send the generated hooks plus your best-performing post samples to Claude; use prompt: 'Using these [platform] posts as references, write 5 new posts on this topic with the same structure, pacing, formatting, and voice, without copying wording'",
+              "Claude will generate 5 posts matching your voice and proven format, ready for publishing to any platform",
+              "This workflow leverages Reddit's existing audience insights and conversation data to accelerate content creation at scale"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Learn more about Kimi K3",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgLq5ix9aYNGoC7IyrwNfzY8xFBXR7S4yImKStEBbD8zUYRdTXrVdN68t_YCLB8KyWUWxBKfy04kY9Jh-8CzqH_7MdRe3q526295K13nzVsjw1t7yijTXaECkukigj04eBT0hhf8imzma39iUNr7gnB-jMT_YASdT6CwU8hkfiDVlpuYliMtgNEgo8Tk7FssyrLqf605dLXVJtQgw7Cj-klOCNJWzbsOwttXng3pjkjUm8LxT8vGzrGrbDHeEFXJfbQ/4sp/Ms-si8_sRCu0noTzZAliKQ/h5/h001.5HyVphS4nBit-QNdl4__UK0lU-VbnYy59NrGDp6OLAk"
+          },
+          {
+            "label": "Read more from the WSJ about Nvidia investment",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgP9s0Ka8bgObD16O0p4c3FcNCCaS9MPhXhYfZUCPItKTRI0bZbCDdmSfTAYZMBBPKkmI-7MvuLROvJ3sHPnP63bdgbXUBTREwZVOc_ZA85xf-IluKkveNniZXL5yZ-QrhrQ6Q1SJuXwxl6hqWD4-BLtmpAoMGRC4Mk1IazErr93BHO0vhoeV_bBaMC1LwnJs_ibyx9Pk_aizVhMuYb8f528hp_ybgwQc8oFwrr2N6LOC45lYpT2LCnScqGn79_pKlDFGVb5Zm9FI6L-rjum8EBFG-kSeObzER2XYjrVY79vEaV7JilQfCQ-OfujqGgdk32EEf1NKb9bu6ksYg8o6hHy2_KDF4ww8MvN0jkAbOQoX0Mj7YhufiEcDIZy09YLZnN5AflLUgIA_uLdbB0s8uF0/4sp/Ms-si8_sRCu0noTzZAliKQ/h8/h001.qNMDc0ObNZGwsZRbGwRBz7q5HMYjbJb0xuClYJmHdWM"
+          },
+          {
+            "label": "Sam Altman heads to Washington to preview OpenAI model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgAz4aXPItfLK3FmesaOg64suhb6Bab8VSkaR-zdfRH00E_GffL2eUuEq1tTGGHFrzikwn2gOuf93-sACbY3Dwgy0zczwAaCfSykanm2ZPQ7cDUGUeLV8r1nWbNSnTlNwjZNqIYhqi6SPytiXlvU-rHltlRhiv5F2v8d0AtAV8xYw6J4Hi_9BhBTC-kT7rHdD-ZXKfeZfDUVI1qJz-8mhU9QC3DOsELs3zcVS5Ln9PVP3PPq0TfKR19gEOIMz-kGrqe2dv-y9cf6gbvDEUnclBOMcViv1lB0sL0R6EbQp2d5g/4sp/Ms-si8_sRCu0noTzZAliKQ/h10/h001.nknkjtwoUE59E0NSKSlDcef6AL4cWWAry0l_f0kWf8"
+          },
+          {
+            "label": "WSJ report on publishers considering cutting Google access",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgJwfrSRw9n09LsRmM5j15DHZmcsTxFGS2067SsWcZUaLJgRhueEoKP08SwxpfbbE-BxrNt5O9GhFt0AGrOokOg6jLjRuLnP2IgtZq1smhYv-RKnmFo-xY3Moosaq8umXJTVJqYl1Z_0KL48XYgCTYaxT3-oOz4m1piyH03JMYMm_KGYG0fIThBGpMSd7X1Yz7-igwJNDH6OPm6X7DNvTTbzlItKgtIVZku_JzBLnRznnj7plzR5O6utAGnfrF0Iisd1X3sPAayJrJ_OemQVsEpdETbqv4tBmp3XjdqOjrYnU_LIOsY_wSmAq5_mmc1YXWU-DvNfEXAs40qWGpMVSNFA/4sp/Ms-si8_sRCu0noTzZAliKQ/h19/h001.3kpemvoAlvU452rHKwxSNf871-IMh_JCqhLwD919WQA"
+          },
+          {
+            "label": "Anthropic published Opus 5 Prompting Guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.JtFbHcnj7MmUqbdsCSlCvBEk0LWGq-7zfWv8dN_6AfXqLhjfek_2DQjnr86G812JgeEjNknvnSMcptISubn13mJTH5wTpIw-Ac4sUZdvLHyjECCaOIG6bQrYm4_DUW1zFSKUmjEcgAiKNGE_HPPDYrNrPKhngFl7hcmI4U_X48DKoPwcvc3Q3-Diib-kr8RVZQzsJW3BSwHltcL1fWIXRP0AUwIoDx67vwLxSyQTtfIps2Gb25rKDTUGqJkS1isX8ydnMd-Qohg5DbwDkoGXa9qfC1yg6RfEGv6UhAtbJ5KUkqMc409SJNbaaGtNgjbwiDlly1oa5YWmqxtca7yXUCN4cnkJCrnIMzyeymMvbak/4sp/Ms-si8_sRCu0noTzZAliKQ/h11/h001.COXmy3AzNMUPijQjWEItrwAxtoiiF6CkChkOinljrKQ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😼 AI security just split in two",
+      "date": "2026-07-28T10:32:14+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI study finds 43.5% of ChatGPT work crosses job boundaries, showing employees quietly upskilling without formal retraining—job titles lag behind actual skill distribution.",
+          "Nvidia launched a 36-member Open Secure AI Alliance excluding OpenAI, Google, and Anthropic, after the Hugging Face breach exposed how closed AI tools blocked defenders during security incidents.",
+          "Claude shared chats and Artifacts surfaced in Google Search results, raising privacy concerns about exposed legal questions, personal data, and application credentials.",
+          "Moonshot released Kimi K3 model weights on Hugging Face, fueling the open-weight vs. proprietary AI policy debate with a working alternative."
+        ],
+        "sections": [
+          {
+            "title": "AI Security Split: Open Defense vs. Closed Control",
+            "points": [
+              "Nvidia's alliance argues defenders need locally-runnable models they can inspect and adapt during cyberattacks, not permission-locked tools that become obstacles in emergencies.",
+              "OpenAI and Anthropic (absent from the alliance) argue closed weights prevent misuse; infrastructure vendors (present) benefit when more organizations can build with downloadable models—every business discovered its profit motive doubles as the 'safest' policy.",
+              "The real battle is not open vs. closed anymore but who defines a secure AI system and whether outsiders can audit it; Hugging Face's forensic response using open GLM 5.2 proved defenders need model transparency when attacks unfold in real time."
+            ]
+          },
+          {
+            "title": "Job Boundaries Dissolving Faster Than Org Charts Update",
+            "points": [
+              "43.5% of ChatGPT work involves tasks from different occupational categories: marketers analyze data, operators code, managers research—all before HR changes a single title.",
+              "Designers borrow skills, engineers lend skills, and marketers somehow end up doing both; the pattern shows skills now define actual work while titles define only the organizational chart.",
+              "Upskilling is not waiting for formal programs—it is happening task-by-task as individuals stretch roles with AI tools, creating a quiet restructuring of work that payroll systems have not caught up with."
+            ]
+          },
+          {
+            "title": "When to Deploy AI Agents: The ROI Spreadsheet Every Pilot Faces",
+            "points": [
+              "METR introduced an expenditure-horizon metric that moves beyond 'can the agent do the task?' to 'does it cost less than the human alternative after supervision and retry costs are factored in?'",
+              "Agent ROI requires a spreadsheet comparison, not just capability assessment—this is the financial reality every AI pilot must eventually confront when budgets tighten."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's task-boundary study on ChatGPT workplace use",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._SR4S8YLPUYanH1JLonj6thjObThIvhnX_9ZLmzm-vC2Kov-Z2NcewAWrDtu3wQcjMdOLSKKT_cTehN2S_VR9KxRrZ0jO0PzoECpQVD_N4426G6WXNUg8MnIgrngv-Ky1aK5_YcdJiXr3pd_EH5h2-o6J2v0lpTiQFkCYng4pwVXsV2sLTe8fV7LbfPZndoUA6-ccxI7WvPPCQcEvGiMpyZMhCNll_SkyYXzx_qzAOFormCvDWpUVQYW4drH-5K_YSqzS395MR-1Op74LXgJPJN9MMO27g49bLxCrNnpXGfCPSsbnLMgSBCV0zY7tY1e/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h1/h001.iDaRW3xokaazeUv6Vl1SirCCfprCBOevj7w1TX5zyvw"
+          },
+          {
+            "label": "Nvidia's Open Secure AI Alliance coalition announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.m9bXIF-bUgEYKr_fFoKziFaefQjBEg3rjjeL1lp2464jSJ4FrRTo5B9j3pKPG4SROrhE3DI4xGIISsR1_au-iRg6fQrC1OkSSbvEwThHAEclDWE4gjouqaHDbfr7AypS2gPndMXRwMK5V_7LYwHAM_ARQbwAN_mtPCT28fXx1nfyal9g3RJXQhdfCpTFNs3N6f7CBk2u4K_iQyqhRIohxozCcm8CLj7s9vEhfyaW2b0Rhx8JchcWAfMVeDvYiP2kEwbVjHu-SDTM-LdStK5-s3ZY_es4s4pJ4qmgWbzMA-E/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h7/h001.01wr1bnV2HnNBQTVlruup2qDebuQwPsJW1CJrPU8EVw"
+          },
+          {
+            "label": "Cursor's planner-worker AI swarm architecture",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jj0_mAIw4Of1WeCdHOujZBBS6IjAw70uXYCUHzMozNfmPViwKhkH9yA-gwWU2aXSoe7KFhqEouGOQKOL0WMkUpHtrd0_6793Uy1-9ZUHLVixblk2GVK1yn3Uc9yZEA_0w-qbNpiG3tFCdai1ipOwrHHHMGsppSs_M2e5Jxy0DM-S-ZrdmJqAgYPLdfzC6dmt6uTKW9GzYd7eMPRzwxDwQCvpzuQXyTUtNOqVlvOVeOf9hb72Q6UygbvwNSBM4eHWheEYM9dwHbm03Qg_cqxCpSXWCG0P0e6FJUrM1XtWwOqYMbKsrcSw8zZgp0PVmsPE-sRsHrD7eify7k5R_h2Fd-9EzIF0z32IZpAtyp41Cqhz/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h14/h001.i7x9f9EIRedM4kPJA8-c3Danx86BGMLYAlEYhMEi_DU"
+          },
+          {
+            "label": "Moonshot Kimi K3 weights on Hugging Face",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.PBa3mXW4G6eu-YmfUUZKw3H7ffmOjRAnS84AFja0ziMdgfbwkYWwLUGEh9B1x4pb0Tlo9ONKDjsLjKUNkf5I9Fufm5y3cm49QJaezHu3rTUVQ-hQ1SxqHCX2_m78suqTKBTl-YxCePzBSR2j0YvQNSHzolEfRGSq7L_rJHDpkAsu_a2mIK34FDiKB83bRvAXww0vFzNd5vPGEvsBIB3gApK7DYpKzTuCzBXi5Ng8trAjq3n4Tvua6NnJLqN3ooyT0QuK5IF3OWcDFdJgcq-f3A/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h18/h001.M88IR7AFnce8ko6drVcHvTWLgQBOyK0j6q1CxxVQVKc"
+          },
+          {
+            "label": "EU AI Omnibus enters into force with extended compliance timelines",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.MebLiM_wk3YBoaLiOYF2VvdDkxKT-nPhfL5yemcm7cSYkQmLMQaEaQ52JZ6C4LMAxEDVbZgwMfCjlvVeCC5U19BhfBKtce-_JnCO3GGIlfLfNr9H5cmeloEaNJYJcZEJyIGcndDC4E1WNgGWaJ1gnFBhBkYjfx7z3BqYREfwI6Y-61-QXxt9dha5B_6JwcjooCxjRDsfAaxe7m-pWelXaXc3alter4C3AUtPT1AJ3WSsGfaq1-Wxs8aCsCLbQKvh0HJFSI60G1nvGwtTcBnc0QnRmvJebkWGaWwHEY6p0wpIpA9OJtqEEylKXVL9FNqh/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h28/h001.4PUFKHiMr70PH6oDTQUOFFKFH2RvTD2FAW-rA-VzBX0"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "There's An AI For That (TAAFT)",
+      "subject": "🦾 37 Rivals Form One AI Alliance",
+      "date": "2026-07-27T19:01:45+00:00",
+      "summary": {
+        "headlines": [
+          "37 AI companies including NVIDIA, Microsoft, and Cisco formed a joint defense alliance after the Hugging Face security breach, pooling open models and tools to strengthen cybersecurity across the sector",
+          "Fujitsu's PHOTON architecture compresses conversation history into summaries instead of rereading entire chats, yielding 475x more output from identical hardware",
+          "Sam Altman claims the AI singularity (point where AI surpasses human intelligence) is no longer theoretical, citing startup development cycles dropping from one year to ten weeks",
+          "NVIDIA reportedly backing OpenAI's $250 billion Ohio data center project, securing guaranteed long-term chip demand while giving OpenAI independent computing infrastructure beyond rented servers",
+          "Anthropic deleted 80% of Claude Code's instruction prompt because newer models handle nuanced judgment better than explicit rules, examples, and repetitive guardrails"
+        ],
+        "sections": [
+          {
+            "title": "1. The AI Industry's Security Pivot",
+            "points": [
+              "37 rival AI companies banded together after the Hugging Face breach, demonstrating that cyber threats unite competitors across the sector",
+              "NVIDIA, Microsoft, IBM, Cisco, and Cloudflare are pooling open-source models and defensive tools into one shared alliance",
+              "The move signals industry recognition that security vulnerabilities affect all players regardless of size or market position"
+            ]
+          },
+          {
+            "title": "2. Technical Breakthroughs in Model Efficiency",
+            "points": [
+              "Fujitsu's PHOTON compresses conversation history into summaries rather than forcing models to reread entire chats each turn, the standard transformer (neural network architecture using attention mechanisms) approach",
+              "This compression yields up to 475x more output from the same hardware, representing a major efficiency gain without requiring more computational resources",
+              "Anthropic's finding that newer models need fewer explicit rules—80% of Claude Code's instructions were deleted—shows AI is advancing toward relying on learned judgment over hard-coded guidelines"
+            ]
+          },
+          {
+            "title": "3. Market Consolidation and Infrastructure Deals",
+            "points": [
+              "NVIDIA is reportedly backing a $250 billion investment in OpenAI's independent data center in Ohio, shifting OpenAI from rented server reliance to owned infrastructure",
+              "The deal locks NVIDIA into years of guaranteed chip demand while giving OpenAI control over its own computing foundation, reducing dependence on cloud providers",
+              "Sam Altman stated that AI development timelines have collapsed—startups that once took one year now launch in ten weeks—and that the singularity (the theoretical point where AI exceeds human cognitive ability) has moved from prediction to present reality"
+            ]
+          },
+          {
+            "title": "4. AI's Expanding Role in Workplace Productivity",
+            "points": [
+              "OpenAI analyzed 800,000 user chats to understand which job categories benefit most from AI assistance, finding significant variation across roles",
+              "The data shows certain professions are borrowing AI capabilities far more heavily than others, with implications for workforce planning and skill development",
+              "This analysis directly informs which sectors face the most disruption and which are seeing genuine productivity expansion rather than replacement"
+            ]
+          },
+          {
+            "title": "5. Hardware Innovation: Dual-Screen Tablet",
+            "points": [
+              "InkLeaf combines two E Ink (electronic ink, a low-power display technology that mimics paper) screens on one hinge, allowing simultaneous reading and note-taking without switching devices",
+              "The stylus supports variable pressure (bolder stroke, lighter erase) and page-flicking between screens, with AI handwriting search finding any phrase across all notebooks",
+              "A full day of reading without eye strain plus instantly searchable handwritten notes eliminates the need for separate tablets and paper notebooks"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "37 Rivals Form One AI Alliance",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0FNs46PIK3g9SKBNB6ZbBmegFEQx3CFWztDmk8h0vRL86TsqQNHalXyHNPvvMM3QpC1jGkv2OhkxtRTVHfiIBOAZdf1LS3u4MxGR5IfN9V2Ep6bKOf8TlmaDFOLPC7cq8ZJ8Fo2y3fGE7cVhX5H1ZQ2uE3uNwKK3Gfl5f6fr88W31rO3XGNo95W2lBnahvYiNrPR5PiQtbaok2hysySzrVpc9h_g2DTpdmB5is-tDchlPUPBIEYwgeq_eMDNejcYM7H0h7-riUD2WyR-a6db6W8/4so/4_qH8Z3sStC0dGHvVj_UOw/h6/h001.0L-9ZDi0OYjzgUDA3OUED7pufa7UgTXD6FkB4eyVoDY"
+          },
+          {
+            "label": "Fujitsu Says It Beat the Transformer",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QMm86vGQnJ7Wf7d0AE2KhpV4K_wxmYNMbx8oLQyP4nUGJDtz70Cx1MakqdaZPKPWPjAAZcOvT9RxPf24-DTTfMFMAlLpYnCk0d6-GOa0fNfOB-7CnduVcCc6-egZrGY3wqHiWU71uFAUhLCkC-XTdL5ZZXSydWEIONWbfTgpo17WcyanXnyeiD3TDT3RoCsNMGzC6hWQUBL2POpuL5C5scHid4e7JwiY6DukARnONqUXTznTAmxHSMo_z_wZiyCUfrl0fdXtm59wZvhBClyTiI4sPbCGU0uStXeUNK4VODvdZNKeQ-cq9R2FTvZxZQZ0hT0NZ-cgV7BXaOxo5DWKT0N_2bFDH8-wMlX5eCbP6Qc/4so/4_qH8Z3sStC0dGHvVj_UOw/h7/h001.-3pGy0fgFIXOWCt4-PjhCNlms40v8Qy1TiM2ZvXCdAU"
+          },
+          {
+            "label": "NVIDIA Backs OpenAI's Own Data Center",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7uh5roZkIXec-hdoZG9lJFJ8fxyF8Ng2z3BUkydiHyKm7fZtiCDSU-hU5XFQswmcjnaXnk6IurDekxcyTaGGhmrQ0y3yW-QGGslrGmXoMyAZqJf9Frpb3D0-2gpdrnyIWQI9b6mnTJPB5Y6iLZglO62Sn7W5E1Qi_WeIU8wTIsq-gRZ-z9RgcNLlF5CrURfZ59WfKFm4pkhDEOjyxEnEO12iQ7jeC4Dcy4n65Ih6vYXygyuCWStHcUsiaLJPuvT4yU7oTeRhmUETrmmDWH01-Zr8ntdqZ2G_alJJnp1nU_v7SH2vo9POQEw_zkUgPBon0be-8LTIoWlU0BT3EUIIEvBFNoatrnl4zYe3CtKGAgWOgzo1EP6LGR9xA-4K4dnf9IsOAigZuQ0LPQEOeav0C7A/4so/4_qH8Z3sStC0dGHvVj_UOw/h8/h001.G_eW94ILOZGE07hWaIEFxIAadS2wphhIfWWrUlvbeHo"
+          },
+          {
+            "label": "Altman Says We're in the Singularity",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.rP1DUdurQ8ki89_ElZwSW2eIj22UyjAEkNatGy9gEsNgx5-he87gB4scT6VQzmTCjA5FSdftFYlO-B-YbJOUfZJvlxcnoGmMB_PoMKGofoWwNGx_28f_oy7TOr_TJtKrysQOkgPzCWtVh42RdR47tQ-Ra2BcpjMveLg85c5AwgsXydQab2xS8KYN54YeKqhSk2hprBiF-6vKXOe7MX2sncg4MP-DWyhOHYam9V1ZP6FFwYRUokAN2ZzVUIKsdIfxTi11WFA3CY0ADN-BFrjIug/4so/4_qH8Z3sStC0dGHvVj_UOw/h9/h001.EodwuWjGYgetgeDNTGf9BiunGlVwmY10RmVw1jSvuvk"
+          },
+          {
+            "label": "AI Is Expanding What People Do at Work",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.SeZcZ2kldk7Osi4slNtvSbg4fHE3D6_GwDJKfp_OmSEu1vwFes49uujG2FtrIf3UEPHBwI2k_CoopBFuTfsLmq2N18G4PbR1hr28s9zmkaWRhqfHYSV_tq3VGQTqNS9axaQOrj27uQ5cEnUEFJYLj2zeHn4UeXdMsSItHOBYazP8K_hw9WR9TTTTPofNPhcMocGzOAXrI49zReVuouJr-CKaxyh4r8qYSifQW1cNZbVYUqBxR59NqkpRPxzqg-wEtwUBZkto77aorSYncSZ0iqsIi-Fn6WWp1uB312VjXsq3ayG7J53iTpdPmi1cXE_O/4so/4_qH8Z3sStC0dGHvVj_UOw/h11/h001.vjglEzWGtZ7EhHMx8y-FWdXYI4kw92pdojdGR8E0gUU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🌙 Moonshot lets history's largest open model loose",
+      "date": "2026-07-28T10:05:53+00:00",
+      "summary": {
+        "headlines": [
+          "Moonshot releases K3, the largest open-weight model ever (2.8 trillion parameters), letting anyone with serious GPUs run a near-frontier AI system without restrictions or permission.",
+          "Anthropic's CEO clarifies the company opposes bans on open-weight models but supports chip controls and distillation crackdowns (blocking the copying of model outputs) to prevent authoritarian access.",
+          "Microsoft launches MAI-Cyber-1-Flash, a cybersecurity model that hits 96% accuracy on bug detection while costing 50% less than competitors like Anthropic's offerings.",
+          "Claude chat conversations are appearing in search engines after users publicly shared links; Anthropic attributes the issue to user sharing rather than a platform breach."
+        ],
+        "sections": [
+          {
+            "title": "Moonshot's K3 Open Weights Release",
+            "points": [
+              "2.8-trillion-parameter model published with full weights, making it the largest openly released AI system and the first near-frontier model available for anyone to download and run locally.",
+              "K3 competes directly with closed models like Claude and GPT-5.6-Sol across benchmarks, but free weights don't mean free compute—the model requires enterprise-grade GPUs far beyond consumer hardware.",
+              "Moonshot also opened attention kernels and agent infrastructure under a license permitting commercial hosting and resale, accelerating ecosystem development around the model.",
+              "U.S. officials accused Moonshot of distilling (copying the behavior of) American models to build K3; Beijing rejected the claim as 'AI hegemony,' turning the release into a geopolitical flashpoint as Washington weighs open-model restrictions."
+            ]
+          },
+          {
+            "title": "Anthropic's Open-Weight Position",
+            "points": [
+              "CEO Dario Amodei published a statement clarifying Anthropic has 'never advocated for a ban on open-weights models' and actually supports the principles behind releasing them, despite this leaving U.S. companies more exposed to competition.",
+              "The company pivots from focusing on weights to focusing on upstream constraints: chip controls (limiting GPU access for training), distillation crackdowns (preventing unauthorized model copying), and broader safety testing.",
+              "The Nvidia-led 'Open Weights and American AI Leadership' letter now has 50 signatories (up from 25), with OpenAI and Google joining—giving industry backing to the pro-open position Anthropic had remained publicly silent on until now."
+            ]
+          },
+          {
+            "title": "Microsoft's Cybersecurity AI and Infrastructure Moves",
+            "points": [
+              "MAI-Cyber-1-Flash achieved 96% accuracy on CyberGym benchmarks for finding bugs in large codebases, outperforming Anthropic's Mythos by 12 points, with 50% lower costs and ability to handle 90% of typical security workflows.",
+              "Paired with Project Perception, which deploys agent teams to simulate attacks, investigate threats, and auto-repair flaws without human intervention—enabling what CEO Mustafa Suleyman calls 'continuous, real-time, cost-efficient' defense.",
+              "Release timing follows the high-profile OpenAI/Hugging Face incident last week, positioning Microsoft as first mover in specialized security models targeting enterprise vulnerability detection at scale."
+            ]
+          },
+          {
+            "title": "Other Major Developments",
+            "points": [
+              "Safe Superintelligence (Ilya Sutskever's new AI safety company) announced a partnership with Nvidia including a reported $5 billion investment to scale research infrastructure.",
+              "Sam Altman claimed 'we are now in the singularity' on a podcast, reframing the current moment as the realization of his decade-old vision of transformative AI.",
+              "Nvidia is reportedly discussing a $250 billion financing guarantee to OpenAI to help lease a 10 gigawatt (GW) Ohio datacenter campus (a GW is enough electricity to power roughly 750,000 homes), reflecting the infrastructure race for frontier AI training.",
+              "Cursor launched a new $7/month 'Start' plan in India, offering only its own models to help developers build cloud agents, signaling expansion into price-sensitive emerging markets."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Moonshot K3 official release",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZY5Y0CT8KZaZ1y9TVLsmfx19eygOWXpzRLiEJBMCH8T4r1uA-bTQ9F7o5og8AaRNHKFePuGDuHtCtiRGBeC9mjrpGVTz7KFvcKm8LGjTMXRz-vqf66pB1zclbsGGxOer5gyZeSiET1WIPMnH8UXiTONnv7udb1WnNXbybVTaD-96hoPzG7yrFwj8R7Rqf31-iY7NAmOjtWSR4o8mFmltzUwnWfZSEcV6TW8Zjd1xHBlr3cehOSAT1Y-2y8Wx4lOS0aBQdlly-k0_iv770MKsBWX7RCfxqhGSyh8_OW8_9q4/4sp/u25frTnhTh6plc0a4fSnow/h7/h001.3-nXq2vpWoQvu2pGYWsQAGTjMRnfM8SFHU51PzgwUSY"
+          },
+          {
+            "label": "Anthropic on open weights position",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf937MUSrYzK6JzB2n81ON3xXlY4f957J3zDj095yyro9iBOc1C3o2xNqmwFyba_NFmN7Ov-dXwswxHy6LYFWaDm3M_xLu--SWJMMzsOtmg2nh-UNdXynrWoZQRfEVlmU3kyA_OrTRUUlzws2oEoyZOtdFI0fBU6k6XRdJHfWgIYLrldJ1m3kHsKmTILXCqJvxwF0mDpLtr_5DA9fiEIJPpCfpUtKfcpQ5dw4e8DIJJ1UN9NFbijtc40xc2KIyNUh1Iyepec400FrBl8-eXGliJpRG0b_nBDJlWnkCbs1UrZd/4sp/u25frTnhTh6plc0a4fSnow/h14/h001.bttBOenIZtOLkJFtFeXdNjJKbE-J7U2zFfp5UO2X3AM"
+          },
+          {
+            "label": "Reve product photo editing guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHGlFd-mom74ijuepvLm6HtuNeRwWT--AvU8M0Hc2dtbAiAeuIpI9ZWp15-qBAJSkiO5gcc7bbdnd_p8hV3atg3n8Ws3YGYtEq0Rtl1F7aU74eeMf-KT1VfTQV0f_5PqkrMJQzayR63OUCFcS0yfeKtR_smz_W0SRCpu9wicRDSr-qaYPzAKICIX0Fp-jPTF6vbGtzJoeUMQflYq0nhkDL7ejgECwpgHyTCLHULe6yBmsw09htWcAnlByl838Y-sWr_GHZPY04dxh1y3q1B29uWJKgjtBd6BIX7l8bko7Q0Qw/4sp/u25frTnhTh6plc0a4fSnow/h21/h001.s7hPbaTNfT41CaI5qf_U-epUoow"
+          },
+          {
+            "label": "Microsoft cybersecurity model announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.BKH0F2yLXfXXfZz4rVL6MCJtxgWZrzggAXCYnh3rX-5TgfFzcTog_C_UfXgaoNMfA8FnrMG-2R8QiqQSWYmVz1AVWW3sVFT-R0m9lESahSKlRqMA6bYu8dGdLUAMbENIMxJcA4_F4vaBR8c0gEwdan2-B9KBJs9zJikm5G9Rf5eqfnrGKUI6Q1dt08wi5Ql7vg5MsQQ6Jxp2gVlp4mJzDcn0gw0qZzXqXvwTG5pzsdIKJE5dS8wnWGynyPT_Al8KIZfCZZSvK0TDPhiB_F7w7Lh4COAEzsZLSaLLrq9VVcjYbwXmboLxPZ-Ag4dzVdfI/4sp/u25frTnhTh6plc0a4fSnow/h26/h001.jS5gbWEx-rVu6EPd8h7yvRbdj0JjOXP5P7Eng8dsssk"
+          },
+          {
+            "label": "The Rundown AI Workflow Hub",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEXqG5G9QgplqelSkRBjG9zUzEqb_lKnw6QR4T67SaJOXqZOswtQlOcrY2ivCTWSY51pQ7VyeCqIzN3LybXEf6vCjo8OGwelVTnr7PpzHOmEv5j6WB4YP3GBZG4TfWqPJfxVvB-jDzt04XYbppPoAYaOGboxiCYJNWD36ivpA5rYSB_3zUzGZkPCy4jS4DyCnaT2zW16ejKsGxl6mMHQJ5KODoF5sN2taCXd95uJN69Tg/4sp/u25frTnhTh6plc0a4fSnow/h5/h001.KutqW05PG6MOUlA52tRJX9coFovnvJiPdOAxzyMQ6ZU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "opus vs me",
+      "date": "2026-07-28T12:53:39+00:00",
+      "summary": {
+        "headlines": [
+          "Claude Opus 5 tops independent leaderboards but fails to deliver practical improvements over previous versions, making capability gains irrelevant to everyday work",
+          "Cursor launches ₹649/month pricing tier in India; NVIDIA backs Sutskever's Safe Superintelligence lab with compute access; Cognition acquires Poke SMS bot for Devin",
+          "Negative reviews of Opus 5 citing timidity and hedging don't hold up in standard chat settings—the model actually refuses to fabricate and becomes more decisive under higher effort",
+          "Models have hit an intelligence overhang where raw capability stopped mattering; competition now centers on price, speed, and user experience rather than raw performance gains"
+        ],
+        "sections": [
+          {
+            "title": "Claude Opus 5 Testing: Capabilities vs. Reviews",
+            "points": [
+              "Reviewer complaints about excessive hedging and timidity broke down when tested in ordinary chat windows with default settings, contradicting early criticism",
+              "Opus 5 refused to fabricate a non-existent strike 3 out of 3 times and held its reasoning when pushed with false contradictions, showing stronger conviction than claimed",
+              "On verbosity: the model ran roughly twice as long as GPT-5.6 Sol answering a grammar question, but the extra text contained useful edge cases rather than padding",
+              "Volunteered honest assessment of its own weaknesses (tendency to state wrong things confidently, lack of life experience) without prompting—a trait independent testers had measured days earlier"
+            ]
+          },
+          {
+            "title": "Industry Moves and Market Positioning",
+            "points": [
+              "Cursor's new ₹649/month Start plan for India covers only Grok 4.5 and Composer through local payment methods, significantly undercutting $20 USD pricing",
+              "NVIDIA invested in Safe Superintelligence and granted it access to Vera Rubin compute platform, raising its processing capacity by an order of magnitude and accessing proprietary research",
+              "Cognition acquired The Interaction Company (maker of Poke), an SMS-based assistant that processed 100 million+ messages in three months; integration into Devin planned"
+            ]
+          },
+          {
+            "title": "The End of the Capability Race",
+            "points": [
+              "Opus 5 tops leaderboards by a single point but costs the same as its predecessor and offers no new capabilities to users—the premium on raw intelligence has ceased to matter",
+              "Industry leaders now competing on price, speed, and tone rather than capability; Anthropic led its own launch emphasizing cost over performance, signaling awareness of market saturation",
+              "Reviewers' exhaustion reflects an 'intelligence overhang': models keep improving intellectually but use cases haven't expanded, leaving users without new practical applications"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Cursor Start plan pricing",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.naBg0BegoumlPHZGWcoKLOXprtSsuOoYhtUoZwaKz_orjkf9vQF2_Zq6s11hzZQM3BeMvNlBXZ8CNrJJvwfBC3_nuvRUQdXeXgCaY12iDzX9ssbcibhWv4VF8XKhDyOhZb_Ak655ZIr_hGJtG-mbMA/4sp/zEFNRJgeREOJa39SF7zDmg/h8/h001.NIQC17VHWBSQpuVzAGgUJ3PVgn5iXRZ2a1ONVwq0pB8"
+          },
+          {
+            "label": "NVIDIA Safe Superintelligence partnership",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.2WMshDh4P1SYN8SqaafnJXKeaXydGnxCw8hoqDZOyc0FnM12I6ThvJjZTXpM2d7OMV0HIur9lIILvb3OZMvKhMLdudU_zMrKIq6QoERyieTgIoDwGxAYtxiPw3UkSEa8e0YOE0AYmpZYGZpTfx4LeBRP8w7YHz-0PDYdENFvJvONNgmqg-OMgWB8n7W0hSJpPZmB4DtK_94dfIR9qTe6dtk2-qHqz-A4dpKfFa0VI4e4oJ6by7iB52PB2axwVtMI/4sp/zEFNRJgeREOJa39SF7zDmg/h9/h001.utC_jE5Or08zpoLHrrTs4gMDUZymxZCuGUgnENJtktc"
+          },
+          {
+            "label": "Cognition acquires Poke",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZopJs0Tcjjg7y470J0tl9cwoqqWziNCTeAUjqRArlE6kYjmpxvdTVkCeyklZT4D7fgKn_hX4odY-HzaChRtyuXymG_4-2LtCAMW1dcnF36VCOnfJ_Z6fX2Y4f0GXNj_ZFevyMql8RuKmfiKerV0TRzx8UbCpFH5viyN3WQu6COJpy7RpVQ1lbX3FL6ZWd9XrE0uEFe-lgPSEWbwnYHp66Qthb3-0IhWVnhvAyD9RVgY/4sp/zEFNRJgeREOJa39SF7zDmg/h10/h001.2ea1QuN15m80kCo6MnfKtCD6G8Z7fh13DAQU3OCq61k"
+          },
+          {
+            "label": "Read original issue online",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.2WMshDh4P1SYN8SqaafnJdjdmWP1WD1rdGPofZ1FxFpPr5ChU7zW7g01KzFxU_nUXSeqi-tnYnwveZ1qvoZAkcV7OBq5TfIecOyLu4-3Q4eyQl4zM61950L56_L-bek5GSjk61JPyJowRXrO_veaV4v-vjJqUC4huSHSVni0ul_uS09MSr1B9_rngxtxr025pC7oCnNCL6QYerob1qR-BkeYYaYr6PkEMbYTIsaKe0uAXSVx65fcYprbvE_Ptoh38e5oTVtmj-l79TgODlxiaKCWIXCsmbTTysUXy-CQGVwQpRib7CkMEA0LFlUWgdYHcdUCf7mj7FyLtHU_VZtVxjA3sf2fZhLrdHkzFioVJfL5pwzQMiR-gKNexLXPLv6KxjTbgG-ItLDp140pNyMKCghr17R02Cj4O66nLc3UDOjlrI6CNQlPitkkQxE_MbBkLI3kjyvnmeVp7O8PK2GNtnG_5v4Kjd79QoeObLmQVnmMU-j48ffDx0xBCz1Z10CRvq-O1yF2Y-uCqc5XvkaTmwSv33lhZ5U57aWdGAvIiosyftriyd5NJoVAZHYwIzvRYRAtjSvFMZuTl9nTHdYFHmA7i99IN5do_gubC8GMegmL-kLnXuMZoWJxeGHqEfzb/4sp/zEFNRJgeREOJa39SF7zDmg/h0/h001.3TnzxLGvtNzIvuqpSbQvTgtBEbc-1AxMDiFhkVeXOfo"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Anthropic on open weights 🔓, Kimi releases K3 weights 🤖, MAI Cyber model🔐",
+      "date": "2026-07-28T13:32:17+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic rejects blanket bans on open-weight models, instead proposing chip controls and mandatory safety testing for capable systems",
+          "Moonshot releases Kimi K3 weights with 2.8 trillion parameters and 1-million-token context window, offering 2.5x intelligence per unit of compute",
+          "Microsoft launches MAI-Cyber-1-Flash, a specialized cybersecurity model designed to find vulnerabilities in large codebases"
+        ],
+        "sections": [
+          {
+            "title": "Open-Weight Models Debate Shifts Away from Blanket Bans",
+            "points": [
+              "Anthropic clarified it opposes outright bans on open-weight (publicly available model parameters) models, arguing less capable releases provide public value",
+              "The company instead advocates tighter controls on chip access, enforcement against industrial-scale distillation (training smaller models from larger ones to replicate performance), and mandatory safety testing for all models above a capability threshold",
+              "This positions open-weight concerns around specific harms rather than categorical prohibition"
+            ]
+          },
+          {
+            "title": "Kimi K3 Release Advances Efficient Model Architecture",
+            "points": [
+              "Moonshot released Kimi K3 weights as a Mixture-of-Experts model (a technique using specialized network sections activated per task) with 2.8 trillion parameters and native visual understanding capability",
+              "The model achieves 1-million-token context window (ability to process 1 million words of input before responding) with new architecture delivering 2.5x more intelligence per unit of computational power",
+              "Moonshot also opened infrastructure components including attention kernels, a MoE communication library, and agent environment scaling tools for the broader community"
+            ]
+          },
+          {
+            "title": "Cybersecurity-Specific AI Models Emerging",
+            "points": [
+              "Microsoft introduced MAI-Cyber-1-Flash built specifically for discovering difficult security flaws in large codebases, powering a platform called MDASH for vulnerability identification and remediation",
+              "Google released a Gemini Distillation Service allowing users to train smaller, faster student models that learn from larger teacher models, optimized for high-volume latency-sensitive applications and complex reasoning tasks",
+              "Cogent released VR-1, an autonomous cyber reasoning model that can investigate environments and execute attack chains, achieving 2x improvement over baseline models on realistic enterprise attack scenarios"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic position on open-weights models",
+            "url": "https://www.anthropic.com/news/position-open-weights-models"
+          },
+          {
+            "label": "Kimi K3 release and technical report",
+            "url": "https://threadreaderapp.com/thread/2081760186235289764.html"
+          },
+          {
+            "label": "Microsoft MAI-Cyber cybersecurity model",
+            "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/"
+          },
+          {
+            "label": "DeepsecBench vulnerability evaluation benchmark",
+            "url": "https://vercel.com/blog/deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities"
+          },
+          {
+            "label": "Molt agentic reinforcement learning framework",
+            "url": "https://github.com/NVIDIA-NeMo/labs-molt"
+          }
+        ]
+      }
+    }
+  ]
+}
