@@ -78,21 +78,26 @@ def summarize_issues(issues) -> list:
 
 
 def _summarize_one(client, issue) -> dict:
-    response = client.messages.create(
+    user_content = (
+        f"Newsletter: {issue.newsletter_name}\n"
+        f"Subject: {issue.subject}\n"
+        f"Date: {issue.date}\n\n"
+        f"Full text:\n{issue.text}"
+    )
+    # Stream with a generous ceiling so any internal reasoning doesn't eat into
+    # the JSON output and truncate it (billed only for tokens actually used).
+    with client.messages.stream(
         model=SUMMARIZE_MODEL,
-        max_tokens=4000,
+        max_tokens=16000,
         system=SYSTEM_PROMPT,
         output_config={"format": {"type": "json_schema", "schema": ISSUE_SCHEMA}},
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Newsletter: {issue.newsletter_name}\n"
-                f"Subject: {issue.subject}\n"
-                f"Date: {issue.date}\n\n"
-                f"Full text:\n{issue.text}"
-            ),
-        }],
-    )
+        messages=[{"role": "user", "content": user_content}],
+    ) as stream:
+        response = stream.get_final_message()
+    if response.stop_reason == "max_tokens":
+        raise RuntimeError(
+            f"Summary for {issue.newsletter_name} hit max_tokens and was truncated."
+        )
     text = next(b.text for b in response.content if b.type == "text")
     return json.loads(text)
 

@@ -16,8 +16,8 @@ TEMPLATES_DIR = ROOT / "templates"
 TIMEZONE = "America/New_York"
 
 # Models are user-approved plan choices; override via env if desired.
-SUMMARIZE_MODEL = os.environ.get("SUMMARIZE_MODEL", "claude-haiku-4-5")
-SYNTH_MODEL = os.environ.get("SYNTH_MODEL", "claude-sonnet-5")
+SUMMARIZE_MODEL = os.environ.get("SUMMARIZE_MODEL", "claude-opus-5")
+SYNTH_MODEL = os.environ.get("SYNTH_MODEL", "claude-opus-5")
 
 # Inbox lookback windows, in hours.
 LOOKBACK_HOURS = {"daily": 48, "weekly": 192}

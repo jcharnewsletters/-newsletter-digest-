@@ -99,14 +99,13 @@ def synthesize_batch(batch_label: str, summarized: list) -> dict:
         f"Batch: {batch_label}\n\n"
         "Per-newsletter summaries (JSON):\n" + json.dumps(payload, indent=2)
     )
-    # Sonnet 5 runs "thinking" by default, which shares the max_tokens budget
-    # with the output — on content-heavy batches that truncated the JSON mid-
-    # object. Disable thinking so the whole budget goes to the digest, give
-    # generous headroom, and stream (required for large max_tokens).
+    # Give the output generous headroom and stream it: some models spend part
+    # of the max_tokens budget on internal reasoning, which previously truncated
+    # the JSON mid-object. A large ceiling (billed only for tokens actually used)
+    # plus streaming keeps the structured digest complete.
     with client.messages.stream(
         model=SYNTH_MODEL,
-        max_tokens=32000,
-        thinking={"type": "disabled"},
+        max_tokens=40000,
         system=SYSTEM_PROMPT,
         output_config={"format": {"type": "json_schema", "schema": DIGEST_SCHEMA}},
         messages=[{"role": "user", "content": user_content}],
