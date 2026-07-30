@@ -112,6 +112,8 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ALERT_RECIPIENT: ${{ secrets.ALERT_RECIPIENT }}
           SITE_URL: ${{ vars.SITE_URL }}
+          SUMMARIZE_MODEL: ${{ vars.SUMMARIZE_MODEL }}
+          SYNTH_MODEL: ${{ vars.SYNTH_MODEL }}
         run: |
           FLAGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="--dry-run"; fi
