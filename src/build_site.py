@@ -53,18 +53,42 @@ def build_site() -> None:
 
     for i, day in enumerate(days):
         batches = _load_day(day)
+        glance = _glance(batches)
         # Archive pages live one directory below docs/, hence root="../".
         html = day_template.render(
-            date=day, batches=batches, days=days, is_latest=(i == 0), root="../")
+            date=day, batches=batches, glance=glance,
+            days=days, is_latest=(i == 0), root="../")
         (archive_dir / f"{day}.html").write_text(html, encoding="utf-8")
         if i == 0:
             html_index = day_template.render(
-                date=day, batches=batches, days=days, is_latest=True, root="")
+                date=day, batches=batches, glance=glance,
+                days=days, is_latest=True, root="")
             (SITE_DIR / "index.html").write_text(html_index, encoding="utf-8")
 
     if not days:
-        html = day_template.render(date=None, batches=[], days=[], is_latest=True, root="")
+        html = day_template.render(
+            date=None, batches=[], glance=[], days=[], is_latest=True, root="")
         (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
+
+
+def _glance(batches: list) -> list:
+    """One headline per batch for the 'Top things to know today' banner:
+    the first top story if there is one, else the first per-newsletter item."""
+    items = []
+    for r in batches:
+        digest = r["digest"]
+        headline = None
+        if digest.get("top_stories"):
+            headline = digest["top_stories"][0]["title"]
+        else:
+            for nl in digest.get("by_newsletter", []):
+                if nl.get("items"):
+                    headline = nl["items"][0]["title"]
+                    break
+        if headline:
+            items.append({"label": r["label"], "category": r["category"],
+                          "anchor": r["batch"], "headline": headline})
+    return items
 
 
 def _load_day(day: str) -> list:

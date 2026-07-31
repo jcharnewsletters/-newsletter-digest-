@@ -6,11 +6,16 @@
 <meta name="robots" content="noindex">
 <title>Newsletter Digest{% if date %} — {{ date }}{% endif %}</title>
 <link rel="stylesheet" href="{{ root }}style.css">
+<!-- set saved theme before paint to avoid a flash of the wrong colors -->
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
 <header>
-  <h1>📰 Newsletter Digest</h1>
-  {% if date %}<p class="date">{{ date }}{% if not is_latest %} (archive){% endif %}</p>{% endif %}
+  <div class="titlebar">
+    <h1>📰 Newsletter Digest</h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light / dark">🌙</button>
+  </div>
+  {% if date %}<p class="date">{{ date }}{% if not is_latest %} · archive{% endif %}</p>{% endif %}
   <nav class="filters">
     <button class="filter active" data-cat="all">All</button>
     <button class="filter" data-cat="stocks">📈 Stocks</button>
@@ -21,12 +26,25 @@
 </header>
 
 <main>
+{% if glance %}
+<section class="glance">
+  <h2>⚡ Top things to know today</h2>
+  <ul>
+    {% for g in glance %}
+    <li data-cat="{{ g.category }}">
+      <a href="#{{ g.anchor }}"><span class="badge badge-{{ g.category }}">{{ g.category }}</span><span>{{ g.headline }}</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if not batches %}
   <p class="empty">No digests yet — the first scheduled run will populate this page.</p>
 {% endif %}
 
 {% for b in batches %}
-<section class="batch" data-cat="{{ b.category }}">
+<section class="batch" id="{{ b.batch }}" data-cat="{{ b.category }}">
   <h2><span class="badge badge-{{ b.category }}">{{ b.category }}</span> {{ b.label }}</h2>
 
   {% if b.digest.top_stories %}
@@ -35,15 +53,9 @@
     {% for story in b.digest.top_stories %}
     <article class="story">
       <h4>{{ story.title }}</h4>
-      <ul>
-        {% for p in story.points %}<li>{{ p }}</li>{% endfor %}
-      </ul>
+      <ul>{% for p in story.points %}<li>{{ p }}</li>{% endfor %}</ul>
       {% if story.unique_angles %}
-      <ol class="angles">
-        {% for a in story.unique_angles %}
-        <li><strong>{{ a.newsletter }}:</strong> {{ a.point }}</li>
-        {% endfor %}
-      </ol>
+      <ol class="angles">{% for a in story.unique_angles %}<li><strong>{{ a.newsletter }}:</strong> {{ a.point }}</li>{% endfor %}</ol>
       {% endif %}
       <p class="covered-by">Covered by: {{ story.covered_by | join(", ") }}</p>
     </article>
@@ -51,28 +63,30 @@
   </div>
   {% endif %}
 
-  {% for nl in b.digest.by_newsletter %}
-  {% if nl["items"] %}
-  <div class="newsletter-card">
-    <h3>{{ nl.newsletter }}</h3>
-    {% for item in nl["items"] %}
-    <h4>{{ loop.index }}. {{ item.title }}</h4>
-    <ul>
-      {% for p in item.points %}<li>{{ p }}</li>{% endfor %}
-    </ul>
+  {% set nonempty = b.digest.by_newsletter | selectattr("items") | list %}
+  {% if nonempty %}
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
+    {% for nl in nonempty %}
+    <details class="newsletter-card">
+      <summary>{{ nl.newsletter }} <span class="count">{{ nl["items"] | length }}</span></summary>
+      <div class="card-body">
+        {% for item in nl["items"] %}
+        <h4>{{ loop.index }}. {{ item.title }}</h4>
+        <ul>{% for p in item.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% endfor %}
+      </div>
+    </details>
     {% endfor %}
   </div>
   {% endif %}
-  {% endfor %}
 
   {% set links = [] %}
   {% for issue in b.issues %}{% for l in issue.summary.links %}{% if links.append(l) %}{% endif %}{% endfor %}{% endfor %}
   {% if links %}
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      {% for l in links[:12] %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}
-    </ul>
+    <div class="card-body"><ul>{% for l in links[:12] %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}</ul></div>
   </details>
   {% endif %}
 </section>
@@ -82,21 +96,42 @@
 {% if days %}
 <footer>
   <h3>Archive</h3>
-  <ul class="archive">
-    {% for d in days %}<li><a href="{{ root }}archive/{{ d }}.html">{{ d }}</a></li>{% endfor %}
-  </ul>
+  <ul class="archive">{% for d in days %}<li><a href="{{ root }}archive/{{ d }}.html">{{ d }}</a></li>{% endfor %}</ul>
 </footer>
 {% endif %}
 
 <script>
-document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
-  document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const cat = btn.dataset.cat;
-  document.querySelectorAll('.batch').forEach(s => {
-    s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
+// category filter (also filters the "top things" list)
+document.querySelectorAll('.filter').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var cat = btn.dataset.cat;
+    document.querySelectorAll('.batch').forEach(function (s) {
+      s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
+    });
+    document.querySelectorAll('.glance li').forEach(function (li) {
+      li.style.display = (cat === 'all' || li.dataset.cat === cat) ? '' : 'none';
+    });
   });
-}));
+});
+
+// light / dark toggle, remembered across visits
+(function () {
+  var root = document.documentElement, btn = document.getElementById('theme-toggle');
+  function current() {
+    return root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  }
+  function paint() { btn.textContent = current() === 'dark' ? '☀️' : '🌙'; }
+  paint();
+  btn.addEventListener('click', function () {
+    var next = current() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    paint();
+  });
+})();
 </script>
 </body>
 </html>
