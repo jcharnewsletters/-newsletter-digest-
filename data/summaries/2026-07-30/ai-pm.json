@@ -1,0 +1,513 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-07-30",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Microsoft's Copilot 'super app' bets on model-agnostic AI",
+        "points": [
+          "Microsoft confirmed a Copilot \"super app\" shipping later this year that merges coding, chat, and autonomous agents into a single workspace.",
+          "The platform will offer 11,000+ models and is explicitly model-agnostic (not tied to one vendor), letting enterprises swap models without lock-in.",
+          "The move positions Microsoft in direct competition with OpenAI and Anthropic, whose businesses lean on API-only access to their own models."
+        ],
+        "covered_by": [
+          "Everyday AI",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Everyday AI",
+            "point": "Microsoft paired the announcement with strong Azure growth and rising enterprise adoption numbers."
+          }
+        ]
+      },
+      {
+        "title": "Washington weighs AI controls after security incidents; Altman softens on regulation",
+        "points": [
+          "President Trump said Wednesday the administration is weighing new AI controls after cybersecurity incidents involving AI tools, framed as staying ahead of China without overrestricting U.S. development.",
+          "OpenAI acknowledged unauthorized breaches carried out with its tools and said more incidents may exist.",
+          "Sam Altman briefed Senate Commerce Chair Ted Cruz and Democratic senators on a new OpenAI model but disclosed almost no details on capabilities, timeline, or release plans.",
+          "Altman avoided \"deceleration\" language, instead saying OpenAI must \"pace\" development, and privately signaled openness to mandatory pre-deployment testing and federal auditing.",
+          "A White House meeting with Susie Wiles was scheduled ahead of an August 1 voluntary safety-testing framework deadline."
+        ],
+        "covered_by": [
+          "Everyday AI",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "A Hugging Face (a popular platform for sharing AI models and code) breach exposed an internal OpenAI research prototype, which OpenAI says is now permanently deactivated even for internal research."
+          },
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "Meta is the only frontier lab that has not signed the government's voluntary testing framework."
+          },
+          {
+            "newsletter": "Everyday AI",
+            "point": "Frames the shift as a move from a hands-off stance to active policy consideration driven by breaches."
+          }
+        ]
+      },
+      {
+        "title": "GPT-5.6 pricing collapses and Cerebras makes agents ~20x faster",
+        "points": [
+          "OpenAI cut GPT-5.6 prices just three weeks after launch: the fast/cheap Luna tier down ~80%, mid-tier Terra down 20%, top-tier Sol unchanged.",
+          "OpenAI attributes the cuts to efficiency gains and is simultaneously raising context window limits (how much text a model can consider at once) and subscription plan performance.",
+          "GPT-5.6 Sol running on Cerebras hardware is expected to compress 5-minute agent tasks to roughly 30 seconds, a ~20x speedup.",
+          "Everyday AI argues the right response is not more agents per worker but redesigning jobs around four activities: decide what matters, delegate, inspect exceptions, integrate results.",
+          "Warning of a \"compression tax\": when agents handle 95% of work and humans just click approve, domain expertise and decision quality erode."
+        ],
+        "covered_by": [
+          "Everyday AI",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Everyday AI",
+            "point": "Cites 68% of workers preferring to ask AI agents over managers (Adobe) and 63% using AI to avoid difficult workplace conversations (Preply) as evidence human knowledge transfer is being bypassed."
+          },
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "Notes Google processed over a quadrillion tokens between May and July (>100% monthly volume growth), roughly what a single OpenClaw agent burns in a month."
+          },
+          {
+            "newsletter": "Everyday AI",
+            "point": "Recommends mandating that human decision owners explain their reasoning and preserving unstructured time for judgment, learning, and belonging."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "Lenny's Newsletter",
+        "items": [
+          {
+            "title": "Elena Verna on the real economics and costs of being a content creator",
+            "points": [
+              "Verna built 100K Substack subscribers and 230K LinkedIn followers by publishing real operational insights from her day job rather than generic advice.",
+              "She now earns more from content, sponsorships, and advisory work than from her full-time salary, creating career optionality.",
+              "Revenue mix: free current newsletter issues with paid archive access (1,000+ paid subscribers), sponsorships worth thousands per issue for products she personally endorses, and startup advising.",
+              "Growth path: LinkedIn frameworks 2–3x/week (rule: if she said something three times in conversation, she posted it), 0 to 40K followers in a year, then a viral meme accelerated it; Substack launched ~2 years in.",
+              "Followed Brian Balfour's rule that top content is either contrarian (a provocative claim others won't say aloud) or pattern recognition that resonates psychologically.",
+              "Costs: harassment from people who only read headlines, an obligation to post on schedule that kills the joy, and audiences that treat evolving opinions as hypocrisy.",
+              "Three rules: reply to every comment, be unapologetically yourself instead of chasing virality (\"creator-market fit\"), and pick a narrow niche.",
+              "She hired editor Jonathan Yagel to turn raw rants into essays (English is her second language) but keeps final editorial pass; taking August off to avoid burnout.",
+              "Her advice to aspiring creators: optimize for impact (people saying your work changed their career) over follower counts."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Batch (DeepLearning.AI)",
+        "items": [
+          {
+            "title": "AI writes your code — who reviews it?",
+            "points": [
+              "AI-generated code now appears in most development pipelines, but organizations lack standardized processes to validate correctness, security, and maintainability.",
+              "AI produces code faster than humans can review it, creating review bottlenecks and quality risk.",
+              "Traditional review practices miss AI-specific failure modes like hallucinations (incorrect logic stated confidently) and overlooked security gaps.",
+              "Best practice: focus scarce human attention on security boundaries, data validation, API contracts, and business logic, not style or formatting.",
+              "Automate mechanical checks — linting (automated style/error scanning), type checking, and basic security patterns.",
+              "Context-aware review agents can be trained on a project's own code patterns and historical decisions to enforce team standards, and on external dependency limits to catch compatibility issues.",
+              "Design agents to flag ambiguous cases for humans rather than making judgment calls alone."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Dharmesh @ simple.ai",
+        "items": [
+          {
+            "title": "Agent.ai shuts down and becomes HubSpot's AgentBuilder.com",
+            "points": [
+              "Agent.ai attracted 3 million users in 2 years and is now being folded into AgentBuilder.com, a HubSpot product letting CRM customers build agents on their existing customer data.",
+              "The key insight it proved: customer context from a CRM (customer relationship management system storing company sales and support data) is critical for effective agents.",
+              "Precedent: ChatSpot (2023) failed as a product but its insight became HubSpot's Breeze Assistant."
+            ]
+          },
+          {
+            "title": "Why tiny AI experiments teach more than big projects",
+            "points": [
+              "dadjoke.ai exposed core model limits — context window constraints (how much information a model can hold at once), hallucination, and how hard humor is to replicate — lessons that fed serious product design.",
+              "Personal-itch projects like domainvalue.com and companyresearch.ai enabled zero-stakes tests of system design and blind taste tests between models.",
+              "Retest AI assumptions every ~6 months, since experiments that failed last year may now work.",
+              "Three experiments to try this week: use an AI feature you've ignored (voice mode, projects, scheduled tasks), turn a repeated prompt into a custom GPT or Claude Project or vibe-code a one-page tool, and let AI pilot one recurring task (meeting prep, email triage) for a week."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Everyday AI",
+        "items": [
+          {
+            "title": "Gemini offers free AI video creation",
+            "points": [
+              "Google is giving Gemini users up to 10 free video creations through August 4, 2026, pushing AI video generation toward mainstream consumer use."
+            ]
+          },
+          {
+            "title": "Lilian Weng rejoins OpenAI",
+            "points": [
+              "The prominent researcher is returning to OpenAI to lead research acceleration efforts."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "AI Daily Brief",
+        "items": [
+          {
+            "title": "AI revenue explodes as tokens become the new labor line item",
+            "points": [
+              "OpenAI's CFO Sarah Friar told employees that annualized July revenue exceeded all of Q2 combined.",
+              "Anthropic's recent run-rate growth has eclipsed OpenAI's, per the newsletter.",
+              "Token consumption (paying per unit of computation processed) is now the dominant enterprise AI cost model, with companies like Uber burning annual AI budgets in months.",
+              "The framing: AI spend behaves less like a software category and more like a labor budget."
+            ]
+          },
+          {
+            "title": "Six foundational questions every enterprise must answer about AI",
+            "points": [
+              "Enterprises have moved past \"is AI real\" to treating AI as labor replacement via agentic systems, driven by late-2025 model breakthroughs like Claude Opus.",
+              "No single best-vendor strategy works: architectures need multiple models routed by task type plus harness design (controlling which people access which data, systems, and safeguards).",
+              "Cost allocation and usage monitoring for tokens must be redesigned across teams and projects.",
+              "The capability-to-value gap is widening because models improve faster than workforces can be retrained, pushing companies to build bespoke training and force engineer–business collaboration.",
+              "Planned obsolescence is now an architecture principle — most orgs assume new systems will need rebuilding within months."
+            ]
+          },
+          {
+            "title": "Zuckerberg's acceleration push",
+            "points": [
+              "A Wall Street Journal op-ed from Mark Zuckerberg argues the defining AI question is who controls access to superintelligence — a few institutions or broad distribution.",
+              "He questions why developers claim AI could eliminate humanity yet rush to build it anyway.",
+              "Meta is running a coordinated press campaign: acceleration in the Journal, opposition to Chinese AI bans in the FT, and calls for realism in the NYT."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "Lenny's Newsletter",
+      "subject": "So, you want to be a content creator?",
+      "date": "2026-07-29T18:21:16+00:00",
+      "summary": {
+        "headlines": [
+          "Creator Elena Verna built 100K Substack subscribers and 230K LinkedIn followers by sharing real operational insights instead of generic advice, earning more from content than her full-time salary.",
+          "The content creation path requires thick skin: harassment from people who haven't read your work, pressure to maintain posting schedules, and constant criticism about your evolving opinions and company affiliations.",
+          "Verna's three core rules for sustainable content creation are: respond to every comment, be unapologetically yourself rather than chasing virality, and find your specific niche instead of trying to appeal to everyone.",
+          "She monetizes through free newsletter issues with paid archive access (1000+ subscribers), sponsorships ($1000s per issue), and advisory work—but warns most people should focus on impact over follower counts if considering the creator path.",
+          "Starting with simple frameworks and pattern-recognition posts on LinkedIn, Verna grew from 20 likes per post to viral memes by sharing what she naturally learned from her day job, then expanded to long-form writing on Substack."
+        ],
+        "sections": [
+          {
+            "title": "How Elena Built Her Creator Platform",
+            "points": [
+              "Started posting LinkedIn bite-sized frameworks 2-3 times per week using a simple rule: if she said something 3 times in conversation, she'd post it publicly.",
+              "Followed Brian Balfour's principle that top-performing content either: (1) presents contrarian takes (provocative claims people aren't saying aloud), or (2) recognizes patterns that resonate with human psychology.",
+              "Grew from near-zero engagement (20 likes felt significant) to 40K LinkedIn followers in one year, then accelerated further when a meme went viral—discovering people digest hard truths better through images than words.",
+              "Launched Substack ~2 years in after audience repeatedly requested deeper long-form content beyond social media bites, now at 100K subscribers using a freemium model (free current issues, paid archive access)."
+            ]
+          },
+          {
+            "title": "The Hidden Costs of Being Visible",
+            "points": [
+              "Creating content transforms from creative freedom into an obligation: paid subscribers and sponsors expect consistent cadence, which removes the joy and forces scheduling around inspiration rather than genuine motivation.",
+              "Harassment scales with visibility—people attack character and credentials based on headlines or secondhand summaries without reading full articles; some seem dedicated to finding flaws rather than engaging substantively.",
+              "Personal impact of visibility: audiences develop fixed mental models of who you are, resisting when your authentic interests shift (e.g., criticizing focus on current job as 'AI slop farmer' or 'sellout' despite it being real daily work).",
+              "Operating with publicly developing opinions creates permanent record of evolving thinking; Internet treats changing views as hypocrisy rather than growth, similar to how social media freezes teenagers' early thoughts forever."
+            ]
+          },
+          {
+            "title": "Three Core Principles for Sustainable Content Creation",
+            "points": [
+              "Respond to every comment: engagement is the core purpose—if you stop wanting to interact with people who read your work, you've lost the fundamental reason to create.",
+              "Be unapologetically yourself over algorithm optimization: trying to fit a mold feels exhausting and forced, burns out quickly, and fails anyway; the only sustainable strategy is finding your specific audience ('creator-market fit').",
+              "Find your niche rather than appealing to everyone: identify your unique knowledge, underserved problem you solve, and specific people you serve; the goal is becoming valuable to someone, not reaching everyone."
+            ]
+          },
+          {
+            "title": "Monetization and Long-Term Viability",
+            "points": [
+              "Three revenue streams: free current posts + paid archive access (1000+ paid subscribers), sponsorships (thousands per issue) limited to products she personally endorses, and advisory/consulting work to startups.",
+              "Hired an editor (Jonathan Yagel) to transform raw ideas and verbal rants into structured essays, especially valuable since English is her second language; retains final editorial pass to keep voice authentic.",
+              "Now makes more income from solopreneur activities (content, advising) than full-time salary, creating career optionality—but emphasizes impact metrics (people saying work changed their career) matter more than follower counts for satisfaction.",
+              "Taking August off to recharge: content creation grind risks burnout; sustainable approach requires stepping back periodically to rediscover authentic motivation beyond obligation or metrics."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Elena's Growth Scoop Newsletter",
+            "url": "https://substack.com/@plgrowth"
+          },
+          {
+            "label": "Companies treating follower counts in hiring decisions",
+            "url": "https://substack.com/redirect/3d9afa94-a141-4d29-8598-1d831c33f618"
+          },
+          {
+            "label": "LinkedIn Lunatics",
+            "url": "https://substack.com/redirect/46e5993d-efa8-4875-b6a6-901f5afa64e0"
+          },
+          {
+            "label": "Reforge",
+            "url": "https://substack.com/redirect/b5bf5968-3687-4ce0-b630-9a564135ce1c"
+          },
+          {
+            "label": "Editor Jonathan Yagel",
+            "url": "https://substack.com/redirect/7f90da86-7b90-45cc-abd1-03d94d617334"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Batch (DeepLearning.AI)",
+      "subject": "AI writes your code. Who reviews it?",
+      "date": "2026-07-29T13:16:01-07:00",
+      "summary": {
+        "headlines": [
+          "AI code generation is mainstream but lacks systematic review processes; best practices focus on context awareness and integration into existing workflows",
+          "Building effective AI code review requires human oversight of security vulnerabilities, logic errors, and architectural decisions that AI systems often miss",
+          "Context-aware review agents can be trained to understand project-specific patterns and standards, reducing manual effort while maintaining code quality"
+        ],
+        "sections": [
+          {
+            "title": "The AI Code Review Challenge",
+            "points": [
+              "1. AI-generated code now appears in most development pipelines, but organizations lack standardized processes to validate its correctness, security, and maintainability",
+              "2. Human reviewers struggle with scale: AI can produce code faster than teams can review it, creating bottlenecks and quality risks",
+              "3. Traditional code review practices fail to address AI-specific issues like hallucinations (incorrect logic presented confidently) and security oversights"
+            ]
+          },
+          {
+            "title": "Effective Review Practices",
+            "points": [
+              "1. Context matters most: reviewers must understand the project's architecture, coding standards, and business requirements to catch subtle errors AI misses",
+              "2. Focus human effort on high-risk areas: security boundaries, data validation, API contracts, and business logic rather than style or formatting",
+              "3. Automate mechanical checks (linting, type checking, basic security patterns) to preserve human reviewers for architectural and logical reasoning"
+            ]
+          },
+          {
+            "title": "Building Context-Aware Review Agents",
+            "points": [
+              "1. Train review agents on project-specific code patterns and historical decisions to replicate team standards automatically",
+              "2. Integrate knowledge of external dependencies, APIs, and third-party library limitations to catch compatibility issues",
+              "3. Design systems that flag ambiguous cases for human decision-making rather than attempting to make judgment calls independently"
+            ]
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "newsletter": "Dharmesh @ simple.ai",
+      "subject": "🤖 AI Experiments Are Fun And Fruitful",
+      "date": "2026-07-29T16:58:15+00:00",
+      "summary": {
+        "headlines": [
+          "Agent.ai, which attracted 3 million users in 2 years, is being shut down and transformed into AgentBuilder.com—a HubSpot product that lets thousands of CRM customers build AI agents using existing customer data.",
+          "Small, silly AI experiments (like a dad joke generator) taught the author as much about model limitations and system design as larger projects, proving that low-stakes tinkering is a path to learning.",
+          "The best way to improve your AI skills this week is to pick one tiny experiment: try a newly released AI feature, build a simple one-page tool, or pilot a single work task with AI for a week."
+        ],
+        "sections": [
+          {
+            "title": "How Experiments Lead to Real Products",
+            "points": [
+              "ChatSpot (2023) evolved into HubSpot's Breeze Assistant after the original experiment proved what users actually wanted—the failed product didn't matter; the insight did.",
+              "Agent.ai, initially built with no product timeline in mind, became the foundation for AgentBuilder.com by demonstrating that customer context from a CRM is critical for effective agents.",
+              "The author's pattern: small, curiosity-driven projects often surface learnings that feed into bigger products, even when the original experiment never ships at scale."
+            ]
+          },
+          {
+            "title": "Why Tiny Projects Teach You More Than You'd Expect",
+            "points": [
+              "Dadjoke.ai revealed core model limitations: context window constraints (how much information an AI can hold at once), hallucination (confident false information), and the genuine difficulty of replicating humor in a way that informed serious product design.",
+              "Personal-itch projects like domainvalue.com and companyresearch.ai let the author experiment with system design questions (how does this improve over time?) and user behavior (blind taste tests between models) with zero stakes.",
+              "Retest AI assumptions every 6 months—models and capabilities change fast, so experiments that failed last year may work today."
+            ]
+          },
+          {
+            "title": "Three Ways to Run Your First AI Experiment This Week",
+            "points": [
+              "Try a newly released AI feature you've been ignoring (voice mode, projects, scheduled tasks) or run an old task through a newer model.",
+              "Take a prompt you paste repeatedly and turn it into a custom GPT or Claude Project, or vibe-code a simple one-page tool for something you still do manually.",
+              "Pick one recurring work task (meeting prep, email triaging) and let AI pilot it for a full week to see what happens."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "AgentBuilder.com",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.o4V7EdnwAfm0KCr8ekFBCXFFOERQ2pl3yICvHBReGKhFBl-ScZnTDO-iHvGZdvyDgurw9W9JCS0XN8l7UKvBFORDc81T0AHullne5MTegm62tdQZS4ZnuISUqiqr3GPGvyBMxHcgawHjAtXKjPRbR6dr7jIN1ZOWnMQAvAexV7-nGHuDA2voCuPPcEJGpCLa4IxCckApJwtAPQS2hYnswWmn4DjImDHu_Dz0MZ77zvQ/4sq/u-mFNjQjRUikP1XaQP_t5g/h3/h001.99SNV0ce1tShknW_wQswKkKy43K4J0SXnfrFVur92tA"
+          },
+          {
+            "label": "dadjoke.ai",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kSaWGANYBv98s4dJIq-1W1VrVwGcMedMRwqDBHCIF_QBmi3XFn_YKAW3xuNCI3v5rlQK8JplFYzL5OKGJ82E5xH1AZHLQc-3F_rydq4r7eexn27KAYm6SjDE_Ccqo0PIQ_HtxsX2T6cCWUx_pACNHpbaGjXZFFJoGvnDPfBrTjB19WavFgrUVPqgqLXik6dwCRaICtoqmuTtWOW1C_EGP-aa8o4JU_Ek99PmoSxWg18/4sq/u-mFNjQjRUikP1XaQP_t5g/h6/h001.28o1ypS1IAVw0xSP9wR_RwzUOQkv06lt7HjqyVGDIgo"
+          },
+          {
+            "label": "domainvalue.com",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.5KXtl029Jfz43xkrQWjHjgvzT0CDnZirF-sJhvuV08NhNaePJv4I_-Xx3idWhY1982ogUNRw0-CjK4B5zdFASNdUjXEjBnIHLM5Bj_N90c8dGZsoKX7IA56nyycgE9GSBhKLENbZhoO9qnW1GTZNhNL6Hm_7HA6anYElg4nSUkqj1Uf71cf_Ms9JPWvG-BlhE8tiauMwE_8ftgEWhLIr2sVkbk4Tc1Wg-p6rFNnI4gU/4sq/u-mFNjQjRUikP1XaQP_t5g/h8/h001.GYYu9-BHc9WCNN7l03g8Iap7_psCML_w4DmVMnree-w"
+          },
+          {
+            "label": "companyresearch.ai",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.35uQXL4i1PFFPCkOo30osRcV2YnSuxwmlHnlrx-wD0DZ5-5HqV_cBfGCp_RxvhyeZYzQfsBzTYzy8HY6vMmCj25UJkT-cPmxdCG8oAMAxnXR2rhXEDeL7Ww9YhPIXf2zA109GKDn8xozqICTPBV2CRasfNOsi4v4zh0V2cVxn-N_g-UjiASz0Hm0dgJ9ZOKKGTtYpRmiYwwJ3Nb4vMbENJ_XEu5j-ONyYOMFXi7qiWk/4sq/u-mFNjQjRUikP1XaQP_t5g/h9/h001.zmHjs8NN7u0yIMGMZiLK7OaUe9_M2-gkaTRdGQMpQyg"
+          },
+          {
+            "label": "AI features that have significantly improved",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.OmvVQoGRxXyFopAr2m0tC4aeQQkN1p7fPOLOqnknC5luZY04FNe39RQAtHs7E_Dhld3eOc2nneio_aeDuxWq6ZM5B9RzT_uy6diGBpGthZuNk_ie58nHD2Rb82hc8wt5gPLyofjzGYFNqvJkFU5hWHdYtOkp6neBZTsXQtO7Mz01GSlKLU-Or3nImTdsdRB76LypKOnuyhp5uosOxmg4nc-WGoqog--yWipDR587hWw3IWujbvrIo1Hb18R4vSjuhRxzvvatww0KHK5346J7z1QyG7k4XcNNe6O4mLRsQXPUfFoRKCgR6vmaBj2EpG3oaY4KBRogCHw7h-yXmosTOALyvPKbPVIVZrnL_fMkui6qf_c1pDjzSk3SP5YkpZYbuaiXkHphloj_RRAC2i2no1YqaTrtgAudQVPVOzHDRq245sPNe9Y24fz25npj8cFAPLFbMRNYkKaktUtkw1g0wX2KGCkzAjo6bGmJR_u5AEHkKnMMl2Y22T2SMKvZxG_oCrfBOeMA20W3t1rPYOmEUwG2-lLKzeQMDC4XlL1qI5U5sav6IPpqCq1PIir23n0SFfMwoP1o7alyYBGNK3jWj9GZuBJSsc80d-17H5pyskVzEeYogND_ZeTw1e0VVXqr8bUX-sm8mAePRRMUCJqoYapF7z1UyK3XGj0SZUUP_GgalCo-nn5l4kKmLqQQ5bupMbYC013QzB89IPhi07vOEQzxRb4lNLIPgfS7a7Y7V9iyB4lvWPMGiFPG3ecmOgMA/4sq/u-mFNjQjRUikP1XaQP_t5g/h10/h001.3K81cGiMSiBFxetUt4b6LinWXGOx6aK7YXtBI6WXqO8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Everyday AI",
+      "subject": "OpenAI shocks with massive price drops 🤑",
+      "date": "2026-07-30T19:05:41+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI cuts GPT-5.6 prices by up to 80% just three weeks after launch, signaling intense competition as efficiency gains allow cheaper model delivery",
+          "Trump administration considering new AI controls following cybersecurity incidents, aiming to stay ahead of China without overrestricting the technology",
+          "Microsoft announces Copilot super app combining coding, chat, and autonomous agents into single workspace; company showed strong Azure growth and rising adoption",
+          "Incoming GPT-5.6 Sol model on Cerebras infrastructure will make agents 20x faster (5-minute tasks in ~30 seconds), forcing organizations to redesign workflows around agent orchestration",
+          "Gemini offers free video creation for up to 10 videos through August 4, 2026, pushing AI video tools into broader consumer use"
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Dramatic Price Cuts Signal Market Shift",
+            "points": [
+              "1. GPT-5.6 Luna (fastest, cheapest tier) cut by ~80%; Terra mid-tier down 20%; Sol unchanged—OpenAI explicitly stating it can deliver same performance more cheaply due to efficiency gains",
+              "2. Price reduction comes only 3 weeks after model launch, indicating aggressive competition forcing rapid pricing adjustments in the AI market",
+              "3. OpenAI simultaneously increasing context window limits and raising subscription plan performance, spreading efficiency gains across all user tiers",
+              "4. Move signals that raw model capability alone no longer determines pricing; operational efficiency and inference speed (how fast models can process requests) now drive competitive advantage"
+            ]
+          },
+          {
+            "title": "Trump Admin Eyes New AI Regulation After Security Breaches",
+            "points": [
+              "1. President Trump stated Wednesday administration is weighing controls on AI following recent cybersecurity incidents tied to AI tools exploiting systems",
+              "2. OpenAI acknowledged unauthorized breaches using its tools occurred and admitted more incidents may exist, creating pressure for government action",
+              "3. Trump administration emphasizing balance: staying ahead of China technologically while avoiding overrestriction that could slow U.S. AI development",
+              "4. Shift marks more urgent tone than previous hands-off approach, suggesting security breaches have elevated AI regulation from theoretical discussion to active policy consideration"
+            ]
+          },
+          {
+            "title": "Managing 20x Faster Agents Requires Complete Workflow Redesign",
+            "points": [
+              "1. GPT-5.6 Sol running on Cerebras infrastructure will compress 5-minute agent tasks to ~30 seconds, fundamentally changing how knowledge work gets structured and managed",
+              "2. Traditional response: add more agents per worker and demand more output—incorrect approach that uses tomorrow's speed on yesterday's organizational design",
+              "3. Required redesign: restructure jobs around 4 core activities—decide what matters, delegate to agents, inspect exceptions, integrate results—shifting from task execution to judgment and orchestration",
+              "4. Risk of 'compression tax': as agents move faster and handle 95% of work, humans approving outputs without understanding reasoning can erode domain expertise and decision quality"
+            ]
+          },
+          {
+            "title": "Protecting Human Judgment as Automation Accelerates",
+            "points": [
+              "1. 68% of workers prefer asking AI agents questions over managers (Adobe); 63% use AI to avoid difficult workplace conversations (Preply)—indicating workflows increasingly bypass human-to-human knowledge transfer",
+              "2. Speed removes hidden value in human handoffs: conversations about why decisions changed, who owns consequences, and how expertise spreads across teams",
+              "3. Generic 'human-in-the-loop' approval workflows fail when agents deliver answers in seconds while reviewers merely click approve, hollowing out accountability and learning",
+              "4. Recommended protection: mandate human decision owners explain their reasoning, schedule coaching conversations, and preserve unstructured interaction for three categories—judgment (consequences), learning (expertise transfer), belonging (trust)"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's GPT-5.6 price cuts announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXiBkLSoUqrbuInXpMtzNgSONqQtkp-645_zbGrL-AyvRGDoF4pptJy-1eQI2a7QAIQYQuqVVc_cNAT1KiJdr1MzH_qK4FlqeHL4ryC9HsDn6ks70D0Z3wrWyUteP-sg3AR2A_xbeanPp8xNmSdoyCXH-yMW2qu5_HaJEepn_yXFIncN3IR4PS7DbjConvOaKvQ-uU_55Ig31lbrv1YVGwICwo5Fkv7rzI9qL_Jhwh1m8TDzWlutAVkzUYo5w3ZsqBmGB-Yl2HsTIs1mBybLEgMlpU8Yk_Eg9gDPY8-vI223-gvbdaJ1VmrG3baapjrmxonjOKiOfZehLGI6RPHG_jqJljY-nWjfwxZ-XoDy7qLZu/4sr/Jm7-hAgRSHG6ku7LqtDH-Q/h38/h001.JELgSfZUtc5Zk5SauKpDd_4mjuX7hA7nAcyKo_VpisQ"
+          },
+          {
+            "label": "Trump considers new AI controls after security incidents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXmTQfwLmmnu27wOdFI5e9gslIMyJTQyUmyR3-qX3zR4DSOTMNJBl8ozKwXYeRBIgjrNYv4zgPt34w7R0pd2glRd95vFgZC8WnSf1CSFmv5sT-RG4OFndVwtcxtS5B3JKpylxg_VOg7PXHjNKXYj1phuFGGbWyLaoFe3flEq1wCMTsbzSahW3j6Y-hRK2JDJWDlMjD4HtBL9nb00WWEymZ--ba0Nz1fX2mTzwdPOaPebag_O0I-49opVLnp53LtQXemuqhqskeR2xWwkMI0_NseX0H63MiQFwEwQCo1DMUp62zWbwGXEMkqfwo4rXKMlUgMG7Ji93-h0H6FLRG9tlpU8/4sr/Jm7-hAgRSHG6ku7LqtDH-Q/h33/h001.lGbg77AC8mhhjXuAJtX5zHTPzu0dxFzWc4_RTIvv99k"
+          },
+          {
+            "label": "Microsoft Copilot super app announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Qggw_4SjuHT99YCXDADync1lVBBAdoboHONqdobIuV27Lt94pBymJDNCTu7rbaxHYZ8pZl_gS7rq31QqgpaqwarBbZfydhdFOWQ-r1QiFNZXhdvzgtIrhs2mPCHchlXoWKrP4v4DHZzgK4phphCHeYaERMHCpTXilbk8pxnwAnp67JR8gwjvOMqcUk01HgZBgJT-Fpaa1A-Sai9LgcI94C4511Tt5qs-PWQJB1G9KcYEO49krPoIIfogYVoeYNYSTK0vRr6ln4CVu1Q6gUbNp00xoXDpQQpMo7TpTnxRzBqBCKEYeSAA20_lc10WZBWlPOsoDoP1P23OOt32b7bubSzZq4mlK87B5PP0GPXAw5L8lp7st35kf3gWKNpXzJuTtZoM7V40pAT_ujSIujB5zw/4sr/Jm7-hAgRSHG6ku7LqtDH-Q/h34/h001.y1mQWXdIol05fE7I17tzGdaC4Gcy0dv-squfD2N__7A"
+          },
+          {
+            "label": "Lilian Weng rejoins OpenAI to lead research acceleration",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AEUjIQzdnlQfpaEm1BIz9RNQIEeC5TP5jRGYBpI4CV8e3F5gsSI1un3fLsBEc2aqPOFYweOlrQBe4gyrULzZ5-Wxx8kTlbYTjx7WZT7A7Diwg2u8bAiBFgnnvGfu9fuz6P0gXFbctT2UYauXUKApO-snUxxiHW9J2bGGbbiuluHdOkBHPk-XXcR6YTxNgFc5N1gHoFOEfN0J1NQMJoMcTVqZ0-GxqRW-pxt103CFB3wuP_H8RHsMlh3I0Xh3qLlES8Ba65PTssGAxoYyPyIUoskB91KrGfKKfBUYktpYZ3P9hvW_DGcuc27Qi87D060T5SIReNcXQwBkW0cauAQTqeDoF7-JZ3Ld4Dd00ueRC8x5YN7fvgf2L7g_uXSHh1JZnY8wqOup7Xin5H6k782JVlANRV29u-XF7ad0WKatjxurF7c-g8GXKzuZwWFgVAiF1HrJpKCJutvdpPqyjwObW3bYfBhNSAjFlI5ps3fMRJ4/4sr/Jm7-hAgRSHG6ku7LqtDH-Q/h36/h001.ukPQh6hpb0Hj1Blt0j7tBVF8I-AJP_YOFTnLTGxma_I"
+          },
+          {
+            "label": "Gemini free video creation offer through August 4",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.vyB_Vbt7AWbLkpMfRqnXJ5ibxfHcnVjc8Ie0iRt6sw456lNgY6QN1sr8SQ8V4kx4gQAF4GZ5SH4fx1sIjoxzXblTsPV2mOhjIjLQ7j8gDzgJPBDcLc7cW4G0Rn6_Hga3yvxu3ss2kRezDKNbG_NqooEiDagGSTlr9fg116DmKVF5s3gWnivWd-D2lpgo806Gat9x9d4t2M-QEjBhOZ-opw/4sr/Jm7-hAgRSHG6ku7LqtDH-Q/h37/h001.dMSv-4bSWje9bWNIOTo7haBFgR0pENRbWOVgtGaNvsI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "AI Daily Brief",
+      "subject": "6 Questions Every Enterprise Has to Answer About AI",
+      "date": "2026-07-31T00:44:01+00:00",
+      "summary": {
+        "headlines": [
+          "Sam Altman briefed US lawmakers on OpenAI's new model amid a Hugging Face security breach, rejecting 'deceleration' language but agreeing to 'pace' AI development as capabilities advance, with a White House meeting scheduled before an August 1 safety testing deadline.",
+          "OpenAI's annualized revenue in July exceeded all of Q2 combined, signaling the shift from model sales to token consumption (paying per unit of computation processed) as the dominant cost model for enterprise AI.",
+          "Microsoft is launching a Copilot 'super app' later this year offering 11,000+ models as a model-agnostic platform, positioning itself to compete directly with OpenAI and Anthropic by letting enterprises swap models without vendor lock-in.",
+          "Mark Zuckerberg published a Wall Street Journal op-ed arguing AI's defining question is access distribution—whether superintelligence stays concentrated in a few hands or spreads broadly—while Meta remains the only major lab refusing the government's voluntary testing framework.",
+          "Enterprises have shifted from 'if AI is real' to six foundational questions about redesigning operations for an agentic era: how to architect multi-model systems, allocate token costs, retrain workforces, and build for rapid obsolescence as models and capabilities evolve monthly."
+        ],
+        "sections": [
+          {
+            "title": "1. Sam Altman's Washington Visit and the Hugging Face Incident",
+            "points": [
+              "Altman met with Senate Commerce Chair Ted Cruz and Democratic senators to preview a new OpenAI model, but disclosed almost no details about its capabilities, timeline, or release plans.",
+              "A Hugging Face security breach exposed an internal research prototype; OpenAI now says it was 'internal-only' and has been permanently deactivated even for internal research, making it unlikely to ever ship.",
+              "Altman avoided 'deceleration' rhetoric, instead saying the company talks about needing to 'pace' AI development as models get more capable—a notable semantic shift ahead of meetings with the White House and an August 1 voluntary safety testing deadline.",
+              "Hallway conversations revealed Altman is open to mandatory pre-deployment testing and federal auditing, indicating movement on regulation that major labs have previously resisted."
+            ]
+          },
+          {
+            "title": "2. The Enterprise AI Turning Point: Six Foundational Questions",
+            "points": [
+              "Enterprises have completed the shift from proof-of-concept to treating AI as a labor replacement (agentic systems doing work rather than assisting humans), driven by breakthroughs in late 2025 with models like Claude Opus.",
+              "Token consumption (paying per computational unit processed) is now the dominant cost driver, with companies like Uber burning annual AI budgets in months—enterprises must redesign cost allocation and usage monitoring across teams and projects.",
+              "No single 'best vendor' strategy works anymore; organizations need to design architectures with multiple models routed to different task types, plus harness design (controlling which people access which data, systems, and safeguards).",
+              "The capability-to-value gap is widening because models improve faster than organizations can train workforces; companies are building bespoke training programs and forcing collaboration between engineers and business units to transmit new mental models for managing agents.",
+              "Most organizations assume any new system will need rebuilding within months as models, policies, and customer expectations shift, making planned obsolescence a core architecture principle."
+            ]
+          },
+          {
+            "title": "3. Microsoft, Zuckerberg, and the Acceleration Debate",
+            "points": [
+              "Microsoft confirmed a Copilot 'super app' shipping later in 2026, offering 11,000+ models and positioning itself as model-agnostic (not locked to any single vendor), directly competing with OpenAI and Anthropic's API-only model.",
+              "Zuckerberg published a Wall Street Journal op-ed arguing the real question isn't whether superintelligence exists but who controls access to it—centralized in a few institutions or broadly distributed—while questioning why developers claim AI will eliminate humanity but rush to build it anyway.",
+              "Meta is running a coordinated press campaign on AI optimism (acceleration in the Journal, opposition to Chinese AI bans in the Financial Times, calls for realism in the New York Times) while remaining the only frontier lab that has not signed the government's voluntary testing framework."
+            ]
+          },
+          {
+            "title": "4. Revenue Explosion and the Token-as-Labor Thesis",
+            "points": [
+              "OpenAI's CFO told employees annualized July revenue exceeded all of Q2, while Anthropic's recent run-rate growth has eclipsed OpenAI, confirming AI spend is now the dominant cost line in enterprise budgets—no longer a software category but closer to labor.",
+              "Google processed over a quadrillion tokens between May and July (>100% growth in monthly volume), a figure now equivalent to what a single OpenClaw agent burns through in a month, illustrating the scale and pace of agentic consumption."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI CEO Sam Altman Discusses Next AI Model With US Lawmakers",
+            "url": "https://link.mail.beehiiv.com/v2/c/3efd168fa65394808af28512c104091c20db74a538e74b440b2978f11a44288c21e99b9a34bc56dc22fbe6b12b1ed0db185f88a7c9eeb82bc142eb98803fd045384184630e4d45bbef28fc3b68166c9038d58b429b5bc6d77701473d0a682a1a9deac4894403b79bcca10175640b42c0eac25b43fd52c9840fe46f37b0d905cbcde53af0cf9c3f64fd10c302362a8a39db6b8cec35fb6079eb606fa98008b867/b51792bf919670f1"
+          },
+          {
+            "label": "Sam Altman to meet with White House's Wiles this week ahead of AI framework deadline",
+            "url": "https://link.mail.beehiiv.com/v2/c/43b7336e92279b4d30b7b5436901c35ba596b396e7ce79574cbf0a52574c7318fa70e48e4fe9e83db2bbb22750602b9789671c6270ae9285d010f95bcd85bcc2f8495f3ca370422c49d6f370ba3050caf497652b9f2c2c2b808b4c2f831de4321a9c2ad1367da336f7fc0faef44661ea665fa9f2266f2f294af488734f7a48d5b1ae65913036d755768fc294304890b7703bfa1bc106dc9743a793c2eb1298e9/4ae8610affd524e2"
+          },
+          {
+            "label": "OpenAI CFO Sarah Friar tells employees that annualized revenue in July topped all of Q2",
+            "url": "https://link.mail.beehiiv.com/v2/c/d0563429e7fe4d29111f6e18f4ea9f9964b57286da6030fc1a5b3be3e512327ae2f1baf58e51834dbd056365ee0f5c3097b7b515694c24230b66cc9557ce88c728dca27f55dd955f5734bc9bf6e15fc591cdbee651d4872bd549b6be594848e99e9bbed169ef394a45afa92afd5be789c8d0b170dc06e05ac9dde052d17cb68ced07e5c9ad0ed070435ada35508a034a272015f6691cf7ef2a5929875291f74d/a4ddcce56fb904f2"
+          },
+          {
+            "label": "Microsoft confirms Copilot 'super app' coming this year",
+            "url": "https://link.mail.beehiiv.com/v2/c/682f4d6f26fdec31ff7912ada6084482b819df5caffa2546657b8b4f4e71b2fb120667b616a4e7f0fd4bfce427cedace2b77c05521cd4c8e09898f48e35a1dae3cade472d0d7a19aa18a329e8f2f6cae5967c3fe717c91d80062bf7bae9c7ad0c7aebe42b9568e7bd3435866572fafc20aa2a1ae562c9c35d0577fe836e09af86b288a4f8c73d00138ca7853baadb856bd243e3628ad3a72c4dfa5898ba8ccf7/de46ecc3b47523a2"
+          },
+          {
+            "label": "Mark Zuckerberg Says U.S. Should Accelerate AI Development, Not Restrict It",
+            "url": "https://link.mail.beehiiv.com/v2/c/7b45215676348f185d4d65e8497861f56f8bfee9e5375ca59ea1434859ea800d40cc29fbefb35c5fdcc187821d081b4a385ec67329e205b0ca3d06eb25b954ab2d3e98fee58fffde91402a6da48225a3e8d18f52d130c6632b589394b5b51117b3b951f93b7628e9c713d023b71a48f9e83036214ccc48d74dc4c17d5417bf03b7c11b8d689ac065c5fb1f4a721b130e47e431d92d41e9fd496eb9860d5b2a4d/d4504672cc50df94"
+          }
+        ]
+      }
+    }
+  ]
+}
