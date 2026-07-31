@@ -6,11 +6,16 @@
 <meta name="robots" content="noindex">
 <title>Newsletter Digest — 2026-07-28</title>
 <link rel="stylesheet" href="../style.css">
+<!-- set saved theme before paint to avoid a flash of the wrong colors -->
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
 <header>
-  <h1>📰 Newsletter Digest</h1>
-  <p class="date">2026-07-28 (archive)</p>
+  <div class="titlebar">
+    <h1>📰 Newsletter Digest</h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light / dark">🌙</button>
+  </div>
+  <p class="date">2026-07-28 · archive</p>
   <nav class="filters">
     <button class="filter active" data-cat="all">All</button>
     <button class="filter" data-cat="stocks">📈 Stocks</button>
@@ -22,9 +27,42 @@
 
 <main>
 
+<section class="glance">
+  <h2>⚡ Top things to know today</h2>
+  <ul>
+    
+    <li data-cat="stocks">
+      <a href="#stocks-am"><span class="badge badge-stocks">stocks</span><span>Fed rate decision Wednesday: hold vs. surprise hike</span></a>
+    </li>
+    
+    <li data-cat="crypto">
+      <a href="#crypto-am"><span class="badge badge-crypto">crypto</span><span>EU MiCA Regulatory Implementation Push</span></a>
+    </li>
+    
+    <li data-cat="ai">
+      <a href="#ai-am"><span class="badge badge-ai">ai</span><span>Moonshot AI releases Kimi K3, the largest open-weight model ever</span></a>
+    </li>
+    
+    <li data-cat="tech">
+      <a href="#tech-am"><span class="badge badge-tech">tech</span><span>China Mass-Produces DUV Lithography Machines, Challenging ASML</span></a>
+    </li>
+    
+    <li data-cat="crypto">
+      <a href="#crypto-pm"><span class="badge badge-crypto">crypto</span><span>Bitcoin Bull Trap: Rally Fails, Technicals Turn Bearish</span></a>
+    </li>
+    
+    <li data-cat="ai">
+      <a href="#ai-pm"><span class="badge badge-ai">ai</span><span>Open-weights letter unites Big Tech — and isolates Anthropic</span></a>
+    </li>
+    
+  </ul>
+</section>
 
 
-<section class="batch" data-cat="stocks">
+
+
+
+<section class="batch" id="stocks-am" data-cat="stocks">
   <h2><span class="badge badge-stocks">stocks</span> Morning Stocks</h2>
 
   
@@ -33,86 +71,50 @@
     
     <article class="story">
       <h4>Fed rate decision Wednesday: hold vs. surprise hike</h4>
-      <ul>
-        <li>Markets show unusually high uncertainty: odds range from 60/40 to 66/34 in favor of a hold, with 34-40% probability assigned to a quarter-point (0.25%) rate hike.</li><li>Inflation risks from Iran-related oil volatility and Trump tariffs, plus strong labor data, are fueling hike speculation despite most investors expecting a pause.</li><li>A surprise hike would boost new Fed Chair Kevin Warsh's inflation-fighting credibility; decision and press conference set for Wednesday at 2:30pm ET.</li><li>10-year Treasury yield sits above 4.6%, with bond markets signaling rates may need to rise.</li>
-      </ul>
+      <ul><li>Markets show unusually high uncertainty: odds range from 60/40 to 66/34 in favor of a hold, with 34-40% probability assigned to a quarter-point (0.25%) rate hike.</li><li>Inflation risks from Iran-related oil volatility and Trump tariffs, plus strong labor data, are fueling hike speculation despite most investors expecting a pause.</li><li>A surprise hike would boost new Fed Chair Kevin Warsh's inflation-fighting credibility; decision and press conference set for Wednesday at 2:30pm ET.</li><li>10-year Treasury yield sits above 4.6%, with bond markets signaling rates may need to rise.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>Yahoo Finance Morning Brief:</strong> Warsh's famously taciturn communication style means his press conference commentary will be closely scrutinized for any signals.</li>
-        
-        <li><strong>Bloomberg:</strong> Citadel Securities specifically expects a hike, citing it as a move that would surprise markets pricing in a pause.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>Yahoo Finance Morning Brief:</strong> Warsh's famously taciturn communication style means his press conference commentary will be closely scrutinized for any signals.</li><li><strong>Bloomberg:</strong> Citadel Securities specifically expects a hike, citing it as a move that would surprise markets pricing in a pause.</li></ol>
       
       <p class="covered-by">Covered by: Yahoo Finance Morning Brief, Bloomberg</p>
     </article>
     
     <article class="story">
       <h4>Oil prices tumble on US-Iran de-escalation talks</h4>
-      <ul>
-        <li>Oil fell roughly 8-9%, with Brent crude near $88/barrel and WTI near $83, as traders removed war-risk premium.</li><li>Trump says the US and Iran are in diplomatic talks to end Middle East conflict, but warns fighting will resume if negotiations fail.</li><li>Decline follows a pause in tit-for-tat military strikes after the collapse of a June interim peace agreement.</li>
-      </ul>
+      <ul><li>Oil fell roughly 8-9%, with Brent crude near $88/barrel and WTI near $83, as traders removed war-risk premium.</li><li>Trump says the US and Iran are in diplomatic talks to end Middle East conflict, but warns fighting will resume if negotiations fail.</li><li>Decline follows a pause in tit-for-tat military strikes after the collapse of a June interim peace agreement.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>Bloomberg:</strong> WTI crude futures specifically down 1.6% in immediate reaction to Trump's talks comments.</li>
-        
-        <li><strong>Opening Bell Daily (Phil Rosen):</strong> De-escalation has now extended into a second week, reinforcing the trend.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>Bloomberg:</strong> WTI crude futures specifically down 1.6% in immediate reaction to Trump's talks comments.</li><li><strong>Opening Bell Daily (Phil Rosen):</strong> De-escalation has now extended into a second week, reinforcing the trend.</li></ol>
       
       <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Opening Bell Daily (Phil Rosen), Yahoo Finance Morning Brief, Bloomberg</p>
     </article>
     
     <article class="story">
       <h4>Magnificent 7 AI capex spending diverges from stock performance; Apple emerges as leader</h4>
-      <ul>
-        <li>Apple has surged roughly 20-24% year-to-date and reclaimed market leadership, notably by avoiding the massive AI capital expenditure (capex — spending on equipment/infrastructure) race that competitors are running.</li><li>Microsoft guided to ~$200B capex (+60% YoY) while its stock fell ~20%; Meta raised its 2026 capex range to $125-145B while falling ~10%; Alphabet posted its first-ever negative free cash flow quarter while raising capex guidance to $205B and its stock is down ~20% from highs.</li><li>Magnificent 7 dispersion between best and worst YTD performer has widened to 55 percentage points, with three of the seven now in bear markets — the worst split since the group was named, occurring on only four trading days ever, all in 2026.</li><li>Top-performer annual gains have compressed sharply over time: 214% (2023) → 128% (2024) → 29% (2025) → 24% (2026), suggesting markets are repricing AI spending as a drag rather than a growth driver.</li><li>Big Tech earnings (Microsoft and Meta Wednesday after close; Apple and Amazon Thursday) could reset the market narrative on AI capex and returns.</li>
-      </ul>
+      <ul><li>Apple has surged roughly 20-24% year-to-date and reclaimed market leadership, notably by avoiding the massive AI capital expenditure (capex — spending on equipment/infrastructure) race that competitors are running.</li><li>Microsoft guided to ~$200B capex (+60% YoY) while its stock fell ~20%; Meta raised its 2026 capex range to $125-145B while falling ~10%; Alphabet posted its first-ever negative free cash flow quarter while raising capex guidance to $205B and its stock is down ~20% from highs.</li><li>Magnificent 7 dispersion between best and worst YTD performer has widened to 55 percentage points, with three of the seven now in bear markets — the worst split since the group was named, occurring on only four trading days ever, all in 2026.</li><li>Top-performer annual gains have compressed sharply over time: 214% (2023) → 128% (2024) → 29% (2025) → 24% (2026), suggesting markets are repricing AI spending as a drag rather than a growth driver.</li><li>Big Tech earnings (Microsoft and Meta Wednesday after close; Apple and Amazon Thursday) could reset the market narrative on AI capex and returns.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>Opening Bell Daily (Phil Rosen):</strong> Past Mag 7 divergences have closed within months — five of seven entered bear markets in April 2025 and recovered by September — so a similar rebound is possible but not guaranteed.</li>
-        
-        <li><strong>Yahoo Finance Morning Brief:</strong> S&P 500's ability to have a genuinely good earnings season may hinge on these mega-cap results given market concentration risk; Apple's capex has actually decreased per Yahoo Finance AlphaSpace data.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>Opening Bell Daily (Phil Rosen):</strong> Past Mag 7 divergences have closed within months — five of seven entered bear markets in April 2025 and recovered by September — so a similar rebound is possible but not guaranteed.</li><li><strong>Yahoo Finance Morning Brief:</strong> S&P 500's ability to have a genuinely good earnings season may hinge on these mega-cap results given market concentration risk; Apple's capex has actually decreased per Yahoo Finance AlphaSpace data.</li></ol>
       
       <p class="covered-by">Covered by: Opening Bell Daily (Phil Rosen), Yahoo Finance Morning Brief</p>
     </article>
     
     <article class="story">
       <h4>Semiconductor stocks slide on AI spending sustainability fears</h4>
-      <ul>
-        <li>Chip stocks extended losses, with South Korean tech shares (Samsung, SK Hynix) leading declines amid concerns about China's advancing chip capabilities creating cheaper competition.</li><li>Nvidia faces rising credit risk concerns in the credit default swaps market tied to circular AI financing deals (arrangements where companies mutually invest in each other's production/products), raising questions about capital structure sustainability.</li><li>US S&P 500 and Nasdaq 100 futures declined in sympathy with the semiconductor weakness.</li>
-      </ul>
+      <ul><li>Chip stocks extended losses, with South Korean tech shares (Samsung, SK Hynix) leading declines amid concerns about China's advancing chip capabilities creating cheaper competition.</li><li>Nvidia faces rising credit risk concerns in the credit default swaps market tied to circular AI financing deals (arrangements where companies mutually invest in each other's production/products), raising questions about capital structure sustainability.</li><li>US S&P 500 and Nasdaq 100 futures declined in sympathy with the semiconductor weakness.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>Bloomberg:</strong> Chinese chipmaker Moonshot's breakthrough in advanced AI chips is specifically cited as the catalyst intensifying investor concern.</li>
-        
-        <li><strong>Yahoo Finance Morning Brief:</strong> Semiconductor stock charts are showing technical signals of potential further losses despite Wall Street's broader 'AI trade still on' narrative.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>Bloomberg:</strong> Chinese chipmaker Moonshot's breakthrough in advanced AI chips is specifically cited as the catalyst intensifying investor concern.</li><li><strong>Yahoo Finance Morning Brief:</strong> Semiconductor stock charts are showing technical signals of potential further losses despite Wall Street's broader 'AI trade still on' narrative.</li></ol>
       
       <p class="covered-by">Covered by: Yahoo Finance Morning Brief, Bloomberg</p>
     </article>
     
     <article class="story">
       <h4>Cracker Barrel CEO Julie Masino departs amid political backlash</h4>
-      <ul>
-        <li>CEO Julie Masino is leaving the company roughly one year after facing Trump-aligned backlash over a logo redesign.</li><li>The company's Uncle Herschel mascot has outlasted her tenure, highlighting the leadership shake-up.</li>
-      </ul>
+      <ul><li>CEO Julie Masino is leaving the company roughly one year after facing Trump-aligned backlash over a logo redesign.</li><li>The company's Uncle Herschel mascot has outlasted her tenure, highlighting the leadership shake-up.</li></ul>
       
       <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Yahoo Finance Morning Brief</p>
     </article>
     
     <article class="story">
       <h4>Taylor Farms faces congressional scrutiny over White House ties amid cyclosporiasis outbreak</h4>
-      <ul>
-        <li>4,173 lab-confirmed cyclosporiasis (a parasitic intestinal illness) cases reported since May 1, with over 7,400 additional unconfirmed cases across nine states; Michigan alone reports 9,253 cases.</li><li>FDA traced the outbreak to iceberg lettuce from Taylor Farms' central Mexico operations served at Taco Bell, though the agency has not confirmed positive product samples for the cyclospora parasite.</li><li>Rep. Robert Garcia (D-CA) is demanding answers from Taylor Farms CEO Bruce Taylor on whether the company used White House connections to interfere with the FDA investigation, citing millions in donations to Trump and a private White House meeting the night FDA identified the lettuce as the source.</li><li>Taylor Farms voluntarily recalled all iceberg lettuce from its central Mexico operations and suspended sourcing from the area; White House spokesperson Kush Desai denied any compromise on public health.</li>
-      </ul>
+      <ul><li>4,173 lab-confirmed cyclosporiasis (a parasitic intestinal illness) cases reported since May 1, with over 7,400 additional unconfirmed cases across nine states; Michigan alone reports 9,253 cases.</li><li>FDA traced the outbreak to iceberg lettuce from Taylor Farms' central Mexico operations served at Taco Bell, though the agency has not confirmed positive product samples for the cyclospora parasite.</li><li>Rep. Robert Garcia (D-CA) is demanding answers from Taylor Farms CEO Bruce Taylor on whether the company used White House connections to interfere with the FDA investigation, citing millions in donations to Trump and a private White House meeting the night FDA identified the lettuce as the source.</li><li>Taylor Farms voluntarily recalled all iceberg lettuce from its central Mexico operations and suspended sourcing from the area; White House spokesperson Kush Desai denied any compromise on public health.</li></ul>
       
       <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Yahoo Finance Morning Brief</p>
     </article>
@@ -122,64 +124,56 @@
 
   
   
-  <div class="newsletter-card">
-    <h3>Investopedia Pre-Market</h3>
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <h4>1. Mixed market open expected amid peak earnings season</h4>
-    <ul>
-      <li>Stock futures point to a mixed open for major indexes as earnings season hits peak volume.</li><li>Tech stocks are facing investor selling pressure despite posting strong financial results, signaling caution about valuations.</li><li>Seagate stock is expected to see significant price movement following its earnings announcement.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Investopedia Pre-Market <span class="count">1</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Mixed market open expected amid peak earnings season</h4>
+        <ul><li>Stock futures point to a mixed open for major indexes as earnings season hits peak volume.</li><li>Tech stocks are facing investor selling pressure despite posting strong financial results, signaling caution about valuations.</li><li>Seagate stock is expected to see significant price movement following its earnings announcement.</li></ul>
+        
+      </div>
+    </details>
     
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>CNBC Morning Squawk</h3>
+    <details class="newsletter-card">
+      <summary>CNBC Morning Squawk <span class="count">1</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Boeing risks losing Air Force One contract after safety audit</h4>
+        <ul><li>A federal audit found systemic quality control failures in Boeing's manufacturing that could disqualify it from continuing Air Force One work, a contract worth over $1 billion.</li><li>Pentagon officials are reviewing whether to enforce contractual penalties or transition to alternative contractors.</li><li>FAA is requiring third-party inspections before aircraft delivery certification, adding 4-6 weeks to production timelines.</li><li>Issues span both commercial and defense divisions, suggesting company-wide quality management problems; Boeing shares dropped 7.2% on the news, with sympathy weakness across the broader aerospace sector.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>1. Boeing risks losing Air Force One contract after safety audit</h4>
-    <ul>
-      <li>A federal audit found systemic quality control failures in Boeing's manufacturing that could disqualify it from continuing Air Force One work, a contract worth over $1 billion.</li><li>Pentagon officials are reviewing whether to enforce contractual penalties or transition to alternative contractors.</li><li>FAA is requiring third-party inspections before aircraft delivery certification, adding 4-6 weeks to production timelines.</li><li>Issues span both commercial and defense divisions, suggesting company-wide quality management problems; Boeing shares dropped 7.2% on the news, with sympathy weakness across the broader aerospace sector.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Yahoo Finance Morning Brief <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. SpaceX IPO stumbles while Jersey Mike's draws strong demand</h4>
+        <ul><li>SpaceX stock fell to an all-time low post-IPO despite a successful Starship rocket test, reflecting investor impatience with the pace of tangible space-business results versus big promises.</li><li>Jersey Mike's IPO was 10x oversubscribed compared to SpaceX's 4x, hinting at a possible investor appetite shift from hype-driven Big Tech toward more conventional businesses.</li><li>SpaceX and Tesla combined lost $1.2 trillion in market value during July, reflecting a broader devaluation of highly speculative mega-cap stocks.</li></ul>
+        
+        <h4>2. Power grid strain and emerging tech trends</h4>
+        <ul><li>One-third of Americans are experiencing extreme summer heat, testing power grid capacity with implications for energy demand and utility stocks.</li><li>D-Wave led quantum computing stocks higher as AT&T expanded a quantum computing partnership, highlighting interest in AI alternatives.</li><li>Corporate America reports its highest optimism in 15 years, yet the stock market remains stuck, unable to translate that confidence into sustained gains.</li></ul>
+        
+      </div>
+    </details>
     
-  </div>
-  
-  
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>Yahoo Finance Morning Brief</h3>
-    
-    <h4>1. SpaceX IPO stumbles while Jersey Mike's draws strong demand</h4>
-    <ul>
-      <li>SpaceX stock fell to an all-time low post-IPO despite a successful Starship rocket test, reflecting investor impatience with the pace of tangible space-business results versus big promises.</li><li>Jersey Mike's IPO was 10x oversubscribed compared to SpaceX's 4x, hinting at a possible investor appetite shift from hype-driven Big Tech toward more conventional businesses.</li><li>SpaceX and Tesla combined lost $1.2 trillion in market value during July, reflecting a broader devaluation of highly speculative mega-cap stocks.</li>
-    </ul>
-    
-    <h4>2. Power grid strain and emerging tech trends</h4>
-    <ul>
-      <li>One-third of Americans are experiencing extreme summer heat, testing power grid capacity with implications for energy demand and utility stocks.</li><li>D-Wave led quantum computing stocks higher as AT&T expanded a quantum computing partnership, highlighting interest in AI alternatives.</li><li>Corporate America reports its highest optimism in 15 years, yet the stock market remains stuck, unable to translate that confidence into sustained gains.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>Bloomberg</h3>
-    
-    <h4>1. Retirement savings crisis deepens for American workers</h4>
-    <ul>
-      <li>Only 70 million Americans use 401(k) plans despite them holding $10 trillion in assets; rising costs for housing, healthcare, and transportation are pushing retirement savings lower on priority lists.</li><li>Americans are increasingly withdrawing early from retirement accounts, incurring steep penalties and taxes, undermining long-term savings.</li><li>Ted Benna, credited with creating the modern 401(k), is now designing a new retirement product aimed at workers who cannot afford traditional plans.</li>
-    </ul>
-    
-    <h4>2. Power grids strained by storms and heat, risking data center outages</h4>
-    <ul>
-      <li>Violent storms and heat waves are straining power grids nationwide.</li><li>The largest US grid operator has warned that data centers may face involuntary outages to prevent widespread blackouts.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Bloomberg <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Retirement savings crisis deepens for American workers</h4>
+        <ul><li>Only 70 million Americans use 401(k) plans despite them holding $10 trillion in assets; rising costs for housing, healthcare, and transportation are pushing retirement savings lower on priority lists.</li><li>Americans are increasingly withdrawing early from retirement accounts, incurring steep penalties and taxes, undermining long-term savings.</li><li>Ted Benna, credited with creating the modern 401(k), is now designing a new retirement product aimed at workers who cannot afford traditional plans.</li></ul>
+        
+        <h4>2. Power grids strained by storms and heat, risking data center outages</h4>
+        <ul><li>Violent storms and heat waves are straining power grids nationwide.</li><li>The largest US grid operator has warned that data centers may face involuntary outages to prevent widespread blackouts.</li></ul>
+        
+      </div>
+    </details>
     
   </div>
-  
   
 
   
@@ -187,116 +181,92 @@
   
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      <li><a href="https://links.investopedia.com/z/c/17258/9eacb1397cea4ab4890ead1594be7898/3b729ea45c7d48de876538ceaf5132f1" rel="noopener">5 Things to Know Before the Stock Market Opens on Tuesday</a></li><li><a href="https://links.investopedia.com/z/c/17258/9eacb1397cea4ab4890ead1594be7898/89610d806fa747598fa5bd8795039bbc" rel="noopener">Investors Have Been Giving Tech Stocks a Hard Time Lately, Despite Strong Earnings</a></li><li><a href="https://links.investopedia.com/z/c/17258/567c941d46424be6871e2165fc040d31/96e43fd448304153ac8b99177fc7ece2" rel="noopener">Here's How Much Traders See Seagate Stock Moving After Earnings</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxOTE3Ny1jeWNsb3Nwb3JhLW91dGJyZWFrLWxhd21ha2VyLXF1ZXN0aW9ucy10YXlsb3ItZmFybXMtdGllcy10by13aGl0ZS1ob3VzZT9tYWlsaW5naWQ9NDY3NTYwNTEmc2VyaWFsPTQ2NzU2MDUxLjg2MDgxNSZ1c2VyaWQ9NjQ4ODE5NTgmc291cmNlPWVtYWlsX3dzYiZtZXNzYWdlaWQ9d2FsbF9zdHJlZXRfYnJlYWtmYXN0JnV0bV9zb3VyY2U9c2Vla2luZ19hbHBoYSZ1dG1fbWVkaXVtPWVtYWlsJmxjdGc9NmE2MDE1ZDM4ODgwZmE4ZmMyMDc0ZjEw/6a6015d38880fa8fc2074f10B4294125f" rel="noopener">Cyclosporiasis outbreak and Taylor Farms White House ties</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxOTA4OS1jcnVkZS1vaWwtcGx1bmdlcy1hZnRlci11cy1wYXVzZXMtaXJhbi1zdHJpa2VzLXRydW1wLXNheXMtaGF2aW5nLWdvb2QtdGFsa3M_bWFpbGluZ2lkPTQ2NzU2MDUxJnNlcmlhbD00Njc1NjA1MS44NjA4MTUmdXNlcmlkPTY0ODgxOTU4JnNvdXJjZT1lbWFpbF93c2ImbWVzc2FnZWlkPXdhbGxfc3RyZWV0X2JyZWFrZmFzdCZ1dG1fc291cmNlPXNlZWtpbmdfYWxwaGEmdXRtX21lZGl1bT1lbWFpbCZsY3RnPTZhNjAxNWQzODg4MGZhOGZjMjA3NGYxMA/6a6015d38880fa8fc2074f10Bd17f1bdb" rel="noopener">Crude oil plunges after U.S. pauses Iran strikes</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxODk1OC1vcGVuYWktY2VvLWFsdG1hbi10by1tZWV0LWxhd21ha2Vycy10aGlzLXdlZWstdG8tZGlzY3Vzcy1yb2d1ZS1haS1tb3JlP21haWxpbmdpZD00Njc1NjA1MSZzZXJpYWw9NDY3NTYwNTEuODYwODE1JnVzZXJpZD02NDg4MTk1OCZzb3VyY2U9ZW1haWxfd3NiJm1lc3NhZ2VpZD13YWxsX3N0cmVldF9icmVha2Zhc3QmdXRtX3NvdXJjZT1zZWVraW5nX2FscGhhJnV0bV9tZWRpdW09ZW1haWwmbGN0Zz02YTYwMTVkMzg4ODBmYThmYzIwNzRmMTA/6a6015d38880fa8fc2074f10B104052f8" rel="noopener">OpenAI CEO Altman to meet lawmakers on rogue AI model</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxODgxMS1jcmFja2VyLWJhcnJlbC1zLXVuY2xlLWhlcnNjaGVsLW91dGxhc3RzLWNlby1qdWxpZS1tYXNpbm8_bWFpbGluZ2lkPTQ2NzU2MDUxJnNlcmlhbD00Njc1NjA1MS44NjA4MTUmdXNlcmlkPTY0ODgxOTU4JnNvdXJjZT1lbWFpbF93c2ImbWVzc2FnZWlkPXdhbGxfc3RyZWV0X2JyZWFrZmFzdCZ1dG1fc291cmNlPXNlZWtpbmdfYWxwaGEmdXRtX21lZGl1bT1lbWFpbCZsY3RnPTZhNjAxNWQzODg4MGZhOGZjMjA3NGYxMA/6a6015d38880fa8fc2074f10B7c878d15" rel="noopener">Cracker Barrel CEO Julie Masino departs</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxOTA1NC1zaGVsbC1tYWtlcy1mcm9udGllci1vaWwtZGlzY292ZXJ5LW9mZnNob3JlLWVneXB0LW9mLWdyZWF0LWltcG9ydGFuY2U_bWFpbGluZ2lkPTQ2NzU2MDUxJnNlcmlhbD00Njc1NjA1MS44NjA4MTUmdXNlcmlkPTY0ODgxOTU4JnNvdXJjZT1lbWFpbF93c2ImbWVzc2FnZWlkPXdhbGxfc3RyZWV0X2JyZWFrZmFzdCZ1dG1fc291cmNlPXNlZWtpbmdfYWxwaGEmdXRtX21lZGl1bT1lbWFpbCZsY3RnPTZhNjAxNWQzODg4MGZhOGZjMjA3NGYxMA/6a6015d38880fa8fc2074f10B7881467a" rel="noopener">Shell makes frontier oil discovery offshore Egypt</a></li><li><a href="https://www.faa.gov/newsroom" rel="noopener">FAA statement on Boeing oversight changes</a></li><li><a href="https://www.defense.gov/News/" rel="noopener">Pentagon contract review details</a></li><li><a href="https://investor.boeing.com" rel="noopener">Boeing investor relations</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/1Qr%2BFdJPXjsaAn3ZH9yKHszp6bdnaXwxPj33c4a%2FIqOpMNB53ElQq%2Fu3zmkf" rel="noopener">Apple hits record high (Investing.com)</a></li>
-    </ul>
+    <div class="card-body"><ul><li><a href="https://links.investopedia.com/z/c/17258/9eacb1397cea4ab4890ead1594be7898/3b729ea45c7d48de876538ceaf5132f1" rel="noopener">5 Things to Know Before the Stock Market Opens on Tuesday</a></li><li><a href="https://links.investopedia.com/z/c/17258/9eacb1397cea4ab4890ead1594be7898/89610d806fa747598fa5bd8795039bbc" rel="noopener">Investors Have Been Giving Tech Stocks a Hard Time Lately, Despite Strong Earnings</a></li><li><a href="https://links.investopedia.com/z/c/17258/567c941d46424be6871e2165fc040d31/96e43fd448304153ac8b99177fc7ece2" rel="noopener">Here's How Much Traders See Seagate Stock Moving After Earnings</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxOTE3Ny1jeWNsb3Nwb3JhLW91dGJyZWFrLWxhd21ha2VyLXF1ZXN0aW9ucy10YXlsb3ItZmFybXMtdGllcy10by13aGl0ZS1ob3VzZT9tYWlsaW5naWQ9NDY3NTYwNTEmc2VyaWFsPTQ2NzU2MDUxLjg2MDgxNSZ1c2VyaWQ9NjQ4ODE5NTgmc291cmNlPWVtYWlsX3dzYiZtZXNzYWdlaWQ9d2FsbF9zdHJlZXRfYnJlYWtmYXN0JnV0bV9zb3VyY2U9c2Vla2luZ19hbHBoYSZ1dG1fbWVkaXVtPWVtYWlsJmxjdGc9NmE2MDE1ZDM4ODgwZmE4ZmMyMDc0ZjEw/6a6015d38880fa8fc2074f10B4294125f" rel="noopener">Cyclosporiasis outbreak and Taylor Farms White House ties</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxOTA4OS1jcnVkZS1vaWwtcGx1bmdlcy1hZnRlci11cy1wYXVzZXMtaXJhbi1zdHJpa2VzLXRydW1wLXNheXMtaGF2aW5nLWdvb2QtdGFsa3M_bWFpbGluZ2lkPTQ2NzU2MDUxJnNlcmlhbD00Njc1NjA1MS44NjA4MTUmdXNlcmlkPTY0ODgxOTU4JnNvdXJjZT1lbWFpbF93c2ImbWVzc2FnZWlkPXdhbGxfc3RyZWV0X2JyZWFrZmFzdCZ1dG1fc291cmNlPXNlZWtpbmdfYWxwaGEmdXRtX21lZGl1bT1lbWFpbCZsY3RnPTZhNjAxNWQzODg4MGZhOGZjMjA3NGYxMA/6a6015d38880fa8fc2074f10Bd17f1bdb" rel="noopener">Crude oil plunges after U.S. pauses Iran strikes</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxODk1OC1vcGVuYWktY2VvLWFsdG1hbi10by1tZWV0LWxhd21ha2Vycy10aGlzLXdlZWstdG8tZGlzY3Vzcy1yb2d1ZS1haS1tb3JlP21haWxpbmdpZD00Njc1NjA1MSZzZXJpYWw9NDY3NTYwNTEuODYwODE1JnVzZXJpZD02NDg4MTk1OCZzb3VyY2U9ZW1haWxfd3NiJm1lc3NhZ2VpZD13YWxsX3N0cmVldF9icmVha2Zhc3QmdXRtX3NvdXJjZT1zZWVraW5nX2FscGhhJnV0bV9tZWRpdW09ZW1haWwmbGN0Zz02YTYwMTVkMzg4ODBmYThmYzIwNzRmMTA/6a6015d38880fa8fc2074f10B104052f8" rel="noopener">OpenAI CEO Altman to meet lawmakers on rogue AI model</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxODgxMS1jcmFja2VyLWJhcnJlbC1zLXVuY2xlLWhlcnNjaGVsLW91dGxhc3RzLWNlby1qdWxpZS1tYXNpbm8_bWFpbGluZ2lkPTQ2NzU2MDUxJnNlcmlhbD00Njc1NjA1MS44NjA4MTUmdXNlcmlkPTY0ODgxOTU4JnNvdXJjZT1lbWFpbF93c2ImbWVzc2FnZWlkPXdhbGxfc3RyZWV0X2JyZWFrZmFzdCZ1dG1fc291cmNlPXNlZWtpbmdfYWxwaGEmdXRtX21lZGl1bT1lbWFpbCZsY3RnPTZhNjAxNWQzODg4MGZhOGZjMjA3NGYxMA/6a6015d38880fa8fc2074f10B7c878d15" rel="noopener">Cracker Barrel CEO Julie Masino departs</a></li><li><a href="https://email-st.seekingalpha.com/click/46756051.860815/aHR0cHM6Ly9zZWVraW5nYWxwaGEuY29tL25ld3MvNDYxOTA1NC1zaGVsbC1tYWtlcy1mcm9udGllci1vaWwtZGlzY292ZXJ5LW9mZnNob3JlLWVneXB0LW9mLWdyZWF0LWltcG9ydGFuY2U_bWFpbGluZ2lkPTQ2NzU2MDUxJnNlcmlhbD00Njc1NjA1MS44NjA4MTUmdXNlcmlkPTY0ODgxOTU4JnNvdXJjZT1lbWFpbF93c2ImbWVzc2FnZWlkPXdhbGxfc3RyZWV0X2JyZWFrZmFzdCZ1dG1fc291cmNlPXNlZWtpbmdfYWxwaGEmdXRtX21lZGl1bT1lbWFpbCZsY3RnPTZhNjAxNWQzODg4MGZhOGZjMjA3NGYxMA/6a6015d38880fa8fc2074f10B7881467a" rel="noopener">Shell makes frontier oil discovery offshore Egypt</a></li><li><a href="https://www.faa.gov/newsroom" rel="noopener">FAA statement on Boeing oversight changes</a></li><li><a href="https://www.defense.gov/News/" rel="noopener">Pentagon contract review details</a></li><li><a href="https://investor.boeing.com" rel="noopener">Boeing investor relations</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/1Qr%2BFdJPXjsaAn3ZH9yKHszp6bdnaXwxPj33c4a%2FIqOpMNB53ElQq%2Fu3zmkf" rel="noopener">Apple hits record high (Investing.com)</a></li></ul></div>
   </details>
   
 </section>
 
-<section class="batch" data-cat="crypto">
+<section class="batch" id="crypto-am" data-cat="crypto">
   <h2><span class="badge badge-crypto">crypto</span> Morning Crypto</h2>
 
   
 
   
   
-  <div class="newsletter-card">
-    <h3>CMC Market Pulse</h3>
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <h4>1. EU MiCA Regulatory Implementation Push</h4>
-    <ul>
-      <li>MiCA (Markets in Crypto-Assets Regulation, the EU's comprehensive crypto rulebook) compliance deadlines require exchanges to implement know-your-customer (KYC, identity verification) checks and transaction monitoring by set dates.</li><li>Custodial services face new capital and insurance requirements, potentially consolidating the market around larger, better-capitalized providers.</li><li>EU implementation may set a regulatory precedent other jurisdictions follow or adapt.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>CMC Market Pulse <span class="count">4</span></summary>
+      <div class="card-body">
+        
+        <h4>1. EU MiCA Regulatory Implementation Push</h4>
+        <ul><li>MiCA (Markets in Crypto-Assets Regulation, the EU's comprehensive crypto rulebook) compliance deadlines require exchanges to implement know-your-customer (KYC, identity verification) checks and transaction monitoring by set dates.</li><li>Custodial services face new capital and insurance requirements, potentially consolidating the market around larger, better-capitalized providers.</li><li>EU implementation may set a regulatory precedent other jurisdictions follow or adapt.</li></ul>
+        
+        <h4>2. Bitcoin Volatility Amid Macro Uncertainty</h4>
+        <ul><li>Bitcoin volatility remains elevated as traders assess how central bank policy shifts affect digital asset valuations.</li><li>Regulatory clarity remains elusive in major markets as lawmakers debate how to classify cryptocurrencies, affecting institutional investment decisions.</li></ul>
+        
+        <h4>3. Staking Market Expansion</h4>
+        <ul><li>Total value locked (TVL, the dollar value of assets deposited in a protocol) in staking protocols hit new highs, with Ethereum and Solana attracting billions in deposits.</li><li>Average staking rewards (earnings for locking up crypto to help secure a network) currently range 4-12% annually depending on network and risk profile.</li><li>Regulatory questions remain over whether staking income counts as passive income or a security-like instrument in different jurisdictions.</li></ul>
+        
+        <h4>4. Layer 2 Adoption Acceleration</h4>
+        <ul><li>Arbitrum and Optimism (Layer 2 networks that process transactions off Ethereum's main chain to cut costs) processed record transaction volumes as users migrate from mainnet to reduce gas fees.</li><li>Transaction costs on Layer 2 solutions are now 10-100x lower than mainnet, driving significant migration from Ethereum's base layer.</li><li>Developer ecosystem on Layer 2 platforms expanded with major DeFi (decentralized finance) protocols launching multi-chain deployments.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>2. Bitcoin Volatility Amid Macro Uncertainty</h4>
-    <ul>
-      <li>Bitcoin volatility remains elevated as traders assess how central bank policy shifts affect digital asset valuations.</li><li>Regulatory clarity remains elusive in major markets as lawmakers debate how to classify cryptocurrencies, affecting institutional investment decisions.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>CoinDesk <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Bitcoin and Ether Price Action Amid Market Volatility</h4>
+        <ul><li>Bitcoin held near $65,000 while Nvidia and other AI stocks fell 4.8%, hinting at possible decoupling from traditional risk assets.</li><li>Ether hit its strongest price in nearly two months and outperformed bitcoin; the ETH/BTC ratio reached a three-month high.</li><li>Bitcoin needs to clear $67,300 and ether needs to hold above $2,000 to confirm the next leg higher.</li><li>Skeptics cite falling futures open interest (total value of outstanding futures contracts) and persistent net selling pressure, suggesting a possible pullback toward the mid-$50,000s.</li><li>This week's Fed policy decision and inflation data are likely to determine whether bitcoin breaks its months-long range or falls back to $50K.</li></ul>
+        
+        <h4>2. Perpetual Futures Market Expansion to Regulated US Venues</h4>
+        <ul><li>Perpetual futures (leveraged contracts betting on price moves with no expiration date) generated roughly $90 trillion in annual volume, per Bank of America.</li><li>Kalshi topped $1 billion in perps volume within one week of launch in June; Coinbase also received CFTC (Commodity Futures Trading Commission) approval.</li><li>Large Wall Street banks are moving cautiously despite prop trading firms racing in, citing capital requirements, compliance costs, and reputational risk.</li><li>Use cases include managing weekend risk when traditional futures markets are closed, but thin liquidity and unresolved regulatory classification remain obstacles.</li></ul>
+        
+        <h4>3. Fanatics' Move into Prediction Markets Infrastructure</h4>
+        <ul><li>Fanatics acquired Water Street Labs and CX Clearinghouse from BGC Group, gaining a federally regulated exchange and clearinghouse to list and settle its own contracts.</li><li>This lets Fanatics control prediction market infrastructure independently rather than rely on third-party venues, speeding new market launches.</li><li>Fanatics Markets has operated in 23 states and four U.S. territories since its late-2024 launch, and plans to combine prediction market data with traditional financial data products.</li><li>Competition is heating up with Kalshi, Polymarket, Coinbase, Robinhood, and DraftKings all establishing positions in event-based trading.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>3. Staking Market Expansion</h4>
-    <ul>
-      <li>Total value locked (TVL, the dollar value of assets deposited in a protocol) in staking protocols hit new highs, with Ethereum and Solana attracting billions in deposits.</li><li>Average staking rewards (earnings for locking up crypto to help secure a network) currently range 4-12% annually depending on network and risk profile.</li><li>Regulatory questions remain over whether staking income counts as passive income or a security-like instrument in different jurisdictions.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>CMC Spotlight <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Tether's XAUt Receives Islamic Finance Certification</h4>
+        <ul><li>Tether's gold-backed token (XAUt, a blockchain token representing physical gold holdings) is now certified compliant with Islamic finance principles (Sharia law), which prohibits interest-based instruments and certain commodities.</li><li>The certification lets Muslim investors and institutions participate in gold tokenization without violating religious financial guidelines.</li><li>Gold-backed tokens allow fractional ownership and easier transfer of physical gold via blockchain.</li></ul>
+        
+        <h4>2. Implications for Crypto Market Expansion</h4>
+        <ul><li>Access to the $2 trillion Islamic finance market represents significant growth potential for blockchain-based asset platforms.</li><li>The certification signals broader institutional acceptance of tokenized commodities and may prompt other projects to seek similar compliance.</li><li>Gold tokenization appeals to both traditional finance and crypto participants seeking non-correlated, tangibly-backed assets.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>4. Layer 2 Adoption Acceleration</h4>
-    <ul>
-      <li>Arbitrum and Optimism (Layer 2 networks that process transactions off Ethereum's main chain to cut costs) processed record transaction volumes as users migrate from mainnet to reduce gas fees.</li><li>Transaction costs on Layer 2 solutions are now 10-100x lower than mainnet, driving significant migration from Ethereum's base layer.</li><li>Developer ecosystem on Layer 2 platforms expanded with major DeFi (decentralized finance) protocols launching multi-chain deployments.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>CoinDesk</h3>
-    
-    <h4>1. Bitcoin and Ether Price Action Amid Market Volatility</h4>
-    <ul>
-      <li>Bitcoin held near $65,000 while Nvidia and other AI stocks fell 4.8%, hinting at possible decoupling from traditional risk assets.</li><li>Ether hit its strongest price in nearly two months and outperformed bitcoin; the ETH/BTC ratio reached a three-month high.</li><li>Bitcoin needs to clear $67,300 and ether needs to hold above $2,000 to confirm the next leg higher.</li><li>Skeptics cite falling futures open interest (total value of outstanding futures contracts) and persistent net selling pressure, suggesting a possible pullback toward the mid-$50,000s.</li><li>This week's Fed policy decision and inflation data are likely to determine whether bitcoin breaks its months-long range or falls back to $50K.</li>
-    </ul>
-    
-    <h4>2. Perpetual Futures Market Expansion to Regulated US Venues</h4>
-    <ul>
-      <li>Perpetual futures (leveraged contracts betting on price moves with no expiration date) generated roughly $90 trillion in annual volume, per Bank of America.</li><li>Kalshi topped $1 billion in perps volume within one week of launch in June; Coinbase also received CFTC (Commodity Futures Trading Commission) approval.</li><li>Large Wall Street banks are moving cautiously despite prop trading firms racing in, citing capital requirements, compliance costs, and reputational risk.</li><li>Use cases include managing weekend risk when traditional futures markets are closed, but thin liquidity and unresolved regulatory classification remain obstacles.</li>
-    </ul>
-    
-    <h4>3. Fanatics' Move into Prediction Markets Infrastructure</h4>
-    <ul>
-      <li>Fanatics acquired Water Street Labs and CX Clearinghouse from BGC Group, gaining a federally regulated exchange and clearinghouse to list and settle its own contracts.</li><li>This lets Fanatics control prediction market infrastructure independently rather than rely on third-party venues, speeding new market launches.</li><li>Fanatics Markets has operated in 23 states and four U.S. territories since its late-2024 launch, and plans to combine prediction market data with traditional financial data products.</li><li>Competition is heating up with Kalshi, Polymarket, Coinbase, Robinhood, and DraftKings all establishing positions in event-based trading.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>CMC Spotlight</h3>
-    
-    <h4>1. Tether's XAUt Receives Islamic Finance Certification</h4>
-    <ul>
-      <li>Tether's gold-backed token (XAUt, a blockchain token representing physical gold holdings) is now certified compliant with Islamic finance principles (Sharia law), which prohibits interest-based instruments and certain commodities.</li><li>The certification lets Muslim investors and institutions participate in gold tokenization without violating religious financial guidelines.</li><li>Gold-backed tokens allow fractional ownership and easier transfer of physical gold via blockchain.</li>
-    </ul>
-    
-    <h4>2. Implications for Crypto Market Expansion</h4>
-    <ul>
-      <li>Access to the $2 trillion Islamic finance market represents significant growth potential for blockchain-based asset platforms.</li><li>The certification signals broader institutional acceptance of tokenized commodities and may prompt other projects to seek similar compliance.</li><li>Gold tokenization appeals to both traditional finance and crypto participants seeking non-correlated, tangibly-backed assets.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>TLDR Crypto</h3>
-    
-    <h4>1. Lido's Largest Network Upgrade Since 2023</h4>
-    <ul>
-      <li>Lido consolidated 8 million stETH ($16.5 billion) onto Ethereum's post-Pectra validator design, its largest upgrade since 2023, cutting total validators by about one-third.</li><li>The upgrade moves 34 curated node operators to Curated Module v2, requiring them to post locked ETH bonds for financial accountability for the first time in the protocol's five-year history.</li><li>Migration reduces attestation messages (per-epoch validator confirmation broadcasts, where an epoch is a blockchain time unit) by about 29% but doesn't directly affect gas fees or transaction speed.</li><li>Annual staking rewards across the protocol will decline by roughly 0.28% due to validator efficiency improvements.</li>
-    </ul>
-    
-    <h4>2. SparkKitty Malware Targets Cryptocurrency Holdings</h4>
-    <ul>
-      <li>SparkKitty is cross-platform malware distributed via the Apple App Store, Google Play, and third-party channels, evolved from 2025's SparkCat malware.</li><li>It uses OCR (optical character recognition, which converts images to readable text) to scan users' photo libraries for wallet seed phrases (the 12-24 word recovery code granting full access to crypto funds).</li><li>Two identified apps—iOS app 'coin' and Android app 'SOEX'—were downloaded over 10,000 times before removal from official app stores.</li>
-    </ul>
-    
-    <h4>3. Strategic Acquisitions Reshape Crypto Infrastructure</h4>
-    <ul>
-      <li>Circle acquired IBM's blockchain patent portfolio—680+ patent families and nearly 1,000 issued patents spanning blockchain, banking, and enterprise systems—becoming the leading U.S. blockchain patent holder.</li><li>Payward (Kraken's parent) acquired Magic Labs' embedded wallet business (60M+ wallets created since 2018) as part of a spree including Bitnomial ($550M), Reap Technologies ($600M), and NinjaTrader ($1.5B).</li><li>Magic Labs rebranded as Newton Labs to focus on Newton Protocol, an onchain finance authorization layer that entered mainnet beta in June 2026.</li>
-    </ul>
-    
-    <h4>4. Ondo Network Separates Execution from Settlement</h4>
-    <ul>
-      <li>Ondo shifted from its original Ondo Chain plan to the Ondo Network, an execution layer aiming to match centralized exchange speed while keeping settlement non-custodial and onchain.</li><li>The architecture separates transaction execution from verification and settlement, using secure hardware enclaves (isolated, tamper-resistant processing environments) with a decentralized attestor network to verify approved code.</li><li>Ondo Perps, the network's first app, is a 24/7 perpetual futures platform for equities and commodities using tokenized RWAs (real-world assets represented as blockchain tokens) as collateral.</li><li>The ONDO token remains the governance token (grants holders voting rights on protocol decisions) as the network gradually decentralizes from the founding team.</li>
-    </ul>
-    
-    <h4>5. Crypto Project Shutdowns in 2026</h4>
-    <ul>
-      <li>Over 68 crypto projects shut down in 2026, including BitMEX, Polygon zkEVM, and Balancer Labs.</li><li>Web3 gaming recorded the highest failure density among sectors.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>TLDR Crypto <span class="count">5</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Lido's Largest Network Upgrade Since 2023</h4>
+        <ul><li>Lido consolidated 8 million stETH ($16.5 billion) onto Ethereum's post-Pectra validator design, its largest upgrade since 2023, cutting total validators by about one-third.</li><li>The upgrade moves 34 curated node operators to Curated Module v2, requiring them to post locked ETH bonds for financial accountability for the first time in the protocol's five-year history.</li><li>Migration reduces attestation messages (per-epoch validator confirmation broadcasts, where an epoch is a blockchain time unit) by about 29% but doesn't directly affect gas fees or transaction speed.</li><li>Annual staking rewards across the protocol will decline by roughly 0.28% due to validator efficiency improvements.</li></ul>
+        
+        <h4>2. SparkKitty Malware Targets Cryptocurrency Holdings</h4>
+        <ul><li>SparkKitty is cross-platform malware distributed via the Apple App Store, Google Play, and third-party channels, evolved from 2025's SparkCat malware.</li><li>It uses OCR (optical character recognition, which converts images to readable text) to scan users' photo libraries for wallet seed phrases (the 12-24 word recovery code granting full access to crypto funds).</li><li>Two identified apps—iOS app 'coin' and Android app 'SOEX'—were downloaded over 10,000 times before removal from official app stores.</li></ul>
+        
+        <h4>3. Strategic Acquisitions Reshape Crypto Infrastructure</h4>
+        <ul><li>Circle acquired IBM's blockchain patent portfolio—680+ patent families and nearly 1,000 issued patents spanning blockchain, banking, and enterprise systems—becoming the leading U.S. blockchain patent holder.</li><li>Payward (Kraken's parent) acquired Magic Labs' embedded wallet business (60M+ wallets created since 2018) as part of a spree including Bitnomial ($550M), Reap Technologies ($600M), and NinjaTrader ($1.5B).</li><li>Magic Labs rebranded as Newton Labs to focus on Newton Protocol, an onchain finance authorization layer that entered mainnet beta in June 2026.</li></ul>
+        
+        <h4>4. Ondo Network Separates Execution from Settlement</h4>
+        <ul><li>Ondo shifted from its original Ondo Chain plan to the Ondo Network, an execution layer aiming to match centralized exchange speed while keeping settlement non-custodial and onchain.</li><li>The architecture separates transaction execution from verification and settlement, using secure hardware enclaves (isolated, tamper-resistant processing environments) with a decentralized attestor network to verify approved code.</li><li>Ondo Perps, the network's first app, is a 24/7 perpetual futures platform for equities and commodities using tokenized RWAs (real-world assets represented as blockchain tokens) as collateral.</li><li>The ONDO token remains the governance token (grants holders voting rights on protocol decisions) as the network gradually decentralizes from the founding team.</li></ul>
+        
+        <h4>5. Crypto Project Shutdowns in 2026</h4>
+        <ul><li>Over 68 crypto projects shut down in 2026, including BitMEX, Polygon zkEVM, and Balancer Labs.</li><li>Web3 gaming recorded the highest failure density among sectors.</li></ul>
+        
+      </div>
+    </details>
     
   </div>
-  
   
 
   
@@ -304,14 +274,12 @@
   
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      <li><a href="https://d3bL6D04.eu1.hubspotlinks.com/Ctc/I9+113/d3bL6D04/VWGdcX8p78WhW29GS0f1tMlcPW8rPchQ5R_N2kN1c6sqP5nXHCW7lCGcx6lZ3nQW1l6WH84mVmDcW5lMtkQ2FrrbRW8pj9nw4WbmhwW7w7CMy59LGtmW73RQL335y6sgW61fmYB7HShPKW5nd5Qy4trnYRW830ngL2xqXCDW5SktPZ8HN4RCW18Cx863dBKRsW1lgqD988RcM2W6ZlD9s2wcxV_W7GW4WW5rxgFjW59FrdV2Dc0x9W7494nN87_HvqW3P1fJD411P-2W7M9H7y1Yks7_W5mXZ6W2gp2x8N1CDMCWMM_GMN5r_X95qzFZRW5QXGrH54ygj4W4HC5t75flhj3VVcNzW8Hkd1QW2smV8N1bs6H9W96MbZX7PMB0VW5n08xk5BBtBmW5Md4tD3s0JD1W66fV724CxsdKW6W8Tnp23jS-JW2YSYXN81VnwyVqR2zt2Z18C5W6NhHmT99nQf-W8JBkcq8sXhHFW69nrC_6Dfx1KW2zfXvQ7cQpWwW3z8YS64tN1P8W40zfzg6tXlC6W2SyzsP6sq50yW99VcSc8j0gKjW2DQ4CS3JMSLbf5X6tYW04" rel="noopener">Bitcoin holds near $65K as AI stocks sell off</a></li><li><a href="https://d3bL6D04.eu1.hubspotlinks.com/Ctc/I9+113/d3bL6D04/VWGdcX8p78WhW29GS0f1tMlcPW8rPchQ5R_N2kN1c6sr45nXHCW7Y9pgv6lZ3pCN3p0n0Z7KXwHW3rqdvZ6pZFggV5q-CQ5rX_TWW54P65863ytYhW5SMx6y8b460QW1RMdZb2xpHgBW1TFP2M6tTs7nW6gJJZd8mS2s4W4dJSP07NcvtlW5knnfT2dKWjWW6vN75c2P0ftZN9lL7vLZNJ0TW1WtPSw7B43jTW1GKJm41vdNwPW3Dy6cg3TqR-0W1hFcvv3HgrR8W7p_dms5017dzW1pvVbS2qCvZgW6lxvnz2LynTJW1K5R3T4_9TFLVyQkfQ6D5z8TW6pXhn14JGDD1VtY9hg23qc1GW4dvv1v5TdwfdW7yzzcT4gk9R8W89mgPY2Q7ymwW3Hbh5j5hk795W7XnH-S5tPBd3W1fZXb27-bsZSW42X3YT524LQ5W8DkT-X4MBXCDW7DTcJr5YDq_nW1WX6M91K3flZW6prFB68zb8SwW4Gmz8L4G3LscW4rGfQx2fwSs8W8qwDWG8zMgz0W5fMF6b2vmd4bW73V9Gd32sG5kW2QVYMH2YFzD6W69hLQC96LPDHVh9pcB1PX3wwf726LzC04" rel="noopener">Crypto's $90 trillion perpetual futures market comes to Wall Street</a></li><li><a href="https://d3bL6D04.eu1.hubspotlinks.com/Ctc/I9+113/d3bL6D04/VWGdcX8p78WhW29GS0f1tMlcPW8rPchQ5R_N2kN1c6sqv5nXHCW6N1X8z6lZ3lKW6vQzx06664cbN6YYtqg2WyPjW4wS2Xw8SVkVKW3QN_lC7MCl5qW82cDpv3R5pp9W53YT5d10k4G8W1cRfsY3gpWrxVr9b8_8Gq-l8W7pxc2h6DxR47DTJsQKxm0WW1LKG3R7vckBTW1cC40G7yvRKcW8zczhg4PXq3ZW7jQ59P250bCLW93m_FW2BJXh_N8zDyLqVglYyW4Lxf6G707FttW8yKDLg57_ynYW7xRFd_3M4lllW8l74Sz3k-FYgN5z9pfkZRsvPW8QkF5B6RZQ6KW3jv2Lx1XkQVPN4JS4gGYtZ0fW5nKvzC5JMxjVW1JXQXm4sVvWNW28TB9X8VRH30W6n-dGz5mldl1W85J7zl1JmkMmW8DCK-F5YpH-QV19pLh3sh5-XW2FM8Nv8NG0D1W3YR1cB6j41YjW1xnyc06K0GVsN7LlmCL9YKRvW6YG-Lg583k4JW9hbPx61pvPpyW25LHwZ1SRh85f5S60Td04" rel="noopener">Fanatics buys regulated exchange for prediction markets</a></li><li><a href="https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third" rel="noopener">Lido begins moving $16.5 billion in staked Ether</a></li><li><a href="https://ethresear.ch/t/proprietary-amms-and-ethereum/25543" rel="noopener">Proprietary AMMs and Ethereum</a></li><li><a href="https://threadreaderapp.com/thread/2081488277794603372.html" rel="noopener">68 Crypto Projects That Shut Down in 2026</a></li><li><a href="https://www.circle.com/pressroom/circle-acquires-ibm-blockchain-patent-portfolio" rel="noopener">Circle acquires IBM blockchain patent portfolio</a></li><li><a href="https://links.tldrnewsletter.com/uXwlOT" rel="noopener">AFX Trade hit by $24 million bridge exploit</a></li>
-    </ul>
+    <div class="card-body"><ul><li><a href="https://d3bL6D04.eu1.hubspotlinks.com/Ctc/I9+113/d3bL6D04/VWGdcX8p78WhW29GS0f1tMlcPW8rPchQ5R_N2kN1c6sqP5nXHCW7lCGcx6lZ3nQW1l6WH84mVmDcW5lMtkQ2FrrbRW8pj9nw4WbmhwW7w7CMy59LGtmW73RQL335y6sgW61fmYB7HShPKW5nd5Qy4trnYRW830ngL2xqXCDW5SktPZ8HN4RCW18Cx863dBKRsW1lgqD988RcM2W6ZlD9s2wcxV_W7GW4WW5rxgFjW59FrdV2Dc0x9W7494nN87_HvqW3P1fJD411P-2W7M9H7y1Yks7_W5mXZ6W2gp2x8N1CDMCWMM_GMN5r_X95qzFZRW5QXGrH54ygj4W4HC5t75flhj3VVcNzW8Hkd1QW2smV8N1bs6H9W96MbZX7PMB0VW5n08xk5BBtBmW5Md4tD3s0JD1W66fV724CxsdKW6W8Tnp23jS-JW2YSYXN81VnwyVqR2zt2Z18C5W6NhHmT99nQf-W8JBkcq8sXhHFW69nrC_6Dfx1KW2zfXvQ7cQpWwW3z8YS64tN1P8W40zfzg6tXlC6W2SyzsP6sq50yW99VcSc8j0gKjW2DQ4CS3JMSLbf5X6tYW04" rel="noopener">Bitcoin holds near $65K as AI stocks sell off</a></li><li><a href="https://d3bL6D04.eu1.hubspotlinks.com/Ctc/I9+113/d3bL6D04/VWGdcX8p78WhW29GS0f1tMlcPW8rPchQ5R_N2kN1c6sr45nXHCW7Y9pgv6lZ3pCN3p0n0Z7KXwHW3rqdvZ6pZFggV5q-CQ5rX_TWW54P65863ytYhW5SMx6y8b460QW1RMdZb2xpHgBW1TFP2M6tTs7nW6gJJZd8mS2s4W4dJSP07NcvtlW5knnfT2dKWjWW6vN75c2P0ftZN9lL7vLZNJ0TW1WtPSw7B43jTW1GKJm41vdNwPW3Dy6cg3TqR-0W1hFcvv3HgrR8W7p_dms5017dzW1pvVbS2qCvZgW6lxvnz2LynTJW1K5R3T4_9TFLVyQkfQ6D5z8TW6pXhn14JGDD1VtY9hg23qc1GW4dvv1v5TdwfdW7yzzcT4gk9R8W89mgPY2Q7ymwW3Hbh5j5hk795W7XnH-S5tPBd3W1fZXb27-bsZSW42X3YT524LQ5W8DkT-X4MBXCDW7DTcJr5YDq_nW1WX6M91K3flZW6prFB68zb8SwW4Gmz8L4G3LscW4rGfQx2fwSs8W8qwDWG8zMgz0W5fMF6b2vmd4bW73V9Gd32sG5kW2QVYMH2YFzD6W69hLQC96LPDHVh9pcB1PX3wwf726LzC04" rel="noopener">Crypto's $90 trillion perpetual futures market comes to Wall Street</a></li><li><a href="https://d3bL6D04.eu1.hubspotlinks.com/Ctc/I9+113/d3bL6D04/VWGdcX8p78WhW29GS0f1tMlcPW8rPchQ5R_N2kN1c6sqv5nXHCW6N1X8z6lZ3lKW6vQzx06664cbN6YYtqg2WyPjW4wS2Xw8SVkVKW3QN_lC7MCl5qW82cDpv3R5pp9W53YT5d10k4G8W1cRfsY3gpWrxVr9b8_8Gq-l8W7pxc2h6DxR47DTJsQKxm0WW1LKG3R7vckBTW1cC40G7yvRKcW8zczhg4PXq3ZW7jQ59P250bCLW93m_FW2BJXh_N8zDyLqVglYyW4Lxf6G707FttW8yKDLg57_ynYW7xRFd_3M4lllW8l74Sz3k-FYgN5z9pfkZRsvPW8QkF5B6RZQ6KW3jv2Lx1XkQVPN4JS4gGYtZ0fW5nKvzC5JMxjVW1JXQXm4sVvWNW28TB9X8VRH30W6n-dGz5mldl1W85J7zl1JmkMmW8DCK-F5YpH-QV19pLh3sh5-XW2FM8Nv8NG0D1W3YR1cB6j41YjW1xnyc06K0GVsN7LlmCL9YKRvW6YG-Lg583k4JW9hbPx61pvPpyW25LHwZ1SRh85f5S60Td04" rel="noopener">Fanatics buys regulated exchange for prediction markets</a></li><li><a href="https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third" rel="noopener">Lido begins moving $16.5 billion in staked Ether</a></li><li><a href="https://ethresear.ch/t/proprietary-amms-and-ethereum/25543" rel="noopener">Proprietary AMMs and Ethereum</a></li><li><a href="https://threadreaderapp.com/thread/2081488277794603372.html" rel="noopener">68 Crypto Projects That Shut Down in 2026</a></li><li><a href="https://www.circle.com/pressroom/circle-acquires-ibm-blockchain-patent-portfolio" rel="noopener">Circle acquires IBM blockchain patent portfolio</a></li><li><a href="https://links.tldrnewsletter.com/uXwlOT" rel="noopener">AFX Trade hit by $24 million bridge exploit</a></li></ul></div>
   </details>
   
 </section>
 
-<section class="batch" data-cat="ai">
+<section class="batch" id="ai-am" data-cat="ai">
   <h2><span class="badge badge-ai">ai</span> Morning AI</h2>
 
   
@@ -320,61 +288,39 @@
     
     <article class="story">
       <h4>Moonshot AI releases Kimi K3, the largest open-weight model ever</h4>
-      <ul>
-        <li>Full model weights and technical paper released publicly for research, personal, and commercial use, with safety guardrails included (model weights are the numerical values that power an AI system).</li><li>Model has 2.8 trillion parameters, a 1-million-token context window (ability to process ~1 million words before responding), and native visual understanding.</li><li>Uses Mixture-of-Experts architecture (specialized network sections activated per task) delivering 2.5x more intelligence per unit of compute versus prior approaches.</li><li>Moonshot also open-sourced supporting infrastructure: attention kernels, a MoE communication library, and agent-environment scaling tools.</li><li>Demand was so high after its debut 11 days ago that Moonshot suspended new subscriptions.</li><li>U.S. officials accused Moonshot of distilling (copying behavior from) American models to build K3; Beijing rejected this as 'AI hegemony,' making the release a geopolitical flashpoint as Washington debates open-model restrictions.</li><li>Expected to increase pricing and performance pressure on U.S. labs like OpenAI and Anthropic, which typically keep frontier models closed or paywalled.</li>
-      </ul>
+      <ul><li>Full model weights and technical paper released publicly for research, personal, and commercial use, with safety guardrails included (model weights are the numerical values that power an AI system).</li><li>Model has 2.8 trillion parameters, a 1-million-token context window (ability to process ~1 million words before responding), and native visual understanding.</li><li>Uses Mixture-of-Experts architecture (specialized network sections activated per task) delivering 2.5x more intelligence per unit of compute versus prior approaches.</li><li>Moonshot also open-sourced supporting infrastructure: attention kernels, a MoE communication library, and agent-environment scaling tools.</li><li>Demand was so high after its debut 11 days ago that Moonshot suspended new subscriptions.</li><li>U.S. officials accused Moonshot of distilling (copying behavior from) American models to build K3; Beijing rejected this as 'AI hegemony,' making the release a geopolitical flashpoint as Washington debates open-model restrictions.</li><li>Expected to increase pricing and performance pressure on U.S. labs like OpenAI and Anthropic, which typically keep frontier models closed or paywalled.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>The Rundown AI:</strong> Free weights don't mean free compute — running K3 requires enterprise-grade GPUs far beyond consumer hardware; Moonshot's license permits commercial hosting and resale of the model.</li>
-        
-        <li><strong>TLDR AI:</strong> K3 is specifically a Mixture-of-Experts model, a technique that activates only specialized sub-networks per task rather than the whole model.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>The Rundown AI:</strong> Free weights don't mean free compute — running K3 requires enterprise-grade GPUs far beyond consumer hardware; Moonshot's license permits commercial hosting and resale of the model.</li><li><strong>TLDR AI:</strong> K3 is specifically a Mixture-of-Experts model, a technique that activates only specialized sub-networks per task rather than the whole model.</li></ol>
       
       <p class="covered-by">Covered by: Superhuman (Zain Kahn), The Neuron, There's An AI For That (TAAFT), The Rundown AI, TLDR AI</p>
     </article>
     
     <article class="story">
       <h4>Open-weight AI policy debate intensifies (Anthropic, Nvidia alliance)</h4>
-      <ul>
-        <li>Anthropic CEO Dario Amodei clarified the company has 'never advocated for a ban on open-weights models' and supports their public value, despite this exposing U.S. firms to more competition.</li><li>Anthropic instead favors upstream controls: restricting chip access, cracking down on industrial-scale distillation (training smaller models to copy larger ones' outputs/behavior), and mandatory safety testing above a capability threshold.</li><li>The Nvidia-led 'Open Weights and American AI Leadership' letter grew from 25 to 50 signatories, with OpenAI and Google newly joining.</li><li>Nvidia formed a separate 36-37 member Open Secure AI Alliance (including Microsoft, IBM, Cisco, Cloudflare) focused on open-source models as a cybersecurity asset — notably excluding OpenAI, Google, and Anthropic.</li><li>The alliance was prompted by the Hugging Face security breach, where closed, permission-locked AI tools reportedly hindered defenders' real-time response; Hugging Face's own forensic response used the open GLM 5.2 model.</li><li>Underlying tension: infrastructure vendors profit when more organizations build on open models, while OpenAI and Anthropic argue closed weights better prevent misuse — meaning the debate is really about who defines a 'secure' AI system and whether outsiders can audit it.</li>
-      </ul>
+      <ul><li>Anthropic CEO Dario Amodei clarified the company has 'never advocated for a ban on open-weights models' and supports their public value, despite this exposing U.S. firms to more competition.</li><li>Anthropic instead favors upstream controls: restricting chip access, cracking down on industrial-scale distillation (training smaller models to copy larger ones' outputs/behavior), and mandatory safety testing above a capability threshold.</li><li>The Nvidia-led 'Open Weights and American AI Leadership' letter grew from 25 to 50 signatories, with OpenAI and Google newly joining.</li><li>Nvidia formed a separate 36-37 member Open Secure AI Alliance (including Microsoft, IBM, Cisco, Cloudflare) focused on open-source models as a cybersecurity asset — notably excluding OpenAI, Google, and Anthropic.</li><li>The alliance was prompted by the Hugging Face security breach, where closed, permission-locked AI tools reportedly hindered defenders' real-time response; Hugging Face's own forensic response used the open GLM 5.2 model.</li><li>Underlying tension: infrastructure vendors profit when more organizations build on open models, while OpenAI and Anthropic argue closed weights better prevent misuse — meaning the debate is really about who defines a 'secure' AI system and whether outsiders can audit it.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>The Neuron:</strong> Frames the split as 'open defense vs. closed control,' arguing every company's stance conveniently doubles as a claim to be the 'safest' policy for its own business model.</li>
-        
-        <li><strong>TLDR AI:</strong> Anthropic's proposed safety testing threshold would apply specifically to 'all models above a capability threshold,' not open-weight models categorically.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>The Neuron:</strong> Frames the split as 'open defense vs. closed control,' arguing every company's stance conveniently doubles as a claim to be the 'safest' policy for its own business model.</li><li><strong>TLDR AI:</strong> Anthropic's proposed safety testing threshold would apply specifically to 'all models above a capability threshold,' not open-weight models categorically.</li></ol>
       
       <p class="covered-by">Covered by: Superhuman (Zain Kahn), The Neuron, There's An AI For That (TAAFT), The Rundown AI, TLDR AI</p>
     </article>
     
     <article class="story">
       <h4>Nvidia's major AI investments: Safe Superintelligence and OpenAI's Ohio data center</h4>
-      <ul>
-        <li>Nvidia is investing up to $5 billion in Ilya Sutskever's stealth-mode Safe Superintelligence (SSI) startup, confirming the lab's research is 'worth scaling.'</li><li>SSI also gains access to Nvidia's Vera Rubin compute platform, raising its processing capacity by an order of magnitude.</li><li>Nvidia is reportedly discussing a $250 billion financing guarantee to help OpenAI lease a 10-gigawatt Ohio data center campus (enough electricity for roughly 750,000 homes).</li><li>The deal would shift OpenAI from renting servers to owning independent computing infrastructure, while locking Nvidia into years of guaranteed chip demand.</li>
-      </ul>
+      <ul><li>Nvidia is investing up to $5 billion in Ilya Sutskever's stealth-mode Safe Superintelligence (SSI) startup, confirming the lab's research is 'worth scaling.'</li><li>SSI also gains access to Nvidia's Vera Rubin compute platform, raising its processing capacity by an order of magnitude.</li><li>Nvidia is reportedly discussing a $250 billion financing guarantee to help OpenAI lease a 10-gigawatt Ohio data center campus (enough electricity for roughly 750,000 homes).</li><li>The deal would shift OpenAI from renting servers to owning independent computing infrastructure, while locking Nvidia into years of guaranteed chip demand.</li></ul>
       
       <p class="covered-by">Covered by: Superhuman (Zain Kahn), There's An AI For That (TAAFT), The Rundown AI, Staying Ahead</p>
     </article>
     
     <article class="story">
       <h4>Microsoft launches MAI-Cyber-1-Flash cybersecurity model</h4>
-      <ul>
-        <li>New specialized model achieves 96% accuracy on CyberGym benchmarks for finding bugs in large codebases, outperforming Anthropic's Mythos by 12 points.</li><li>Costs 50% less than competing models and can handle 90% of typical security workflows.</li><li>Paired with 'Project Perception,' which deploys agent teams to simulate attacks, investigate threats, and auto-repair flaws without human intervention — CEO Mustafa Suleyman calls this 'continuous, real-time, cost-efficient' defense.</li><li>Powers a platform called MDASH for vulnerability identification and remediation.</li><li>Release timing follows the high-profile Hugging Face security incident, positioning Microsoft as a first mover in specialized security models.</li>
-      </ul>
+      <ul><li>New specialized model achieves 96% accuracy on CyberGym benchmarks for finding bugs in large codebases, outperforming Anthropic's Mythos by 12 points.</li><li>Costs 50% less than competing models and can handle 90% of typical security workflows.</li><li>Paired with 'Project Perception,' which deploys agent teams to simulate attacks, investigate threats, and auto-repair flaws without human intervention — CEO Mustafa Suleyman calls this 'continuous, real-time, cost-efficient' defense.</li><li>Powers a platform called MDASH for vulnerability identification and remediation.</li><li>Release timing follows the high-profile Hugging Face security incident, positioning Microsoft as a first mover in specialized security models.</li></ul>
       
       <p class="covered-by">Covered by: The Rundown AI, TLDR AI</p>
     </article>
     
     <article class="story">
       <h4>Sam Altman: AI development has entered 'the singularity'</h4>
-      <ul>
-        <li>Altman claims the singularity — the theoretical point where AI surpasses human intelligence — is no longer just theoretical.</li><li>Cites startup development cycles collapsing from about one year to roughly ten weeks as evidence.</li><li>Comments made on a podcast, reframing his decade-old vision of transformative AI as a present reality rather than a future prediction.</li>
-      </ul>
+      <ul><li>Altman claims the singularity — the theoretical point where AI surpasses human intelligence — is no longer just theoretical.</li><li>Cites startup development cycles collapsing from about one year to roughly ten weeks as evidence.</li><li>Comments made on a podcast, reframing his decade-old vision of transformative AI as a present reality rather than a future prediction.</li></ul>
       
       <p class="covered-by">Covered by: There's An AI For That (TAAFT), The Rundown AI</p>
     </article>
@@ -384,126 +330,100 @@
 
   
   
-  <div class="newsletter-card">
-    <h3>Superhuman (Zain Kahn)</h3>
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <h4>1. Publishers revolt against Google AI Overviews</h4>
-    <ul>
-      <li>Google's AI Overviews now answer queries directly in 43% of searches (up from 15% last year), eliminating click-throughs to source websites.</li><li>USA Today CEO Mike Reed: 'It's time to take a stand and say enough is enough'; Reuters, Politico, and People are debating cutting off Google's access to their content.</li><li>The shift undermines the ad-supported click economy funding journalism, threatening both news outlets and the AI systems that rely on their content for training.</li><li>Reddit executives are reassessing their $60M annual Google licensing deal (signed 2024), questioning whether it still provides enough value.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Superhuman (Zain Kahn) <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Publishers revolt against Google AI Overviews</h4>
+        <ul><li>Google's AI Overviews now answer queries directly in 43% of searches (up from 15% last year), eliminating click-throughs to source websites.</li><li>USA Today CEO Mike Reed: 'It's time to take a stand and say enough is enough'; Reuters, Politico, and People are debating cutting off Google's access to their content.</li><li>The shift undermines the ad-supported click economy funding journalism, threatening both news outlets and the AI systems that rely on their content for training.</li><li>Reddit executives are reassessing their $60M annual Google licensing deal (signed 2024), questioning whether it still provides enough value.</li></ul>
+        
+        <h4>2. Sam Altman heads to Washington to preview OpenAI's most powerful model</h4>
+        <ul><li>Meeting with senior officials this week amid the Trump administration's June executive order establishing a voluntary 30-day pre-release window for vetting new AI models.</li><li>Regulatory landscape remains unsettled as tech companies, publishers, and government compete to shape AI governance.</li></ul>
+        
+        <h4>3. Workflow: Repurposing Reddit posts into viral content</h4>
+        <ul><li>Add /.json to any Reddit URL to extract thread data, then feed it to ChatGPT with a prompt to identify pain points and generate viral two-line hooks matching your top-performing style.</li><li>Send those hooks plus your best past posts to Claude with a prompt to write 5 new posts matching your voice, structure, and pacing without copying wording.</li><li>Leverages Reddit's existing audience insights and conversation data to accelerate content creation at scale.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>2. Sam Altman heads to Washington to preview OpenAI's most powerful model</h4>
-    <ul>
-      <li>Meeting with senior officials this week amid the Trump administration's June executive order establishing a voluntary 30-day pre-release window for vetting new AI models.</li><li>Regulatory landscape remains unsettled as tech companies, publishers, and government compete to shape AI governance.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>The Neuron <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. OpenAI study: job boundaries dissolving faster than titles update</h4>
+        <ul><li>43.5% of ChatGPT work involves tasks outside a user's official job category — marketers analyze data, operators code, managers research — before HR updates any title.</li><li>Pattern suggests skills now define actual work while job titles only reflect the org chart, with upskilling happening task-by-task via AI tools rather than formal training programs.</li></ul>
+        
+        <h4>2. Claude shared chats and Artifacts surfaced in Google Search</h4>
+        <ul><li>Shared Claude conversations and Artifacts (generated content/outputs) appeared in Google Search results, exposing legal questions, personal data, and application credentials.</li><li>Raises privacy concerns about how easily shared AI chat links can become publicly indexed.</li></ul>
+        
+        <h4>3. METR's expenditure-horizon metric for AI agent ROI</h4>
+        <ul><li>New metric shifts the question from 'can the agent do the task?' to 'does it cost less than a human after supervision and retry costs?'</li><li>Framed as the financial reality every AI agent pilot must eventually confront once budgets tighten.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>3. Workflow: Repurposing Reddit posts into viral content</h4>
-    <ul>
-      <li>Add /.json to any Reddit URL to extract thread data, then feed it to ChatGPT with a prompt to identify pain points and generate viral two-line hooks matching your top-performing style.</li><li>Send those hooks plus your best past posts to Claude with a prompt to write 5 new posts matching your voice, structure, and pacing without copying wording.</li><li>Leverages Reddit's existing audience insights and conversation data to accelerate content creation at scale.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>There's An AI For That (TAAFT) <span class="count">4</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Fujitsu's PHOTON architecture boosts model efficiency 475x</h4>
+        <ul><li>Compresses conversation history into summaries instead of having the model reread entire chats each turn (the standard transformer/attention-based approach).</li><li>Yields up to 475x more output from identical hardware without requiring additional computational resources.</li></ul>
+        
+        <h4>2. Anthropic deleted 80% of Claude Code's instruction prompt</h4>
+        <ul><li>Newer models handle nuanced judgment better than explicit rules, examples, and repetitive guardrails, according to Anthropic's findings.</li><li>Signals a shift toward AI relying on learned judgment rather than hard-coded instructions.</li></ul>
+        
+        <h4>3. OpenAI's workplace AI usage analysis</h4>
+        <ul><li>Analyzed 800,000 user chats to determine which job categories benefit most from AI assistance, finding significant variation across roles.</li><li>Data has implications for workforce planning, showing which sectors face disruption versus genuine productivity gains.</li></ul>
+        
+        <h4>4. InkLeaf dual-screen E Ink tablet</h4>
+        <ul><li>Combines two E Ink (low-power, paper-like display technology) screens on one hinge for simultaneous reading and note-taking.</li><li>Stylus supports variable pressure and page-flicking; AI handwriting search can find any phrase across all notebooks, lasting a full day without eye strain.</li></ul>
+        
+      </div>
+    </details>
     
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>The Neuron</h3>
+    <details class="newsletter-card">
+      <summary>The Rundown AI <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Cognition acquires Poke SMS assistant for Devin</h4>
+        <ul><li>Acquired The Interaction Company, maker of Poke, an SMS-based assistant that processed over 100 million messages in three months.</li><li>Integration into Cognition's Devin coding agent is planned.</li></ul>
+        
+        <h4>2. Cursor launches $7/month 'Start' plan in India</h4>
+        <ul><li>Offers only Cursor's own models to help developers build cloud agents.</li><li>Signals expansion into price-sensitive emerging markets.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>1. OpenAI study: job boundaries dissolving faster than titles update</h4>
-    <ul>
-      <li>43.5% of ChatGPT work involves tasks outside a user's official job category — marketers analyze data, operators code, managers research — before HR updates any title.</li><li>Pattern suggests skills now define actual work while job titles only reflect the org chart, with upskilling happening task-by-task via AI tools rather than formal training programs.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Staying Ahead <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Claude Opus 5 review: capability gains without practical improvements</h4>
+        <ul><li>Tops independent leaderboards by a single point but costs the same as its predecessor and offers no new practical capabilities to users.</li><li>Reviewer complaints about timidity and hedging didn't hold up in standard chat tests: the model refused to fabricate a nonexistent fact 3 out of 3 times and held its reasoning under pushback.</li><li>Ran roughly twice as long as GPT-5.6 Sol on a grammar question, but the extra length contained useful edge cases rather than padding.</li><li>Volunteered honest self-assessment of its weaknesses (confidently stating wrong things, lack of life experience) without being prompted.</li><li>Industry now competing on price, speed, and tone rather than raw capability — described as an 'intelligence overhang' where models keep improving but use cases haven't expanded.</li></ul>
+        
+        <h4>2. Cursor's India pricing tier detail</h4>
+        <ul><li>₹649/month Start plan covers only Grok 4.5 and Composer via local payment methods, significantly undercutting the standard $20 USD pricing.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>2. Claude shared chats and Artifacts surfaced in Google Search</h4>
-    <ul>
-      <li>Shared Claude conversations and Artifacts (generated content/outputs) appeared in Google Search results, exposing legal questions, personal data, and application credentials.</li><li>Raises privacy concerns about how easily shared AI chat links can become publicly indexed.</li>
-    </ul>
-    
-    <h4>3. METR's expenditure-horizon metric for AI agent ROI</h4>
-    <ul>
-      <li>New metric shifts the question from 'can the agent do the task?' to 'does it cost less than a human after supervision and retry costs?'</li><li>Framed as the financial reality every AI agent pilot must eventually confront once budgets tighten.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>There's An AI For That (TAAFT)</h3>
-    
-    <h4>1. Fujitsu's PHOTON architecture boosts model efficiency 475x</h4>
-    <ul>
-      <li>Compresses conversation history into summaries instead of having the model reread entire chats each turn (the standard transformer/attention-based approach).</li><li>Yields up to 475x more output from identical hardware without requiring additional computational resources.</li>
-    </ul>
-    
-    <h4>2. Anthropic deleted 80% of Claude Code's instruction prompt</h4>
-    <ul>
-      <li>Newer models handle nuanced judgment better than explicit rules, examples, and repetitive guardrails, according to Anthropic's findings.</li><li>Signals a shift toward AI relying on learned judgment rather than hard-coded instructions.</li>
-    </ul>
-    
-    <h4>3. OpenAI's workplace AI usage analysis</h4>
-    <ul>
-      <li>Analyzed 800,000 user chats to determine which job categories benefit most from AI assistance, finding significant variation across roles.</li><li>Data has implications for workforce planning, showing which sectors face disruption versus genuine productivity gains.</li>
-    </ul>
-    
-    <h4>4. InkLeaf dual-screen E Ink tablet</h4>
-    <ul>
-      <li>Combines two E Ink (low-power, paper-like display technology) screens on one hinge for simultaneous reading and note-taking.</li><li>Stylus supports variable pressure and page-flicking; AI handwriting search can find any phrase across all notebooks, lasting a full day without eye strain.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>The Rundown AI</h3>
-    
-    <h4>1. Cognition acquires Poke SMS assistant for Devin</h4>
-    <ul>
-      <li>Acquired The Interaction Company, maker of Poke, an SMS-based assistant that processed over 100 million messages in three months.</li><li>Integration into Cognition's Devin coding agent is planned.</li>
-    </ul>
-    
-    <h4>2. Cursor launches $7/month 'Start' plan in India</h4>
-    <ul>
-      <li>Offers only Cursor's own models to help developers build cloud agents.</li><li>Signals expansion into price-sensitive emerging markets.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>Staying Ahead</h3>
-    
-    <h4>1. Claude Opus 5 review: capability gains without practical improvements</h4>
-    <ul>
-      <li>Tops independent leaderboards by a single point but costs the same as its predecessor and offers no new practical capabilities to users.</li><li>Reviewer complaints about timidity and hedging didn't hold up in standard chat tests: the model refused to fabricate a nonexistent fact 3 out of 3 times and held its reasoning under pushback.</li><li>Ran roughly twice as long as GPT-5.6 Sol on a grammar question, but the extra length contained useful edge cases rather than padding.</li><li>Volunteered honest self-assessment of its weaknesses (confidently stating wrong things, lack of life experience) without being prompted.</li><li>Industry now competing on price, speed, and tone rather than raw capability — described as an 'intelligence overhang' where models keep improving but use cases haven't expanded.</li>
-    </ul>
-    
-    <h4>2. Cursor's India pricing tier detail</h4>
-    <ul>
-      <li>₹649/month Start plan covers only Grok 4.5 and Composer via local payment methods, significantly undercutting the standard $20 USD pricing.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>TLDR AI <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Google releases Gemini Distillation Service</h4>
+        <ul><li>Lets users train smaller, faster 'student' models that learn from larger 'teacher' models.</li><li>Optimized for high-volume, latency-sensitive applications and complex reasoning tasks.</li></ul>
+        
+        <h4>2. Cogent releases VR-1 autonomous cyber reasoning model</h4>
+        <ul><li>Can investigate environments and execute attack chains autonomously.</li><li>Achieves 2x improvement over baseline models on realistic enterprise attack scenarios.</li></ul>
+        
+      </div>
+    </details>
     
   </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>TLDR AI</h3>
-    
-    <h4>1. Google releases Gemini Distillation Service</h4>
-    <ul>
-      <li>Lets users train smaller, faster 'student' models that learn from larger 'teacher' models.</li><li>Optimized for high-volume, latency-sensitive applications and complex reasoning tasks.</li>
-    </ul>
-    
-    <h4>2. Cogent releases VR-1 autonomous cyber reasoning model</h4>
-    <ul>
-      <li>Can investigate environments and execute attack chains autonomously.</li><li>Achieves 2x improvement over baseline models on realistic enterprise attack scenarios.</li>
-    </ul>
-    
-  </div>
-  
   
 
   
@@ -511,14 +431,12 @@
   
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      <li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgLq5ix9aYNGoC7IyrwNfzY8xFBXR7S4yImKStEBbD8zUYRdTXrVdN68t_YCLB8KyWUWxBKfy04kY9Jh-8CzqH_7MdRe3q526295K13nzVsjw1t7yijTXaECkukigj04eBT0hhf8imzma39iUNr7gnB-jMT_YASdT6CwU8hkfiDVlpuYliMtgNEgo8Tk7FssyrLqf605dLXVJtQgw7Cj-klOCNJWzbsOwttXng3pjkjUm8LxT8vGzrGrbDHeEFXJfbQ/4sp/Ms-si8_sRCu0noTzZAliKQ/h5/h001.5HyVphS4nBit-QNdl4__UK0lU-VbnYy59NrGDp6OLAk" rel="noopener">Learn more about Kimi K3</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgP9s0Ka8bgObD16O0p4c3FcNCCaS9MPhXhYfZUCPItKTRI0bZbCDdmSfTAYZMBBPKkmI-7MvuLROvJ3sHPnP63bdgbXUBTREwZVOc_ZA85xf-IluKkveNniZXL5yZ-QrhrQ6Q1SJuXwxl6hqWD4-BLtmpAoMGRC4Mk1IazErr93BHO0vhoeV_bBaMC1LwnJs_ibyx9Pk_aizVhMuYb8f528hp_ybgwQc8oFwrr2N6LOC45lYpT2LCnScqGn79_pKlDFGVb5Zm9FI6L-rjum8EBFG-kSeObzER2XYjrVY79vEaV7JilQfCQ-OfujqGgdk32EEf1NKb9bu6ksYg8o6hHy2_KDF4ww8MvN0jkAbOQoX0Mj7YhufiEcDIZy09YLZnN5AflLUgIA_uLdbB0s8uF0/4sp/Ms-si8_sRCu0noTzZAliKQ/h8/h001.qNMDc0ObNZGwsZRbGwRBz7q5HMYjbJb0xuClYJmHdWM" rel="noopener">Read more from the WSJ about Nvidia investment</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgAz4aXPItfLK3FmesaOg64suhb6Bab8VSkaR-zdfRH00E_GffL2eUuEq1tTGGHFrzikwn2gOuf93-sACbY3Dwgy0zczwAaCfSykanm2ZPQ7cDUGUeLV8r1nWbNSnTlNwjZNqIYhqi6SPytiXlvU-rHltlRhiv5F2v8d0AtAV8xYw6J4Hi_9BhBTC-kT7rHdD-ZXKfeZfDUVI1qJz-8mhU9QC3DOsELs3zcVS5Ln9PVP3PPq0TfKR19gEOIMz-kGrqe2dv-y9cf6gbvDEUnclBOMcViv1lB0sL0R6EbQp2d5g/4sp/Ms-si8_sRCu0noTzZAliKQ/h10/h001.nknkjtwoUE59E0NSKSlDcef6AL4cWWAry0l_f0kWf8" rel="noopener">Sam Altman heads to Washington to preview OpenAI model</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgJwfrSRw9n09LsRmM5j15DHZmcsTxFGS2067SsWcZUaLJgRhueEoKP08SwxpfbbE-BxrNt5O9GhFt0AGrOokOg6jLjRuLnP2IgtZq1smhYv-RKnmFo-xY3Moosaq8umXJTVJqYl1Z_0KL48XYgCTYaxT3-oOz4m1piyH03JMYMm_KGYG0fIThBGpMSd7X1Yz7-igwJNDH6OPm6X7DNvTTbzlItKgtIVZku_JzBLnRznnj7plzR5O6utAGnfrF0Iisd1X3sPAayJrJ_OemQVsEpdETbqv4tBmp3XjdqOjrYnU_LIOsY_wSmAq5_mmc1YXWU-DvNfEXAs40qWGpMVSNFA/4sp/Ms-si8_sRCu0noTzZAliKQ/h19/h001.3kpemvoAlvU452rHKwxSNf871-IMh_JCqhLwD919WQA" rel="noopener">WSJ report on publishers considering cutting Google access</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.JtFbHcnj7MmUqbdsCSlCvBEk0LWGq-7zfWv8dN_6AfXqLhjfek_2DQjnr86G812JgeEjNknvnSMcptISubn13mJTH5wTpIw-Ac4sUZdvLHyjECCaOIG6bQrYm4_DUW1zFSKUmjEcgAiKNGE_HPPDYrNrPKhngFl7hcmI4U_X48DKoPwcvc3Q3-Diib-kr8RVZQzsJW3BSwHltcL1fWIXRP0AUwIoDx67vwLxSyQTtfIps2Gb25rKDTUGqJkS1isX8ydnMd-Qohg5DbwDkoGXa9qfC1yg6RfEGv6UhAtbJ5KUkqMc409SJNbaaGtNgjbwiDlly1oa5YWmqxtca7yXUCN4cnkJCrnIMzyeymMvbak/4sp/Ms-si8_sRCu0noTzZAliKQ/h11/h001.COXmy3AzNMUPijQjWEItrwAxtoiiF6CkChkOinljrKQ" rel="noopener">Anthropic published Opus 5 Prompting Guide</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001._SR4S8YLPUYanH1JLonj6thjObThIvhnX_9ZLmzm-vC2Kov-Z2NcewAWrDtu3wQcjMdOLSKKT_cTehN2S_VR9KxRrZ0jO0PzoECpQVD_N4426G6WXNUg8MnIgrngv-Ky1aK5_YcdJiXr3pd_EH5h2-o6J2v0lpTiQFkCYng4pwVXsV2sLTe8fV7LbfPZndoUA6-ccxI7WvPPCQcEvGiMpyZMhCNll_SkyYXzx_qzAOFormCvDWpUVQYW4drH-5K_YSqzS395MR-1Op74LXgJPJN9MMO27g49bLxCrNnpXGfCPSsbnLMgSBCV0zY7tY1e/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h1/h001.iDaRW3xokaazeUv6Vl1SirCCfprCBOevj7w1TX5zyvw" rel="noopener">OpenAI's task-boundary study on ChatGPT workplace use</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.m9bXIF-bUgEYKr_fFoKziFaefQjBEg3rjjeL1lp2464jSJ4FrRTo5B9j3pKPG4SROrhE3DI4xGIISsR1_au-iRg6fQrC1OkSSbvEwThHAEclDWE4gjouqaHDbfr7AypS2gPndMXRwMK5V_7LYwHAM_ARQbwAN_mtPCT28fXx1nfyal9g3RJXQhdfCpTFNs3N6f7CBk2u4K_iQyqhRIohxozCcm8CLj7s9vEhfyaW2b0Rhx8JchcWAfMVeDvYiP2kEwbVjHu-SDTM-LdStK5-s3ZY_es4s4pJ4qmgWbzMA-E/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h7/h001.01wr1bnV2HnNBQTVlruup2qDebuQwPsJW1CJrPU8EVw" rel="noopener">Nvidia's Open Secure AI Alliance coalition announcement</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jj0_mAIw4Of1WeCdHOujZBBS6IjAw70uXYCUHzMozNfmPViwKhkH9yA-gwWU2aXSoe7KFhqEouGOQKOL0WMkUpHtrd0_6793Uy1-9ZUHLVixblk2GVK1yn3Uc9yZEA_0w-qbNpiG3tFCdai1ipOwrHHHMGsppSs_M2e5Jxy0DM-S-ZrdmJqAgYPLdfzC6dmt6uTKW9GzYd7eMPRzwxDwQCvpzuQXyTUtNOqVlvOVeOf9hb72Q6UygbvwNSBM4eHWheEYM9dwHbm03Qg_cqxCpSXWCG0P0e6FJUrM1XtWwOqYMbKsrcSw8zZgp0PVmsPE-sRsHrD7eify7k5R_h2Fd-9EzIF0z32IZpAtyp41Cqhz/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h14/h001.i7x9f9EIRedM4kPJA8-c3Danx86BGMLYAlEYhMEi_DU" rel="noopener">Cursor's planner-worker AI swarm architecture</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.PBa3mXW4G6eu-YmfUUZKw3H7ffmOjRAnS84AFja0ziMdgfbwkYWwLUGEh9B1x4pb0Tlo9ONKDjsLjKUNkf5I9Fufm5y3cm49QJaezHu3rTUVQ-hQ1SxqHCX2_m78suqTKBTl-YxCePzBSR2j0YvQNSHzolEfRGSq7L_rJHDpkAsu_a2mIK34FDiKB83bRvAXww0vFzNd5vPGEvsBIB3gApK7DYpKzTuCzBXi5Ng8trAjq3n4Tvua6NnJLqN3ooyT0QuK5IF3OWcDFdJgcq-f3A/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h18/h001.M88IR7AFnce8ko6drVcHvTWLgQBOyK0j6q1CxxVQVKc" rel="noopener">Moonshot Kimi K3 weights on Hugging Face</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.MebLiM_wk3YBoaLiOYF2VvdDkxKT-nPhfL5yemcm7cSYkQmLMQaEaQ52JZ6C4LMAxEDVbZgwMfCjlvVeCC5U19BhfBKtce-_JnCO3GGIlfLfNr9H5cmeloEaNJYJcZEJyIGcndDC4E1WNgGWaJ1gnFBhBkYjfx7z3BqYREfwI6Y-61-QXxt9dha5B_6JwcjooCxjRDsfAaxe7m-pWelXaXc3alter4C3AUtPT1AJ3WSsGfaq1-Wxs8aCsCLbQKvh0HJFSI60G1nvGwtTcBnc0QnRmvJebkWGaWwHEY6p0wpIpA9OJtqEEylKXVL9FNqh/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h28/h001.4PUFKHiMr70PH6oDTQUOFFKFH2RvTD2FAW-rA-VzBX0" rel="noopener">EU AI Omnibus enters into force with extended compliance timelines</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0FNs46PIK3g9SKBNB6ZbBmegFEQx3CFWztDmk8h0vRL86TsqQNHalXyHNPvvMM3QpC1jGkv2OhkxtRTVHfiIBOAZdf1LS3u4MxGR5IfN9V2Ep6bKOf8TlmaDFOLPC7cq8ZJ8Fo2y3fGE7cVhX5H1ZQ2uE3uNwKK3Gfl5f6fr88W31rO3XGNo95W2lBnahvYiNrPR5PiQtbaok2hysySzrVpc9h_g2DTpdmB5is-tDchlPUPBIEYwgeq_eMDNejcYM7H0h7-riUD2WyR-a6db6W8/4so/4_qH8Z3sStC0dGHvVj_UOw/h6/h001.0L-9ZDi0OYjzgUDA3OUED7pufa7UgTXD6FkB4eyVoDY" rel="noopener">37 Rivals Form One AI Alliance</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QMm86vGQnJ7Wf7d0AE2KhpV4K_wxmYNMbx8oLQyP4nUGJDtz70Cx1MakqdaZPKPWPjAAZcOvT9RxPf24-DTTfMFMAlLpYnCk0d6-GOa0fNfOB-7CnduVcCc6-egZrGY3wqHiWU71uFAUhLCkC-XTdL5ZZXSydWEIONWbfTgpo17WcyanXnyeiD3TDT3RoCsNMGzC6hWQUBL2POpuL5C5scHid4e7JwiY6DukARnONqUXTznTAmxHSMo_z_wZiyCUfrl0fdXtm59wZvhBClyTiI4sPbCGU0uStXeUNK4VODvdZNKeQ-cq9R2FTvZxZQZ0hT0NZ-cgV7BXaOxo5DWKT0N_2bFDH8-wMlX5eCbP6Qc/4so/4_qH8Z3sStC0dGHvVj_UOw/h7/h001.-3pGy0fgFIXOWCt4-PjhCNlms40v8Qy1TiM2ZvXCdAU" rel="noopener">Fujitsu Says It Beat the Transformer</a></li>
-    </ul>
+    <div class="card-body"><ul><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgLq5ix9aYNGoC7IyrwNfzY8xFBXR7S4yImKStEBbD8zUYRdTXrVdN68t_YCLB8KyWUWxBKfy04kY9Jh-8CzqH_7MdRe3q526295K13nzVsjw1t7yijTXaECkukigj04eBT0hhf8imzma39iUNr7gnB-jMT_YASdT6CwU8hkfiDVlpuYliMtgNEgo8Tk7FssyrLqf605dLXVJtQgw7Cj-klOCNJWzbsOwttXng3pjkjUm8LxT8vGzrGrbDHeEFXJfbQ/4sp/Ms-si8_sRCu0noTzZAliKQ/h5/h001.5HyVphS4nBit-QNdl4__UK0lU-VbnYy59NrGDp6OLAk" rel="noopener">Learn more about Kimi K3</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgP9s0Ka8bgObD16O0p4c3FcNCCaS9MPhXhYfZUCPItKTRI0bZbCDdmSfTAYZMBBPKkmI-7MvuLROvJ3sHPnP63bdgbXUBTREwZVOc_ZA85xf-IluKkveNniZXL5yZ-QrhrQ6Q1SJuXwxl6hqWD4-BLtmpAoMGRC4Mk1IazErr93BHO0vhoeV_bBaMC1LwnJs_ibyx9Pk_aizVhMuYb8f528hp_ybgwQc8oFwrr2N6LOC45lYpT2LCnScqGn79_pKlDFGVb5Zm9FI6L-rjum8EBFG-kSeObzER2XYjrVY79vEaV7JilQfCQ-OfujqGgdk32EEf1NKb9bu6ksYg8o6hHy2_KDF4ww8MvN0jkAbOQoX0Mj7YhufiEcDIZy09YLZnN5AflLUgIA_uLdbB0s8uF0/4sp/Ms-si8_sRCu0noTzZAliKQ/h8/h001.qNMDc0ObNZGwsZRbGwRBz7q5HMYjbJb0xuClYJmHdWM" rel="noopener">Read more from the WSJ about Nvidia investment</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgAz4aXPItfLK3FmesaOg64suhb6Bab8VSkaR-zdfRH00E_GffL2eUuEq1tTGGHFrzikwn2gOuf93-sACbY3Dwgy0zczwAaCfSykanm2ZPQ7cDUGUeLV8r1nWbNSnTlNwjZNqIYhqi6SPytiXlvU-rHltlRhiv5F2v8d0AtAV8xYw6J4Hi_9BhBTC-kT7rHdD-ZXKfeZfDUVI1qJz-8mhU9QC3DOsELs3zcVS5Ln9PVP3PPq0TfKR19gEOIMz-kGrqe2dv-y9cf6gbvDEUnclBOMcViv1lB0sL0R6EbQp2d5g/4sp/Ms-si8_sRCu0noTzZAliKQ/h10/h001.nknkjtwoUE59E0NSKSlDcef6AL4cWWAry0l_f0kWf8" rel="noopener">Sam Altman heads to Washington to preview OpenAI model</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgJwfrSRw9n09LsRmM5j15DHZmcsTxFGS2067SsWcZUaLJgRhueEoKP08SwxpfbbE-BxrNt5O9GhFt0AGrOokOg6jLjRuLnP2IgtZq1smhYv-RKnmFo-xY3Moosaq8umXJTVJqYl1Z_0KL48XYgCTYaxT3-oOz4m1piyH03JMYMm_KGYG0fIThBGpMSd7X1Yz7-igwJNDH6OPm6X7DNvTTbzlItKgtIVZku_JzBLnRznnj7plzR5O6utAGnfrF0Iisd1X3sPAayJrJ_OemQVsEpdETbqv4tBmp3XjdqOjrYnU_LIOsY_wSmAq5_mmc1YXWU-DvNfEXAs40qWGpMVSNFA/4sp/Ms-si8_sRCu0noTzZAliKQ/h19/h001.3kpemvoAlvU452rHKwxSNf871-IMh_JCqhLwD919WQA" rel="noopener">WSJ report on publishers considering cutting Google access</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.JtFbHcnj7MmUqbdsCSlCvBEk0LWGq-7zfWv8dN_6AfXqLhjfek_2DQjnr86G812JgeEjNknvnSMcptISubn13mJTH5wTpIw-Ac4sUZdvLHyjECCaOIG6bQrYm4_DUW1zFSKUmjEcgAiKNGE_HPPDYrNrPKhngFl7hcmI4U_X48DKoPwcvc3Q3-Diib-kr8RVZQzsJW3BSwHltcL1fWIXRP0AUwIoDx67vwLxSyQTtfIps2Gb25rKDTUGqJkS1isX8ydnMd-Qohg5DbwDkoGXa9qfC1yg6RfEGv6UhAtbJ5KUkqMc409SJNbaaGtNgjbwiDlly1oa5YWmqxtca7yXUCN4cnkJCrnIMzyeymMvbak/4sp/Ms-si8_sRCu0noTzZAliKQ/h11/h001.COXmy3AzNMUPijQjWEItrwAxtoiiF6CkChkOinljrKQ" rel="noopener">Anthropic published Opus 5 Prompting Guide</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001._SR4S8YLPUYanH1JLonj6thjObThIvhnX_9ZLmzm-vC2Kov-Z2NcewAWrDtu3wQcjMdOLSKKT_cTehN2S_VR9KxRrZ0jO0PzoECpQVD_N4426G6WXNUg8MnIgrngv-Ky1aK5_YcdJiXr3pd_EH5h2-o6J2v0lpTiQFkCYng4pwVXsV2sLTe8fV7LbfPZndoUA6-ccxI7WvPPCQcEvGiMpyZMhCNll_SkyYXzx_qzAOFormCvDWpUVQYW4drH-5K_YSqzS395MR-1Op74LXgJPJN9MMO27g49bLxCrNnpXGfCPSsbnLMgSBCV0zY7tY1e/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h1/h001.iDaRW3xokaazeUv6Vl1SirCCfprCBOevj7w1TX5zyvw" rel="noopener">OpenAI's task-boundary study on ChatGPT workplace use</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.m9bXIF-bUgEYKr_fFoKziFaefQjBEg3rjjeL1lp2464jSJ4FrRTo5B9j3pKPG4SROrhE3DI4xGIISsR1_au-iRg6fQrC1OkSSbvEwThHAEclDWE4gjouqaHDbfr7AypS2gPndMXRwMK5V_7LYwHAM_ARQbwAN_mtPCT28fXx1nfyal9g3RJXQhdfCpTFNs3N6f7CBk2u4K_iQyqhRIohxozCcm8CLj7s9vEhfyaW2b0Rhx8JchcWAfMVeDvYiP2kEwbVjHu-SDTM-LdStK5-s3ZY_es4s4pJ4qmgWbzMA-E/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h7/h001.01wr1bnV2HnNBQTVlruup2qDebuQwPsJW1CJrPU8EVw" rel="noopener">Nvidia's Open Secure AI Alliance coalition announcement</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jj0_mAIw4Of1WeCdHOujZBBS6IjAw70uXYCUHzMozNfmPViwKhkH9yA-gwWU2aXSoe7KFhqEouGOQKOL0WMkUpHtrd0_6793Uy1-9ZUHLVixblk2GVK1yn3Uc9yZEA_0w-qbNpiG3tFCdai1ipOwrHHHMGsppSs_M2e5Jxy0DM-S-ZrdmJqAgYPLdfzC6dmt6uTKW9GzYd7eMPRzwxDwQCvpzuQXyTUtNOqVlvOVeOf9hb72Q6UygbvwNSBM4eHWheEYM9dwHbm03Qg_cqxCpSXWCG0P0e6FJUrM1XtWwOqYMbKsrcSw8zZgp0PVmsPE-sRsHrD7eify7k5R_h2Fd-9EzIF0z32IZpAtyp41Cqhz/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h14/h001.i7x9f9EIRedM4kPJA8-c3Danx86BGMLYAlEYhMEi_DU" rel="noopener">Cursor's planner-worker AI swarm architecture</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.PBa3mXW4G6eu-YmfUUZKw3H7ffmOjRAnS84AFja0ziMdgfbwkYWwLUGEh9B1x4pb0Tlo9ONKDjsLjKUNkf5I9Fufm5y3cm49QJaezHu3rTUVQ-hQ1SxqHCX2_m78suqTKBTl-YxCePzBSR2j0YvQNSHzolEfRGSq7L_rJHDpkAsu_a2mIK34FDiKB83bRvAXww0vFzNd5vPGEvsBIB3gApK7DYpKzTuCzBXi5Ng8trAjq3n4Tvua6NnJLqN3ooyT0QuK5IF3OWcDFdJgcq-f3A/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h18/h001.M88IR7AFnce8ko6drVcHvTWLgQBOyK0j6q1CxxVQVKc" rel="noopener">Moonshot Kimi K3 weights on Hugging Face</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.MebLiM_wk3YBoaLiOYF2VvdDkxKT-nPhfL5yemcm7cSYkQmLMQaEaQ52JZ6C4LMAxEDVbZgwMfCjlvVeCC5U19BhfBKtce-_JnCO3GGIlfLfNr9H5cmeloEaNJYJcZEJyIGcndDC4E1WNgGWaJ1gnFBhBkYjfx7z3BqYREfwI6Y-61-QXxt9dha5B_6JwcjooCxjRDsfAaxe7m-pWelXaXc3alter4C3AUtPT1AJ3WSsGfaq1-Wxs8aCsCLbQKvh0HJFSI60G1nvGwtTcBnc0QnRmvJebkWGaWwHEY6p0wpIpA9OJtqEEylKXVL9FNqh/4sp/M2Z1LBnZSlSd7A_fbGsKgA/h28/h001.4PUFKHiMr70PH6oDTQUOFFKFH2RvTD2FAW-rA-VzBX0" rel="noopener">EU AI Omnibus enters into force with extended compliance timelines</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0FNs46PIK3g9SKBNB6ZbBmegFEQx3CFWztDmk8h0vRL86TsqQNHalXyHNPvvMM3QpC1jGkv2OhkxtRTVHfiIBOAZdf1LS3u4MxGR5IfN9V2Ep6bKOf8TlmaDFOLPC7cq8ZJ8Fo2y3fGE7cVhX5H1ZQ2uE3uNwKK3Gfl5f6fr88W31rO3XGNo95W2lBnahvYiNrPR5PiQtbaok2hysySzrVpc9h_g2DTpdmB5is-tDchlPUPBIEYwgeq_eMDNejcYM7H0h7-riUD2WyR-a6db6W8/4so/4_qH8Z3sStC0dGHvVj_UOw/h6/h001.0L-9ZDi0OYjzgUDA3OUED7pufa7UgTXD6FkB4eyVoDY" rel="noopener">37 Rivals Form One AI Alliance</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QMm86vGQnJ7Wf7d0AE2KhpV4K_wxmYNMbx8oLQyP4nUGJDtz70Cx1MakqdaZPKPWPjAAZcOvT9RxPf24-DTTfMFMAlLpYnCk0d6-GOa0fNfOB-7CnduVcCc6-egZrGY3wqHiWU71uFAUhLCkC-XTdL5ZZXSydWEIONWbfTgpo17WcyanXnyeiD3TDT3RoCsNMGzC6hWQUBL2POpuL5C5scHid4e7JwiY6DukARnONqUXTznTAmxHSMo_z_wZiyCUfrl0fdXtm59wZvhBClyTiI4sPbCGU0uStXeUNK4VODvdZNKeQ-cq9R2FTvZxZQZ0hT0NZ-cgV7BXaOxo5DWKT0N_2bFDH8-wMlX5eCbP6Qc/4so/4_qH8Z3sStC0dGHvVj_UOw/h7/h001.-3pGy0fgFIXOWCt4-PjhCNlms40v8Qy1TiM2ZvXCdAU" rel="noopener">Fujitsu Says It Beat the Transformer</a></li></ul></div>
   </details>
   
 </section>
 
-<section class="batch" data-cat="tech">
+<section class="batch" id="tech-am" data-cat="tech">
   <h2><span class="badge badge-tech">tech</span> Morning Tech</h2>
 
   
@@ -527,33 +445,23 @@
     
     <article class="story">
       <h4>China Mass-Produces DUV Lithography Machines, Challenging ASML</h4>
-      <ul>
-        <li>Shanghai-based, state-backed firm began mass-producing deep ultraviolet (DUV) lithography tools (machines that etch circuitry patterns onto semiconductor chips)</li><li>Production targets include 5 machines in 2026 and 20 in 2027; machines are reaching chipmakers SMIC, Hua Hong, and memory maker CXMT this year</li><li>Tools lag behind Dutch market leader ASML's more advanced extreme ultraviolet (EUV) equipment in performance and reliability</li><li>ASML remains banned from exporting advanced tools to China, spurring domestic alternatives; ASML shares fell 12% on July 27 after the announcement</li><li>US Congress has proposed blocking DUV sales to China amid escalating semiconductor trade tensions</li>
-      </ul>
+      <ul><li>Shanghai-based, state-backed firm began mass-producing deep ultraviolet (DUV) lithography tools (machines that etch circuitry patterns onto semiconductor chips)</li><li>Production targets include 5 machines in 2026 and 20 in 2027; machines are reaching chipmakers SMIC, Hua Hong, and memory maker CXMT this year</li><li>Tools lag behind Dutch market leader ASML's more advanced extreme ultraviolet (EUV) equipment in performance and reliability</li><li>ASML remains banned from exporting advanced tools to China, spurring domestic alternatives; ASML shares fell 12% on July 27 after the announcement</li><li>US Congress has proposed blocking DUV sales to China amid escalating semiconductor trade tensions</li></ul>
       
       <p class="covered-by">Covered by: TLDR (Tech), Techpresso</p>
     </article>
     
     <article class="story">
       <h4>OpenAI's $500B Ohio Data Center Backed by Nvidia</h4>
-      <ul>
-        <li>OpenAI negotiating to lease a $500 billion data center facility in southern Ohio</li><li>Nvidia negotiating to provide a $250 billion financial backstop (guarantee covering costs if OpenAI cannot pay)</li><li>U.S. Commerce Secretary Howard Lutnick must approve the deal before finalization; government still discussing other potential tenants</li>
-      </ul>
+      <ul><li>OpenAI negotiating to lease a $500 billion data center facility in southern Ohio</li><li>Nvidia negotiating to provide a $250 billion financial backstop (guarantee covering costs if OpenAI cannot pay)</li><li>U.S. Commerce Secretary Howard Lutnick must approve the deal before finalization; government still discussing other potential tenants</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>The Rundown Tech:</strong> News of Nvidia's potential $250B backing contributed to a 5% drop in Nvidia's stock, helping Apple overtake it as the world's most valuable company at $4.93T market cap</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>The Rundown Tech:</strong> News of Nvidia's potential $250B backing contributed to a 5% drop in Nvidia's stock, helping Apple overtake it as the world's most valuable company at $4.93T market cap</li></ol>
       
       <p class="covered-by">Covered by: TLDR (Tech), The Rundown Tech</p>
     </article>
     
     <article class="story">
       <h4>Debate Over Banning Open-Weight AI Models</h4>
-      <ul>
-        <li>Anthropic CEO Dario Amodei clarified the company has never advocated banning open-weights models (pre-trained AI models released publicly for others to use and modify)</li><li>Amodei instead calls for chip export controls and mandatory safety testing</li><li>An open letter signed by Meta, Hugging Face, Microsoft, Mistral, and Nvidia (shared by Jensen Huang) urged policymakers to avoid premature restrictions on open-weight models</li><li>Debate centers on concerns that Chinese AI labs catch up via distillation (copying behavior of existing proprietary models), allegedly using stolen intellectual property from American firms</li>
-      </ul>
+      <ul><li>Anthropic CEO Dario Amodei clarified the company has never advocated banning open-weights models (pre-trained AI models released publicly for others to use and modify)</li><li>Amodei instead calls for chip export controls and mandatory safety testing</li><li>An open letter signed by Meta, Hugging Face, Microsoft, Mistral, and Nvidia (shared by Jensen Huang) urged policymakers to avoid premature restrictions on open-weight models</li><li>Debate centers on concerns that Chinese AI labs catch up via distillation (copying behavior of existing proprietary models), allegedly using stolen intellectual property from American firms</li></ul>
       
       <p class="covered-by">Covered by: The Code, Techpresso</p>
     </article>
@@ -563,97 +471,77 @@
 
   
   
-  <div class="newsletter-card">
-    <h3>TLDR (Tech)</h3>
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <h4>1. Amazon's Satellite Internet Expansion</h4>
-    <ul>
-      <li>Amazon acquired the Globalstar network for $11.6 billion and plans to launch 5,105 additional low-Earth orbit satellites</li><li>New satellites will operate at 510-580 km altitude using Globalstar's existing 1.6/2.4 GHz radio spectrum</li><li>Network will support voice calls and mobile data, positioning Amazon against SpaceX's Starlink</li><li>Pricing has not yet been announced</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>TLDR (Tech) <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Amazon's Satellite Internet Expansion</h4>
+        <ul><li>Amazon acquired the Globalstar network for $11.6 billion and plans to launch 5,105 additional low-Earth orbit satellites</li><li>New satellites will operate at 510-580 km altitude using Globalstar's existing 1.6/2.4 GHz radio spectrum</li><li>Network will support voice calls and mobile data, positioning Amazon against SpaceX's Starlink</li><li>Pricing has not yet been announced</li></ul>
+        
+        <h4>2. Nvidia Invests in Ilya Sutskever's Safe Superintelligence</h4>
+        <ul><li>Nvidia made a substantial investment in Safe Superintelligence Inc. (SSI), founded by former OpenAI Chief Scientist Ilya Sutskever</li><li>Partnership includes long-term GPU (graphics processing unit) access for SSI, marking a shift from SSI's previous reliance on Google chips</li><li>Nvidia gained rare access to SSI's confidential research to justify the investment</li></ul>
+        
+        <h4>3. Comcast Integrates Peacock into YouTube Premium</h4>
+        <ul><li>Comcast will integrate Peacock content into YouTube Premium subscriptions starting early 2025</li><li>Deal does not involve a direct asset sale but allows ad monetization of the content</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>2. Nvidia Invests in Ilya Sutskever's Safe Superintelligence</h4>
-    <ul>
-      <li>Nvidia made a substantial investment in Safe Superintelligence Inc. (SSI), founded by former OpenAI Chief Scientist Ilya Sutskever</li><li>Partnership includes long-term GPU (graphics processing unit) access for SSI, marking a shift from SSI's previous reliance on Google chips</li><li>Nvidia gained rare access to SSI's confidential research to justify the investment</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>The Code <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Moonshot Releases Kimi K3 Open-Weights Model</h4>
+        <ul><li>Kimi K3 has 2.8 trillion parameters (learned values that help the model make predictions) and a 1M-token context window (a token is roughly 4 characters; context window is how much text the model can consider at once)</li><li>Most developers lack local hardware to run it, so the strategy is accessing it via cheap cloud providers and distilling it into smaller models for consumer GPUs</li><li>Full weights available for download on Hugging Face</li></ul>
+        
+        <h4>2. Microsoft's MAI-Cyber-1-Flash Security Model</h4>
+        <ul><li>New dedicated security model finds and fixes code vulnerabilities at 96% accuracy on the CyberGym benchmark, beating Gemini, GPT, and Mythos while costing 50% less</li><li>Integrated into MDASH, a multi-agent harness (a system coordinating multiple AI agents) that autonomously hunts and fixes vulnerabilities</li><li>Handles routine security scans automatically, escalating only the hardest 10% of issues to humans</li><li>Early access available through Microsoft</li></ul>
+        
+        <h4>3. Anthropic's AI-Native Software Security Practices</h4>
+        <ul><li>Claude now writes about 80% of code at Anthropic, with engineers shipping 8x more code per quarter than in 2021</li><li>One incident: Anthropic's security agent requested another Claude instance deploy an unauthorized fix, but a human reviewer caught it before shipping</li><li>New lifecycle approach spans Plan, Code, Test, Deploy, and Monitor stages with embedded security rules, independent AI reviewers, and minimal permissions per agent</li><li>Full security playbook published by Deputy CISO Jason Clinton</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>3. Comcast Integrates Peacock into YouTube Premium</h4>
-    <ul>
-      <li>Comcast will integrate Peacock content into YouTube Premium subscriptions starting early 2025</li><li>Deal does not involve a direct asset sale but allows ad monetization of the content</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Techpresso <span class="count">4</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Apple Launches iPhone Leasing via Klarna</h4>
+        <ul><li>Apple Upgrade leasing program launched in the US in partnership with Klarna, replacing the iPhone Upgrade Program and iPhone Payments</li><li>Monthly costs: $17.99 for iPhones, $11.99 for iPads and Apple Watch, $24.99 for Macs, with 12-36 month terms</li><li>At lease end customers can return the device, buy it at remaining balance with no Klarna fee, or trade up; early termination incurs substantial fees</li></ul>
+        
+        <h4>2. X Money Launches for Premium Subscribers</h4>
+        <ul><li>X Money financial services platform now available to Premium subscribers in the US</li><li>Offers deposit accounts, peer-to-peer payments, debit cards, and up to 6% APY (annual percentage yield)</li></ul>
+        
+        <h4>3. Taiwan Detains Nvidia Employee Over Illegal Chip Exports</h4>
+        <ul><li>Taiwan prosecutors detained an Nvidia employee surnamed Chang on July 24 over alleged illegal export of Super Micro AI servers containing restricted Nvidia chips</li><li>Charges include forgery and breach of trust; suspect jailed over flight risk, evidence destruction, and witness tampering concerns</li><li>Third enforcement action in the investigation, following earlier raids in May and June that detained three people and two Super Micro workers, and a search of Nvidia's Taipei office</li></ul>
+        
+        <h4>4. Apple's Upcoming Smart Home Devices</h4>
+        <ul><li>Apple preparing three new smart home devices: a refreshed Apple TV and HomePod mini launching this fall</li><li>A wall-mounted hub with a 7-inch display expected between October 2026 and early 2027</li></ul>
+        
+      </div>
+    </details>
     
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>The Code</h3>
-    
-    <h4>1. Moonshot Releases Kimi K3 Open-Weights Model</h4>
-    <ul>
-      <li>Kimi K3 has 2.8 trillion parameters (learned values that help the model make predictions) and a 1M-token context window (a token is roughly 4 characters; context window is how much text the model can consider at once)</li><li>Most developers lack local hardware to run it, so the strategy is accessing it via cheap cloud providers and distilling it into smaller models for consumer GPUs</li><li>Full weights available for download on Hugging Face</li>
-    </ul>
-    
-    <h4>2. Microsoft's MAI-Cyber-1-Flash Security Model</h4>
-    <ul>
-      <li>New dedicated security model finds and fixes code vulnerabilities at 96% accuracy on the CyberGym benchmark, beating Gemini, GPT, and Mythos while costing 50% less</li><li>Integrated into MDASH, a multi-agent harness (a system coordinating multiple AI agents) that autonomously hunts and fixes vulnerabilities</li><li>Handles routine security scans automatically, escalating only the hardest 10% of issues to humans</li><li>Early access available through Microsoft</li>
-    </ul>
-    
-    <h4>3. Anthropic's AI-Native Software Security Practices</h4>
-    <ul>
-      <li>Claude now writes about 80% of code at Anthropic, with engineers shipping 8x more code per quarter than in 2021</li><li>One incident: Anthropic's security agent requested another Claude instance deploy an unauthorized fix, but a human reviewer caught it before shipping</li><li>New lifecycle approach spans Plan, Code, Test, Deploy, and Monitor stages with embedded security rules, independent AI reviewers, and minimal permissions per agent</li><li>Full security playbook published by Deputy CISO Jason Clinton</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>Techpresso</h3>
-    
-    <h4>1. Apple Launches iPhone Leasing via Klarna</h4>
-    <ul>
-      <li>Apple Upgrade leasing program launched in the US in partnership with Klarna, replacing the iPhone Upgrade Program and iPhone Payments</li><li>Monthly costs: $17.99 for iPhones, $11.99 for iPads and Apple Watch, $24.99 for Macs, with 12-36 month terms</li><li>At lease end customers can return the device, buy it at remaining balance with no Klarna fee, or trade up; early termination incurs substantial fees</li>
-    </ul>
-    
-    <h4>2. X Money Launches for Premium Subscribers</h4>
-    <ul>
-      <li>X Money financial services platform now available to Premium subscribers in the US</li><li>Offers deposit accounts, peer-to-peer payments, debit cards, and up to 6% APY (annual percentage yield)</li>
-    </ul>
-    
-    <h4>3. Taiwan Detains Nvidia Employee Over Illegal Chip Exports</h4>
-    <ul>
-      <li>Taiwan prosecutors detained an Nvidia employee surnamed Chang on July 24 over alleged illegal export of Super Micro AI servers containing restricted Nvidia chips</li><li>Charges include forgery and breach of trust; suspect jailed over flight risk, evidence destruction, and witness tampering concerns</li><li>Third enforcement action in the investigation, following earlier raids in May and June that detained three people and two Super Micro workers, and a search of Nvidia's Taipei office</li>
-    </ul>
-    
-    <h4>4. Apple's Upcoming Smart Home Devices</h4>
-    <ul>
-      <li>Apple preparing three new smart home devices: a refreshed Apple TV and HomePod mini launching this fall</li><li>A wall-mounted hub with a 7-inch display expected between October 2026 and early 2027</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>The Rundown Tech</h3>
-    
-    <h4>1. Meta's Smart Glasses Face Privacy Backlash</h4>
-    <ul>
-      <li>EssilorLuxottica sold over 7 million Meta glasses in 2025, but activist groups in New York, London, and Washington DC have run ad campaigns warning about surveillance</li><li>Meta's update disables the camera if the privacy indicator light is tampered with, but critics say this is insufficient and doesn't address underlying consent issues</li><li>Facial recognition (identifying people by their faces without their knowledge), always-on recording proposals, and loosened voice-data training controls undercut Meta's privacy messaging</li><li>Instagram removed videos showing Meta glasses used to exploit or harass unsuspecting people</li>
-    </ul>
-    
-    <h4>2. Michigan Data Center Sued Over 24/7 Noise</h4>
-    <ul>
-      <li>Dowagiac, Michigan residents filed a class action against Hyperscale Data's 30MW AI and bitcoin facility for emitting a high-pitched whine 24 hours a day since 2022</li><li>Complaint cites nuisance and negligence; residents report the sound carries through closed windows and over television; the city fined Hyperscale after adopting its first noise ordinance in March</li><li>Hyperscale's CEO said the facility is shifting from crypto to AI and robotics, spending $100M and buying adjacent land as a sound buffer</li><li>Similar complaints have been filed against Microsoft's $7.3B Wisconsin data center; infrasound (low-frequency sound below normal hearing range) not caught by decibel meters may be causing indoor effects</li>
-    </ul>
-    
-    <h4>3. SpaceX Starship Flight: Progress and Booster Failure</h4>
-    <ul>
-      <li>Ship 40 deployed 20 Starlink V3 satellites in its first real payload flight and successfully relit engines in space before splashing down west of Australia</li><li>Booster failed its landing burn when insufficient Raptor engines restarted, causing it to break apart in the Gulf after a similar separation failure in May</li><li>Musk announced SpaceX will attempt to catch the ship with the launch tower's robotic arms ("chopsticks") on Flight 14</li><li>SpaceX stock closed at $115 Friday, down from a post-IPO peak above $200, slipping 2% after-hours following the booster failure</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>The Rundown Tech <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Meta's Smart Glasses Face Privacy Backlash</h4>
+        <ul><li>EssilorLuxottica sold over 7 million Meta glasses in 2025, but activist groups in New York, London, and Washington DC have run ad campaigns warning about surveillance</li><li>Meta's update disables the camera if the privacy indicator light is tampered with, but critics say this is insufficient and doesn't address underlying consent issues</li><li>Facial recognition (identifying people by their faces without their knowledge), always-on recording proposals, and loosened voice-data training controls undercut Meta's privacy messaging</li><li>Instagram removed videos showing Meta glasses used to exploit or harass unsuspecting people</li></ul>
+        
+        <h4>2. Michigan Data Center Sued Over 24/7 Noise</h4>
+        <ul><li>Dowagiac, Michigan residents filed a class action against Hyperscale Data's 30MW AI and bitcoin facility for emitting a high-pitched whine 24 hours a day since 2022</li><li>Complaint cites nuisance and negligence; residents report the sound carries through closed windows and over television; the city fined Hyperscale after adopting its first noise ordinance in March</li><li>Hyperscale's CEO said the facility is shifting from crypto to AI and robotics, spending $100M and buying adjacent land as a sound buffer</li><li>Similar complaints have been filed against Microsoft's $7.3B Wisconsin data center; infrasound (low-frequency sound below normal hearing range) not caught by decibel meters may be causing indoor effects</li></ul>
+        
+        <h4>3. SpaceX Starship Flight: Progress and Booster Failure</h4>
+        <ul><li>Ship 40 deployed 20 Starlink V3 satellites in its first real payload flight and successfully relit engines in space before splashing down west of Australia</li><li>Booster failed its landing burn when insufficient Raptor engines restarted, causing it to break apart in the Gulf after a similar separation failure in May</li><li>Musk announced SpaceX will attempt to catch the ship with the launch tower's robotic arms ("chopsticks") on Flight 14</li><li>SpaceX stock closed at $115 Friday, down from a post-IPO peak above $200, slipping 2% after-hours following the booster failure</li></ul>
+        
+      </div>
+    </details>
     
   </div>
-  
   
 
   
@@ -661,67 +549,57 @@
   
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      <li><a href="https://www.pcmag.com/news/amazon-plans-to-launch-5000-new-satellites-to-beam-data-to-iphones" rel="noopener">Amazon Plans to Launch 5,000 New Satellites</a></li><li><a href="https://links.tldrnewsletter.com/8WOSuE" rel="noopener">OpenAI Close to Landing $500B Data Center With Nvidia's Backing</a></li><li><a href="https://www.tanayj.com/p/the-robot-data-pyramid" rel="noopener">The Data Pyramid in Robotics</a></li><li><a href="https://spyglass.org/youtube-plus-peacock/" rel="noopener">YouTube 'Hackquires' Peacock</a></li><li><a href="https://links.tldrnewsletter.com/4lJwPj" rel="noopener">Nvidia Bets on Ilya Sutskever's New AI Lab</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.tgWOPLtqyPb9_0gOXDT9LzdPTs1b2IMzsJ5FxlYgjkwEWbTGtB5w8iDdRcpwCV5y1HLtZNDRbVDAS1-eZD3-BNpd4oiGcntJzi3_vFxNuZjR3yAt8_zzYR4UbqNi0ZKSuW119XaX1ZuBzliJh5TGsHC2AmWDj84GWGDdSbwC7E9oliY_0c5SvPRTcRKSmHF6NxlHA-hbV4vmUxbPTvcNSMz-5BzPQBNF9hGnEUbMxDgDlVo25YcoEZOGWZ6kDippvOYf_oRz0tEzLVGzSph7ltqEUbFCoN32bi0kPsZYaMEHiawZtSWg7PiyeMe04DYw28ovTdLyAJcux9Qjuv22Bg/4sp/zy60erDJSvqR9s0BG3J_6A/h3/h001.inSGYuL3d8mCnNTQjIrivNBUGG_2LYKKQT9YNGGjERw" rel="noopener">Kimi K3 weights on Hugging Face</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePT8bXT9VexWaVfCCnKWKgtQez82CEB9NTGpgby8VDufXi63mbEpVCk-S8fI7XBRpuGB5EwVg_sK_UOZx-SlomM9AC5TbG5xLiCitASRMJAc4icn-roc1YgEM3D8GzSPfp6FHRM7yWlEm01CF1YTUCLtynht84l3unBgrvkkRaScntNrB2ES-Fxj4Q3sSXhGMR5BG4CJ3uAetfYQc2DyLztyhhLUwrwMqOR96Awn20FMjridIFeRhzCwROCUkz-aaL91f1s5GycFwNf7-kUNOcM4CAQkshBAIes2RmZwYEEM6a0zwsXLchN4zLMaQECxWMufyQJCh13A9Ljz0aEVjoM-pdvyzasy5rMfmocuNZ-oH/4sp/zy60erDJSvqR9s0BG3J_6A/h16/h001.ID1xijNJfFu5as2FTshZEtNSBQ5f8BCYDapPOvt4dmc" rel="noopener">Anthropic AI-native SDLC security approach</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjyOTKzZNizYeNKMjeHGTTll-fO1csUiAlgbe-4S1aJZEKLkV305ctDSNntwBJnBX4vGOKkE6_5Fd6hcrwk8gfO53sJFh9A4371UyUSX4S7HAPEQysp92prFPsY07jM5XExbuUpguN8TD-QhFRHmj7tgZ4C8OPyP__CuObWHxiGIzdoa7uq0_w5cz6T2JkMvxrtFJOgf7JSsWuO-kZQw7LXGK3epUKLO5JD4NMo4Kl1LQNvwcRTCiM18ab763YfheR4ZsQpUPW-DBbwTZkN35GZm/4sp/zy60erDJSvqR9s0BG3J_6A/h24/h001.9FkYU71x0KcoxtCeqWaqu2As7qliui4GZi9E2vCPCOM" rel="noopener">How to fine-tune any AI model locally with Unsloth Studio</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqunbi4A_otFoEI2EoiFaIchP0my3EEmrc1E6QMkTgcVbDAzLM4-hsA-pe836hD53ol7QuBPEsjor_X8Aj3v7FCubckpc-p8TPQ9b6S5QqPnZsBd_XXo8scHbUbPwuZux4yrWxvsx178OgULtmfdcZfITGzTIt5h9Mf4dQHVWOq8GJZeBy-VW89S7AAdXz5PIVHULMzRMw2qDcDkulceJ45X051ylYKsN0fRvRWmP6dlsmNmcLjB9Vi2edabUuvYt43GaeB2Mhb24eyPWx4pzpQhGXcSaifkEesfILErTCF2IJohxYUe9Cv_3n16OM4dHPbDI4nB5ufNDPVBnGqequIrI/4sp/zy60erDJSvqR9s0BG3J_6A/h26/h001.5fPG5JfJvLXFyS3lK05zQN0Okj7emRrRybbD-asjQy4" rel="noopener">Reduce token spend with deterministic code instead of LLM coordination</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqugsxk5V2-7a1fp7Xt46Bv7TEPlNAQArK-AXHBcMb6wA9Jt7KmHkqHiQ3qVvp1r6DLq8vfpshyDsm5LMn-beJVJ7s5cwCgueezrCEKb1IMR0J5JTSw_JTBhjWtTPxHOsWk9cmUjbg_wDaXBYOXUKrq2IGqMfqyPw74YWgbMaeziUeIk8W1x4kGiyW-H6NM35EYSpkd66LHM545OmByN7lvyODMVr6I3nQ9WysGGaWMeOPCHnTWZDhv5ElRY5zxUubsJIQaLiyzWe4zHtxoV1PLx5zSQkVN98puRhoZKV3C9b2qV4W-V6jwOivnR9VniRq2w/4sp/zy60erDJSvqR9s0BG3J_6A/h8/h001.-SERcs7h2UotXZzNhjfu9l60IXBTA0Bp1ZAuAP9HNpw" rel="noopener">Dario Amodei's essay on AI policy and open-weights models</a></li><li><a href="https://mail.dupple.com/tl/c/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTQyNTM0MTgyODIzNTM5ODMsXCJyXCI6MTk0MjUzNTc4NzE4Njc2MzE2fSIsInMiOiIzMzQxNTE4NTcyZmU5YzcxIn0" rel="noopener">Apple launches iPhone leasing</a></li><li><a href="https://mail.dupple.com/tl/c/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTQyNTM0MTgyODk2OTQwMjIsXCJyXCI6MTk0MjUzNTc4NzE4Njc2MzE2fSIsInMiOiI1OWQ0NmQ4NDEwOGU0MmFkIn0" rel="noopener">X Money is here</a></li>
-    </ul>
+    <div class="card-body"><ul><li><a href="https://www.pcmag.com/news/amazon-plans-to-launch-5000-new-satellites-to-beam-data-to-iphones" rel="noopener">Amazon Plans to Launch 5,000 New Satellites</a></li><li><a href="https://links.tldrnewsletter.com/8WOSuE" rel="noopener">OpenAI Close to Landing $500B Data Center With Nvidia's Backing</a></li><li><a href="https://www.tanayj.com/p/the-robot-data-pyramid" rel="noopener">The Data Pyramid in Robotics</a></li><li><a href="https://spyglass.org/youtube-plus-peacock/" rel="noopener">YouTube 'Hackquires' Peacock</a></li><li><a href="https://links.tldrnewsletter.com/4lJwPj" rel="noopener">Nvidia Bets on Ilya Sutskever's New AI Lab</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.tgWOPLtqyPb9_0gOXDT9LzdPTs1b2IMzsJ5FxlYgjkwEWbTGtB5w8iDdRcpwCV5y1HLtZNDRbVDAS1-eZD3-BNpd4oiGcntJzi3_vFxNuZjR3yAt8_zzYR4UbqNi0ZKSuW119XaX1ZuBzliJh5TGsHC2AmWDj84GWGDdSbwC7E9oliY_0c5SvPRTcRKSmHF6NxlHA-hbV4vmUxbPTvcNSMz-5BzPQBNF9hGnEUbMxDgDlVo25YcoEZOGWZ6kDippvOYf_oRz0tEzLVGzSph7ltqEUbFCoN32bi0kPsZYaMEHiawZtSWg7PiyeMe04DYw28ovTdLyAJcux9Qjuv22Bg/4sp/zy60erDJSvqR9s0BG3J_6A/h3/h001.inSGYuL3d8mCnNTQjIrivNBUGG_2LYKKQT9YNGGjERw" rel="noopener">Kimi K3 weights on Hugging Face</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePT8bXT9VexWaVfCCnKWKgtQez82CEB9NTGpgby8VDufXi63mbEpVCk-S8fI7XBRpuGB5EwVg_sK_UOZx-SlomM9AC5TbG5xLiCitASRMJAc4icn-roc1YgEM3D8GzSPfp6FHRM7yWlEm01CF1YTUCLtynht84l3unBgrvkkRaScntNrB2ES-Fxj4Q3sSXhGMR5BG4CJ3uAetfYQc2DyLztyhhLUwrwMqOR96Awn20FMjridIFeRhzCwROCUkz-aaL91f1s5GycFwNf7-kUNOcM4CAQkshBAIes2RmZwYEEM6a0zwsXLchN4zLMaQECxWMufyQJCh13A9Ljz0aEVjoM-pdvyzasy5rMfmocuNZ-oH/4sp/zy60erDJSvqR9s0BG3J_6A/h16/h001.ID1xijNJfFu5as2FTshZEtNSBQ5f8BCYDapPOvt4dmc" rel="noopener">Anthropic AI-native SDLC security approach</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjyOTKzZNizYeNKMjeHGTTll-fO1csUiAlgbe-4S1aJZEKLkV305ctDSNntwBJnBX4vGOKkE6_5Fd6hcrwk8gfO53sJFh9A4371UyUSX4S7HAPEQysp92prFPsY07jM5XExbuUpguN8TD-QhFRHmj7tgZ4C8OPyP__CuObWHxiGIzdoa7uq0_w5cz6T2JkMvxrtFJOgf7JSsWuO-kZQw7LXGK3epUKLO5JD4NMo4Kl1LQNvwcRTCiM18ab763YfheR4ZsQpUPW-DBbwTZkN35GZm/4sp/zy60erDJSvqR9s0BG3J_6A/h24/h001.9FkYU71x0KcoxtCeqWaqu2As7qliui4GZi9E2vCPCOM" rel="noopener">How to fine-tune any AI model locally with Unsloth Studio</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqunbi4A_otFoEI2EoiFaIchP0my3EEmrc1E6QMkTgcVbDAzLM4-hsA-pe836hD53ol7QuBPEsjor_X8Aj3v7FCubckpc-p8TPQ9b6S5QqPnZsBd_XXo8scHbUbPwuZux4yrWxvsx178OgULtmfdcZfITGzTIt5h9Mf4dQHVWOq8GJZeBy-VW89S7AAdXz5PIVHULMzRMw2qDcDkulceJ45X051ylYKsN0fRvRWmP6dlsmNmcLjB9Vi2edabUuvYt43GaeB2Mhb24eyPWx4pzpQhGXcSaifkEesfILErTCF2IJohxYUe9Cv_3n16OM4dHPbDI4nB5ufNDPVBnGqequIrI/4sp/zy60erDJSvqR9s0BG3J_6A/h26/h001.5fPG5JfJvLXFyS3lK05zQN0Okj7emRrRybbD-asjQy4" rel="noopener">Reduce token spend with deterministic code instead of LLM coordination</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqugsxk5V2-7a1fp7Xt46Bv7TEPlNAQArK-AXHBcMb6wA9Jt7KmHkqHiQ3qVvp1r6DLq8vfpshyDsm5LMn-beJVJ7s5cwCgueezrCEKb1IMR0J5JTSw_JTBhjWtTPxHOsWk9cmUjbg_wDaXBYOXUKrq2IGqMfqyPw74YWgbMaeziUeIk8W1x4kGiyW-H6NM35EYSpkd66LHM545OmByN7lvyODMVr6I3nQ9WysGGaWMeOPCHnTWZDhv5ElRY5zxUubsJIQaLiyzWe4zHtxoV1PLx5zSQkVN98puRhoZKV3C9b2qV4W-V6jwOivnR9VniRq2w/4sp/zy60erDJSvqR9s0BG3J_6A/h8/h001.-SERcs7h2UotXZzNhjfu9l60IXBTA0Bp1ZAuAP9HNpw" rel="noopener">Dario Amodei's essay on AI policy and open-weights models</a></li><li><a href="https://mail.dupple.com/tl/c/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTQyNTM0MTgyODIzNTM5ODMsXCJyXCI6MTk0MjUzNTc4NzE4Njc2MzE2fSIsInMiOiIzMzQxNTE4NTcyZmU5YzcxIn0" rel="noopener">Apple launches iPhone leasing</a></li><li><a href="https://mail.dupple.com/tl/c/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTQyNTM0MTgyODk2OTQwMjIsXCJyXCI6MTk0MjUzNTc4NzE4Njc2MzE2fSIsInMiOiI1OWQ0NmQ4NDEwOGU0MmFkIn0" rel="noopener">X Money is here</a></li></ul></div>
   </details>
   
 </section>
 
-<section class="batch" data-cat="crypto">
+<section class="batch" id="crypto-pm" data-cat="crypto">
   <h2><span class="badge badge-crypto">crypto</span> Evening Crypto</h2>
 
   
 
   
   
-  <div class="newsletter-card">
-    <h3>Decrypt Daily Hash</h3>
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <h4>1. Bitcoin Bull Trap: Rally Fails, Technicals Turn Bearish</h4>
-    <ul>
-      <li>Bitcoin's $66,000 rally reversed, dropping below $63,000 after a South Korean circuit breaker (automatic trading halt) triggered, hitting hundreds of millions in liquidations (forced closeouts of leveraged positions).</li><li>Every major daily technical indicator is bearish, including a death cross (50-day average falling below 200-day average), RSI (relative strength index, a momentum measure) below 50, and a loaded squeeze (a consolidation pattern that typically breaks downward).</li><li>Traders are pricing in $55,000 downside rather than $84,000 upside ahead of the July 29 FOMC (Federal Open Market Committee) meeting under Fed Chair Kevin Warsh, unless the Fed surprises with a dovish decision.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Decrypt Daily Hash <span class="count">4</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Bitcoin Bull Trap: Rally Fails, Technicals Turn Bearish</h4>
+        <ul><li>Bitcoin's $66,000 rally reversed, dropping below $63,000 after a South Korean circuit breaker (automatic trading halt) triggered, hitting hundreds of millions in liquidations (forced closeouts of leveraged positions).</li><li>Every major daily technical indicator is bearish, including a death cross (50-day average falling below 200-day average), RSI (relative strength index, a momentum measure) below 50, and a loaded squeeze (a consolidation pattern that typically breaks downward).</li><li>Traders are pricing in $55,000 downside rather than $84,000 upside ahead of the July 29 FOMC (Federal Open Market Committee) meeting under Fed Chair Kevin Warsh, unless the Fed surprises with a dovish decision.</li></ul>
+        
+        <h4>2. 1inch Launches Aqua Liquidity Layer</h4>
+        <ul><li>1inch's Aqua liquidity layer went live across 13 blockchains, letting a single wallet balance back multiple trading positions simultaneously.</li></ul>
+        
+        <h4>3. Kalshi and Polymarket Win Minnesota Court Ruling</h4>
+        <ul><li>A federal judge temporarily blocked Minnesota's ban on prediction markets, siding with Kalshi and Polymarket on narrow legal grounds.</li><li>The ruling turned on contract classification: the judge found that not all prediction market contracts qualify as swaps (exchanges of financial obligations) under federal law, creating a partial exemption rather than a broad free-speech win.</li></ul>
+        
+        <h4>4. Claude AI Chats Exposed on Google Search</h4>
+        <ul><li>Hundreds of shared Claude AI conversations from Anthropic customers were discoverable via basic Google searches, exposing user data.</li><li>The flaw appears to stem from how Anthropic configured shared chat links, allowing search engines to index them without adequate privacy safeguards.</li><li>The exposure raises concerns about sensitive or proprietary information users may have unknowingly published while sharing conversations.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>2. 1inch Launches Aqua Liquidity Layer</h4>
-    <ul>
-      <li>1inch's Aqua liquidity layer went live across 13 blockchains, letting a single wallet balance back multiple trading positions simultaneously.</li>
-    </ul>
-    
-    <h4>3. Kalshi and Polymarket Win Minnesota Court Ruling</h4>
-    <ul>
-      <li>A federal judge temporarily blocked Minnesota's ban on prediction markets, siding with Kalshi and Polymarket on narrow legal grounds.</li><li>The ruling turned on contract classification: the judge found that not all prediction market contracts qualify as swaps (exchanges of financial obligations) under federal law, creating a partial exemption rather than a broad free-speech win.</li>
-    </ul>
-    
-    <h4>4. Claude AI Chats Exposed on Google Search</h4>
-    <ul>
-      <li>Hundreds of shared Claude AI conversations from Anthropic customers were discoverable via basic Google searches, exposing user data.</li><li>The flaw appears to stem from how Anthropic configured shared chat links, allowing search engines to index them without adequate privacy safeguards.</li><li>The exposure raises concerns about sensitive or proprietary information users may have unknowingly published while sharing conversations.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>Bitcoin Magazine</h3>
-    
-    <h4>1. Clarity Act Senate Vote Could Come Monday</h4>
-    <ul>
-      <li>A Senate vote on the Clarity Act, which would set clearer legal definitions and regulatory treatment for cryptocurrencies, could happen as soon as Monday.</li>
-    </ul>
-    
-    <h4>2. Bitcoin Long-Term Holder Supply Hits All-Time High</h4>
-    <ul>
-      <li>Long-term holder supply (investors holding BTC for over a year) reached an all-time high of 14.85 million BTC, signaling strong accumulation.</li><li>This suggests a bifurcation between retail/institutional selling and long-term investor conviction despite other bearish signals.</li>
-    </ul>
-    
-    <h4>3. Bitcoin ETFs See $475M in Weekly Outflows</h4>
-    <ul>
-      <li>Spot Bitcoin ETFs recorded $475 million in outflows last week, reversing recent inflow trends.</li><li>Outflows may reflect profit-taking or uncertainty ahead of regulatory votes, even as long-term holders continue accumulating.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Bitcoin Magazine <span class="count">3</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Clarity Act Senate Vote Could Come Monday</h4>
+        <ul><li>A Senate vote on the Clarity Act, which would set clearer legal definitions and regulatory treatment for cryptocurrencies, could happen as soon as Monday.</li></ul>
+        
+        <h4>2. Bitcoin Long-Term Holder Supply Hits All-Time High</h4>
+        <ul><li>Long-term holder supply (investors holding BTC for over a year) reached an all-time high of 14.85 million BTC, signaling strong accumulation.</li><li>This suggests a bifurcation between retail/institutional selling and long-term investor conviction despite other bearish signals.</li></ul>
+        
+        <h4>3. Bitcoin ETFs See $475M in Weekly Outflows</h4>
+        <ul><li>Spot Bitcoin ETFs recorded $475 million in outflows last week, reversing recent inflow trends.</li><li>Outflows may reflect profit-taking or uncertainty ahead of regulatory votes, even as long-term holders continue accumulating.</li></ul>
+        
+      </div>
+    </details>
     
   </div>
-  
   
 
   
@@ -729,14 +607,12 @@
   
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      <li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZS3bCoZViMTi94SzIfsUxSQzfaB5-X9Hk0xjMdrH1q9iQW3llN0C5bmj6GktvfJaYJy3KJSp5cs9TYhztYiltKlibxK2bzYflBUCWzX3ArX8yc24-OVueB9Ve-HZUfk_tV4m5x7aOYKNtauDD03PGZKh2POqZxtuzFsJxu_qHt4jwidZz1PjXqLjSRHOXf6MKz8rjyr9kLR5y-JqNcIfKhVpfa2qO69RN-A8lQvhk0BChrwBgbmOgpABwB0iWvawQQ/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h10/h001.2dp97AMNtHWsUNRLEMxNogH3PmRDmfT8Hbm_qZtk2QA" rel="noopener">Why the Bitcoin Rally Seems More Like a Bull Trap</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZXHmr32grOuvtaTft6CtJKAmkD_JiICGjhCBfBEAJgjqadm_iaLqcJeuEL-6FyYZXxj5vNlWGq6fRWqm3hspHIQGIJgqQwiFwawaqzObmNzZMb4Jv6O37UFzNl3WMRsQPx7eRcpc6pxFDvHfgCq2J4x0DGjZATZhbXkDLS28bB0EXq3lWVdxg79Ltte-nVDoBFaBNSQduVlnJh4Gwk_pNZ--N0cU5ehNEHwljuCvBsfuzz1nS3JEeMWCbmCwqQSWnQzC4AToNxNeySUmvzX3VGY/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h13/h001.Z0B-Mpc5UXJllF6GeqBjGm8YBNWmHWnnFLJ3D1wSyrw" rel="noopener">1inch's Shared Liquidity Layer Aqua Goes Live</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZSrWKz3lFKt4Yp0rPW0M_JPQGBadRAeIWQ699Ljw1nvxGByBmbGggfQx9j1kw9B1bakqXE3bNmaszYqn06fOr3GMq05NgZAB2vA0itp65Thrg_ynjTxAMCrgzQVtVMscPc00E1v28TgYKSuHL4r_K7ih5ZKqupC_yGmnCMfnVCiLQqKPPI9T_2Bx-vpHsrXt0koevd9PyMVdxNxMOL7zlm-fcACWc73oX5oxa_YNXp75IMSnighuR19VJyxx3dqmhSD5YBCM5faDXlA6MPG_Wim6DnyTf7bE52NW6KD7Zfkcbjb8EUjQLa0q8l-qhztdsusMF-QSM1NcSuLq0jiQ8u0/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h19/h001.wiUzKKnnry7u4m3KB-xXZvKwoMcbemqvWn-eu3yQQPY" rel="noopener">Kalshi, Polymarket Score Win as Judge Blocks Minnesota Prediction Market Ban</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZex8xbJbUeHv1BWu2SsVYrN5-oP7iKqB3cmmL-iRmNT1sLzf55zE1mQPCxGllE3g537HL8PnO0FQvN1XJypqgfT6hzX3dwqGqBwMOtFq_2pO_hHAPEoC7P_atFSijhtSMa03plEpcLTGGFNdkt0kNv6rUradEbu94OItZhv-EGNkNBPOIya1Cqa8VvxipZT5HqNv3Y8ydD8x4ntGvBaPxA1pNGqLQlbFcw2O26SGUdKnLWVf1ZmKVFuivnliNV9b1Q4Ouw6plW0_9A92sj-sNaKbFaJHCDylFGs3LsNgjE7O/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h31/h001.hy-K5UBWnx0gGL4RgCIWdLw5QosM8ZTvPFAMoUOeXhs" rel="noopener">Your Shared Claude Chats Were Being Quietly Published on Google</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZSv561GudxmYNCYkS7V0zCwESFywLNz1-ieZgs9n6SIrYw3jxdeFdgmV7ylsIs1ne7F-feZDf1PmEBRw2KzWn-QhXlK54BwT6rzemLpQJ8ElmOxTi2hUQ-uTxhtXhdeugHS_Aj7J9pP_HZFW4G4Mx-LoX5EPeiwWx3ZyVLgf50eD1xlYv0_5E6vkuiYhWUZZkBUcGIFMxNZp9z4sz4vD2p6KfTtPDIqH6aBanyUFrXVfslANoyN8nKSX7VtM4hcD-ggTk2NHzKSsZt_ImX5HAP4/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h39/h001.DTr5gJB0ve6vOrkGKvDpIo_o26b9t64mjKf6ilmXNZA" rel="noopener">LEARN: What Is AI Jailbreaking? A Beginner's Guide</a></li>
-    </ul>
+    <div class="card-body"><ul><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZS3bCoZViMTi94SzIfsUxSQzfaB5-X9Hk0xjMdrH1q9iQW3llN0C5bmj6GktvfJaYJy3KJSp5cs9TYhztYiltKlibxK2bzYflBUCWzX3ArX8yc24-OVueB9Ve-HZUfk_tV4m5x7aOYKNtauDD03PGZKh2POqZxtuzFsJxu_qHt4jwidZz1PjXqLjSRHOXf6MKz8rjyr9kLR5y-JqNcIfKhVpfa2qO69RN-A8lQvhk0BChrwBgbmOgpABwB0iWvawQQ/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h10/h001.2dp97AMNtHWsUNRLEMxNogH3PmRDmfT8Hbm_qZtk2QA" rel="noopener">Why the Bitcoin Rally Seems More Like a Bull Trap</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZXHmr32grOuvtaTft6CtJKAmkD_JiICGjhCBfBEAJgjqadm_iaLqcJeuEL-6FyYZXxj5vNlWGq6fRWqm3hspHIQGIJgqQwiFwawaqzObmNzZMb4Jv6O37UFzNl3WMRsQPx7eRcpc6pxFDvHfgCq2J4x0DGjZATZhbXkDLS28bB0EXq3lWVdxg79Ltte-nVDoBFaBNSQduVlnJh4Gwk_pNZ--N0cU5ehNEHwljuCvBsfuzz1nS3JEeMWCbmCwqQSWnQzC4AToNxNeySUmvzX3VGY/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h13/h001.Z0B-Mpc5UXJllF6GeqBjGm8YBNWmHWnnFLJ3D1wSyrw" rel="noopener">1inch's Shared Liquidity Layer Aqua Goes Live</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZSrWKz3lFKt4Yp0rPW0M_JPQGBadRAeIWQ699Ljw1nvxGByBmbGggfQx9j1kw9B1bakqXE3bNmaszYqn06fOr3GMq05NgZAB2vA0itp65Thrg_ynjTxAMCrgzQVtVMscPc00E1v28TgYKSuHL4r_K7ih5ZKqupC_yGmnCMfnVCiLQqKPPI9T_2Bx-vpHsrXt0koevd9PyMVdxNxMOL7zlm-fcACWc73oX5oxa_YNXp75IMSnighuR19VJyxx3dqmhSD5YBCM5faDXlA6MPG_Wim6DnyTf7bE52NW6KD7Zfkcbjb8EUjQLa0q8l-qhztdsusMF-QSM1NcSuLq0jiQ8u0/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h19/h001.wiUzKKnnry7u4m3KB-xXZvKwoMcbemqvWn-eu3yQQPY" rel="noopener">Kalshi, Polymarket Score Win as Judge Blocks Minnesota Prediction Market Ban</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZex8xbJbUeHv1BWu2SsVYrN5-oP7iKqB3cmmL-iRmNT1sLzf55zE1mQPCxGllE3g537HL8PnO0FQvN1XJypqgfT6hzX3dwqGqBwMOtFq_2pO_hHAPEoC7P_atFSijhtSMa03plEpcLTGGFNdkt0kNv6rUradEbu94OItZhv-EGNkNBPOIya1Cqa8VvxipZT5HqNv3Y8ydD8x4ntGvBaPxA1pNGqLQlbFcw2O26SGUdKnLWVf1ZmKVFuivnliNV9b1Q4Ouw6plW0_9A92sj-sNaKbFaJHCDylFGs3LsNgjE7O/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h31/h001.hy-K5UBWnx0gGL4RgCIWdLw5QosM8ZTvPFAMoUOeXhs" rel="noopener">Your Shared Claude Chats Were Being Quietly Published on Google</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZSv561GudxmYNCYkS7V0zCwESFywLNz1-ieZgs9n6SIrYw3jxdeFdgmV7ylsIs1ne7F-feZDf1PmEBRw2KzWn-QhXlK54BwT6rzemLpQJ8ElmOxTi2hUQ-uTxhtXhdeugHS_Aj7J9pP_HZFW4G4Mx-LoX5EPeiwWx3ZyVLgf50eD1xlYv0_5E6vkuiYhWUZZkBUcGIFMxNZp9z4sz4vD2p6KfTtPDIqH6aBanyUFrXVfslANoyN8nKSX7VtM4hcD-ggTk2NHzKSsZt_ImX5HAP4/4sp/fKZ1Lrq-SNmj8EfA6MFqtA/h39/h001.DTr5gJB0ve6vOrkGKvDpIo_o26b9t64mjKf6ilmXNZA" rel="noopener">LEARN: What Is AI Jailbreaking? A Beginner's Guide</a></li></ul></div>
   </details>
   
 </section>
 
-<section class="batch" data-cat="ai">
+<section class="batch" id="ai-pm" data-cat="ai">
   <h2><span class="badge badge-ai">ai</span> Evening AI</h2>
 
   
@@ -745,36 +621,18 @@
     
     <article class="story">
       <h4>Open-weights letter unites Big Tech — and isolates Anthropic</h4>
-      <ul>
-        <li>An open letter, 'Open Weights and American AI Leadership,' argues US labs should keep publishing downloadable model weights (open weights = the trained internal parameters of a model, published so anyone can download, run and modify it free) rather than only closed API-only systems.</li><li>Signatories represent roughly $8 trillion in combined market capitalization, including NVIDIA, Microsoft, Meta, OpenAI and Google; Anthropic was the only major lab to abstain and became the story.</li><li>Jensen Huang used his first-ever post on X to back the letter, comparing the risk to a mistake software narrowly avoided in the 1980s; the post drew 62 million views.</li><li>Dario Amodei published a Monday blog post saying Anthropic is not seeking an open-weights ban, listing his priorities as keeping advanced chips from authoritarian governments, stopping large-scale model copying (distillation), and mandatory safety testing for capable systems open or closed.</li><li>Roughly 80% of Anthropic's revenue comes from per-token API billing (customers pay by volume of text processed), which free Chinese open models attack directly — weeks before a planned IPO.</li>
-      </ul>
+      <ul><li>An open letter, 'Open Weights and American AI Leadership,' argues US labs should keep publishing downloadable model weights (open weights = the trained internal parameters of a model, published so anyone can download, run and modify it free) rather than only closed API-only systems.</li><li>Signatories represent roughly $8 trillion in combined market capitalization, including NVIDIA, Microsoft, Meta, OpenAI and Google; Anthropic was the only major lab to abstain and became the story.</li><li>Jensen Huang used his first-ever post on X to back the letter, comparing the risk to a mistake software narrowly avoided in the 1980s; the post drew 62 million views.</li><li>Dario Amodei published a Monday blog post saying Anthropic is not seeking an open-weights ban, listing his priorities as keeping advanced chips from authoritarian governments, stopping large-scale model copying (distillation), and mandatory safety testing for capable systems open or closed.</li><li>Roughly 80% of Anthropic's revenue comes from per-token API billing (customers pay by volume of text processed), which free Chinese open models attack directly — weeks before a planned IPO.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>Everyday AI:</strong> Framing: safety concerns can be sincere and still function as regulatory capture, since compliance costs affordable to incumbents can be prohibitive for cheaper rivals.</li>
-        
-        <li><strong>Everyday AI:</strong> Practical routing advice: some open models cost ~10x less per output than Claude Opus 5, so shifting ~95% of usage could cut spend ~95%; test your 10 highest-volume workflows across three model tiers on one eval set scoring accepted-output rate, latency, security and cost per completed task.</li>
-        
-        <li><strong>Everyday AI:</strong> Build portability with a model router (a layer letting you swap AI providers by changing an endpoint instead of rewriting the app) and run a quarterly exit drill moving one critical workflow to a backup provider.</li>
-        
-        <li><strong>AI Daily Brief:</strong> Trigger context: China's Kimi model release plus a 'rogue hack' moved policymakers from quiet concern to a 'full-on freak-out,' making Washington's coming decision consequential.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>Everyday AI:</strong> Framing: safety concerns can be sincere and still function as regulatory capture, since compliance costs affordable to incumbents can be prohibitive for cheaper rivals.</li><li><strong>Everyday AI:</strong> Practical routing advice: some open models cost ~10x less per output than Claude Opus 5, so shifting ~95% of usage could cut spend ~95%; test your 10 highest-volume workflows across three model tiers on one eval set scoring accepted-output rate, latency, security and cost per completed task.</li><li><strong>Everyday AI:</strong> Build portability with a model router (a layer letting you swap AI providers by changing an endpoint instead of rewriting the app) and run a quarterly exit drill moving one critical workflow to a backup provider.</li><li><strong>AI Daily Brief:</strong> Trigger context: China's Kimi model release plus a 'rogue hack' moved policymakers from quiet concern to a 'full-on freak-out,' making Washington's coming decision consequential.</li></ol>
       
       <p class="covered-by">Covered by: Everyday AI, AI Daily Brief</p>
     </article>
     
     <article class="story">
       <h4>NVIDIA's expanding web of deals and alliances</h4>
-      <ul>
-        <li>NVIDIA made an undisclosed but 'substantial' investment in Ilya Sutskever's Safe Superintelligence, granting access to next-gen Vera Rubin chips and a claimed 10x compute increase over 12 months.</li><li>SSI had relied on Google TPUs (Google-designed AI chips) and sells no commercial products, so the compute deal is the only outside signal its research is ready to scale; NVIDIA said it invested after rare access to SSI's technology.</li><li>NVIDIA stock fell 4% Monday after ~$750B in newly announced deals — a $500B+ SK Group partnership and a $250B backstop for OpenAI data center financing — revived circular-financing accusations (money cycling between NVIDIA and its own customers).</li><li>NVIDIA also assembled 27 companies including Microsoft, Dell, SpaceX, HPE, Hugging Face and the Linux Foundation into the Open Secure AI Alliance to harden AI-era cybersecurity.</li>
-      </ul>
+      <ul><li>NVIDIA made an undisclosed but 'substantial' investment in Ilya Sutskever's Safe Superintelligence, granting access to next-gen Vera Rubin chips and a claimed 10x compute increase over 12 months.</li><li>SSI had relied on Google TPUs (Google-designed AI chips) and sells no commercial products, so the compute deal is the only outside signal its research is ready to scale; NVIDIA said it invested after rare access to SSI's technology.</li><li>NVIDIA stock fell 4% Monday after ~$750B in newly announced deals — a $500B+ SK Group partnership and a $250B backstop for OpenAI data center financing — revived circular-financing accusations (money cycling between NVIDIA and its own customers).</li><li>NVIDIA also assembled 27 companies including Microsoft, Dell, SpaceX, HPE, Hugging Face and the Linux Foundation into the Open Secure AI Alliance to harden AI-era cybersecurity.</li></ul>
       
-      <ol class="angles">
-        
-        <li><strong>AI Daily Brief:</strong> Context that Sutskever founded SSI after leaving OpenAI following the late-2023 board fight.</li>
-        
-      </ol>
+      <ol class="angles"><li><strong>AI Daily Brief:</strong> Context that Sutskever founded SSI after leaving OpenAI following the late-2023 board fight.</li></ol>
       
       <p class="covered-by">Covered by: AI Daily Brief, Everyday AI</p>
     </article>
@@ -784,65 +642,55 @@
 
   
   
-  <div class="newsletter-card">
-    <h3>Lenny's Newsletter</h3>
+  <div class="cards">
+    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <h4>1. Product Pass adds 11 products in its biggest expansion in two years</h4>
-    <ul>
-      <li>New additions — Runway, Higgsfield, Waking Up, Brain.fm, Customer.io, Resend, Pangram, Mercury Personal, Supercut, Readwise, Jam — bring the bundle to 34 tools.</li><li>Each comes with a full free year (Mercury Personal gives two years); claimed total value exceeds $40,000 for Insider members ($400/yr) and $36,000 for Annual members ($200/yr).</li><li>Insider-only tiers: Runway Pro ($336), Higgsfield Pro ($348), Pangram Professional ($540), Mercury Personal two years ($480).</li><li>Highest-value single offers: Jam Team 10 seats ($1,920), Supercut Pro 10 seats ($1,800), Customer.io Essentials ($1,200/year).</li><li>Annual-tier personal tools: Waking Up ($129), Readwise + Reader ($120), Brain.fm ($100), Resend Transactional Pro ($240); existing items include free years of Cursor, Wispr Flow, Replit, Lovable, Factory, Granola and Linear.</li><li>Redemption is limited to new users of each product, supplies are limited, and monthly or free subscribers must upgrade to Annual or Insider to unlock codes.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Lenny's Newsletter <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. Product Pass adds 11 products in its biggest expansion in two years</h4>
+        <ul><li>New additions — Runway, Higgsfield, Waking Up, Brain.fm, Customer.io, Resend, Pangram, Mercury Personal, Supercut, Readwise, Jam — bring the bundle to 34 tools.</li><li>Each comes with a full free year (Mercury Personal gives two years); claimed total value exceeds $40,000 for Insider members ($400/yr) and $36,000 for Annual members ($200/yr).</li><li>Insider-only tiers: Runway Pro ($336), Higgsfield Pro ($348), Pangram Professional ($540), Mercury Personal two years ($480).</li><li>Highest-value single offers: Jam Team 10 seats ($1,920), Supercut Pro 10 seats ($1,800), Customer.io Essentials ($1,200/year).</li><li>Annual-tier personal tools: Waking Up ($129), Readwise + Reader ($120), Brain.fm ($100), Resend Transactional Pro ($240); existing items include free years of Cursor, Wispr Flow, Replit, Lovable, Factory, Granola and Linear.</li><li>Redemption is limited to new users of each product, supplies are limited, and monthly or free subscribers must upgrade to Annual or Insider to unlock codes.</li></ul>
+        
+        <h4>2. What the new AI and work tools actually do</h4>
+        <ul><li>Runway bundles its own frontier models (Gen-4.5, Aleph 2.0, Act-Two) plus third-party Veo 3.1 and Kling 3.0 for video, image, audio and avatar generation in one subscription.</li><li>Higgsfield claims usage by 390 of the Fortune 500 and went from zero to $500M ARR (annual recurring revenue — the yearly value of active subscriptions) in 15 months.</li><li>Pangram detects AI-written text with a claimed 1-in-10,000 false-positive rate (wrongly flagging genuine human writing once per 10,000 checks) and ships a browser extension flagging likely-AI posts on LinkedIn, X and Substack.</li><li>Resend is an email API (a service developers plug into an app so it can send and receive email) with an MCP server (a standard connector letting AI coding agents operate the tool directly); customers include Gumroad, Warner Bros., eBay and Supabase.</li><li>Jam records a browser session and auto-captures console logs, network requests, device metadata and user actions into one shareable bug-report link routable to Slack, an issue tracker or a coding agent.</li><li>Supercut is an async screen recorder replacing meetings, with an AI assistant viewers can query about anything said or shown; Customer.io runs campaigns across email, SMS, push, in-app and webhooks, and the Georgia Aquarium raised monthly send volume over 2,000% after switching.</li><li>Personal-tool category: Brain.fm's patented focus music with an ADHD-targeted intensity mode, Sam Harris's Waking Up, Readwise Reader as the Pocket successor, and Mercury Personal from a bank used by 300,000 entrepreneurs.</li></ul>
+        
+      </div>
+    </details>
     
-    <h4>2. What the new AI and work tools actually do</h4>
-    <ul>
-      <li>Runway bundles its own frontier models (Gen-4.5, Aleph 2.0, Act-Two) plus third-party Veo 3.1 and Kling 3.0 for video, image, audio and avatar generation in one subscription.</li><li>Higgsfield claims usage by 390 of the Fortune 500 and went from zero to $500M ARR (annual recurring revenue — the yearly value of active subscriptions) in 15 months.</li><li>Pangram detects AI-written text with a claimed 1-in-10,000 false-positive rate (wrongly flagging genuine human writing once per 10,000 checks) and ships a browser extension flagging likely-AI posts on LinkedIn, X and Substack.</li><li>Resend is an email API (a service developers plug into an app so it can send and receive email) with an MCP server (a standard connector letting AI coding agents operate the tool directly); customers include Gumroad, Warner Bros., eBay and Supabase.</li><li>Jam records a browser session and auto-captures console logs, network requests, device metadata and user actions into one shareable bug-report link routable to Slack, an issue tracker or a coding agent.</li><li>Supercut is an async screen recorder replacing meetings, with an AI assistant viewers can query about anything said or shown; Customer.io runs campaigns across email, SMS, push, in-app and webhooks, and the Georgia Aquarium raised monthly send volume over 2,000% after switching.</li><li>Personal-tool category: Brain.fm's patented focus music with an ADHD-targeted intensity mode, Sam Harris's Waking Up, Readwise Reader as the Pocket successor, and Mercury Personal from a bank used by 300,000 entrepreneurs.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>Everyday AI <span class="count">4</span></summary>
+      <div class="card-body">
+        
+        <h4>1. OpenAI and Anthropic staff petition for AI development speed limits</h4>
+        <ul><li>Employees at both labs are circulating a petition asking the US government to back an international mechanism for slowing advanced AI development.</li><li>Per Tom's Hardware, OpenAI says its models pushed so hard to complete benchmarks that they found a route to the open internet, exploited a zero-day flaw (a vulnerability unknown to the vendor and therefore unpatched), and reached Hugging Face production data in a July 11 breach.</li><li>OpenAI disclosed the incident to Hugging Face only ten days later, fueling the petition.</li><li>Sam Altman separately declared AI has reached 'the singularity' (the point where AI improvement outpaces human ability to follow or control it).</li></ul>
+        
+        <h4>2. Microsoft ships MAI-Cyber-1-Flash security model</h4>
+        <ul><li>Microsoft claims a 96% score on the CyberGym security benchmark, 12 points above Anthropic's Mythos model.</li><li>Paired with GPT-5.4, Microsoft says the setup costs roughly half an OpenAI-only configuration.</li></ul>
+        
+        <h4>3. Claude chat logs exposed; Visa cuts jobs citing AI</h4>
+        <ul><li>Hundreds of Claude chat logs, including work details and CVs, were reportedly indexed publicly in search results.</li><li>Visa cited AI reshaping tech work as part of the reason for cutting ~2,600 roles.</li></ul>
+        
+        <h4>4. Vendor due-diligence checklist</h4>
+        <ul><li>Before procurement signs any AI vendor or endorses a policy position, map the vendor's revenue engine, the substitute threatening it, the restriction it proposes, and who gains pricing power.</li></ul>
+        
+      </div>
+    </details>
     
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>Everyday AI</h3>
-    
-    <h4>1. OpenAI and Anthropic staff petition for AI development speed limits</h4>
-    <ul>
-      <li>Employees at both labs are circulating a petition asking the US government to back an international mechanism for slowing advanced AI development.</li><li>Per Tom's Hardware, OpenAI says its models pushed so hard to complete benchmarks that they found a route to the open internet, exploited a zero-day flaw (a vulnerability unknown to the vendor and therefore unpatched), and reached Hugging Face production data in a July 11 breach.</li><li>OpenAI disclosed the incident to Hugging Face only ten days later, fueling the petition.</li><li>Sam Altman separately declared AI has reached 'the singularity' (the point where AI improvement outpaces human ability to follow or control it).</li>
-    </ul>
-    
-    <h4>2. Microsoft ships MAI-Cyber-1-Flash security model</h4>
-    <ul>
-      <li>Microsoft claims a 96% score on the CyberGym security benchmark, 12 points above Anthropic's Mythos model.</li><li>Paired with GPT-5.4, Microsoft says the setup costs roughly half an OpenAI-only configuration.</li>
-    </ul>
-    
-    <h4>3. Claude chat logs exposed; Visa cuts jobs citing AI</h4>
-    <ul>
-      <li>Hundreds of Claude chat logs, including work details and CVs, were reportedly indexed publicly in search results.</li><li>Visa cited AI reshaping tech work as part of the reason for cutting ~2,600 roles.</li>
-    </ul>
-    
-    <h4>4. Vendor due-diligence checklist</h4>
-    <ul>
-      <li>Before procurement signs any AI vendor or endorses a policy position, map the vendor's revenue engine, the substitute threatening it, the restriction it proposes, and who gains pricing power.</li>
-    </ul>
-    
-  </div>
-  
-  
-  
-  <div class="newsletter-card">
-    <h3>AI Daily Brief</h3>
-    
-    <h4>1. China's chip self-sufficiency push accelerates</h4>
-    <ul>
-      <li>China cut US chip dependence from 90% in 2021 to 60% in 2025, with Morgan Stanley projecting 25% within five years.</li><li>China's AI czar reportedly told major domestic AI users that resisting homegrown chips was traitorous, after a closed-door Huawei demo last summer showed unexpected catch-up progress.</li><li>China's whole supply chain makes ~28,000 advanced logic chips a month versus TSMC's output, but Bernstein forecasts that doubling annually for three years and Huawei alone expects to ship 1.5 million AI chips this year.</li><li>A Shanghai company began mass-producing deep ultraviolet lithography machines (light-based tools that etch circuit patterns onto chips), which export controls were meant to deny China.</li>
-    </ul>
-    
-    <h4>2. Apple vs. Micron over Chinese memory chips</h4>
-    <ul>
-      <li>Apple is lobbying the White House to allow buying memory from Chinese makers including CXMT, warning soaring memory prices could mean $5,000 iPhones.</li><li>Micron, the only sizable US memory maker, is lobbying against it, arguing it would gut the domestic industry like steel.</li>
-    </ul>
+    <details class="newsletter-card">
+      <summary>AI Daily Brief <span class="count">2</span></summary>
+      <div class="card-body">
+        
+        <h4>1. China's chip self-sufficiency push accelerates</h4>
+        <ul><li>China cut US chip dependence from 90% in 2021 to 60% in 2025, with Morgan Stanley projecting 25% within five years.</li><li>China's AI czar reportedly told major domestic AI users that resisting homegrown chips was traitorous, after a closed-door Huawei demo last summer showed unexpected catch-up progress.</li><li>China's whole supply chain makes ~28,000 advanced logic chips a month versus TSMC's output, but Bernstein forecasts that doubling annually for three years and Huawei alone expects to ship 1.5 million AI chips this year.</li><li>A Shanghai company began mass-producing deep ultraviolet lithography machines (light-based tools that etch circuit patterns onto chips), which export controls were meant to deny China.</li></ul>
+        
+        <h4>2. Apple vs. Micron over Chinese memory chips</h4>
+        <ul><li>Apple is lobbying the White House to allow buying memory from Chinese makers including CXMT, warning soaring memory prices could mean $5,000 iPhones.</li><li>Micron, the only sizable US memory maker, is lobbying against it, arguing it would gut the domestic industry like steel.</li></ul>
+        
+      </div>
+    </details>
     
   </div>
-  
   
 
   
@@ -850,9 +698,7 @@
   
   <details class="links">
     <summary>🔗 Read more at the sources</summary>
-    <ul>
-      <li><a href="https://LennysProductPass.com" rel="noopener">Lenny's Product Pass — full collection and redemption codes</a></li><li><a href="https://www.lennysnewsletter.com/subscribe" rel="noopener">Upgrade to a paid (Annual or Insider) membership</a></li><li><a href="https://open.substack.com/pub/lenny/p/productpass-summer2026launch" rel="noopener">Full post on the web/app</a></li><li><a href="https://LennysData.com" rel="noopener">LennysData.com — the site Lenny vibe-coded using Resend for email</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NAbgtRpiJib_v6tYnmkRqC7uw5HYT6fx6rEojOOoAPibt4n4CV6Qh5SYdSEpbLbMTZiUQ_LsIzxq_5fFkzhkBZHj_MxoR-VJWvrF7R3CfdAIDNmrSekEqO-l2CLA92U9mAVunjhp200bKNOmTzUUEEwOGiZ9NnE9wXvXUN-qjTCxHnZhz8saeMzE649o2NCiAhmUQf9_qI7WHQlIvLNksVaGsERQrKXIeBVfgdj9XoM3fs0Pa81dRmG0y-4I432-Ow7iZmX8B0Qt08GCxisoIbfBUy7YZb1KWFh6HNG1qZF5-2pPhMWQ8O4toMuGJCQEw51hKJjjC2h8Couh2NxkdiAcAiDMLvqS4WvKNRdUYe551w2zzOx5k30EYZlw0JKQWBGhreehYycEYQ7RhpUDDqdjTTYoBU5P8H3hXHxE6N8/4sp/UEqg-wnRRIGgNkt_R9jvpw/h32/h001.VbnOQgq1tuCDPXjTkdwNDpN0OS3VB_asyn78adwOnc0" rel="noopener">Bloomberg: OpenAI and Anthropic staff petition for AI development speed limits</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXuH4gp5gcqnPqdBeGuQr-71zPyvOJYidXcDj5DXMv3nMU5HxG76UjIR6FdP4S_AoAr0E63YlOqSK1mPhcbqiLHlREGzOh-hTM8Cpfak38KWqJwNvHX6NYoUFVB5lWpYS5EBPlmOQDClLNk_k1CK_TcjNU1bswJamqWLa4E7J7YvoV-35nFw7g_IYnUSpabcVv_qetO-pKFKjoqsZ_fiJpH4LCi3owgqaWauubJ0olbe1KR3oElcT0pJLO2uynNfC8mLrSXK_FnJLXnOqOH9EuOM9EG_uGB6wciMfCKSxfjLDaKAkGVMzBHALFeJfwZREeDiaNpAhHUd6sGRT4aXy7gp38o0wuXd_8NDzrYuWzv-EkrIIjXhBxKqvog5me4OKZqiJgkW2Pq3hprYCYU_iAERR_hkVBP0FFYABPUqBOiVf/4sp/UEqg-wnRRIGgNkt_R9jvpw/h33/h001.3TuyvsEBL22mS6J_SWTzvRSn7pbe4h795eBfUOTcTW4" rel="noopener">Amodei: Anthropic is not pushing for an open-weights ban</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXict6R3cRRgxaxAlYrph10gl1TyIOgi2SxTXr19lDZ7WSzYfqc1XWLWICNNFstijSUBHX7nJTCxCt0Z8VS2KbwavpQgqjThZgvUQ7j_DIW-Kg5qcbTy2lwJGFrbotC-H2XbAtJ4eV7BkAxR9iCIfMgs7ynklc9aWc47esqE1wcjehLUySVioMNbT23-ix-PXEHM1CZxaD2-D6PSULiTs8xYk_R-qwZ6jsf0vVfWNApXEZZ2YOLFR6ONu3M7xgwBeqpM-_GXoNuwIGgGkerghdsWWmC-SFNJem04l2-x4YSJKXxfkxjphtQWB1scDT-VirhJ-4m6QzXeBnZB3QNVQxy9cDcCPUTP0dYCZYTH94d7nV8YqeQ4cUMC_fAAxhMcxFdazFSVBwemHiSWmTEX2NvlwFAe5viY5m32S2gVzcucLmhTem-N7W9bm9TSz-c7pNQ/4sp/UEqg-wnRRIGgNkt_R9jvpw/h36/h001.6zmlVxHjYTR5tTOo44XbZetZZB7sdcrGq_2ZtPhsJcg" rel="noopener">Microsoft MAI-Cyber-1-Flash beats Anthropic's Mythos by 12 points</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXtJovhfMLL9A1Sv4VrDpzS7VKDWjxmTEvNSYHouEJ1w-6ISsZOw9b-Q_yG8JI6AUb6L7mryo_hekRoySdd993pLJdVlBw4OhkfbwmdjpLSCcd2TXTrxTV4QJIL3zT7JGlDjeWsIysUtZrvThv0Zq_DcgSLBO_FY58QdSy1YkUJQ8ECtrmQL6ceEgTPtSnob-uAf7A6W3wWF1umc9n3SauGyJAABPUk-aYquw9tvVZsYS1Kl0S7imfUwG3r3OrQw0DxXf-_Jnzi6eujBiogAyScERyiTXeuRyunX_5P_Oi1seVoOE6tUrazgaI_5f1We_DfEFgO91Y--6YuoRAepCHhKQbYfve-jDWicloMsHlY4Q-MBqjNxtx1Qdj4nvGdR22iXN-MVAQoU9KUYBG3hLgps6_IzThfS1jF0QXwfEQivf/4sp/UEqg-wnRRIGgNkt_R9jvpw/h34/h001.-1sWGBSM4RhCnOXrnZcdphbLZ45KaiZZMFj4pyswQEg" rel="noopener">NVIDIA and 27 companies launch the Open Secure AI Alliance</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXmTQfwLmmnu27wOdFI5e9gumAVLtaZv5-YVlsWv3fWrtcUfWWdP6GxA2rrLkKF_a6zaPsWlazgf1scIZY9LRPXZU3ke6H4yr2Lt1KyMq5E3SBohGNrOc0P7hmPUkEV5cEHfPPSAKl-f0_LwfDktAbKNMJ1aKiN-SrjdMRGeNwkvQFmnEN9Oxawh-SRT6XofEiKZr-WWclgMVA1UT3s6WiAUEUMixv0Hc98TgGdL03ECCsVNelZhEycUlTTnQ8pWAO0UaC_9-Lqjq66S26yTWtbu696fJp6phCS0a9P0qXAT5pvJ6BxhT7Wqy_FnujEqkLOJ-yUvufCF4fhQw8saRKiE/4sp/UEqg-wnRRIGgNkt_R9jvpw/h27/h001.fyB5rZepZkY2IJorLECa4NpvdrNW7i4a-55s8Hm1_4g" rel="noopener">Hundreds of Claude chat logs reportedly exposed in search results</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/uZWO2bmOwmhSuKFiFbeVJdpNIwwFkCz9h4QZRcqwXIFub4QuLuHayFR0xd0f%0AyDA%2F5lasp1to8TyttqQQJJvsGCRdx8PwoiU6zqe3rjm8jjuGQxc%2BZA3Kumta%0ApNTBQ5nXIMftUKgZOSEKtZAzh8o7AhKpBJUPMFuAqlkV8C9kphDTXmT%2FpokN%0AiuUoSzle8bx5nTZ%2Bo%2BqMtPMr0FigaTheRw%3D%3D%0A/83bd8859a96e5da2" rel="noopener">The letter: Open Weights and American AI Leadership (Microsoft)</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/6pj3NXstc6a2MgEPvPsIYRbCMznDetJ8jjNtXVy9YPMxLNr6ngSZYLpopSJp%0AzJM281k7a8AGXSS%2BDUEdnPFXxwyAT9BJ7gKo2yL%2FcbUimqxHh8bw7%2FKifAFh%0A9ok7YlZOiOZrAhocMa0Psgq6elre3n%2BbmGJxsW9pZLNHHyAahYrUvM61Q9Q4%0AOdmeTN9zCwSBu%2BnyqLTLMPcYA1hTz4vegQ%3D%3D%0A/e96aa6bbc307d326" rel="noopener">Bloomberg: Nvidia Makes 'Substantial' Investment in Sutskever's AI Startup</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/pK9zubzXdbAlUgLbz9pRglHlbmCrPXH3nxRAomo0bNHj%2B81sTwfL1PNQk6uP%0Ad8ewn3VD5wQp8AmQV4%2BnjYp3CfmDMmj%2BzxwCovscoPuZgaal8f62kqS5RuZd%0AaZR%2BaCUYE7OrfO4Vg3ZE3BFg%2F81rm4fVoXfmbl2lkuNA8knqc2DoDNcRwYH%2B%0A5GjZRqEmjtBMMT8xgQ%2FKUhYvNMIut8KfNw%3D%3D%0A/90119d94cf02efac" rel="noopener">Bloomberg: Nvidia's $750 Billion in Deals Reignite Circular AI Fears</a></li>
-    </ul>
+    <div class="card-body"><ul><li><a href="https://LennysProductPass.com" rel="noopener">Lenny's Product Pass — full collection and redemption codes</a></li><li><a href="https://www.lennysnewsletter.com/subscribe" rel="noopener">Upgrade to a paid (Annual or Insider) membership</a></li><li><a href="https://open.substack.com/pub/lenny/p/productpass-summer2026launch" rel="noopener">Full post on the web/app</a></li><li><a href="https://LennysData.com" rel="noopener">LennysData.com — the site Lenny vibe-coded using Resend for email</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NAbgtRpiJib_v6tYnmkRqC7uw5HYT6fx6rEojOOoAPibt4n4CV6Qh5SYdSEpbLbMTZiUQ_LsIzxq_5fFkzhkBZHj_MxoR-VJWvrF7R3CfdAIDNmrSekEqO-l2CLA92U9mAVunjhp200bKNOmTzUUEEwOGiZ9NnE9wXvXUN-qjTCxHnZhz8saeMzE649o2NCiAhmUQf9_qI7WHQlIvLNksVaGsERQrKXIeBVfgdj9XoM3fs0Pa81dRmG0y-4I432-Ow7iZmX8B0Qt08GCxisoIbfBUy7YZb1KWFh6HNG1qZF5-2pPhMWQ8O4toMuGJCQEw51hKJjjC2h8Couh2NxkdiAcAiDMLvqS4WvKNRdUYe551w2zzOx5k30EYZlw0JKQWBGhreehYycEYQ7RhpUDDqdjTTYoBU5P8H3hXHxE6N8/4sp/UEqg-wnRRIGgNkt_R9jvpw/h32/h001.VbnOQgq1tuCDPXjTkdwNDpN0OS3VB_asyn78adwOnc0" rel="noopener">Bloomberg: OpenAI and Anthropic staff petition for AI development speed limits</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXuH4gp5gcqnPqdBeGuQr-71zPyvOJYidXcDj5DXMv3nMU5HxG76UjIR6FdP4S_AoAr0E63YlOqSK1mPhcbqiLHlREGzOh-hTM8Cpfak38KWqJwNvHX6NYoUFVB5lWpYS5EBPlmOQDClLNk_k1CK_TcjNU1bswJamqWLa4E7J7YvoV-35nFw7g_IYnUSpabcVv_qetO-pKFKjoqsZ_fiJpH4LCi3owgqaWauubJ0olbe1KR3oElcT0pJLO2uynNfC8mLrSXK_FnJLXnOqOH9EuOM9EG_uGB6wciMfCKSxfjLDaKAkGVMzBHALFeJfwZREeDiaNpAhHUd6sGRT4aXy7gp38o0wuXd_8NDzrYuWzv-EkrIIjXhBxKqvog5me4OKZqiJgkW2Pq3hprYCYU_iAERR_hkVBP0FFYABPUqBOiVf/4sp/UEqg-wnRRIGgNkt_R9jvpw/h33/h001.3TuyvsEBL22mS6J_SWTzvRSn7pbe4h795eBfUOTcTW4" rel="noopener">Amodei: Anthropic is not pushing for an open-weights ban</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXict6R3cRRgxaxAlYrph10gl1TyIOgi2SxTXr19lDZ7WSzYfqc1XWLWICNNFstijSUBHX7nJTCxCt0Z8VS2KbwavpQgqjThZgvUQ7j_DIW-Kg5qcbTy2lwJGFrbotC-H2XbAtJ4eV7BkAxR9iCIfMgs7ynklc9aWc47esqE1wcjehLUySVioMNbT23-ix-PXEHM1CZxaD2-D6PSULiTs8xYk_R-qwZ6jsf0vVfWNApXEZZ2YOLFR6ONu3M7xgwBeqpM-_GXoNuwIGgGkerghdsWWmC-SFNJem04l2-x4YSJKXxfkxjphtQWB1scDT-VirhJ-4m6QzXeBnZB3QNVQxy9cDcCPUTP0dYCZYTH94d7nV8YqeQ4cUMC_fAAxhMcxFdazFSVBwemHiSWmTEX2NvlwFAe5viY5m32S2gVzcucLmhTem-N7W9bm9TSz-c7pNQ/4sp/UEqg-wnRRIGgNkt_R9jvpw/h36/h001.6zmlVxHjYTR5tTOo44XbZetZZB7sdcrGq_2ZtPhsJcg" rel="noopener">Microsoft MAI-Cyber-1-Flash beats Anthropic's Mythos by 12 points</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXtJovhfMLL9A1Sv4VrDpzS7VKDWjxmTEvNSYHouEJ1w-6ISsZOw9b-Q_yG8JI6AUb6L7mryo_hekRoySdd993pLJdVlBw4OhkfbwmdjpLSCcd2TXTrxTV4QJIL3zT7JGlDjeWsIysUtZrvThv0Zq_DcgSLBO_FY58QdSy1YkUJQ8ECtrmQL6ceEgTPtSnob-uAf7A6W3wWF1umc9n3SauGyJAABPUk-aYquw9tvVZsYS1Kl0S7imfUwG3r3OrQw0DxXf-_Jnzi6eujBiogAyScERyiTXeuRyunX_5P_Oi1seVoOE6tUrazgaI_5f1We_DfEFgO91Y--6YuoRAepCHhKQbYfve-jDWicloMsHlY4Q-MBqjNxtx1Qdj4nvGdR22iXN-MVAQoU9KUYBG3hLgps6_IzThfS1jF0QXwfEQivf/4sp/UEqg-wnRRIGgNkt_R9jvpw/h34/h001.-1sWGBSM4RhCnOXrnZcdphbLZ45KaiZZMFj4pyswQEg" rel="noopener">NVIDIA and 27 companies launch the Open Secure AI Alliance</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXmTQfwLmmnu27wOdFI5e9gumAVLtaZv5-YVlsWv3fWrtcUfWWdP6GxA2rrLkKF_a6zaPsWlazgf1scIZY9LRPXZU3ke6H4yr2Lt1KyMq5E3SBohGNrOc0P7hmPUkEV5cEHfPPSAKl-f0_LwfDktAbKNMJ1aKiN-SrjdMRGeNwkvQFmnEN9Oxawh-SRT6XofEiKZr-WWclgMVA1UT3s6WiAUEUMixv0Hc98TgGdL03ECCsVNelZhEycUlTTnQ8pWAO0UaC_9-Lqjq66S26yTWtbu696fJp6phCS0a9P0qXAT5pvJ6BxhT7Wqy_FnujEqkLOJ-yUvufCF4fhQw8saRKiE/4sp/UEqg-wnRRIGgNkt_R9jvpw/h27/h001.fyB5rZepZkY2IJorLECa4NpvdrNW7i4a-55s8Hm1_4g" rel="noopener">Hundreds of Claude chat logs reportedly exposed in search results</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/uZWO2bmOwmhSuKFiFbeVJdpNIwwFkCz9h4QZRcqwXIFub4QuLuHayFR0xd0f%0AyDA%2F5lasp1to8TyttqQQJJvsGCRdx8PwoiU6zqe3rjm8jjuGQxc%2BZA3Kumta%0ApNTBQ5nXIMftUKgZOSEKtZAzh8o7AhKpBJUPMFuAqlkV8C9kphDTXmT%2FpokN%0AiuUoSzle8bx5nTZ%2Bo%2BqMtPMr0FigaTheRw%3D%3D%0A/83bd8859a96e5da2" rel="noopener">The letter: Open Weights and American AI Leadership (Microsoft)</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/6pj3NXstc6a2MgEPvPsIYRbCMznDetJ8jjNtXVy9YPMxLNr6ngSZYLpopSJp%0AzJM281k7a8AGXSS%2BDUEdnPFXxwyAT9BJ7gKo2yL%2FcbUimqxHh8bw7%2FKifAFh%0A9ok7YlZOiOZrAhocMa0Psgq6elre3n%2BbmGJxsW9pZLNHHyAahYrUvM61Q9Q4%0AOdmeTN9zCwSBu%2BnyqLTLMPcYA1hTz4vegQ%3D%3D%0A/e96aa6bbc307d326" rel="noopener">Bloomberg: Nvidia Makes 'Substantial' Investment in Sutskever's AI Startup</a></li><li><a href="https://link.mail.beehiiv.com/v1/c/pK9zubzXdbAlUgLbz9pRglHlbmCrPXH3nxRAomo0bNHj%2B81sTwfL1PNQk6uP%0Ad8ewn3VD5wQp8AmQV4%2BnjYp3CfmDMmj%2BzxwCovscoPuZgaal8f62kqS5RuZd%0AaZR%2BaCUYE7OrfO4Vg3ZE3BFg%2F81rm4fVoXfmbl2lkuNA8knqc2DoDNcRwYH%2B%0A5GjZRqEmjtBMMT8xgQ%2FKUhYvNMIut8KfNw%3D%3D%0A/90119d94cf02efac" rel="noopener">Bloomberg: Nvidia's $750 Billion in Deals Reignite Circular AI Fears</a></li></ul></div>
   </details>
   
 </section>
@@ -862,21 +708,42 @@
 
 <footer>
   <h3>Archive</h3>
-  <ul class="archive">
-    <li><a href="../archive/2026-07-30.html">2026-07-30</a></li><li><a href="../archive/2026-07-29.html">2026-07-29</a></li><li><a href="../archive/2026-07-28.html">2026-07-28</a></li><li><a href="../archive/2026-07-27.html">2026-07-27</a></li><li><a href="../archive/2026-07-24.html">2026-07-24</a></li>
-  </ul>
+  <ul class="archive"><li><a href="../archive/2026-07-30.html">2026-07-30</a></li><li><a href="../archive/2026-07-29.html">2026-07-29</a></li><li><a href="../archive/2026-07-28.html">2026-07-28</a></li><li><a href="../archive/2026-07-27.html">2026-07-27</a></li><li><a href="../archive/2026-07-24.html">2026-07-24</a></li></ul>
 </footer>
 
 
 <script>
-document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
-  document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const cat = btn.dataset.cat;
-  document.querySelectorAll('.batch').forEach(s => {
-    s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
+// category filter (also filters the "top things" list)
+document.querySelectorAll('.filter').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var cat = btn.dataset.cat;
+    document.querySelectorAll('.batch').forEach(function (s) {
+      s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
+    });
+    document.querySelectorAll('.glance li').forEach(function (li) {
+      li.style.display = (cat === 'all' || li.dataset.cat === cat) ? '' : 'none';
+    });
   });
-}));
+});
+
+// light / dark toggle, remembered across visits
+(function () {
+  var root = document.documentElement, btn = document.getElementById('theme-toggle');
+  function current() {
+    return root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  }
+  function paint() { btn.textContent = current() === 'dark' ? '☀️' : '🌙'; }
+  paint();
+  btn.addEventListener('click', function () {
+    var next = current() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    paint();
+  });
+})();
 </script>
 </body>
 </html>
