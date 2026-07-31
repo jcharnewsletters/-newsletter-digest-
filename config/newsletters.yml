@@ -126,7 +126,10 @@ newsletters:
     category: ai
     batch: ai-pm
     cadence: weekly
-    senders: ["thebatch@deeplearning.ai", "deeplearning.ai"]
+    # Match ONLY The Batch's exact address, not the whole deeplearning.ai domain
+    # (DeepLearning.AI also sends course promos / event invites that must not be
+    # mistaken for the Friday Batch issue).
+    senders: ["thebatch@deeplearning.ai"]
     url: https://www.deeplearning.ai/the-batch/
 
   - id: ai-daily-brief
