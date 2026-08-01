@@ -80,10 +80,12 @@ newsletters:
       list-unsubscribe: "l=eedf6b14-3de3-11ed-9a32-0241b9615763"
     url: https://tldr.tech/ai
 
+  # TAAFT (~3 PM) and ultrathink (~11 AM) publish after the 9:45 AM morning run,
+  # so they live in the evening batch (9:45 PM) to be caught same-day, not stale.
   - id: taaft
     name: "There's An AI For That (TAAFT)"
     category: ai
-    batch: ai-am
+    batch: ai-pm
     cadence: daily
     senders: ["theresanaiforthat.com"]
     url: https://theresanaiforthat.com/
@@ -91,7 +93,7 @@ newsletters:
   - id: ultrathink
     name: "ultrathink"
     category: ai
-    batch: ai-am
+    batch: ai-pm
     cadence: daily
     senders: ["ultrathink@mail.beehiiv.com"]
     url: https://www.ultrathink.ai/
