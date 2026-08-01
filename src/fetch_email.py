@@ -7,12 +7,13 @@ single app once 2-step verification is on), supplied via env vars:
 import os
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 from imap_tools import MailBox, AND
 
 from . import state as state_mod
 from .clean import html_to_text
-from .config import LOOKBACK_HOURS, header_map
+from .config import LOOKBACK_HOURS, TIMEZONE, header_map
 
 IMAP_HOST = "imap.gmail.com"
 
@@ -50,6 +51,11 @@ def fetch_issues(newsletters, state) -> list:
             age_hours = (datetime.now(timezone.utc) - msg_dt).total_seconds() / 3600
             if age_hours > LOOKBACK_HOURS[newsletter.cadence]:
                 continue
+            if newsletter.arrives_before:
+                et = msg_dt.astimezone(ZoneInfo(TIMEZONE))
+                lim_h, lim_m = (int(x) for x in newsletter.arrives_before.split(":"))
+                if (et.hour, et.minute) >= (lim_h, lim_m):
+                    continue  # drop later-in-day editions (e.g. evening sends)
             body = msg.html or msg.text or ""
             issues.append(Issue(
                 newsletter_id=newsletter.id,

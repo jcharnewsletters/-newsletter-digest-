@@ -261,7 +261,9 @@ newsletters:
     category: stocks
     batch: stocks-am
     cadence: daily
-    senders: ["account@seekingalpha.com"]
+    # Weekday WSB comes from account@seekingalpha.com; the weekend edition comes
+    # from Seeking Alpha's sailthru address.
+    senders: ["account@seekingalpha.com", "seekingalpha@mail.sailthru.com"]
     url: https://seekingalpha.com/free-investing-newsletters
 
   - id: bloomberg-morning
@@ -278,6 +280,9 @@ newsletters:
     batch: stocks-am
     cadence: daily
     senders: ["newsletters@mail.investopedia.com", "mail.investopedia.com"]
+    # Only the morning Pre-Market — drop Investopedia's evening editions so they
+    # can't backfill as stale on days with no Pre-Market (e.g. weekends).
+    arrives_before: "12:00"
     url: https://www.investopedia.com/news
 
   - id: cnbc-morning-squawk

@@ -41,6 +41,10 @@ class Newsletter:
     # address and have teaser subjects (e.g. the TLDR feeds, told apart by the
     # list id in their List-Unsubscribe header). ALL listed headers must match.
     header_contains: dict = field(default_factory=dict)
+    # "HH:MM" (ET) — only accept issues that arrived BEFORE this time of day.
+    # Used to keep a morning edition and drop a same-publisher evening edition
+    # (e.g. Investopedia Pre-Market vs its evening send). Empty = no limit.
+    arrives_before: str = ""
 
     def matches(self, from_header: str, subject: str, headers: dict = None) -> bool:
         from_l = (from_header or "").lower()
