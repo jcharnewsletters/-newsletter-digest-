@@ -9,14 +9,14 @@ on:
     # deadline because GitHub cron can start several minutes late.
     - cron: "40 12 * * *"   # stocks-am  @ 8:40 AM EDT
     - cron: "40 13 * * *"   # stocks-am  @ 8:40 AM EST
-    - cron: "55 12 * * *"   # crypto-am  @ 8:55 AM EDT
-    - cron: "55 13 * * *"   # crypto-am  @ 8:55 AM EST
+    - cron: "15 14 * * *"   # crypto-am  @ 10:15 AM EDT
+    - cron: "15 15 * * *"   # crypto-am  @ 10:15 AM EST
     - cron: "20 13 * * *"   # ai-am      @ 9:20 AM EDT
     - cron: "20 14 * * *"   # ai-am      @ 9:20 AM EST
-    - cron: "25 13 * * *"   # tech-am    @ 9:25 AM EDT
-    - cron: "25 14 * * *"   # tech-am    @ 9:25 AM EST
-    - cron: "20 22 * * *"   # crypto-pm  @ 6:20 PM EDT
-    - cron: "20 23 * * *"   # crypto-pm  @ 6:20 PM EST
+    - cron: "15 18 * * *"   # tech-am    @ 2:15 PM EDT
+    - cron: "15 19 * * *"   # tech-am    @ 2:15 PM EST
+    - cron: "20 23 * * *"   # crypto-pm  @ 7:20 PM EDT
+    - cron: "20 0 * * *"    # crypto-pm  @ 7:20 PM EST
     - cron: "20 1 * * *"    # ai-pm      @ 9:20 PM EDT
     - cron: "20 2 * * *"    # ai-pm      @ 9:20 PM EST
   workflow_dispatch:
@@ -57,14 +57,14 @@ jobs:
           CRON_MAP = {
               "40 12 * * *": ("stocks-am", 8, 40),
               "40 13 * * *": ("stocks-am", 8, 40),
-              "55 12 * * *": ("crypto-am", 8, 55),
-              "55 13 * * *": ("crypto-am", 8, 55),
+              "15 14 * * *": ("crypto-am", 10, 15),
+              "15 15 * * *": ("crypto-am", 10, 15),
               "20 13 * * *": ("ai-am", 9, 20),
               "20 14 * * *": ("ai-am", 9, 20),
-              "25 13 * * *": ("tech-am", 9, 25),
-              "25 14 * * *": ("tech-am", 9, 25),
-              "20 22 * * *": ("crypto-pm", 18, 20),
-              "20 23 * * *": ("crypto-pm", 18, 20),
+              "15 18 * * *": ("tech-am", 14, 15),
+              "15 19 * * *": ("tech-am", 14, 15),
+              "20 23 * * *": ("crypto-pm", 19, 20),
+              "20 0 * * *": ("crypto-pm", 19, 20),
               "20 1 * * *": ("ai-pm", 21, 20),
               "20 2 * * *": ("ai-pm", 21, 20),
           }

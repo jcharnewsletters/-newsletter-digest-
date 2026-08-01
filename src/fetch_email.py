@@ -35,6 +35,7 @@ def fetch_issues(newsletters, state) -> list:
 
     max_lookback = max(LOOKBACK_HOURS[n.cadence] for n in newsletters)
     since = (datetime.now(timezone.utc) - timedelta(hours=max_lookback)).date()
+    today_et = datetime.now(ZoneInfo(TIMEZONE)).date()
 
     issues = []
     with MailBox(IMAP_HOST).login(address, password, initial_folder="INBOX") as mailbox:
@@ -50,6 +51,11 @@ def fetch_issues(newsletters, state) -> list:
                 msg_dt = msg_dt.replace(tzinfo=timezone.utc)
             age_hours = (datetime.now(timezone.utc) - msg_dt).total_seconds() / 3600
             if age_hours > LOOKBACK_HOURS[newsletter.cadence]:
+                continue
+            # No backfill: only summarize issues that arrived TODAY (ET). A
+            # newsletter that didn't send today (or hasn't yet) is skipped rather
+            # than pulling in a stale prior-day issue.
+            if msg_dt.astimezone(ZoneInfo(TIMEZONE)).date() != today_et:
                 continue
             if newsletter.arrives_before:
                 et = msg_dt.astimezone(ZoneInfo(TIMEZONE))
