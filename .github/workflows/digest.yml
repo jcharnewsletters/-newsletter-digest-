@@ -7,12 +7,12 @@ on:
     # runs a cron only when it lands in its batch's window, so exactly one
     # fires per batch per day. Runs are scheduled ~35 min before each alert
     # deadline because GitHub cron can start several minutes late.
-    - cron: "40 12 * * *"   # stocks-am  @ 8:40 AM EDT
-    - cron: "40 13 * * *"   # stocks-am  @ 8:40 AM EST
+    - cron: "10 13 * * *"   # stocks-am  @ 9:10 AM EDT
+    - cron: "10 14 * * *"   # stocks-am  @ 9:10 AM EST
     - cron: "15 14 * * *"   # crypto-am  @ 10:15 AM EDT
     - cron: "15 15 * * *"   # crypto-am  @ 10:15 AM EST
-    - cron: "20 13 * * *"   # ai-am      @ 9:20 AM EDT
-    - cron: "20 14 * * *"   # ai-am      @ 9:20 AM EST
+    - cron: "0 14 * * *"    # ai-am      @ 10:00 AM EDT
+    - cron: "0 15 * * *"    # ai-am      @ 10:00 AM EST
     - cron: "15 18 * * *"   # tech-am    @ 2:15 PM EDT
     - cron: "15 19 * * *"   # tech-am    @ 2:15 PM EST
     - cron: "20 23 * * *"   # crypto-pm  @ 7:20 PM EDT
@@ -55,12 +55,12 @@ jobs:
 
           # cron expression -> (batch, target ET hour, target ET minute)
           CRON_MAP = {
-              "40 12 * * *": ("stocks-am", 8, 40),
-              "40 13 * * *": ("stocks-am", 8, 40),
+              "10 13 * * *": ("stocks-am", 9, 10),
+              "10 14 * * *": ("stocks-am", 9, 10),
               "15 14 * * *": ("crypto-am", 10, 15),
               "15 15 * * *": ("crypto-am", 10, 15),
-              "20 13 * * *": ("ai-am", 9, 20),
-              "20 14 * * *": ("ai-am", 9, 20),
+              "0 14 * * *": ("ai-am", 10, 0),
+              "0 15 * * *": ("ai-am", 10, 0),
               "15 18 * * *": ("tech-am", 14, 15),
               "15 19 * * *": ("tech-am", 14, 15),
               "20 23 * * *": ("crypto-pm", 19, 20),
