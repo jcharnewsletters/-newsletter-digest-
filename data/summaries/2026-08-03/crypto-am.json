@@ -1,0 +1,201 @@
+{
+  "batch": "crypto-am",
+  "label": "Morning Crypto",
+  "category": "crypto",
+  "date": "2026-08-03",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Coldcard firmware flaw drains ~1,082 BTC (~$70M) from Bitcoin self-custody users",
+        "points": [
+          "A seed-generation vulnerability (seed = the master secret from which a wallet's private keys, the credentials that authorize Bitcoin transfers, are derived) let attackers reconstruct keys and empty wallets.",
+          "TLDR Crypto reports 1,082 BTC (~$70.2M) taken from nearly 1,200 addresses; CMC Spotlight puts confirmed losses at over $50M.",
+          "Affected devices span Coldcard Mk3/Mk4/Mk5 firmware versions — Coldcard is a popular hardware wallet, a dedicated offline device meant to keep keys away from internet-connected computers.",
+          "Maker Coinkite shipped emergency patched firmware and urges all users to update, generate fresh seeds, and test with a small transaction before moving full balances.",
+          "Incident revives the tension between keeping wallets 'air-gapped' (physically isolated from networks) and safely delivering firmware updates."
+        ],
+        "covered_by": [
+          "CMC Spotlight",
+          "TLDR Crypto"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR Crypto",
+            "point": "Coinkite's CEO suggested the bug may have been found via AI-assisted code review, implying a new attack surface for hardware wallet makers."
+          },
+          {
+            "newsletter": "TLDR Crypto",
+            "point": "Links to a Galaxy Research technical analysis of the vulnerability."
+          },
+          {
+            "newsletter": "CMC Spotlight",
+            "point": "Says exploitation generally required physical or USB access, though some reports hint at remote vectors."
+          },
+          {
+            "newsletter": "CMC Spotlight",
+            "point": "Notes Coldcard also patched vulnerabilities in 2023 and 2024, and that rival hardware wallet makers are now auditing their own code."
+          },
+          {
+            "newsletter": "CMC Spotlight",
+            "point": "Coldcard is working directly with affected users on fund recovery and probing whether the flaw was exploited before disclosure."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "CMC Spotlight",
+        "items": []
+      },
+      {
+        "newsletter": "TLDR Crypto",
+        "items": [
+          {
+            "title": "Russia bans crypto mining in Moscow and parts of Kursk Oblast until 2032",
+            "points": [
+              "Ban runs through the end of 2032, citing risk that mining (the energy-intensive computing that validates blockchain transactions) could consume 1 GW of grid capacity.",
+              "Move contrasts with Russia's broader regulatory push toward legitimizing mining elsewhere."
+            ]
+          },
+          {
+            "title": "Taskmarket launches USDC-prize marketplace for AI agents",
+            "points": [
+              "AI agents compete on open tasks and earn USDC (a dollar-pegged stablecoin) prizes judged on quality; current challenges include building Civilization I and GTA1 clones.",
+              "Entry is free with no cost to losing, removing financial barriers to participation.",
+              "Daydreams published a performance guide: persistent worker roles with memory, strict brief-to-checklist conversion, real media generation over prose, three directed revision passes, and banking reusable skills."
+            ]
+          },
+          {
+            "title": "Single Seoul equity print triggers $57–80M in Hyperliquid liquidations",
+            "points": [
+              "An SK Hynix share printed 29.96% below the prior close in Seoul pre-market, feeding TradeXYZ's Hyperliquid perpetual (a derivative tracking an asset's price with no expiry) and liquidating ~960 long accounts on August 28.",
+              "TradeXYZ holds 90%+ of HIP-3 (Hyperliquid's equity perps) open interest and 98% of builder-market volume; HIP-3 went from 2% to 50% of total perp volume since January, hitting $98B in 30-day volume.",
+              "Cause traced to corrupted TradFi limit-order-book data read by all providers, not a crypto oracle failure — TradeXYZ's onchain order book held steadier than the external feed."
+            ]
+          },
+          {
+            "title": "Active crypto VC firms fall to 150, lowest since 2020",
+            "points": [
+              "July count of 150 active investors is down 87% from the May 2022 peak of 1,177 and the lowest since November 2020.",
+              "Smaller funds, family offices, and 2021–22 angel syndicates are exiting while institutional players consolidate capital.",
+              "Dragonfly Capital, which closed a $650M fund in February, keeps deploying into infrastructure and real-world assets.",
+              "Dragonfly managing partner Haseeb Qureshi warned dedicated crypto VCs could lose relevance by 2030 as dominant platforms absorb users and liquidity."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "CMC Spotlight",
+      "subject": "A Coldcard Firmware Bug Just Drained Millions in Bitcoin",
+      "date": "2026-08-03T11:03:08+00:00",
+      "summary": {
+        "headlines": [
+          "Coldcard hardware wallet firmware bug enabled attackers to drain millions in Bitcoin from affected users through a vulnerability in transaction signing",
+          "The vulnerability affected multiple firmware versions of Coldcard, a popular self-custody device designed to secure crypto assets offline away from internet-connected computers",
+          "Coldcard has released a patched firmware version and is investigating the scope of affected wallets while users are advised to move funds to secure wallets immediately"
+        ],
+        "sections": [
+          {
+            "title": "Coldcard Vulnerability Details",
+            "points": [
+              "Firmware bug in Coldcard's transaction signing mechanism allowed unauthorized access to private keys (the cryptographic credentials needed to authorize Bitcoin transfers)",
+              "Vulnerability impacted users running older and some current firmware versions of the device before the patch was released",
+              "Attack required physical or USB access to affected devices, though some reports suggest remote exploitation vectors may exist",
+              "Total losses confirmed exceed $50 million across identified compromised wallets"
+            ]
+          },
+          {
+            "title": "Response and Remediation",
+            "points": [
+              "Coldcard released emergency firmware update to patch the vulnerability and recommended all users update immediately",
+              "Company is working with affected users to recover funds and investigating whether attackers exploited the vulnerability before the patch was disclosed",
+              "Hardware wallet industry peers are auditing their own code for similar issues following disclosure"
+            ]
+          },
+          {
+            "title": "Industry Impact",
+            "points": [
+              "Incident raises concerns about supply chain security and the security practices of hardware wallet manufacturers trusted to protect billions in crypto assets",
+              "Highlights ongoing tension between hardware wallets being 'air-gapped' (physically isolated from networks) for security versus firmware update delivery challenges",
+              "This is not the first security incident for Coldcard—previous vulnerabilities in 2023 and 2024 also required firmware patches"
+            ]
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "newsletter": "TLDR Crypto",
+      "subject": "Coldcard Exploit ⚠️, Agent Task Market 🤖, Crypto VC Firm Status📃",
+      "date": "2026-08-03T12:08:44+00:00",
+      "summary": {
+        "headlines": [
+          "Coldcard hardware wallet flaw drained 1,082 BTC ($70.2M) from 1,200 addresses via seed-generation vulnerability across Mk3/Mk4/Mk5 devices; maker Coinkite released emergency fixes and urged firmware updates.",
+          "Russia banned cryptocurrency mining across Moscow and parts of Kursk Oblast through end of 2032, citing 1 GW grid consumption risk despite broader regulatory push for mining legitimacy.",
+          "Taskmarket launched a USDC-prize competitive marketplace where AI agents submit work on open tasks with zero entry cost, addressing persistent memory, media generation, and revision processes.",
+          "Crypto VC participation collapsed to 150 active firms in July—lowest since November 2020 and 87% below the May 2022 peak of 1,177—as smaller funds exit and capital consolidates around institutional players.",
+          "Single Seoul equity order triggered $57-80M in liquidations on Hyperliquid's equity perps after SK Hynix share printed 29.96% below prior close, exposing TradeXYZ's 90%+ market concentration risk."
+        ],
+        "sections": [
+          {
+            "title": "Coldcard Security Vulnerability",
+            "points": [
+              "1,082 BTC ($70.2M) stolen from nearly 1,200 addresses due to seed-generation flaw affecting Coldcard Mk3 and later firmware versions (seed = unique private key starting point for a wallet).",
+              "Coinkite CEO suggested bug may have been discovered using AI-assisted code review, indicating new attack surface for hardware wallet manufacturers.",
+              "Emergency firmware updates released; Coinkite urges affected users to update, generate new seeds, and test with small transaction before moving all funds."
+            ]
+          },
+          {
+            "title": "Taskmarket: AI Agent Task Marketplace",
+            "points": [
+              "Competitive marketplace where AI agents compete on open tasks and earn USDC prizes judged by quality, with current challenges including Civilization I and GTA1 clones.",
+              "Daydreams published performance guide covering persistent worker roles with memory, strict brief-to-checklist conversion, real media generation over prose, three directed revision passes, and banking reusable skills.",
+              "Zero participation risk: entry is free and losing carries no cost, removing financial barriers to AI agent participation."
+            ]
+          },
+          {
+            "title": "Hyperliquid Equity Liquidation Cascade",
+            "points": [
+              "Single SK Hynix share printing 29.96% below prior close on Seoul pre-market fed TradeXYZ's Hyperliquid perpetual, triggering $57-80M in liquidations across ~960 long accounts on August 28.",
+              "TradeXYZ controls 90%+ of HIP-3 (Hyperliquid equity perps) open interest and 98% of builder-market volume; HIP-3 grew from 2% to 50% of total perp volume since January, reaching $98B in 30-day volume.",
+              "Incident attributed to TradFi data corruption rather than crypto oracle failure—all providers read same corrupted limit-order book, and TradeXYZ's onchain order book held steadier than external feed."
+            ]
+          },
+          {
+            "title": "Crypto VC Consolidation",
+            "points": [
+              "Active crypto VC firms dropped to 150 in July, lowest since November 2020 and 87% decline from May 2022 peak of 1,177 investors.",
+              "Contraction reflects exit of smaller funds, family offices, and angel syndicates that emerged during 2021-2022 bull cycle; larger institutional players like Dragonfly Capital (who closed $650M fund in February) continue deploying capital into infrastructure and real-world assets.",
+              "Dragonfly managing partner Haseeb Qureshi warned dedicated crypto VCs could lose relevance by 2030 as dominant platforms absorb users and liquidity."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Galaxy Research: Coldcard vulnerability analysis",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2F8C1zV1/1/0100019fc786bff0-1313b147-1572-4482-8039-85f2c907f6a2-000000/l09XZrXw_HNrUcgHhL5SwReRjQB5o2zmOOGrCjoVyK0=452"
+          },
+          {
+            "label": "Taskmarket: AI Agent marketplace launch",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2FtvyZAq/1/0100019fc786bff0-1313b147-1572-4482-8039-85f2c907f6a2-000000/Fs46UDEEyx63p8OQs_QzGcVeA9oIMa3hDa1wzIuB5zo=452"
+          },
+          {
+            "label": "Umia: Token launch protocol with CCAs",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2FrciNVY/1/0100019fc786bff0-1313b147-1572-4482-8039-85f2c907f6a2-000000/UCWpNwZOCFcXfR11iFdMUgdHCJIMEFxoBYDZGxMtP4I=452"
+          },
+          {
+            "label": "Hyperliquid equity market liquidation incident",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2FX2Wn3v/1/0100019fc786bff0-1313b147-1572-4482-8039-85f2c907f6a2-000000/iTh3Zy1daR6r8z2bZx8tH-tfZWXnimhMHu_YUkEJjiE=452"
+          },
+          {
+            "label": "The Defiant: Crypto VC firms fall to 150",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Fthedefiant.io%2Fnews%2Ftradfi-and-fintech%2Factive-crypto-vc-firms-fall-to-150-lowest-since-2020%3Futm_source=tldrcrypto/1/0100019fc786bff0-1313b147-1572-4482-8039-85f2c907f6a2-000000/O3qnREZzkdQHyJFWE9tCx71JBA4q16MZUiIXZrFFFoU=452"
+          }
+        ]
+      }
+    }
+  ]
+}
