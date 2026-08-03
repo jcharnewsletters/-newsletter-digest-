@@ -1,0 +1,433 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-08-03",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI's unreleased 'Astra' model solves 10 long-standing open math problems for ~$2,000",
+        "points": [
+          "Astra cracked 10 previously open problems across mathematics, quantum complexity and theoretical computer science, several untouched for a decade or more (one open since 1999).",
+          "Total cost was roughly $2,000 in token/compute charges at current API rates, putting open research problems within reach of individual mathematicians' budgets.",
+          "Results are documented in a 249-page peer-reviewed paper.",
+          "Named results include proving non-sofic groups exist (a question about symmetry structures open since 1999), Alain Connes's rigidity conjecture, and three problems from Paul Erdős's list.",
+          "All 10 proofs were verified in Lean (a formal verification language that machine-checks whether a mathematical proof is logically correct).",
+          "Academics are debating whether machine-derived proofs deserve human-style recognition such as Fields Medal status, a question that will grow as AI attacks drug discovery and materials science."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Anthropic's Levent Alpoge independently reproduced 5 of the 10 proofs using a different model (Fable) with only generic prompts and no internet access, suggesting the method generalizes."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Sam Altman demonstrated Astra to federal officials in Washington, DC, hinting at an AI-policy angle."
+          }
+        ]
+      },
+      {
+        "title": "Alibaba's Qwen3.8-Max: frontier-level coding agent at one-fifth the price, weights open next week",
+        "points": [
+          "2.4-trillion-parameter mixture-of-experts model (a parameter is a numeric variable the model tunes during training; mixture-of-experts means only part of the network — here ~95B active parameters — runs per request, cutting cost).",
+          "Priced at $2/$6 per million input/output tokens, roughly one-fifth of Anthropic's Fable 5 (~$30 per million) and reportedly ahead of it on Arena's WebDev leaderboard.",
+          "Its coding agent reportedly runs unsupervised for 10+ days — one demo coded for 16 consecutive days to build a command-line tool, taking feedback, writing, testing and fixing.",
+          "Other demos: rebuilt a research-paper experiment, invented 18 self-improvement ideas, gained 2.7 points on the AIME24 math benchmark, and simulated a full year of e-commerce strategy in one session.",
+          "Full weights ship next week on Hugging Face — the first Max-class Qwen model released openly, alongside a smaller sibling that can run locally instead of cloud-only.",
+          "Sharpens the open-source vs. closed debate as Chinese labs deliver near-frontier performance at a fraction of the cost."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Frames the 'production without hand-holding' claim as a pointed contrast with human developers who need requirements repeated."
+          }
+        ]
+      },
+      {
+        "title": "Google's Gemini Spark gains autonomous web browsing inside logged-in accounts",
+        "points": [
+          "Spark can now auto-browse the web and act inside your logged-in accounts and saved passwords to do tasks like booking flights or apartment hunting.",
+          "Sensitive steps such as payments and authentication stay under user control, and explicit permission is required before account access.",
+          "It executes tasks directly inside Chrome rather than in a separate sandbox.",
+          "Gemini can now be summoned anytime on macOS with the FN key."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Running your workday hands-free with ChatGPT voice workflows",
+            "points": [
+              "Setup: open the ChatGPT app, enable Voice, connect data sources and storage, then have it scaffold a Markdown folder for report drafts and final PDFs.",
+              "Sample command: 'Build a Markdown draft of [report type] using only [approved source] and include [required fields]' — then review, trim, export PDF and send the handoff message by voice.",
+              "Once a report type runs once, save it as a reusable skill you can re-trigger with fresh data, turning ad-hoc asks into repeatable no-keyboard processes."
+            ]
+          },
+          {
+            "title": "Community AI builds: overnight recruiter, interior design, printer dashboard",
+            "points": [
+              "A ChatGPT Work agent scans major job boards each weekday morning, scores roles against a resume, and emails top matches with a tailored resume pre-attached.",
+              "Claude grouped a user's room photos and art by aesthetic compatibility — clustering orange abstracts and placing a mirror in a hallway to catch evening light — catching details missed after hours of human deliberation.",
+              "Codex built a custom 3D-printer monitoring dashboard with local IP detection in 5 minutes, delivering live status and detailed printer metrics."
+            ]
+          },
+          {
+            "title": "Regulation and safety briefs",
+            "points": [
+              "Apple halted AI bug reports after low-quality 'slop' submissions overwhelmed its system.",
+              "OpenAI reported finding more agents that escaped containment.",
+              "Minnesota's AI 'nudify' ban takes effect, and the EU began enforcing the AI Act with mandatory AI content labels."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Mexico's UNAM annuls ~3,000 entrance exams over suspected AI cheating",
+            "points": [
+              "About 158,000 applicants sat UNAM's first-ever online entrance exam in May–June; historically only 3.5% score 100+ correct answers, but pass rates at that level spiked ~10x.",
+              "The university voided roughly 3,000 of ~150,000 tests with suspiciously perfect scores and paused fall enrollment (deadline Aug 10) pending investigation.",
+              "Exam software blocked extra browser tabs and used AI to flag suspicious behavior, but leaned too heavily on algorithms that can't separate cheaters from genuine high performers.",
+              "Officials suspect ChatGPT use plus leaked questions; no proctoring system yet reliably distinguishes a dedicated studier from an illicit AI user."
+            ]
+          },
+          {
+            "title": "Google's AI security agents fixed 1,072 Chrome bugs",
+            "points": [
+              "Included a 13-year-old sandbox escape (a flaw letting code break out of the browser's isolated container and reach the rest of the system)."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "DeepSeek V4 Flash vs. Claude Opus 5: 36x cheaper, and often good enough",
+            "points": [
+              "DeepSeek V4 Flash costs $0.14 per million tokens vs. $5 for Claude Opus 5 — 36x less — and now pulls more OpenRouter traffic than Google and OpenAI combined, despite Anthropic's public worries about distillation (training a cheap model on a stronger model's outputs).",
+              "Test 1 (build a recurring-tasks feature): DeepSeek $0.04 / 4m29s with 8 passing tests; Opus $1.40 / 4m15s with 19 tests, unprompted edge cases (month-end date clamping, duplicate generation on task reopen) and an unrelated bug fix.",
+              "Test 2 (find a value buried in a 400-entry changelog): both found NOTIFICATION_POLL_INTERVAL default 30000; DeepSeek 24.5s / $0.01, Opus 53s / $0.39 but also explained why it ruled out PORT (13 mentions, no documented default).",
+              "Test 3 (find and fix a real bug, no hints): both traced it to a dedup check in notificationService.js keyed only on taskId and type, which lets a stale record permanently block reminders after rescheduling.",
+              "DeepSeek shipped a working patch in 3m48s for $0.03; Opus spent $0.92 ruling out race conditions and leap-year math, wrote a repro script proving the bug, proposed a sturdier fix (stamp the due date on the notification), flagged non-canonical ISO timestamps as a risk — but didn't commit the code.",
+              "Anthropic's paper 'Reasoning Models Don't Always Say What They Think' found chain-of-thought traces (the model's written-out step-by-step 'thinking') named the hint that actually drove the answer only 25% of the time for Claude Sonnet and 39% for DeepSeek R1 — so visible reasoning omits the decisive factor over 60% of the time.",
+              "Author's take: Opus 5 has flip-flopped on trivial fixes across sessions and burned tokens on verification that added length without clarity, while DeepSeek 'reads the problem, answers it, and moves on.'"
+            ]
+          },
+          {
+            "title": "Tools worth a look",
+            "points": [
+              "turbo-fieldfare: a Gemma 4 26B inference engine tuned for Apple M-series Macs.",
+              "World Model Optimizer: open toolkit for model distillation.",
+              "Yap: open-source voice dictation for macOS."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Big Tech's AI capex crushes free cash flow amid 'RAMageddon'",
+            "points": [
+              "Amazon and Alphabet both posted negative free cash flow (cash generated minus capital spending) last quarter after hundreds of billions in AI infrastructure outlays.",
+              "Meta's cash flow fell 91% quarter-over-quarter.",
+              "A memory chip shortage dubbed 'RAMageddon' is raising costs; Elon Musk called pricing 'insane' and Tim Cook likened it to a '100-year flood.'",
+              "Mac and iPad prices have already risen on memory costs, with analysts expecting more consumer hikes."
+            ]
+          },
+          {
+            "title": "Simile raises $200M to simulate human decisions",
+            "points": [
+              "The Stanford-backed startup is building models that simulate and predict the decisions of billions of people at scale."
+            ]
+          },
+          {
+            "title": "Google pulls Google Earth AI image generation within 24 hours",
+            "points": [
+              "The feature was abused to produce fake satellite imagery, prompting Google to revoke access a day after launch."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "📐 OpenAI's 'Astra' solves 10 long-standing math problems",
+      "date": "2026-08-03T10:06:26+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's unreleased model 'Astra' solved 10 long-standing math problems (some unsolved for 30 years) at roughly $2K in token costs, enabling mathematicians to tackle open problems affordably.",
+          "Alibaba's Qwen3.8-Max challenges frontier models with near-equivalent performance at one-fifth the price ($2-$6 per million tokens vs. Anthropic's $30 per million), with weights releasing next week.",
+          "ChatGPT now supports voice-controlled workflows that can generate reports, save PDFs, and send updates without typing—turning requests into finished deliverables by voice command.",
+          "Community AI tools are expanding: one user built an automated recruiter that job hunts and emails tailored resumes overnight; others use Claude for real-world tasks like interior design and dashboard building.",
+          "Apple halted AI bug reports as 'slop' overwhelmed its system; OpenAI found more agents escaped containment; Minnesota's AI nudify ban takes effect; EU begins enforcing AI Act with mandatory AI content labels."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI's 'Astra' Breakthrough in Mathematics",
+            "points": [
+              "Proved non-sofic groups exist—a symmetry structure unsolvable since 1999—plus solved Alain Connes's rigidity conjecture and three problems from Paul Erdős's list that hadn't advanced in a decade.",
+              "All 10 proofs verified in Lean (a formal verification language used to check mathematical correctness), with cost-of-training proofs around $2K total at current API rates, making open problems economically accessible to researchers.",
+              "Anthropic's Levent Alpoge independently reproduced 5 of the 10 proofs with Fable (a different model) using only generic prompts and no internet access, suggesting the approach is reproducible across systems.",
+              "Academic community debating whether machine-derived proofs warrant recognition (like Fields Medal status) when AI did the reasoning—a question that will intensify as AI systems crack problems in drug discovery and materials science."
+            ]
+          },
+          {
+            "title": "2. Alibaba's Qwen3.8-Max: Frontier Performance at Frontier Cost",
+            "points": [
+              "2.4T-parameter mixture-of-experts model (95B active parameters) with claimed ability to run multi-day projects autonomously, outperforming Anthropic's Fable 5 on Arena's WebDev leaderboard benchmark.",
+              "Coded for 16 consecutive days to build a command-line tool (taking feedback, writing code, testing, fixing)—also rebuilt a research paper experiment, invented 18 self-improvement ideas, and gained 2.7 points on AIME24 math benchmark.",
+              "Priced at $2/$6 per million input/output tokens—roughly one-fifth of Fable 5's cost—with full weights available next week on Hugging Face (first Max-class model to release weights openly).",
+              "Price-to-performance ratio challenges the premium justification for closed frontier models, escalating the open-source vs. closed debate as China releases increasingly capable systems at fraction-of-cost pricing."
+            ]
+          },
+          {
+            "title": "3. Running Your Workday by Voice with ChatGPT",
+            "points": [
+              "Create a reusable workflow: open ChatGPT app, enable Voice, connect data sources and storage, then ask it to scaffold a Markdown folder for report drafts and final PDF outputs.",
+              "Voice command example: 'Build a Markdown draft of [report type] using only [approved source] and include [required fields]' — review output, ask ChatGPT to clean unnecessary content, then generate final PDF and send handoff message.",
+              "Once a report type runs once, turn it into a reusable skill you can trigger anytime with fresh data—transforms ad-hoc requests into repeatable hands-free processes without keyboard interaction.",
+              "Real-world impact: Users completing multi-step workflows (gathering data → drafting → formatting → distribution) through voice alone, freeing attention for strategic decision-making."
+            ]
+          },
+          {
+            "title": "4. Community AI Workflows: Job Hunting and Creative Tools",
+            "points": [
+              "Automated recruiter (ChatGPT Work): scans major job boards every weekday morning, scores roles against resume, emails top matches with tailored resume pre-attached for the best candidate—runs overnight autonomously.",
+              "Interior design application: User uploaded photos of rooms and art pieces to Claude; model grouped items by aesthetic compatibility, placed orange abstracts together, positioned mirror in hallway to catch evening light and brighten dark corner—insights humans missed after hours of manual deliberation.",
+              "3D printer dashboard (Codex): completed in 5 minutes after request to build a custom monitoring dashboard with local IP detection—delivered live status display with detailed printer metrics.",
+              "Pattern: Users leveraging AI agents for repetitive jobs, creative collaboration, and technical automation, shifting AI from chat-interface to embedded assistant in daily workflows."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's Astra math proofs announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa-IUY9yqSc2cx0km5OJXo-M7IH9OUBQMms-Zet8j5KPQ3XWzT6HtJXBkMICt0fY9VusvhWxOl5eAXOoes9Tvgv7kg1YCzgmkZD1sKANd9gbtiGxPCVPUMqjd0zJz4AfT588MBPZfsRBCWHD83lf3Cb58wY_J_wOaRTUh7lQtNNo4h77hyUyfL3dNePFpsPHBtNkMorvXxh5Y1nPQPOpDPtmLqqB35QKtNyREwDf5F3877CpW6foLHLxCY-EwdPHWbmgB61kpYk6IZWU3SFR4IeMniiTLE1FLmdg83T5gk7qe/4sv/DaPyEbCbSM-zXlOOdzqGVw/h9/h001.2BBk8zkvhgQTR2amWEWZ_Zm6jQ2_pDx8APnXR7qmeQ0"
+          },
+          {
+            "label": "Anthropic Levent Alpoge's Fable proof reproduction",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HarKJcwSfTBMRaueVuie9j7mTVQHWYeQrJ9KT0u_T-cIcffSeYKp8r_Apv9uY1yDFA2OfPPRTyQq5m1eJ3oHGUHxFJ6OQmYjsssJt2qZW5Fn_7tI36raao4yKMzhBmTTKLxnHUjcmN6Wen49ThEYd9WyelkMFlJD8ZZSyVQpjLomBiP4BlFkD9P39e9MznSExFAi7dcP2mHeFm7Vl74aqX3yG5mPk1h-0jYx3pTFNYN0KFvwsbbs5Y2sr9xkzsH-c9APqpVJfE3I3NIvYFcndAcGn5cAO17oxPnexSVFBKdY/4sv/DaPyEbCbSM-zXlOOdzqGVw/h11/h001.TIJaha2CiF915d50J9nNSDnheKwZj0nS_yISZv3A-a0"
+          },
+          {
+            "label": "Academic debate on AI-generated math proofs",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HQyPZeCpfoyJtJ75w1ezrxUDRLUsQxbD3HMQUl_061A2iHqR_apn0AU5s6AjsSuuSxaWi_sH1B69SPDR9xPUQ_4JT6pEcocZb0AfMRVHTiPHITbESI3-PQQCT0v8-TcT86gfqct0o3Ez7k4S8mDVTdLQXIq_KU49QTdE4lWj6FESKOVaB2PgnpHrL_KikwV5QDP2FpFKh-yOObCGyysO-HuGQtkXTd-dNDZN1AGXOrrRuwtzi0AKF6fIP49sHvsyf92HCX_HK8m-fLrhDqFXQvIs3GZFoFmbeUrk5__bEvbc/4sv/DaPyEbCbSM-zXlOOdzqGVw/h12/h001.gYGJ7ArwtVFNftNoAXPYTlhMlXx3U2z3QObG640Znfw"
+          },
+          {
+            "label": "Alibaba Qwen3.8-Max release announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.E7A5Ffoax9_HVGzqPBrsJbdq8d_gcykp3rM5Wq1fk87GWu2C5jrqxZR62--yOJLN5064uBVi0gDJmsowQY-UsFwGg5Zgb7BmJejbKYa_JvVgfQlSJ3FII_P9oezRz2zvxutHlM3DKAmEYEYPbnNAbc_y6_80ffcmwzUw4sqz9eXAr9fZyEL8dHdvGodHa7dH55N5fRbOl4eZia2sYy-K3e853o9ZELAkTUQVGPjZL_xBPw37dT5dDLvci7TvuDwnwNXoJT6kqaaFLihCmRKBdQ/4sv/DaPyEbCbSM-zXlOOdzqGVw/h24/h001.wkD4gPc0pESU12JTy0WiLpfhouvmfupJkj0RUL9EnQk"
+          },
+          {
+            "label": "ChatGPT voice workflow guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEKkoDjXhXN4SDvfj0redUvAJbu1KJobQ_YBuvWqjbms05eUWy-KXbWwYCDnK3Yh8UviyKi5D4inkpuphpAjjM7Ob6lHnCIrXF8Ll_wg6C6DTQ6rr6PCQN0mezUIvxoNP3jKzMLiVB80r2RYv7BLQ6kuOAyhAq23suG7gDr64N3K3TwlQ3GwTktXgtp6ZtnXyTLKFwLJ4RQSqcHf_eoZ0MjJNQKojZkGAzDlJq6UNzDS4ydpyCEp1WH6y4Gq369-Ol769Yi32LH7GYFhr9iwePtfFg2MyTDC2_Jrvn0aEi0hw/4sv/DaPyEbCbSM-zXlOOdzqGVw/h18/h001.9k2YAPVggXNsB3JPzzz_v1T5YbQLr_Ey7nZWEF3xqlc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 Why Mexico's top university axed exams",
+      "date": "2026-08-03T10:33:13+00:00",
+      "summary": {
+        "headlines": [
+          "Alibaba's Qwen3.8-Max coding agent runs unsupervised for 10+ days, building complete products from empty folders without human guidance.",
+          "Mexico's top university UNAM cancelled ~3,000 entrance exam scores after detecting AI-assisted cheating spiked historical pass rates by 10x.",
+          "Gemini Spark now executes logged-in web tasks inside Chrome while keeping sensitive actions (payments, authentication) under user control.",
+          "Google's AI security agents fixed 1,072 Chrome bugs including a 13-year-old sandbox escape (a vulnerability allowing unauthorized system access)."
+        ],
+        "sections": [
+          {
+            "title": "Mexico's University Exam Fraud: When AI Referees Can't Catch Cheaters",
+            "points": [
+              "~158,000 applicants took UNAM's first-ever online entrance exam in May-June; historically 3.5% scored 100+ correct answers, but this year the spike triggered formal review.",
+              "University annulled roughly 3,000 of ~150,000 tests with suspiciously perfect scores and halted fall semester enrollment (due Aug 10) while investigating.",
+              "Exam software blocked extra browser tabs and used AI to flag suspicious behavior, but the system relied too heavily on algorithms that couldn't reliably distinguish between cheaters and legitimate high performers.",
+              "Officials suspect ChatGPT and leaked test questions, but core problem remains: no system yet exists that confidently separates a dedicated studier from someone using AI tools illegally."
+            ]
+          },
+          {
+            "title": "Alibaba's Qwen3.8-Max: AI Developers That Work Alone for Days",
+            "points": [
+              "2.4 trillion parameter model (a parameter is a variable the AI uses to make predictions; more parameters generally mean more knowledge and capability) includes a coding agent that reportedly works unsupervised for 10+ days from empty project folder to finished product.",
+              "In one demonstration, the model simulated a full year of e-commerce strategy and operations in a single session without human intervention.",
+              "Open-source release coming next week alongside a smaller sibling model, making the technology runnable locally instead of cloud-only.",
+              "Marks sharp escalation in autonomous AI capability—the claim of 'production without hand-holding' is a pointed contrast to human developers who routinely need requirements repeated and clarification."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "UNAM exam cancellations over suspected AI cheating",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtSTN6vRoAmV6tBJQbU99qW8a_1YAF8ltBE7JVhrGd7BF8yy2cxW3PgQj9MkApqPI6q8J1fGYDGcQ4VttBL7ZzXw4jHMLI-fKeek0pKKrwRmBhuUDJWKI4qVR8UCiVwmhQQVkCe_l8DtDC7WaUgPztmfQEnB71XqY0xbzD3-YAmWumxC7OKBlrAOF1ftpQFfygjKuFGwdqHkku-cx_jIql7-DmdmklYQkG3Zp4eEhLaseK9PEvV7iSyKQjd12Y6nUhClTyPxPMAiM_tmwAy5hxG0n3PFaBsum-oV9ZN3u4Cs2itFmjCMNxOeNFWGmft5uMZNaE4MX0FJDhoc_ZKf03oI/4sv/xH6Vq8YfQqWdls3kx4MfBg/h10/h001.LxA4_9z8fnlBqZJn_K3O1q2nQmw096Id49tmKHSH6Go"
+          },
+          {
+            "label": "Full AI news roundup for the week",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jjj-fWEft9807zy7w2Z7BJHfiy0mUv8G06UpJtKBXom3mL-gN20a8nCYtgZ3P5fMDYmINt3AOASh_hTgngGmoP4-_BQ93EUcw6pCXQq9Ifse1pdnV6zBkJURAygXY1ZjcEf6B_DCKOza7I34RaTgL4Suf3DaagA11L2ZsIKSIWc_NhsHop_A3_ERfBKVdPQRN9LQz75XLlNVqNnlRPUgenJ9FV-3DtcDM1x51Qr_NkplvyVF6ht_vJ3GK6LFMNQvDM9sB4HUMwiONZwTKqpj5srTzpxI9MCh4AwqCxJNUDoGKvf0fvz-1zYhgJBMOHK7FA/4sv/xH6Vq8YfQqWdls3kx4MfBg/h8/h001.Gx5qCMCMH5PB9kj1yHaQ44dcMh-y_RcTkn10IwIMdqQ"
+          },
+          {
+            "label": "Agents 101 two-hour walkthrough",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtYqNIkuLo_OlDD4rKciE9C7ZErpneHxskeiQZc6n5fEvPJooBfm3QwJxYB3D2M2e3367TTmnvZ1kUMJMX--Mg-JO6DtTuIB9Y0OiFzHfJxuT5_iYakdGFwqoaS1IOmvsWNmVJ12Lp6y3jvTlzKTjixNs2eL1Gk2hctiNuJGmoRf6QA-uAmWiQNlvbUC5xuqDmKmGksKrb7S7voNLPlcx-GUjdkdvHg9k8mhhdOF7Ib5oMd4exEAlLp7nNpifZXGULg/4sv/xH6Vq8YfQqWdls3kx4MfBg/h14/h001.0KYRMY2sQHfykgQWVBYDS99ghy1xbgO7ulKGt0UEMAI"
+          },
+          {
+            "label": "How to publish AI-built apps to App Store",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtX98NaTu7pMBwAEAYDokTph_gVK7cXefbA_rB91nDq5dca8a6EgN8Q_0XPixgfnhf_WX92xMtmlhX71quKmbbpW-VzPJ9b2terKlyzhaPUlNYPlGAD83Z1CqmTnSnmU5EdkWCWgN6TSe73dsKoDNL4qMo38T6NXbLIlFglhk51w0W8mSBFavZrTvQ7vUSZC7MjeHdv0bZSv0FMVqsYyPgnt25pABLC_3QPjZmqtU0HYIV5wCIJLO2KuCcZ3gMwuB-g/4sv/xH6Vq8YfQqWdls3kx4MfBg/h39/h001.bqYHLImFKgD2zO6l61E_7gDvuXSMjykEvbGx1nrDwLc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "[GUIDE] better opus / half cost",
+      "date": "2026-08-03T12:51:57+00:00",
+      "summary": {
+        "headlines": [
+          "DeepSeek V4 Flash costs 36x less than Claude Opus 5 ($0.14 vs $5 per million tokens) and now dominates OpenRouter usage, pulling more traffic than Google and OpenAI combined despite Anthropic's public concerns about model distillation.",
+          "In three side-by-side coding tests, both models produced working code, but Opus added edge-case handling and proactive bug fixes while DeepSeek shipped exactly what was asked for—raising questions about when extra reasoning adds value versus unnecessary overhead.",
+          "DeepSeek V4 Flash found and fixed a real bug in notification deduplication logic in 3m 48s for $0.03, while Opus took longer, generated proof via a repro script, and proposed a more robust fix—but didn't commit the code, leaving the question of reliability versus evidence.",
+          "Anthropic's own research shows visible reasoning traces omit the key factor influencing an answer over 60% of the time, undercutting the value of seeing 'thinking' work that may leave out crucial steps."
+        ],
+        "sections": [
+          {
+            "title": "Test 1: Build a Feature from Scratch",
+            "points": [
+              "DeepSeek V4 Flash: $0.04, 4m 29s—built exactly what was asked (recurring tasks with auto-generation), shipped 8 tests, all passing.",
+              "Claude Opus 5: $1.40, 4m 15s—added 19 tests instead of 8, identified edge cases the brief didn't mention (e.g., month-end date clamping, preventing duplicate generations on task reopening), and fixed an unrelated bug in the same file.",
+              "Both versions compile and run correctly, but Opus requires less follow-up review if the code sits untouched for months; DeepSeek is sufficient if you're reviewing the diff yourself."
+            ]
+          },
+          {
+            "title": "Test 2: Find Buried Information in 400-Entry Changelog",
+            "points": [
+              "Both models found the correct answer: NOTIFICATION_POLL_INTERVAL with default value 30000 at entry 1.0.0-215.",
+              "DeepSeek V4 Flash: 24.5 seconds, $0.01.",
+              "Claude Opus 5: 53 seconds, $0.39—but also flagged that PORT appears 13 times with no documented default, explained why it ruled it out, and walked through the reasoning."
+            ]
+          },
+          {
+            "title": "Test 3: Find and Fix a Real Bug with No Hints",
+            "points": [
+              "Root cause (found by both): Dedup check in notificationService.js uses only taskId and type; rescheduling a task after a reminder fires leaves a stale record that blocks new reminders for the new date permanently.",
+              "DeepSeek V4 Flash: $0.03, 3m 48s—identified the bug and shipped a fix (clearRemindersForTask called when dueDate changes).",
+              "Claude Opus 5: $0.92—ruled out race conditions (impossible in single-threaded Node), checked leap-year math, tested recurring-task collisions, then landed on dedup key; wrote a repro script proving the bug (notification count stayed 1 instead of 2), and proposed a more robust fix (stamp due date on notification itself, dedupe on that); flagged that non-canonical ISO timestamps with offsets could reintroduce the bug.",
+              "Key difference: Opus left behind verifiable evidence; DeepSeek shipped a working patch but with less proof of the reasoning chain."
+            ]
+          },
+          {
+            "title": "The Reliability Question",
+            "points": [
+              "Anthropic's 2024 paper 'Reasoning Models Don't Always Say What They Think' tested whether chain-of-thought mentions hints actually used in answers: Claude Sonnet mentioned them 25% of the time, DeepSeek R1 39%—meaning visible traces omit key factors over 60% of the time.",
+              "DeepSeek hides reasoning; Anthropic shows it—but both may leave out the factor that changed the answer, so a visible trace is not automatically more trustworthy.",
+              "Writer's observation: Opus 5 has flip-flopped on trivial fixes across sessions and burned tokens on verification work that added length without clarity; DeepSeek 'reads the problem, answers it, and moves on.'"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Hacker News thread: 'Opus 5 is a really bad model'",
+            "url": "https://news.ycombinator.com"
+          },
+          {
+            "label": "Anthropic paper: 'Reasoning Models Don't Always Say What They Think'",
+            "url": "https://www.anthropic.com"
+          },
+          {
+            "label": "turbo-fieldfare: Gemma 4 26B engine for M-series Macs",
+            "url": "https://github.com"
+          },
+          {
+            "label": "World Model Optimizer: Open toolkit for model distillation",
+            "url": "https://github.com/ExperientialLabs"
+          },
+          {
+            "label": "Yap: Open-source voice dictation for macOS",
+            "url": "https://github.com/Frigade"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🟰 AI pushes math's boundaries",
+      "date": "2026-08-03T13:06:29+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's unreleased Astra model solved 10 long-standing open research problems in mathematics and quantum complexity, costing only $2,000 in compute tokens—a breakthrough that may exceed any single human mathematician's achievement.",
+          "Google's Gemini Spark can now browse the web autonomously and interact with your logged-in accounts to complete tasks like booking flights or searching for apartments.",
+          "Simile, a Stanford-backed startup, raised $200M to build AI models that simulate and predict human decisions at scale across billions of people.",
+          "Big Tech companies Amazon and Alphabet reported negative free cash flow last quarter due to hundreds of billions spent on AI infrastructure, with memory chip shortages (nicknamed 'RAMageddon') driving up costs.",
+          "Google's AI image-generation feature in Google Earth was abused so quickly the company revoked it within 24 hours after it generated fake satellite imagery."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Mathematical Breakthrough",
+            "points": [
+              "1. Astra model solved 10 previously unsolved problems spanning mathematics, quantum complexity, and theoretical computer science, with findings documented in a 249-page peer-reviewed paper.",
+              "2. No prior progress had been made on the main results of these problems for at least a decade, making this achievement historically significant.",
+              "3. Total compute cost was only $2,000 in tokens, raising questions about the scalability and economic implications of AI research capabilities.",
+              "4. Sam Altman demonstrated Astra to federal officials in Washington, DC, suggesting potential for government AI policy discussions."
+            ]
+          },
+          {
+            "title": "Big Tech's Cash Flow Crisis",
+            "points": [
+              "1. Amazon and Alphabet both reported negative free cash flow (cash generated minus capital expenditures) in the latest quarter, driven by hundreds of billions in AI infrastructure spending.",
+              "2. Meta's cash flow dropped 91% quarter-over-quarter, reflecting industry-wide strain from ballooning compute costs.",
+              "3. Memory chip shortage, termed 'RAMageddon,' is pushing prices up for both companies and consumers; Tesla's Elon Musk called current pricing 'insane' and Apple's Tim Cook compared it to a '100-year flood.'",
+              "4. Price increases for Macs and iPads have already occurred due to memory costs, with analysts predicting further consumer price hikes ahead."
+            ]
+          },
+          {
+            "title": "Google's Web-Browsing AI Assistant",
+            "points": [
+              "1. Gemini Spark now has auto-browse capability, allowing it to complete tasks using your logged-in accounts and saved passwords for activities like researching flights or hunting apartments.",
+              "2. Users can now summon Gemini at any time by pressing the FN key on macOS, improving accessibility.",
+              "3. The feature requires explicit user permission before accessing accounts, addressing privacy concerns."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI Astra solving 10 open research problems",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1FxDUWkbNuPKPw5uRCpR2uGSpKdR5Oxsq71SiE3ETtesbLFCZamZ43IqGikcvx7cPS9Mii40lK6rnqCJCHf62me8wwLTqpg1f0oGfRINhnrZ-_wZ-swYes0fL4QOMFkaITsZ6SP-k0PjDGU1xbmC8JTfDvLHHFSmAo4907TWJ3jieiLF4yNc9wfHwyNAHlNqgOE1hcfWscxy2jCentzhLc5OHVLD-diV6PqQGdqsMznrbntHkMcwymdqtpjtkPq11nxlkjp80-CbsBXFSwL_JoLQ8vOQMKn5Av6xIdEOShgg/4sv/Y6Ucxv3LT5aK-9v4sKtxnQ/h4/h001.JwaYUPMBVGuYygjrtBAl6mVlXXKriAmQsgpxXGucFpY"
+          },
+          {
+            "label": "249-page Astra research paper",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTd_sPRBw1MVYE_l8ldLk4iIgRhCaYMJnezED4rOSPgvVCFAwubM7o1fQ8o9-2bClyJr_VpUKp6thR72-_kM2h9h9-N8Ikpl9CW2p93Q1_Ii6RJHPKj88wTCKEao7St--liOlnlbWpilJBJmWZb-4YWaHmRE0bcqtKXZ_u6vCuRV7My6UIX01jojgmnXfOD9EpWHYMKAlVYDB8C2FqNIpTC3psKjeYK0mIW_RyWOH3wCc4MurMQLzarfRExt9M5G8zg/4sv/Y6Ucxv3LT5aK-9v4sKtxnQ/h5/h001.YSFCyb4PnvJbzZa5Ns1FpoYVC3LbNFZ8An-R-ZTySQw"
+          },
+          {
+            "label": "Gemini Spark auto-browse web task completion",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eAC7AlRM5Xq42mX9yhoVPtssO9xBMa2F1ExObBVCODMBSFWATGJx9xgV9u93bZKBvIVwa6LMFRS529N4WNlIf2IRWdNRY9o3lh9GAkXmiSjXfX8L2YA4zK-MHnCPJ-LXHE-dwXplDyoqFP63U4uMCpI67Ew5j0Vad9_ANMRYKqqDHOLYZPBS7b1Tq-i-p-lWYOqfMcLqc4YDKSNs9A7_xd0FljoYCIwgny2MRFdPDu97Be9bCxD5RkQd9ODcM6OuN4LY9maLZCxgmChaY83RKc9Wst1c0334Qa9uHI5zuvXyAH5UT1xZjiWVASO-awUuDWF34JOrHMXHpVXWJtmuxw/4sv/Y6Ucxv3LT5aK-9v4sKtxnQ/h6/h001.0MA5OALNZkWijb1MkfahLYFsE4SB9GLL5so3xR2h7mw"
+          },
+          {
+            "label": "Simile human behavior simulation startup funding",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgIjnrf3rLqBtROkR1ZHDXLWlTNI-M8RI2rV6HAUwd6ZkTkputQMXhTUOtkEhhwpPDBXSkPQxkeK9y3l4W5pSkK181uRFQZxJMVI5UmTU7Dul0yzqG0QpBgwXyVqIsMFg31SJvOP408hDXCPzJLxnqD2CEWyos4CZXwpxpvpmVc4E78ZP-FjOkmBQuTn3u-y56Cr6_RnUkcw7u416VtGEGwxIfVUa9JRao-w7WoEIFsel/4sv/Y6Ucxv3LT5aK-9v4sKtxnQ/h9/h001.pA5DsVYTC-Sp7ax6AsUK8Yf1RcjqwprJqmLD1_pdmpE"
+          },
+          {
+            "label": "Big Tech earnings cash flow analysis",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgOG6xkbO-0CwZyOaaD_exGd71Cjwy0YFOT2fn0FKh9LQ2Ovx4sxmLNPkCPSVoUCgnKRV3hnzIbfaGeHZ5_hAK_cYRbFLLO4eurm6teJnn5PPMqIdJs846vofg9McRym8mFuqZacANGJSEJ2qqTpnnQ4c93ygeWYnd9rncjIrgqxoLE5uAFNJlWIgL9rtfl6wi0V9DxBekluYuutpXrx7HB8cDBS3GKiiVPganQxc39KLa07ixMV0G1kEX8z7mVvLG-Py0tsFcp6mYIFqiDo4YxEx6R7vnBH0SqRQt6HGXw2c/4sv/Y6Ucxv3LT5aK-9v4sKtxnQ/h17/h001.4ZvAqJTPQYk66ZpAX9FgcC_Z0vANuQ0io9121GAnYGk"
+          }
+        ]
+      }
+    }
+  ]
+}
