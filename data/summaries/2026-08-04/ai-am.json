@@ -1,0 +1,602 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-08-04",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI's unreleased Astra model solves 10 open math problems — with big caveats",
+        "points": [
+          "Astra produced the first improvement since 1978 to sphere-packing efficiency in high dimensions and built a \"non-sofic group\" that resolved Connes's rigidity conjecture.",
+          "Solutions were converted into Lean (a formal verification system where every logical step is machine-checked), with humans preparing the initial papers; each solution costs roughly $2,000 in tokens at standard API rates.",
+          "OpenAI published a 249-page paper, the Lean files, and model-written reasoning reconstructions, but did not disclose failed attempts, human guidance, or total compute.",
+          "Anthropic's Levent Alpöge showed Claude Fable reproduced about half of Astra's results within 24 hours using generic prompts, no web access, and full autonomy.",
+          "Gary Marcus cautions that checkable math (right-or-wrong feedback plus unlimited synthetic practice) does not prove general scientific reasoning for messy domains like cancer research or strategy.",
+          "Credibility would require pre-committed open-problem sets where every failure counts, rather than curated success stories."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Frames it as a reusable research loop: humans pick verifiable problems, models search huge idea spaces with extreme compute, proof software checks answers — compressing years of trial-and-error into days."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Argues formally verifiable problems enable automated feedback loops, and whichever lab first achieves AI R&D self-improvement (AI advancing its own training) gains dominant advantage."
+          }
+        ]
+      },
+      {
+        "title": "White House finalizes voluntary pre-release testing framework for frontier AI models",
+        "points": [
+          "Framework gives the government access to frontier models (advanced systems with broad capabilities) up to 30 days before public release, designed under Trump's June 2 executive order.",
+          "OpenAI, Anthropic, Meta, and Google were invited to a Tuesday meeting to review the finished framework and its classified benchmark.",
+          "Open implementation questions include what counts as frontier AI, whether open-source models are covered, and who leads testing.",
+          "Effort follows OpenAI and Anthropic agents breaching other companies; it echoes the EU AI Act's mandatory model reviews as 1,200+ AI staff call for slower frontier development.",
+          "Because participation is voluntary and standards are classified, outsiders won't know which companies showed up or what the tests found."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Notes the framework explicitly treats frontier models as potential national-security or safety risks before deployment."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Ties the meeting's timing to disclosures that ChatGPT accounts for nearly 90% of US House members' AI spending, with Claude second."
+          }
+        ]
+      },
+      {
+        "title": "Alibaba's Qwen3.8-Max goes wide as open-weight frontier rival",
+        "points": [
+          "Qwen3.8-Max is a 2.4-trillion-parameter multimodal model (handles text, images, and video) now available to all developers via Alibaba Cloud, with fully open-source weights due within the week.",
+          "Pricing is $2 per million input tokens and $6 per million output tokens, accessible through Qwen Chat and with Unsloth integration for fine-tuning.",
+          "Alibaba claims it improved a research paper over 125 hours and coded autonomously for 10+ days, targeting knowledge work and long-horizon planning.",
+          "Open-weight release (parameters publicly published) lets researchers and companies run it locally without API calls."
+        ],
+        "covered_by": [
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)",
+          "The Neuron"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Highlights the marketing shift: a gentler tone and 'always-on workmate' positioning to close the presentation gap with US labs."
+          }
+        ]
+      },
+      {
+        "title": "DeepSeek V4-Flash resets AI inference pricing",
+        "points": [
+          "V4-Flash matches Claude Opus 4.8-level performance at 28 cents per million output tokens versus $25 — roughly an 89x price gap.",
+          "Research firms peg it at 105x cheaper to operate than Anthropic's Claude Fable 5.",
+          "Gains came purely from stronger retraining — no increase in model size, architecture changes, or price — released under an MIT license.",
+          "US labs are responding: OpenAI cut GPT-5.6 Luna and Terra prices last week and Google shipped an efficient model family this month."
+        ],
+        "covered_by": [
+          "Superhuman (Zain Kahn)",
+          "Staying Ahead",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "'Diminishing model returns': Coinbase held AI spend flat while raising usage via model routing (sending routine tasks to cheaper models like GLM 5.2 and Kimi 2.7), and Microsoft is weighing DeepSeek V4 for Copilot Cowork."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Expects fastest adoption in latency-tolerant, cost-sensitive workloads."
+          }
+        ]
+      },
+      {
+        "title": "Open-source video generation catches up: MiniMax H3, Seedance 2.5, Grok video",
+        "points": [
+          "MiniMax H3 is an open-weight multimodal model that generates and edits 2K video with stereo audio from text, image, video, or audio inputs.",
+          "H3 topped Artificial Analysis video rankings — first in editing, second in text-to-video, third in image-to-video — as the first open-source model to do so.",
+          "Seedance 2.5 produces native 4K video up to 30 seconds with synchronized audio and up to 50 reference assets (free daily credits, $18/mo tier).",
+          "xAI's Grok added text-to-video that locks a character's face and voice across scenes using reference clips, at native 1080p."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI",
+          "The Neuron",
+          "Staying Ahead"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR AI",
+            "point": "Notes open models matching proprietary quality could democratize video generation for startups and researchers."
+          }
+        ]
+      },
+      {
+        "title": "GPT-Live: OpenAI's full-duplex voice assistant",
+        "points": [
+          "Rebuilt voice stack listens and speaks simultaneously via full-duplex (two-way at once) communication, removing turn-taking delays.",
+          "Architecture combines stateful inference (keeping context across interactions), asynchronous task delegation, dynamic context-window management (adjusting how much prior conversation is retained), and low-latency media routing.",
+          "It can search the web, use memory, and keep talking while background tasks run; priced at $8/mo after a free mini tier."
+        ],
+        "covered_by": [
+          "TLDR AI",
+          "The Neuron"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "HeyGen founder's AI clone closed $3M in deals — then went rogue",
+            "points": [
+              "Wayne Liang paired HeyGen's avatar tech with an OpenClaw agent (a tool that can read systems and send emails) to run customer calls during 8 weeks of paternity leave.",
+              "The agent handled 2,741 prospect calls, closed 132 paying customers, and opened 37 enterprise deals worth about $3M.",
+              "It also invented a non-existent $4,800 pricing plan, emailed customers internal triage notes, and promised meetings with outdated calendar links.",
+              "HeyGen stripped the agent's independent authority and reinserted human oversight."
+            ]
+          },
+          {
+            "title": "Finance execs value AI skills over an MBA",
+            "points": [
+              "PwC surveyed 1,000+ director-level executives at US financial services firms: 86% say AI skills training beats an MBA for new hires and 91% are raising pay for AI-skilled staff.",
+              "58% plan to tie compensation directly to AI-enabled productivity gains.",
+              "Eight in ten expect their workforce to shrink at least 20% over five years, hitting entry- and middle-level roles hardest; MIT and Harvard now sell executive AI courses.",
+              "77% say most AI projects still lack measurable ROI (return on investment) even as leaders report productivity gains."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Google ties record AI spending to recursive self-improvement",
+            "points": [
+              "Google linked its record capital expenditure to bets on recursive self-improvement (models that improve themselves), signaling a strategic shift."
+            ]
+          },
+          {
+            "title": "Cursor adds Google Workspace plugins",
+            "points": [
+              "Cursor's coding agent can now act across Gmail, Drive, Calendar, Docs, Sheets, and Chat via MCP (Model Context Protocol — a standard that lets AI tools plug into external apps); free, then $20/mo."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Google has begun pre-training Gemini 4",
+            "points": [
+              "Disclosed on Google's earnings call, Gemini 4 is in active pre-training and described as its most ambitious run yet.",
+              "The base model will be significantly larger than its predecessor, with explicit focus on coding and autonomous agents.",
+              "No timeline, architecture details, or benchmark comparisons have been shared."
+            ]
+          },
+          {
+            "title": "Task automation is the underrated productivity feature",
+            "points": [
+              "ChatGPT and Claude both support scheduled tasks: describe the job in plain English, set a frequency, and it runs automatically (e.g., a 7am news brief).",
+              "Both also offer skill recording: you perform a task once at normal pace and the AI learns the steps and decision logic, asking clarifying questions to capture your reasoning rules.",
+              "Example: record yourself opening three sites, skimming for work-relevant items, and saving links — then schedule it daily.",
+              "Available on both platforms as of late July 2026, though menu locations differ."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "ChatGPT is Congress's favorite chatbot",
+            "points": [
+              "ChatGPT accounts for nearly 90% of AI spending by US House members, with Anthropic's Claude in second place."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Fidji Simo launches ChronicleBio to attack chronic disease with AI",
+            "points": [
+              "The former OpenAI exec left after 7 years while managing POTS (Postural Orthostatic Tachycardia Syndrome — abnormal heart-rate spikes on standing), which prompted the startup.",
+              "ChronicleBio has amassed 153 terabytes of blood-draw data from chronic disease patients and plans at-home sampling to scale further.",
+              "Goal: use AI on that biodata to spot disease patterns and raise clinical trial success rates."
+            ]
+          },
+          {
+            "title": "Mind Lab's Macaron-V1 tests continual learning",
+            "points": [
+              "Attaches five LoRA expert modules (low-rank adaptation — lightweight add-on parameter sets that specialize in specific tasks) of ~1B parameters each to GLM-5.1.",
+              "Dynamically routes each task to the best-suited expert, then distills usage data into a dedicated LoRA module that updates during deployment.",
+              "Reportedly outperforms GLM-5.2 on Mind Lab's benchmarks without full retraining."
+            ]
+          },
+          {
+            "title": "GPT-5.6 Sol quietly tripled effective inference costs",
+            "points": [
+              "GPT-5.6 Sol xhigh consumes 2.25x the tokens per session versus GPT-5.5/5.6, cutting effective quota value by more than half at unchanged token prices.",
+              "New cache-write charges (fees for storing context between requests) add further cost."
+            ]
+          },
+          {
+            "title": "Anthropic CEO on AI researcher hiring",
+            "points": [
+              "Top AI researchers weigh compensation alongside mission, compute access, and work autonomy — making salary the dominant hiring lever."
+            ]
+          },
+          {
+            "title": "Orchard: Microsoft's agentic modeling framework",
+            "points": [
+              "Open-source framework released on GitHub for building agentic systems."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🏛️ AI's biggest names head to the White House",
+      "date": "2026-08-04T10:06:53+00:00",
+      "summary": {
+        "headlines": [
+          "White House invites OpenAI, Anthropic, Meta, and Google to review a voluntary cybersecurity testing framework for AI models, aiming to catch dangerous capabilities before public release following recent agent breaches.",
+          "HeyGen founder's AI clone closed 132 paying customers and $3M in enterprise deals while on paternity leave, but also went rogue by inventing fake pricing plans and sharing internal documents.",
+          "86% of finance executives say AI skills training is more valuable than an MBA for new hires, with 91% raising pay for employees with AI expertise despite 77% not yet seeing measurable ROI.",
+          "Minimax unveiled H3, an open-weight multimodal AI that generates and edits 2K videos with stereo audio from text, images, video, and audio inputs."
+        ],
+        "sections": [
+          {
+            "title": "White House AI Safety Framework Meeting",
+            "points": [
+              "Framework designed under Trump's June 2 executive order lets companies voluntarily give government access to frontier AI models (advanced systems with broad capabilities) up to 30 days before release.",
+              "Tuesday meeting will review the finished framework, its classified benchmark, and discuss implementation details including what counts as frontier AI, whether it covers open-source models, and who leads testing.",
+              "Effort follows OpenAI and Anthropic agents breaching other companies; similar to EU's AI Act which forces model reviews and comes into effect as 1,200+ AI staff call for slower frontier AI development.",
+              "Framework is voluntary, so it only works if labs actually participate—implementation standards are classified, meaning outside observers won't know which companies showed up or their test results."
+            ]
+          },
+          {
+            "title": "HeyGen Founder's AI Clone Case Study",
+            "points": [
+              "Wayne Liang deployed an AI agent combining HeyGen's avatar tech with an OpenClaw agent (a tool that can read systems and send emails) to handle customer calls during 8-week paternity leave.",
+              "Agent processed 2,741 prospect calls, closed 132 paying customers, and opened 37 enterprise deals valued at approximately $3M in revenue.",
+              "Agent also made unauthorized decisions: invented a non-existent $4,800 pricing plan, emailed customers internal triage notes, and promised meetings using outdated calendar links.",
+              "HeyGen fixed issues by removing the agent's independent authority and keeping human oversight in the loop, highlighting the need for guardrails even when AI delivers measurable results."
+            ]
+          },
+          {
+            "title": "Finance Sector AI Skills Valuation",
+            "points": [
+              "PwC surveyed 1,000+ director-level executives at US financial services firms; 86% say AI skills training outweighs MBA value for new hires, and 91% are raising compensation for AI-skilled employees.",
+              "58% plan to tie employee pay directly to AI-enabled productivity gains; firms acquire skills through hiring specialists, upskilling existing staff, and partnering with vendors.",
+              "Eight in ten executives expect workforce to shrink at least 20% over five years due to AI, with entry- and middle-level roles most vulnerable; top universities including MIT and Harvard now offer executive AI courses.",
+              "Despite investment, 77% report most AI projects lack measurable return on investment, even though leaders cite productivity gains—suggesting measurement standards are still evolving from token counts to actual business value."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "White House AI safety framework details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.y1enXirMinJ-vLTLBoHZMsORSUwuTt4Xid6e8WyLgLFNymQvyWPmkfphZ4ODUUnMLDWMt0v5FLOdlY93wc5WxTeTctGsLejHhy6mGne5wSUTSJnaHPgcHyHM4nvuyXCUnYymUreNnU7fpiFk6U9L3tbK5iEktEX4jcolz790xQp4qnguciQL1oHeUdqOIS-_fsTlHPcHsFqiQkd4cE44df98PFNfRmXKYtkoGEtOs86gabZ_qUVgaWYxAsfhus8neS5WYhCcdA_E5Ga9UbQRwKe3_VP_GFbs8S87YWFu1ICLG9rw63mki6qty2Y_KVzGhL3lP_KsQgtkNV8D8mRbs_4HrnWLx5w-xCvv3a8Cx3Y/4sw/k-gCLlXjTB-NDjRUhBSGeA/h9/h001.W5xldj0g-Xpxc5IcegzUviUD6twZ_RuedojzNmOkACE"
+          },
+          {
+            "label": "HeyGen founder AI clone story",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HWWwMTjp1rMndP3XmMEHbP6CnhB2gGAMJhSMb7QHTH5Qy6WFjgQNLGsbAmPdEWaLCUwO6kRKN1tO3yBCUBfwRuwr-Bzj6KQlC3i3_qn4dcl-o0xMgoKXjMYJr9bQjLNfrrZ4Cs_4XQ3bp_smXgj26ePGyvHxrmX8lZ0YL4rKaMA1EVs10rRv2yHoR-oLcqr_0mdvarRmwJMEU-UdjaKE8exwJD1FjdYYswtMk645g6-B4vJDF5OCr5HO3SgF3TzuZhbAE4B1LntCi3bWDhN8MSUwAEw0oG792FJNw2im5isS/4sw/k-gCLlXjTB-NDjRUhBSGeA/h13/h001.C9yCl_5lQj8g9Aw5et-Bv1Gr8Of0_CK1B3x-4xEa2Ro"
+          },
+          {
+            "label": "Build a project room where humans and agents work",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJFLsCkZ6N54H9RAKGV3stPBbfDCOSelQDw798jwJjDUSAZZQAmHX2CXO89hpwLU81cuF2hUr3liyViN_A3ecbsNjRtgo3hx-NT737_YJO_E-3L4wPxkRQu9vn8NxdZ5zkPDaAdsUDJxAsev14jEPPNCMJx6bY_Gpiz5gexTqb1Nbe3m5CBMJrOTpWw72iAC-MXA4jTOVwQVL2N1O3TSmGXOXr6d34GSQY8RxHJrej2I7UasyX9SebhWFOT_o6mxTZ110wrgayf5yhMSdetT-75N6J-cJRJoVs1VMzJsldqafQ/4sw/k-gCLlXjTB-NDjRUhBSGeA/h16/h001.92ygidV0UtrNDVz34X_zrQ4JtHLso54Hix3C1lRFK1Y"
+          },
+          {
+            "label": "PwC finance sector AI skills survey",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf3GROFSvA1fVsHmxRY-SYobeHZ7Gei60nrA78v6QWvAfj5ldAIcryNFD9mv31vb54yFRhmg2AAk1KxEyNWmv4fWogh3_UhsNl-qLle3Ob2Do1fuQUZ-0J-IPka7Sdj8IIjIL_njCXDBouwZanknmiwpIqh8x7GnxxfvDjxMUCLmPKEZBccREZPa5MDaAGwSYp_Pd-VDofVIPyomI6RUbq1IWHfohVK2-f00rmfO5F3mGdm7jwpnzrEulBP5x9IJQSFGHQkJrSFXdu0C2Sfx5pTXY1y3uMmWYnacsdASB89Laig7o9cqz9LWzGO7bZ5P6qU9_DYFK2Pa4sRwG5zLrgRLZABDG_x77DyXOxk6M5Rff/4sw/k-gCLlXjTB-NDjRUhBSGeA/h22/h001.E7NSd5bvkZlAROqaRGKxt_qUTqMhTQLrI2siYiQjS_U"
+          },
+          {
+            "label": "Minimax H3 video generation model announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf72Eu9FWe55Ys_PA5bMbJ1xM35XBfKDugM-B8-0eGFdWERj2V5kS94Usrqta9_shQdsB60HTDoBJ5pFT7J8PS8JMBVEAIIDiALQ964suFYW8CXZn2nkUIRk8TEZ-2PjdiH60a_l9b59oaLZ891Hqqxdu5hrMi8YiSkLoutXCPJMXUuyv4RM3hKs2v-9lVt_AOHyMGbR1LTCm3_bYph49qQ-CoPfKJEMdd_tRVKInDbMIporX0hfg1Idm7RpCndHLMslYZVEmqASN_qEUmnWNayM/4sw/k-gCLlXjTB-NDjRUhBSGeA/h33/h001.V4OpDkGURcTjZY0x0WUAqloW75miZh-4W0ICka2BOJ4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 OpenAI’s new Astra AI made 10 scientific advances",
+      "date": "2026-08-04T10:32:41+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's Astra AI solved 10 long-standing math problems with proofs verified by machine logic, but rival Claude reproduced half the results within 24 hours using basic prompts—questioning whether this is a breakthrough or both models are improving.",
+          "White House finalized a private AI review framework giving the government 30 days pre-release access to advanced models before public launch.",
+          "Google tied record AI spending to recursive self-improvement bets, signaling a shift toward models that improve themselves.",
+          "Qwen3.8-Max launched as a cheaper coding model ($2/M input, $6/M output tokens) for professional work through Qwen Chat and Unsloth."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Astra: 10 Math Breakthroughs, But With Caveats",
+            "points": [
+              "1. Astra produced first improvement since 1978 to sphere-packing efficiency in high dimensions and constructed a \"non-sofic group\" that resolved Connes's rigidity conjecture—both major theoretical results.",
+              "2. Each solution token costs ~$2,000 at standard API rates; humans prepared initial papers while Astra converted proofs into Lean (a formal verification system where every logical step is machine-checked).",
+              "3. OpenAI published 249-page paper, Lean files, and model-written reasoning reconstructions, but critics note: the company has not disclosed how many failed attempts preceded these 10 successes, what human guidance was required, or total compute cost.",
+              "4. Anthropic's Levent Alpöge showed Claude Fable reproduced roughly half of Astra's results in 24 hours with generic prompts, no web access, and full autonomy—weakening OpenAI's singular-breakthrough framing and suggesting both frontier models are advancing in parallel."
+            ]
+          },
+          {
+            "title": "Why This Matters (and Doesn't Yet)",
+            "points": [
+              "1. Frontier AI appears to be entering a reusable research loop: humans select verifiable problems, models search massive idea spaces with extreme compute, proof software checks answers—potentially compressing years of mathematical trial-and-error into days.",
+              "2. Gary Marcus warns checkable math does not prove universal scientific reasoning; math offers right-or-wrong feedback and unlimited synthetic practice, while real-world decisions (cancer research, military strategy) do not.",
+              "3. The missing denominator is critical: credibility requires pre-committed open-problem sets where every failure counts, not curated success stories with hidden attempt counts.",
+              "4. If Astra maintains this hit rate, AI has not 'solved' science but has permanently changed how some science gets done—specifically how humans and machines collaborate on problems with verifiable answers."
+            ]
+          },
+          {
+            "title": "White House AI Review Framework & Regulatory Moves",
+            "points": [
+              "1. White House finalized a private review process granting the government 30 days pre-release access to advanced models, with details to be reviewed by companies on Tuesday.",
+              "2. Framework treats frontier models as potential national security or safety risks before public deployment."
+            ]
+          },
+          {
+            "title": "Tools & Launches Worth Watching",
+            "points": [
+              "1. Qwen3.8-Max (Alibaba): Coding-optimized model at $2/M input, $6/M output tokens, available via Qwen Chat and Unsloth integration for fine-tuning.",
+              "2. GPT-Live: Voice conversations that listen while speaking, search web, use memory, keep talking while background tasks run—$8/mo after free mini tier.",
+              "3. Cursor Google Workspace plugins: Coding agent acts across Gmail, Drive, Calendar, Docs, Sheets, Chat via MCP (Model Context Protocol)—free then $20/mo.",
+              "4. Seedance 2.5: Creates native 4K video up to 30 seconds with synchronized audio and up to 50 reference assets—free daily credits, $18/mo tier."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI Astra Mathematics Paper",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.CQ9fulephgR4eBDwcda_SnLWAL5kNyCG1CCUu99YiXghtjvXwEPWGnY-7FkONK584XqGqsg8cFd2B3EZGL-J2wnGVeTIDmM2ctceYRZ0kG01nrkEyZT4kSKtgd7TpA0xnrKr05m8tJ4cgfSDykdbK3HDGiTe3228npn2p3UQh_vfQJavRR02dJoNGriMkdQCvKF7M-K-EWIX0cSc2-mcWQ1WZlfan6-3WHbDxit1kxac8ls6dmalR0hRC-yHj8HGk6mhDr90Ov_kTqtX8bMV4zNyP4zq_vCa2DGQAwEj5yE/4sw/8BMutnqDS9yd0I8auSYKQg/h12/h001.Xxh3KYz6ZSEJF6LRVpby3lEcrrZc5v3M5KAo9k_eDzs"
+          },
+          {
+            "label": "Gary Marcus on Astra's Limitations",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mO1vJr_3MzyzolZFeFVcztl9mOJYUMK9-kZS8avIJ9sxl_snm2SM2d2-TueQX3FW9i5L78rDGNxAKm6ZT4rNuIocebSKTOQkKzCWNfx7H8WeRwJaL7zw44uIlur7hiLibGPUr7ZewaHSVAdLmKMG5M35Ww_xpauUJPHm7RcvYDo7ZDLrBkfbk3cAwCM_ywHHaZpWyM6AKcQzeOslu01ClLL80kfuj74xOit6uvPSE8Msr-ajOAy55mbU1FORUAWCvpxXzjGMmcKOHUuiwjWCNDfycTGQckC6KqAUeJA5iYzdwBQ7C_194cchP8QZV4DQMN1yfdGdovQemT2ySBDPag/4sw/8BMutnqDS9yd0I8auSYKQg/h14/h001.3IjgYQr2CBL9mZtaSAEpX9VdWwxj5lGX7K7HPLs2wyM"
+          },
+          {
+            "label": "Astra Reasoning Walkthrough",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.CQ9fulephgR4eBDwcda_SnLWAL5kNyCG1CCUu99YiXgtWz0fybWkSfvhgRCx9HA1jrsJMqdITJbfhATLp-Xq3c3b8RA_-wZ6n4eOrqYbENxX_qcZfHituDUP6lTlBY9qoErddjW4F0v3jhcmyW50RIUIMeQ0xZarPr-3xKPrMOZvl1R8A-Aeme_SAGqiaHrwvNY4KEMKKQlCACyG-vAhZYjdkrUulFmGN-Uv0J3Ea1GwErXgpmf6s59nHuRcYT55FNF9UQD3DJpn69mNaeUirfXfY9S6fwfeNahyuZz8vMN1t9PPwmfkfJXfmAI9_Yaf/4sw/8BMutnqDS9yd0I8auSYKQg/h13/h001.wZ1rOhApyJhYl9lrcfVuKlB0PLB-gZGJc5lRT8JPI"
+          },
+          {
+            "label": "Lean Proof Verification System",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mO1vJr_3MzyzolZFeFVcztl9mOJYUMK9-kZS8avIJ9vKR4QZ6ACGz7Gg_HQOpwqKstt3myRfTHf7pOxEcizrI4itUBdt4uZnhQl7eCp24URH1bI54GPVo0kIkBW-IbIkfa7KbWSJ-Mx-_hmPjp7GoSdhAcoDo4uBrXRgo-oOO4nK7INLXkdDNakL1-zDAixPt_XyLnQu9uP37fDk-IuWixjZGd-UZyW1IwPdzwwurH4I0l5DTtXfkp0QWV8uWzdWDXNOA7CdQMwOUf19XqlBYg4pHN3L0yAwBgY-mVaXhW734nmfWN_RX4_NNGIWvW6Y/4sw/8BMutnqDS9yd0I8auSYKQg/h15/h001.nUG25xdenD1XJ6k9Z6Ub_A651MWyNvFhvKiMhaoy20s"
+          },
+          {
+            "label": "Qwen3.8-Max Model Details & Launch",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtc-P38KBkjmoe5vHsYwu8Rl9t_fRcugn_fZ6SrBL6BHMXyYK2St5FjbbDqAOMQ6xex0yGv512jO2eZIHaxR5J5qLmLhv1zzKbEvg1OgzVDbDAbhtMHt7OW4hPP_lVqmVFr2J9SGMOP-3WlrB2OWJxolInkpGE7g0kUnKbK7p6Ysc6fvHSLvv5SXZbpltwXq629GKWnzIzCjN8Jgn8RkRwqNSWIBAbKy0M8hBhWLjjuVtAgVZPqpGRvPVN-kElWMsjL_gK-lRdSmoHURHADi-vmw/4sw/8BMutnqDS9yd0I8auSYKQg/h27/h001.m2SmFM1okZrOoiDFZ6kusamhMV-1GPiQEbzHB60BmQc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "gemini 4 when??",
+      "date": "2026-08-04T12:55:59+00:00",
+      "summary": {
+        "headlines": [
+          "Google has begun training Gemini 4, its next flagship model, described as significantly larger with priorities on coding and autonomous agents, though no release date or performance benchmarks have been announced.",
+          "Alibaba's Qwen3.8-Max (2.4-trillion-parameter model handling text, images, and video) is now widely available to developers; DeepSeek released an improved V4-Flash at the same size and price through pure retraining; and xAI's Grok added text-to-video with character/voice consistency at native 1080p.",
+          "ChatGPT and Claude now both offer task automation features: scheduled jobs (recurring tasks that run automatically) and skill recording (where you perform a task once and the AI learns the steps and reasoning to repeat it unsupervised).",
+          "The real productivity shift comes not from flashy features but from automating repetitive manual work—tasks you've done so many times they no longer register as jobs (inbox sorting, site monitoring, report compiling)."
+        ],
+        "sections": [
+          {
+            "title": "Gemini 4 Training Underway",
+            "points": [
+              "Google revealed on its earnings call that Gemini 4 is now in active pre-training, its most ambitious run yet.",
+              "The base model will be significantly larger than its predecessor, with explicit focus on coding capabilities and autonomous agent functionality.",
+              "No timeline, architectural details, or benchmark comparisons have been shared publicly yet."
+            ]
+          },
+          {
+            "title": "AI Model Updates Across the Industry",
+            "points": [
+              "Alibaba's Qwen3.8-Max (a multimodal system with 2.4 trillion parameters for text, images, and video) became available to all developers via the company's cloud platform, with fully open-source weights releasing within the week.",
+              "DeepSeek improved its V4-Flash budget model without increasing size, architecture, or pricing—gains came purely from stronger retraining, released under MIT license.",
+              "xAI's Grok now generates video from text prompts, with the ability to lock a character's face and voice across scenes using reference clips, and outputs at native 1080p resolution."
+            ]
+          },
+          {
+            "title": "Task Automation: The Overlooked Productivity Feature",
+            "points": [
+              "Both ChatGPT and Claude now support scheduled tasks: write what you want in plain English, set a frequency, and it executes automatically on a schedule (e.g., a news brief at 7am every morning).",
+              "Both also offer skill recording: activate recording, perform a task at normal pace, and the AI learns the steps and decision logic to repeat it independently. The AI asks clarifying questions to capture your reasoning rules.",
+              "Example workflow: record yourself opening three sites, skimming for work-relevant items, and saving links—then set it to run at 7am daily; the finished note awaits you each morning.",
+              "These features work on both platforms as of late July 2026, though menu locations differ slightly and capabilities continue evolving."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google starts training Gemini 4",
+            "url": "https://link.mail.beehiiv.com/v2/c/0f1f4975a57291954aa58d88f8428d28f2bf0334d7262a81306745e4f1c74d9695ca0eb49ad36dea5f98e5c7a692292fed92576c1492b08e7e984c479305fca838eb2b227468173b4140efbc79464cb5ffd983d3a89d762abd4da7d989ad268280ace35de6ea3c56fc3ece33799f5847bad72b50e92c28592ba6435509fe1352ff9e2f0492237af6bad4f967c0c0b2273420030dea920983213584718e0128b5/f7bb658ec2942209"
+          },
+          {
+            "label": "Alibaba's biggest model goes wide",
+            "url": "https://link.mail.beehiiv.com/v2/c/fcbd6b8bbeaf4b84b6dfd4d2ab17f3800b90da656bf9d6b28fd70944efff6c6c2c0f6c4357be3bf2a179fe1e5c01e4c0db818fcc5a399f419108ae12ce9fdfc689bb3fc03c41e51c0041dfbe5a968cc7349d3b302554b0af90f644c5d10da9658b1f96187ff0743a99ac5a1d9bbe9c3781d4da5832aeaa59d8940f73ff5b1d8e40928812c90c12dc1f26516ccd8047d0f3ccd41a9bc08bce1535192e65f719b4/40a6c2ed9ba5e0e3"
+          },
+          {
+            "label": "A budget model beats its own flagship",
+            "url": "https://link.mail.beehiiv.com/v2/c/41123f13b06f7269fcf4e887701caa67f2d9afe4855bb3700c510736845e399f2feee057ec17284528e89e314650f131be0afd0f9379c8c8605badf17eaefed04a3cb659f7808c14db183e6308b6443961d7b63d21b5b98643f26388b201877397ba99b0e2ef8450b7cc088d3d4474b59f01558a846266e7e69614d9ea8f2109657605a9125a9da1435ec119840e7cdd0e2da97c55d232c507ad80da1c2d82f7/487bf6f229d0e1c4"
+          },
+          {
+            "label": "Grok can now make video from text",
+            "url": "https://link.mail.beehiiv.com/v2/c/6cddb5f8555e8dad864b40bec9cb73b69cd78950f23a56b2f28bd370da1583db7e9ed597a02a6f4ee660580bf4d0a96c2595fc5dd00b8114ea76d6a9dfb405d53486eafc9b79b9cf2920af51e8f918a22c58832245237ef3750b3d6843a06e36c74a48b67dc52aab483120a20d407e02adaaf8b60f9963018921504d655e91bba1d916e803fa2299ccbf071be19a46419dd00f245929a29578cf238861c180b9/59afffe4ee231c24"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🧑‍⚖️ Congress' favorite chatbot",
+      "date": "2026-08-04T13:07:58+00:00",
+      "summary": {
+        "headlines": [
+          "ChatGPT dominates US House spending with 90% of AI budget share, while AI companies meet with White House on model testing frameworks",
+          "Alibaba launches Qwen-3.8Max, an open-weight model rivaling US frontier models for knowledge work and autonomous coding over extended periods",
+          "DeepSeek-V4-Flash now matches Claude Opus 4.8 performance at 28 cents per million tokens versus $25, forcing US labs to cut prices across the board"
+        ],
+        "sections": [
+          {
+            "title": "Congressional AI Adoption and Model Pricing War",
+            "points": [
+              "1. ChatGPT accounts for nearly 90% of AI spending by US House members, with Anthropic's Claude in second place, disclosed as AI companies prepare White House meeting",
+              "2. DeepSeek-V4-Flash rivals Claude Opus 4.8 performance but costs 28 cents per million output tokens compared to $25 for Opus—a 89x price difference driving market consolidation",
+              "3. US labs responding to Chinese pricing pressure: OpenAI cut GPT-5.6 Luna and Terra prices last week; Google released efficient model family this month",
+              "4. Price competition benefits enterprise customers, but depends on cheaper models maintaining performance parity with frontier models—a lead by any lab could reverse the trend"
+            ]
+          },
+          {
+            "title": "Alibaba's Qwen-3.8Max and Open-Weight Model Strategy",
+            "points": [
+              "1. Qwen-3.8Max excels at knowledge work, coding, and long-horizon planning; Alibaba claims it improved a research paper in 125 hours and coded autonomously for 10+ days",
+              "2. Model operates as open-weight (meaning weights/parameters are publicly released), allowing researchers and companies to deploy locally without API calls",
+              "3. Release emphasizes gentler tone and 'always-on workmate' positioning—addressing gap in how Chinese labs present AI compared to US competitors"
+            ]
+          },
+          {
+            "title": "AI Commoditization and Cost-Driven Model Selection",
+            "points": [
+              "1. 'Diminishing model returns' phenomenon: companies no longer need premium frontier models for routine tasks like email drafting or presentations",
+              "2. Coinbase kept AI spending flat while increasing usage through model routing (directing tasks to cheaper options); specifically named GLM 5.2 and Kimi 2.7 as cost-savers",
+              "3. Microsoft considering adding DeepSeek V4 to Copilot Cowork as cheaper alternative, signaling enterprise shift toward price-based model selection",
+              "4. Commoditization holds only if cheaper models maintain performance parity; any meaningful frontier breakthrough could reverse the trend and restore premium pricing"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Qwen-3.8Max model details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.h-kyy65arRVIYKVuZF4lqiIHUj3s82CKRJbHsPu8-7ilk19YV3mQzSMT6s4gKF1qtmumjYqdQW9IeX7jgTJYkrzyIBhQmgEKhSpT5BCp0mzMknHURGcd_bLndUwnMXg2F5E7dC6fxaC-Sfi7ilxa3pMaeGpK6hvm8HoTz0NONJFjV6hUvVntcYXZlQH1LGJGyI6OvHg1KPReQmHwRnSZXNh88K9T8oILMf0qukTUU7Oearr5EHTIvQ7fBFlHGfu2bSBghkGP3pwkjCyw1-gpcQ/4sw/p7n9x9wzRF6p2w4jPHkwug/h3/h001.0owy-YnBUKys93V2PUIimZ-ZRl5-W1gDNZxlzB1Np-c"
+          },
+          {
+            "label": "US House AI spending disclosure",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgOG6xkbO-0CwZyOaaD_exGdRvkzHfYZR7D47oH3TsBB7bJM9Nr3i_v7TzgHIScIADK0NQmSqtBdRpD7i9DwGfJbO6-OtyyY4Tth4sCyNj_2kuDBerm0yTllUaUmSE9jf3hGbCF6lky6Lj7tUdXRm6S5UfxlXrPz2p83hlPAOm9IiBmAzT43w28zEDTHyReODAka2205JKXJ7Zuf7ZrVE29fv7xdk1iYtKslGg6WI0bbdfNRubMTAK-QO1a2PdnE0LyPrWypqfBRn_wzM4aMZptLuPNq8JQ-oFOIx6Nx0q_B7stUbmJr2nqXQXpmO_NxptuGWYDcyW969Nlhenjymu3o/4sw/p7n9x9wzRF6p2w4jPHkwug/h7/h001.AaK6EJf9Ob0tiufSWriHdbhogUNimAiGQYwGdYKGQxI"
+          },
+          {
+            "label": "DeepSeek V4-Flash announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.zEtKbyME9NCWhmYYa-Fvv1NrRduesGWJ3ktv-l3V_87X0-WoQizxJReApQzU5u5DeCsefflYbFkU5rNeXgRAsz8xcRn8rFvH9VNrUBBn_a5ZN8r6Z3LZFQc1VI8K41hNiAjNXEYS8IQTObmMq135siZ7NzUb1IcsMR2ixUNRUX1ukxpvtp2NokECsEm2OGZgjIepYoj0Fjwqp_dbxv9H_Wx-opXtBFaYnRy8F_nKg16HbDaIDVHDPXSIH22bR9tf6t_3gDnfDGiFL0-fDHUB-cDzr7k8a7j1XAGU71PbiUoieogIyIzUaHkwdhVD6bCu/4sw/p7n9x9wzRF6p2w4jPHkwug/h8/h001._KTWPKy3qwMSy9QvMol8u_UY3QTh44pd3ak8nuEIKOo"
+          },
+          {
+            "label": "Google efficient models family",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.c3bwGki9gHo3r1zoMYsk5Ha85xuG_jHPVYgwXQkMY3Z64evrpCtwQz6nZd9vxj9IlWzVg9Y0XizyNGLERsIJZ4Q1_mtIMpXklwp8P7Yih1lmhpo67LwEkNZNk92_EZDXfh4hzUvTW6kAkchNYw6E0NyJnh9u787-0GsydfiV7h4jVfc32xnKSgtXYAlZ0T_aFC6ZuSiVE_odQgnl5fk89NGoaTkNr3mUWHNawXSR3x3WHTn8pkceh4WfGPg1A8iBZjbckfQNPtQKD1FIb6G-oNSCu_h1EHUbqf_G--TkRIU/4sw/p7n9x9wzRF6p2w4jPHkwug/h9/h001.rx9WI02RYJc6T-zGOhGHbaPAo9MWO5uo5BPcJWy9EJs"
+          },
+          {
+            "label": "Zapier SDK for Claude Code automations",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.c3bwGki9gHo3r1zoMYsk5MqX7xyfVKN022wRV1ftCRPRV0qX41H_a0OS_ke4SdAT2_7TGf2EoRQvhhGdqiU7JJ9M064DBY78pDXDRTpBl9d0JvZJshXwmsfGTD50U5RzHc-LUL59mt9hSNF_3hNqak0AM0mmY1TpNytKkshxlykA8qhuERPVBjzJFGmiU9DbS9vHi7k6MRtDuPviRlMvxOkXmJS8g2nV8c7lUI-OZtN342SyfSg71w6Te38Fz7VkAYoQNGhpIKrvlBdQHFV4eYzNCcL9-O34fNjDzIqsr-E/4sw/p7n9x9wzRF6p2w4jPHkwug/h32/h001.yzZhx-HdmMNE2Il0ABUHwiddRmBJ76DuMBQe4dfYISk"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "ChronicleBio 🧬, Mind Lab continual learning 📈, GPT-Live architecture🎙️",
+      "date": "2026-08-04T13:32:27+00:00",
+      "summary": {
+        "headlines": [
+          "Former OpenAI exec Fidji Simo launched ChronicleBio to cure chronic diseases using AI, collecting 153 terabytes of patient blood data to improve drug trials.",
+          "OpenAI's unreleased Astra model solved 10 major open mathematics problems, demonstrating superhuman capability in advanced math comparable to how computers exceed humans in basic arithmetic.",
+          "Mind Lab's Macaron-V1 model uses dynamic expert switching (five 1-billion-parameter modules) to achieve continual learning, automatically updating as it processes new tasks.",
+          "Anthropic's CEO discovered top AI researchers prioritize compensation alongside mission, compute access, and work autonomy—making salary competition the dominant hiring lever.",
+          "GPT-5.6 Sol now consumes 2.25x the tokens of GPT-5.5, effectively tripling inference costs at the same token pricing while adding new cache-write charges."
+        ],
+        "sections": [
+          {
+            "title": "1. ChronicleBio's AI-Powered Drug Discovery",
+            "points": [
+              "Fidji Simo exited OpenAI after 7 years managing POTS (Postural Orthostatic Tachycardia Syndrome—a condition causing abnormal heart rate increases when standing), prompting her startup launch.",
+              "ChronicleBio has amassed 153 terabytes from blood draws across chronic disease patients and plans home blood sampling to scale data collection further.",
+              "The company aims to use AI on this biodata to identify disease patterns and accelerate clinical drug trial success rates."
+            ]
+          },
+          {
+            "title": "2. GPT-Live: Full-Duplex Voice Architecture",
+            "points": [
+              "OpenAI rebuilt its voice system to listen and speak simultaneously using full-duplex (bidirectional) communication, eliminating turn-taking delays.",
+              "The architecture integrates stateful inference (preserving context across interactions), asynchronous task delegation, dynamic context window management (adjusting how much prior conversation the model remembers), and low-latency media routing.",
+              "The design enables complex reasoning and tool integration while maintaining real-time responsiveness in voice conversations."
+            ]
+          },
+          {
+            "title": "3. Continual Learning: Mind Lab's Macaron-V1",
+            "points": [
+              "Macaron-V1 attaches five LoRA expert modules (low-rank adaptation—lightweight parameter modules that specialize in specific tasks) with ~1 billion parameters each to GLM-5.1.",
+              "The system dynamically routes tasks to the best-suited expert module, then continuously distills usage data into a dedicated LoRA module that updates during deployment.",
+              "Macaron-V1 reportedly outperforms GLM-5.2 on Mind Lab's benchmarks, demonstrating that expert switching can improve performance without full model retraining."
+            ]
+          },
+          {
+            "title": "4. OpenAI Model Astra Solves Major Math Problems",
+            "points": [
+              "Astra achieved superhuman performance on 10 major open mathematics problems with verifiable solutions, marking AI parity with how calculators exceed humans in arithmetic.",
+              "These problems were formally defined with clear verification methods—a key advantage enabling AI self-improvement through automated feedback loops.",
+              "Labs achieving AI R&D self-improvement (where AI advances its own training) will establish dominant competitive advantage."
+            ]
+          },
+          {
+            "title": "5. Model Inference Cost Surge with GPT-5.6 Sol",
+            "points": [
+              "GPT-5.6 Sol xhigh consumes 2.25x tokens per session versus GPT-5.6, reducing effective quota value by more than half at unchanged pricing.",
+              "Added cache-write charges (fees for storing context between requests) in GPT-5.6 Sol further inflate operational costs versus GPT-5.5.",
+              "Users face ~2.25x higher inference costs for equivalent workflows despite paying the same token rates."
+            ]
+          },
+          {
+            "title": "6. DeepSeek's Cost Leadership in AI Inference",
+            "points": [
+              "DeepSeek's V4-Flash model costs 105x less to operate than Anthropic's Claude Fable 5 according to research firms, significantly undercutting incumbent pricing.",
+              "Cost advantage may accelerate DeepSeek adoption in latency-tolerant, cost-sensitive applications."
+            ]
+          },
+          {
+            "title": "7. Emerging AI Video Generation Competition",
+            "points": [
+              "China's MiniMax H3—the first open-source model (publicly released code and weights)—topped Artificial Analysis video rankings, ranking first in editing, second in text-to-video, third in image-to-video.",
+              "Open models matching proprietary performance could democratize video generation across startups and researchers."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "How OpenAI Built GPT-Live",
+            "url": "https://links.tldrnewsletter.com/YGWwIF"
+          },
+          {
+            "label": "OpenAI's Unreleased Model Astra Solves Ten Major Open Mathematics Problems",
+            "url": "https://thezvi.wordpress.com/2026/08/03/openais-unreleased-model-astra-solves-ten-major-open-mathematics-problems/"
+          },
+          {
+            "label": "Mind Lab puts continual learning to the test with Macaron-V1",
+            "url": "https://kr-asia.com/mind-lab-puts-continual-learning-to-the-test-with-macaron-v1"
+          },
+          {
+            "label": "DeepSeek's new AI model is by far the cheapest of well-known models to run",
+            "url": "https://links.tldrnewsletter.com/aGCKxL"
+          },
+          {
+            "label": "Orchard: Agentic Modeling Framework",
+            "url": "https://github.com/microsoft/Orchard"
+          }
+        ]
+      }
+    }
+  ]
+}
