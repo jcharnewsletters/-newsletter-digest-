@@ -57,10 +57,10 @@ def main() -> int:
     print(f"Fetched {len(issues)} new issue(s) for batch {batch.id}.")
 
     if not issues:
-        print("Nothing new (weekend / weekly gap). No site update, no alert.")
-        if not args.dry_run:
-            state_mod.mark_batch_run(state, batch.id, today)
-            state_mod.save_state(state)
+        # Deliberately do NOT mark the batch as run today: a no-content run
+        # (e.g. it fired before the newsletters arrived) must not block a later
+        # run — or the GitHub fallback — from catching them once they land.
+        print("Nothing new yet. No site update, no alert, batch left open for today.")
         return 0
 
     # 2. Summarizer sub-agents (parallel, one per issue)
