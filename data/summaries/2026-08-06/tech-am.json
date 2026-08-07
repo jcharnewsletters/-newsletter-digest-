@@ -1,0 +1,382 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-08-06",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Demis Hassabis steps down as Google DeepMind CEO, becomes Alphabet chief scientist",
+        "points": [
+          "Hassabis leaves the day-to-day DeepMind CEO role to become Alphabet's chairman and chief scientist, focusing on AGI (artificial general intelligence — AI that matches or beats human ability across any task), which he believes is now within reach.",
+          "Koray Kavukcuoglu, a 13-year DeepMind veteran and CTO, becomes senior vice president reporting directly to Sundar Pichai, overseeing Gemini, Frontier AI research, and the Gemini app.",
+          "Gemini now has roughly 950 million monthly users, making the handover one of the biggest leadership changes in Google's AI org.",
+          "The move is part of a broader Google AI reshuffle happening alongside Jeff Dean's departure."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Hassabis will spend more time at Isomorphic Labs, Alphabet's drug-discovery arm that uses AlphaFold (an AI that predicted 200 million protein structures) to target diseases like cancer."
+          },
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Notes Hassabis specifically inherits the chief scientist title vacated by Jeff Dean."
+          }
+        ]
+      },
+      {
+        "title": "Meta launches Muse Code, its first AI coding agent",
+        "points": [
+          "Muse Code is a terminal-based coding agent that plans changes, writes code, and validates results across entire repositories via a single-command install, now in preview.",
+          "It splits large codebase changes across persistent parallel sub-agents so work is coordinated automatically instead of manually.",
+          "Pricing is pay-as-you-go with a contributor tier reportedly 10+ times cheaper than rivals like Anthropic's Claude Code and OpenAI's Codex.",
+          "Built under Alexandr Wang at Meta Superintelligence Labs, it is Zuckerberg's attempt to monetize massive data center and compute spending."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "The underlying Muse Spark 1.2 model is now available via API."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Jeff Dean leaves Google after 27 years to found Discovery Loop",
+            "points": [
+              "Dean, Google's chief scientist, departs with three other top researchers: Sanjay Ghemawat, Quoc Le, and Oriol Vinyals.",
+              "Discovery Loop will be a public benefit corporation building self-improving AI that advances with minimal human intervention.",
+              "Google will invest, collaborate, and guarantee compute resources for at least one year, signaling an amicable split."
+            ]
+          },
+          {
+            "title": "Cloudflare OS: open-source operating system for AI productivity",
+            "points": [
+              "Agent-based chat interface where every file is a custom AI-generated application built to the user's spec, developed in a sandbox (isolated environment that limits what code can touch).",
+              "A security framework applies guardrails (behavioral restrictions) to both agents and generated apps to prevent misuse.",
+              "Released fully open source so companies can customize and deploy it internally."
+            ]
+          },
+          {
+            "title": "Conduit builds thought-to-text 'telepathy' for AI",
+            "points": [
+              "Founded by a former OpenAI researcher, it trains models on non-invasive neural data (brain signals read from outside the skull, no surgery) to turn thoughts into text.",
+              "Scaling requires far more data collection plus specialized hardware to read neural signals.",
+              "Goal is AI as a direct extension of human cognition rather than a separate tool."
+            ]
+          },
+          {
+            "title": "SpaceX to attempt mid-air Starship catch on Flight 14",
+            "points": [
+              "The flight, targeted before end of August, would catch Starship's upper stage out of the sky for the first time.",
+              "Same mission also deploys Starlink V3 satellites."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Prime Intellect's Prime Agent beats Claude Code and Codex on long-range coding",
+            "points": [
+              "Claims 95.5% on ARC-AGI-3, outperforming Claude Code and Codex on long-horizon tasks.",
+              "Uses parallel sub-agents spun out from a central harness, converting repeated fixes into reusable skills to avoid context rot (performance decay when an AI's working memory fills with old or irrelevant information).",
+              "Designed for indefinite sessions without quality decay."
+            ]
+          },
+          {
+            "title": "Cerebras case study: internal knowledge base handling 15,000 questions a day",
+            "points": [
+              "Pulls data from 6+ platforms (Slack, GitHub, Jira, Google Docs) into a single searchable Postgres table; hit 15,000 daily queries after three months.",
+              "An LLM auto-generates a clean record per Slack thread (question, summary, fix, systems mentioned) since engineers phrase the same problem differently.",
+              "Code is embedded semantically (converted to numeric vectors capturing meaning) rather than keyword-grepped, and only changed code is re-embedded on each commit."
+            ]
+          },
+          {
+            "title": "Figure AI's Handoff agent automates websites without APIs",
+            "points": [
+              "Claims parity with GPT 5.4 and Opus 4.8 while completing web tasks end-to-end by clicking and typing on live sites like Walmart and LinkedIn.",
+              "Opens automation for services that expose no public API (a programmatic interface other software can call)."
+            ]
+          },
+          {
+            "title": "DeepSeek V4 runs inside Codex for 90%+ cost savings",
+            "points": [
+              "Heavy users can cut AI coding costs by over 90% versus standard proprietary API pricing."
+            ]
+          },
+          {
+            "title": "Builder tools and resources",
+            "points": [
+              "Meta Ray-Ban glasses tutorial covers designing apps for 600x600 displays, gesture controls, and pairing-code security.",
+              "A token wastage calculator shows where coding agents burn tokens, enabling leaner context windows (how much prior conversation a model can consider at once).",
+              "A Codex-based repo mapping tool generates clickable HTML maps of module dependencies, callers, and test coverage, flagging changed modules on re-run.",
+              "62 LeetCode-style interview problems tailored to AI/ML engineer hiring rounds."
+            ]
+          },
+          {
+            "title": "AI coding incidents and community backlash",
+            "points": [
+              "A developer reported Claude Code wiped a user folder instead of backing it up, replying with just two words — a warning about agents with full filesystem access.",
+              "Growing fatigue over AI-generated feedback in code reviews and Slack, with devs coining new terms to flag low-effort AI suggestions."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Apple's iCloud Private Relay can leak real IP addresses",
+            "points": [
+              "Three WebKit features bypass proxy settings and expose real IPs: WebAuthn Related Origin Requests (since iOS 18), DNS prefetching, and WebTransport (both added in iOS 26).",
+              "The WebAuthn leak needs no user prompt to trigger; proxy-based browsers Psylo and Onion Browser are affected too.",
+              "Apple told 404 Media it is investigating with a fix planned for fall 2026, and many sites may already have harvested leaked IPs."
+            ]
+          },
+          {
+            "title": "OpenAI moves to dismiss Apple's trade secrets lawsuit",
+            "points": [
+              "OpenAI says it has 'no use, need or desire' for Apple's confidential tech and that Apple's July complaint names no specific trade secret or proof anything was taken.",
+              "The suit targets OpenAI and two former Apple employees, centering on AI hardware; analysts expect OpenAI to build a phone-like device.",
+              "The two companies remain partners, with ChatGPT accessible via Siri and subscriptions available in iOS settings."
+            ]
+          },
+          {
+            "title": "Google's Ask Maps chatbot can now order food",
+            "points": [
+              "Conversational food ordering arrives via Toast and Square partnerships.",
+              "Also adds hotel booking and event discovery tied to Gmail integration."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "DeepMind CEO steps down 👋, Jeff Dean's startup 🤖, Cloudflare OS👨‍💻",
+      "date": "2026-08-06T10:45:35+00:00",
+      "summary": {
+        "headlines": [
+          "Jeff Dean leaves Google after 27 years to start Discovery Loop, a startup building self-improving AI; Google will invest and provide computing power for at least a year",
+          "Demis Hassabis steps down as DeepMind CEO to become chairman and chief scientist of Alphabet, marking a major reshuffle in Google's AI leadership",
+          "SpaceX plans to catch Starship's upper stage mid-air during Flight 14 launching before end of August, while also deploying Starlink V3 satellites",
+          "Cloudflare OS, an open-source operating system for AI productivity, lets users build custom AI applications and agents with built-in security guardrails",
+          "Startup Conduit is developing thought-to-text technology trained on non-invasive neural data to allow humans to control AI with their thoughts"
+        ],
+        "sections": [
+          {
+            "title": "Google's AI Leadership Exodus",
+            "points": [
+              "1. Jeff Dean (27-year Google veteran and chief scientist) is departing to launch Discovery Loop with three other top researchers: Sanjay Ghemawat, Quoc Le, and Oriol Vinyals",
+              "2. Discovery Loop will be structured as a public benefit corporation focused on building AI that can improve itself with minimal human intervention",
+              "3. Google will collaborate with Discovery Loop and guarantee computing resources for at least one year, indicating an amicable separation",
+              "4. Demis Hassabis moves from DeepMind CEO to chairman and assumes the chief scientist role vacated by Dean"
+            ]
+          },
+          {
+            "title": "Cloudflare OS and AI Development Tools",
+            "points": [
+              "1. Cloudflare OS is an open-source operating system designed for AI productivity featuring agent-based chat interfaces and sandboxed application development",
+              "2. Users can request agents to perform tasks, with each file functioning as a custom AI-generated application built to specific needs",
+              "3. Security framework applies guardrails (behavioral restrictions) to both AI agents and applications to prevent misuse",
+              "4. Released as open source so other companies can customize and deploy it internally"
+            ]
+          },
+          {
+            "title": "Emerging AI Hardware and Interface Technologies",
+            "points": [
+              "1. Conduit, founded by a former OpenAI researcher, is training thought-to-text models on non-invasive neural data to enable direct brain-to-AI communication",
+              "2. Scaling thought-to-text technology requires expanding data collection and developing specialized hardware to interface with neural signals",
+              "3. Technology would allow AI to function as a true extension of human cognition rather than a separate tool"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Jeff Dean leaving Google to start Discovery Loop",
+            "url": "https://www.cnbc.com/2026/08/05/google-chief-scientist-jeff-dean-leaving-company-after-27-years.html"
+          },
+          {
+            "label": "Four Top Google AI Researchers Form New Start-Up",
+            "url": "https://links.tldrnewsletter.com/SyPVSM"
+          },
+          {
+            "label": "Cloudflare OS GitHub Repository",
+            "url": "https://github.com/cloudflare/cloudflare-os"
+          },
+          {
+            "label": "Why I'm leaving OpenAI to build telepathy",
+            "url": "https://naomibashkansky.com/blog/telepathy/"
+          },
+          {
+            "label": "SpaceX aims to catch a Starship out of the sky this month",
+            "url": "https://thenextweb.com/news/spacex-aims-to-catch-a-starship-out-of-the-sky-this-month"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 Prime Intellect takes on Claude Code",
+      "date": "2026-08-06T14:04:57+00:00",
+      "summary": {
+        "headlines": [
+          "Prime Intellect's Prime Agent outperforms Claude Code and Codex on long-range coding benchmarks, with a 95.5% score on ARC-AGI-3, as competition heats up among AI coding tools.",
+          "Meta launches Muse Code, a terminal coding agent that handles large-scale repository changes by splitting work across parallel sub-agents, with the underlying Muse Spark 1.2 model now available via API.",
+          "Figure AI's Handoff agent claims to match GPT 5.4 and Opus 4.8 capabilities by automating web tasks end-to-end through clicking and typing, opening automation possibilities for sites without public APIs.",
+          "Cerebras revealed how to build an internal knowledge base by pulling data from scattered sources (Slack, GitHub, Jira, Docs) into one searchable Postgres table, handling 15,000+ questions daily after 3 months.",
+          "DeepSeek V4 models now run inside Codex, potentially saving heavy users over 90% on AI coding costs compared to standard APIs."
+        ],
+        "sections": [
+          {
+            "title": "1. Prime Intellect Raises the Bar on AI Coding",
+            "points": [
+              "Prime Agent claims 95.5% accuracy on ARC-AGI-3 benchmarks, exceeding Claude Code and existing Codex implementations on long-range tasks.",
+              "Architecture uses parallel sub-agents spinning out from a central harness, converting repeated fixes into reusable skills to prevent context rot (the degradation of AI performance when dealing with large amounts of old or irrelevant information).",
+              "Designed for indefinite sessions without performance decay, addressing a core limitation of traditional coding agents that struggle with project scope over time."
+            ]
+          },
+          {
+            "title": "2. Building Enterprise Knowledge Bases (Cerebras Case Study)",
+            "points": [
+              "Cerebras pulled company data from 6+ platforms (Slack, GitHub, Jira, Google Docs, etc.) into a single Postgres table with unified search interface, handling 15,000 daily queries.",
+              "For each Slack thread, an LLM auto-generates clean records (question, summary, fix, systems mentioned) to capture meaning beyond keyword search, since engineers describe the same problem different ways.",
+              "Code repositories get embedded semantically rather than grepped by keywords, catching code that keyword-only search misses; re-embedding only changed code on each commit to stay current."
+            ]
+          },
+          {
+            "title": "3. New Coding Agents Expand Automation Boundaries",
+            "points": [
+              "Meta's Muse Code splits large codebase changes across persistent parallel sub-agents, allowing it to plan, execute, and validate across entire repositories without manual coordination.",
+              "Figure AI's Handoff agent automates web tasks by clicking and typing through live sites (Walmart, LinkedIn), enabling automation on services that lack APIs—a capability previously impossible for coding tools.",
+              "DeepSeek V4 models integrated into Codex provide 90%+ cost savings for heavy users versus direct API pricing, adding a low-cost alternative to proprietary coding models."
+            ]
+          },
+          {
+            "title": "4. Practical Resources for Builders",
+            "points": [
+              "Meta Ray-Ban glasses tutorial covers designing apps for 600x600 resolution displays with gesture controls and pairing code security for AI glasses development.",
+              "Token wastage calculator helps teams track unnecessary AI spending by showing exactly where coding agents consume data, enabling prompt optimization and leaner context windows (the amount of prior conversation an AI model can consider when generating responses).",
+              "Codex-based repository mapping tool creates clickable HTML maps showing module dependencies, callers, and test coverage, automatically flagging changed modules on each re-run."
+            ]
+          },
+          {
+            "title": "5. AI Coding Incidents and Community Trends",
+            "points": [
+              "Developer reported Claude Code wiped user folder instead of creating backup, responding only with two words—highlighting risks when agents operate with full file system access.",
+              "Community fatigue over AI-generated feedback in code reviews and Slack, with developers coining new terminology to identify and reject low-effort AI suggestions.",
+              "62 LeetCode-style interview problems specifically designed for AI/ML engineer hiring, created by developer to match what companies actually test in technical rounds."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Prime Agent on benchmarks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xquoy6Wg9SjXkaazvA0alexDNgn7d7bJHvPf7Agsf1foUE7pTTlfM4N2NlIRLNUBAua7lD3wxBuMcienVWb4p9tN2DysukZ0EMEC7T2NeYwV0-eLY2W3j0sLkQcSvT-3RIP15dAwwvrT9k68qJFYTqzIvYvxoF3k9ZELHEenApepAOdWYek8-Fc5lM9amikQBTHznVMB4T31uWrclvKf24aBQVMngPQDveXatL8sLe5M6Tdl4kFouSoNTQDo53fv-CQkdx8tTIZbVGgaQdYTHiiq0/4sy/1j9sIbawRd-NmYOAJgv7zA/h6/h001.l4Pm84ALL3CajiCRg5H5fH-P3_966zFIfJ_-KWwirZA"
+          },
+          {
+            "label": "Cerebras knowledge base architecture",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XquvUhptN8JjkAAki0Yb6zCT8P7BDCW2tKLXSZrFJCabP-smyvmD1RI1Cd29oOLAwIn39LxrpoMmqt5CIY0hV5shoK98fA38bULCaeU9aoNoYxe5wQ_4RsFbBK-iaJSnKswFJfjzMVni-cEtI0da_8xS_uTqGyZzTfsdo8sHMIj2FjHbvaBllm8_7vS2eCLDwe2fOGgOsmhJUgWx0fV0qqjCqaMTrzawf1LETUx2BIYqMKNRq66dYP-KBiUNG8EPLFs9hoKZsNLIbfA_gRtZ87ztp6VYlKsOTRMd91D4IqktCt/4sy/1j9sIbawRd-NmYOAJgv7zA/h14/h001.eIrDYydxPIeTPo75krNcvAst9lWzA0FGVgUapTeWsqI"
+          },
+          {
+            "label": "Token wastage calculator for coding agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.tgWOPLtqyPb9_0gOXDT9LzxDIwsJHwJR1ZUJ-u49aTKdNHO4YfwhhLdRHpSlTX9O8Cr5LsHubPMYOwZ1REvbgOsQHZd8xoTNBw_UhlRbVlxM8gVp3HuzCAZhgrfRSQ2oU2zYrm71QdVtCuWe321lY2lUpeSM-rokVECHOBGmtULQ7qQS7sK5FB4h-QF94DrwoLoVRNID3r07BpgQiwwjHK2FuQoh6lSyq0vfPzTzgSuGdeD0KZ82Jjd9ojO8juol8oy8odlV2pSCTpKvhDdnfw/4sy/1j9sIbawRd-NmYOAJgv7zA/h2/h001.UclXbMpGVftwo5VKt5DJkONMyrz9jK7fASIu1Lk3ByQ"
+          },
+          {
+            "label": "Meta Ray-Ban glasses app tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxKhW1178eHjfWyTrVZCZ_5r-AnNa4bSKOmfAMH3ibl1NIJ7fjKEFJjeaQUqPi9xJ1m08C_yqKQOl8eUMEq14Pncglk-zy0cxXkmEV0yWP5wE4Pc7fOSQdpOH_Gryt2IWYg5nFpnrpZVemo6vLOFKV-J_DRdpXuQ44bm33WcYFfMdZttX6Hl9Bs6AzvPjZ7rbg80Y6SrWHTGdx_caGBkiui_tRRUVN0-TTI4Zwd4NlmkR-4yaoTaqUqQ7AEkyQymQg/4sy/1j9sIbawRd-NmYOAJgv7zA/h22/h001.RYtZ26PB3G0356noqG7qpkvyLINcgRC9UZbWGUxq7vE"
+          },
+          {
+            "label": "Buzz workspace self-hosting cookbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ewyx0VA-ZCEh4luIETE-Yvr3zlhKqidDgBHXOtcBYbAVkHYIwnzbG0USbyp2dqopOthyG_KvtPYnBYkkAErdCNceC55PmCHWi8fnpyofQg1TOymHT9vRTl51JuRvv9uWBYNc9aZccgSsBSaLeclOwHv1Ac_94y-zk8lScXQJotPyPIiVepDApsjobE5sUry_A_W4aV55nVZIWPfJPStRVYsiqHHF-LcEMr1JPvi0ajeX483PR68IQkzT6vWPiJyjx4f7IsGFD364YNSlyUIIxlk2KZlQMPxdoEV9T9w8g0M/4sy/1j9sIbawRd-NmYOAJgv7zA/h24/h001.SOc9zfyRVKqq7l2rNfQoPx7Qy2Tl9oWnmSvmIu9ZZvU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Google DeepMind boss steps down",
+      "date": "2026-08-06T16:43:47+00:00",
+      "summary": {
+        "headlines": [
+          "Demis Hassabis steps down as Google DeepMind CEO to become Alphabet's chief scientist, focusing on artificial general intelligence (AI systems that match or exceed human cognitive abilities across any domain), while Koray Kavukcuoglu takes over leadership of Gemini development and Frontier AI research",
+          "Meta launches Muse Code, its first AI coding agent, offering pay-as-you-go pricing that is reportedly 10+ times cheaper than competitors like Anthropic's Claude, aiming to monetize heavy infrastructure spending",
+          "Apple's iCloud Private Relay privacy feature can leak users' real IP addresses through three WebKit features that bypass proxy settings, with a fix planned for fall 2026",
+          "Google expands Ask Maps chatbot with ability to order food conversationally through Toast and Square partnerships, plus hotel booking and event discovery tied to Gmail integration",
+          "OpenAI asks judge to dismiss Apple's trade secrets lawsuit, arguing it names no specific stolen technology and that OpenAI is building something entirely new in AI hardware"
+        ],
+        "sections": [
+          {
+            "title": "Google DeepMind Leadership Transition",
+            "points": [
+              "Demis Hassabis leaves day-to-day role as DeepMind CEO to focus on artificial general intelligence as Alphabet's new chief scientist, believing AGI is now within reach",
+              "Koray Kavukcuoglu, 13-year DeepMind veteran and CTO, becomes senior vice president reporting to Sundar Pichai, overseeing Gemini (which has 950 million monthly users), Frontier AI research, and Gemini app development",
+              "Hassabis will spend more time at Isomorphic Labs, Alphabet's drug discovery firm using DeepMind's AlphaFold (which predicted 200 million protein structures) to target diseases like cancer"
+            ]
+          },
+          {
+            "title": "Meta's AI Coding Agent and Competitive Pricing",
+            "points": [
+              "Muse Code launched in preview lets developers plan changes, write code, and validate results across software engineering tasks via single command installation",
+              "Tool created by Alexandr Wang of Meta Superintelligence Labs; competes with Anthropic's Claude and OpenAI's Codex with pay-as-you-go model and contributor tier reportedly 10+ times cheaper",
+              "Represents Meta CEO Mark Zuckerberg's strategy to monetize AI investments while continuing heavy spending on data centers and computing infrastructure"
+            ]
+          },
+          {
+            "title": "Apple Private Relay Security Flaw",
+            "points": [
+              "Three WebKit features in iOS skip proxy settings and leak users' real IP addresses despite iCloud Private Relay encryption: WebAuthn Related Origin Requests (active since iOS 18), DNS prefetching, and WebTransport (both added in iOS 26)",
+              "WebAuthn flaw requires no user prompt to trigger leaks; same vulnerabilities affect proxy-based browsers like Psylo and Onion Browser",
+              "Apple told security researcher 404 Media it is investigating and plans a fix for fall 2026, with many websites potentially already having collected leaked IP data"
+            ]
+          },
+          {
+            "title": "OpenAI vs. Apple Trade Secrets Dispute",
+            "points": [
+              "OpenAI filed motion to dismiss Apple's lawsuit alleging theft of trade secrets by OpenAI and two former Apple employees, stating it has 'no use, need or desire' for Apple's confidential technology",
+              "OpenAI argues Apple's July complaint fails to name specific trade secrets, prove they are protectable, or show defendants took anything, claiming OpenAI builds 'something entirely new'",
+              "Fight centers on AI-powered hardware with analysts expecting OpenAI to develop phone-like device; companies remain partners as iPhone users access ChatGPT through Siri and subscription via iOS settings"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google DeepMind boss steps down",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTUwNzEyMTY2MzE5NDA4MzcsXCJyXCI6MTk1MDcxMjMzNzAwNjYxMTc4fSIsInMiOiI2ZmRhODUzYTZiOWJhMzE5In0"
+          },
+          {
+            "label": "Meta launches its first AI coding agent",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTUwNzEyMTY2MzkyODA4NzIsXCJyXCI6MTk1MDcxMjMzNzAwNjYxMTc4fSIsInMiOiJjZmFlYmU2MTIwMzllYzQ5In0"
+          },
+          {
+            "label": "Google Maps AI can now order food",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTUwNzEyMTY2NDU1NzIzMzAsXCJyXCI6MTk1MDcxMjMzNzAwNjYxMTc4fSIsInMiOiIzZDBjMGU0MGZkZGJjN2I1In0"
+          },
+          {
+            "label": "Apple private relay can leak your real IP address",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTUwNzEyMTY2NTI5MTIzNjQsXCJyXCI6MTk1MDcxMjMzNzAwNjYxMTc4fSIsInMiOiI4MDk0ZjRmMzVmMTQ1ZDZmIn0"
+          },
+          {
+            "label": "OpenAI asks judge to toss Apple lawsuit",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTUwNzEyMTY2NTkyMDM4MjIsXCJyXCI6MTk1MDcxMjMzNzAwNjYxMTc4fSIsInMiOiJhNGJjNjZlOGJjMjNlNTY0In0"
+          }
+        ]
+      }
+    }
+  ]
+}
