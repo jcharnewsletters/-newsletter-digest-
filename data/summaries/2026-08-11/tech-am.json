@@ -1,0 +1,474 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-08-11",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic adds invisible watermarks to Claude output, locks Sonnet 5 pricing",
+        "points": [
+          "Anthropic embeds invisible statistical watermarks (hidden patterns — e.g. certain words appearing more often — that automated detectors can spot but humans cannot) in Claude text and images.",
+          "Change is driven by EU AI Act transparency rules requiring AI-generated content to be labeled.",
+          "Applies globally to all Claude uses including Claude Code, starting with models released after August 2, with backporting to older versions planned.",
+          "Watermark only indicates content 'may have passed through Claude' and can vanish via edits, screenshots, or shortening text.",
+          "Claude Sonnet 5 pricing set at $2 per million input tokens and $10 per million output tokens.",
+          "Developers are pushing back on hidden markers appearing inside paid codebases, citing privacy and product integrity."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Frames the backlash as a compliance-vs-product-integrity tension and notes open questions about whether watermarking degrades outputs."
+          }
+        ]
+      },
+      {
+        "title": "OpenAI launches GPT-5.6-Cyber for security teams",
+        "points": [
+          "Specialized model completes 95% of advanced cybersecurity tasks (exploit-chain building, privilege escalation) on OpenAI's benchmark, up from 57% for GPT-5.5-Cyber and 1.5% for standard GPT-5.6 Sol.",
+          "Access restricted to vetted security teams via a new 'Daybreak Red' tier because the model does 'dual-use' work standard models refuse.",
+          "OpenAI says it already found two zero-day vulnerabilities (previously unknown security flaws) in Chrome's V8 engine.",
+          "Priced at $12.50 per million input tokens; teams are reportedly already catching real flaws in major software."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Nvidia lines up $500B financing to turn compute into an investable asset",
+        "points": [
+          "Six asset managers — Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR — signed letters of intent to raise over $500 billion for data centers, chip factories, and power plants.",
+          "Goal: let hyperscalers and AI labs buy Nvidia hardware without draining their own balance sheets, treating compute like commercial real estate or toll roads that can be borrowed against.",
+          "Nvidia guarantees up to 25% of residual hardware value at the end of financing terms, compensating investors if installed chips resell or re-lease below expectations.",
+          "Jensen Huang calls the $500B a multi-year target, not annual revenue, citing the 2020 A100 still in active use and H100 rental contracts rising to $2.35 per GPU-hour by March 2026."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Nvidia's thesis is that lenders can underwrite compute as a revenue-generating asset with long lifespans as hardware transfers across customers."
+          }
+        ]
+      },
+      {
+        "title": "Zuckerberg's open-AI manifesto and $1B community fund",
+        "points": [
+          "A 6,500-word essay argues open distribution of AI is safer than concentrating development in a few labs.",
+          "Meta commits $1 billion to communities hosting its data centers to spread AI's economic benefits.",
+          "Pledges more open-weight models (models whose parameters are downloadable and freely usable).",
+          "Meta released Muse Glimmer, a 30B-parameter model that runs local agents on a single consumer GPU."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Calls it a major escalation in the debate over whether frontier AI should be restricted or openly distributed."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Google swaps its search button for AI Mode",
+            "points": [
+              "The classic search button is gone from the homepage, replaced by an AI Mode button for asking about files and brainstorming without logging in.",
+              "Logged-in users can also generate images from the same entry point."
+            ]
+          },
+          {
+            "title": "Dyna-2 shows scaling laws hold for robotics",
+            "points": [
+              "Trained on 1 million hours of human video, it hits an 87% success rate in real-world zero-shot deployments (tasks with no task-specific training), vs 46% for Dyna-1.",
+              "Evidence that more training data improves performance even on unseen hardware."
+            ]
+          },
+          {
+            "title": "Musk's $1T Tesla package could unlock via SpaceX deal",
+            "points": [
+              "The pay agreement counts half its targets as met if Tesla is acquired, leaving only market-value targets to set the share award.",
+              "A Tesla–SpaceX combination could therefore shortcut Musk to the $1 trillion payout."
+            ]
+          },
+          {
+            "title": "Why local models won't beat datacenter models",
+            "points": [
+              "Frontier models (the most advanced systems) need full GPU clusters, so consumer hardware can't run them.",
+              "Users will always pick the strongest model available in their price range."
+            ]
+          },
+          {
+            "title": "Other briefs",
+            "points": [
+              "Claude improved longstanding mathematical bounds related to the Riemann hypothesis when set on the unsolved problem.",
+              "Aptoide became the first third-party app store distributed inside Google Play after Epic's legal win against Google.",
+              "Apple is building hardware-tied photo authentication to prove images came from an iPhone camera and fight AI fakes."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "AI deployment is not AI adoption",
+            "points": [
+              "Anthropic put Claude Cowork in front of thousands of employees and productivity barely moved.",
+              "Organizations split three ways: power users chaining skills daily, casual users, and a silent majority who never engage.",
+              "Google's Addy Osmani advises documenting winning prompts, treating models like new hires with review cycles, and measuring manual vs automated work instead of login counts.",
+              "One reliable, verifiable workflow on a repetitive task beats dozens of untested experiments."
+            ]
+          },
+          {
+            "title": "Choosing between Claude and GPT",
+            "points": [
+              "Pick per task based on prompt precision needs, code-quality expectations, and single- vs multi-agent orchestration (coordinating several AI agents together).",
+              "Senior engineers favor hybrid workflows over brand loyalty.",
+              "Spotify's Xirp tool manages sessions across Claude Code, Gemini, and OpenAI Codex, signaling a shift to polyglot AI dev environments."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Apple's 2027 Pro iPhones get a glass-centric redesign",
+            "points": [
+              "Bloomberg says models V73 and V74 will have glass front and back curved into metal side bands — not the rumored all-glass slab.",
+              "The 2027 hardware design is already locked and in advanced testing; Gurman earlier described under-display Face ID with no screen cutout.",
+              "iPhone revenue rose 22% last quarter and still accounts for roughly half of Apple's sales."
+            ]
+          },
+          {
+            "title": "YouTube doubles its monetization bar",
+            "points": [
+              "From February 1, 2027, new creators need 1K subscribers plus either 8K qualified watch hours in 365 days or 20M qualified Shorts views in 90 days.",
+              "20M Shorts views in 90 days works out to about 222K views per day; creators must then hold 10M views per 90 days to keep Shorts ad revenue.",
+              "Existing Partner Program members must accept new terms by January 31, 2027 and stay active (1K watch hours yearly, 1M Shorts views in 90 days, or two long-form videos per quarter)."
+            ]
+          },
+          {
+            "title": "Reflect Orbital wins FCC nod for a 60-foot space mirror",
+            "points": [
+              "The Eärendil-1 demo is licensed for up to two years to test beaming reflected sunlight to spots on Earth after dark.",
+              "Company targets 50,000 satellites by 2035 and claims a soft, moonlike glow; astronomers warn of disrupted observations and eye-safety risk.",
+              "The FCC approved spectrum but excluded optical astronomy from its review; four groups have petitioned to reverse the decision."
+            ]
+          },
+          {
+            "title": "Myspace plots a relaunch",
+            "points": [
+              "The Vanderhook brothers, who rebuilt Myspace in 2013 and lost roughly $150M, tease a return in a Tommy Avallone documentary: 'We're just waiting for the right time.'",
+              "Myspace peaked at 115M monthly users in 2008 before losing out to Facebook's cleaner design.",
+              "Success likely hinges on niche music and customization appeal for users tired of algorithmic feeds, not on poaching Instagram's base."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Humanoid robot sales set to triple in 2026",
+            "points": [
+              "Global sales projected at 60,000 units in 2026, three times the prior year.",
+              "China holds 97% market share; Shanghai's Agibot leads with 44%, and Agibot plus Unitree together account for three-quarters of global sales.",
+              "Industrial and commercial uses made up 70% of first-half 2026 shipments, up from 50%; consumer home robots are seen as unlikely to scale within five years."
+            ]
+          },
+          {
+            "title": "Spotify to tag AI artist profiles",
+            "points": [
+              "From mid-September, AI-generated artist profiles get an 'AI Persona' label.",
+              "Those profiles will be excluded from editorial and algorithmic recommendations."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Zuckerberg's manifesto 🤖, Elon's $1T shortcut 💰, local models won't win👨‍💻",
+      "date": "2026-08-11T10:45:40+00:00",
+      "summary": {
+        "headlines": [
+          "Zuckerberg commits $1 billion to communities hosting Meta data centers and pledges to release more open-weight AI models (downloadable models made freely available), arguing open distribution is safer than concentrating AI development.",
+          "Google is replacing its classic search button with an AI Mode button on its homepage, letting users ask about files and brainstorm ideas without logging in.",
+          "Dyna-2 robot model trained on 1 million hours of human video achieves 87% success rate in real-world deployments, proving that scaling training data improves AI performance on unseen hardware.",
+          "Local AI models will never match the power of datacenter-based models because frontier (most advanced) models require full GPU clusters to run, and users will always choose the strongest model in their price range.",
+          "Elon Musk could unlock his $1 trillion Tesla pay package through a SpaceX acquisition, since the agreement counts half the targets as met if Tesla is taken over, leaving only market-value targets to determine shares."
+        ],
+        "sections": [
+          {
+            "title": "Zuckerberg's Open AI Vision vs. Concentration Risk",
+            "points": [
+              "Released 6,500-word essay outlining plans to distribute AI wealth and benefits to communities hosting Meta's data centers through new $1 billion fund.",
+              "Argues Meta's strategy of developing powerful AI and releasing it open-source is the safest path to avoid dangerous outcomes for humanity.",
+              "Marks significant escalation in debate over whether advanced AI should be restricted or openly distributed."
+            ]
+          },
+          {
+            "title": "Nvidia Transforms Compute into Financeable Assets",
+            "points": [
+              "Partnered with six major asset managers on $500 billion financing program to treat compute infrastructure like commercial real estate or toll roads that can be borrowed against.",
+              "Goal is to help hyperscalers and AI labs build data centers and buy Nvidia hardware without depleting their own balance sheets.",
+              "Nvidia believes lenders can reliably underwrite compute as a revenue-generating asset with long operational lifespans as hardware is adopted and transferred across customers."
+            ]
+          },
+          {
+            "title": "AI Model Scaling and Capabilities",
+            "points": [
+              "Dyna-2 robot model trained on 1 million hours of human video achieved 87% success rate in real-world zero-shot deployments (performing tasks without task-specific training), compared to 46% for predecessor Dyna-1.",
+              "Claude AI improved on longstanding mathematical bounds for the Riemann hypothesis when challenged with the unsolved problem, showing AI can extend mathematicians' work in unexpected ways.",
+              "Local models will always underperform datacenter models; frontier models are too large to run on consumer hardware, and users choose strongest available models in their price range."
+            ]
+          },
+          {
+            "title": "AI Reshaping Interfaces and Services",
+            "points": [
+              "Google removed the classic search button from its homepage, replacing it with AI Mode for file questions and brainstorming—logged-in users can also generate images.",
+              "Aptoide, a game-focused app store, became the first third-party app store available in Google Play following Epic's legal victory against Google.",
+              "Apple is developing technology to authenticate that photos came from iPhone cameras using unique hardware-tied data to combat AI-generated image fraud."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Mark Zuckerberg's AI Vision Essay",
+            "url": "https://links.tldrnewsletter.com/5nnDda"
+          },
+          {
+            "label": "No, local models will not win",
+            "url": "https://www.seangoedecke.com/local-models-will-not-win/"
+          },
+          {
+            "label": "Dyna-2 Proves Scaling Laws for Robotics",
+            "url": "https://www.humanoidsdaily.com/news/dyna-2-proves-scaling-laws-for-robotics-1-million-hours-of-human-video-unlocks-zero-shot-dexterity"
+          },
+          {
+            "label": "Tesla-SpaceX Merger Musk $1 Trillion Payday",
+            "url": "https://links.tldrnewsletter.com/SvvLSu"
+          },
+          {
+            "label": "Nvidia $500 Billion Financing for Compute",
+            "url": "https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Anthropic adds invisible watermarks",
+      "date": "2026-08-11T14:08:23+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI launches GPT-5.6-Cyber, a specialized model for finding security vulnerabilities in code; teams are already using it to catch real flaws in major software.",
+          "Anthropic locks Claude Sonnet 5 pricing at $2 per million input tokens while adding invisible watermarks to comply with EU transparency rules, sparking developer backlash.",
+          "Meta releases Muse Glimmer, a 30B model that runs local agents on a single consumer GPU, as Zuckerberg argues for open-source AI to prevent power concentration.",
+          "Most teams deploying AI tools see minimal productivity gains because adoption remains shallow—power users drive real value while the majority barely engage with these systems."
+        ],
+        "sections": [
+          {
+            "title": "The Real Problem with AI Adoption",
+            "points": [
+              "1. Deployment ≠ adoption: Anthropic placed Claude Cowork with thousands of employees, but productivity barely moved—teams need actual behavior change, not just tool availability.",
+              "2. Three-tier split: Organizations typically have power users (daily-driving AI with chained skills), casual users, and a silent majority who avoid it entirely.",
+              "3. Fix requires shared workflows: Google's Addy Osmani recommends documenting winning prompts, treating models like new hires with review cycles, and measuring manual vs. automated work instead of login counts.",
+              "4. Start small and credible: One reliable, verifiable workflow beats dozens of untested approaches—focus on repetitive tasks where success is obvious and shareable."
+            ]
+          },
+          {
+            "title": "Claude Watermarking and Pricing Backlash",
+            "points": [
+              "1. Invisible watermarks embedded in Claude-generated text to meet EU transparency rules, but developers object to having hidden markers in their paid codebases.",
+              "2. Pricing locked in at $2 per million input tokens and $10 per million output tokens for Sonnet 5, ending speculation but raising questions about watermark impact on outputs.",
+              "3. Community reaction centers on privacy concerns and the tension between compliance and product integrity when hidden identifiers appear in developer work."
+            ]
+          },
+          {
+            "title": "Claude vs. GPT: When to Use Each",
+            "points": [
+              "1. Model selection depends on prompt precision needs, code quality expectations, and whether you're building single-agent or multi-agent orchestration setups.",
+              "2. Senior engineers recommend choosing based on specific task requirements rather than brand loyalty—combine tools in hybrid workflows for best results.",
+              "3. Spotify's Xirp tool manages sessions across Claude Code, Gemini, and OpenAI Codex, showing industry shift toward polyglot AI development environments."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Watch OpenAI's GPT-5.6-Cyber in action",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.wZN1XY49ssmkxVgHdsx183UNH4UTy36RoFEzZc0N1g_ksLT6CLP9E2FqlzXMEPG1hVHd8o_3YwWrsusVk17vwmnyfMlupqGcTIboqI5tU28WmdHiWdySc0t3qamuWWLluTFLMr1ighB-KgTCLH1D8KiNIP2McyFD2SVaqQKX5X2PDDFMNCTx7agTJ5IyM_6X5iP0ClfoypWZ_sHQ5imu-tAmIz1y-aIKOiUi1ttPQM8s_EfcfKs5sT4mqoKjh_V00Rd9tIfQ9yt0Fmz4bYupFnVeJNFfJow-gTxRoJUPI7ImI_XwKNcalbKTsxcj08xYIzHcRqXSTVysjlP0cnYobA6YmNsU3t_xPgmsTKF2Ztg/4t3/1_9GE3s3Ra2kHYufXnt5ww/h3/h001.AjS31p6nF96e72lFq7swbazJg0JFO3xu1PnK0yj8dTs"
+          },
+          {
+            "label": "How to choose between Claude and GPT",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjx10T-vqVF6YMj56cx6rm5ZIvSrzGz2zDBpKS0kGqKnijrW6Jx1h6CcK1t4eyKP9bPlGvOX_wEt_wHZPqlnG8Dox02e7Ks4NkOLuBcSqsDS6cd8DJFvBdn_eG42CT5OHtlauwu_zTh0we1O4Ha5vULazlXADfjRkALf9q4a3zuddykKA8_hzAUnW8e6LVQG2eXAHPuAUjiA83aJn-h8OGmT7V6ABoRWphyuTyV-AytPQ83HJoFnZ2wGqW0lDIggx00/4t3/1_9GE3s3Ra2kHYufXnt5ww/h24/h001.kpUW-Xq7QOydYHtlUDXULFji3RR9QXCF6BSGLR8c9VA"
+          },
+          {
+            "label": "Spotify's Xirp: Multi-model development environment",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.tgWOPLtqyPb9_0gOXDT9Lxc1nMCsi7m4S5QPEfTdkuJuY7B1jDl9VCtzKGUz6jfOTmmt4J7GPSaP8eSlt3n2FqdxJZkWjo8JKOTBaiDUnz-jcwe50NdE0aQWtGf_hsn6gpsb085_VJOflh4wAithMB3AaX8UM6XykZKmc2ICVe0IFudM_MXXkx4aNm6O1H3a5FvTd4T-XhDn1JM0A4YjgpW86Fdy8CrZCE9fTvD4ErZTCz1binXi7XWtvVVctTW5P9gVy8RmMBPiFIMzVyUi4PAXZs_-x_EIIDzS0dlZYXVUSQC6T9LmyGDH-wKBHYq1/4t3/1_9GE3s3Ra2kHYufXnt5ww/h25/h001.r3djiXxPf2iq2jhP6ysKnHQ5aE8tqQa9Jho-MzFQ_60"
+          },
+          {
+            "label": "Google's 7 rules for self-improving agent loops",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.tgWOPLtqyPb9_0gOXDT9LwYgBjUsk79JPKW0Dl4AU6kQ82T3My9v9MK6QcmXw_4Q36VvVBEgfwUoM3lDt-BvMKIBcm17MNPQnhGi4q8fjHLPcg0jDyNvB65xynFsQQzbqBvPk2UJXHQn09fq0Epneovx3oJgogU_8pKtSHTp3jj_Yuq70P3Tn2UwfUS0e21q-Z83QSJiylbvxCSRfjpqGqRwzfmPWTvfESFf4kxjwoMD1phmJpAmsOxkm-_Xr1SXRXMwXA8IBeyxIa4tUQ4viqUSi7wHADPFpR5J94rTuLaEK6YxuL4lHNflYmFWdb1A/4t3/1_9GE3s3Ra2kHYufXnt5ww/h26/h001.SKPF285FuRs22uuiHXndQBDxu5Fjrf_00BI9I95F_Yw"
+          },
+          {
+            "label": "Library of slash commands for AI coding agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhkpnislWwuFMedHQdDkzlGfWvjCkkCr_dvyEdxrjXi36PU48JNpxT0ULSxWsvfKearAMdc7hreFL0KFfJKqsoj-LXSPjb-7AS-LtX4KAKUEyj6Vgxto_7MPST_ykS-xdRT4rTH46i3huWQfsl49Gj_JTQkiBffWJkTYJawLIk3rXJuLDZy59AOsc51XAWMWhju9yV7jGDgHZBxMfWRkUGE-FX5T3hG001fwJzMTGAkCMCjBd8PLLai3MWLSRYH67b35K_ALrZLz_bscpl9yhHA-o/4t3/1_9GE3s3Ra2kHYufXnt5ww/h29/h001.miyTnkMXrbvjrV6tFnvwrlbl7467aXlGmMDOb64i7IQ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🍸 Apple's almost-glass iPhone",
+      "date": "2026-08-11T14:31:53+00:00",
+      "summary": {
+        "headlines": [
+          "Apple's 2027 Pro iPhones are coming with glass-centric redesigns after analyst prematurely killed the project—glass front, back, and curved sides, but not the all-glass slab originally dreamed of.",
+          "YouTube doubled the barrier to monetization starting February 2027: new creators now need either 8,000 watch hours or 20 million Shorts views before earning from ads, punishing smaller channels.",
+          "Reflect Orbital won FCC approval to test a 60-foot orbital mirror satellite that bounces sunlight to Earth after dark, reviving sci-fi ambitions but triggering fears about light pollution and astronomy damage.",
+          "Myspace is planning a comeback, with owners teasing a relaunch in a documentary, though the challenge of rebuilding without the friction that killed it remains steep against Meta, TikTok, and YouTube."
+        ],
+        "sections": [
+          {
+            "title": "Apple's Glass iPhone Returns (But Not All-Glass)",
+            "points": [
+              "Bloomberg reports the 2027 Pro models (V73, V74) will have glass on front and back, curved into metal side bands—'glass-centric' but not the single-slab vision.",
+              "Apple locked the 2027 hardware design already, meaning the device is in advanced testing with features largely fixed; Gurman previously described a curved design with under-display Face ID (no cutout).",
+              "The redesign applies to both 2027 Pro models, potentially setting Apple's next flagship design language; iPhone revenue rose 22% last quarter and still generates roughly half of Apple's total sales."
+            ]
+          },
+          {
+            "title": "YouTube Tightens Ad Monetization Gate",
+            "points": [
+              "Starting February 1, 2027, new creators must hit 1K subscribers plus either 8K qualified watch hours in 365 days or 20M qualified Shorts views in 90 days before unlocking ad and Premium revenue.",
+              "For Shorts creators, the math is brutal: 20M views in 90 days = roughly 222K views per day just to unlock ad revenue; creators must maintain 10M views over 90 days or lose Shorts ad revenue.",
+              "Existing YouTube Partner Program members must accept new terms by January 31, 2027, and stay active: 1K watch hours yearly, 1M Shorts views in 90 days, or two long-form videos per quarter."
+            ]
+          },
+          {
+            "title": "Reflect Orbital's Space Mirror Wins FCC Approval Despite Sky Safety Concerns",
+            "points": [
+              "The startup's Eärendil-1 demo is licensed to operate for up to two years, testing if 60-foot orbital reflectors can deliver localized 'sunlight on demand' by bouncing sunlight to Earth after dark.",
+              "Reflect Orbital aims for 50K satellites by 2035; the company claims the beam would create a soft, moonlike glow in a defined area, but astronomers warn it could disrupt observations and damage eyesight.",
+              "The FCC approved the satellite's spectrum but excluded optical astronomy from its scope; four groups have since petitioned to reverse it, exposing a regulatory blind spot where communications approval sidesteps full adjudication of orbital impact on night sky and research."
+            ]
+          },
+          {
+            "title": "Myspace Plots Its Return",
+            "points": [
+              "The Vanderhook brothers, who rebuilt Myspace from scratch in 2013 and lost roughly $150M, are teasing a relaunch in a Tommy Avallone documentary, saying 'We're just waiting for the right time to do it.'",
+              "Myspace peaked at 115M monthly users in 2008 but lost ground to Facebook's cleaner design; rebuilding the creative identity without the friction that killed it is the hard part.",
+              "A reboot's success depends less on taking users from Instagram than on turning music and customization into a niche offering for young users tired of algorithmic feeds—but proving social-media fatigue is real, not just a temporary spike, remains the challenge."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Bloomberg report on 2027 glass iPhone Pro",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NasoMtr-GEUWRp5-ReOTT9a13I2I16UQycsk-6yhdq0QErhbob1QgV6yJylz90SR09ROXrkTmBYM5vz9Ky9IruJwm7yrp8iJy0QGwvpskOAkz-Uhj_BMsQ8pK7o8i7J2sF9Mz9R6cocMjjiIzsvb70hYVZ3HBsNgTPSOrzyIJiCPrci4Cklm8ozEF8OYPx_i4AaS6_Eieb7Bx23alcWmdBx9Rw1Qd-FJBb0Hkwd-AiYZlndbEgAfS7lGz5_evr1o-9_ku6zphaDpW849zgYoM0Sm03ttjQ0x6wcKwGPIpBka8pVrfRv7gJGK8HHXeuSV7dMFHsBFMZ6rnqnv73kTbfsqLSgtKyjCtiBOexLO9hQ6IpOwsxVo6Wo5qgLTqYYL1UQ/4t3/88nI_23TSRuC3BNwjGM4_w/h6/h001.-eMsw538dwazDGJI5FAkqtkN3E3cvbpTTNiABNJGF2U"
+          },
+          {
+            "label": "YouTube monetization requirements update",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._1pfp198jIOr5bheVbwqIR1XvacVcsEO-qF0kHurucphIzBfJNf8kZMSr3pfdRqzjeiBtRGYeXyfy_ts-QRgDd5RigbC0DED2ffBdI8KOg5bTBwScpZDxPkh7f-YPsAiYTSQvAzU8wQQOMzXSHXW4vlv6C4wDfx4zvCA5rxTGYwkOTU-d4I8z-WwMPmQzMCGdAS2VObyHKOy1EO8vwucK3BUIFt0KqlqrVQJ4WM5ouIKsqHYqUihTM7RdHUsWNI5Qlwv82KncaBo30czlQIYjg9qnrSa9DpA9Z-JQSk5GBPdkK4f922ygFPSJxUq9eWo86Jo4CnHv8KshsqOCHLoeg/4t3/88nI_23TSRuC3BNwjGM4_w/h9/h001.VQ_5bVXY5-dx1QtD66F7C4_VxCUE5Z6SYxoye8_gll4"
+          },
+          {
+            "label": "Reflect Orbital FCC approval for orbital mirror satellite",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NajTMsskrOK6ot7t_TUAO0akFJBLaJf5pqihiUyKAVfOrH0x1vv_mHLWRw0Fz23az96RgRwUQtAFXySJm4NPzL4hFuKniXOL6x1cLaal5hNVdRm6icCZOVkRhTf5_XjOdLLNTUL-9uk4NAHgUpBMfxuEJ5X51wk2UdsDhERwM2gSBM4H90okz3AClBJ7zwfkuj95dGMifhBCdbG0W4E-WeJgOgnGNJa2TwZ2VyxHGGfAOn9Y_84fct-3-0rUqAQJM4dVFYHFvRX0XJNW8IZduBwdzzyvWJw_cM5jObIuPlKKr/4t3/88nI_23TSRuC3BNwjGM4_w/h10/h001.1n52kEuR9vyj3moJQqhX3SmsFd2glnXnmfzpo-Eslk4"
+          },
+          {
+            "label": "Myspace comeback plans",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NallU6gOLL2yXGXwZlApE0QFPeF7CcUbHwxMxd0RrjSTONPN3MOCmux2gw_eRo84B7VSzdXTUbyz53vOeR7PSc7DqEHq3ULh0vtznwV-3HnpyMytqRs21JKj2ItZqUGLVAR5shUh9dkuLIlX0XfP3zizt9FpGi3ycO89_WCocitgSQajJBucEQiRXvlWYlXDjwBlrg50AkD--6qks_IEiaMIdWpKRsiARm780zMTSI2ysh9LQ_sdQ6rp5obcBgZn5LX_AAqOd8bIbnSRAv_-k19OLf3fVk9WZ5_UuMIDVHAAZ/4t3/88nI_23TSRuC3BNwjGM4_w/h14/h001.yhgH6bP2R6SJyQIkLptRNISp-1NIDXmqcxREHpQ19iA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Claude now watermarks all AI text",
+      "date": "2026-08-11T16:33:40+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic adds invisible watermarks to Claude-generated text and images to help detect AI content while staying hidden from humans, complying with EU AI Act requirements.",
+          "Nvidia secures $500B in outside funding from major financial firms (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) for AI data centers and chip factories, guaranteeing up to 25% residual chip value.",
+          "OpenAI releases GPT-5.6-Cyber, a specialized model for authorized security teams that completes 95% of advanced cybersecurity tasks like exploit-chain building, up from 57% in the previous version.",
+          "Humanoid robot sales on track to triple to 60,000 units in 2026, with China controlling 97% of market share and industrial/warehouse uses driving 70% of shipments.",
+          "Spotify will label AI-generated artist profiles with 'AI Persona' tags and exclude them from editorial and algorithmic recommendations starting mid-September."
+        ],
+        "sections": [
+          {
+            "title": "1. Claude Watermarking for AI Detection",
+            "points": [
+              "Anthropic embeds invisible statistical patterns into Claude outputs—certain words appear more frequently in ways automated systems can detect, while remaining invisible to human readers.",
+              "Watermarks apply globally to all Claude uses including Claude Code, starting with models released after August 2, and Anthropic plans backporting to older versions.",
+              "The watermark only signals content 'may have passed through Claude' and cannot confirm origin; marks can disappear through edits, screenshots, or text shortening."
+            ]
+          },
+          {
+            "title": "2. Nvidia's $500B Data Center Financing Deal",
+            "points": [
+              "Six firms (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) signed letters of intent to raise over $500 billion for AI infrastructure projects spanning data centers, chip factories, and power plants.",
+              "Nvidia guarantees covering up to 25% of residual hardware value at financing term end, compensating investors if installed chips sell or re-lease for less than expected.",
+              "CEO Jensen Huang argues the $500B is a multi-year target, not annual revenue, and notes older chips like the 2020 A100 remain in active use with rising rental rates (H100 contracts climbed to $2.35 per GPU-hour by March 2026)."
+            ]
+          },
+          {
+            "title": "3. OpenAI's Specialized Cybersecurity AI Model",
+            "points": [
+              "GPT-5.6-Cyber completes 95% of advanced security tasks (exploit-chain building, privilege escalation) on OpenAI's benchmark, far exceeding 57% from GPT-5.5-Cyber and 1.5% from standard GPT-5.6 Sol.",
+              "Access limited to vetted security teams through new Daybreak Red tier; the specialized model performs 'dual-use' work (risky applications) that standard models refuse.",
+              "OpenAI says the model already discovered two zero-day vulnerabilities (previously unknown security flaws) in Chrome's V8 engine, priced at $12.50 per million input tokens."
+            ]
+          },
+          {
+            "title": "4. Humanoid Robots Scaling in Industrial Use",
+            "points": [
+              "Global sales projected to reach 60,000 units in 2026, tripling from prior year, as industrial and warehouse automation prove economically viable.",
+              "China dominates with 97% market share; Shanghai's Agibot became the largest vendor at 44% market share, with Agibot and Unitree combined controlling three-quarters of global sales.",
+              "Industrial and commercial applications drove 70% of shipments in the first half of 2026 (up from 50%), while consumer home-service robots like Meta's remain unlikely to scale within five years."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude watermarks AI text",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU1MjM2MzE2MjY4NDgxODgsXCJyXCI6MTk1NTIzNjQ3ODAxMTMzMDI3fSIsInMiOiIxMDViOTYyY2E0MTlhYjViIn0"
+          },
+          {
+            "label": "Nvidia unlocks $500B for AI data centers",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU1MjM2MzE2MzUyMzY3OTksXCJyXCI6MTk1NTIzNjQ3ODAxMTMzMDI3fSIsInMiOiI3ODBjOTViYzIzZDRhM2ZiIn0"
+          },
+          {
+            "label": "OpenAI launches cyber AI",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU1MjM2MzE2NDU3MjI1NjUsXCJyXCI6MTk1NTIzNjQ3ODAxMTMzMDI3fSIsInMiOiI5MDQ1MDllYTM3MWMxMTc0In0"
+          },
+          {
+            "label": "Humanoid robot sales set to triple",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU1MjM2MzE2NTMwNjI2MDAsXCJyXCI6MTk1NTIzNjQ3ODAxMTMzMDI3fSIsInMiOiJmNDgwNzIyNWMzYTdlMzMzIn0"
+          },
+          {
+            "label": "Spotify will label AI artist profiles",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU1MjM2MzE2Njk4Mzk4MjMsXCJyXCI6MTk1NTIzNjQ3ODAxMTMzMDI3fSIsInMiOiJmOGMwMTUwMTVjOGI2OTVhIn0"
+          }
+        ]
+      }
+    }
+  ]
+}
