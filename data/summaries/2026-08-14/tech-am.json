@@ -1,0 +1,494 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-08-14",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "DeepSeek releases open-source Harness v0.1 coding framework",
+        "points": [
+          "Harness v0.1 enters developer preview as an open-source alternative to paid AI coding agents like Claude Code (a terminal-based AI coding assistant).",
+          "Modular plugin architecture lets developers select, swap, or extend capabilities via configuration files without touching source code.",
+          "Every model interaction is written to an append-only session log for auditability (a record that can only be added to, never edited).",
+          "DeepSeek also shipped V4-Pro, a model tuned for agents, while raising API prices for existing V4 access."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Frames Harness as a direct free alternative to paid coding tools, arriving alongside imminent DeepSeek API price hikes."
+          }
+        ]
+      },
+      {
+        "title": "Zhipu/Z.ai GLM-5.3 claims coding-benchmark lead over OpenAI",
+        "points": [
+          "GLM 5.3 beats OpenAI's Fable 5 and DeepSeek V4 on coding benchmarks, including Terminal Bench 2.1 (a test of agents completing real command-line tasks).",
+          "Gains came purely from scaled post-training (extra training after the base model is built) on the same 743B-parameter base as v5.2.",
+          "Available now via API; full open weights (downloadable model files) ship in roughly two weeks.",
+          "Zhipu says the model found 2,436 software vulnerabilities across decades-old open-source projects."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Highlights the 2,436-vulnerability discovery result as evidence of practical security capability."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI launches Ultrafast API tier and hits $40B run rate",
+            "points": [
+              "Ultrafast tier runs GPT-5.6 Sol at 750 output tokens per second (tokens = word fragments the model generates), 14x the Standard tier, powered by Cerebras hardware.",
+              "Initially limited to select customers, aimed at real-time products where latency destroys usefulness.",
+              "Revenue run rate reached $40 billion in 2026, roughly double late 2025, driven by AI coding tools, subscriptions and a nascent ads business, ahead of a planned IPO."
+            ]
+          },
+          {
+            "title": "X open-sources its ranking algorithm and shadowban checker",
+            "points": [
+              "The 'For You' algorithm and core ranking engine released under Apache v2 license, said to be 10-15x more detailed than prior disclosures.",
+              "New tools let users see if and how ranking systems suppressed their account or posts, addressing 'shadowbanning' (invisible reduction of content reach).",
+              "Pilot runs with select accounts for at least a year before wider rollout."
+            ]
+          },
+          {
+            "title": "Hydrogen land-speed record smashed at 406 MPH",
+            "points": [
+              "Andy Green, 64, drove the JCB Hydromax to 406.320 MPH, more than doubling BMW H2R's 185.5 MPH hydrogen-combustion record from 2004.",
+              "The vehicle went from 50 to 400 MPH in 72 seconds."
+            ]
+          },
+          {
+            "title": "US humanoid robotics faces Chinese supply-chain dominance",
+            "points": [
+              "China holds near-total control of robotics component supply chains and has poured billions in state funding into the sector.",
+              "Building Chinese-parts-free robots is currently impractical; US makers need major financial and policy support."
+            ]
+          },
+          {
+            "title": "Vercel Labs' Foreman automates the dev pipeline with AI agents",
+            "points": [
+              "Pipeline of agents: Classifier triages tasks, Analyst plans, Implementer executes in a sandbox, Reviewer validates against the actual code diff.",
+              "Pulls tasks from GitHub and Linear and outputs a reviewed draft pull request for human approval and merge."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Google ships Gemini 3.7 Flash with 50% price cut",
+            "points": [
+              "Temporarily halved API prices while improving coding accuracy and tool-calling for agents; billed as Google's most capable coding model for multi-step tasks.",
+              "Now powers the Gemini Spark personal AI agent."
+            ]
+          },
+          {
+            "title": "OpenAI researcher: technical interviews are obsolete",
+            "points": [
+              "Phil Chen argues LeetCode and system-design interviews test tool use that agents now automate, not job performance.",
+              "Value shifts to judgment: choosing the right problems and defining ambitious work AI can't do alone.",
+              "Advice: build reputation with your team, join frontier companies on the hardest problems, and think like a researcher who debugs and innovates."
+            ]
+          },
+          {
+            "title": "Workflow claims 95% token-cost reduction for Claude and Codex",
+            "points": [
+              "Viral technique offloads repetitive, context-heavy grunt work to local models, cutting bills for high-volume tasks.",
+              "A DeepLearning.ai tutorial covers hybrid cloud/local routing for privacy and lower latency.",
+              "Tool 'CodeBurn' audits AI coding spend across models and agents, flags waste, auto-fixes and reports savings."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Google wearables estimate insulin resistance with no blood draw",
+            "points": [
+              "Combines heart-rate patterns, sleep, activity and skin temperature to estimate insulin-resistance changes (how well the body responds to insulin) without a glucose sensor.",
+              "Launches fall 2026 on Pixel Watch 3, 4, 5 and the $99 screenless Fitbit Air, spanning devices from $99 to $1,899.",
+              "Marketed as an early-warning wellness signal, explicitly not a medical diagnosis or replacement for clinical glucose monitoring.",
+              "Part of a Health Guardian suite adding blood-pressure insights and sleep-breathing and breathing-emergency detection."
+            ]
+          },
+          {
+            "title": "Flock Safety tightens license-plate camera data rules after abuse report",
+            "points": [
+              "Network logs ~20 billion license-plate scans monthly; a report found it used in 46 cases of officers accused of abusing access to track people.",
+              "Default retention drops from 30 days to 7, with mandatory Audit Assistance flagging abnormal searches by year-end and city-level query controls.",
+              "No warrant requirement added; civil-liberties groups call the changes a 'thinly veiled PR attempt.'"
+            ]
+          },
+          {
+            "title": "Pixel 11 line becomes a Gemini-first device",
+            "points": [
+              "Pixel 11 $899 (256GB), Pro $1,099, Pro XL $1,299, Pro Fold $1,899; ships August 20 with Tensor G6, Qi2.2 charging and a 48MP main camera with 56% better low-light sensitivity.",
+              "Gemini handles multistep tasks across 40+ apps, pulls context from chats and bookings, and suggests actions in Calendar and Maps.",
+              "HiLight RGB ring in the Pro camera bar colors favorite callers and pulses while Gemini listens; $29 Pixel Tag tracker ships November 11 using 1B+ Android devices as its location network.",
+              "Gives Google a first-mover edge on native Gemini hardware as Apple prepares to run Google models inside Siri."
+            ]
+          },
+          {
+            "title": "Joby Aviation buys defense contractor Resonant Sciences for $500M",
+            "points": [
+              "~$450M cash plus $50M stock for the 250-person Dayton, Ohio firm; over 90% of staff hold security clearances, closing expected H1 2027.",
+              "Resonant brings $100M+ annual revenue and is operationally profitable; Joby's Q2 revenue was $38.6M, mostly from its Blade helicopter unit ($36.2M).",
+              "New division absorbs Joby's turbine-electric, hydrogen-electric and defense-autonomy programs as the company expects to burn $385M-$415M in H2 2026."
+            ]
+          },
+          {
+            "title": "Quick hits: Databricks, perovskite solar, maglev",
+            "points": [
+              "Databricks closed a $5B round at a $190B valuation.",
+              "Tandem PV began selling 30.4%-efficient perovskite solar panels (a newer thin-film solar material).",
+              "A Chinese maglev train reached 800 km/h in 5.3 seconds."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Trump imposes 100% tariff on large imported drones",
+            "points": [
+              "100% tariff on large imported drones and 25% on smaller ones, primarily aimed at Chinese maker DJI while favoring allied nations.",
+              "U.S. drone stocks jumped on the news."
+            ]
+          },
+          {
+            "title": "Apple proposes 15% commission on off-App-Store purchases",
+            "points": [
+              "Apple asked the court to permit 15% on outside-app purchases, down from the 27% it charges despite an existing injunction in the Epic Games case.",
+              "The Supreme Court refused to pause proceedings over whether Apple violated that injunction; Apple's brief is due September 14.",
+              "Apple cited Google Play's rates (20% standard, 15% program, 10% subscription) as precedent Epic already accepted."
+            ]
+          },
+          {
+            "title": "Judge orders Google to drop Android app-store install friction",
+            "points": [
+              "Judge James Donato gave Google seven days to remove unnecessary warning screens and confirmation steps that slow rival app store installs.",
+              "Epic showed users had to tap 'view' before 'install' appeared; the judge rejected Google's security justification.",
+              "Builds on a jury finding that Google held an illegal monopoly over Android app distribution."
+            ]
+          },
+          {
+            "title": "Apple builds custom AI model with Alibaba for China",
+            "points": [
+              "First time Apple built its own large language model instead of licensing Google's Gemini or ChatGPT, using Alibaba's Qwen model plus Baidu tech.",
+              "Apple Intelligence is expected in China within months, likely with iOS 27, across iPhone, iPad, Mac and Vision Pro.",
+              "China's Cyberspace Administration registered the service, making Apple the only Western firm cleared to offer its own AI model there."
+            ]
+          },
+          {
+            "title": "WhatsApp tests on-device scam detection",
+            "points": [
+              "AI models run entirely on the phone to flag suspicious messages from non-contacts, with no message content leaving the device.",
+              "Trained on user-reported scam patterns; users can block, report, mark as trusted, or continue the chat.",
+              "Meta plans to publish model weights publicly so researchers can verify the models only detect scams."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "OpenAI Ultrafast ⚡, X open sources algo📱, DeepSeek Harness 🐋",
+      "date": "2026-08-14T10:45:41+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI launches Ultrafast API tier running GPT-5.6 Sol at 750 tokens per second—14x faster than Standard tier, initially for select customers only",
+          "X open-sources its ranking algorithm and tools letting users detect if they've been shadowbanned, expanding transparency around content moderation",
+          "Andy Green sets hydrogen vehicle speed record at 406 MPH, more than doubling the previous hydrogen-combustion record of 185.5 MPH from 2004",
+          "DeepSeek Harness enters developer preview with modular plugin architecture, letting developers swap capabilities without changing source code",
+          "OpenAI's revenue run rate reaches $40 billion ahead of IPO, roughly doubling from end of 2025 driven by AI coding tools and subscription growth"
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Ultrafast API and Revenue Growth",
+            "points": [
+              "750 output tokens per second (words the model generates per second) represents 14x speedup over Standard tier, powered by Cerebras infrastructure",
+              "Service targets products where response delays reduce answer usefulness—e.g., real-time applications, live interactions",
+              "Revenue run rate hit $40 billion in 2026, doubled from late 2025, fueled by AI coding software momentum, subscription sales, and emerging ad business",
+              "IPO timing not specified but financial scale approaching that of established enterprise software companies"
+            ]
+          },
+          {
+            "title": "X Transparency and Algorithmic Accountability",
+            "points": [
+              "Open-sourced 'For You' algorithm and core ranking engine under Apache v2 license, roughly 10-15x more detailed than previous efforts",
+              "Users can access tools to see if and how X's ranking systems impacted their account or posts",
+              "Pilot program testing with select accounts for at least one year before broader rollout",
+              "Move addresses 'shadowbanning' concerns (invisible suppression of content visibility) by enabling user verification"
+            ]
+          },
+          {
+            "title": "Hydrogen Vehicle and Robotics Advances",
+            "points": [
+              "Andy Green (age 64) drove JCB Hydromax hydrogen-combustion vehicle to 406.320 MPH, up from previous record of 185.5 MPH set by BMW H2R in 2004",
+              "Vehicle accelerated from 50 to 400 MPH in 72 seconds, demonstrating hydrogen internal-combustion viability at scale",
+              "US humanoid robotics industry faces challenges: China controls near-total supply chain dominance and received billions in state funding for robotics development",
+              "Building Chinese-parts-free robots impractical; US makers need substantial financial and policy support to compete"
+            ]
+          },
+          {
+            "title": "AI Agent Automation in Development",
+            "points": [
+              "Foreman (Vercel Labs) deploys AI agents across development pipeline: Classifier triages tasks, Analyst creates plans, Implementer executes in sandbox, Reviewer validates against actual diff",
+              "Takes tasks from GitHub and Linear, outputs reviewed draft pull request ready for developer approval and merge",
+              "DeepSeek Harness modular design lets developers select, swap, or extend capabilities via configuration without changing source code",
+              "Every model interaction recorded in append-only session log for auditability"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "X open sources its ranking algorithm",
+            "url": "https://techcrunch.com/2026/08/13/x-open-sources-its-ranking-algorithm-letting-users-see-if-theyve-been-shadowbanned/"
+          },
+          {
+            "label": "OpenAI previews Ultrafast API tier for GPT-5.6 Sol",
+            "url": "https://www.testingcatalog.com/openai-previews-ultrafast-api-tier-for-gpt-5-6-sol/"
+          },
+          {
+            "label": "DeepSeek Harness",
+            "url": "https://deepseek.com/harness/en/"
+          },
+          {
+            "label": "OpenAI's Revenue Run Rate Tops $40 Billion Ahead of IPO",
+            "url": "https://links.tldrnewsletter.com/Hp85Y5"
+          },
+          {
+            "label": "Foreman: AI software factory template",
+            "url": "https://github.com/vercel-labs/eve-software-factory-template"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Career advice for engineers in 2026",
+      "date": "2026-08-14T14:05:33+00:00",
+      "summary": {
+        "headlines": [
+          "Google launches Gemini 3.7 Flash with 50% price cuts—their most capable coding model yet for agents and multi-step tasks.",
+          "Z.ai's GLM 5.3 beats OpenAI's Fable 5 and DeepSeek V4 on coding benchmarks through scaled post-training; weights arrive in two weeks.",
+          "OpenAI researcher Phil Chen: technical interviews are obsolete—hire for judgment and problem selection, not coding speed.",
+          "DeepSeek releases open-source Harness v0.1 as Claude Code alternative, but API prices rising for flagship V4-Pro model.",
+          "Viral workflow cuts token costs by 95% for Claude and Codex by offloading context-heavy grunt work to local processing."
+        ],
+        "sections": [
+          {
+            "title": "1. Career Advice for Engineers in the AI Era",
+            "points": [
+              "Standard coding interviews (LeetCode, system design) are outdated—they test tool use, not job performance, since agents now automate those skills.",
+              "Real value shifts to judgment: picking the right problems to solve and defining ambitious work that AI can't yet automate alone.",
+              "Stay valuable by building reputation with your team, recognizing impact, joining frontier companies tackling the hardest versions of problems, and thinking like a researcher who debugs and innovates rather than executes.",
+              "Focus your energy on time, relationships, and what scales—shipping great code matters less than ensuring the right people know about your impact."
+            ]
+          },
+          {
+            "title": "2. New AI Models and Pricing Shifts",
+            "points": [
+              "Google's Gemini 3.7 Flash temporarily halved API prices while improving coding accuracy and tool-calling for agents; it now powers Gemini Spark personal AI agent.",
+              "Z.ai's GLM 5.3 achieves competitive performance on Terminal Bench 2.1 through post-training scaling alone (same 743B base as v5.2), available now via API with full weights shipping in ~2 weeks.",
+              "DeepSeek released open-source Harness v0.1 (coding framework alternative to paid solutions) and V4-Pro optimized for agents, but users face imminent API price increases for existing V4 access."
+            ]
+          },
+          {
+            "title": "3. Token Cost Optimization and Local AI Workflows",
+            "points": [
+              "Trending technique reduces token spending by 95% for Claude and Codex by offloading repetitive context work to local processing, cutting bills dramatically for high-volume tasks.",
+              "DeepLearning.ai tutorial covers building tailored AI workflows that switch between cloud and local models, routing specialized tasks to optimized agents while maintaining privacy and reducing latency.",
+              "Tool 'CodeBurn' now tracks exactly where AI coding budget goes, flags waste, auto-fixes, and shows savings—enabling teams to audit spend across multiple models and agents in one dashboard."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google Gemini 3.7 Flash announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIAGQZmb0x9YTiAbUsrUYpyBwwSOxqUY227zPaBTj3Hz5is0Ya6tubsHD_dKGIot3nZnEmi_mml2-gHDTtr5KYby9kGXbraR2ZtzB235FMsQo0HXYJz1q2maYTNybibhsiO6xVqYeoHn-Mm1S8pJKm4C79S8YSEUCibzi2-F-oCmXH_t7oyEDyioroMpwpdMDyvmjwrZskhmFXZ6ZPKXkMKVlzOESGsRjLQ8dCauoJmLDFtj86sOSAvPjyKwQD8XNR841Gk1umIcVkJwi_sRu2rmNQiyRbEjKusZdCB3Bl-Y49b6SlBYc7PZkazm-AbVT7K4kSeFxVViET4ItL2x3YdieEsS_gAgdLzYquq-HBG7fo/4t6/l4ow847rTCWxMWdqpJroQQ/h3/h001.Uq5601vJwNCiVykjXdwWDi3IBV_J9Ol0CTadqSl4gbI"
+          },
+          {
+            "label": "Z.ai GLM 5.3 model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.D9U5b4HcCkTRlmlLL6JbuMB05FgO3vd-dmTi5jw3EH5wgdfF3zngfdyllDRMWBZSkBI_pEKG7g7IlyDlBgX5GYNDXlY0GSwMrdeHPj9I5l1gcRKYNEEpuXI2JrZfuLvwAG17UhPO7B1c3WGXdLYXSapgPIpv7ME6RzlKTQ1kkAz8Vu6-uGjsA42myJJ6fxINjx1p13LjsNxfx2VY8icvYH_6xjnDwmDn0TYM7YsjbhwrZvkqiNmYjQi5lbOucm4QyyLZ_OOkWO_igTfNy5tfLw/4t6/l4ow847rTCWxMWdqpJroQQ/h6/h001.MoJkx6C_5NJTYZwj9Xl7ucufvqJB8hc9EBOE5XREcgo"
+          },
+          {
+            "label": "DeepSeek Harness v0.1 open-source tool",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFykAQu6FG3jmnowBlhWkD3dGnXMURXLfO3b-1IQN7lXn_uP6c9m7s6oSOl97Evq-0MI6GbWu-cFJeuRZl7oJsGFfgxGRi-XSGCA_wL7fudFdxeUkKQe5cHAhGppmuxV1s7YrGOSd9PtxciHxYvTGTuqgSdZhPf9X-Rr7saflT1CNrozfaOJOmXMnS3jIkFwg3MNaPn9Zp3VqlkVOZFZM3EpGsACnNJc8O1BydoA3u1dgL7a3UWpMZuwl5x5RoNii6hhrLaz9m21j4h776fTdXd/4t6/l4ow847rTCWxMWdqpJroQQ/h9/h001.hz2fxBFFyfGqd7vaXqJC4hX17wvO6sqZQH96pUd8XW4"
+          },
+          {
+            "label": "Phil Chen's full essay on engineer career advice",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGTzPqh_tSXJxdeftn9Pzqp_ZHuNBIGi7pi6dhm07WUT0BMRq6q-vdqsf7wxbGR6_o7fijYyHK8JkS1dJK7cocHo-W-KZYYcTrUTcxynmJErpVC12wSM4rkNDEfvb-N8CJY9_ucix9Z5RqzWhiLsv7OPk9xaulFU_pjZhpwMbGHKCbYCtJ9ZOyjrhbmVWpxLTlpsyu_6g8GbyMRllb9bSLXqpXvQ1D1vGr5KKSxTff9RWfgGXuXDOTmAviEuho72yu2evExEU6G98d6fVHr5aLm/4t6/l4ow847rTCWxMWdqpJroQQ/h16/h001.mKF_nXbpVYAP-k9_2iRPfgQ3FGVN4lrkv68ULJap24Y"
+          },
+          {
+            "label": "Building AI coding workflows from cloud to local (DeepLearning.ai tutorial)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IqUZOML35pbZylK0LfuECPJ9Gr775n_9SdUZz2bZNErF0ORGgy2ghBRE1oG-Qry6q28eEpvQXaIXYNhmV8dsFesORhFduZ_Uy7Ad47AmFdgeZRW9PYvtNnVGToOQJDa2zSmxrqsZKF_gk9p4qa17ieuJDgb6iSkSXVsBVgfIAZemlIw0cem0uUujAsKnVE2kJCYfmpMH83wHsN5FAjlUeoWsadZxc6dI_oxoUi83WhgmIcL4pBn47eySigwvMnNQD-RJjhLO9aRYU1uhhqLAGV5Av3E1ENobMAeDUEtvsyL82qJe4ihXsBk59YZStZZFftdVix2lqFNCvcimRp7bVxpX9L9kcYzNQej2iI1A4FM/4t6/l4ow847rTCWxMWdqpJroQQ/h29/h001.ZzEicHRY_6_I2iPGORoJr8RJYIzxzW-L_bpgm0OjGVE"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "😷 Google's $99 Fitbit gets a wild new update",
+      "date": "2026-08-14T14:31:45+00:00",
+      "summary": {
+        "headlines": [
+          "Google's $99 Fitbit Air gets insulin-resistance tracking without blood draws, expanding health monitoring across its wearable lineup from $99 to $1,899 devices.",
+          "Flock Safety tightens data practices after report found its camera network used in 46 abuse cases, cutting default retention from 30 to 7 days but stopping short of warrant requirements.",
+          "Google turns Pixel phones into Gemini-first devices with new multitask AI capabilities, $29 Pixel Tag tracker, and upgraded cameras launching August 20.",
+          "Joby Aviation pays $500M to acquire profitable defense contractor Resonant Sciences, betting on government contracts to balance losses in its air-taxi business.",
+          "Databricks closes $5B funding round at $190B valuation; Tandem PV begins selling 30.4%-efficient perovskite solar panels; China's maglev train hits 800 km/h in 5.3 seconds."
+        ],
+        "sections": [
+          {
+            "title": "Google Wearables Track Insulin Resistance Without Sensors",
+            "points": [
+              "System combines heart-rate patterns, sleep, activity, and skin temperature signals to estimate insulin-resistance changes—no blood glucose reading or sensor required.",
+              "Feature launches fall 2026 on Pixel Watch 3, 4, and 5 plus Fitbit Air, making metabolic monitoring available from $99 screenless band up to premium smartwatches.",
+              "Google positions tool as early-warning wellness signal, not medical diagnosis or treatment device, explicitly disclaiming use for replacing clinical glucose monitoring.",
+              "Part of broader Health Guardian suite adding blood-pressure insights, sleep-breathing detection, and breathing-emergency detection across Google's wearable ecosystem."
+            ]
+          },
+          {
+            "title": "Flock Safety Responds to Privacy Backlash",
+            "points": [
+              "Network records ~20 billion license-plate scans monthly; report found system used in 46 cases of police officers accused of abusing access to track individuals.",
+              "New safeguards: 7-day default retention (down from 30), mandatory Audit Assistance by year-end flagging abnormal searches, and city-level controls over who can query camera data.",
+              "Warrant requirement not imposed; police still decide whom to search, and civil liberties groups call changes a 'thinly veiled PR attempt' rather than structural reform.",
+              "Scale remains critical: at 20B monthly scans, defaults become de facto privacy policy regardless of opt-in mechanisms."
+            ]
+          },
+          {
+            "title": "Google's Pixel 11 Lineup Becomes Gemini Machine",
+            "points": [
+              "Base Pixel 11 starts $899 (256GB tier), Pro $1,099, Pro XL $1,299, Pro Fold $1,899; ships August 20 with Tensor G6, Qi2.2 charging, and 48MP main camera with 56% better low-light sensitivity.",
+              "Gemini now handles multistep tasks across 40+ apps, surfaces context from chats and bookings, suggests actions in Calendar and Maps—positioning Google's AI as orchestrator across device ecosystem.",
+              "HiLight (RGB LED ring in Pro camera bar) colors incoming calls from favorites and pulses while Gemini listens; $29 Pixel Tag tracker ships November 11 tapping 1B+ Android devices for location network.",
+              "Move gives Google first-mover advantage defining Gemini on native hardware while Apple prepares to run Google models inside Siri, shifting AI rivalry beyond screens."
+            ]
+          },
+          {
+            "title": "Joby Aviation Acquires Profitable Defense Contractor",
+            "points": [
+              "$500M deal (~$450M cash, $50M stock) for 250-person Resonant Sciences in Dayton, Ohio; >90% workforce security-cleared; expected to close H1 2027.",
+              "Resonant generates $100M+ annual revenue and is operationally profitable; Joby's Q2 revenue $38.6M came mostly from Blade helicopter unit ($36.2M), with air-taxi business still burning cash.",
+              "New division absorbs Joby's turbine-electric, hydrogen-electric, and defense-autonomy programs; Joby expects to burn $385M–$415M cash in H2 2026, making profitable operations critical.",
+              "Strategy shifts Joby from loss-making startup to hybrid holding: near-term revenue from defense contracts while air-taxi certification and commercialization remains multi-year bet."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google wearables now track insulin resistance",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._1pfp198jIOr5bheVbwqIbkV3SsLqO4jZezxjTdBs9huhjy28dMiHxIHM6i1HvigFz_v2k7So5v_ugGBaSW6Nv0pjvdOjdF_pOS0eU2_BBiUT_jYMCOFz3xaG3uTJXkp18Rdz0Ji-xo0kDLCYW8lbpSWrnLplLrH3oLlKwWKBNJdX9FbbsGtcCBFnVENqCHkEunXRlV0k-LGWIv9aSG2lfwz7d94yECXKrmi1Se4-WISWTpnEpTWk5dwBeONqwpCj9zhKSWAcxSnaJoErRuz0IJ5hH6FCOoLBjoAxpo5cL--W6CdvhuIsKy8TSt-qcQoTpDh9aGQQYdBe59Ndawj-YSG30CtuPxB3DOWz9flXoA/4t6/Hu4l5XqNSXeJAfDiyoUGnQ/h5/h001.Uz5654429Rq4esIwh4oF4KoX2IuFZzgG-u0z_Q7NhpQ"
+          },
+          {
+            "label": "Flock tightens data rules after backlash",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5n2rRYxzXnqBInasO0kQBmkfjeyd6dmsRu-zGJt-TJUZ2OWAntijJo7pfC4FqK7D1w06RU0sAALaPl4CpsGSVwm1cYEEh3BovFWsV5gwd49OVqPN5jS4duk5UwjKjcnqi5cNE75iTQAQa7z2U2vOsLs-ePRAW8ruuAsVr8GyXE0ONhApNKnOerJI_fxx17YsFqp3dL-rJIrxWVfu-JlU0m25IoumTfU5I5M4_JR7cE8mW0J-snlw0S3Np8uiVEmGD93WG1ufvkFs-bZGg5TRZoUKHta1dn7sin8hnOIyGCQrrwitnKV_tW2zDHrI923XuJzLGyfGEobf7r-xdbZhSJIRfDYIboOSj_dk9zlrbkgr/4t6/Hu4l5XqNSXeJAfDiyoUGnQ/h10/h001.a4rKDCK5GxkKc8IwWO6lCEokWGgBjOYGfIECA2lZu48"
+          },
+          {
+            "label": "Google makes Pixel a Gemini machine",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._1pfp198jIOr5bheVbwqIbkV3SsLqO4jZezxjTdBs9huhjy28dMiHxIHM6i1HvigBfFL7-Fun_A4YbBnDCVF5Lstc1MoPdSs9RI4sFBNOSrn17FZDxoNiXi2qHx_wMGoLyLmNXKt4-8x7soKCxUThcBPC_-SesUnMxwZCt0eDGUHIfPoql8snSgiVh-YpkEzWHVFaOM8SePAv_tPb77Rv2Qzu34Rt9yY4JGaytPeOeaVtOPt46E4KLYX9as1gy6W_4KMXpHPHgAA1A8A3zqDrumg83h3voURzmCgJV9tYKRFHvfeU3GfSYM7VvBOfJF9jUxZww4w4NFBcSkhK7ugXA/4t6/Hu4l5XqNSXeJAfDiyoUGnQ/h13/h001.MKiCxN9REpzM5vLHxlsZIjAtnSaZKOAIGe8yWOpG6xI"
+          },
+          {
+            "label": "Joby buys its way into the defense tech race",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.vHmoiSe6IuBeRrC7tjlx-MinF3zkrsDubAb2al2SoDikHtfL0XPfq5FWQWeiSLYkBoiW95rJfjn03etwiP9FAAQdL7B3EAvIUlhlgEpJPCgcYzjcCngp3n2OsHrWk54pn66X8rSv5kR9brwu3NWU1j_7eiHEUxuNyBkqkyl0itaVqh5eJqVNY3A-4xYjjVRkwvyQF0AzdZfp5fuNjb0ijD3t41vTsEYvOrr1WQ-wfLVLkgygSCAZpjfmBhgPVaLmi4cRR-2ee5uyHPppEQ0lPFPmi14z111ZQ4uQAc2ZKJFXbytbp29HURaproHL8uM5ytYVdXnDdBl6_dL_zNadan5xOD_tZ7Htm-nEEKqLqWpUnuE5K6ak2PAgz8cqUlzs/4t6/Hu4l5XqNSXeJAfDiyoUGnQ/h16/h001.JLOdZCe67kd1-Y_PREqUDM1ZXpSHNkIwUrGXHC61lV0"
+          },
+          {
+            "label": "Databricks closes $5B funding round",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5n2rRYxzXnqBInasO0kQBmn0vPfPFPdaMngMeYnBtE9yefQo_SuSGzLAazTGwgsMKilj715Bw4hcxj7tUAmFZK8RQ0vV7C2JamM-BeOEYkFB9N7u2D9ydCpvIIDCS_g8vddOAwJdRtA4-tznw4lS5BuZUOHh5HOrKV7hWKjCb8EcK_aEXPQ2Nimr7mKmrr8Ws2CQUAOmH7GAqXkYGD_eH2ddbERzNZXeCNJkgNCEj9OAgJrsFuZwo1uTfADGs0iSuEMkpOMGX8rJzagPTAxAPGiPFbgwret2d22-xIzJd9calZoqZu5F-zVA3ZVRrIEXCmLG9ZEQ9kqRf8qFUxtUK4eYI22UXD4gl-A5p04CRVFQ/4t6/Hu4l5XqNSXeJAfDiyoUGnQ/h25/h001.qi4ifZVjK_YjCssjIrzC8HsqtXyyX1R-dehh08fAY5I"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Trump slaps 100% tariff on imported drones",
+      "date": "2026-08-14T16:15:19+00:00",
+      "summary": {
+        "headlines": [
+          "Trump imposes 100% tariff on large imported drones and 25% on smaller ones, primarily targeting Chinese manufacturer DJI while favoring allied nations, causing U.S. drone stocks to jump.",
+          "Apple proposes 15% commission on off-store app purchases in Epic Games dispute, compared to Google Play's 20% standard rate and risking Supreme Court contempt charges.",
+          "Federal judge orders Google to remove extra warning screens blocking rival Android app store installations within one week, building on Epic's antitrust victory.",
+          "Apple built a custom AI model with Alibaba for China users, becoming the only Western firm cleared by Beijing to offer its own AI in the country.",
+          "Chinese startup Zhipu claims its GLM-5.3 coding model beats OpenAI on coding benchmarks and found 2,436 software vulnerabilities across decades-old projects."
+        ],
+        "sections": [
+          {
+            "title": "Apple's App Store Commission Battle",
+            "points": [
+              "Apple asked the court to allow 15% commission on purchases outside the App Store, compared to the 27% it currently charges despite a judge's injunction.",
+              "Supreme Court refused to pause proceedings while deciding if Apple violated the earlier injunction, forcing Apple to file its Supreme Court brief by September 14.",
+              "Apple cited Google Play's rates (20% standard, 15% program, 10% subscription) as market precedent, noting Epic agreed to those exact Google rates."
+            ]
+          },
+          {
+            "title": "Google's Android Monopoly Enforcement",
+            "points": [
+              "Judge James Donato ordered Google to strip unnecessary warning screens and confirmation steps that artificially slow rival app store installations within seven days.",
+              "Epic demonstrated users faced obstruction like needing to tap 'view' before 'install' appeared—barriers the judge called unacceptable anticompetitive friction.",
+              "Google claimed the barriers exist for user security, but the judge rejected that defense, building on a jury finding that Google held illegal monopoly control over Android app distribution."
+            ]
+          },
+          {
+            "title": "Apple and China's AI Partnership",
+            "points": [
+              "Apple partnered with Alibaba to deploy a custom large language model in China, marking the first time the company built its own AI rather than licensing Google's Gemini or ChatGPT.",
+              "Apple Intelligence is expected to arrive in China within months, likely with iOS 27, and will work on iPhone, iPad, Mac, and Vision Pro using Alibaba's Qwen model plus Baidu technology.",
+              "China's Cyberspace Administration registered Apple's generative AI service last month—a regulatory approval that makes Apple the only Western firm cleared to offer its own AI model in China."
+            ]
+          },
+          {
+            "title": "WhatsApp's On-Device Scam Detection",
+            "points": [
+              "WhatsApp is testing a Scam Detection feature using AI models that run entirely on users' phones to flag suspicious messages from non-contacts, with no message content leaving the device.",
+              "The tool, trained on user-reported scam patterns, displays a private warning and lets people block, report, mark as trusted, or continue conversations.",
+              "Meta plans to publish model weights and versions publicly so security researchers can verify the models only detect scams and don't monitor message content."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Trump drone tariff order",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3OTM3ODc1OTM2ODgzMjcsXCJyXCI6MTk1NzkzODE3NDMzMDE2MjIwfSIsInMiOiIxNGU2ZjM1MDAwMWYzNTkyIn0"
+          },
+          {
+            "label": "Apple's 15% commission proposal",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3OTM3ODc2MDIwNzY5MzYsXCJyXCI6MTk1NzkzODE3NDMzMDE2MjIwfSIsInMiOiJlZGRiOTlkMTFkZWY3NDg4In0"
+          },
+          {
+            "label": "Google app store installation order",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3OTM3ODc2MTE1MTQxMjEsXCJyXCI6MTk1NzkzODE3NDMzMDE2MjIwfSIsInMiOiI5ZTRjNDAwNDM0NDNiMDhkIn0"
+          },
+          {
+            "label": "Apple China AI partnership with Alibaba",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3OTM3ODc2MjE5OTk4ODIsXCJyXCI6MTk1NzkzODE3NDMzMDE2MjIwfSIsInMiOiI3YmUyNTg2YjM5NmM5ZjAyIn0"
+          },
+          {
+            "label": "WhatsApp Scam Detection feature",
+            "url": "https://mail.dupple.com/tf/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3OTM3ODc2Mzk4MjU2NzYsXCJyXCI6MTk1NzkzODE3NDMzMDE2MjIwfSIsInMiOiJhYWFmNjBiMmJlNzIwOTQyIn0"
+          }
+        ]
+      }
+    }
+  ]
+}
