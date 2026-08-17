@@ -1,0 +1,567 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-08-17",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Dario Amodei fires back at critics over AI's \"crisis of trust\"",
+        "points": [
+          "Amodei's first X post in over a month (a two-part reply that reached 10M+ views) rejected investor Gavin Baker's claim that Anthropic's safety warnings backfired, calling the framing \"honest\" rather than \"doom.\"",
+          "He rejected the false choice between heavy regulation that favors incumbents and no regulation at all, citing California's SB53 transparency law as proof his asks burden frontier labs like Anthropic more than smaller competitors.",
+          "Core argument: public distrust stems from decades of corporate overpromising and general institutional distrust, not from safety talk — AI \"still hasn't delivered\" on its promises.",
+          "Amodei says the only route back to trust is real breakthroughs in medicine and biology, not marketing campaigns.",
+          "He denied rumors he envisions Anthropic as \"the only private company in the world\"; Anthropic researcher Sholto Douglas called the claim \"completely false.\""
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Baker compared Amodei's alleged ambition to SBF-level founder delusion (Sam Bankman-Fried, the FTX founder now imprisoned for fraud), and the exchange started on the All-In Podcast."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Douglas argued Anthropic's actual worry is any single company gaining too much power."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Amodei argued for a middle path between concentrated and fully distributed AI development, describing his own past statements as balanced."
+          }
+        ]
+      },
+      {
+        "title": "Stripe to acquire OpenRouter for over $7B",
+        "points": [
+          "Stripe is acquiring OpenRouter — an AI model-routing marketplace that lets developers pick between models by capability and cost — for more than $7 billion.",
+          "The price is roughly 5x OpenRouter's $1.3 billion valuation set just three months earlier (May funding round)."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Anthropic is separately in talks to buy AI infrastructure startup Decart for ~$6 billion, which would be its largest acquisition ever."
+          }
+        ]
+      },
+      {
+        "title": "Z.ai releases GLM-5.3, claiming best open-source coding model",
+        "points": [
+          "GLM-5.3 claims the strongest open-source coding performance plus top scores on cyber security benchmarks; model weights (the downloadable parameters that let anyone run the model) ship in about two weeks.",
+          "Gains come purely from post-training scaling — more compute, diverse environments and long-horizon tasks — rather than architecture changes.",
+          "Z.ai ships on a days-to-weeks cadence versus months for OpenAI and Anthropic."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "OpenAI's new ChatGPT activity-logging feature raises privacy alarms",
+        "points": [
+          "\"Computer History\" is an opt-in feature that logs clicks, keystrokes and app switches to give ChatGPT and Codex persistent memory of a user's recent work and context.",
+          "On Mac the log is reportedly stored as unencrypted plain text, creating immediate privacy exposure."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Neurosurgeon proves 22-year-old math conjecture with ChatGPT agents",
+            "points": [
+              "Shanmu Jin, a Beijing neurosurgeon, proved Crouzeix's Conjecture (open since 2004) using GPT-5.6 Sol running autonomous subagents for 16 hours in ChatGPT Work.",
+              "Jin, trained in geology and medicine, learned advanced math independently and hit the problem via brain-ultrasound research.",
+              "Cornell mathematicians Alex Townsend and Anne Greenbaum plus the problem's original author verified the proof; formal peer review is pending.",
+              "Implication: discovery no longer requires professional mathematicians, shifting the field's role toward verification."
+            ]
+          },
+          {
+            "title": "Other model and tool releases",
+            "points": [
+              "Pika Labs launched four AI audio models (soundtracks, music, sound effects, speech) claiming 20x lower cost than rivals.",
+              "Google released Gemini Flash 3.7, positioned as a fast, cheap mid-tier model."
+            ]
+          },
+          {
+            "title": "Staff AI use cases",
+            "points": [
+              "Growth lead used Claude Cowork with Meta MCP (a connector standard letting AI tools pull data from apps) to cross-reference spend, CPA and creative attributes across 365 days of ads.",
+              "An editor identified a rare car part from a photo with ChatGPT, getting compatible part numbers and sellers within a week.",
+              "Educator Patrick Loebs built an AI speech coach that asks Socratic questions instead of generating content."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "OpenAI's GPT-5.6-Cyber hacking model goes self-serve on Amazon's marketplace",
+            "points": [
+              "GPT-5.6-Cyber is trained with fewer safety limits so it writes working exploit code, not just bug descriptions.",
+              "It has already found 400+ privilege-escalation flaws (bugs that let attackers gain higher system permissions) in a single operating system.",
+              "Access previously required personal vetting by OpenAI; it can now be provisioned like a normal software subscription through an existing company Amazon cloud account."
+            ]
+          },
+          {
+            "title": "Fine-tuning your own model with Unsloth Studio",
+            "points": [
+              "Fine-tuning (retraining an existing open-source model on your own examples so it picks up new habits) is now point-and-click on a personal computer via Unsloth Studio.",
+              "Workflow: install, pick a model your hardware can run, build instruction/input/output example triplets, train with QLoRA (adapts a small add-on layer instead of retraining the whole model), then A/B against the original.",
+              "Quality of examples is the main determinant of results."
+            ]
+          },
+          {
+            "title": "Claude watermark removal tool spreads fast",
+            "points": [
+              "An open-source watermark-removal tool hit 11,000 GitHub stars days after Anthropic explained how Claude's watermark works."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Alibaba's Qwen tops the open-weight race",
+            "points": [
+              "Qwen open-weight models passed 3 billion downloads in six months, far ahead of Meta's and Alphabet's open models.",
+              "Alibaba's internal evals claim Qwen3.8-27B beats Anthropic's Opus 4.6 on several benchmarks, narrowing the open-vs-closed gap."
+            ]
+          },
+          {
+            "title": "AI is accelerating cybercrime: vishing and a 24-hour Zoom exploit",
+            "points": [
+              "Citadel, Two Sigma and Point72 were recently targeted by vishing (voice phishing — AI-cloned voices used to trick staff into revealing information).",
+              "AI voice models such as Bland AI and GPT-Live now add natural pauses and stutters, making synthetic calls nearly indistinguishable from humans.",
+              "A critical Zoom flaw enabling unauthorized device takeover in meetings was exploited using fewer than 20 prompts on public AI models in under 24 hours."
+            ]
+          },
+          {
+            "title": "OpenAI executive exodus ahead of IPO",
+            "points": [
+              "CRO Denise Dresser is departing, following Fidji Simo and Brad Lightcap.",
+              "CFO Sarah Friar and President Greg Brockman met investors Friday about the IPO, filed confidentially in June with no announced timeline."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Cloudflare's stack for agents that actually execute code",
+            "points": [
+              "Agents SDK runs on Durable Objects (long-lived compute containers that keep each agent's state across restarts) with built-in SQL, WebSockets, routing, scheduling and sessions.",
+              "Sandboxes (generally available April 2026) give agents isolated Linux environments with a real shell, filesystem and background processes, so no human has to run the output.",
+              "Sandbox filesystem state persists between calls in a session, enabling clone repo → test → read error → edit → test loops without re-provisioning.",
+              "Project Think, an experimental preview base class, auto-runs the agentic loop (the iterative decide-act-observe cycle), persists messages and resumes interrupted streams on Durable Object SQLite; long-term recall is handled by a separate Agent Memory service.",
+              "Agents write state via this.state/this.setState() with automatic persistence; SDK now supports AI SDK v6 and v7 side by side.",
+              "Channels: chat, WebSockets, email via onEmail plus Cloudflare Email Service (public beta), and voice via @cloudflare/voice beta (withVoiceInput for speech-to-text, withVoice for two-way conversation).",
+              "Advice: prototype with the Think preview but keep production logic in stable code, and pin the voice package version.",
+              "Kitesurf, Cloudflare's agent browser shipped August 2026, plus Sandboxes turn agents from code suggesters into ticket-closing automation."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Compute and silicon deals reshuffle",
+            "points": [
+              "SpaceX acquired Cursor to pair its GPU resources with Cursor's model training; Grok 4.6 shows early results.",
+              "Nvidia cut its financial guarantee on OpenAI's five-gigawatt Ohio data center from $250B to under $120B amid investor risk concerns; OpenAI must decide later how to finance the rest.",
+              "OpenAI exercised Cerebras warrants for $100, taking a stake worth ~$2.3B days before launching Ultrafast, which runs GPT-5.6 Sol at 750 tokens/second.",
+              "Google is reportedly working with AMD on next-gen TPUs that put CPU cores on-package for reinforcement learning workloads."
+            ]
+          },
+          {
+            "title": "Research and engineering notes",
+            "points": [
+              "Microsoft's Full-bandwidth Transformers feed the previous token's hidden state back in alongside the next token, letting computation continue across decoding steps.",
+              "MathCode, a frontier math reasoning agent, ships a built-in Lean 4 formalization engine (converts plain-language problems into machine-checkable formal proofs) and reusable theorem libraries.",
+              "Google's Antigravity 2.0 adds Custom Agents: file-based configs defining role, instructions, tools and constraints to keep context clean and cut token overhead.",
+              "PointFive tested token-compression tools across 2,908 Claude Code sessions and found some raised costs by nearly 50% — fewer tokens ≠ cheaper.",
+              "AI engineering skills now cluster into four areas: building/deploying AI apps, software fundamentals, coding-agent fluency, and shaping what gets built."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "✍️ Dario Amodei logs on to answer the critics",
+      "date": "2026-08-17T10:05:07+00:00",
+      "summary": {
+        "headlines": [
+          "Dario Amodei defends Anthropic's AI safety messaging as honest risk communication, arguing that real medical breakthroughs—not marketing—will restore public trust in AI labs.",
+          "Beijing neurosurgeon proved Crouzeix's Conjecture, a 22-year-old unsolved math problem, using ChatGPT's autonomous agents in a 16-hour session with peer verification underway.",
+          "China's Z AI released GLM-5.3, claiming the strongest open-source coding model with top cyber security benchmark scores, with model weights available in two weeks.",
+          "OpenAI introduced Computer History, an opt-in feature that logs user activity to give ChatGPT and Codex persistent memory of recent work context.",
+          "Pika Labs released four AI audio models for soundtracks, music, sound effects, and speech at claimed 20x lower cost than competitors."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic CEO Addresses AI Trust Crisis",
+            "points": [
+              "Dario Amodei rare X post rejected investor Gavin Baker's claim that safety warnings have backfired, calling the framing 'honest' rather than 'doom.'",
+              "Amodei stated the only path to restoring AI industry trust is delivering real breakthroughs in medicine and biology, not marketing campaigns.",
+              "He reframed Anthropic's regulatory proposals as slowing large labs while sparing smaller ones, rejecting Baker's argument that the company 'lost' the AI regulation debate.",
+              "Amodei pushed back on rumors he envisions Anthropic becoming 'the only private company in the world,' with coworker Sholto Douglas calling the claim 'completely false.'"
+            ]
+          },
+          {
+            "title": "Math Solved by AI With Human Verification",
+            "points": [
+              "Shanmu Jin, a Beijing neurosurgeon, proved Crouzeix's Conjecture (unsolved since 2004) using GPT-5.6 Sol running autonomous subagents for 16 hours in ChatGPT Work.",
+              "Jin learned advanced mathematics independently after undergraduate geology and medical training, discovering the problem through brain-ultrasound research.",
+              "Cornell mathematicians Alex Townsend and Anne Greenbaum, plus the problem's original author, all verified the proof; formal peer review is pending.",
+              "The breakthrough demonstrates that mathematical breakthroughs no longer require professional mathematicians, shifting the field's role toward verification rather than discovery."
+            ]
+          },
+          {
+            "title": "New AI Models and Features Released",
+            "points": [
+              "Z AI's GLM-5.3 claims strongest open-source coding model with top scores on cyber security benchmarks; weights ship in two weeks.",
+              "OpenAI's Computer History feature logs clicks and typing to give ChatGPT and Codex persistent memory of recent user work and context.",
+              "Pika Labs released four AI audio models covering soundtracks, music, sound effects, and speech, with 20x lower cost claims versus rivals.",
+              "Google released Gemini Flash 3.7, positioned as a fast, cheap, and capable mid-tier model."
+            ]
+          },
+          {
+            "title": "Practical AI Use Cases from Staff",
+            "points": [
+              "Rishi (Growth) uses Claude Cowork with Meta MCP to map ad creative data, identifying winning concepts by cross-referencing spend, CPA, and performance attributes across 365 days of campaigns.",
+              "Shubham (Editor) identified a rare car part using ChatGPT by uploading car details and a photo; the model found compatible part numbers and sellers within a week.",
+              "Patrick Loebs built an AI speech coach for his public speaking class that asks Socratic questions to refine student arguments rather than generating content or finding sources."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Dario Amodei defends Anthropic on X",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HVQGVU5C0nTeBMVkj1UP-J5C0Nchry7L1U2Cp6rFh85_lDdD1DVjrX9s1yNPncVshHZrjzJ7TblNHlWilMKs7-YuHlfRRyMiYl4M_Xyq-ME-tSuiC91vOdxQiyaD29tSVdoWXPT2qId5x9e2IxwKzNHciKIY6ivM6tdsQmeTv6SEaekg0w-BDZa-ygnB_Q-P6ft5mWVcg67Ih1AIFtd7hZFR891AMgsP_ufDgDGP9iArEfcYe72l6E4fLsurt6HepdaXNmtc_HGanCe6gxc3NfE/4t9/eHqK1acOQ3mxoQrqya4dKQ/h6/h001.ZMc8xt5k16LgX3_jLOHOPLv-ltBQxQgfFbO9orJyxRg"
+          },
+          {
+            "label": "Hand off real work across apps with Grok Bot",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJF1PoFLZEVdAqxgKKKZF7OqG1X36UeFMxiaNpBIbR6h6RwUk9SQjUXYSKNCB7CADwSLQX4LizE_sxEUxz8zaqln5f4P441XjI4iELvQI_LZixxomZrIwJuw7h0McjftrnSVXfbdGTKwfK0SQRSW0lEGxxLAQEw1UGGXOYLTdle6UQ6u_r4OtG90sFXdUbqs4TOjaha_ZVhUt_uWIn1L_XHCNmdU0dRYWv3T00tEywLbO50tRVG1uCV3xcIEU9iqnPHjY4bW50NXgOdwOA4o1Rbw6UkJ0DssxbKKq6fu2rjnfQ/4t9/eHqK1acOQ3mxoQrqya4dKQ/h17/h001.NWvG3md0Uvc0uBwm7fxwPRl3V6Y4AO_lKcYYVFmqZy0"
+          },
+          {
+            "label": "Doctor solves 22-year math problem with ChatGPT",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.siHJl2oxYc5G1hfeCOvt3YHQOwUORXeTORvfpAoau-7zWpi2nbCRcE9qQkopPDQqY78TWRw7hi1FQIN32D-Aag0l9kEHLay0Q5PjgadIbQ99-BGiM-6pOEqfdW2Y7ufAfTUg2oaREC8F5qo7PKaksbSAwwnVzA5_6bg7nug44eB2heD60jxqrE8Kt-P0UGmFBwQ_mFw0OsOjwNgAp04ySiDxpxbuNcMAeriy7C9AiI3aJos9JKxtJuyl2jofbvxiVF2Fnv8dWp2k9Ieht39-Bm80wpBU_8_WKLGPKa58uIU/4t9/eHqK1acOQ3mxoQrqya4dKQ/h24/h001.zFxK3dvqaB4ID78ZUW8hxIGZYWhGrjUaLHZFgAR-uz8"
+          },
+          {
+            "label": "The Rundown Roundtable: Our AI use cases",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEXqG5G9QgplqelSkRBjG9zUzEqb_lKnw6QR4T67SaJOXqZOswtQlOcrY2ivCTWSY51pQ7VyeCqIzN3LybXEf6vD8TeSNJz7tYWgRmV6J6Ts49_OrgWR87zGyz49t75vhsOZ5KnrM1bRKJq2wzIxVuVluloRfkD8Pe_WWEh9QyC4NwQ3-_vKzaR8PpPbxd669cycpyrletDPQkiX9ltBMn-EWy74R96dXOR2xN1Zb6p0Q/4t9/eHqK1acOQ3mxoQrqya4dKQ/h13/h001.wpFOEbC1l2q44hCyeMJFFSdMRRuF_8iVH4Z-CfZOVbs"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 You don't trust AI. Dario Amodei explains why.",
+      "date": "2026-08-17T10:32:10+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI released GPT-5.6-Cyber, a hacking AI with reduced safety limits that finds exploits, now available through Amazon's marketplace without personal vetting—a shift from controlled access to self-serve provisioning.",
+          "Anthropic CEO Dario Amodei rejected claims he wants his company to be the only private AI firm left, framing public AI distrust as a 'crisis of trust' rooted in decades of corporate overpromising rather than safety warnings.",
+          "Stripe acquired AI model marketplace OpenRouter for $7 billion (5x its $1.3B valuation from 3 months prior), while Anthropic is in talks to buy infrastructure startup Decart for $6 billion.",
+          "OpenAI's new ChatGPT feature logs every keystroke and app switch on Mac in unencrypted plain text, raising immediate privacy concerns.",
+          "An open-source watermark-removal tool hit 11,000 GitHub stars days after Anthropic explained how Claude's own watermark works."
+        ],
+        "sections": [
+          {
+            "title": "1. The Trust Crisis Debate: Dario Amodei vs. Gavin Baker",
+            "points": [
+              "Investor Gavin Baker claimed Dario Amodei told him Anthropic could be the only private AI company left standing, comparing it to SBF-level founder delusion (Sam Bankman-Fried, FTX founder now imprisoned for fraud).",
+              "Anthropic researcher Sholto Douglas called the claim 'completely false,' arguing Anthropic actually worries most about any one company gaining too much power.",
+              "Dario replied directly in a two-part post that reached 10 million views: he rejected the false choice between heavy regulation favoring giants or no regulation, citing California's SB53 transparency law as proof his policy asks burden frontier labs like Anthropic more than smaller competitors.",
+              "Dario's core argument: people distrust AI not because of safety warnings, but because companies have spent decades overpromising and underdelivering—a 'crisis of trust' that makes users wary even when tools like Claude work well daily."
+            ]
+          },
+          {
+            "title": "2. OpenAI's Hacking AI Now Available Through Amazon Marketplace",
+            "points": [
+              "OpenAI confirmed GPT-5.6-Cyber (trained with fewer safety limits to write real exploit code, not just bug descriptions) is now provisioned through Amazon's cloud store like a normal software subscription.",
+              "The model has already found over 400 privilege-escalation flaws (security gaps that let attackers gain higher system permissions) in a single operating system.",
+              "Until now, access required personal vetting from OpenAI; now it's self-serve through existing company Amazon accounts, built for speed rather than scrutiny."
+            ]
+          },
+          {
+            "title": "3. M&A Wave in AI Infrastructure and Models",
+            "points": [
+              "Stripe finalized acquisition of OpenRouter (AI model marketplace) for $7+ billion, more than 5 times its $1.3 billion valuation from just 3 months earlier.",
+              "Anthropic is in talks to acquire Decart, an AI infrastructure startup, for approximately $6 billion—Anthropic's largest acquisition ever if completed.",
+              "These valuations reflect intense competition for compute infrastructure and model distribution channels as AI deployment accelerates."
+            ]
+          },
+          {
+            "title": "4. Fine-Tuning Your Own AI Model with Unsloth Studio",
+            "points": [
+              "Fine-tuning (training an existing open-source model on examples of answers you want, teaching it new habits without building from scratch) is now accessible via Unsloth Studio, a point-and-click workshop for customizing models on your own computer.",
+              "Basic workflow: install Unsloth, pick a model your hardware can run, build training examples with instruction/input/output triplets (optionally generated by AI), train with QLoRA (a technique that adapts a small add-on layer instead of retraining the entire model), then compare your fine-tuned version against the original.",
+              "Success depends on feeding the model really good examples of exactly what you want—teaching a smart generalist to become your specialist."
+            ]
+          },
+          {
+            "title": "5. Privacy and Security Warnings",
+            "points": [
+              "OpenAI's new ChatGPT feature logs every keystroke, click, and app switch on Mac and stores it as unencrypted plain text, creating immediate privacy exposure.",
+              "An open-source watermark-removal tool hit 11,000 GitHub stars days after Anthropic detailed how Claude's watermark works, showing the speed at which safety mitigations can be circumvented."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "All-In Podcast debate featuring Gavin Baker and Dario Amodei",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmJNzb5s2_LTdqe70KRHdfr8m0vxICU0mMOSmmqjb-bkXMLm6NxwY1S0qMccjyfMRRI2iBAPXt-pUbV_A3vMOIOM_ldmzX56orROhjuBKKO6xGZt78lLnixeW7knHZMCe1acifZIpSqHA6E6dTjKI9v2h25r1RuIop9J2YQtoz0oKA6IEBQUJiiYJRJ57snX1IOfI4FcRTKLk5OyGmqxfC5rlTti-kH71h05slqrR08tkIW4ZjJspMtL-AE5WtcIg-TKwCvYIjI_uoPw4Y1bxTsE/4t9/7CjiHmkiR0OQ974ixCmkGw/h9/h001.qX63v1y9HSOo9K0G0iH_mvSgZULyOzoMMg5gN06y9m8"
+          },
+          {
+            "label": "Dario Amodei's direct reply on X (10M+ views)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmKIAQFBRtol2mk4BlnXARQjvnvsiEPS9VL-ofOrfVTxrgbSCtmK4Rr_COLeD3IuSzMqi0sgwr3WqZ6nnVGVshIqoTDeAsbD6VRs-EwDTDKjqzwLa5HPHrkMv8oIVIhD35cJlhd66qGc9Gt_BiqpC8oULLEjpRx7Of7sBqtwL8IHZ6nWdr0BrZAUh1VtUvffGLVgtRVlYATNb7WfKy_mPbatmFmcYGOg_QdmAzrfmu-kWyEzv5JPbmkBTOfsfeaA5_UMo0qUA0OewXFE7bg6_T61Q/4t9/7CjiHmkiR0OQ974ixCmkGw/h11/h001.cLNBbP5TrsjonXdR3vFn_Sf5vnpYK_nEdGZw5nQ1aNA"
+          },
+          {
+            "label": "Unsloth Studio for fine-tuning open-source models",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtX98NaTu7pMBwAEAYDokTpiEV8vQoTPEAp1wlmanALYqvSEiCI41mTr2ss0s849oTYHrWLlYAuXchAOOlcVTZoDv8prUbQxd3N_qdhS17tYfNylcog8tkbcJmRvGtaqFNvOULV6QyNifkOqzUWHhFXw3F8x40SSDz3e-NNv-EbsI37X_I5veXgszXpho6IEdL-9gwvZCWIlvIrG5FvU8m4aBo7GF2fHyftnXQdVUEBEee5XSlB6cCqjBBegHIEwsNwM6mrMUZhBGrkgkPANxHzo/4t9/7CjiHmkiR0OQ974ixCmkGw/h17/h001.GerdmmX1FLRkn-hrc2EC4NIMlygg3GDK8-Jcnt4uXDo"
+          },
+          {
+            "label": "Vocal Slice: podcast clip editing from transcripts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Rp7R58izGbV1wf3IQjqsEFOmHigBh9kbK_N3Qji-uLxGYyq6ucM5hZxfbsqTJUNCz8GfSXcP8arKo1WjviNH08ZYLPe2bTVimvOjw7xlCsJYQ0F_zrATzYBPS0jWEMBLrI_vqlY6iMXlnULZ1Dk6W1Fm5KI2tgAD1xhR_zEQECpUEIISfNDI168y_YC-IcUaIixDyAzrCR2gTkYHK2iscbUB04QoKbp4v2HZIO07UdNeaTwD6uWKOCCZcs6ZWyjXRKD9a0K_0NcXDCKoRCMrKQ/4t9/7CjiHmkiR0OQ974ixCmkGw/h28/h001.VpM6o8sUvosokIIYF4LrHNpaIxjOO0QJLsrBmELu4pA"
+          },
+          {
+            "label": "Mole: verified research tool with hard dollar budgets",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mO1vJr_3MzyzolZFeFVczsEW8f_Nkx0UMS5T9ysHWpmijjJx3Xzv9nOAf6cB5rFtxl1w-5hesQgkrqNhpP4mA2Hx1DvPIDYJgnq8YHngIKqflTae7rHw7V5R1ctdNh7wrznUjkGYJh02Uj2rZDp75oReiPjXOHWmU20BZ_w84mCBA_vu_KehTPL7PeKpDZgAtEksqvmomae-W90-dKkmWGug2Axs4PaUytNhLsuvNm_daxhmxQQlkE7IDCOOyeie-CBdsYsaHbw1CJHnLLrFnQ/4t9/7CjiHmkiR0OQ974ixCmkGw/h31/h001.Ixp4lv6sZJ7NB3Q3QGW5j9-2N5_qrh2ua3UgrVgaczw"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "📝 Anthropic's CEO speaks out",
+      "date": "2026-08-17T13:06:20+00:00",
+      "summary": {
+        "headlines": [
+          "Alibaba's Qwen open-weight models surpassed 3B downloads and reportedly beat Anthropic's Opus 4.6 on several benchmarks, signaling major competition in AI outside the U.S.",
+          "Anthropic CEO Dario Amodei publicly stated AI 'still hasn't delivered' on its promises, attributing negative sentiment to institutional distrust rather than his messaging.",
+          "OpenAI's executive exodus continues with CRO Denise Dresser departing; the company is preparing for an IPO with no set timeline after confidential filing in June.",
+          "Voice phishing (vishing) attacks are escalating as AI voice models like Bland AI and GPT-Live can now convincingly mimic human speech, targeting major financial firms.",
+          "Researchers discovered a critical Zoom vulnerability that allowed unauthorized device control in under 24 hours using publicly available AI models—a task that previously required deep expertise."
+        ],
+        "sections": [
+          {
+            "title": "Alibaba's Qwen Dominates Open-Weight AI Race",
+            "points": [
+              "3B+ downloads in six months far exceed Meta and Alphabet's open-weight model adoption, positioning a Chinese lab ahead of U.S. competitors.",
+              "Qwen3.8-27B reportedly outperforms Anthropic's Opus 4.6 on multiple benchmarks according to Alibaba's internal evaluations, narrowing the capability gap between open and closed models.",
+              "Open-weight models (models with publicly available weights/parameters that anyone can download and modify) are increasingly competitive on standard performance tests."
+            ]
+          },
+          {
+            "title": "Anthropic CEO Breaks Silence on AI Regulation and Public Trust",
+            "points": [
+              "Dario Amodei rejected false choice between concentrated vs. fully distributed AI development, arguing for a middle path in his first X post in over a month.",
+              "He attributed public negativity toward AI to general institutional distrust, not his own statements, which he characterized as balanced.",
+              "For sentiment to shift, Amodei says AI must deliver tangible benefits—the technology has failed to live up to its lofty promises so far."
+            ]
+          },
+          {
+            "title": "Voice Phishing and Zoom Exploit Show AI Accelerating Cybercrime",
+            "points": [
+              "Top financial firms including Citadel, Two Sigma, and Point72 were recently targeted by vishing attacks (voice phishing—using AI-generated voice to trick people into revealing information).",
+              "A critical Zoom flaw allowing unauthorized device takeover in meetings was exploited using fewer than 20 prompts in public AI models within 24 hours, versus the technical expertise previously required.",
+              "AI voice models can now include natural pauses and stutters, making synthetic calls nearly indistinguishable from human voices, dramatically lowering the barrier to sophisticated social engineering."
+            ]
+          },
+          {
+            "title": "OpenAI Leadership Exodus Amid IPO Preparation",
+            "points": [
+              "CRO Denise Dresser announced her departure, joining Fidji Simo and Brad Lightcap in a wave of high-profile executive departures.",
+              "CFO Sarah Friar and President Greg Brockman met with investors Friday to discuss the company's upcoming IPO, filed confidentially in June but with no announced timeline.",
+              "The departures raise questions about internal stability as OpenAI prepares to go public."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Alibaba Qwen downloads surpassing competitors",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._J44ZaMneM9DvTwiKQgkc2sLRS6BD8PxobdXZkLZzCFuPjeglk2izS8eg9NfMBMywz6lc4Q8Egc7SHvvvlw_o2nGeL9NNeL_eaSZe8MwaYF615ROWkxlj4_zm4m7iPJBPMTFQWkUsj2TPqKgX9ecDOsqWzZ5AXwHGwthyZFXn180xFNQA_HvxiKF1V1Dx_--rmwvlsYGBjwvMj8to7K347MwvJpoOckdyE6_Idsox6tWUGBz7OZxwbEzAsqON137PeKhPLA7Hn44xe8E2KgVwl6J_yVskIRRVny07-UrOBz-B7FC2qNktxVZJYMCCcfzjKqbSMqjXG1xHGrguq15lQ/4t9/jK9-KIwFTHORw8NBUFlYkA/h3/h001.SXOC_khG6soPFzTQhF3qN6wswh9b4T5vuTC9L-5brTc"
+          },
+          {
+            "label": "Dario Amodei's posts on AI regulation and public sentiment",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tCsyvqVxdbk0NTiZ7_Ayey52DNT1aSc35zhKNEzrhUraacQuLWdeB787MeCDPI0zBLsDwaQeUT0H9sY4fnvQNImEegLF2PY6G7mjkwtMT3ORlwBsNJCowpd2XumWWyFg0CHSoiQ_rIKGoLV733uvHdOdrZzdb7inwuM6y3D0xUDYnU9zWXwlHJg1RQtHLwZeP2B46J-aTQLAfnQvYhtg8Aow95Bx8_K6MjLFahbKTSnsXj8uL6fBsibzUOiKtd5GGU/4t9/jK9-KIwFTHORw8NBUFlYkA/h6/h001.4v-kSFJCP1QK0I1nZp7fsSWkpX3OBZnOt0adHQ5-BTI"
+          },
+          {
+            "label": "OpenAI executive departures and IPO timeline",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgOG6xkbO-0CwZyOaaD_exGeln4gAHo1wtkzQpnGDQi2llnq8inx6tti8rks5K9EhIrZWY3a60oJ17xZAc49PUMZvxqaG51xr2QyqqSkufF_o8mPoqFFx68Wod5KF8gpZvHR2SATsftPljPR1R7zISXp3UzQqzslDwaOPzRKsSgxONEhTWAPKkBhqWkI-tmiA0U9JSFvYyFBnRCxGlMNSfdc3a_3MA-8g08Bp1m1MqR9Usg0iVDUQNgnHLswzk8-4FPqdNvh0BGOeD6jnFphYVS8/4t9/jK9-KIwFTHORw8NBUFlYkA/h8/h001.GJ7sG1LOrQtMgxmX4IUNrVVtECkE-ic_o_Krkow5zPA"
+          },
+          {
+            "label": "Voice phishing (vishing) attacks and AI voice models",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mzLE_NAgQL1lHxwbP_X58C25Z_9ycMAfixX8yqXhC293CnjZqVVbTOsJr6XNQlPUBsX9Q16I4GXLhjXO8CIoRTcIJsaeaBlH8laOoSZtyEQeR25wR7Sem8PzhEObIymGInFdwLLFx1aEvbU5-18Jhtxf862HC3BcYl0YwF2fjfAljmHXO3tNMOVXc8lPTfHbmn2EMUUnBuCzRw7sJ3RFU8PiL5NvRq8JnPRQUs8bop-t6ivX5oW7VNzHRIU710KIBBwPIG49tFWyw0br0NvrrmM9dTPEXRfRlcLQbVu9QI-Sg3KZJJMYGgtjxEkMQZP9dzSC4l9qvL581GHg9vssPWN-lsktS3eo2TJm6iiHfFo/4t9/jK9-KIwFTHORw8NBUFlYkA/h14/h001.XI5_USx9LDV8kewbt0psGmlHtq-nxAKLRF6yfv2t-Jc"
+          },
+          {
+            "label": "Zoomsday: Zoom vulnerability exploited with AI in 24 hours",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEecuBEwygCRX-0BDzj-WZlDIbpv7V--31GkD4jNx8ccFnqM91sdw-57pY6ie0F9bb2hW_LFytJoEXnfP6Sn3fBFF7U9cjUJvBj-QCY0TdTLKsLd_y4h6Qhl0m03c2c6Y6T4KObk5LGXhdswuo2pc8St9EfPt-lVS87eIaq98furWi9W3I6tL9X_A_Y46y3lxqEAsnRc0QpLs-3IkqPDHbRe3NTIHiYSbjCGyyWB13pCJM7C4ki0EiVrdqe4UD-ezDQQ/4t9/jK9-KIwFTHORw8NBUFlYkA/h17/h001.09TYz3lTjkG4hwB0yNTlVbbhG7a8dUpcMhywxuU8MyE"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "[GUIDE] ship the sandbox",
+      "date": "2026-08-17T13:08:24+00:00",
+      "summary": {
+        "headlines": [
+          "Cloudflare's Agents SDK enables autonomous agents that maintain their own state (persistent data) across restarts and execute real code in isolated Linux sandboxes, moving beyond demos where humans hand-execute agent output",
+          "Three core components—Agents SDK runtime on Durable Objects, Sandboxes for computation, and Project Think preview SDK—combine to let agents clone repos, run tests, edit files, and loop without losing context between requests",
+          "Agents can now reach users through chat, WebSockets, email (via Cloudflare Email Service in public beta), and voice (via @cloudflare/voice in beta with speech-to-text and two-way conversation options)",
+          "Sandboxes keep filesystem state between calls in the same session, allowing agents to clone once and iterate on code/testing repeatedly without re-provisioning infrastructure",
+          "Project Think is an experimental next-gen SDK base class that handles the agentic loop, message persistence, and streaming on top of Durable Object SQLite, while Agent Memory service handles long-term recall separately"
+        ],
+        "sections": [
+          {
+            "title": "1. The Three-Layer Stack for Shipping Agents",
+            "points": [
+              "Agents SDK runs on Cloudflare Durable Objects (long-lived compute containers that maintain state per-agent instance across network and restarts) with built-in SQL database, WebSocket support, routing, scheduling, and session management",
+              "Sandboxes provide isolated Linux environments with real shell, filesystem, and on-demand background processes; entered general availability in April 2026 and eliminate the need for agents to hand work back to humans",
+              "Project Think (experimental preview from April 2026) is a base class extending the SDK that auto-runs the agentic loop (iterative decision-making cycle), persists messages, streams responses, and resumes interrupted streams using Durable Object SQLite"
+            ]
+          },
+          {
+            "title": "2. Building and Deploying a Durable Agent",
+            "points": [
+              "Write an agent class extending Agent; read/write state through this.state and this.setState() with automatic persistence—no database wiring required",
+              "Agents SDK now supports AI SDK v6 and v7, so you can install those packages alongside it without forcing migration of existing v6 projects",
+              "Export the Sandbox class and add a Durable Object binding in Wrangler config to give agents a persistent compute environment that keeps filesystem between calls, enabling loop workflows (clone repo → test → read error → edit → test again)",
+              "Use Think preview API for prototyping the agentic loop, but keep production logic in more stable code since the experimental API will shift"
+            ]
+          },
+          {
+            "title": "3. Multi-Channel Access: Chat, Email, and Voice",
+            "points": [
+              "Email: Route incoming messages to agents via onEmail method; Cloudflare Email Service (public beta since April 2026) handles sending and receiving",
+              "Voice: Use @cloudflare/voice package (still in beta—pin version) with withVoiceInput(Agent) for speech-to-text only or withVoice(Agent) for full two-way voice conversation layered over WebSockets",
+              "WebSocket support is built into the Agents SDK for raw real-time connections beyond chat and email"
+            ]
+          },
+          {
+            "title": "4. Why Sandbox Execution Separates Real Work from Demos",
+            "points": [
+              "Most agent demos fake execution: a model writes code, then a human runs it; Kitesurf (Cloudflare's agent browser shipped August 2026) and Sandboxes close this gap by letting agents actually clone repos, install packages, run test suites, and iterate inside a real Linux environment",
+              "Durable filesystem state between calls lets agents loop through edit-test cycles without losing context, turning agents from code-suggestion tools into ticket-closing automation"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Agents SDK Documentation",
+            "url": "https://link.mail.beehiiv.com/v2/c/5f3fcfcd8ef49fc7d79e58925ef5866d852ce7bb36b09631c734c1f63e6257a08db17f5eac63e03e3b19faad78ce4d0cd2a4eb2960199dc88859c30119c63841adecc72fbdd8165e85f830d931c2b534c4066e2a44299c1b1366a75838a90272c93182da1246d93d25b3143c0c36544000f1b3a3f62bc7bd7da56d9172282b23a8a00dc5ed7ff53cd398b8115fe6a8a1f5ec6c9eb78e374a2452c0d6f541831b/ff489a1fb5cf5747"
+          },
+          {
+            "label": "Cloudflare Sandbox for Agents",
+            "url": "https://link.mail.beehiiv.com/v2/c/defe96cd2ba6283f8b6e1a7d84ef9e8b862a3a7f79fb0eddbc0005bbe508c498ef9b7219e849e93b19bf5a205218978caabe109b80404fcc01788fa9af948d37845a0fe6997211b35762b9dec5f8ea93f3380e434f44d2c72851a8af29a5f6c7649942212171cb32e159ad77ec1e3c2eacf4d5935b2a7741158938a09b78590c3fe0505f14b85295ef3153744f7486ed2b96133c724e7c6d44a9b816d9d7e74b/7112367c52787da1"
+          },
+          {
+            "label": "Project Think Preview SDK",
+            "url": "https://link.mail.beehiiv.com/v2/c/cced3c571d1993ae6e1b446f46f49733b765a01b7ea1e9a68682475d940fc6f4cd45c19e1642c6a61a166c06d3e9c77539a581b59bb7ef13e22727796295d293cc03cef5efcbfc379bcabeea317df1df71e4fa18594e242b70d26893d0efc3fb3692ac4e5b31cb7c2ec6628822cd3471e70c4597667c0201fc5fb7be3ee3f7341b53a109bcf8ef24581d7b5dabd9960035adb213e3ae64d117f98a31098bda0b/afe50ee399eacaef"
+          },
+          {
+            "label": "Cloudflare Email Service (Public Beta)",
+            "url": "https://link.mail.beehiiv.com/v2/c/cc21dcc97ae849ddb058bedca87b0f3528e1a5b1d28f78b1a71576b0fb21b124b771a136c3399b04d2388552a1a4c6a683b76344017ec0ee186fe8554f73582b425ebc0319e980726220bed90f64cfa9dc1f7563706e5a70eb6125f17f6ccc85533be42c98692251c079daed133f88e52dde9278b446299ae08f0bb148b153ad9ee9326d3812649d59b66395781c9b91332109cbb3f96d3c244be8e088e95999/b85a990fca421f14"
+          },
+          {
+            "label": "@cloudflare/voice Package (Beta)",
+            "url": "https://link.mail.beehiiv.com/v2/c/81c4e77533fe6e52d4e17e522c02726416fa06be43d8fb0674fc8d26d169cbfe4220726fd04ba4d2b964467f755a5f8da8bfec9eed907a3484f00654265597a7b72a7585ed25a16f58a2bdb6f915495f698c59d2199a67723646f9f499701632f6acb54a7a5f36726b2304ef5557f2d5e8b2eb013f38c22eae0887d0895a2b61cc686129ba7c8441e555f20d18bd8808402ba73e92f7d52a2a7457331cfde593/bb8daf5cb9e7cf7f"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "GLM-5.3 🤖, Stripe OpenRouter deal💰, AI agent consensus 🤝",
+      "date": "2026-08-17T13:56:13+00:00",
+      "summary": {
+        "headlines": [
+          "Z.ai released GLM-5.3, improving solely through post-training on diverse coding and long-horizon tasks while maintaining faster release velocity than US competitors.",
+          "Stripe will acquire OpenRouter, an AI model-routing platform, for over $7 billion—valuing it at 5x its $1.3 billion May funding round.",
+          "SpaceX acquired Cursor to leverage its GPU resources for training stronger, more cost-effective AI models, with Grok 4.6 demonstrating early results.",
+          "Nvidia reduced its financial guarantee on an OpenAI Ohio data center from $250 billion to under $120 billion due to investor concerns about risk exposure.",
+          "OpenAI exercised Cerebras warrants for $100, acquiring a stake worth ~$2.3 billion weeks before launching Ultrafast, which runs GPT-5.6 Sol at 750 tokens/second."
+        ],
+        "sections": [
+          {
+            "title": "1. Major Acquisition and Investment Activity",
+            "points": [
+              "Stripe's $7B OpenRouter acquisition values the model-routing startup 5x higher than its recent $1.3B valuation; OpenRouter lets developers choose between models based on capability and cost.",
+              "SpaceX acquired Cursor to combine its GPU infrastructure with Cursor's model training, enabling more efficient and capable AI model development.",
+              "OpenAI invested approximately $100 in Cerebras warrants to acquire a $2.3 billion stake, executed days before unveiling Ultrafast—a new high-speed inference service tier."
+            ]
+          },
+          {
+            "title": "2. Infrastructure and Chip Development Trends",
+            "points": [
+              "Nvidia-OpenAI data center deal is downsizing: Nvidia cut its guarantee from $250B to <$120B for a five-gigawatt Ohio facility; OpenAI must decide later on financing the remainder.",
+              "Google is reportedly partnering with AMD to design next-generation TPUs that integrate CPU cores on-package for reinforcement learning (RL) workloads alongside AI acceleration.",
+              "These moves reflect increasing competition in AI compute infrastructure and custom silicon design to optimize both training and inference."
+            ]
+          },
+          {
+            "title": "3. Model Releases and Research Advances",
+            "points": [
+              "Z.ai's GLM-5.3 gains stem purely from post-training scaling—more compute, diverse environments, and tasks—rather than architectural changes; Z.ai releases on a days-to-weeks cadence versus months for OpenAI/Anthropic.",
+              "Microsoft's Full-bandwidth Transformers feed the previous token's hidden state back into the model alongside the next token, enabling continued computation across decoding steps.",
+              "MathCode, a frontier mathematical reasoning agent, includes a built-in Lean 4 formalization engine for converting plain-language problems into formal proofs and maintaining reusable theorem libraries."
+            ]
+          },
+          {
+            "title": "4. Emerging Tools and Engineering Practices",
+            "points": [
+              "Google launched Custom Agents in Antigravity 2.0—specialized, file-based configurations that define role, instructions, tools, and constraints while keeping context clean and minimizing token overhead.",
+              "Token reduction does not guarantee cost savings: PointFive tested token-compression tools on 2,908 Claude Code sessions and found some tools increased costs by nearly 50%.",
+              "AI engineering skills now span four areas: building and deploying AI applications, software fundamentals, coding-agent fluency, and shaping what gets built."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities",
+            "url": "https://z.ai/blog/glm-5.3"
+          },
+          {
+            "label": "The State of Open Models in 2026",
+            "url": "https://huggingface.co/blog/state-of-open-models-summer-2026"
+          },
+          {
+            "label": "Understanding Agent Memory",
+            "url": "https://www.pinglin.tw/blog/the-shapes-of-agent-memory/"
+          },
+          {
+            "label": "Microsoft's Full-bandwidth Transformers",
+            "url": "https://arxiv.org/abs/2608.08888"
+          },
+          {
+            "label": "Stripe Will Reportedly Acquire OpenRouter for Over $7B",
+            "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+          }
+        ]
+      }
+    }
+  ]
+}
