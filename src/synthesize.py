@@ -99,16 +99,21 @@ def synthesize_batch(batch_label: str, summarized: list) -> dict:
         f"Batch: {batch_label}\n\n"
         "Per-newsletter summaries (JSON):\n" + json.dumps(payload, indent=2)
     )
-    # Give the output generous headroom and stream it: some models spend part
-    # of the max_tokens budget on internal reasoning, which previously truncated
-    # the JSON mid-object. A large ceiling (billed only for tokens actually used)
-    # plus streaming keeps the structured digest complete.
+    # Sonnet 5 runs adaptive thinking by default; those tokens are billed AND
+    # they share the max_tokens budget, which is what truncated the JSON
+    # mid-object once before. Disabling thinking keeps the digest complete and
+    # is the bulk of the cost saving on this step. Streaming + generous headroom
+    # (billed only for tokens actually used) guards the rest.
+    kwargs = {}
+    if "sonnet" in SYNTH_MODEL or "opus-4" in SYNTH_MODEL:
+        kwargs["thinking"] = {"type": "disabled"}
     with client.messages.stream(
         model=SYNTH_MODEL,
         max_tokens=40000,
         system=SYSTEM_PROMPT,
         output_config={"format": {"type": "json_schema", "schema": DIGEST_SCHEMA}},
         messages=[{"role": "user", "content": user_content}],
+        **kwargs,
     ) as stream:
         response = stream.get_final_message()
 

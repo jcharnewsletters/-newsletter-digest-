@@ -15,12 +15,13 @@ TEMPLATES_DIR = ROOT / "templates"
 
 TIMEZONE = "America/New_York"
 
-# Models. Cheap Haiku does the bulk per-newsletter summaries; Opus 5 does the
-# one cross-newsletter merge per batch. Override via the SUMMARIZE_MODEL /
-# SYNTH_MODEL env vars (wired to GitHub repo variables in the workflow) — the
-# `or` fallback means an unset/empty variable uses these defaults.
+# Models. Cheap Haiku does the ~21 daily per-newsletter summaries; Sonnet 5 does
+# the one cross-newsletter merge per batch (~6/day). Opus on the merge step cost
+# ~$36/mo — most of it billed thinking tokens — vs ~$15/mo for this pairing.
+# Override via the SUMMARIZE_MODEL / SYNTH_MODEL env vars (wired to GitHub repo
+# variables in the workflow); an unset/empty variable falls back to these.
 SUMMARIZE_MODEL = os.environ.get("SUMMARIZE_MODEL") or "claude-haiku-4-5"
-SYNTH_MODEL = os.environ.get("SYNTH_MODEL") or "claude-opus-5"
+SYNTH_MODEL = os.environ.get("SYNTH_MODEL") or "claude-sonnet-5"
 
 # Inbox lookback windows, in hours.
 LOOKBACK_HOURS = {"daily": 48, "weekly": 192}
