@@ -1,0 +1,385 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-08-24",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Nvidia raises AI server prices 15%+ starting 2027 amid memory chip shortage",
+        "points": [
+          "Nvidia warned major customers that Grace Blackwell and Vera Rubin flagship AI server chips will cost 15%+ more starting early 2027 (per TLDR) or early 2025 (per Techpresso; reports vary on start date).",
+          "Root cause is soaring DRAM (memory chip) costs, which are compressing margins on AI infrastructure.",
+          "On systems costing several million dollars each, a 15% hike adds hundreds of thousands of dollars per rack deployment.",
+          "Server contract manufacturers have already notified major buyers like Microsoft, Google, and Oracle about the coming price jumps.",
+          "Nvidia is also raising prices on consumer gaming graphics cards, showing broad pricing pressure across its product lines."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Nvidia's roughly 75% profit margins and TSMC's inability to meet chip demand leave buyers with little negotiating power against the increases."
+          }
+        ]
+      },
+      {
+        "title": "Chinese humanoid robots break Usain Bolt's 100m sprint record",
+        "points": [
+          "At the Beijing World Humanoid Robot Games, Chinese robots beat Usain Bolt's 100-meter sprint time, with machines clocking around 9.39 and 9.47 seconds.",
+          "More than 2,000 robots competed across 51 events, including table tennis and soccer, demonstrating versatility across physical tasks.",
+          "Experts caution real-world deployment remains years away; robots are currently used mainly for demonstrations, performances, and research rather than commercial service."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Apple's foldable iPhone launches September 9",
+            "points": [
+              "Device launches September 9, following Samsung's earlier release of a similar foldable design, which validated the form factor.",
+              "Excels as a camera viewfinder when folded, but critically lacks a telephoto lens at a $2,000+ price point.",
+              "Uses Touch ID (side fingerprint reader) instead of Face ID (facial recognition), a security regression from current iPhones."
+            ]
+          },
+          {
+            "title": "Model Context Protocol (MCP) roadmap prioritizes agentic and enterprise features",
+            "points": [
+              "MCP (a standardized protocol letting AI assistants interact with tools and data) roadmap covers 5 priorities: agentic messaging primitives, HTTP transport unification, agent identity/enterprise security, improved primitives, and SDK developer experience.",
+              "Proposals aligned with roadmap priorities get expedited review and acceptance.",
+              "Reflects the growing need for robust, secure infrastructure as AI agents become production workloads in enterprises."
+            ]
+          },
+          {
+            "title": "AI is eliminating software optimization drudgery",
+            "points": [
+              "Previously, optimization work was often wasted because new CPUs or AI models arriving within months would make it obsolete.",
+              "AI now turns days or weeks of optimization work into trivial loops, making it worthwhile even for expensive models like Fable.",
+              "This mirrors the 2000s shift, when the slowdown of Moore's Law forced developers to focus on parallelization and memory locality for the first time."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Vercel launches Agentic tool to score websites for AI agent compatibility",
+            "points": [
+              "The free tool runs 100+ checks to measure how navigable a website is for AI agents and provides CLI fixes."
+            ]
+          },
+          {
+            "title": "Engineer builds Walgit, a database-free Git server in Rust",
+            "points": [
+              "Walgit is open-source and runs on cheap cloud storage without a database, cloning large repositories instantly as static files."
+            ]
+          },
+          {
+            "title": "Anthropic expands Mythos vulnerability scanner to all enterprise customers",
+            "points": [
+              "Mythos is now self-service and integrated with Claude Code, using existing model access to scan for vulnerabilities."
+            ]
+          },
+          {
+            "title": "Multi-agent pipelines for delegating coding tasks",
+            "points": [
+              "Single AI agents struggle with large tasks and can break other code while fixing issues; splitting work across specialized agents keeps each one focused.",
+              "Engineer Bob Martin uses a 5-agent assembly line: Specifier (turns requirements into specs), Coder (builds features and tests), Cleaner (simplifies code), Hardener (tries to break tests), and QA (runs user flow scripts).",
+              "Each agent resets after its step to keep prompts short and followed; the full pipeline takes about 1 hour versus 5 minutes per agent, producing code that would take a human half a day.",
+              "Martin handles high-level architecture while automation does the grunt work; 2-, 4-, and 6-agent pipeline versions are also available."
+            ]
+          },
+          {
+            "title": "New tools cut AI coding costs and improve reliability",
+            "points": [
+              "Sonar Vortex supplies architectural context inside AI coding agents' reasoning loops and verifies output in real time, cutting defects by 92% and token use by 30%+.",
+              "Google's token engineering guide covers pruning/caching agent context, batching offline work, capping reasoning tokens, and routing simple tasks to smaller models for cheaper AI workloads at scale."
+            ]
+          },
+          {
+            "title": "Emerging AI engineering resources",
+            "points": [
+              "A Meta engineer's guide explains how to properly maintain Claude.md files (context files defining AI system behavior) instead of leaving them empty or stale.",
+              "An Anthropic engineer shared a skill for learning anything fast, installable in Claude Code with 2 commands.",
+              "A trending post claims $45K earned in 2 months working for AI labs as a side hustle.",
+              "A tutorial covers building autonomous AI coding systems via a 5-component pipeline from planning through shipping software from PRD specs.",
+              "An 'anti-slop' repo (3.5K stars) catches low-signal TypeScript/JavaScript patterns before they land in codebases."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "75% of Americans oppose nearby data centers",
+            "points": [
+              "A Heatmap poll found 75% of Americans strongly or somewhat oppose data center construction nearby, versus only 15% in favor.",
+              "Opposition spans all demographics: 43 points net-negative among Republicans, 65 among independents, 75 among Democrats, and consistent across age, gender, income, and rural-urban divides.",
+              "Public sentiment shifted sharply, rising from 42% opposed a year ago to 75% now across four surveys using identical wording.",
+              "A July Redfin poll confirmed the trend with 53% opposed, as tech companies race to build AI compute infrastructure."
+            ]
+          },
+          {
+            "title": "Anonymous 'Ox Alpha' AI coding model impresses developers",
+            "points": [
+              "The mysterious Ox Alpha model appeared free and anonymous on OpenRouter, impressing developers on coding and agent tasks.",
+              "It offers a context window (the amount of text an AI can process at once) of just over 1 million tokens, with free access for a week via the OpenCode agent provider.",
+              "Its origin is unknown, with guesses ranging from China's Z.ai to Microsoft's MAI family.",
+              "A major concern is that the unnamed provider retains all prompts and completions, which is problematic under European data protection law."
+            ]
+          },
+          {
+            "title": "Twitch sued for using streamer content to train AI without permission",
+            "points": [
+              "Connecticut streamer Warren Pandiscia filed a class action against Twitch and Amazon alleging streams were used to train AI without permission or licensing.",
+              "The suit claims the companies broke their service contract by treating streamers as 'free training stock' for commercial AI products.",
+              "Twitch added an opt-out setting this month but keeps AI training on by default; its product chief said an opt-in approach would fail since 'nobody would opt in.'"
+            ]
+          },
+          {
+            "title": "Apple redesigns retail stores for smart home push",
+            "points": [
+              "Apple is redesigning stores this fall with rearranged sections and new accessory bays to support upcoming smart home devices.",
+              "Planned products include an upgraded Apple TV set-top box, a new HomePod mini, and a long-rumored home hub with a display for controlling smart home devices.",
+              "The redesign lets shoppers try the home hub hands-on as Apple enters a new product category amid rising prices across its range."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Apple foldables 📱, Nvidia price hikes📈, future of MCP👨‍💻 ",
+      "date": "2026-08-24T10:46:25+00:00",
+      "summary": {
+        "headlines": [
+          "Apple's foldable iPhone launches September 9 with design advantages like excellent camera viewfinder but missing telephoto lens and relying on Touch ID instead of Face ID",
+          "Nvidia raising AI server prices 15%+ starting early 2027 due to soaring memory chip costs, affecting customers of Vera Rubin and Grace Blackwell flagship chips",
+          "Chinese humanoid robots break human athletic records including Usain Bolt's 100m sprint at Beijing games; 2,000+ robots competed despite these still being mostly for demonstration rather than real-world deployment",
+          "Model Context Protocol (MCP) roadmap prioritizes agentic messaging, HTTP transport hardening, and enterprise security as AI assistants become more sophisticated",
+          "AI is eliminating the need for software optimization drudgery; developers can now afford costly improvements previously deemed too risky when hardware improvements arrived every 18 months"
+        ],
+        "sections": [
+          {
+            "title": "Apple Foldable iPhone Details",
+            "points": [
+              "Device launches September 9; Samsung already released similar design, validating the form factor as winners in the market",
+              "Excels as camera viewfinder when folded; critical weakness is missing telephoto camera at $2,000+ price point",
+              "Uses Touch ID (fingerprint reader on the side) rather than Face ID (facial recognition), a regression from current iPhone security standards"
+            ]
+          },
+          {
+            "title": "Nvidia's Pricing Power and Market Position",
+            "points": [
+              "Price increases of 15%+ announced for 2027 on AI servers containing Vera Rubin and Grace Blackwell chips; varies by chip generation and memory configuration",
+              "Root cause: soaring memory chip costs are compressing margins on AI infrastructure",
+              "Also raising prices for consumer gaming graphics cards, showing broad pricing pressure across product lines"
+            ]
+          },
+          {
+            "title": "Humanoid Robots Reach Milestone Performance",
+            "points": [
+              "Chinese robots at Beijing World Humanoid Robot Games broke records including Usain Bolt's 100-meter sprint time; 2,000+ robots participated in 51 events",
+              "Experts caution deployment still years away: robots currently used primarily for demonstrations, performances, and research rather than commercial service",
+              "Events included table tennis and soccer, showing versatility across different physical tasks"
+            ]
+          },
+          {
+            "title": "AI Changes Developer Economics",
+            "points": [
+              "Previously, optimization was wasteful because new CPUs or AI models would arrive in months rendering hard work obsolete",
+              "AI drastically reduces optimization costs, turning days/weeks of work into trivial loops; developers now optimize harnesses and context strategies even for expensive models like Fable",
+              "Mirrors 2000s shift when Moore's Law slowdown forced developers to think about parallelization and memory locality for the first time"
+            ]
+          },
+          {
+            "title": "Model Context Protocol Evolution",
+            "points": [
+              "MCP (a standardized protocol for AI assistants to interact with tools and data) roadmap organized into 5 priority areas: agentic messaging primitives, HTTP transport unification, agent identity/enterprise security, improved primitives, and SDK developer experience",
+              "Proposals aligned with roadmap priorities receive expedited review and acceptance",
+              "Reflects growing need for robust, secure infrastructure as AI agents become production workloads in enterprises"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple's Foldable iPhone Details",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2FvQXFLn/1/010001a03360ed60-1d5bd68f-97c1-4564-bbc8-8c2df5cea15a-000000/HBZHixWlFE0rW8foNweVeIILNVebUspRDXFI1zmiX2E=452"
+          },
+          {
+            "label": "Nvidia Price Hikes on AI Servers",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Flinks.tldrnewsletter.com%2FxuDr1s/1/010001a03360ed60-1d5bd68f-97c1-4564-bbc8-8c2df5cea15a-000000/bZJ6i1y86aKwqoxGIoUHp7EBAZBpERXECgTRs_an3Cc=452"
+          },
+          {
+            "label": "Chinese Humanoid Robots Break Records",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Fapnews.com%2Farticle%2Fchina-humanoid-robot-games-us-86cb8e310843151a77057e4cb764b4e2%3Futm_source=tldrnewsletter/1/010001a03360ed60-1d5bd68f-97c1-4564-bbc8-8c2df5cea15a-000000/Z8vxC6QwkI-IXbY5T5jB3VZkx_DisqU-kUnfTWu49pI=452"
+          },
+          {
+            "label": "New MCP Roadmap",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Fblog.modelcontextprotocol.io%2Fposts%2Fmcp-roadmap%2F%3Futm_source=tldrnewsletter/1/010001a03360ed60-1d5bd68f-97c1-4564-bbc8-8c2df5cea15a-000000/cdqOOtL-Pa_7hwnEunoaezjEAz0CndL3CL8R0oFxFqA=452"
+          },
+          {
+            "label": "AI Transforms Software Optimization Economics",
+            "url": "https://tracking.tldrnewsletter.com/CL0/https:%2F%2Fdanluu.com%2Fperf-opt%2F%3Futm_source=tldrnewsletter/1/010001a03360ed60-1d5bd68f-97c1-4564-bbc8-8c2df5cea15a-000000/BOAEF-107YeiywV4Z_35eYfG88rWSxS2RKEtjYLFdXc=452"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🔥 Building future websites for agents",
+      "date": "2026-08-24T14:05:45+00:00",
+      "summary": {
+        "headlines": [
+          "Vercel launches Agentic tool to score websites for AI agent compatibility, running 100+ checks for free to measure navigability and provide CLI fixes.",
+          "Engineer builds Walgit, an open-source Git server in Rust that runs on cheap cloud storage without a database, cloning large repos instantly as static files.",
+          "Anthropic expands Mythos vulnerability scanner to all enterprise customers as self-service security scanning integrated with Claude Code using existing model access."
+        ],
+        "sections": [
+          {
+            "title": "How to Delegate Coding Tasks Across Multiple Agents",
+            "points": [
+              "Single agents struggle with large tasks and break code while fixing other issues; splitting work across specialized agents keeps each one laser-focused.",
+              "Engineer Bob Martin uses a 5-agent assembly line: Specifier (turns requirements into precise specs), Coder (builds features and unit tests), Cleaner (simplifies tangled code), Hardener (tries to break tests intentionally), and QA (runs user flow scripts).",
+              "Each agent resets after its step, keeping prompts short so instructions stay followed; full pipeline takes ~1 hour versus 5 minutes per agent, producing battle-tested code a human would spend half a day on.",
+              "Martin handles high-level architecture while automation handles grunt work; two-, four-, and six-agent versions available for reference."
+            ]
+          },
+          {
+            "title": "Building AI Coding Systems and Token Cost Reduction",
+            "points": [
+              "Sonar Vortex operates inside AI coding agent reasoning loops, supplying architectural context before code is written and verifying output in real-time, reducing defects by 92% and token consumption by 30+%.",
+              "Google's token engineering guide shows how to prune and cache agent context, batch offline work, cap reasoning tokens, and route simple tasks to smaller models for cheaper, more reliable AI workloads at scale."
+            ]
+          },
+          {
+            "title": "Emerging Tools and Resources for AI Engineers",
+            "points": [
+              "Meta engineer guide shows how to properly maintain Claude.md files (context windows defining AI system behavior) instead of leaving them empty or stale.",
+              "Anthropic engineer shared explainer skill for learning anything fast, installable in Claude Code with 2 commands; trending side hustle post claims $45K earned in 2 months working for AI labs.",
+              "Tutorial on building autonomous AI coding systems teaches 5-component pipeline from planning through shipping software from PRD specs; anti-slop repo (3.5K stars) catches low-signal TypeScript/JavaScript patterns before they land in codebases."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Test Agentic tool for site readiness",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QiVMRb-9Qg5zq-ajQkrjil3NCcxwXdkAul9Rya25DEcBjohUT9pUcoG4h0PZutjniDRdOY0Yd3YI5qROCegRQ9BbiT59TQ5juzUTADrrl8T5n582LOJDimX2KKRFVsfTCOaZZ62l9bSLTbLFpWZwKjZGr5Ku6fkwgua_k4-KRaCgCUUyZAIDOCP-cQiVlIu1UJjWNPTVvIAxCet8a70j8lEUAy2X7rZlj5-yJ4U3GzmUpbRXn_ohvAL8QJrRlCHGio_maUqH6YTUAh22ycMwuQ/4tg/D9fFo_kfSriw-m190ylQlQ/h5/h001.e4w3R6jIrNPErEvsu6y3X_XXjPzCErdXu3eiy1hY0u8"
+          },
+          {
+            "label": "Try Walgit Git server",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhkk0-jKIDZbNohoI4Gpj23yt3zbXYD3FZhsCjPO9pxZCBQSOdFOdZe2Fo6zGmmvrZ1kNvqlecUbxoZ6vGY7FXr13kyEVfSVDuWCDxmZ_G4gfCqFOBSS3iIK-fP8rmgDkLYVjb-6T2_kpc5yuqDmPq5vJyLNVFKgU5PJmuwVZMNyCg1nVujgj0nbqdoLtlVwlgBMNJ3h6-aGHxmj__JwBx40caPkL4caZYHoFB2FBWIRqaqnVOXgmkJaS87B6QxSk6Hg/4tg/D9fFo_kfSriw-m190ylQlQ/h7/h001.0x0vY3VKcOhw9Q1c8-xZvZ20iukSszH0tmjBZlA5AaA"
+          },
+          {
+            "label": "View Mythos vulnerability scanner integration",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePcLyOjp2A_mntoODbXyevohDm_CMjLOtPu0W8ein0BaaIWsPT3IvkcXhVjOf7dL0lCDW78i6v1jLw3jWTI8qOff6zb-vVBTZGDC3_-WV4r-_OHDxoOnZHlD-TNjMjFGyWju9T1jEEuNirQlQfzXAsCTXPDxQAIhcRiV-SIVMU15RKMWQkKQIe6z_zvqFDiZBnZu8ognmbuf1-tNe8SPMZQ0NMXWPvP4TMHPBhT7DpJJipOI6iJDPCbHrenbQFbALCXGu5gYp1p-5gzu_TvTFwcE3cpBNwtUiKn1KWut4R_PD/4tg/D9fFo_kfSriw-m190ylQlQ/h9/h001.S9S5VBxewuS5G_BVpOOe3Lga0Rso0qKj_N0UsTh61Bs"
+          },
+          {
+            "label": "Build autonomous AI coding system tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.WM_5VEepnkJ2XyRjDAXS4cWQslKCOdKZNkhI_zXyH1KXEUdQ5te3ycmExZxVZergpEWuDUmKpDUS9cbITUuylV8Y-yyNbWDMIQZpMdjGQ0Cq-j6bIHsxfPuc00boSIqzkRvDAZCS8k9SzwzjwF4OAdLhgg_pFNYJ8OrBfwyzHBkG1ou2Cue8HAcmA4-PMz1CiyyD2G-pvSwowRrEl0-3aVxGvSvhTz4sp5pWXEycxfZBWVchnxq6nXZxvjB0v0m7VcbvJH5BvILDKyB_is0C7sKdxztwjcYR3FzlyH2Stfs/4tg/D9fFo_kfSriw-m190ylQlQ/h28/h001.2BqDh-loDLszdC0JVO8gV6NcNGPP7ZjpuS0nF7LaRwk"
+          },
+          {
+            "label": "Google's token engineering guide for AI cost reduction",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEPDBqHjGKMXq2sQuB0pHtfsJ0i8kpIiAClTviOy8oLDiBq9kTDrjZOkNCcamNurzaGw3zKrVdwpHZYs-6vDLbRQ2C1ZcneKDiNIcXyCyUeetKqxFewGWa_bDQyk3ezyucNgvTNNkl_E_M8Sdo6rcoJ8KV0-db2s_DhKRqoBYlrZwq2VFEL6oJethD52fL7HXO4zOA9ynopxWmgjIwUaiRfQjnBisJjKRjvY6jGxVcF_qWR_kRhWuoCGgbJs2nAzBw/4tg/D9fFo_kfSriw-m190ylQlQ/h30/h001.y3hb5H7l7r9rrgI4Ni3tYsWFlXg4F_S4NwMMUsOJvNU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Most Americans oppose nearby data centers",
+      "date": "2026-08-24T16:57:42+00:00",
+      "summary": {
+        "headlines": [
+          "Humanoid robots beat Usain Bolt's 100m record, with Chinese machines clocking 9.39 and 9.47 seconds at the World Humanoid Robot Games",
+          "75% of Americans oppose nearby data centers, up 33 points in a year, with opposition spanning all demographics and party affiliations",
+          "Nvidia raises AI server prices over 15% starting next year due to DRAM shortages, adding hundreds of thousands per rack to multi-million dollar systems",
+          "Anonymous AI coding model Ox Alpha impresses developers with 1+ million token context window (the length of text an AI can consider), but raises data privacy concerns for European users",
+          "Twitch faces class action lawsuit for using streamer content to train AI without permission, despite adding opt-out setting this month"
+        ],
+        "sections": [
+          {
+            "title": "Most Americans Oppose Nearby Data Centers",
+            "points": [
+              "75% of Americans strongly oppose or somewhat oppose data center construction nearby, with only 15% in favor according to Heatmap poll",
+              "Opposition spans all demographics: 43 points underwater with Republicans, 65 with independents, 75 with Democrats, plus consistent across age, gender, income, and rural-urban divides",
+              "Public sentiment shifted dramatically 33 points in one year, rising from 42% opposed last August to 75% now across four surveys using identical wording",
+              "July Redfin poll confirmed similar results with 53% opposed, suggesting sustained trend as tech companies race to build infrastructure for AI compute demands"
+            ]
+          },
+          {
+            "title": "Nvidia Hikes AI Server Prices Over 15%",
+            "points": [
+              "Nvidia warned biggest customers that Grace Blackwell and Vera Rubin AI server systems shipping early 2025 will cost 15%+ more than current pricing",
+              "15% increase on systems costing several million dollars each translates to hundreds of thousands of additional dollars per rack deployment",
+              "Root cause: soaring DRAM (memory chip) prices, with server contract manufacturers already notifying Microsoft, Google, and Oracle about coming jumps",
+              "Nvidia's roughly 75% profit margins and TSMC's inability to meet semiconductor demand leave buyers little negotiating power against price increases"
+            ]
+          },
+          {
+            "title": "Anonymous Ox Alpha AI Model Gains Developer Attention",
+            "points": [
+              "Mysterious Ox Alpha model appeared on OpenRouter as free, anonymous release impressing developers on coding and agent task performance",
+              "Model offers context window of just over 1 million tokens (the amount of text an AI can process in one response), with OpenCode agent provider offering free access for a week",
+              "Origin unknown with guesses ranging from China's Z.ai to Microsoft's MAI family; major concern is unnamed provider retains all prompts and completions, problematic under European data protection law",
+              "Discovery highlights trend of surprising AI model releases with unclear provenance and commercial backing"
+            ]
+          },
+          {
+            "title": "Twitch Sued for Using Streamer Content to Train AI Without Permission",
+            "points": [
+              "Connecticut streamer Warren Pandiscia filed class action lawsuit against Twitch and Amazon alleging companies used streams to train AI without permission or licensing",
+              "Lawsuit claims companies broke service contract by treating streamers as 'free training stock' for separate commercial AI products, causing creators loss of money or property",
+              "Twitch added opt-out setting this month but keeps AI training on by default; product chief said opt-in approach would fail as 'nobody would opt in'",
+              "Case highlights ongoing tension between platforms using user-generated content for AI training and creator compensation"
+            ]
+          },
+          {
+            "title": "Apple Redesigns Stores for Smart Home Push",
+            "points": [
+              "Apple redesigning retail stores this fall with rearranged sections and new accessory bays to support upcoming smart home devices",
+              "Planned lineup includes upgraded Apple TV set-top box, new HomePod mini, and long-rumored home hub with display running fresh system for controlling smart home devices",
+              "Physical store redesign lets shoppers try home hub hands-on, important as Apple enters new product category during period of rising prices across product range",
+              "Move signals Apple's strategic pivot toward ambient home computing and integration across its ecosystem"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Humanoid robots beat Usain Bolt's 100m record",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfUtBRKBbsdKBeh5RxGv6dVzkeq4FOAm0TkKJ2yLUnvXCSipM_l1bSPlmtik0mXQW_Sp3gqPCidzeI6cQAN4cO8Uo9IeenRGxTl2rEq8Se5MxM3GUauYqADMqKPgOCpP4JZr7ZUs0HVbzcmupDwY0h6T_08fi-3PDkHamRw2MzEk/4tg/_YXgYI5RTmiLLoDhUptdSw/h9/h001.cw3KBl3BU1SrxOb-lh93J-v03tVEveBGbc5NqEXfo44"
+          },
+          {
+            "label": "Apple revamps stores for smart home push",
+            "url": "https://elink640.dupple.com/ss/c/u001.Y2IZhOjzl-vPhCQ5mgkbnw7GlK8DzH61et6KxkWdxKYHTEugYt4sPo3_sgH6xlIHOCqCpw_2tPKvKJ6_0JZG8cua_3e3CdWt5YUuxfOq1p-aUmWzOTxthkNMKe8zoLj3jDrQPdlttbv_dMItRW_XgFisGxuO8mTvtHksH6OLN3rPy0pdlHWxK7DFYwJxtQqbKzGgiKlY4hTMXs3zmGSoKA/4tg/_YXgYI5RTmiLLoDhUptdSw/h10/h001.qlQFj4M_9TguAuEF_6fDjDLKr-i6hZD8wVjt4wmBlMI"
+          },
+          {
+            "label": "Most Americans oppose nearby data centers",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhbR5DI6DyCtEoGAVbcDS_qj5Tvfs5OFa11wLW57fSjW-Nr66B8hglZAsMRfqtDsjMftC2CKNcGb8BWBL5rUrzDoa_dfobgDiHs9CeLFt4Ce8QiG4mkOYox6c9sXsqefwsedeX0Lp7FxPZV3uFn-PzVy1vqpey9yjeGyIOrSKcx6-7NwU_ljnCvlvyEJmIJKC7w/4tg/_YXgYI5RTmiLLoDhUptdSw/h11/h001.0ynxdPOYoCTF6pxS7SwOL59IR7_ZozvGIB9vbVfz2j4"
+          },
+          {
+            "label": "Nvidia hikes AI server prices over 15%",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfGsZLR8-7sDN9NB01TjCfpZYjwQ9F1MVKgEuvAYWWaOYlCKCwoHTN5KvoiZfjpOEkFgyoJOR6TWtNSZJ3IEn-rOUMivVGTBMiAYDCiuqjcUMRizum1c2wnaC6oBT744ktT93zoajySFLDVs0b9RHjSs6jaKyql4UwUyqXguRLShZhjkZYD11CW2R7xY7kFvk1CB_18_OVsCjEGx_HTWEZxwz0aSoOxoApVZudPf5vFo/4tg/_YXgYI5RTmiLLoDhUptdSw/h13/h001.PpNIPTq0hf0fJkw_1izxcyJ6UkIt7Vv17j5PKWAngL0"
+          },
+          {
+            "label": "Twitch sued for training AI on streamers",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRSsqn9n9t-JFlNkNu_UfV3ClQEi8OpHwjynUg5lp2AqfLHb_T8fgqxD213MMzs9S1eoAOBWp3oZ3O889-DMyqMjbUTHiQNHP_B7N1scFDTgaMhQQnoRKGv15u_qgEIa5-SEq5g9HiNeQOSwfb7-yR_Apl0YPSGCtaDeChuqEnBclUW7mGrhJ1_u4ASUPGpTGg/4tg/_YXgYI5RTmiLLoDhUptdSw/h14/h001.kj-t68K1ZKG0oYEdw7U-w8Sg1nCXTvWXzgpk_Y9Pp6Y"
+          }
+        ]
+      }
+    }
+  ]
+}
