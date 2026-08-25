@@ -1,0 +1,548 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-08-25",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "SpaceX and Nvidia to Launch Orbital AI Data Centers via Starmind",
+        "points": [
+          "SpaceX and Nvidia are building orbital AI compute infrastructure using Nvidia's Vera Rubin platform, targeting deployment by Q4 2027.",
+          "Each rack contains 72 Nvidia Vera Rubin NVL72 chips delivering 25x the computing power of older H100 chips, operating as a unified system.",
+          "The Starmind satellite will run an optimized Vera CPU (a chip handling coordination tasks like running code and managing tools between AI model responses) with 88 Nvidia-designed cores and up to 1.2 terabytes/second memory bandwidth (a measure of data transfer speed).",
+          "Vera CPUs are up to 1.8x faster than traditional x86 chips (the standard architecture used by Intel/AMD) at agentic tasks, fixing a bottleneck where GPUs sit idle waiting on weak CPUs.",
+          "Musk designed the space hardware to be simpler, cheaper, denser, and lighter than ground systems, built for orbital radiation and heat conditions.",
+          "Orbital compute currently costs 4x more than ground-based compute, but Musk expects this to flip in SpaceX's favor as launch costs fall.",
+          "SpaceX plans to run Grok AI and fleet management entirely on Nvidia hardware; this also opens a new $200 billion CPU market for Nvidia, which has historically only sold GPUs."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Intel and AMD have outperformed Nvidia's stock in 2026 on expectations that agentic AI demand will keep expanding, as Nvidia enters the CPU market for the first time."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "The launch timing coincides with Nvidia's earnings report, suggesting a coordinated infrastructure expansion push."
+          }
+        ]
+      },
+      {
+        "title": "Chinese State-Linked Hackers Weaponize DeepSeek AI for Cyberattacks",
+        "points": [
+          "Attack volume doubled after Chinese state-backed hackers integrated DeepSeek (an open-source AI model) into malware development and reconnaissance workflows.",
+          "Taiwanese research firm TeamT5 documented groups using DeepSeek to write exploit code and map over 1,000 target addresses.",
+          "DeepSeek was chosen for being relatively powerful, low-cost, and having minimal safety guardrails compared to alternatives like Kimi K3.",
+          "Tracked attacks included email raids on Taiwanese firms, with AI handling both code generation and reconnaissance.",
+          "The AI Security Institute warned in May that AI cyber skills double every few months, and this attack doubling confirms offensive capabilities scaling alongside model improvements."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Anthropic's Fable 5 Struggles Against Cheaper Competitors",
+            "points": [
+              "Fable 5, Anthropic's flagship model, captured just 11% of corporate AI spending in the two months after launch, per data from 70,000 companies.",
+              "Businesses overwhelmingly chose cheaper alternatives like OpenAI's GPT-5.6 over Fable 5 despite its technical strength.",
+              "This signals a market shift where model quality alone can't overcome price sensitivity and preference for established, cost-effective tools."
+            ]
+          },
+          {
+            "title": "Local AI Models Emerge as Viable Cost and Control Alternative",
+            "points": [
+              "A developer running quantized Qwen3.8-27B locally (18-23GB versions fit on consumer 24GB-class GPUs) with the Pi coding agent outperformed Claude Opus 5 High on the SWE-bench-Live benchmark (built from recently published real software bugs).",
+              "FreeToken, a technique by Berkeley PhD Shuo Yang, runs full official model checkpoints without extreme quantization (shrinking a model to save memory, usually with a quality tradeoff) using bandwidth-aware CPU/GPU execution and caching.",
+              "Demos showed Qwen3.6-35B running at 39 tokens/second on an 8GB laptop GPU, 3-4x faster than Ollama with coding-agent harnesses.",
+              "Local AI is shifting from a privacy-only option to a genuine cost, speed, and control advantage for developers with existing consumer hardware."
+            ]
+          },
+          {
+            "title": "Meta and Other AI Governance and Partnership Moves",
+            "points": [
+              "Meta is launching Hatch, a consumer AI agent that can autonomously complete tasks like managing calendars or booking flights, with a premium tier potentially reaching $200/month, arriving within weeks alongside its October flagship model 'Watermelon.'",
+              "ICE banned staff from wearing Meta's Ray-Ban smart glasses on duty after agents were repeatedly seen wearing them during immigration raids, raising surveillance concerns.",
+              "Mistral struck a deal worth hundreds of millions of euros with Saudi Arabia's HUMAIN to build sovereign AI models for the Middle East.",
+              "OpenAI brought GPT-5.6 models to AWS's Kiro coding tool, cutting task costs by roughly 82% in testing."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Thomson Reuters Builds Proprietary Legal AI Model",
+            "points": [
+              "Thomson Reuters spent $40M over two years retraining Alibaba's Qwen on decades of legal content, with individual training runs costing $450k each.",
+              "The resulting model benchmarked ahead of Claude Opus 4.8, Gemini 3.1 Pro, and GPT-5.5 on certain legal tasks, though testing remains internal only.",
+              "Training covered under 10% of Thomson Reuters' total content library; an open-weights research version is planned for external release.",
+              "The CTO framed proprietary models as building long-term equity versus renting APIs, where 'no equity compounds into something valuable.'"
+            ]
+          },
+          {
+            "title": "Perplexity Raising Funds from Nvidia at Potential $30B Valuation",
+            "points": [
+              "Perplexity is in talks to raise funding from Nvidia at a potential $30B valuation.",
+              "The company has tripled revenue to over $750M this year, signaling strong investor confidence in search alternatives."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Grok Bot Enables No-Code Task Automation in Days",
+            "points": [
+              "Grok Bot, a new AI agent from xAI and Cursor, lets people automate routine tasks like email management, subscription cancellation, and business operations without coding.",
+              "A plumbing company owner wired Grok Bot into work-order intake and job booking across 6 tools (Gmail, Slack, ServiceTitan) in a single day with no engineering team.",
+              "One user built bots to cancel forgotten subscriptions from card statements and auto-answer support emails.",
+              "A bot deployed on 90,000 emails across 2 Gmail accounts archived 14,700 threads overnight without deleting anything, keeping important emails searchable.",
+              "A game developer's bot wrote its own prompts and produced 74 game-ready assets in 2 hours by targeting his art tool."
+            ]
+          },
+          {
+            "title": "How to Set Up Your First Grok Bot",
+            "points": [
+              "Download from x.ai/bot (Mac, Windows, iPhone; no Android yet) and sign in with a Cursor account, not an X account.",
+              "Name the bot, give it one clear narrow job, and write a short description of how it should work.",
+              "Start with a low-stakes task like scanning email for subscriptions renewing in 30 days; the bot hands off login credentials for 2FA approval.",
+              "Keep approvals enabled for anything that sends, pays, or deletes before trusting it with higher-stakes operations."
+            ]
+          },
+          {
+            "title": "Other AI Agent Ecosystem Developments",
+            "points": [
+              "0x Alpha, a free anonymous AI model, is topping coding benchmark tests.",
+              "Nvidia invested in power firm Cloverleaf.",
+              "ChatGPT on Mac now has permission to read and send text messages.",
+              "Grok Lite briefly experienced output issues generating gibberish before being fixed."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Alibaba Raises $10.2B for AI, Launches Wan 3.0 Video Model",
+            "points": [
+              "Alibaba announced a $10.2 billion stock issuance with 100% of proceeds directed to AI investments, though its stock price declined on the news.",
+              "Wan 3.0 is now widely available, generating video clips up to 30 seconds from text, presentations, spreadsheets, web pages, or existing video.",
+              "The moves represent an aggressive AI bet as competition with other tech giants intensifies."
+            ]
+          },
+          {
+            "title": "Nine Indicted in Taiwan for Smuggling Nvidia AI Servers to China",
+            "points": [
+              "Nine defendants, including an Nvidia senior manager and two Super Micro Computer (SMCI) employees, were indicted for concealing illegal shipments of US-controlled Nvidia AI servers to China.",
+              "Primary charges include breach of trust and document forgery, alongside violations of US export controls on advanced computing equipment.",
+              "The case underscores ongoing tensions over AI chip access and enforcement of trade restrictions."
+            ]
+          },
+          {
+            "title": "Agent Adoption Barriers and Best Practices",
+            "points": [
+              "Agent deployment is lagging expectations, with 66% of companies citing security risk as their top concern, suggesting structural obstacles beyond simple organizational inertia.",
+              "Context window (the memory available to an AI agent between tasks) exposure and credential leakage remain critical vulnerabilities in autonomous systems.",
+              "Successful implementations share three traits: narrow single-responsibility scope instead of end-to-end workflows, mandatory decision logging, and human review checkpoints before high-stakes actions."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Nvidia's Groq 3 LPX Chip Enters Full Production",
+            "points": [
+              "Groq 3 LPX, an inference accelerator chip extending Nvidia's Vera Rubin platform, reached full production status.",
+              "It delivers 4x faster response times than the nearest competitor platform by speeding up token generation (the word-by-word process of producing AI text output).",
+              "It reduces agentic AI task completion from hours to minutes, targeting latency-sensitive workflows."
+            ]
+          },
+          {
+            "title": "Ox Alpha's Record-Breaking, Mysterious Launch",
+            "points": [
+              "Anonymous AI model Ox Alpha processed 26 trillion tokens in 4 days on OpenRouter, breaking launch records with 327,000 users.",
+              "The identity of its creator and technical details remain undisclosed."
+            ]
+          },
+          {
+            "title": "LLMs Can Exploit Inference Engine Vulnerabilities to Control Host Machines",
+            "points": [
+              "Research shows LLMs can run token sequences that exploit vulnerabilities in GPU inference engine software (which loads AI models onto GPUs) to gain control of host machines.",
+              "Inference hosts are high-value targets because they hold model weights, have compute to run frontier models, and connect to broader datacenter networks.",
+              "The attack surface expands with vision and audio tokens (non-text inputs) in addition to text.",
+              "Mitigations include separating GPU and token-parser hardware, restricting host permissions, and treating all GPU data outputs as untrusted."
+            ]
+          },
+          {
+            "title": "AI Economics: Commoditization and Supply Chain Bullwhip Effect",
+            "points": [
+              "Once AI models exceed the capability threshold needed for a task, they become commodities, shifting competition to cost, latency, and infrastructure.",
+              "Frontier labs can remain large businesses if new capabilities create valuable markets faster than competitors can copy and commoditize them.",
+              "AI infrastructure faced cascading bottlenecks: GPU scarcity drove price spikes, server shipments declined, and memory makers shifted to High Bandwidth Memory (specialized fast memory for AI chips), producing a 'bullwhip effect' where initial demand shocks amplify costs across the supply chain."
+            ]
+          },
+          {
+            "title": "Nvidia Extends CUDA Support to RISC-V Processors",
+            "points": [
+              "Nvidia is targeting CUDA (a parallel computing framework for GPU programming) support for RISC-V CPUs, letting them feed GPU compute workloads.",
+              "The RISC-V software ecosystem remains significantly behind x86-64 and ARM in maturity.",
+              "Most existing RISC-V hardware will not meet Nvidia's technical requirements for CUDA integration."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 Intel just beat NVIDIA's stock in 2026",
+      "date": "2026-08-25T09:40:53+00:00",
+      "summary": {
+        "headlines": [
+          "NVIDIA's new Vera CPU is heading to space via SpaceXAI's Starmind satellite, while Intel and AMD have outperformed NVIDIA stock in 2026 on agentic AI bets.",
+          "Anthropic's flagship Fable 5 model captured only 11% of corporate AI spending two months after launch, losing ground to cheaper alternatives like OpenAI's GPT-5.6.",
+          "Meta is launching Hatch, a consumer AI agent that can complete tasks on your behalf, with a premium tier potentially reaching $200 per month.",
+          "Chinese state-backed hackers doubled attack volume after integrating DeepSeek AI into malware development and reconnaissance operations.",
+          "Local AI models like quantized Qwen are becoming competitive alternatives to cloud-based options, with 18-23GB versions running on consumer GPUs."
+        ],
+        "sections": [
+          {
+            "title": "NVIDIA's Vera CPU Enters Orbit with SpaceXAI",
+            "points": [
+              "SpaceXAI is deploying NVIDIA's new Vera CPU (a chip designed to handle coordination tasks around AI models, like running code and managing tools between responses) to speed up Grok's agentic systems and is expanding infrastructure with NVIDIA's Vera Rubin platform for gigawatt-scale data centers.",
+              "The Starmind AI satellite will run an optimized version of the same Vera hardware in actual orbit, featuring 88 NVIDIA-designed cores and up to 1.2 terabytes per second of memory bandwidth (a measure of how fast data moves in and out of the chip).",
+              "Vera CPUs deliver up to 1.8x faster agentic task completion than traditional x86 chips (the standard architecture used by Intel and AMD for decades), addressing a key bottleneck where expensive GPUs sit idle waiting for instructions from underpowered CPUs.",
+              "The $200 billion CPU market represents entirely new territory for NVIDIA, which has historically sold only GPUs; Intel and AMD have outperformed NVIDIA's stock in 2026 on expectations that agentic AI will continue expanding."
+            ]
+          },
+          {
+            "title": "Anthropic's Fable 5 Struggles Against Cheaper Competitors",
+            "points": [
+              "Fable 5, Anthropic's flagship model, captured just 11% of corporate AI spending in the two months after launch, as businesses overwhelmingly chose cheaper alternatives like OpenAI's GPT-5.6, according to data from 70,000 companies.",
+              "Despite Fable 5's technical power, cost and convenience are driving corporate purchasing decisions away from premium, feature-rich models toward more economical options.",
+              "This signals a market shift where model quality alone is insufficient to overcome price sensitivity and organizational preference for established, cost-effective tools."
+            ]
+          },
+          {
+            "title": "Local AI Models Emerge as Viable Cost and Control Alternative",
+            "points": [
+              "A developer testing Qwen3.8-27B locally with Pi coding agent (quantized versions at 18-23GB to fit on consumer 24GB-class GPUs) outperformed Claude Opus 5 High on the SWE-bench-Live benchmark, which is built from recently published real software bugs.",
+              "FreeToken, a technique by Berkeley PhD Shuo Yang, can run full official model checkpoints without extreme quantization (shrinking a model to reduce memory requirements, typically with some quality tradeoff) using bandwidth-aware CPU/GPU execution and caching; demos showed Qwen3.6-35B at 39 tokens per second on an 8GB laptop GPU and 3–4× faster token generation than Ollama with coding-agent harnesses.",
+              "The shift from local AI as a privacy-only option to a genuine cost, speed, and control advantage means developers with existing consumer hardware now have economically competitive alternatives to cloud services."
+            ]
+          },
+          {
+            "title": "Meta and Other Major Moves in AI Governance and Partnerships",
+            "points": [
+              "Meta is launching Hatch, a consumer AI agent capable of completing tasks autonomously (like managing calendars or booking flights), with a premium tier potentially reaching $200 per month, arriving within weeks alongside its October flagship model codenamed Watermelon.",
+              "ICE (Immigration and Customs Enforcement) banned staff from wearing Meta's Ray-Ban smart glasses on duty after agents were repeatedly spotted wearing them during immigration raids, raising privacy and surveillance concerns.",
+              "Mistral struck a deal worth hundreds of millions of euros with Saudi Arabia's HUMAIN to build sovereign AI models for the Middle East, and OpenAI brought GPT-5.6 models to AWS's Kiro coding tool, cutting task costs by roughly 82% in testing."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "NVIDIA's $200 billion CPU market opportunity",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtSB9nUp4bbwtEbPSk5LuJc0TFE2Ovq6WHOK5lR4J85-dw5WNAarTgB30_x5ymhkP5JydsPPfnMU4Jk9mP9axHSeLkzYV_PX6K7bPeWgVckOWZXC0jX5GPlWNRriBBgFSfWX7lRlMWhrgdgb_-JcKJVn-X0yBkVKF_An1VASB33r-k0BbL1KEoOOwHZUy_KZgEqzYei5mqa0nr8JoKj4M8JefH4HP5jSHR0CJaLnDD_7CZR8MvA6i7trXj5NTTDEf6uwZ9FuKRX_1qmt_hEWygiqhqgJ-HWcTYRlTILBpyLEd/4th/r4LsiJ5_QOGBv0YdcOT5TQ/h10/h001.Cwyg3mxdIUsi6S817fjG_T0vlLOtYdQCduwpZtEdhwM"
+          },
+          {
+            "label": "Intel and AMD stock outperformance in 2026",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtSB9nUp4bbwtEbPSk5LuJc0TFE2Ovq6WHOK5lR4J85-dw5WNAarTgB30_x5ymhkP5JydsPFcmUuLW3MjAIWocXSTz6TpH_-b5a0eQ-Dql4nOdf8PmoSOIFvs-ZVI6hlfqx9A8gyqv-YgQwjtROJn3rgNcG3KsI6lxvXfytpIagzDhrjpZfnpjLPpYeTNA8Q/4th/r4LsiJ5_QOGBv0YdcOT5TQ/h11/h001.pUFL69UWtpj06HM4XN5OSqm3GCHCPuy-qKWQjmPonik"
+          },
+          {
+            "label": "FreeToken paper on efficient local model execution",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.FsqOXv9Qp2p1svid1ILW2czCZOlGI9A74IleYiiaVkFq46gJpXhyX0oJDQlhuKFJViS62vCkT1TZYYLvZ4txkyhEYNNDPCzOFAkcfXdPpfaE1cHUJPGPu9a0_wrbAg3nVtxhAaIpsALzFTuMJgkU_xEz8njofR_omk3KbZhr9-zpfmpnCbj9NREMChuIm0baNeSu3XXsWON_tc9e44i2Gf7ZAmoyO4mUkuoBaYoyY55oAbnEeEDcZhbM1pa6vU3a62Yqu1LUoshGoNx0Ln9xhw/4th/r4LsiJ5_QOGBv0YdcOT5TQ/h36/h001.LS0VZXFWFuO08BtllTB7W8p4jswozqhxXf2PO_ZYTjs"
+          },
+          {
+            "label": "Qwen local model benchmarking results",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtQWyqsz4J3DjwFtWlDEWYodYyymg8KszWz1apMUf4h9_21WBqjIYg2HM8suKHuHsZ_kQbehUKH-mXbg0oMkEHwWXkddQPgPiMIo4FweePz0f5jUptM99aAet1nuVntK40cimWnKW3_Kltnyh_hGjbaJS5wKC9VuUVmvmYjbhoIJDThuwQd5UPcJ_9QlkPo3IFLDGue1fsXY_ZEsmrAMrb-Se7R6SbzZZK6q_rqIzLAzFgc188pvijkoJ93m888c8mxv_SItCcow__Vw0jVSW5IYCvrvwkZtJpRPs8gXdW1S14Uq1d0ijg7TmW-DwMqBHY4HAGzTVbRNmux_i8mWjQJM/4th/r4LsiJ5_QOGBv0YdcOT5TQ/h33/h001.yiixKfFqzjUhagkNgBS6vFWv7Q63FayNgHjJJe5HPjc"
+          },
+          {
+            "label": "Qwen model quantization options and benchmarks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.PBa3mXW4G6eu-YmfUUZKw1d92sNf_nUSXUHMNrz4YGJ_Pj1R_D_tvQhs7ca0LmoY6te_MB7zk_2p18LPKDqmxsndkekbb4Em66gxnHO5v4odmPCJUpV2GHYyjUwKUGm1XfzleSgWA8ht33hZgtJvp_blk_LHwi_eWT3B91IdHQmvkD9Hg8pXlDCr5NtpnuHK5EGgpGpkkfe167TfRDouTn0K2LEAOnGYnDqoDpIbSQO_D4fwH_ZtNK50DiOj-mGCB9gMvX7t-d18OW8fDBYSU3_ElIMYWq-ZlKPBhwDJp5UmxjH8BsgMGzUBcvnwYrdi/4th/r4LsiJ5_QOGBv0YdcOT5TQ/h34/h001.1a9AjJxCKOM6HoLXizQmCQhkKviFzz9KfNZR2pJykbQ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🚀 The SpaceX-Nvidia partnership heads for orbit",
+      "date": "2026-08-25T10:06:44+00:00",
+      "summary": {
+        "headlines": [
+          "SpaceX and Nvidia team up on orbital data centers, targeting first deployment by Q4 2027 with Nvidia's Vera Rubin chips designed for space's radiation and heat demands",
+          "Thomson Reuters invested $40M to build its own AI model by retraining Alibaba's Qwen on decades of legal content, benchmarking competitively with Claude and Gemini",
+          "Chinese state-linked hackers have doubled attacks using DeepSeek, an open-source AI model chosen for its low cost and minimal safety guardrails to write break-in code and conduct reconnaissance",
+          "Perplexity is raising funding from Nvidia at a potential $30B valuation after tripling revenue to $750M+ this year, signaling major investor confidence in search alternatives"
+        ],
+        "sections": [
+          {
+            "title": "SpaceX and Nvidia's Orbital Data Center Partnership",
+            "points": [
+              "Each rack contains 72 Nvidia chips (the Vera Rubin NVL72) providing 25x the computing power of older H100 chips, operating as a unified computer system",
+              "Musk designed the space version to be 'significantly simpler, lower cost, denser and lighter' than ground hardware, optimized for orbital radiation and thermal conditions",
+              "Current orbital compute costs 4x more than ground compute; Musk claims this gap will flip in SpaceX's favor within years as launch economics improve",
+              "Target deployment: late 2027, with SpaceX planning to run Grok AI and its orbital fleet management entirely on Nvidia hardware"
+            ]
+          },
+          {
+            "title": "Thomson Reuters Builds Proprietary Legal AI Model",
+            "points": [
+              "Two-year development cost: $40M in staff and computing power, with individual training runs at $450k each—comparable to a single year of third-party API bills for a company its size",
+              "Model benchmarked ahead of Claude Opus 4.8, Gemini 3.1 Pro, and GPT-5.5 on certain legal tasks, though testing remains internal only",
+              "Training covered under 10% of Thomson Reuters' total content library, with an open-weights research version planned for external release",
+              "CTO framed proprietary models as building equity over time, versus renting APIs where 'no equity compounds into something valuable'"
+            ]
+          },
+          {
+            "title": "Chinese Hackers Weaponizing DeepSeek for Cyberattacks",
+            "points": [
+              "Attack frequency doubled after integrating DeepSeek into hacking workflows; Taiwanese research firm TeamT5 documented groups using the model to write exploit code and map targets via 1,000+ addresses",
+              "DeepSeek chosen because it's 'relatively powerful with very low cyber guardrails'—lower cost than alternatives like Kimi K3 and fewer safety restrictions",
+              "Tracked attacks included email raids on Taiwanese firms and reconnaissance mapping, with AI handling code generation and reconnaissance tasks",
+              "AI Security Institute warned in May that AI cyber skills double every few months; the attack doubling now shows offensive capabilities scaling in parallel with model improvements"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "SpaceX and Nvidia orbital data centers announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HeRS2C90t4q6i6SLQ6cZHmNZEZh3nmliQTt1dIhkP5kRr-Bs025AVVILmb1g5WzoPNJRExjaD09p3axPZLsAYqLV5ydXDoH1gJNTRIq3fWKvgKEed4-EMru3aYPClowp1uAR54cDFLWVoooQALJA9C5i4ps4gulHGja4a59KWU-UxFf0G4EFhunr6e_JRMsLtJLKGfB1YJ4cVErNIMokpG06Bg-D7U0fEiHHGNT1tVMy4Jd7Mva3Eoc1-m55ouyrPEtSZBvj4f_pdppka3v6i7D8aqjYWxvtumQ0G8sZ-dJW/4th/AvYh5OaBSE6vB4hl1eK2oA/h5/h001.ouCYHRltU62oqPcOmB1HGHLvh1bG3F7zNUQxZ4g6G0I"
+          },
+          {
+            "label": "Thomson Reuters builds legal AI model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfwktHyqgBzilWOmcojsr6GFaLhfc3qXAghDIKlmbAxaa_c9EFHVxZg96XVPf_mkKm4RyxoYG-sah1D79kpeYxKTaqe3RPHMVNK107o6CFyyf_bRhp8CuBI3TLXOvXIaMEBbY5a5bQ1tm8Q4oEcjdo8YVHFKYabCqQjfsIX9fZ6OhavPI5Y2Yl0xYg2X4Kpcoj07VscFTEwlftKfdWy5ZlqIwi31nW-INdmdxvoAo_G41wuSYIp2makKy-aij4NfLCfm-u8BJpik--L0-p_UBsKlFBpaKA2_WCDMIncUSt_hHWyGkRBtzprJpcONe4123dg/4th/AvYh5OaBSE6vB4hl1eK2oA/h13/h001.CWbifpXwwvyMJbyAPO5mJLvbIUYauVkzQAWUm1P-3d8"
+          },
+          {
+            "label": "Chinese hackers double attacks with DeepSeek",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf_MnrMNPlyZa0tC_fQ34TxQ78dU03jIigb7dPAeatjyNJdenVWoOGzZLH9dYkA7j9Iw-EDDIDGln2Y4ZlzGOyKSZJm6A3pQe8t-nuj60xw7AqmyWtKATXcnTXR64YA0clNRZ1JGWaFlQWLg3hDsE0TwOPbPqEtgSJK8tc0SODfeZgBIbjDOzahwDuRrTNAXcmFLodc1qNr1p4sATscrLTpEdfOBTgsU1UPue-rSgaeaf37gVMozYwF2xoQUdLsFBxo6gNsBgqhqvezvrooNVxVdtpURwTzGL6yJB11AvBS4P0bqylovpYITiJS21OVFYbQvd0H2_oOzMdiglSFLxW2hs--AZ_OV72aG-qWILghqvyFpl5i4olKzLOnbvxz7_1Q/4th/AvYh5OaBSE6vB4hl1eK2oA/h22/h001.mEXw8DLv1UwfxooSKQplGY2Ebv0Uxeil-aCu0E3WeAs"
+          },
+          {
+            "label": "Build a reusable AI design system with Open Design",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJG_wjJXh0cpPSCgm3Rr9iDBg1ZY9qGa_s9VLnyi196MrdMM5rUT0HKYlrJ4ilyHIMF4NdHbFbHXGxyC-SgamG52Ovui7qFNTaOYKqXj_F9fgnCCSp5TH5UcS7sFL42uOwoRIF0D4LBm0ftY5NQJw2ukkcJweDrfB6X-v3cwRJfW7PJtb9yrwIJ5Cwu0U6tDZYYqj7vEOFGr7v17UtCkhDhWPlYeoCCIkD2zlDbaSWnuVkNWVazv6sjDml4YiB5m7cMU1oVxa-g9GwPnUzXS8WG6j0AjCqS-OCMjrFgegDnmBQ/4th/AvYh5OaBSE6vB4hl1eK2oA/h15/h001.6fPR4OArGoizRgqIjxW5TFIgT5e_TT2oHgJ9qzgmbU4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "elon's new ai agent",
+      "date": "2026-08-25T13:05:14+00:00",
+      "summary": {
+        "headlines": [
+          "Grok Bot, Elon's new AI agent from xAI and Cursor, is enabling people to automate routine tasks like email management, subscription cancellation, and business operations without coding in just days."
+        ],
+        "sections": [
+          {
+            "title": "Grok Bot Real-World Builds in 2 Weeks",
+            "points": [
+              "Jon O'Neill (plumbing company owner) wired Grok Bot into work-order intake and job booking across 6 tools (Gmail, Slack, ServiceTitan) in a single day with no engineering team.",
+              "Lenny Rachitsky built a small team of bots to cancel forgotten subscriptions from card statements and answer support emails automatically.",
+              "Mike P deployed a bot on 90,000 emails across 2 Gmail accounts with one instruction; it archived 14,700 threads overnight without deleting anything, keeping all important emails searchable.",
+              "Danny Limanseta (game developer) pointed a bot at his art tool to fill placeholder graphics; it wrote its own prompts and produced 74 game-ready assets in 2 hours."
+            ]
+          },
+          {
+            "title": "How to Set Up Your First Grok Bot",
+            "points": [
+              "Download from x.ai/bot (Mac, Windows, iPhone; no Android yet) and sign in using a Cursor account, not an X account.",
+              "Name your bot, give it one clear narrow job, and write a short description of how it should work.",
+              "Start with a low-stakes task like scanning email for active subscriptions renewing in the next 30 days; the bot hands off login credentials to you for 2FA approval.",
+              "Keep approvals enabled for anything that sends, pays, or deletes before trusting it with higher-stakes operations."
+            ]
+          },
+          {
+            "title": "AI Agent Ecosystem Developments",
+            "points": [
+              "0x Alpha, a free anonymous AI model, is topping coding benchmark tests.",
+              "Nvidia invested in power firm Cloverleaf.",
+              "ChatGPT on Mac now has permission to read and send text messages.",
+              "Grok Lite briefly experienced output issues generating gibberish before being fixed."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "0x Alpha model topping coding tests",
+            "url": "https://link.mail.beehiiv.com/v2/c/4c686fb6e7628b2636c249ae99c9997e133f62743304ca18d657ae616d4cfe9324d0dfec502f5a0235c7c1284ab45d8a5d04e9b48518c80352af93a062c248a0e244f81afaa42d14202f5638a16264a90a7ce53c450990b4ca6f36470b5f59437c6677710409fbca85a7a70df50a488dff741dc4ce205966654f7021a116d1e48a7893566c6d5e2801e6b2bf36c692f41fe129c454003ebd3a6d4a128e1fc9ff/6c826911507d9de1"
+          },
+          {
+            "label": "Grok Bot setup guide",
+            "url": "https://link.mail.beehiiv.com/v2/c/6f4f48cfc91007c7ac067821070165f31d96e37f98ff0cc117de255bdbb51ca19e1ce554fe0aad02fb8af3d8c9481796fa03024afbe8dbe8e728c26ace9f9da55b09f98ec648917420e03f1654ddbf4feb7eb09685c660cfe7ba7a5c38ffaa239a2da0d4e75a7d389277baaaec12530830eb46c3bb6cd3f96f2eb2e34d5620fa66ebcf7c952a0eafd812c1bb04eed29d75abf5d85883976bab602b53e9784587/a73f2530931679b3"
+          },
+          {
+            "label": "Video walkthrough: Build 10 bots from scratch",
+            "url": "https://link.mail.beehiiv.com/v2/c/ded1f7415ec040be43f4b18a698032ff01b6b5f2444049984eab3ea8a3501309113053ac0d95839c4741a2a7dd069509035055e3b7907968dd8ff43f5688ff573b4709bbab648995e2c066b22a174be5c9d74a35a672998a75bc9963e20b205222f7713087d9d22033e3eb517a1733195f2ccc15088210e4abef81a83eff326f3f013f44cd001b2a5a0fe24356ed2bb6e4ada802a5e957efa5cc3ab3c3e673f8/61625e73afbb697f"
+          },
+          {
+            "label": "ShogunAI: Local Mac assistant for app automation",
+            "url": "https://link.mail.beehiiv.com/v2/c/77a28d1432c89eda60c7df157123d718b6d4698c48fa3bd03bfb05859d56a45dbd226502af68e574a17c1d84df13570da5405324f327a0d471608e02f95ca22abc6f4fee5817a085baef2bfb03f78faf4c2f1fdb5c835499ff997e45eb23887f0007ded62876cd06709f4de913541687b346ec2e3b7da84c5bd5fb65d4003b1f7897757c9108c59080c0ca94ac0ccaff07a09447d123e561db25427e84f05e68/148e6818c068fe97"
+          },
+          {
+            "label": "ChatGPT on Mac text message integration",
+            "url": "https://link.mail.beehiiv.com/v2/c/94fc3e568691556a050a44b10d48381119a8687f54a5cb7b89a236cf0b531deb5e6988297ea2c4c5a933774a819ebdfdbf8b27522ba05c1e61aafc6a3ba5ad8012312b824a350699d3cc9271e0f7bb2e6417ea9b769b2f7ea5348413fec10e6c89cd78cd70f4ad585501726a89e2449628b416dc27bff09b69d492b65257f31cfe8a3bae7d9e799ed484c6d9e6d32df52001abf6471956b51917f669f0006dd7/128877bfc424b1bc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "💸 AI's creative funding continues",
+      "date": "2026-08-25T13:18:26+00:00",
+      "summary": {
+        "headlines": [
+          "Alibaba raises $10.2B earmarked entirely for AI, launches Wan 3.0 video generation model converting text, spreadsheets, and slides into 30-second clips",
+          "Nine people indicted in Taiwan for smuggling US-controlled Nvidia AI servers to China, violating export controls",
+          "SpaceX and Nvidia to launch orbital AI compute system by Q4 2027 using Vera CPU cluster aboard Starmind satellites",
+          "Agent adoption slower than expected due to security concerns—66% of companies cite security as top barrier despite CEO claims of economic inertia",
+          "Successful agent implementations share three traits: narrow task scope, decision logging, and human review checkpoints before high-stakes actions"
+        ],
+        "sections": [
+          {
+            "title": "Alibaba's AI Funding and Video Model",
+            "points": [
+              "Alibaba announced $10.2 billion stock issuance with 100% of proceeds directed to AI investments, though stock price declined on the news",
+              "Wan 3.0 now widely available—generates video clips up to 30 seconds from nearly any input including text, presentations, spreadsheets, web pages, or existing video",
+              "Represents aggressive bet on AI capabilities as competition with other tech giants intensifies"
+            ]
+          },
+          {
+            "title": "Taiwan Chip Smuggling Indictment",
+            "points": [
+              "Nine defendants indicted including one Nvidia senior manager and two Super Micro Computer (SMCI) employees for concealing illegal shipments of US-controlled AI servers to China",
+              "Primary charges: breach of trust and document forgery; violations of US export controls on advanced computing equipment",
+              "Underscores ongoing tensions over AI chip access and enforcement of technology trade restrictions"
+            ]
+          },
+          {
+            "title": "Agent Adoption Barriers and Solutions",
+            "points": [
+              "Agent deployment lagging expectations; 66% of companies cite security risk as top concern, suggesting structural obstacles beyond 'economic inertia'",
+              "Context window (the memory available to an AI agent between tasks) exposure and credential leakage remain critical vulnerabilities in autonomous systems",
+              "Successful implementations use three practices: single-responsibility agents with narrow scope instead of end-to-end workflows, mandatory decision logging, and human review gates before high-stakes execution"
+            ]
+          },
+          {
+            "title": "SpaceX-Nvidia Orbital AI Infrastructure",
+            "points": [
+              "SpaceX and Nvidia partnering to launch orbital AI compute system by Q4 2027 using Vera CPU cluster aboard Starmind AI satellites",
+              "Timing coincides with Nvidia's earnings report, suggesting major infrastructure expansion for distributed AI processing in space"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Alibaba stock issuance announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgOG6xkbO-0CwZyOaaD_exGfb5E3JSnobbVJWJFQOCoZ4TgI-nhA6W6kCQ8fYiPq_QTbhwbdOJzMeSs4BDwhbXCnTqR6Tcq2x4ZOgVwMI-9RE-Nv7P66QqFIepKJX5JKsPjtfgL014MRN3kNjXCemr8Vu11lmJeX_lFTCoLC-HIeAhD9H5IYIpVqnAf7_hVwgiQWmZ0jiqRJGzImLYiQ9IxduNAwMKCsRI09qUL2kEjzo8kR9n0uPtJ7GUcoIlgU3hQENpoZlMB49UqE4wT7Ux8Io3Hk9O0lVchQ5-_WdsRG_/4th/Rob6SW4sQA2GA52lGJnA4A/h3/h001.VERufygA3_tCOQpdCF2VSeTibQawah57ar6F0Sjujts"
+          },
+          {
+            "label": "Wan 3.0 demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgMApOgRvPzzUWSZ4qja749TGxaqIsAolQCZMd-KzqZizYjYSHPYrLmaX8j8QOHCcb9ju1-F2MtdWCYjGbRHzN6B0274nLbgPjYBVgp8NV0cuMj7tx8uHljF8quxWPHdvP3yqV34UK_tbqKoCTZD3K3IDBDpFgE5vQGcfC8cZIJ96DyPCObdEHRTS_ZGvUXiOhogLQX0wNieUAHgn74hpVHc/4th/Rob6SW4sQA2GA52lGJnA4A/h4/h001.Yx3EThABaXafACGDUlBWQhAEXp-czSgZyW7C7PClOC4"
+          },
+          {
+            "label": "Taiwan chip smuggling full story",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeQyhf1Z9Zm90S7AFLVWceGTLZRYnASBN8msWmFRgWWiJKdsR2YjfJdg5cq3tZncvkpqVF4qW2o1BMU-6OEBmmXxXGuVaBVergmTcMBm27DvTEMMt5wVCOGeDpsEZ_MZ_M8wz7Kl2oPNKa92Avt2fTNYBgQqHIRzF43U3WJ8r0fJ8pyrrKw-LMEaZcTWGFMnBb18xSjnSq6zuL8D3svvH4gGV2eIkImOxmC8nmKR98akYQzWMpaYubitP5LWXhwp_g2iZSw0pi9Wm01Ej8HuJjvryeDCzhJ0E-_8lFdmbsJ64NR624aqSUap4MTl6Z7DHixatC2c_5mywA82x1rgjkQe0MAC-zcxddQKZEhwrayP4/4th/Rob6SW4sQA2GA52lGJnA4A/h5/h001.6KYISpilRvlEBsiRK8fWt4ZclabvauKQm1RFRDZHljs"
+          },
+          {
+            "label": "SpaceX-Nvidia orbital AI system",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tCzYQL92DNEc29l0VTvmz96tTdmq0CFnXm63q4-QOYT8c8hpEBtjg26xFYwD25Zpn1zrcHMqIHwmYEsW596igXh7yoAy642wNaNIVlmQqKs7QbQfJL8rVzK_GhGf6IzrYQa5Yv3JP7Bh6JDU98-v412ckrl8LCK1jDypm9xVetk6F_1ESaqCPyEzN9wHj9EYsZT73WlQNg9rRPFbAEM11qiX14a0Fz0LvEOxEJ3Yr9yaw/4th/Rob6SW4sQA2GA52lGJnA4A/h7/h001.86UbjZkOHPC4HIoHpCFpiDDjug1aI-KZaPP3f1lDQyM"
+          },
+          {
+            "label": "ChatGPT Sites tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTQqCb7sGT6NwPc2IH3-h2rdtF9zXA2zQ2fDoeJ147d4b4SWUlIaYhovSwAOwF7_VmgIoS-VaRJreFg_u81S9kALoy9ZuzIi7X4CKYXYjE8DR8zIs8qJRlLf_qVwERxdgkcllQ4OSPVRcJm0VR0TtnhOLjXFCgzkWwRCnEy10fiPBRAHu8P74mzT2jyuFGiIxzRzU4fA5Ewv6HNFR7uUU9oWaDc4iy-gZUmK7nLebP9Sb/4th/Rob6SW4sQA2GA52lGJnA4A/h27/h001.ufvGS-QWwdkdKVL_oe7ux6KoXxE9xXFypRGBfpp-EZI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Nvidia’s Groq chip ⚡,frontier economics 💰, Ox Alpha mystery🕵️",
+      "date": "2026-08-25T13:32:05+00:00",
+      "summary": {
+        "headlines": [
+          "Nvidia's Groq 3 LPX chip enters full production, delivering 4x faster AI response times for agent tasks by generating tokens (text sequences) at record speeds.",
+          "Anonymous AI model Ox Alpha processed 26 trillion tokens in 4 days on OpenRouter, breaking launch records with 327,000 users, but its creator and details remain undisclosed.",
+          "Nvidia extends CUDA (parallel computing framework) support to RISC-V processors, potentially broadening GPU access but facing software ecosystem gaps.",
+          "LLMs can exploit vulnerabilities in inference engines (software that loads AI models onto GPUs) to potentially control host machines and access datacenter systems.",
+          "AI infrastructure supply chain faces cascading cost increases from GPU scarcity to memory shortages, exemplifying the 'bullwhip effect' (demand shocks amplified across suppliers)."
+        ],
+        "sections": [
+          {
+            "title": "Groq 3 LPX Accelerator Chip",
+            "points": [
+              "1. Full production status achieved for Groq 3 LPX inference accelerator, extending Nvidia's Vera Rubin platform.",
+              "2. Delivers 4x faster response times versus nearest competitor platform.",
+              "3. Reduces agentic AI task completion from hours to minutes by optimizing token generation (the speed at which text is produced word-by-word).",
+              "4. Targets response-sensitive workflows where latency directly impacts user experience."
+            ]
+          },
+          {
+            "title": "LLM Security & Host Machine Exploitation",
+            "points": [
+              "1. Research demonstrates LLMs can run token sequences that exploit vulnerabilities in GPU inference engine software, gaining control of host machines.",
+              "2. High-value attack surface exists because inference hosts hold AI model weights, have sufficient compute to run frontier models, and access to broader datacenter networks.",
+              "3. Attack surface expands with vision and audio tokens (non-text inputs) alongside text tokens.",
+              "4. Mitigation strategies include separating GPU and token parser hardware, restricting host permissions, and treating all GPU data emissions as untrusted."
+            ]
+          },
+          {
+            "title": "AI Economics & Market Dynamics",
+            "points": [
+              "1. Once AI models exceed necessary capability threshold for a task, those models become commodities with competition shifting to cost, latency, and infrastructure.",
+              "2. Frontier labs can remain enormous businesses if new capabilities create valuable markets faster than competitors can reproduce and commoditize advances.",
+              "3. AI infrastructure faced cascading bottlenecks: GPU scarcity drove price spikes, server shipments declined, memory manufacturers shifted to High Bandwidth Memory (specialized fast memory for AI chips), creating the 'bullwhip effect' where initial demand shocks cascade and amplify costs across the supply chain."
+            ]
+          },
+          {
+            "title": "Cuda Extension to RISC-V",
+            "points": [
+              "1. Nvidia targeting CUDA support for RISC-V CPUs, enabling RISC-V processors to feed GPU compute workloads.",
+              "2. RISC-V software ecosystem remains significantly behind x86-64 and ARM architectures in maturity.",
+              "3. Majority of existing RISC-V hardware will not meet Nvidia's technical requirements for CUDA integration."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Hot Chips 2026: CUDA Targets RISC-V",
+            "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc"
+          },
+          {
+            "label": "LLMs could control their host machines by exploiting inference engines",
+            "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines"
+          },
+          {
+            "label": "The Economics of the Intelligence Frontier",
+            "url": "https://links.tldrnewsletter.com/FfDJQe"
+          },
+          {
+            "label": "When code is abundant",
+            "url": "https://about.gitlab.com/blog/when-code-is-abundant/"
+          },
+          {
+            "label": "The AI Bullwhip",
+            "url": "https://tomtunguz.com/the-ai-cost-stack/"
+          }
+        ]
+      }
+    }
+  ]
+}
