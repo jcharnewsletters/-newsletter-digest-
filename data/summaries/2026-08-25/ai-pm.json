@@ -1,0 +1,415 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-08-25",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "Lenny's Newsletter",
+        "items": [
+          {
+            "title": "Career Progress vs. Progression Framework",
+            "points": [
+              "AI and technological change will displace 39% of today's skills by 2030, but focusing on personal 'progress' rather than traditional 'progression' helps navigate uncertainty.",
+              "Progression is the traditional ladder model (IC → promotion → up); progress is contextual and dynamic, letting you chart your own course based on what brings out your best.",
+              "Six diagnostic questions—covering career progress, core quest, energizing work, possible moves, acceptable tradeoffs, and internal alternatives—form a repeatable system for job transitions.",
+              "Complete a 10-minute exercise listing emotional 'pushes' (friction pushing you away) and 'pulls' (what draws you forward), then circle the top 2–3 of each to define your unique quest.",
+              "The four main career quests are: getting out of an untenable situation, regaining control over time/life, realigning work with strengths and values, or taking a new challenge after mastery.",
+              "Build an 'energy profile' by auditing past roles hour-by-hour for energizing versus draining tasks, revealing specific conditions needed to succeed and preventing mistakes like accepting misaligned promotions.",
+              "Most professionals understand their skills better than the conditions required for their best work, leading to costly mistakes like ICs becoming miserable managers."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "ultrathink",
+        "items": [
+          {
+            "title": "AI-Designed Personalized Cancer Vaccine Succeeds in Phase 3",
+            "points": [
+              "Personalized mRNA cancer vaccine designed by algorithm succeeded in a Phase 3 trial of 1,137 melanoma patients, cutting recurrence risk by 49% and metastasis risk by 59% versus Merck's Keytruda alone.",
+              "Each patient receives a custom-built drug molecule targeting up to 34 unique mutations identified from tumor and blood sequencing; production takes about 6 weeks per patient, so no standard 'dose' exists.",
+              "A scheduling algorithm (Maestro) orchestrates single-patient production batches based on factory capacity, effectively making scheduling itself the product rather than back-office logistics.",
+              "This proves personalization can work economically at scale when a scheduling system absorbs complexity that would otherwise bankrupt traditional pharma manufacturing."
+            ]
+          },
+          {
+            "title": "GitHub Outage Spurs Rethink of Coding Infrastructure",
+            "points": [
+              "GitHub suffered a 7-hour 47-minute outage on August 17 from capacity failure (not a code bug), as monthly commits doubled from 1.4 billion in April to 2.9 billion in August, driven by AI agent automation.",
+              "Cursor launched a competing code host, Origin, the next morning, using immutable write-ahead logs (an append-only record system) in cloud storage as the single source of truth, with disposable, stateless servers instead of shared infrastructure.",
+              "This design assumes machine-paced traffic from agents generating commits faster than human patterns allow, eliminating coordination overhead that caused GitHub's capacity failure."
+            ]
+          },
+          {
+            "title": "Parallel Coding Agents Require Cloud Isolation, Not Local Machines",
+            "points": [
+              "Running multiple coding agents on a single local machine causes resource contention—agents overwrite each other's changes, and databases/ports conflict, reverting the bottleneck to human coordination.",
+              "Solution: give each agent an isolated cloud environment (e.g., Amp's 'orbs' model) that clones the repo and runs independently, with a live URL preview before human review.",
+              "This shifts work from CPU-bound (one task queued at a time) to GPU-bound (10 parallel tasks progressing simultaneously), and actually reduces merge conflicts since smaller changes land faster.",
+              "On disposable cloud compute, agents can run millions of simulated test writes and record full demos before a human sees the diff—a level of evidence no developer would sit through locally."
+            ]
+          },
+          {
+            "title": "Pennsylvania Data Center Zoning Crackdown Hits AI Stocks",
+            "points": [
+              "Pennsylvania's data center zoning crackdown tanked AI infrastructure stocks despite strong underlying demand, revealing that chips were never the real bottleneck—regulatory approval and real estate were."
+            ]
+          },
+          {
+            "title": "Claude's Watermark Costs Paying Customers",
+            "points": [
+              "Anthropic added a machine-readable watermark to Claude outputs on August 2 with no opt-out, which is costing paying customers—especially consultants who bill by the word—though the company reports no meaningful cancellation spike."
+            ]
+          },
+          {
+            "title": "AI Agent Accountability Gap Slows Enterprise Adoption",
+            "points": [
+              "A hypothetical scenario shows an agent buying a shirt with accurate payment records but no link tying the charge back to the original instruction, since payment protocols log spending limits, not intent.",
+              "Senator Mark Warner's proposed AI AGENT Act would mandate real-time records of what agents did and why, addressing a liability gap.",
+              "This audit-trail gap explains why 99% of companies plan to deploy AI agents but only 9–14% actually have (the 'Death Valley' adoption gap), since a $30 shirt scenario could scale to a $40,000 unauthorized wire transfer."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "There's An AI For That (TAAFT)",
+        "items": [
+          {
+            "title": "Apple and OpenAI Hardware Breakthroughs",
+            "points": [
+              "Apple's new Mac Studio can run large AI models locally without cloud services, holding enough memory to handle enterprise workloads on a single desk, with multiple units chainable for bigger jobs.",
+              "OpenAI's first custom chip, codenamed Jalapeño, achieved 3.6x lower latency (response delay) and nearly double the computational efficiency per watt in early benchmarks.",
+              "Earlier AI models helped design the silicon that now runs newer models, creating a feedback loop of improvement."
+            ]
+          },
+          {
+            "title": "AI Enters Legal Practice and Cost Economics Shift",
+            "points": [
+              "Google deployed a Gemini-powered agent that automatically redlines contracts and scans regulatory documents while respecting each law firm's existing permission systems and ethical boundaries.",
+              "An ex-NVIDIA engineer argues AI compute costs could drop 1000x, since agents now running for days need a token-based pricing model (payment per unit of language processed) that no provider currently offers."
+            ]
+          },
+          {
+            "title": "AI-Redesigned Genes Reverse Blindness in Mice",
+            "points": [
+              "Researchers used three genes that signal cells to act young to restore vision in a blind mouse; discovering those genes took 14 years of human research.",
+              "AI redesigned two of the original genes in weeks, producing versions that perform 50x better than the human-discovered ones, restoring the mouse's sight in four weeks.",
+              "Four AI-designed therapies have already entered human patients, ranging from lung drugs to edited human DNA, though performance claims remain unverified outside labs."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "AI Daily Brief",
+        "items": [
+          {
+            "title": "Usage Gap Widens Between Frontier and Typical AI-Adopting Firms",
+            "points": [
+              "OpenAI research shows an 8.3X usage gap between frontier firms and typical firms, up from 2.6X in January, driven by a shift to agentic workflows (AI systems that autonomously execute multi-step tasks rather than just chatting).",
+              "64% of enterprise output tokens are now agentic, up from roughly zero a year ago; frontier firms use 17x more tokens than 18 months ago versus roughly 2x for typical firms.",
+              "Non-technical roles are adopting fastest: legal usage up 108x since February, sales/recruiting 41x, marketing 26x, finance 20x, versus engineering at just 5x.",
+              "Frontier firms show far higher plugin (21% vs 9%) and skill (19% vs 3%) adoption than typical firms, while OpenAI's internal usage hits 93–95%, suggesting massive adoption headroom remains.",
+              "In legal work, chat-based tools handle writing (57%) and retrieval (20.5%), while agents shift work toward system operations (17.7%), workflow automation (7.7%), and coding by non-engineers (32.9%).",
+              "The next frontier is 'multiplayer AI'—coordinating agents across different teams—since even top users still mostly run individual agent silos."
+            ]
+          },
+          {
+            "title": "Pricing Cuts and Portfolio Moves Signal AI Market Consolidation",
+            "points": [
+              "Meta plans to launch its 'Hatch' AI agent platform within weeks, bundling premium features into lower-cost subscriptions while developing a larger model codenamed 'Watermelon'.",
+              "GrokBot was bundled into a $60/month Cursor Pro plan (down from a $500/month barrier), and Sol model pricing was cut 20% on input tokens and 33% on output tokens.",
+              "Hugging Face's annualized revenue jumped 50% to $150M in two months amid acquisition interest at a $13B valuation, with 97% of users on the free tier but premium accounts doubling in the first half of 2025.",
+              "NVIDIA CEO Jensen Huang is making major investments (Poolside, Mercor, Perplexity at a $30B valuation) to support the AI ecosystem, functioning like a 'central bank of compute' since chip manufacturing capacity is supplier-constrained.",
+              "Taiwan indicted 9 people over a scheme smuggling Blackwell AI servers to China; Supermicro and NVIDIA say the incidents involved rogue employees, with roughly 10,000 chips intercepted or delivered."
+            ]
+          },
+          {
+            "title": "Sam Altman on Corporate Adoption Friction",
+            "points": [
+              "Altman says he expected software businesses to adopt AI immediately after GPT-4 but found corporate switching costs and vendor relationships created inertia; he now views the slower pace as beneficial.",
+              "Despite having access to agentic tool Codex, Altman admits he still manually clicks and pastes between apps, illustrating how intellectual muscle memory makes old workflows feel easier than rebuilding habits."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "Lenny's Newsletter",
+      "subject": "How to figure out your next career move",
+      "date": "2026-08-25T13:04:15+00:00",
+      "summary": {
+        "headlines": [
+          "AI and technological change will displace 39% of today's skills by 2030, but a focus on personal 'progress' rather than traditional 'progression' helps you navigate uncertainty and stand out.",
+          "Six diagnostic questions—covering career progress, your core quest, work that energizes you, possible moves, acceptable tradeoffs, and internal alternatives—form a repeatable system for making confident job transitions.",
+          "The four main career quests are: getting out of an untenable situation, regaining control over your time and life, realigning work with your strengths and values, or taking a new challenge after mastery.",
+          "Building an 'energy profile' by auditing past roles for tasks that energize versus drain you reveals the specific conditions you need to succeed, preventing costly mistakes like accepting promotions into misaligned roles.",
+          "Progress means contextual career moves that solve your most important life problem right now—which may look like a lateral move or step back from outside perspective, but unlocks future growth."
+        ],
+        "sections": [
+          {
+            "title": "Distinguish Progress from Progression",
+            "points": [
+              "Progression is the traditional ladder model (IC → promotion → up), but becomes less relevant as AI blurs job boundaries and titles. Progress is contextual and dynamic, allowing you to chart your own course based on what actually brings out your best.",
+              "Progress may look like a lateral move, step back, or non-traditional path to others, but solves the core problem in your life now and creates space to move forward later.",
+              "Progress frees you from the crowded pursuit of the same career rung and lets you design your career in chapters rather than assuming a single linear story."
+            ]
+          },
+          {
+            "title": "Identify Your Career Quest via Pushes and Pulls",
+            "points": [
+              "Complete a 10-minute exercise: list emotional 'pushes' (friction pushing you away) and 'pulls' (what you want pulling you forward), then circle the 2–3 of each with most emotional weight to define your unique quest.",
+              "The four common quests are: (1) Get Out—escape an intolerable situation; (2) Regain Control—reclaim time and life balance; (3) Regain Alignment—redirect work toward your strengths and values; (4) Take the Next Step—accept a new challenge after mastery.",
+              "Most people skip this diagnosis and jump to job boards, but your quest should inform every aspect of your search; otherwise you risk solving the wrong problem."
+            ]
+          },
+          {
+            "title": "Build an Energy Profile Across Your Career History",
+            "points": [
+              "Audit your calendar hour-by-hour to list actual activities (not job titles), then categorize them as energizers (tasks you lose track of time doing) or drainers (competent work you avoid or rush through).",
+              "Repeat this exercise across previous jobs to identify 6–8 core responsibilities per role, revealing patterns written in the language of energy rather than titles.",
+              "Extract clear themes from energizers and drainers by asking 'what is this more/less like?' and 'what conditions need to be present?'—vague answers like 'working with others' are not actionable."
+            ]
+          },
+          {
+            "title": "Use Career Diagnosis Before You Switch",
+            "points": [
+              "Most professionals understand their skills better than the conditions required to do their best work, leading to costly mistakes like ICs becoming miserable managers or accepting high-paying misaligned roles.",
+              "Your energy profile provides a blueprint for evaluating new opportunities and specific questions to ask hiring managers about working conditions before you commit to a move.",
+              "This foundational work prevents the common pattern of escaping one bad situation only to land in similar conditions elsewhere."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Lenny's Jobs",
+            "url": "https://substack.com/redirect/e22db4a6-dc6e-45cf-9e1e-d8b474cccae8"
+          },
+          {
+            "label": "Vocation career navigation platform",
+            "url": "https://substack.com/redirect/81b9bbac-13ab-40d9-9322-0c36c4725a0f"
+          },
+          {
+            "label": "Progress exercise template",
+            "url": "https://substack.com/redirect/6b98e74d-e26b-4995-885c-ea43abb5c508"
+          },
+          {
+            "label": "Energy profile template",
+            "url": "https://substack.com/redirect/5169b615-b07d-4f58-93d9-d71714302751"
+          },
+          {
+            "label": "Lenny's Podcast",
+            "url": "https://substack.com/redirect/bc34929e-8e7d-4af7-8047-e70e73b7b19e"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "ultrathink",
+      "subject": "The batch of one",
+      "date": "2026-08-25T16:39:27+00:00",
+      "summary": {
+        "headlines": [
+          "Personalized mRNA cancer vaccine designed by algorithm succeeded in Phase 3 trial with 1,137 patients, cutting melanoma recurrence risk by 49% and spread risk by 59%—each patient receives a custom-built drug molecule with up to 34 unique targets.",
+          "GitHub endured 7+ hour outage from capacity failure as commits doubled to 2.9 billion monthly; Cursor launched competing code host (Origin) the next morning using disposable cloud servers instead of shared infrastructure.",
+          "Running coding agents in parallel on local machines fails because they fight over shared resources; cloud isolation (cloning full environments per agent) eliminates conflicts, cuts merge conflicts, and enables GPU-speed throughput instead of CPU serial processing.",
+          "Pennsylvania's data center zoning crackdown tanked AI infrastructure stocks despite strong demand, revealing chips were never the bottleneck—regulatory approval and real estate were.",
+          "Claude's machine-readable watermark (added August 2 with no opt-out) is costing Anthropic paying customers, especially consultants who bill by the word, though the company reports no meaningful cancellation spike."
+        ],
+        "sections": [
+          {
+            "title": "The Batch of One: AI-Designed Drug Enters Production",
+            "points": [
+              "1,137 melanoma patients in Phase 3 trial, two-thirds receiving personalized mRNA vaccine plus Merck's Keytruda, showed 49% lower recurrence risk and 59% lower metastasis risk versus Keytruda alone—first successful mRNA cancer vaccine at this scale.",
+              "Algorithm identifies up to 34 mutation targets per patient from tumor and blood sequencing; factory produces custom molecule and ships in ~6 weeks, meaning no standard 'dose' exists.",
+              "Scheduling algorithm (Maestro) orchestrates production by dropping each single-patient batch onto line based on factory capacity and reshuffling when delays occur—scheduling becomes the product, not back-office work.",
+              "Business implication: personalization fails when operations can't manufacture 'a batch of one' without unit costs exploding; this trial proves economics work when scheduling system absorbs complexity that would bankrupt traditional pharma."
+            ]
+          },
+          {
+            "title": "GitHub's Outage Reveals Infrastructure Rethinking",
+            "points": [
+              "GitHub down 7 hours 47 minutes on August 17; both incidents traced to capacity failure, not code bugs—monthly commits jumped from 1.4 billion (April) to 2.9 billion (August), doubling in four months from agent-driven automation.",
+              "Cursor launched Origin the next morning: Git architecture using immutable write-ahead logs in cloud storage as single source of truth, every server a disposable cache needing zero consensus or routing tables.",
+              "Design implication: systems must assume machine-paced traffic (agents generating commits faster than human predictions allow); stateless servers eliminate coordination overhead and scale horizontally without capacity planning failures."
+            ]
+          },
+          {
+            "title": "Local Development Dead: Parallel Agents Need Cloud Isolation",
+            "points": [
+              "Running multiple coding agents locally on shared machine creates resource contention—agents overwrite each other's changes, databases and ports conflict, merge complexity rises, bottleneck reverts to human coordination.",
+              "Solution: each agent gets isolated cloud environment (Amp's orbs model) that clones repo, starts app, runs independently; portal gives live URL preview before human review, matching how human teams already work (everyone on own machine).",
+              "Performance shift: CPU-bound (one task at a time, queue behind it) becomes GPU-bound (10 parallel tasks all making real progress simultaneously); merge conflicts actually decrease because small changes land faster before diverging.",
+              "Proof model changes: on personal laptop, humans constrain agent output; on throwaway compute, agents run millions of simulated database writes and record full demos before human sees diff—level of evidence no developer would sit through locally."
+            ]
+          },
+          {
+            "title": "Agent Accountability Gap Explains Adoption Hesitation",
+            "points": [
+              "Fortune scenario: agent told to buy shirt, executes purchase, all records accurate but none link charge to original instruction—Google's payment protocol logs limits you set, not what you asked for.",
+              "Senator Mark Warner's AI AGENT Act would mandate real-time records of what agents did and why; liability gap explains why 99% of companies plan agents but only 9-14% have deployed them ('Death Valley' adoption gap).",
+              "$30 shirt scenario scales to $40,000 wire transfer—audit trail failure means no proof of authorization if agent's action damages business, blocking enterprise deployments until logging becomes default."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "GitHub's postmortem on August 17 outage",
+            "url": "https://link.mail.beehiiv.com/v2/c/b27f88dc34e064ac7a8f52840e1c4f6ae35742c528c4e41b83959077dbf81a3c1e96d6456ca310d4dc6d285d1bb2b0567ab1f7363687084ea20e13bc475bd1b901d3cb66c40fb8295ec042f1884888aa19efd5a5232967ad2a03a361266251695a7e40b5955181b7573901e7b3d6117587fd27e36ee03a09d976a352dbb590ed0343f97a2bf790d7a35b126b723af7abdb08f00c27ca8eb843a33c4708e6ba54/41634012fa985162"
+          },
+          {
+            "label": "Cursor's Origin architecture post on stateless Git",
+            "url": "https://link.mail.beehiiv.com/v2/c/06823883f643d000e57daa525241c20cd2f347156066e5cc00078b57d5bdaa38a6e889057fd679ac7e8f9df4742659704f58448815ab43e07f813e1966fd4eb7e347797465cc8c0f2f9354f0ce1b9a0bbfc2935105fa3d16537b3159ef61c90dbd1d34a26c42af1916967e270d48b4c2ba29ff398cec1978896719967c42d1f400f6f06fd03af238d41cf155d6ff6b26089f270769209c4f042a781fe5648f5d/27930f06330b03ae"
+          },
+          {
+            "label": "ChatGPT quiz feature (find knowledge gaps)",
+            "url": "https://link.mail.beehiiv.com/v2/c/20770f808f759bfe2c4d28de516e1d48ca735db7e52ec83e9e47ca9ad1c9af0b575ed8f8dea7a35230630696d4a2dd39752feeffb6b987b005278cc79a7ad8deef3192a57e1cfd20d979ea9ba38959c1ef9fedfdeee35d974492a91d433c113f8a358587fdf2c6e859aa1d51cab205a2749b28cab6feeb2c7e1ee1009c1fd92afb70dcfaf9527af90293e195f73f8764fe212caec88b70fe32e574b7ba6e5156/102c4a020315c6c7"
+          },
+          {
+            "label": "Merck/Moderna Phase 3 melanoma vaccine trial results",
+            "url": "https://link.mail.beehiiv.com/v2/c/47526dfb08b96bec7a6ee44f504b0f331cc7578a9267c55aebc3560fa0e194b31b194f37fa135dd3a16f5f027a9302b49f5e83f3e3d57ec9243f975517468480407768e6197f275d556b1401136584184d6bb73b7cd6209b4056fd78a668b802645b480b0ae70a82c704d96f7161c870f08519fb1322dc8191af13be964590e98d87d32370a64498dab3b8b44e74c9626da3ae4ca09f6ed4d4bce616bf500371/41206111623bb879"
+          },
+          {
+            "label": "Mark Warner's AI AGENT Act (autonomous agent accountability)",
+            "url": "https://link.mail.beehiiv.com/v2/c/afef531b52ca7f4ff48e11b81a9f302244e3cb37a97abad4fcf664e30363a214b776019cdedd21f1d906c89089ab64dba672b4e048fa54dd38997195db71ea34108de90d963a629bd0dda6b4924d2ae877d3f0f140015769f9b82a91fd797c62ff489ded617f778c239ccbdbc9596c3b7ada66205529eab98694a5f6824594e3640efafa7907ecc371e224f597a56c7ca971e117a76b983349a67c8291e96e34/be89d4ecfaf13a17"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "There's An AI For That (TAAFT)",
+      "subject": "🦾 It Begins: AI Can Help Us Live Forever",
+      "date": "2026-08-25T21:19:25+00:00",
+      "summary": {
+        "headlines": [
+          "Apple's new Mac Studio runs massive AI models locally without cloud services, enabling on-device computation for enterprise workloads",
+          "OpenAI's Jalapeño chip achieves 3.6x lower latency and nearly double efficiency per watt in early benchmark tests",
+          "Google deployed Gemini as an agent for legal work, automating contract redlining and regulatory scanning within law firms' permission systems",
+          "AI redesigned two aging-reversal genes and achieved 50x better performance than human-discovered versions, with a blind mouse regaining sight in four weeks",
+          "An ex-NVIDIA engineer claims AI compute costs will drop 1000x as agents requiring days-long runs demand new pricing models"
+        ],
+        "sections": [
+          {
+            "title": "Apple & OpenAI Hardware Breakthroughs",
+            "points": [
+              "Mac Studio now holds enough memory to run large language models on a single desk without renting external data centers, with multiple units chaining together for larger workloads",
+              "OpenAI's first custom chip (Jalapeño) cleared benchmarks showing 3.6x faster response times (latency) and nearly double the computational work per unit of energy consumed",
+              "Earlier AI models helped design the silicon that now runs newer models, creating a feedback loop of improvement"
+            ]
+          },
+          {
+            "title": "AI Enters Legal Practice & Cost Economics",
+            "points": [
+              "Google built a Gemini-powered agent that automatically redlines contracts and scans regulatory documents while respecting each law firm's existing permission walls and ethical boundaries",
+              "An ex-NVIDIA engineer argues AI will become 1000x cheaper because agents running for days require a token pricing model (payment per unit of language processed) that nobody currently offers, forcing a restructuring of AI economics"
+            ]
+          },
+          {
+            "title": "Biological Research & Gene Design",
+            "points": [
+              "Researchers restored vision to a blind mouse using three genes that signal cells to act young; finding those genes took 14 years of human research",
+              "AI redesigned two of those original genes in weeks, producing versions that work 50x better than the human-discovered ones",
+              "Four AI-designed therapies have already entered human patients, from lung drugs to edited human DNA, though claims about performance remain unverified outside labs"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple Builds Macs for Local AI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7uNti2bnFsv27B-y5JO2WKAnfUzECpZlT99-yXfVR2drab-YedJXWQewNmERUyZBN4k3XSv63dB9YGxIIji52UKlH3h8xOafKPZZn4f_H9zUaQmMUO_ZmR78kUT8iqDp9Rg7RHSb0ySdgOxzZMeV6erJU6PyJmef_o_FVGbtXn2M_18w_liGGH0HyF739-P625RSZzmzt37Ha4uk0VVdm-CyjTHcbVK6GrFBbSjqgBITdgOJ6LWcQDJ-DJQVT8xucw3gd8J4KZVZ5NGb4Wk5pXwFFCjw-TtIk03WBgR6k7dCCkrL0OikD_gDovrGB_XS8hYWKYhzmIjfiwtAIFPwFPZb2k-DhE9wtKTaORs4ULvvoXRKlasTq1Jnf1ee6x_vtA/4th/N1oBrUggSvSu0rrvoeFG2g/h6/h001.Z6VEc1zKXvL4x_XtTFpcAgDweuHLsiMA-VMdTBEjWvo"
+          },
+          {
+            "label": "Jalapeño Beats the Benchmarks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.SeZcZ2kldk7Osi4slNtvSbg4fHE3D6_GwDJKfp_OmSHcL1bQA_WaZG-HHIosjFixQeArApsLZaj4Z0ASnrDt9dnu05y-mGSBMrXHrCR4DMfv4Uv9v2-ket37xCAVuK1KjNlgrfLXxP1TCxjukdWKx5EqGRJXb8COThSB2GIyWKl9toucUBmFNqYU6_uVXq_Jva21UXvOIspUkuhRyVpfx5owUTxRn54nxkxMI9j3XzSKVYn5pBjPT139xsGHtDMeGo08YiuvSBknHdngvMeiOO04pBeqDbK16w1Lj5j500c/4th/N1oBrUggSvSu0rrvoeFG2g/h8/h001.oOP8rELEarY3fOqeon3Mw-Q9YjGN1r2bsdNSvI6wgX8"
+          },
+          {
+            "label": "A Full Course on AI Agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7syIaZ1LnR_q3IuvGrS8EF0GTzFXElUvDkIxnSaB8-kIzVHIMqGKzQBHdNNfYabwW8596nKYqtSv13x0YERkyP62eHPl-X7_o48B4B1PEuq8_vlmnRc72E_iNBvsj90b8BzF40glwOr2hh0U8N1W2Vc2BCf9OGky1lDB28tDGToXBWcjhW4TcO5EEcUprm1tkITJT0eZ3b08fh_TE66eOzkHD3HSLuAehyQXHvmV5tuIfFvVDSIJhB3_vUKuSsmXUFHUaZQEzME7jB5h4HZ1ARnBDcIIHwAN0kCy0DPEzBEynWfSA8kpD7vGj4mmijE8uw/4th/N1oBrUggSvSu0rrvoeFG2g/h9/h001.ciPxo1Pl2vlBBrjJ_vPUC3D4ileL-9dY4wo3CCMLUqk"
+          },
+          {
+            "label": "AI Is About to Get 1000x Cheaper",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7rMoviV65-al5K_jhRN5Gwt0OuC3ZTGUSb_ObEUdfdElnpXF0smI-LV1jUChoJ2m493HDvb7gpaEB3kAbXMGLaKKSb0_GaLVqAMNz0GCphNKg9UV5Nw0It3WuUd4l4qCnk8SL0O5MF07ZXs0_1d0GrlMxjqn4aEa2r28dhyVcTMTcPYUvh9iV7pninZftjRzf1-Gj1mt5MU6Afu4072rrb3PLi50ld_T-z1cXL47-lq2hsRb0jO7ryY6xuTEy7R5Oiwx8ABsNsOA77cx8TOL0Jc/4th/N1oBrUggSvSu0rrvoeFG2g/h10/h001.v_p3rMnHkHO25H_5k9jDDdG_Q0F-bLKc6VWBtPWUmUs"
+          },
+          {
+            "label": "Latest video on AI & aging biology",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7rMoviV65-al5K_jhRN5GwsL52OgmftR77aC8NfT2DQ3-9oQ7PVgWlEsRZ3brO_H6_6i8qLVJPYSGpT_siglpVFnCyIi9Yk4Xg0d0TASGwOc7b9YgNYsdNy0F8kHknf92U9KlNvh0QlgdlYkLcZNLZUQhZDm6BISu9HP6bZNACt3w3HJQ3bVx4slzBEYe-wOmSG42GWsin8TUUCXgouh6CP5Uh8KViYZyoOGxYZV4D59LDnP0E8QCVfFAzvts-iw2NKkzD_B9W3O9_Xnmt404CM/4th/N1oBrUggSvSu0rrvoeFG2g/h22/h001.iR-K4nSs5rU3VPDVZXDmr7DNaCKWf0H6bj85xQoFT3E"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "AI Daily Brief",
+      "subject": "What The Top AI Users Are Doing Differently",
+      "date": "2026-08-26T00:22:42+00:00",
+      "summary": {
+        "headlines": [
+          "Meta launching 'Hatch' AI agent platform in weeks, bundling premium features into lower-cost subscriptions while working on larger 'Watermelon' model; GrokBot and Sol pricing also dropped significantly this week",
+          "OpenAI research reveals 8.3X usage gap between frontier firms and typical firms (up from 2.6X in January), driven by enterprise shift to agentic workflows—64% of output tokens now agentic versus roughly zero a year ago",
+          "Hugging Face annualized revenue jumped 50% to $150M in two months amid acquisition interest at $13B valuation, with 97% of users on free tier but premium accounts doubling in first half of 2025",
+          "NVIDIA CEO Jensen Huang making major portfolio investments (Poolside, Mercor, Perplexity) to support AI ecosystem since chip manufacturing constrained by suppliers—functioning as 'central bank of compute'",
+          "Taiwan indicts 9 people over scheme smuggling Blackwell AI servers to China; Supermicro and NVIDIA say incidents contained to rogue employees, with roughly 10,000 chips total intercepted or delivered"
+        ],
+        "sections": [
+          {
+            "title": "What Separates Top AI Users from Everyone Else",
+            "points": [
+              "Enterprise output tokens reveal the gap: frontier firms (top 10% by usage) now use 17 times as many tokens as 18 months ago, while typical firms (45th-55th percentile) use roughly 2X more—the 8.3X multiplier difference exploded starting October 2025",
+              "Non-technical roles exploding faster than engineering: legal adoption up 108X since February, sales/recruiting 41X, marketing 26X, finance 20X, versus engineering at 5X, showing agents now handle execution and system operations beyond code",
+              "Skill and plugin adoption gaps mirror token usage: frontier firms have 21% touching plugins and 19% using skills; typical firms only 9% and 3% respectively—OpenAI internal usage hits 93% and 95%, indicating vast headroom for adoption"
+            ]
+          },
+          {
+            "title": "Agentic Workflows Define the New Work Ladder",
+            "points": [
+              "Movement from chat to agents redefines task types: chat-based tools stay at generation (drafting) and synthesis (combining sources); agents handle execution (inside existing systems) and maintenance (system upkeep over time)",
+              "Legal department example shows functional shift: with chat, work is 57% writing and 20.5% knowledge retrieval; with agents, retrieval drops to 8.3% while system operations jump to 17.7%, workflow automation to 7.7%, and coding by non-engineers to 32.9%",
+              "The 64% agentic 'flippening': enterprise output tokens were nearly 100% ChatGPT one year ago; by late April 2026 it hit 53% agentic; by June 64% agentic—volume of work now predominantly handled by delegated workflows with context and tools",
+              "Multiplayer AI is next frontier: even frontier users mostly run individual agent silos; next-generation gains emerge when different teams coordinate agents, requiring context-sharing and cross-functional workflows"
+            ]
+          },
+          {
+            "title": "Pricing and Portfolio Moves Signal Market Consolidation",
+            "points": [
+              "GrokBot bundled into $60/month Cursor Pro (down from $500/month barrier), Sol model prices cut 20% on input tokens and 33% on output tokens; opening access as enterprises adopt model stacks rather than running single frontier model for everything",
+              "Hugging Face revenue jumped 50% to $150M annualized with 97% free users subsidized by premium/enterprise; median adoption suggests backbone infrastructure for open-weights models positioned as alternative to frontier gatekeeping",
+              "Jensen Huang's NVIDIA now functioning as AI ecosystem's central bank: investing in Poolside (talent/tech acquisition), Mercor (data labeling), Perplexity ($30B valuation stake), plus power deals and data center backstops—supporting entire supply chain since NVIDIA cannot control chip manufacturing capacity"
+            ]
+          },
+          {
+            "title": "Sam Altman on Corporate Inertia and Adoption Friction",
+            "points": [
+              "Altman revised timeline expectations downward: expected software businesses immediately available post-GPT-4 but found corporate switching costs and existing vendor relationships created inertia; now views slowness as positive, making transition smoother than feared",
+              "Revealed preference problem: Altman has access to Codex (agentic AI tool) but still manually clicks, pastes between apps and scrolls inbox looking for emails—attributes to psychological inconsistency but likely reflects intellectual muscle memory making old workflows feel less exhausting than rebuilding habits"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Meta Plans to Launch 'Hatch' AI Agent Platform in Coming Weeks",
+            "url": "https://link.mail.beehiiv.com/v2/c/3f939f964f0172bd745626e6677a5cbc1c05ec590d9e8eba5b54d4a69708ca1bdc658525932ea2be0ea862fcd478b586fd40a0c032c116c4c56beb8649e991fdb4266e4e2ac078ba876a93d4eddf585e150048dc80f049073622211d09d64bb9a101fe486a49fa6cc64a5bf36106f96ac4003898a089b0410f09f552ee28073aa5f5b60ff8ab6a5dedecb0bd2a022f963d71183b1951d8c59ec876d3b1b4eb83/631d7f041b1456ca"
+          },
+          {
+            "label": "Enterprise Signals: What Frontier Firms Are Doing Differently",
+            "url": "https://link.mail.beehiiv.com/v2/c/156a730ca43955af1f797a4e280e13ce60590632fe034ee1249f0269e07e7264776fb493751958c5ee28d73132dca23e0d6ec591e8df1b4924e141132156b580267fc0d1c6623a2f135cfdd9f2d833b20b9833576b87c9e7b6419d69623242d842cd07fd8fd27556cfcc65d5fde8da871879012ab7da09618983746816ee8b59391bb9bdedd8a95c4113abaf15f88d946e028abb670c211489576d0d52852668/b80548382fecf6cc"
+          },
+          {
+            "label": "Exclusive: Hugging Face Annualized Revenue Jumps 50% to $150 Million",
+            "url": "https://link.mail.beehiiv.com/v2/c/ba4af995383995bbb44e882d5164dd92ceab85b2e83cc948bbb9789c04b15ab8543697626ab33a6c3ec805178160e1e805106a1c09ab411df6bf9ae6ba28f8eceee1922a4592118161f31278d495de0ebb36f1fd903478eba14be5ea685c789b24686d7513e52c9b5373d05bb7337e2e6598c0578a11b42d7f82b3ca081270ef2435f6e172a363e7acd0b607b236951c1077c7953b1982f3dd4b085f343dbd42/b4fc5ae30370d510"
+          },
+          {
+            "label": "Jensen Huang's Manic Moves",
+            "url": "https://link.mail.beehiiv.com/v2/c/45fe563d27f9a4eab32235bd32942a27d4a3722fbf607e98ad121a1733e93939ce1d5f46b4573051f4859acf1f64890ae09d81f8f7a0d6546010b3ab56679ff7440455952828f56a693a3607db6d78bda0b3de4c80c22bc28303ee14a4c28c47aaebb425865117d8f7e99c1e97e8df839be496a554921d9dbb80215410b54aa2880e26bb8b216c3ccacc1b1197bbff45419d17257168adf23833a963bdd769f7/ac50d39c6d08df29"
+          },
+          {
+            "label": "The Shift to Agentic AI: Evidence From Codex",
+            "url": "https://link.mail.beehiiv.com/v2/c/e7ad373c19a58e2885921b86f91344f45587dbb93c910814f08a695f8ba337787b5354f6cc1e31e69d25851c16a4680339c0eefbaa3442104db62b166ab7cf7be0f5dc4a5de73614c8ef7db6a6576b5e6666be6ed46f9df14657b933d48095b09546d3ee3f1b2342f1bd7e396289ea1362edf113977b2e325af792bb916c7f87ff5c09c370d1d13d7583b4a5a8e9a72cdbab30c90be5db3fd5509ea89ef16bc8/b29392ea022d150a"
+          }
+        ]
+      }
+    }
+  ]
+}
