@@ -6,707 +6,1237 @@
 <meta name="robots" content="noindex">
 <title>Newsletter Digest — 2026-08-13</title>
 <link rel="stylesheet" href="../style.css">
-<!-- set saved theme before paint to avoid a flash of the wrong colors -->
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-<header>
-  <div class="titlebar">
-    <h1>📰 Newsletter Digest</h1>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light / dark">🌙</button>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">◆</span><span class="brand-name">NEWSLETTER_DIGEST</span>
+    </a>
+    <nav class="topnav">
+      <button class="filter active" data-cat="all">all</button>
+      <button class="filter" data-cat="stocks">stocks</button>
+      <button class="filter" data-cat="crypto">crypto</button>
+      <button class="filter" data-cat="ai">ai</button>
+      <button class="filter" data-cat="tech">tech</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">◐</button>
+    </nav>
   </div>
-  <p class="date">2026-08-13 · archive</p>
-  <nav class="filters">
-    <button class="filter active" data-cat="all">All</button>
-    <button class="filter" data-cat="stocks">📈 Stocks</button>
-    <button class="filter" data-cat="crypto">🪙 Crypto</button>
-    <button class="filter" data-cat="ai">🤖 AI</button>
-    <button class="filter" data-cat="tech">💻 Tech</button>
-  </nav>
-</header>
+</div>
 
-<main>
+<div class="rails">
+<div class="shell">
 
-<section class="glance">
-  <h2>⚡ Top things to know today</h2>
-  <ul>
+  <header class="hero">
+    <p class="eyebrow">Archived digest</p>
+    <h1>Your newsletters, <span class="hl">condensed</span>.</h1>
     
-    <li data-cat="stocks">
-      <a href="#stocks-am"><span class="badge badge-stocks">stocks</span><span>July inflation cools to 3.4%, clearing the way for a Fed hold</span></a>
-    </li>
+    <p class="hero-meta">
+      <span class="mono">2026-08-13</span>
+      <span class="sep">·</span><span class="mono">6 batches</span>
+      <span class="sep">·</span><span class="mono">archive</span>
+    </p>
     
-    <li data-cat="crypto">
-      <a href="#crypto-am"><span class="badge badge-crypto">crypto</span><span>Goldman Sachs buys into a Bitcoin ETF provider</span></a>
-    </li>
-    
-    <li data-cat="ai">
-      <a href="#ai-am"><span class="badge badge-ai">ai</span><span>Grok 4.6 hits frontier performance at ~60% lower cost, with 4.7 promised in weeks</span></a>
-    </li>
-    
-    <li data-cat="tech">
-      <a href="#tech-am"><span class="badge badge-tech">tech</span><span>Grok 4.6 matches GPT-5.6 Sol on coding at half the price</span></a>
-    </li>
-    
-    <li data-cat="crypto">
-      <a href="#crypto-pm"><span class="badge badge-crypto">crypto</span><span>Trezor data breach exposes customer information</span></a>
-    </li>
-    
-    <li data-cat="ai">
-      <a href="#ai-pm"><span class="badge badge-ai">ai</span><span>Google ships Gemini 3.7 Flash three weeks after 3.6, while Gemini 3.5 Pro reportedly dies</span></a>
-    </li>
-    
-  </ul>
-</section>
+  </header>
 
 
+  <section class="glance">
+    <p class="eyebrow">⚡ Top things to know today</p>
+    <ol class="glance-list">
+      
+      <li data-cat="stocks">
+        <a href="#stocks-am">
+          <span class="idx mono">01</span>
+          <span class="tag tag-stocks">stocks</span>
+          <span class="glance-text">July inflation cools to 3.4%, clearing the way for a Fed hold</span>
+        </a>
+      </li>
+      
+      <li data-cat="crypto">
+        <a href="#crypto-am">
+          <span class="idx mono">02</span>
+          <span class="tag tag-crypto">crypto</span>
+          <span class="glance-text">Goldman Sachs buys into a Bitcoin ETF provider</span>
+        </a>
+      </li>
+      
+      <li data-cat="ai">
+        <a href="#ai-am">
+          <span class="idx mono">03</span>
+          <span class="tag tag-ai">ai</span>
+          <span class="glance-text">Grok 4.6 hits frontier performance at ~60% lower cost, with 4.7 promised in weeks</span>
+        </a>
+      </li>
+      
+      <li data-cat="tech">
+        <a href="#tech-am">
+          <span class="idx mono">04</span>
+          <span class="tag tag-tech">tech</span>
+          <span class="glance-text">Grok 4.6 matches GPT-5.6 Sol on coding at half the price</span>
+        </a>
+      </li>
+      
+      <li data-cat="crypto">
+        <a href="#crypto-pm">
+          <span class="idx mono">05</span>
+          <span class="tag tag-crypto">crypto</span>
+          <span class="glance-text">Trezor data breach exposes customer information</span>
+        </a>
+      </li>
+      
+      <li data-cat="ai">
+        <a href="#ai-pm">
+          <span class="idx mono">06</span>
+          <span class="tag tag-ai">ai</span>
+          <span class="glance-text">Google ships Gemini 3.7 Flash three weeks after 3.6, while Gemini 3.5 Pro reportedly dies</span>
+        </a>
+      </li>
+      
+    </ol>
+  </section>
 
 
 
-<section class="batch" id="stocks-am" data-cat="stocks">
-  <h2><span class="badge badge-stocks">stocks</span> Morning Stocks</h2>
 
-  
-  <div class="top-stories">
-    <h3>⭐ Top stories across your newsletters</h3>
-    
-    <article class="story">
-      <h4>July inflation cools to 3.4%, clearing the way for a Fed hold</h4>
-      <ul><li>Consumer Price Index (CPI, the government's main gauge of what households pay for goods and services) rose 3.4% year-over-year in July, matching forecasts and down from 3.5% in June.</li><li>Core inflation (which excludes volatile food and energy prices) fell to 2.5%, a third straight monthly decline.</li><li>Prediction-market odds of no Fed rate change in September rose to 60% from 45% a week earlier, while rate-hike odds slipped to 34% from 40%.</li><li>Bond markets now price roughly one rate cut by year-end, down from three anticipated six weeks ago.</li><li>Services inflation remains elevated near 3.2%, keeping Fed officials divided on how fast prices are truly normalizing.</li><li>Weak July hiring data added to the case for standing pat, giving policymakers dual signals of cooling prices and softening jobs.</li></ul>
-      
-      <ol class="angles"><li><strong>Opening Bell Daily (Phil Rosen):</strong> Fed Chair Kevin Warsh stayed hawkish, insisting the central bank won't let its 2% inflation target drift to 3%, though investors largely shrugged at the rhetoric.</li><li><strong>CNBC Morning Squawk:</strong> Lettuce prices hit record lows (down over 40% year-over-year on bumper harvests), a concrete example of food-price deflation undercutting the two-year inflation narrative.</li><li><strong>Investopedia Pre-Market:</strong> Stock index futures (contracts letting traders bet on where stock prices will be later) traded slightly higher into the print.</li><li><strong>Bloomberg:</strong> Softer inflation plus AI momentum pushed global markets toward record highs.</li></ol>
-      
-      <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), CNBC Morning Squawk, Opening Bell Daily (Phil Rosen), Yahoo Finance Morning Brief, Bloomberg, Investopedia Pre-Market</p>
-    </article>
-    
-    <article class="story">
-      <h4>AI earnings, not macro data, are driving the market</h4>
-      <ul><li>Nebius and CoreWeave each jumped about 19% on strong quarterly results, while the S&P 500 rose just 0.26% on the cooler CPI print.</li><li>Nebius revenue surged 454% to $582 million, with its AI cloud business growing more than 5x.</li><li>CoreWeave doubled revenue to $2.58 billion (up 112% year-over-year) and booked $25 billion in additional commitments.</li><li>Super Micro Computer raised fiscal 2027 revenue guidance to $65–72 billion versus Wall Street's $52.5 billion estimate.</li><li>Mega-cap tech (the 'Magnificent Seven': Apple, Microsoft, Alphabet, Amazon, Tesla, Nvidia, Meta) gained 2–3% as money rotated out of defensive positions.</li><li>Semiconductor and hardware names rallied on expectations of sustained AI data-center spending.</li></ul>
-      
-      <ol class="angles"><li><strong>Opening Bell Daily (Phil Rosen):</strong> Tech giants have committed roughly $5 trillion of AI capital expenditure over five years, making a 0.25% shift in the federal funds rate (the interest rate banks charge each other overnight) economically immaterial to their plans.</li><li><strong>CNBC Morning Squawk:</strong> Market breadth improved as mid-cap growth stocks joined the rally for the first time in three weeks.</li></ol>
-      
-      <p class="covered-by">Covered by: CNBC Morning Squawk, Opening Bell Daily (Phil Rosen), Yahoo Finance Morning Brief, Bloomberg</p>
-    </article>
-    
-    <article class="story">
-      <h4>Paramount Skydance dangles CNN sale and a California exit to save $110B Warner Bros. deal</h4>
-      <ul><li>Chief legal officer Makan Delrahim said selling CNN is 'on the table' to settle the antitrust suit blocking the $110 billion acquisition of Warner Bros. Discovery.</li><li>The deal already has clearance from US federal regulators, the UK, EU and China; only the state lawsuit remains.</li><li>California AG Rob Bonta and 11 other states argue the combined company — Paramount's studios and CBS News plus HBO, DC Studios and TNT — would raise prices and cut competition.</li><li>Paramount faces a $7 million-per-day termination fee if the transaction doesn't close by October 1.</li><li>CEO David Ellison told leadership he would move the company out of California unless the state drops its claims, echoing Elon Musk's Tesla/SpaceX shift to Texas.</li><li>A relocation to Tennessee, Texas or Georgia could save about $500 million a year in taxes plus billions from selling studio lots.</li></ul>
-      
-      <ol class="angles"><li><strong>Wall Street Breakfast (Seeking Alpha):</strong> Governor Gavin Newsom, worried about losing Hollywood, is reportedly pushing Bonta's office toward an out-of-court settlement; Paramount has also floated a board to guarantee CNN's editorial independence.</li><li><strong>Yahoo Finance Morning Brief:</strong> A federal court has set a March trial date on the merger's legality, implying months of costly delay and risk the deal unravels; the states counter that a bigger Paramount would dominate TV and film.</li></ol>
-      
-      <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Yahoo Finance Morning Brief</p>
-    </article>
-    
-    <article class="story">
-      <h4>LA Lakers sold for a record $12.5 billion</h4>
-      <ul><li>The purchase, at a record price for a sports franchise, was struck in roughly 24 hours with minimal investment-banker involvement.</li><li>Buyers were Thrive Capital founder Joshua Kushner and former Disney CEO Bob Iger, with Mark Walter selling.</li><li>Madison Square Garden Sports (MSGS) shares rallied on the read-through to other franchise valuations.</li></ul>
-      
-      <ol class="angles"><li><strong>Bloomberg:</strong> The sale helps Walter's TWG Global cut related-party loans at its insurance units, which had drawn Justice Department scrutiny; Iger quipped that avoiding 'hordes, investment bankers and the like' kept talks secret.</li><li><strong>Wall Street Breakfast (Seeking Alpha):</strong> Frames the price as evidence wealthy investors treat teams as prestige assets with embedded real-estate and media value.</li></ol>
-      
-      <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Bloomberg</p>
-    </article>
-    
-    <article class="story">
-      <h4>Anthropic in talks to buy AI startup Decart for ~$6 billion</h4>
-      <ul><li>The AI lab is negotiating a roughly $6 billion acquisition of Decart, one of the sector's larger consolidation moves.</li><li>The talks underscore continued investor appetite for artificial-intelligence assets and specialized capabilities.</li></ul>
-      
-      <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Bloomberg</p>
-    </article>
-    
-    <article class="story">
-      <h4>South Korea's Kospi flips from bear to bull market in two weeks</h4>
-      <ul><li>The Kospi index moved from bear-market territory (down 20%+ from a recent peak) into a technical bull market (up 20%+ from its low) in about two weeks.</li><li>The whipsaw reflects short-covering and bargain hunting off oversold levels amid the broader global AI-led rally.</li></ul>
-      
-      <p class="covered-by">Covered by: Wall Street Breakfast (Seeking Alpha), Bloomberg</p>
-    </article>
-    
-    <article class="story">
-      <h4>Energy: oil steady near $75 as Iran pressure builds, US pump prices set an August record</h4>
-      <ul><li>Crude held around $75 a barrel, with OPEC production cuts offsetting demand worries.</li><li>Oil wavered as traders waited on negotiations over the Strait of Hormuz after the Trump administration reverted to economic pressure on Iran following a failed military campaign.</li><li>US average gasoline topped $4 a gallon after August 12 for the first time on record for that date, per GasBuddy.</li><li>July gasoline prices fell 2.9% month-over-month but are still up 25% year-over-year.</li></ul>
-      
-      <ol class="angles"><li><strong>Yahoo Finance Morning Brief:</strong> Analyst Tom Kloza expects more supply interruptions and says the final third of the year will be 'considerably more expensive' than prior years.</li></ol>
-      
-      <p class="covered-by">Covered by: CNBC Morning Squawk, Bloomberg, Yahoo Finance Morning Brief</p>
-    </article>
-    
-  </div>
-  
 
-  
-  
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
+  <section class="batch" id="stocks-am" data-cat="stocks">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-stocks">stocks</span> stocks-am</p>
+      <h2>Morning Stocks</h2>
+    </div>
+
     
-    <details class="newsletter-card">
-      <summary>Wall Street Breakfast (Seeking Alpha) <span class="count">3</span></summary>
-      <div class="card-body">
+    <div class="panel">
+      <p class="panel-label mono">★ top stories across your newsletters</p>
+      
+      <article class="story">
+        <h3>July inflation cools to 3.4%, clearing the way for a Fed hold</h3>
+        <ul class="dots"><li>Consumer Price Index (CPI, the government's main gauge of what households pay for goods and services) rose 3.4% year-over-year in July, matching forecasts and down from 3.5% in June.</li><li>Core inflation (which excludes volatile food and energy prices) fell to 2.5%, a third straight monthly decline.</li><li>Prediction-market odds of no Fed rate change in September rose to 60% from 45% a week earlier, while rate-hike odds slipped to 34% from 40%.</li><li>Bond markets now price roughly one rate cut by year-end, down from three anticipated six weeks ago.</li><li>Services inflation remains elevated near 3.2%, keeping Fed officials divided on how fast prices are truly normalizing.</li><li>Weak July hiring data added to the case for standing pat, giving policymakers dual signals of cooling prices and softening jobs.</li></ul>
         
-        <h4>1. Big banks pilot blockchain for everyday trading</h4>
-        <ul><li>JPMorgan, Goldman Sachs and Investec are testing blockchain (a shared digital ledger that records transactions across many computers at once) for day-to-day securities trading.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">Opening Bell Daily (Phil Rosen)</span> Fed Chair Kevin Warsh stayed hawkish, insisting the central bank won't let its 2% inflation target drift to 3%, though investors largely shrugged at the rhetoric.</p>
+          
+          <p><span class="mono angle-src">CNBC Morning Squawk</span> Lettuce prices hit record lows (down over 40% year-over-year on bumper harvests), a concrete example of food-price deflation undercutting the two-year inflation narrative.</p>
+          
+          <p><span class="mono angle-src">Investopedia Pre-Market</span> Stock index futures (contracts letting traders bet on where stock prices will be later) traded slightly higher into the print.</p>
+          
+          <p><span class="mono angle-src">Bloomberg</span> Softer inflation plus AI momentum pushed global markets toward record highs.</p>
+          
+        </div>
         
-        <h4>2. Nelson Peltz eyes Caesars Entertainment</h4>
-        <ul><li>Peltz is reportedly preparing a $34-per-share bid for Caesars (CZR), after Carl Icahn had already made an offer, signaling activist interest in gaming.</li></ul>
+        <p class="chips"><span class="chip mono">Wall Street Breakfast (Seeking Alpha)</span><span class="chip mono">CNBC Morning Squawk</span><span class="chip mono">Opening Bell Daily (Phil Rosen)</span><span class="chip mono">Yahoo Finance Morning Brief</span><span class="chip mono">Bloomberg</span><span class="chip mono">Investopedia Pre-Market</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>AI earnings, not macro data, are driving the market</h3>
+        <ul class="dots"><li>Nebius and CoreWeave each jumped about 19% on strong quarterly results, while the S&P 500 rose just 0.26% on the cooler CPI print.</li><li>Nebius revenue surged 454% to $582 million, with its AI cloud business growing more than 5x.</li><li>CoreWeave doubled revenue to $2.58 billion (up 112% year-over-year) and booked $25 billion in additional commitments.</li><li>Super Micro Computer raised fiscal 2027 revenue guidance to $65–72 billion versus Wall Street's $52.5 billion estimate.</li><li>Mega-cap tech (the 'Magnificent Seven': Apple, Microsoft, Alphabet, Amazon, Tesla, Nvidia, Meta) gained 2–3% as money rotated out of defensive positions.</li><li>Semiconductor and hardware names rallied on expectations of sustained AI data-center spending.</li></ul>
         
-        <h4>3. Other headlines</h4>
-        <ul><li>SpaceX released Grok 4.6, a frontier AI model focused on visual tasks, and its valuation rose on the news.</li><li>Karoline Leavitt is stepping down as White House press secretary amid broader staff changes.</li><li>The US Army is absorbing tactical lessons from Ukraine's drone warfare.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">Opening Bell Daily (Phil Rosen)</span> Tech giants have committed roughly $5 trillion of AI capital expenditure over five years, making a 0.25% shift in the federal funds rate (the interest rate banks charge each other overnight) economically immaterial to their plans.</p>
+          
+          <p><span class="mono angle-src">CNBC Morning Squawk</span> Market breadth improved as mid-cap growth stocks joined the rally for the first time in three weeks.</p>
+          
+        </div>
         
+        <p class="chips"><span class="chip mono">CNBC Morning Squawk</span><span class="chip mono">Opening Bell Daily (Phil Rosen)</span><span class="chip mono">Yahoo Finance Morning Brief</span><span class="chip mono">Bloomberg</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Paramount Skydance dangles CNN sale and a California exit to save $110B Warner Bros. deal</h3>
+        <ul class="dots"><li>Chief legal officer Makan Delrahim said selling CNN is 'on the table' to settle the antitrust suit blocking the $110 billion acquisition of Warner Bros. Discovery.</li><li>The deal already has clearance from US federal regulators, the UK, EU and China; only the state lawsuit remains.</li><li>California AG Rob Bonta and 11 other states argue the combined company — Paramount's studios and CBS News plus HBO, DC Studios and TNT — would raise prices and cut competition.</li><li>Paramount faces a $7 million-per-day termination fee if the transaction doesn't close by October 1.</li><li>CEO David Ellison told leadership he would move the company out of California unless the state drops its claims, echoing Elon Musk's Tesla/SpaceX shift to Texas.</li><li>A relocation to Tennessee, Texas or Georgia could save about $500 million a year in taxes plus billions from selling studio lots.</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">Wall Street Breakfast (Seeking Alpha)</span> Governor Gavin Newsom, worried about losing Hollywood, is reportedly pushing Bonta's office toward an out-of-court settlement; Paramount has also floated a board to guarantee CNN's editorial independence.</p>
+          
+          <p><span class="mono angle-src">Yahoo Finance Morning Brief</span> A federal court has set a March trial date on the merger's legality, implying months of costly delay and risk the deal unravels; the states counter that a bigger Paramount would dominate TV and film.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">Wall Street Breakfast (Seeking Alpha)</span><span class="chip mono">Yahoo Finance Morning Brief</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>LA Lakers sold for a record $12.5 billion</h3>
+        <ul class="dots"><li>The purchase, at a record price for a sports franchise, was struck in roughly 24 hours with minimal investment-banker involvement.</li><li>Buyers were Thrive Capital founder Joshua Kushner and former Disney CEO Bob Iger, with Mark Walter selling.</li><li>Madison Square Garden Sports (MSGS) shares rallied on the read-through to other franchise valuations.</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">Bloomberg</span> The sale helps Walter's TWG Global cut related-party loans at its insurance units, which had drawn Justice Department scrutiny; Iger quipped that avoiding 'hordes, investment bankers and the like' kept talks secret.</p>
+          
+          <p><span class="mono angle-src">Wall Street Breakfast (Seeking Alpha)</span> Frames the price as evidence wealthy investors treat teams as prestige assets with embedded real-estate and media value.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">Wall Street Breakfast (Seeking Alpha)</span><span class="chip mono">Bloomberg</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Anthropic in talks to buy AI startup Decart for ~$6 billion</h3>
+        <ul class="dots"><li>The AI lab is negotiating a roughly $6 billion acquisition of Decart, one of the sector's larger consolidation moves.</li><li>The talks underscore continued investor appetite for artificial-intelligence assets and specialized capabilities.</li></ul>
+        
+        <p class="chips"><span class="chip mono">Wall Street Breakfast (Seeking Alpha)</span><span class="chip mono">Bloomberg</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>South Korea's Kospi flips from bear to bull market in two weeks</h3>
+        <ul class="dots"><li>The Kospi index moved from bear-market territory (down 20%+ from a recent peak) into a technical bull market (up 20%+ from its low) in about two weeks.</li><li>The whipsaw reflects short-covering and bargain hunting off oversold levels amid the broader global AI-led rally.</li></ul>
+        
+        <p class="chips"><span class="chip mono">Wall Street Breakfast (Seeking Alpha)</span><span class="chip mono">Bloomberg</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Energy: oil steady near $75 as Iran pressure builds, US pump prices set an August record</h3>
+        <ul class="dots"><li>Crude held around $75 a barrel, with OPEC production cuts offsetting demand worries.</li><li>Oil wavered as traders waited on negotiations over the Strait of Hormuz after the Trump administration reverted to economic pressure on Iran following a failed military campaign.</li><li>US average gasoline topped $4 a gallon after August 12 for the first time on record for that date, per GasBuddy.</li><li>July gasoline prices fell 2.9% month-over-month but are still up 25% year-over-year.</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">Yahoo Finance Morning Brief</span> Analyst Tom Kloza expects more supply interruptions and says the final third of the year will be 'considerably more expensive' than prior years.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">CNBC Morning Squawk</span><span class="chip mono">Bloomberg</span><span class="chip mono">Yahoo Finance Morning Brief</span></p>
+      </article>
+      
+    </div>
+    
+
+    
+    
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Wall Street Breakfast (Seeking Alpha)</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Big banks pilot blockchain for everyday trading</h4>
+              <ul class="dots"><li>JPMorgan, Goldman Sachs and Investec are testing blockchain (a shared digital ledger that records transactions across many computers at once) for day-to-day securities trading.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Nelson Peltz eyes Caesars Entertainment</h4>
+              <ul class="dots"><li>Peltz is reportedly preparing a $34-per-share bid for Caesars (CZR), after Carl Icahn had already made an offer, signaling activist interest in gaming.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Other headlines</h4>
+              <ul class="dots"><li>SpaceX released Grok 4.6, a frontier AI model focused on visual tasks, and its valuation rose on the news.</li><li>Karoline Leavitt is stepping down as White House press secretary amid broader staff changes.</li><li>The US Army is absorbing tactical lessons from Ukraine's drone warfare.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">CNBC Morning Squawk</span>
+          <span class="ncard-count mono">1</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Treasury yields slip</h4>
+              <ul class="dots"><li>Yields declined as investors sought safe-haven assets amid mixed economic signals.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Yahoo Finance Morning Brief</span>
+          <span class="ncard-count mono">1</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Federal budget nears $40 trillion milestone</h4>
+              <ul class="dots"><li>A featured item flags the federal budget/debt trajectory approaching the $40 trillion mark.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Bloomberg</span>
+          <span class="ncard-count mono">4</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>US authorizes private-sector offensive cyberattacks</h4>
+              <ul class="dots"><li>The Trump administration will partner with private companies to run offensive cyberattacks abroad against criminal groups targeting Americans, after months of legal groundwork.</li><li>The White House warned US systems need stronger defenses against AI-powered cyberattacks (automated intrusions that use machine-learning models to find vulnerabilities faster than human hackers).</li><li>The policy extends to private firms operations previously reserved for government agencies.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Colombia earthquake death toll hits 265</h4>
+              <ul class="dots"><li>The president declared an economic emergency after the strongest tremor in 47 years.</li><li>The US Defense Secretary authorized joint military operations with Colombia against drug gangs and narco-terrorism.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Indian workers filming themselves to train robots</h4>
+              <ul class="dots"><li>Thousands are being recruited to wear head-mounted cameras and motion-tracking gear while doing household chores, generating data to train robots.</li><li>Pay is about $315 a month, raising ethical questions since the recordings may automate the workers' own jobs.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>The suit is back in fashion</h4>
+              <ul class="dots"><li>The two-piece suit is reviving as a style statement precisely because fewer office workers are required to wear one daily, alongside strength in luxury watches and apparel.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Investopedia Pre-Market</span>
+          <span class="ncard-count mono">4</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Weak wage growth squeezes spending power</h4>
+              <ul class="dots"><li>Slowing wage growth is cutting household purchasing power while prices stay elevated, a risk to corporate revenues and stock valuations.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Social Security's 2027 COLA projected highest in four years</h4>
+              <ul class="dots"><li>Latest estimates put the 2027 cost-of-living adjustment (COLA, the annual benefit increase tied to inflation) at its highest since 2023.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Applied Materials earnings in focus</h4>
+              <ul class="dots"><li>Options pricing implies a sizable move in Applied Materials shares after its results.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>Retirement savings gap</h4>
+              <ul class="dots"><li>Data show most American workers are unlikely to reach $1 million in retirement accounts by retirement age.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+    </div>
+    
+
+    
+    
+    
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">12</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist"><li><a href="https://seekingalpha.com/news/4632088-paramount-skydance-willing-to-sell-cnn-to-clinch-warner-bros-merger" rel="noopener">Paramount Skydance willing to sell CNN to clinch Warner Bros. merger</a></li><li><a href="https://seekingalpha.com/news/4631534-la-lakers-sold-for-12b-in-an-eye-popping-deal-msgs-rallies" rel="noopener">LA Lakers sold for $12.5B in eye-popping deal, MSGS rallies</a></li><li><a href="https://seekingalpha.com/news/4632085-south-korea-kospi-technical-bull-market" rel="noopener">South Korea's KOSPI technical bull market</a></li><li><a href="https://seekingalpha.com/news/4631801-paramount-has-spoken-about-creating-board-to-ensure-cnns-independence" rel="noopener">Paramount has spoken about creating board to ensure CNN's independence</a></li><li><a href="https://seekingalpha.com/news/4631562-goldman-jpmorgan-investco-test-blockchain-for-day-to-day-trading" rel="noopener">Goldman, JPMorgan, Investec test blockchain for day-to-day trading</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/1f0dca59cfa6dc625c81e513df67b238ff15ee20cb8dee5006d0d9fc26a84a438fc8ccdfeb6f349389bc80e63f8f9939e526dc5c12f62e629e02748eaf087c66735870d316afd8ecc5985dbac41f6d450ccbb2051056dc467a04d5dd19d7714444609c6d64efd2aa9815bc6de6fa2d22ca58afadafa655a683ab1ef1f0147959a366da1878d874f837bde60a740a44b610f9621e43fcc9331b629e5ee109447e/2872b05e897ee9f5" rel="noopener">Inflation data and market reaction</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/6ddf980d7a8c3628c0cfb67ebaa20f6c0e3971d465ec37f9bfa5ba17dcd8493bf728885113c79bef5ae0bfcbab8ed6326ad3d7d7d7f72674c5f3729f325bf7ab5241cd19a5438deb1188e16a7ac8ac8fcd3400f4d46b3467d273844d5349710ea35e229bba6b793ad87b2436a2cb6171804cf5bf51a54ebefbb98f4036798b131835df587decd06f747f3768e52360ea15293f4df32c56fb867b9c03fa8f4668/a1c5dbfac40e9c75" rel="noopener">CoreWeave Q2 earnings and revenue growth</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/8a4de16311210090cc720f781064cc3bf41c565dbee3e74d89a0f595fee074dc322d1dc2f8e14a9899076c759af6cab694ab0946b2e731fac9b0d8b9448b636405785afc2fbf612075123d8d7b6f552cf86f484ffe9f9bd19cf90add6e5bf4211dbd580f050fba78324bbf8428a2be641a22b1dbf5c78263129a3efc96acc46937937b43c1cd5256a7266f75c2dd70baed6da6eb1116d76342bb4a123d126c87/b0e0bc7c23cd198b" rel="noopener">Nebius revenue surge and AI cloud growth</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/ad18af19eb1236ab64d306e780f2a5c8c4838a227398a3a24e954488e6c283ddbef012d49fae84f4847dc868f593eda75b1494c2859f5502f0a7812dee4c1ed388c5f67bfa4bc5ac0085e1df2ba77c5031e021b2a37160c658f2cc8ec2b221ac4c9d8e6861801c230c83b63c05925bb1ef53b03ca9c2801be7d6667afb1efb3d755ea374673815b606a0adf3019d7dbe7f6ed386551706ee28de53f59a825dae/ad4c4e6deb4dedfb" rel="noopener">Super Micro Computer fiscal 2027 guidance</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/da70a1910531a9806acdf87146fd796a6e058ec8e10b80979058f5e5e4f9eb119948062cd3bcbd78b17d412121b58d28ab5fe9668e9d3b91338e5588d5b3b4c1b9335946ee3c816215892dba183835afcf05387f7830693ad71d6728e18e3a831b7268477bc4bfc1482b5b14b80b94aef5f4d42b546b2fd1a22a7af34614a884069913971996a099e0c0f7f360f83cc71f15f9ab8f3ad123ed0cc5153a2961b8/04b59da03c44015d" rel="noopener">Read online version</a></li><li><a href="https://e.newsletters.yahoo.net/click?PUMZubOzugGmoQ17koFoUSFoyh4WCHQ2OUB3Mewfr64984f6b" rel="noopener">July inflation report and Fed rate expectations</a></li><li><a href="https://e.newsletters.yahoo.net/click?PUMZubOzugGmoQ17koFoUSB-VjkKmcJJobD2lvw7p5c1fa284" rel="noopener">Gasoline prices hit August record high</a></li></ul>
       </div>
     </details>
     
-    <details class="newsletter-card">
-      <summary>CNBC Morning Squawk <span class="count">1</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Treasury yields slip</h4>
-        <ul><li>Yields declined as investors sought safe-haven assets amid mixed economic signals.</li></ul>
-        
+  </section>
+
+  <section class="batch" id="crypto-am" data-cat="crypto">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-crypto">crypto</span> crypto-am</p>
+      <h2>Morning Crypto</h2>
+    </div>
+
+    
+
+    
+    
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">CMC Spotlight</span>
+          <span class="ncard-count mono">1</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Goldman Sachs buys into a Bitcoin ETF provider</h4>
+              <ul class="dots"><li>Goldman Sachs acquired a significant stake in a Bitcoin ETF (Exchange-Traded Fund — a fund that holds Bitcoin and trades on a stock exchange like an ordinary share).</li><li>The move reverses years of traditional-finance skepticism and treats Bitcoin ETFs as legitimate investment products.</li><li>Regulatory approval of Bitcoin ETFs removed a key obstacle for institutional capital by providing safer custody and easier compliance.</li><li>Banks and asset managers can now offer Bitcoin exposure to clients without building their own crypto trading infrastructure.</li><li>Goldman's entry may prompt peer firms to follow, potentially unlocking billions in new inflows and adding buying pressure to Bitcoin's price.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">TLDR Crypto</span>
+          <span class="ncard-count mono">5</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>CFTC and SEC sue Goliath Ventures over $397M DeFi Ponzi scheme</h4>
+              <ul class="dots"><li>The scheme ran November 2022–February 2026 across 1,600 customers, promising 36% annual yields on Bitcoin and Ethereum via DEX liquidity pools (automated trading protocols where users deposit assets to earn a share of trading fees).</li><li>No capital was ever deposited into any DeFi protocol; account statements were fabricated.</li><li>Funds were diverted as $174M in staff recruiting commissions, $87M in Ponzi payments to existing customers, and $48M to CEO Christopher Delgado for real estate, vehicles, and jewelry.</li><li>Delgado pleaded guilty in June to wire fraud conspiracy and money laundering; a bankruptcy receiver was appointed in March 2026.</li><li>The same-day dual civil filing shows CFTC Chairman Michael Selig asserting parallel jurisdiction alongside the SEC, signaling a turf expansion in crypto fraud enforcement.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Centralized crypto firms capture 8.5x more revenue than on-chain protocols</h4>
+              <ul class="dots"><li>On-chain protocols generated $8B of revenue in 2025 versus $60–100B for centralized players such as exchanges and stablecoin issuers.</li><li>That gap implies an on-chain market cap of roughly $168B against ~$840B for centralized crypto — about the valuation of a single AI lab.</li><li>On-chain revenue is led by Layer 1/Layer 2 blockchains (L1 is the base chain that settles transactions; L2 bundles transactions off the base chain to cut fees) at 49%.</li><li>Off-chain revenue is dominated by exchanges and brokers (66%) and stablecoin issuers (19%).</li><li>Centralized players win on proximity to users and abstraction of complexity, pushing adoption to Coinbase, Robinhood, and Binance over self-custodial alternatives.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Tokenized stocks become the next battleground as traditional exchanges pile in</h4>
+              <ul class="dots"><li>The tokenized stock market hit $1.9B, up 6.5x since January 2025, while tokenized Treasuries stalled at $15B.</li><li>The Linked Security structure (DeFi-composable tokens with no voting rights, sold only to non-US investors) dominates via Ondo (45.9%, $851M) and xStocks (26%, $482M).</li><li>DTCC launched limited QQQ/SPY tokenization on July 15 after SEC approval; Nasdaq won a rule-change approval in March 2026 and is building a permissionless gateway with Kraken parent Payward; NYSE filed a rule change plus an MOU with Securitize.</li><li>Coinbase announced a 1:1 stock-backed token for non-US customers but has not launched it.</li><li>A January 2026 SEC taxonomy of four structural models gave the sector its regulatory framework and triggered incumbent competition.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>Neutrl's carry trade earns yield without the crypto cycle</h4>
+              <ul class="dots"><li>Neutrl buys locked private company shares at a 15% discount and shorts an equity perpetual (a derivative contract with no expiry, where longs and shorts exchange periodic 'funding' payments) on the same name, hedging direction from day one.</li><li>Funding on the short leg averaged 10.9% annualized from May–July 2026, contributing to roughly 20.5 percentage points of total return over a six-month hold.</li><li>Traditional delta-neutral books (offsetting long and short positions with no net price exposure) earned least as altcoin volume fell 30% in H1 2026.</li><li>Boros protocol turns funding rates into standalone assets via Yield Units; a 4.03-point gap between HYPE fixed rates on Hyperliquid (7.93%) and Bybit (3.89%) locks in 40.30% APR at 10x leverage with no directional risk.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">05</span>
+            <div>
+              <h4>FlightAware drops Kalshi lawsuit one day after filing</h4>
+              <ul class="dots"><li>The suit targeted prediction market Kalshi over unauthorized use of flight data in flight-cancellation markets.</li><li>The one-day withdrawal suggests a private settlement was reached.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+    </div>
+    
+
+    
+    
+    
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">5</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist"><li><a href="https://threadreaderapp.com/thread/2087269798862364860.html" rel="noopener">Who actually captures value in crypto</a></li><li><a href="https://links.tldrnewsletter.com/02Nmdh" rel="noopener">Tokenized Stocks: The Next Battleground</a></li><li><a href="https://thedefiant.io/news/regulation/cftc-sues-goliath-ventures-over-alleged-397m-defi-liquidity-pool-ponzi" rel="noopener">CFTC Sues Goliath Ventures Over Alleged $397M DeFi Liquidity Pool Ponzi</a></li><li><a href="https://links.tldrnewsletter.com/IdmKoY" rel="noopener">Neutrl: Yield Without a Cycle</a></li><li><a href="https://links.tldrnewsletter.com/ujloyr" rel="noopener">$FIGR: The Market May Be Underwriting the Wrong Business</a></li></ul>
       </div>
     </details>
     
-    <details class="newsletter-card">
-      <summary>Yahoo Finance Morning Brief <span class="count">1</span></summary>
-      <div class="card-body">
+  </section>
+
+  <section class="batch" id="ai-am" data-cat="ai">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-ai">ai</span> ai-am</p>
+      <h2>Morning AI</h2>
+    </div>
+
+    
+    <div class="panel">
+      <p class="panel-label mono">★ top stories across your newsletters</p>
+      
+      <article class="story">
+        <h3>Grok 4.6 hits frontier performance at ~60% lower cost, with 4.7 promised in weeks</h3>
+        <ul class="dots"><li>xAI's Grok 4.6 scored 61 on the Artificial Analysis Intelligence Index (a composite benchmark of reasoning, coding and knowledge tests), matching OpenAI's GPT-5.6 Sol and trailing only Anthropic's Fable 5 (62) and Opus 5 (63).</li><li>Pricing is $2 per 1M input tokens and $6 per 1M output tokens (tokens are the chunks of text/code a model processes), undercutting frontier rivals by roughly 60%.</li><li>Agent efficiency is the headline metric: on AA-Briefcase tests Grok needed ~53 turns and 0.5B input tokens versus Claude Opus 5 Max's ~103 turns and 2.0B tokens, measured at $0.84 per task.</li><li>Available now in Cursor, Grok Build, the API, OpenRouter, Vercel and Cloudflare, with 2x free usage for the first week and a $30/month SuperGrok consumer plan.</li><li>Elon Musk called it 'objectively No. 1 when considering intelligence, speed & cost' and says Grok 4.7 lands in 3-4 weeks and will 'exceed all current models.'</li></ul>
         
-        <h4>1. Federal budget nears $40 trillion milestone</h4>
-        <ul><li>A featured item flags the federal budget/debt trajectory approaching the $40 trillion mark.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">The Neuron</span> Grok 4.7 will reportedly integrate SpaceX company data.</p>
+          
+          <p><span class="mono angle-src">Superhuman (Zain Kahn)</span> Cost per task is unchanged from Grok 4.5, putting a frontier model in the same price band as open-source Chinese models — though Musk's timelines warrant skepticism.</p>
+          
+          <p><span class="mono angle-src">The Rundown AI</span> The Cursor/xAI partnership adds distribution pressure on OpenAI and Anthropic to rethink pricing and release timing.</p>
+          
+        </div>
         
+        <p class="chips"><span class="chip mono">The Rundown AI</span><span class="chip mono">The Neuron</span><span class="chip mono">Superhuman (Zain Kahn)</span><span class="chip mono">TLDR AI</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Claude in Chrome gains full Cowork sessions and live web control</h3>
+        <ul class="dots"><li>Anthropic's Chrome side panel now runs a full Cowork session (its agentic desktop workspace) that syncs conversation history, Skills, connectors and multi-step tasks between browser and Claude apps.</li><li>The agent can click, type and scan live web pages, giving Claude real-time internet access for research and data gathering.</li><li>Sessions persist across devices; the feature is rolling out on paid Anthropic plans.</li></ul>
+        
+        <p class="chips"><span class="chip mono">The Neuron</span><span class="chip mono">Superhuman (Zain Kahn)</span><span class="chip mono">TLDR AI</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Lovable raises $400M at $13.3B as AI app-layer funding accelerates</h3>
+        <ul class="dots"><li>Lovable's $400M round values the AI coding/no-code platform at $13.3B, more than doubling its December 2025 valuation.</li><li>Cognition is in talks at a $40B valuation after crossing $1B in annualized revenue run rate (current monthly revenue extrapolated over a year).</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">The Neuron</span> Mistral launched regional inference and third-party open-model hosting, backed by a European compute coalition targeting 1 gigawatt (1 billion watts) by 2030.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">The Rundown AI</span><span class="chip mono">The Neuron</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>DeepSeek V4-Pro undercuts rivals by ~10x on price</h3>
+        <ul class="dots"><li>DeepSeek quietly shipped V4-Pro-0813 at $0.435 per 1M input tokens and $0.87 per 1M output tokens — roughly one-tenth the cost of comparable frontier models.</li><li>Benchmarks are reported as frontier-comparable, beating Opus 4.8 on coding, benchmarking and automation tasks.</li></ul>
+        
+        <p class="chips"><span class="chip mono">The Rundown AI</span><span class="chip mono">TLDR AI</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Enterprise AI shifts from assistant to agentic delegation</h3>
+        <ul class="dots"><li>OpenAI data shows the highest-usage firms now generate 8-10x more output tokens per active user than typical enterprises, up from 2.6x, and adopt connected tools far more often.</li><li>Adoption is moving from AI-as-assistant to agentic delegation, where agents autonomously complete multi-step work under human oversight.</li><li>Verification and quality assurance — not raw model capability — are now the main bottleneck, requiring explicit quality standards, evaluation frameworks and feedback loops.</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">TLDR AI</span> Liability ownership, permissions and tacit company-specific standards remain the hardest unsolved pieces.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">The Neuron</span><span class="chip mono">TLDR AI</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Google pushes Gemini into Pixel 11 as app hits 1 billion users</h3>
+        <ul class="dots"><li>The Gemini app crossed 1 billion users, Google's fastest-growing product ever.</li><li>Pixel 11 ships with the Tensor G6 chip and Gemini handling multi-step tasks across 40+ apps, plus real-time video and audio translation and new voice capabilities.</li></ul>
+        
+        <p class="chips"><span class="chip mono">The Rundown AI</span><span class="chip mono">Superhuman (Zain Kahn)</span></p>
+      </article>
+      
+    </div>
+    
+
+    
+    
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">The Rundown AI</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Gamgee commercializes AI-designed cancer vaccines for dogs</h4>
+              <ul class="dots"><li>The Y Combinator startup grew out of Paul Conyngham using ChatGPT, AlphaFold (DeepMind's protein-structure prediction model) and a custom mRNA vaccine to shrink his dog Rosie's tumors after conventional treatment failed.</li><li>Gamgee runs design, treatment and monitoring end-to-end, with first trials in Australia and cases accepted globally.</li><li>Sam Altman met Conyngham in March and encouraged him to start the company; the mutation-matched approach hints at eventual human applications.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Why your AI outputs feel dumb</h4>
+              <ul class="dots"><li>Most users hand AI the final polished step instead of the research and ideation stages where it performs best.</li><li>Reframe tasks so AI does prep — research, brainstorming, wide exploration — while you handle cutting, editing and judging fit.</li><li>Tell the model upfront what format you work in (spreadsheet, Word doc, slide deck) so output lands where you finish work.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Turn customer feedback into 100 ad hooks</h4>
+              <ul class="dots"><li>Feed 10-20 customer comments into ChatGPT and have it build a CSV of pain points, frustrating moments, desired outcomes and objections.</li><li>Generate a second CSV converting each pain point into headline, call-to-action and image-prompt ideas, then hand-pick the strongest angles.</li><li>Only after the manual output is solid, have ChatGPT scaffold a reusable app that reads the CSV and saves generated images via an OpenRouter API key (a service routing requests to many AI models).</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">The Neuron</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Video and context tooling: Preview, Click, Infisical</h4>
+              <ul class="dots"><li>Preview launched as a single workspace for video teams — storyboarding, generating, directing, comparing model outputs and keeping characters/locations consistent across shots.</li><li>Click added live context via MCP connections (Model Context Protocol, a plugin-style standard for feeding tools and data to AI), including YouTube transcripts, LinkedIn reactions, flight fares and financial data.</li><li>Infisical sandboxes Claude and other agents behind fake API keys, with a proxy swapping in real credentials only as requests leave the agent environment.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Training-data and licensing shifts</h4>
+              <ul class="dots"><li>Amazon/Twitch will use streamer content to train generative AI by default unless creators explicitly opt out.</li><li>Apple is negotiating nine-figure (at least $100M) multiyear deals to pay publishers when Siri AI uses their content.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Governance and AI security</h4>
+              <ul class="dots"><li>Demis Hassabis reportedly pitched a U.S.-led AI oversight body weeks before stepping down as DeepMind CEO to become Alphabet chief scientist — framed by some as a PR move for Google's stock.</li><li>Dream Security documented an autonomous multi-agent system that mapped and compromised Asian government entities over four days.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Superhuman (Zain Kahn)</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Anthropic to watermark all Claude output under EU rules</h4>
+              <ul class="dots"><li>Anthropic will digitally watermark 100% of Claude-generated content to meet EU transparency requirements, tagging any output Claude touches.</li><li>The label applies indiscriminately — a blog post merely spellchecked by Claude gets flagged as AI-generated, even if a human wrote 99% of it.</li><li>OpenAI and Google committed to similar EU rules and already watermark images and audio.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Build an AI agent team instead of buying SaaS</h4>
+              <ul class="dots"><li>One engineer replaced 20+ SaaS subscriptions at a 50-person business by creating per-workflow agent inboxes with the Nylas CLI.</li><li>Setup: install Nylas CLI, authenticate with an API key, create dedicated agent addresses (renewals@, invoices@), set rules limiting what each agent can act on, then hand the roster to Claude or another coding agent in one prompt.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>DeepMind model translates American Sign Language to text</h4>
+              <ul class="dots"><li>Google DeepMind released a model that converts ASL into text.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">TLDR AI</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Microsoft ships MAI-Thinking-1 and MAI-Image-2.6</h4>
+              <ul class="dots"><li>MAI-Thinking-1 is a cost-efficient reasoning model aimed at enterprise coding, math and knowledge work.</li><li>MAI-Image-2.6 reached #2 on the text-to-image Arena leaderboard, ahead of Google and Meta entries.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>AI-generated production code fails most enterprise hardening tests</h4>
+              <ul class="dots"><li>CData tested Claude Code building an MCP server across 8 enterprise-critical dimensions (OAuth token lifecycle, large-dataset behavior and more) and the generated code failed 7 of 8; expert guidance helped but not always enough.</li><li>Safe MCP servers force a tradeoff between agent flexibility (open SQL generation) and tight constraints (typed, pre-approved queries), requiring explicit permission-model decisions.</li><li>Specula, which uses formal specifications (TLA+ machine-checkable logical proofs), finds concurrency bugs but still can't verify that module-level guarantees compose into system-level guarantees.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Nvidia's 'synthetic hyperscaler' play</h4>
+              <ul class="dots"><li>Nvidia is vertically integrating hardware, software and financing into a self-contained AI platform — like AWS but specialized for AI compute — raising switching costs for customers eyeing rival ASIC accelerators (custom purpose-built chips).</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+    </div>
+    
+
+    
+    
+    
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">12</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist"><li><a href="https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1Hd7y1RovrbUuATpcqcgGHZCOLHWK14bQZ5th6sCwgMpJgvgmsh2lkVStCb18JqozUINlLIhz9oe7m8b6lZib79toR2UpNs58A5wY6caqvoqF4JikQ9Mtk3IgJzgqsHVmYmRqtkMBBfEV-L3TNMRgUX1M-Oa6zOTXG8kfsz7XgSUKR9m10G8y_AQe3THSnboUeunCOnia1BGIWYc-dsJeqXlIqKl_CTTkWIdOe7qkPnmH/4t5/K19iyiHwQEaqE400CCAylQ/h5/h001.ooKOZNypMRMsM2KJxaXEA6Ah76Wjbe5S7FF41lMg-pk" rel="noopener">Grok 4.6 announcement</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJFFxxOajfF_IKX7iS9CnrHs_klRk3_lpg_kzpxLrQv04GDjcVU9jsVUoRLZ6kv-8p-2fKqcG2ySQykkoWYW5PD8VhBU_8ZgYUlgn1c0yvAzl2K7ec81d6qCxiEbCLdp0gW85HebtS3G7cAFJuDFjPkvTjN9qT9j7MaY8KNHNKIWZjPWPHoz1TLWuIZE4zaUGVPUg5nxoeqcmUjEJlQvj9em/4t5/K19iyiHwQEaqE400CCAylQ/h10/h001._ghmJJhBAmaw0emQJ11SXswEbA4vZZjljgwKl3wF-yk" rel="noopener">Nate's Notebook: Why Your AI Feels Dumb</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHSFuIb4pI9fpJYxiXJUzhCwKnvIhpJqmE_okw4lYVm1W2ghw82LbXAwM-AGmSBEgHOvE7nRiE3OuJKhtQfJWXyaCIKY23GYV-H9Iih9yX8LsjtdFYcnYavpyiR5pGm5gG9CkAiJ38hGXSzntU3or4OT2FgLXFJwlfxoVDNKeYae6qFv6WZ7YriVc3dcaLrQEUKxi7AvEe-iPAIDSjJARFsGRG2JZC93bSDhhMN6zCIjtlwyjJ4Ue9k-UpH1zd3z0tz-zPDujzFYLA06ZwBUwAuuj1rBC_RYZa2tBViHumAYA/4t5/K19iyiHwQEaqE400CCAylQ/h12/h001.R4Q-pChtIxlCLhN69g1K7fkvcJBnEUu2HhoT-kMqfcE" rel="noopener">Generate 100 Ad Hooks From Customer Feedback</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HSf2L_NpgCwc-VkdTnqabLncPikjgmaWK0eornR2-CrO_xxjWel9yaVKDAamzInoVPAdk5y7wPsXWGfHuM7pMN_ad4D6gczLqhrzYRgUzPGkQHXo3r49yr785_uCIN3Jjspaa2jNPSXE3oCwaARPQtLVgcx8BI9PUS-EE3mtm24qwo1UvLXBR3YMuJPORM8UWZvuQuqyYq2F6jo2bIGU99E9Vj_oXtzDPkt2kd0gG3YKWAI7jMg3iSO_mHU1dg2c3_y4oPKWUbziZT3YLIKreiE/4t5/K19iyiHwQEaqE400CCAylQ/h18/h001.WhYzslyjbDFM7W0wPBZRcjcWRCNS3czpsem6gf1se4s" rel="noopener">Gamgee: Dog with AI Cancer Vaccine Launches Company</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.u02qJFHqR61XIkDbYtOHoPPDilE9d1RPjFiLx38NycPJIhMAmqcQB7EO0OBJJdShJk00lYwFQ2Z5CVw1CrPTD-l_HHAmpqgcZKhQsUHOnuP3XU-NgMs2ANur60qBjoBzPr7EiAcp0pSwMNr8Cb02YIj-7DeH7tDAQF_lPz_I3CmLInMVaE7t596T1QCg3jIVJ6TfdHYYe3dg84H2hRv1uxJDx032e58JA8MBiign-onT6m_be7tWnl-D4IIpSbxUGU_lY1I-eEGhWiXNvVtAxGXZtnFAQE1cUc0oVMiBnW3BCAovMWuleCeibv-jH9vbDR8UjQLCYhdbsVmnQkKDdWeLDPZ04vSGWNlvioL539tYaJjJeFk3alYKt-Q1jene5fQ90zTeqGBVgQdI24R5zIV9P6Dqvem-279UGdl_fWnPidW5T2NK53hUGhjI3pt3vWzLx5FCOsUAtKZC09SEGFJUuc_E5nh6Jb7jmx0orhDNcDWG02vVzhXseIbnQkymTfFTS6fBYgEjvOfqamHbUNctuTCcXJK9Pr6w0C-E2N8/4t5/K19iyiHwQEaqE400CCAylQ/h7/h001.M-96wOd4I0X17ROshybH2jdg-mtuKoFHCavubypB51U" rel="noopener">How to Teach an AI Agent to Sound Like You</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmBCxBKxSlypSCNg-X1OVKY8SGbvUN9EkFZzf-TAOhUwvXASM88gaWjE2jFhKmxVye8dd0v7zUNuP0bis4vUQd1XwHbfvPAKgltS7K6dO0EK_jGXZLPHfjT3A5G97Y-DUw05XE9WZVZnWI1QEzdrx4BBjuBaso3hTrC1-TDspSts7eQCiArN7d9eudB1LO0dnocqPbrHJ-DSRI_XeLdr2rO-sXViDB1uOIcR0aQTVitacVfeBWBKweFxNlpjLKDYPqi_V8wnWnzt0H2QqU2lf-rU/4t5/PLCFn1GcQimACMEp5pubkg/h13/h001.bvIbj8XP2d2809WV86V8FMWlpadX6YCtpI4YYlbVF94" rel="noopener">Grok 4.6 announcement and details</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.FsqOXv9Qp2p1svid1ILW2aky23qEfLf9j9zTAmm5816EbW9EEi7sxg3E2z7TuFHUFHk5gSi4PkZFNVoR4gX9895Nf0SmNvHM4dUJFsTkdB3z8GxMMomJ0d4jyhQNgvBhc01VAEgtZrbR5WoXHIiR9ID2cCVrqAl8jNc3XakjhYec5qegu37R6GhU7nKPfSVpwcjUtTsr7ZJxniaXpzoAAGLziO4bGANAC05Ki6jRUhEG5QKJ8IuxaH-qfEB06pYubbLdVCAjDGcbHxqVPLzwfiMhgY9vL9qjvMRxhiY2A9y7Rn5Qp2J2HOP42eoOyvx7FSdsU6k6t84qWGyLSFQRbX1EhqI6-6-mPp0b0L85FRE/4t5/PLCFn1GcQimACMEp5pubkg/h14/h001.049xEFVd7nK5bK68uAFoVvLs2JO6-2P9r56t38gimlY" rel="noopener">Artificial Analysis Grok 4.6 evaluation</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmM5gHVNLdmg8wVE13HDcv4yhlM2O6xVGGNK48kO8GvknUj0Ubymeg0yLVK8S91T73gdl8ONTTufm1yIFjTJh07HqE4OyG4Tg6Z0YnXWYUgd7cQcyRxEyaiNOg2nO-WgPYl5u8UO8FngInqFdNRH92ZGiiAjDb1_zoxw58lVrZfoVW18r9Sdw-bN0Aqa_VjiSVFPtALhn5UnSQjHtD9qapXgrSg2760QWuXwg6B200UuDBgbrTA33ZV3F9VTl31uazw/4t5/PLCFn1GcQimACMEp5pubkg/h15/h001.Nc5FGeJS5z-YaGTkUR24b9e4MpyagxJP7FYj_6pQxvE" rel="noopener">xAI pricing page for Grok subscriptions and API</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.5nZoc5z8_Dwk1u9gmeJYAq3RwJnuQwb5uaXAj2D0uLa5awmQnpip3M-pt3GJ8m9qpSflh2E7TSWipOKboPcAvpzL246dnMV2QBPteX-HC6z6XaZWDGCXKsgqehXbEHymIj9JljT-FxCmTr1zFpBCY3EmIIMOd-bJv2FfTRAUtWrzbcgoGkR8m-cyJsjD1x_jDQqGCi8IIxKE1Wm4Kjwjwo7TmcWfjCE8igRcZJLb2FWwpPswp9ljUGUO-zWcumcMM4YySnLtv8ZNBMDmkOjWvtenlbbStc-nP3LDDiSAjUnsYks3zdLH_zltMAUWOzSKlYlN_p290Gxs0IX6lguQHg/4t5/PLCFn1GcQimACMEp5pubkg/h26/h001.CiTS3t0iHXkoVPuLSUDvFk_4Q8lR7nB7_1_Z2cjP44A" rel="noopener">Claude Voice guide for multi-tool briefing setup</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Jkg0FtPWkN8kOH5PMICEw2GmMYc3az6hfKoHbo5tykHUaf8-lTXzkJYXq6vDBQkEjU8emPNe7XyewTXkbxS_ep22xLPt2JrQGXdGzMFQtrMgf2WDe9tuh2beESmSAS4GjR6pDaK2PH4mcpvV46ZeQwwHbu7OcOVK8Jvdr3j9pVIJZdSiPcnDhQpkTnBW1rWJTHOnGhV_pqitRdyaPVUQ-xurjL4-OtvzXe6O1shGVnJZ2RsgafJ52RIedD9eXTnT8RkIK66rLpnyLEeFyGs5WQ/4t5/PLCFn1GcQimACMEp5pubkg/h34/h001.Z0dimUzgmVT7hlTpGJ8D3OwPiPAyX5DWfRcICcmhMOs" rel="noopener">Preview video generation workspace announcement</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tB27taPd_6T28pKDZQt7zc-QhNUYE5xCbmptSBPnBWJjSUdXqfV4pl05h3I0CDJ1lYG54t9kE3nN8lpZaKpidnld6Orwm2Jf1ldc0rgtece11KKY90t9O2cca788W3_KayMqre3bYUnRD98AtUdekY34XPjTR3kP-8k2cbrOflj867HOwn3hJ0sxOvxS0fb2_EpNKzBmhOi02P4P-dEHhZkGY8VLFhkMIH8ZLVTQd0vhA/4t5/zWUpHJWcQ1GGJ8oAt-ob9A/h6/h001.YUrWjiFygzFLcYdxZByxQwvBQuzH7nia1HrwUS0BEHk" rel="noopener">See how Grok 4.6 stacks up against competitors</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgICxIik6hQLk_HKB7_ZFv-dYHZHv0p4Ly-97T8lAkfwrG7ylnGXd9pZOAfXthTBijBkRulgYDD-EiA07L8jscYZ5zzxI-6fTQIt8gLSKBllgyFXGbXwwsieVhWZJRZklNdPOE3JJV3gbY0iJXxtSBC-kPBIxEQS95Xa-IE2CN2H2M_33ZnCm58TPOx9AjStFoWVpcFlZNxs1B1hOA4ScxFt7w7llla5yF2hqXCsu89Go/4t5/zWUpHJWcQ1GGJ8oAt-ob9A/h8/h001.govL5_347zTjdI745vKKmnXxBYsD3J63rUlj6YxGVYo" rel="noopener">How Claude in Chrome works</a></li></ul>
       </div>
     </details>
     
-    <details class="newsletter-card">
-      <summary>Bloomberg <span class="count">4</span></summary>
-      <div class="card-body">
+  </section>
+
+  <section class="batch" id="tech-am" data-cat="tech">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-tech">tech</span> tech-am</p>
+      <h2>Afternoon Tech</h2>
+    </div>
+
+    
+    <div class="panel">
+      <p class="panel-label mono">★ top stories across your newsletters</p>
+      
+      <article class="story">
+        <h3>Grok 4.6 matches GPT-5.6 Sol on coding at half the price</h3>
+        <ul class="dots"><li>Grok 4.6 ranks third globally on the Artificial Analysis benchmark (an independent leaderboard comparing AI models), matching GPT-5.6 Sol and overtaking Kimi K3s.</li><li>API pricing starts at $2 per million input tokens and $6 per million output tokens (tokens = the smallest chunks of text a model reads or writes), undercutting rivals by 50%+.</li><li>Model is tuned for long-running agents, large codebases and knowledge work, with developers reporting more reliable behavior over extended multi-step sessions.</li><li>Cursor's real-world usage data trained both Grok 4.5 and 4.6, and Grok 4.6 launched first inside Cursor alongside a Grok Build coding agent.</li><li>Adoption lags performance: only 4% of companies using AI tools pay for xAI, per Ramp's AI Index, amid reputation damage from non-consensual image generation.</li></ul>
         
-        <h4>1. US authorizes private-sector offensive cyberattacks</h4>
-        <ul><li>The Trump administration will partner with private companies to run offensive cyberattacks abroad against criminal groups targeting Americans, after months of legal groundwork.</li><li>The White House warned US systems need stronger defenses against AI-powered cyberattacks (automated intrusions that use machine-learning models to find vulnerabilities faster than human hackers).</li><li>The policy extends to private firms operations previously reserved for government agencies.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">TLDR (Tech)</span> Frames the launch as competition shifting from chat interfaces to autonomous task execution, challenging market consolidation.</p>
+          
+          <p><span class="mono angle-src">The Code</span> Links to a Cursor engineer's field guide on getting the most out of Grok 4.6.</p>
+          
+        </div>
         
-        <h4>2. Colombia earthquake death toll hits 265</h4>
-        <ul><li>The president declared an economic emergency after the strongest tremor in 47 years.</li><li>The US Defense Secretary authorized joint military operations with Colombia against drug gangs and narco-terrorism.</li></ul>
+        <p class="chips"><span class="chip mono">TLDR (Tech)</span><span class="chip mono">The Code</span><span class="chip mono">Techpresso</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>Cracks appear in AI adoption as cheap and open models gain share</h3>
+        <ul class="dots"><li>Ramp's August 2026 AI Index shows OpenAI and Anthropic adoption growth plateauing.</li><li>6.1% of AI-using businesses now pay for open-source model serving platforms, signaling price sensitivity and a self-hosting shift.</li><li>DeepSeek V4 Pro hit general availability at $0.435 per million input tokens and $0.87 output, nearing Fable 5 performance with a 1M-token context window (how much text a model can consider at once) and tool calling, via Cursor, Grok Build and API.</li><li>Alibaba open-sourced Qwen3.8, claiming frontier parity on coding and agentic benchmarks; full precision needs 4.9TB storage, cut to 397GB with Unsloth 1-bit quantization (compression that shrinks a model), with a 27B lightweight version coming.</li></ul>
         
-        <h4>3. Indian workers filming themselves to train robots</h4>
-        <ul><li>Thousands are being recruited to wear head-mounted cameras and motion-tracking gear while doing household chores, generating data to train robots.</li><li>Pay is about $315 a month, raising ethical questions since the recordings may automate the workers' own jobs.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">TLDR (Tech)</span> Argues AI is eliminating the 'middle class' of software engineering — weak developers fail faster while demand concentrates on elite engineers.</p>
+          
+          <p><span class="mono angle-src">The Code</span> DeepSeek's benchmark claims are company-run and unverified, slightly trailing Fable 5 on agentic coding.</p>
+          
+        </div>
         
-        <h4>4. The suit is back in fashion</h4>
-        <ul><li>The two-piece suit is reviving as a style statement precisely because fewer office workers are required to wear one daily, alongside strength in luxury watches and apparel.</li></ul>
-        
+        <p class="chips"><span class="chip mono">TLDR (Tech)</span><span class="chip mono">The Code</span></p>
+      </article>
+      
+    </div>
+    
+
+    
+    
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">TLDR (Tech)</span>
+          <span class="ncard-count mono">4</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Google's 2026 hardware lineup: Pixel 11, Watch 5, Pixel Tag</h4>
+              <ul class="dots"><li>Pixel 11 revives the notification LED, an RGB light inside the flash assembly that signals Gemini and WhatsApp calls.</li><li>Lineup adds Pixel Watch 5 and Pixel Tag, Google's first-party item tracker.</li><li>Expanded Gemini integration suggests hardware designed around the AI assistant rather than new core innovation.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Northrop Grumman's orbital 'space mechanic' robot</h4>
+              <ul class="dots"><li>The Mission Robotic Vehicle uses two manipulator arms to attach modular propulsion pods to aging satellites, extending their lifespans.</li><li>Deployment is slated for 2027, moving commercial servicing robotics from theory to orbit.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Indian workers film chores to train AI robots</h4>
+              <ul class="dots"><li>Tens of thousands of workers record mundane everyday tasks on video for robotics firms.</li><li>The footage fills the shortage of first-person physical-world data robots need to learn object manipulation.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>Chrome's quiet JPEG scaling optimization</h4>
+              <ul class="dots"><li>Chrome's Skia renderer now computes an optimal decode fraction with denominator 8 when scaling JPEGs.</li><li>Illustrates how performance trade-offs get embedded invisibly in specialized infrastructure subsystems.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">The Code</span>
+          <span class="ncard-count mono">2</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Databricks' four levers to cut AI coding costs up to 90%</h4>
+              <ul class="dots"><li>Default to the cheapest model that clears your quality bar — enough for most everyday coding, saving 50%+.</li><li>Use a smart router to send each job to the most cost-effective model automatically instead of manual selection.</li><li>Prefer real-time spend visibility and warnings over hard budget caps that penalize your most productive engineers.</li><li>Trim context bloat, which mostly comes from the coding harness; tuning prompt cache settings can halve generated tokens without quality loss.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>AI 2027 forecast scorecard</h4>
+              <ul class="dots"><li>19 of 53 predictions from the AI 2027 project are confirmed or ahead of schedule.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Techpresso</span>
+          <span class="ncard-count mono">4</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>First fully autonomous AI cyberattack hits Taiwanese government</h4>
+              <ul class="dots"><li>China-linked hackers ran a four-day campaign in early July using up to 8 AI agents at once, built on the open-source Hermes and OpenClaw frameworks.</li><li>Agents mapped 21 government systems, compromised 85 accounts and stole 2,500+ personnel records from nuclear safety and energy agencies.</li><li>The agents ranked and switched attack paths when techniques failed and bypassed safety guardrails by posing the intrusion as an authorized penetration test.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Trump administration authorizes private-sector 'hack-back' operations</h4>
+              <ul class="dots"><li>A White House memo lets vetted private security firms seek approval to strike back at foreign cybercrime groups behind ransomware, phishing and fraud against U.S. victims.</li><li>Each firm must post at least $1 million in bond or escrow and stop immediately if activity strays outside approved limits.</li><li>The National Coordination Center oversees the program with Justice and Homeland Security directors; Americans lost over $20.8 billion to cybercrime in 2025.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Twitch adds opt-out for Amazon AI training</h4>
+              <ul class="dots"><li>A new 'Training for Generative AI' toggle in Security and Privacy settings covers streams, VODs, clips, chats, channel pictures and text.</li><li>The Verge found it switched on by default; Amazon hasn't confirmed whether that is standard.</li><li>Opting out doesn't disable captions, AutoMod or recommendations, and your chat on someone else's stream follows that streamer's setting.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>Apple courts publishers for a news-savvy Siri</h4>
+              <ul class="dots"><li>Apple is negotiating pay-per-use licensing deals to feed current news and information into an updated Siri launching later this year.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+    </div>
+    
+
+    
+    
+    
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">12</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist"><li><a href="https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis" rel="noopener">SpaceXAI debuts Grok 4.6 on Artificial Analysis</a></li><li><a href="https://arstechnica.com/gadgets/2026/08/google-reveals-2026-hardware-lineup-pixel-11-pixel-watch-5-and-pixel-tag/" rel="noopener">Google reveals 2026 hardware lineup: Pixel 11, Watch 5, Tag</a></li><li><a href="https://ramp.com/data/ai-index-august-2026" rel="noopener">Cracks in the AI Thesis</a></li><li><a href="https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" rel="noopener">AI is removing the middle class of software engineering</a></li><li><a href="https://ethanding.substack.com/p/why-you-cant-copy-palantir" rel="noopener">Why you can't copy Palantir</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcE_1qFWGAfc5ZpYEwy76x3NoH4d9LW3AyD7FNOc0nFgL4rV7WU9_9k1omiuvzZGWCTf6_T49OPvmvRQ2Y6msq6TcDjcIGdy6Im3ktl9r5ONhYPYMx1j2DqthyQKoppMYyykWsPLb0KLlBCAie7lwafKA3LKJKxvCE2dxrB7_xfmVN0jbn0qkrAVIDlDnV1EvzgRqRtVnp10WYz_IKPkIqTTiDE5HvilFG4JqC5uC6So2lgv9wLFEzOhJqwFHDqEC_U/4t5/dTAN1U9ER3uNc4s6kuOq8A/h9/h001.QoQa00xVBENedOsoaAj1kGlGB2cnVxMwCf8Q0YQKKyA" rel="noopener">DeepSeek V4 Pro specs and pricing</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwQxsNXU0JqyVaSPxRDbliM68DfLD_h3Nfq-KLxzntCpyE4rr7-Bw0dPaAcq6IeW3rqm--7ZJurNXN-INfM_hIKRS2R5n1na-YvZPdHcTB8nqZSSwG8LRCiuxJkBMy8eOKa1gCEMBETOOlNWh_PmHJBA9s6grXTJ8I5PE1ZvAe0PjvaWMw4BU5A1lhZZu6UGZPvrlnuGml2NEd00CU9S-lfvGmZDvUbnSljRfMP4K3fHRwIdwVrNkPXdjvzG-fYdcE/4t5/dTAN1U9ER3uNc4s6kuOq8A/h30/h001.zYaDOShLnbNm7Ptf7Hnq5_hfG0tYHUL8GpWHG5pD6Cs" rel="noopener">Prompt caching tutorial to reduce token costs</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqutsrSwrlXUa4CLXik5r8lE312PLNpo3IlXsaZLW33zaDKpc0t_CNYY4jneGPffhWuKxPCCD3ZgMJHnEgYAPCoBk9rK5lHj4FmGbVSDK8Bx0ckdLMZt72bGRaw0T2Pf5vFQVc_-UV7Ntoesh0ZxRKvV0nzFEqh8dDnGP3G_mkSBt1yRNt4fA4xuYDW4v43y40EoXdHvxq4xJsNuEVeUSLy22m3_wsXxwl2cyessghNK7MgxWvErsdvpDLCmhgI8j-956hQrIy-Riob3dczYPX2fwDz6umpofqV-Ix8SZRrVMp/4t5/dTAN1U9ER3uNc4s6kuOq8A/h14/h001.bKnLxJK2M0nHtpML5GRCPrZiu9XITCxPX-B9JvGiedg" rel="noopener">Databricks cost management playbook</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFvzdw2aU2FVFTsci_sXq27wfceUBYlG0P14YFh-nbQFJIZTSYbAZDXG3EJPkFldJf2YZlDzQqA4liq5nH3q83r9cMiLL4BSOVU5wZj3MvauL3bDV6w1jL-EmwdJ5sbG1MZwkhZpTOOAztoufyjSRLuvu6ZWvkFUKCECuceiprdhLLv4lJQpr4Kofu_L0FMhzmOphXIpQZCsOS48VUR_yOLFXAcaG4CERRKs-UJmTrm5veTn4HFqmxMfZ75awxucyI/4t5/dTAN1U9ER3uNc4s6kuOq8A/h32/h001.crMkLugSURzXM4QIga8fOw-guiCbIUB0ICWvFpdL5js" rel="noopener">Grok 4.6 field guide by Cursor engineer</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcG_9khwIZqiIKCbaHRBhPGytkF9TOWLC8FR8vVysWX07ItvG_Mtq1qT9NCKGo433NaEzqgQCRNfSxfuRE8xSj7BbGOyWcAjw3eiMRHu-cSlYuVc5mIF38QsPJHOlWGm1uYshgPYpn7wlc39sGANfgEQXGMoA61SxhefQWa9Hf4tdHpvR525KnEyuKk2pQCnP2gHiDAQo26Omc_ixldS8iC6oR-uwaFONOTGKM9JVc3IMogbujU3GxqNpmUKlWSByFg/4t5/dTAN1U9ER3uNc4s6kuOq8A/h2/h001.Kt3ISTtYE0SVUD88psxn3xn6Xt55MmRElcOJ8sDU-0w" rel="noopener">AI 2027 predictions: 19 of 53 confirmed or ahead of schedule</a></li><li><a href="https://mail.dupple.com/tb/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3MDM4MjgzMTY2ODU0NTgsXCJyXCI6MTk1NzAzODQ3MTQ1OTY1NDI0fSIsInMiOiI4YjJjNjUzMTQ1ZjBiZDkyIn0" rel="noopener">Grok 4.6 coding release</a></li><li><a href="https://mail.dupple.com/tb/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3MDM4MjgzMjcxNzEyMzQsXCJyXCI6MTk1NzAzODQ3MTQ1OTY1NDI0fSIsInMiOiJmNzg1NDY1MWRiYTgyMDM4In0" rel="noopener">Trump hack-back order</a></li></ul>
       </div>
     </details>
     
-    <details class="newsletter-card">
-      <summary>Investopedia Pre-Market <span class="count">4</span></summary>
-      <div class="card-body">
+  </section>
+
+  <section class="batch" id="crypto-pm" data-cat="crypto">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-crypto">crypto</span> crypto-pm</p>
+      <h2>Evening Crypto</h2>
+    </div>
+
+    
+    <div class="panel">
+      <p class="panel-label mono">★ top stories across your newsletters</p>
+      
+      <article class="story">
+        <h3>Trezor data breach exposes customer information</h3>
+        <ul class="dots"><li>Trezor (maker of hardware wallets — specialized offline devices that store cryptocurrency private keys) disclosed a breach at its shipping partner, exposing customer data through August 8.</li><li>Nearly 14,000 users were affected, with names/shipping details potentially in attackers' hands.</li><li>Trezor confirmed the devices themselves and seed backups were untouched; the risk is targeted phishing and social engineering.</li><li>Incident shows security-focused vendors remain vulnerable through third-party supply-chain partners.</li></ul>
         
-        <h4>1. Weak wage growth squeezes spending power</h4>
-        <ul><li>Slowing wage growth is cutting household purchasing power while prices stay elevated, a risk to corporate revenues and stock valuations.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">Decrypt Daily Hash</span> The exposure window overlapped exactly with the $15B Bitcoin migration after the Coldcard exploit, raising questions about whether stolen data enabled targeted theft.</p>
+          
+          <p><span class="mono angle-src">Bitcoin Magazine</span> Advises affected users to monitor accounts and add protective measures, framing it as proof that dedicated storage devices aren't risk-free.</p>
+          
+        </div>
         
-        <h4>2. Social Security's 2027 COLA projected highest in four years</h4>
-        <ul><li>Latest estimates put the 2027 cost-of-living adjustment (COLA, the annual benefit increase tied to inflation) at its highest since 2023.</li></ul>
-        
-        <h4>3. Applied Materials earnings in focus</h4>
-        <ul><li>Options pricing implies a sizable move in Applied Materials shares after its results.</li></ul>
-        
-        <h4>4. Retirement savings gap</h4>
-        <ul><li>Data show most American workers are unlikely to reach $1 million in retirement accounts by retirement age.</li></ul>
-        
+        <p class="chips"><span class="chip mono">Decrypt Daily Hash</span><span class="chip mono">Bitcoin Magazine</span></p>
+      </article>
+      
+    </div>
+    
+
+    
+    
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Decrypt Daily Hash</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>$15 billion in Bitcoin moved to safety after Coldcard exploit</h4>
+              <ul class="dots"><li>An estimated $15 billion in BTC was relocated following a vulnerability in Coldcard hardware wallets; 2,100 BTC was actually stolen.</li><li>233,000 BTC exited long-term holder wallets and 22,000 BTC moved to exchanges, signaling a broad custody rethink.</li><li>Casa CEO Nick Neuman argued the episode proves distributed self-custody (spreading assets across multiple locations or methods to avoid a single point of failure) still works.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Fidelity files to let its Ethereum ETF stake up to 100% of holdings</h4>
+              <ul class="dots"><li>Fidelity asked the SEC to allow FETH to stake (lock up crypto to help validate network transactions in exchange for rewards) as much as 100% of its Ethereum.</li><li>Staking rewards would be paid out to shareholders as quarterly cash distributions, similar to a dividend.</li><li>The filing extends institutional crypto products from pure price exposure into yield-bearing strategies.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Metaplanet denies $320M Bitcoin sale, launches BitBonds</h4>
+              <ul class="dots"><li>Metaplanet said a 5,014 BTC transfer (~$320 million) was a custody move, not a sale.</li><li>The Japanese treasury company simultaneously launched BitBonds, a new fixed-rate debt program to fund Bitcoin purchases.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Bitcoin Magazine</span>
+          <span class="ncard-count mono">2</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>White House to host crypto executives next week</h4>
+              <ul class="dots"><li>The administration will convene digital asset industry leaders, signaling continued government engagement with crypto policy.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>JPMorgan and UBS deepen Bitcoin ETF exposure</h4>
+              <ul class="dots"><li>JPMorgan's position in BlackRock's spot Bitcoin ETF (a fund tracking Bitcoin's price so investors get exposure without holding the coin) reached $610 million.</li><li>UBS also increased its Bitcoin exposure, suggesting coordinated institutional entry that normalizes crypto as an asset class for legacy banks.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+    </div>
+    
+
+    
+    
+    
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">4</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist"><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZZzMF6POpOXpi0zUupVS9l6zmWZ-2o6CQ9J49ArDqWDRgp-Rf9nAQmE_foNidKfjpbTmvh5J9PksSxKq70e1UFUMCEaT1t3dSWLEtmOTmKd0WYA4DzkT_Ko10mmjRZiHMg6ukUxCHq7cethvxO9DMaPYvBVEVh4iBCBnPl4t_1d-GRK9_1_aqAy1itxyeMc7LeJVHCXH0uKWdMP7zFqMw0Af6SVZRvY32-ve_smOM5VwNrsZEGD5a2d81_AvtL2LJLzOyBcpGaI7I-dS71v8lPEV-NR2mZOO2lGDqW_SYMfJ/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h12/h001.nrdu92h-olqxxSrydh1DECifoRPrlIbG5e8gGKxL4nQ" rel="noopener">After Coldcard Was Hacked, $15 Billion in Bitcoin Moved to Safety</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZRU0tOthNeKkVuRvMXVFScoRObWKR0YaYV8XsdFp-zwcadk04Yba6ohrYwkCT-RxxereKQjdqV6vvJ39NCw7Sd_NF-oN0l478NoTG273vwwIEIPtJkQr6uHW_wDc_YRXOtaw0hb90zG-LrOGbQJcNDporsCMCtd0PD-8wMlIaCNS1siXT5g3IUg33PhJq0eLGE5oOK3b2J7zbzCSp54fu0Elt0uCiu7Q7LrYZoWmqSmg-mvl-AoJcLlVUfgqUykcdl_yzdrgbGJ6ZRCEjpymXHNKDpq4ZH0HPLojGQYX2x2K/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h18/h001.KEFe1W_Ho4u90jtBtlw5DzveS70jGNqnFi-MDOo5hg" rel="noopener">Trezor Customer Data Exposed in Shipping Partner Breach</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZaA0dzQkJ0PmlnwaewIZNiRz5ZknBNIsVhg8NlIM-OUbK3nsc-KlbMZpKVhk8FFjNmxfvOV5tWaxOpQa1X1sIcsVwvpY6z6O4iyEfuaEguPq4z0CIVV9iUhC1-m63y5RuIdgbKz4X03MJM8DJx26oY6GuOk0s8YOJOohLAcipoPKGaHYVNnexn5Yh7NJwa-ARzMnsNLyP1b-coQ6_QZBCLzGKemwg1FnUao9jHrDFEaQ-7OGLK3SuFWd5QQjUOOcdB_5opZrX0FPBwhJWM3zE3rRuuvWOBgSOJkSARQ1p2U6/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h21/h001.7irHRLVuLicu5oybfekUuUCm5d-BMvJi7i_aYeQFqww" rel="noopener">Fidelity Files to Let Its Ethereum ETF Stake and Pay Investors</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZV9lgz8eAG3tjrzXX74edV4rdDrqcCZJ_O06HJSwQb8JJetOPC1owLE3OnWEc5Kx-rLSyP11a6WKPSgu7upUrrgd4VZyIKvl-BSFZdCn4iuSQFg5Zr8NpbkAttEnGXkzpVSvTzBYJmm6Y8cb-nhc0q7dnZLsv8cZAf3y_HLFWAxH52WCQK6j9DWppnExcS_f8uqXJWd4Mlb6JPzxauUrWJTdoS06Mtaje-TZf-KltnqXg0aRm2Fy2EV2gUosSIVuMV8Ip3epSWkdPjidGLHX6jhW5FwmWWWV4nmTAMoEynP_/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h15/h001.d_OAgw-6ecXVkZVn_Fn1zdff_xXot6TpOqbaog-qn7c" rel="noopener">Metaplanet Denies Selling $320M in Bitcoin as Firm Launches BitBonds</a></li></ul>
       </div>
     </details>
     
-  </div>
-  
+  </section>
 
-  
-  
-  
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul><li><a href="https://seekingalpha.com/news/4632088-paramount-skydance-willing-to-sell-cnn-to-clinch-warner-bros-merger" rel="noopener">Paramount Skydance willing to sell CNN to clinch Warner Bros. merger</a></li><li><a href="https://seekingalpha.com/news/4631534-la-lakers-sold-for-12b-in-an-eye-popping-deal-msgs-rallies" rel="noopener">LA Lakers sold for $12.5B in eye-popping deal, MSGS rallies</a></li><li><a href="https://seekingalpha.com/news/4632085-south-korea-kospi-technical-bull-market" rel="noopener">South Korea's KOSPI technical bull market</a></li><li><a href="https://seekingalpha.com/news/4631801-paramount-has-spoken-about-creating-board-to-ensure-cnns-independence" rel="noopener">Paramount has spoken about creating board to ensure CNN's independence</a></li><li><a href="https://seekingalpha.com/news/4631562-goldman-jpmorgan-investco-test-blockchain-for-day-to-day-trading" rel="noopener">Goldman, JPMorgan, Investec test blockchain for day-to-day trading</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/1f0dca59cfa6dc625c81e513df67b238ff15ee20cb8dee5006d0d9fc26a84a438fc8ccdfeb6f349389bc80e63f8f9939e526dc5c12f62e629e02748eaf087c66735870d316afd8ecc5985dbac41f6d450ccbb2051056dc467a04d5dd19d7714444609c6d64efd2aa9815bc6de6fa2d22ca58afadafa655a683ab1ef1f0147959a366da1878d874f837bde60a740a44b610f9621e43fcc9331b629e5ee109447e/2872b05e897ee9f5" rel="noopener">Inflation data and market reaction</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/6ddf980d7a8c3628c0cfb67ebaa20f6c0e3971d465ec37f9bfa5ba17dcd8493bf728885113c79bef5ae0bfcbab8ed6326ad3d7d7d7f72674c5f3729f325bf7ab5241cd19a5438deb1188e16a7ac8ac8fcd3400f4d46b3467d273844d5349710ea35e229bba6b793ad87b2436a2cb6171804cf5bf51a54ebefbb98f4036798b131835df587decd06f747f3768e52360ea15293f4df32c56fb867b9c03fa8f4668/a1c5dbfac40e9c75" rel="noopener">CoreWeave Q2 earnings and revenue growth</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/8a4de16311210090cc720f781064cc3bf41c565dbee3e74d89a0f595fee074dc322d1dc2f8e14a9899076c759af6cab694ab0946b2e731fac9b0d8b9448b636405785afc2fbf612075123d8d7b6f552cf86f484ffe9f9bd19cf90add6e5bf4211dbd580f050fba78324bbf8428a2be641a22b1dbf5c78263129a3efc96acc46937937b43c1cd5256a7266f75c2dd70baed6da6eb1116d76342bb4a123d126c87/b0e0bc7c23cd198b" rel="noopener">Nebius revenue surge and AI cloud growth</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/ad18af19eb1236ab64d306e780f2a5c8c4838a227398a3a24e954488e6c283ddbef012d49fae84f4847dc868f593eda75b1494c2859f5502f0a7812dee4c1ed388c5f67bfa4bc5ac0085e1df2ba77c5031e021b2a37160c658f2cc8ec2b221ac4c9d8e6861801c230c83b63c05925bb1ef53b03ca9c2801be7d6667afb1efb3d755ea374673815b606a0adf3019d7dbe7f6ed386551706ee28de53f59a825dae/ad4c4e6deb4dedfb" rel="noopener">Super Micro Computer fiscal 2027 guidance</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/da70a1910531a9806acdf87146fd796a6e058ec8e10b80979058f5e5e4f9eb119948062cd3bcbd78b17d412121b58d28ab5fe9668e9d3b91338e5588d5b3b4c1b9335946ee3c816215892dba183835afcf05387f7830693ad71d6728e18e3a831b7268477bc4bfc1482b5b14b80b94aef5f4d42b546b2fd1a22a7af34614a884069913971996a099e0c0f7f360f83cc71f15f9ab8f3ad123ed0cc5153a2961b8/04b59da03c44015d" rel="noopener">Read online version</a></li><li><a href="https://e.newsletters.yahoo.net/click?PUMZubOzugGmoQ17koFoUSFoyh4WCHQ2OUB3Mewfr64984f6b" rel="noopener">July inflation report and Fed rate expectations</a></li><li><a href="https://e.newsletters.yahoo.net/click?PUMZubOzugGmoQ17koFoUSB-VjkKmcJJobD2lvw7p5c1fa284" rel="noopener">Gasoline prices hit August record high</a></li></ul></div>
-  </details>
-  
-</section>
+  <section class="batch" id="ai-pm" data-cat="ai">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-ai">ai</span> ai-pm</p>
+      <h2>Evening AI</h2>
+    </div>
 
-<section class="batch" id="crypto-am" data-cat="crypto">
-  <h2><span class="badge badge-crypto">crypto</span> Morning Crypto</h2>
-
-  
-
-  
-  
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
     
-    <details class="newsletter-card">
-      <summary>CMC Spotlight <span class="count">1</span></summary>
-      <div class="card-body">
+    <div class="panel">
+      <p class="panel-label mono">★ top stories across your newsletters</p>
+      
+      <article class="story">
+        <h3>Google ships Gemini 3.7 Flash three weeks after 3.6, while Gemini 3.5 Pro reportedly dies</h3>
+        <ul class="dots"><li>Gemini 3.7 Flash launched today at cheaper introductory pricing, replacing Gemini 3.6 Flash released just three weeks earlier.</li><li>Gains focus on software engineering benchmarks, complex document processing, and workflow automation.</li><li>It is an incremental refresh, not the flagship Gemini 3.5 Pro launch originally promised for June.</li><li>Internal sources say Gemini 3.5 Pro is now shelved in favor of a scaled-up Gemini 4 — a riskier bet driven by schedule slippage and pressure from Grok and Anthropic.</li></ul>
         
-        <h4>1. Goldman Sachs buys into a Bitcoin ETF provider</h4>
-        <ul><li>Goldman Sachs acquired a significant stake in a Bitcoin ETF (Exchange-Traded Fund — a fund that holds Bitcoin and trades on a stock exchange like an ordinary share).</li><li>The move reverses years of traditional-finance skepticism and treats Bitcoin ETFs as legitimate investment products.</li><li>Regulatory approval of Bitcoin ETFs removed a key obstacle for institutional capital by providing safer custody and easier compliance.</li><li>Banks and asset managers can now offer Bitcoin exposure to clients without building their own crypto trading infrastructure.</li><li>Goldman's entry may prompt peer firms to follow, potentially unlocking billions in new inflows and adding buying pressure to Bitcoin's price.</li></ul>
+        <div class="angles">
+          
+          <p><span class="mono angle-src">There's An AI For That (TAAFT)</span> Gemini 3.7 Flash now powers Spark, automatically updating emails and documents.</p>
+          
+          <p><span class="mono angle-src">AI Daily Brief</span> Co-founder Sergey Brin has become the AI team's key driver after the Hassabis/Dean departures, gained resource-allocation power aimed at recursive self-improvement (AI systems improving their own successors), and moved model training from DeepMind's London office to Mountain View.</p>
+          
+        </div>
         
+        <p class="chips"><span class="chip mono">Everyday AI</span><span class="chip mono">There's An AI For That (TAAFT)</span><span class="chip mono">AI Daily Brief</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>OpenAI's GPT-5.6 Sol gets a 14x-faster 'Ultrafast' tier with Cerebras</h3>
+        <ul class="dots"><li>The API-only Ultrafast tier runs GPT-5.6 Sol at up to 750 tokens per second — roughly 14x standard speed (a token is a word-fragment unit models read and generate).</li><li>Cerebras, a chipmaker specializing in very large AI-inference chips, supplies the hardware.</li><li>Aimed at voice systems, customer support, coding agents, financial analysis, and security work needing near-instant responses.</li><li>Overnight research and incident-analysis jobs now finish within a workday, allowing multiple same-day iterations, with quality reportedly intact.</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">There's An AI For That (TAAFT)</span> Frames it as part of an industry-wide speed war where more requests per dollar let teams hit deadlines without downgrading to weaker models.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">Everyday AI</span><span class="chip mono">There's An AI For That (TAAFT)</span></p>
+      </article>
+      
+      <article class="story">
+        <h3>DeepSeek V4-Pro: adjustable reasoning effort and contested benchmarks</h3>
+        <ul class="dots"><li>V4-Pro lets users dial thinking effort per task (inference compute — the time a model spends reasoning before answering), so simple requests stay fast and hard ones get full compute.</li><li>Leaked benchmarks claimed near-parity with Fable 5, including 87.9% on Terminal Bench 2.1.</li><li>Independent testing by Artificial Analysis scored it far lower (53), leaving traction dependent on price.</li><li>Pricing of $1.32/$3.96 per million tokens is about one-twelfth of Fable 5's cost.</li></ul>
+        
+        <div class="angles">
+          
+          <p><span class="mono angle-src">There's An AI For That (TAAFT)</span> Argues open Chinese models have quietly taken over middle-tier work — stronger than cheap models, cheaper than flagships, and good enough for ~70% of tasks.</p>
+          
+        </div>
+        
+        <p class="chips"><span class="chip mono">There's An AI For That (TAAFT)</span><span class="chip mono">AI Daily Brief</span></p>
+      </article>
+      
+    </div>
+    
+
+    
+    
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">Everyday AI</span>
+          <span class="ncard-count mono">4</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>OpenAI loses CRO Denise Dresser ahead of expected IPO</h4>
+              <ul class="dots"><li>Dresser departed less than a year after joining, following longtime executive Brad Lightcap's recent exit.</li><li>Enterprise sales now go to Dali Rajic, former president and COO of cybersecurity firm Wiz.</li><li>She will stay briefly to support customer transition, as OpenAI preps a possible IPO while fighting Anthropic for enterprise accounts.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>IBM embeds GPT-5.6 and ChatGPT Work into enterprise consulting</h4>
+              <ul class="dots"><li>Nine-figure budget behind a dedicated OpenAI practice staffed by thousands of IBM consultants.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Anthropic's Chrome integration syncs Claude Cowork across devices</h4>
+              <ul class="dots"><li>Users can carry tasks and conversation context from desktop to mobile mid-session.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>The year ahead: from reactive chat to proactive overnight agents</h4>
+              <ul class="dots"><li>Reactive prompting fades as agents (AI that executes multi-step work autonomously) complete deliverables overnight for morning review and redirection.</li><li>Teams should convert winning AI workflows into transferable skills rather than one-off wins, to avoid vendor lock-in.</li><li>Voice becomes the default control method and multiplayer collaborative workspaces replace isolated single chats.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">There's An AI For That (TAAFT)</span>
+          <span class="ncard-count mono">3</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>You're probably overpaying: model routing cuts costs 75%</h4>
+              <ul class="dots"><li>Routing engines (like Finest) score each request against your quality bar and pick the cheapest model that clears it, saving ~75% per task versus always using premium models.</li><li>Glean's approach: index your own files first so fewer queries leave the building, and send only hard problems to top-tier models — same answers at a quarter of the spend.</li><li>New playbook: simple work to cheap open models, hard work to the frontier, with routing rather than habit deciding.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Pixel Watch 5 runs Gemini fully offline</h4>
+              <ul class="dots"><li>Handles timers, workouts, and calendar lookups on-wrist with no phone connection or signal.</li><li>Billed as the first major consumer device running a large language model entirely locally, opening an always-on, privacy-first wearable category.</li><li>Proactive features surface boarding passes when location matches an airport, dinner plans from calendar, and countdowns on your commute.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Survey: what 1,106 US workers actually hand to AI</h4>
+              <ul class="dots"><li>Workers delegate whole task categories to AI rather than to colleagues: research summaries, email drafts, calendar management, document updates.</li><li>Most handoffs are async work needing no real-time human judgment — AI is absorbing delegation that used to go to junior staff or assistants.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">AI Daily Brief</span>
+          <span class="ncard-count mono">6</span>
+        </summary>
+        <div class="ncard-body">
+          
+          <div class="nitem">
+            <span class="nidx mono">01</span>
+            <div>
+              <h4>Cognition seeks $40B valuation on $1B revenue run rate</h4>
+              <ul class="dots"><li>Valuation target is up 50% in three months from $26B, when it raised $1B; revenue has doubled to a $1B annualized run rate.</li><li>It is seeking another $1B, hinting at either heavy cash burn or extraordinary coding-agent demand.</li><li>SpaceX's $60B all-stock buy of Cursor (at ~$2B revenue) suggests hyperscalers could pre-empt a raise with $60–100B stock offers.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">02</span>
+            <div>
+              <h4>Grok 4.6 puts xAI back in the frontier race</h4>
+              <ul class="dots"><li>Intelligence Index rose to 61 from 56, tying GPT-5.6 Sol and trailing Fable 5 by 1–2 points, with claimed better agentic economic performance (GDP-Val).</li><li>Costs 32% less than GPT-5.6 Sol and 73% less than Fable 5 per completed task ($0.84 per benchmark run) on unchanged $2/$6 per-million-token pricing.</li><li>Bug-finding improved to 27 of 105 (from 17 in 4.5), though some reviewers report incomplete work and defensive responses to errors.</li><li>Grok 4.7 is promised in 3–4 weeks with SpaceX company data in training; Musk claims it will beat all models on real-world engineering.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">03</span>
+            <div>
+              <h4>Neocloud earnings confirm the AI buildout continues</h4>
+              <ul class="dots"><li>CoreWeave revenue doubled to $2.6B per quarter with a $104B backlog (up $25B since June); cash burn also doubled to $5.7B.</li><li>Nebius grew revenue 454% to $582M, beat EPS forecasts by 83%, and cleared Blackwell GPU auctions 15% above prior Hopper records.</li><li>Stocks jumped (CoreWeave +19%, Nebius +34%), suggesting hyperscalers are buying overflow 'neocloud' capacity (rented GPU compute used when internal data centers fill) at premium prices.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">04</span>
+            <div>
+              <h4>Samsung uses Claude Code for 3x faster chip design verification</h4>
+              <ul class="dots"><li>System-on-chip verification fell from 3 months to 2 days, and a second-year engineer finished a month-long task in one day.</li><li>Gains stay confined to narrow high-complexity tasks — a 'jagged frontier' (AI is superhuman at some tasks and weak at adjacent ones) rather than whole-pipeline improvement.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">05</span>
+            <div>
+              <h4>White House to extend AI safety testing to open-source models</h4>
+              <ul class="dots"><li>The original framework covered only frontier proprietary models; the administration now plans to include open models once they hit GPT-5.6/Mythos capability levels.</li><li>Tension persists between Trump's preference for a voluntary framework (to avoid helping China) and the safety faction pushing formal rules, risking a two-tier system that penalizes untested open weights.</li></ul>
+            </div>
+          </div>
+          
+          <div class="nitem">
+            <span class="nidx mono">06</span>
+            <div>
+              <h4>Tencent triples AI infrastructure spending</h4>
+              <ul class="dots"><li>Spent $7.8B on AI infrastructure last quarter, a 3x increase but still 75% below Meta's $31.9B.</li><li>President Martin Lau is prioritizing internal compute over monetizing capacity through external sales.</li></ul>
+            </div>
+          </div>
+          
+        </div>
+      </details>
+      
+    </div>
+    
+
+    
+    
+    
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">12</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist"><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXoksXiI_dJwB6Sbn-arMycjLlPW0r8NSBOrY0c_OsNSM-_asCVyO1U9VNSZPbHrffgQIyoB9iaRR4pF3cuBToJvVjz9rcbxnq7hdAOXihpjEqrhCu6TyQJx8bCMJzolgavFFgb4h0tpFayKKlB487y6BNncxGs3cDULG2jFZdRqe9-xqyu-xPWFn3RTjQUwj89Bq_uHF-TtyONkL31PaTWtW3Vt_q2sB2A9GlCPPU3PQ5xpHjaIeKew-E2tgUmTYQcgJrn4vxpdy6eKX2nCITMGK613m-QeVX7SFAuACJLtoGt1oKICWK-6M_Yn71bR-IPO-7w_YJrcoCd45C1bDJR_hGUI5Ghqprv5WHFY24Ogdunx0I4H3lDtkII4fopxsdYqn_K-jh19loSWtigc_7Hy3OtkJikYnF9FHCyRL-lPG/4t5/m0OBzWrMRKW74nQl5AeHCA/h8/h001.cw9mX4xAiAW_VG4gplNckgMYEy5go9qSmx6cFXuiwb8" rel="noopener">Watch/listen to 19 AI predictions for next 12 months</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.vyB_Vbt7AWbLkpMfRqnXJzA9kBqi4tWR3MO-t06F_5uL4bCtQFac9Nra3RgG0QI7bq1UMbSRPkrxvMRX9rX5exn_5JybtQo2jYMaMdfOfNePQUq7t6t_nUp9Ipe47MrygUiEfyybgxeWnogyhZ_SQ_PJh7WkefbiymN4s5dUZYTr1kqm4FTtWBfzYFE1rGbpVlceAgWT5KgpkySbQkJs_HoPs3dt6gsJeKCdL-_z3rPOsmdmtEVvdHpXOu3MuK94hDga_1POUXuANJmVMe1VfST8uYnHFIgmnp23O5YQSBGXdaNAhrGQqj8gTLJizIca1433B-ZMnSkflZInvfYUPNaaUYAXm93PBF1Q432amSw/4t5/m0OBzWrMRKW74nQl5AeHCA/h37/h001.dBcX33y4FPgR9xPy8-svNKFhiahkMEbQ0iHCNd9uCUw" rel="noopener">Read about OpenAI-IBM partnership embedding GPT-5.6 in enterprise consulting</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QkwruxKioV972OfDWXYaT-ECSq02Susz7HePdHQcQT6nx47_ZZa4j99oAZXyl4x4myDZczd4gzoV4tgw5t0cQM7NZqJPHntpvTdv69GeTKGsoJW7CUZRtgzeRBrBY0iJ4YoTpzaSgmttDEYZxuAqpsykkZYnKlRp5onIbWlHW1BTxwf0PWDC2uaygZZrFNcxAe2-UIIBz86W-PXUgkdJUXlhOENqONPQZ9XUTLgC7ToGyXxIYPecIMDnbdZ5dmBfcyFM1JK6exgtjp_Dah-HoZXxnhp6AmuN06O997GRZJYk-m61VCTDnwLTxOLRagt2DQbNBNWkHNPuX-YhhjoB9XLMRpohg6PacHf9C8DEAdJn_gmeHP5Orm3DeKFmxYcEFZ6YlRGRrHhyUyUVamJ7yM0cY_PmpGKX0hAAsD8lQ-Q/4t5/m0OBzWrMRKW74nQl5AeHCA/h38/h001.8P25LwyMFfJq-JDA8aGKzpFxOxvIxTsKD2DML2mxZsU" rel="noopener">Learn about Google's Gemini 3.7 Flash release</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.MmiPG1smHqjG5zPZRGZbvDDeo-tKiCZYVbzqUtTPpli_2jmFML8b3f6b5Gma6F_YoauJEhS1jKmdPI2FYbjAjfLcoj5vXvwcU1Cc_AuK6sSM9QIpNF2Q9jxLYflHw2DW8VaI-X_40aIx0rcO5CUjL036ZyviiFID_QTMsBAM1V4-cvz3gCs1AvjduyJE-DxcuZYksVORwl8-Ny1RFnDdTywuzsXs_sSoJursKMsWe8Rpx5fgVCsq81dbBLCrsIo7Me5s9oAjXL8IADMwakaEw8s_n8y-lv2SMgF2X3vb4jo85P2IlGAV07c3izsTPJb61wQhwxbnEQ7rCUIL7M5edRYWP8mszXG0KY44J3mxC1Da6FozwHCMNYHE_bjtfSCGYd1Aqlh9GOeYuG0s05kYQpkV-PiMS-1XTgpIq53zd0I/4t5/m0OBzWrMRKW74nQl5AeHCA/h41/h001.NAssy2uXhNjHbkilKpwoxONdW8zMytu_Im1wdN-hCpQ" rel="noopener">Explore OpenAI GPT-5.6 Sol Ultrafast tier with Cerebras</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.eA2mNrWR0oOwlf6_w-jFEKBVD8YExcJbmw-42A5TU3FiFghIH29b-hvwYPupCVoTsLqnkapqypWmeYPX319dgRgLuyKNKphjvC1RV2FH7Ric3dp2gGEQVzSvwTN31mIxKaAmZb7csAjzYP7SfHfh8Xvmt__5HNIZ1ft7z66206VZM-WZB4yeiwOlt2Bd4RQ4W7c_bCMGQAEJHd_TWwSuZmtD2llMzHIU8yW2GQ7B_fLIZVtQlLbd7TU7P-sDnFxLF0gi45EDC5VAPJdToJ__dMFST3YRiiQfL-T5cCs-q4nOz1hiXEC68SYYnDHEEgCPJAakTVEQRTkpwgocbGzlD37j473_84TDZmOML30YoUY/4t5/m0OBzWrMRKW74nQl5AeHCA/h6/h001.Pa3tJ86zSIDHsihO9fxRV5dRg0t3wO_zYUjvLmLceYU" rel="noopener">Subscribe to Everyday AI Start Here Series on Spotify</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7rMoviV65-al5K_jhRN5GwvW6r60_Id99NX1mdylw_fO7SCAC0iK7_Vf5o6G6WzUYHUZ7WkMITLTSvHnfAYMOWZyxdnumEBVe1SGjP7StQxVISpI_mXYw1Uh0SYu9QClalf6AJ3zH4DeXBJPjnk8kwGzJbb5_AfYmTjn05MKpb0Bhk-p5ia6ykU_aMY403cTNv00Y_AQmpM0damaqWACs6_vT_MoTMf4OdNNoDPrEwZjI15wX9E76bA9Fi1zIYEfoCwUGLDU3JYTRxslY0DVPuk/4t5/sdqBeFeVRa2j8XU39OlVIA/h12/h001.DwL4SvGA6-eK6v8cleFBgtVKM9Gk" rel="noopener">Every AI Model Explained</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.hfhhuTgKEe71DwIINsNEyZWEp0EZ7ybXapsv3XMV-LUfnN1J6eI6M0KN7WckvPxoE824ABSJNDbGGPcm4Qvl0MathbM1W1ThmzglvLtV7E0NtdxzWck5-hNxpXk3PGf0JEF2_GNj2O7GYQ--4iDAwXeQeEg90bfnJfQNON2nzR_PdssbNLrI4Sl2_31UKlhcHmmUspDQNnwXr1g6KF1BYlh4KTuNqgBJPyaLGgOnHx-RT2SLm2LxZClMGXufzjYqskZjG94H0y52veQ4dpaWXhpEc3t_FxZXghCJDQbEjBYW873J0FpCzxtw5KcSsXLx/4t5/sdqBeFeVRa2j8XU39OlVIA/h13/h001.aFA5lUoWpr-_JfSSCiXUIQwa4anKjqn0DMs7n_q5VT4" rel="noopener">What Workers Quietly Hand to AI</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0AlcB82sa7WpPyBypDdFJLx4aY967Q0RHUrIZ3315L71uBHbawHtDBgJk7Ze0jl0_X2M8UtDXzdbmlx1yX6RWpbdZP7_tMqw40ELDhJRWkOM1DakNet0mwmPcL8Oms94BGbINLsQuly7AseUYDuaUQUQuKHWLOwvHQzzqewz84efPusXCMDcrzOsTspLTSzF4ouqIt3DZIzX4T30iA3fNaWrvp6E64SDLJe5EaRzDNOGJkCPQUzGYhXogDn0z7I3XYNqDo1JIzLhtsakMvrao20JQ_zPirOVjfsUPNLN62gy4lncr_ehprrFViFg8KCFRWST_7UcroyBH8Tq8XRpn-s/4t5/sdqBeFeVRa2j8XU39OlVIA/h6/h001.OWKDm_0DsqN6tkGl1hvQ-ekTXtQwAUNB0ojVWhjDTpk" rel="noopener">Gemini 3.7 Flash</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.SeZcZ2kldk7Osi4slNtvSbg4fHE3D6_GwDJKfp_OmSFhy66IWqVUBFa92gcLzoNDb18Mma2xFi0o3JhTiflCw3i73xixxHrZCcdAddP_UUJGXS-qPoUBMIkcAPgp_XxsGD40b_BEDFf935f5qC0VDX5MQoU7IP1USpEhARwx1Vqr6judo1_PookW1RftqZ5Xe1sBgd5eZEbSAMqmwa8ehNFxCnzeFR5yKbKmysgwi2hF33q8fB2DpE9Fry-0QTVlfFMtsdf9m3YqvtaZyZsXjodTPuGiHZIAde2c2La-Ttk/4t5/sdqBeFeVRa2j8XU39OlVIA/h8/h001.3-dOEG67X752obwSOCi8Am7ZsgzwCaxbe4085o2T1TU" rel="noopener">OpenAI's Best Model Gets 14x Faster</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.RUBZ4nmpws8F7fbywsQK-qL5XmEJI4P7qTAFSNaSvWJu5z6Q_56NZz7lOIUuV7SsZ4wW42CbHaayIjBIvsHY2h5cregOZ2Hyy3RnC-3O9vazoAvxEP7DUdkdGMZC_eCQjQjx3pWQ4XBhlyXkX0EgUKmBuVVQf07_1MrCOa5pYzxlUVVRfHktIte-yyPyI6exdOBg22G7n-RsT3jj8vE04IMzZFRVBYxrjDp6AXmeg_Ys5loFh9VkqmXUZOZNpgdqw0JDzdpE6rlkY-7WG0k_Xg/4t5/sdqBeFeVRa2j8XU39OlVIA/h24/h001.FZIoJzxdLLMGwVFkio34LTCB17Ua6AcV7bebDAF1saU" rel="noopener">Pixel Watch 5 runs Gemini with no phone or signal</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/748b62e956e1b635ca24a24ed1f3442a9c4dfaab433d159589f0edc86d9a7840a012d1214f274f7eb96c9ee0a0d1daeeb2bf51924f85994535ae3327ae5d79d30b89e5ea238a7c67d10c8b5fca3fd67be8356f71de828022721e953af700b2b81684ca66c2385c6e9c038753c0c3c7f0b5ca7ccca7d449290bed22b914b2cc329ca9172ab09d44c994f0cda07c9a9584abfee4f6260a9b7abbfe393a76408069/54bdad2155be824b" rel="noopener">AI Startup Cognition in New Funding Talks at $40 Billion Value</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/814702892fcd523ec55ecf889375f4858b4dc4fcd0560251344e4a19eb0913f1b2564480af88a18c4e22e47ac46c48db417db406398153479025ab4a19ec3269f7da04789ce54acd6a59e4f4962bcbc09f135ef2703a669178ea8dcb224b706ffde07161a46de882f1e6d45444480eb5301802028da3ab416285692139187f74efd0f988cc5b760d4d940baad3ed7b77c72a7c335db91536a8ed4e9207ce220e/bfd7740e0e41d324" rel="noopener">Nebius, CoreWeave Are Cashing In on Soaring AI Compute Prices</a></li></ul>
       </div>
     </details>
     
-    <details class="newsletter-card">
-      <summary>TLDR Crypto <span class="count">5</span></summary>
-      <div class="card-body">
-        
-        <h4>1. CFTC and SEC sue Goliath Ventures over $397M DeFi Ponzi scheme</h4>
-        <ul><li>The scheme ran November 2022–February 2026 across 1,600 customers, promising 36% annual yields on Bitcoin and Ethereum via DEX liquidity pools (automated trading protocols where users deposit assets to earn a share of trading fees).</li><li>No capital was ever deposited into any DeFi protocol; account statements were fabricated.</li><li>Funds were diverted as $174M in staff recruiting commissions, $87M in Ponzi payments to existing customers, and $48M to CEO Christopher Delgado for real estate, vehicles, and jewelry.</li><li>Delgado pleaded guilty in June to wire fraud conspiracy and money laundering; a bankruptcy receiver was appointed in March 2026.</li><li>The same-day dual civil filing shows CFTC Chairman Michael Selig asserting parallel jurisdiction alongside the SEC, signaling a turf expansion in crypto fraud enforcement.</li></ul>
-        
-        <h4>2. Centralized crypto firms capture 8.5x more revenue than on-chain protocols</h4>
-        <ul><li>On-chain protocols generated $8B of revenue in 2025 versus $60–100B for centralized players such as exchanges and stablecoin issuers.</li><li>That gap implies an on-chain market cap of roughly $168B against ~$840B for centralized crypto — about the valuation of a single AI lab.</li><li>On-chain revenue is led by Layer 1/Layer 2 blockchains (L1 is the base chain that settles transactions; L2 bundles transactions off the base chain to cut fees) at 49%.</li><li>Off-chain revenue is dominated by exchanges and brokers (66%) and stablecoin issuers (19%).</li><li>Centralized players win on proximity to users and abstraction of complexity, pushing adoption to Coinbase, Robinhood, and Binance over self-custodial alternatives.</li></ul>
-        
-        <h4>3. Tokenized stocks become the next battleground as traditional exchanges pile in</h4>
-        <ul><li>The tokenized stock market hit $1.9B, up 6.5x since January 2025, while tokenized Treasuries stalled at $15B.</li><li>The Linked Security structure (DeFi-composable tokens with no voting rights, sold only to non-US investors) dominates via Ondo (45.9%, $851M) and xStocks (26%, $482M).</li><li>DTCC launched limited QQQ/SPY tokenization on July 15 after SEC approval; Nasdaq won a rule-change approval in March 2026 and is building a permissionless gateway with Kraken parent Payward; NYSE filed a rule change plus an MOU with Securitize.</li><li>Coinbase announced a 1:1 stock-backed token for non-US customers but has not launched it.</li><li>A January 2026 SEC taxonomy of four structural models gave the sector its regulatory framework and triggered incumbent competition.</li></ul>
-        
-        <h4>4. Neutrl's carry trade earns yield without the crypto cycle</h4>
-        <ul><li>Neutrl buys locked private company shares at a 15% discount and shorts an equity perpetual (a derivative contract with no expiry, where longs and shorts exchange periodic 'funding' payments) on the same name, hedging direction from day one.</li><li>Funding on the short leg averaged 10.9% annualized from May–July 2026, contributing to roughly 20.5 percentage points of total return over a six-month hold.</li><li>Traditional delta-neutral books (offsetting long and short positions with no net price exposure) earned least as altcoin volume fell 30% in H1 2026.</li><li>Boros protocol turns funding rates into standalone assets via Yield Units; a 4.03-point gap between HYPE fixed rates on Hyperliquid (7.93%) and Bybit (3.89%) locks in 40.30% APR at 10x leverage with no directional risk.</li></ul>
-        
-        <h4>5. FlightAware drops Kalshi lawsuit one day after filing</h4>
-        <ul><li>The suit targeted prediction market Kalshi over unauthorized use of flight data in flight-cancellation markets.</li><li>The one-day withdrawal suggests a private settlement was reached.</li></ul>
-        
-      </div>
-    </details>
-    
-  </div>
-  
-
-  
-  
-  
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul><li><a href="https://threadreaderapp.com/thread/2087269798862364860.html" rel="noopener">Who actually captures value in crypto</a></li><li><a href="https://links.tldrnewsletter.com/02Nmdh" rel="noopener">Tokenized Stocks: The Next Battleground</a></li><li><a href="https://thedefiant.io/news/regulation/cftc-sues-goliath-ventures-over-alleged-397m-defi-liquidity-pool-ponzi" rel="noopener">CFTC Sues Goliath Ventures Over Alleged $397M DeFi Liquidity Pool Ponzi</a></li><li><a href="https://links.tldrnewsletter.com/IdmKoY" rel="noopener">Neutrl: Yield Without a Cycle</a></li><li><a href="https://links.tldrnewsletter.com/ujloyr" rel="noopener">$FIGR: The Market May Be Underwriting the Wrong Business</a></li></ul></div>
-  </details>
-  
-</section>
-
-<section class="batch" id="ai-am" data-cat="ai">
-  <h2><span class="badge badge-ai">ai</span> Morning AI</h2>
-
-  
-  <div class="top-stories">
-    <h3>⭐ Top stories across your newsletters</h3>
-    
-    <article class="story">
-      <h4>Grok 4.6 hits frontier performance at ~60% lower cost, with 4.7 promised in weeks</h4>
-      <ul><li>xAI's Grok 4.6 scored 61 on the Artificial Analysis Intelligence Index (a composite benchmark of reasoning, coding and knowledge tests), matching OpenAI's GPT-5.6 Sol and trailing only Anthropic's Fable 5 (62) and Opus 5 (63).</li><li>Pricing is $2 per 1M input tokens and $6 per 1M output tokens (tokens are the chunks of text/code a model processes), undercutting frontier rivals by roughly 60%.</li><li>Agent efficiency is the headline metric: on AA-Briefcase tests Grok needed ~53 turns and 0.5B input tokens versus Claude Opus 5 Max's ~103 turns and 2.0B tokens, measured at $0.84 per task.</li><li>Available now in Cursor, Grok Build, the API, OpenRouter, Vercel and Cloudflare, with 2x free usage for the first week and a $30/month SuperGrok consumer plan.</li><li>Elon Musk called it 'objectively No. 1 when considering intelligence, speed & cost' and says Grok 4.7 lands in 3-4 weeks and will 'exceed all current models.'</li></ul>
-      
-      <ol class="angles"><li><strong>The Neuron:</strong> Grok 4.7 will reportedly integrate SpaceX company data.</li><li><strong>Superhuman (Zain Kahn):</strong> Cost per task is unchanged from Grok 4.5, putting a frontier model in the same price band as open-source Chinese models — though Musk's timelines warrant skepticism.</li><li><strong>The Rundown AI:</strong> The Cursor/xAI partnership adds distribution pressure on OpenAI and Anthropic to rethink pricing and release timing.</li></ol>
-      
-      <p class="covered-by">Covered by: The Rundown AI, The Neuron, Superhuman (Zain Kahn), TLDR AI</p>
-    </article>
-    
-    <article class="story">
-      <h4>Claude in Chrome gains full Cowork sessions and live web control</h4>
-      <ul><li>Anthropic's Chrome side panel now runs a full Cowork session (its agentic desktop workspace) that syncs conversation history, Skills, connectors and multi-step tasks between browser and Claude apps.</li><li>The agent can click, type and scan live web pages, giving Claude real-time internet access for research and data gathering.</li><li>Sessions persist across devices; the feature is rolling out on paid Anthropic plans.</li></ul>
-      
-      <p class="covered-by">Covered by: The Neuron, Superhuman (Zain Kahn), TLDR AI</p>
-    </article>
-    
-    <article class="story">
-      <h4>Lovable raises $400M at $13.3B as AI app-layer funding accelerates</h4>
-      <ul><li>Lovable's $400M round values the AI coding/no-code platform at $13.3B, more than doubling its December 2025 valuation.</li><li>Cognition is in talks at a $40B valuation after crossing $1B in annualized revenue run rate (current monthly revenue extrapolated over a year).</li></ul>
-      
-      <ol class="angles"><li><strong>The Neuron:</strong> Mistral launched regional inference and third-party open-model hosting, backed by a European compute coalition targeting 1 gigawatt (1 billion watts) by 2030.</li></ol>
-      
-      <p class="covered-by">Covered by: The Rundown AI, The Neuron</p>
-    </article>
-    
-    <article class="story">
-      <h4>DeepSeek V4-Pro undercuts rivals by ~10x on price</h4>
-      <ul><li>DeepSeek quietly shipped V4-Pro-0813 at $0.435 per 1M input tokens and $0.87 per 1M output tokens — roughly one-tenth the cost of comparable frontier models.</li><li>Benchmarks are reported as frontier-comparable, beating Opus 4.8 on coding, benchmarking and automation tasks.</li></ul>
-      
-      <p class="covered-by">Covered by: The Rundown AI, TLDR AI</p>
-    </article>
-    
-    <article class="story">
-      <h4>Enterprise AI shifts from assistant to agentic delegation</h4>
-      <ul><li>OpenAI data shows the highest-usage firms now generate 8-10x more output tokens per active user than typical enterprises, up from 2.6x, and adopt connected tools far more often.</li><li>Adoption is moving from AI-as-assistant to agentic delegation, where agents autonomously complete multi-step work under human oversight.</li><li>Verification and quality assurance — not raw model capability — are now the main bottleneck, requiring explicit quality standards, evaluation frameworks and feedback loops.</li></ul>
-      
-      <ol class="angles"><li><strong>TLDR AI:</strong> Liability ownership, permissions and tacit company-specific standards remain the hardest unsolved pieces.</li></ol>
-      
-      <p class="covered-by">Covered by: The Neuron, TLDR AI</p>
-    </article>
-    
-    <article class="story">
-      <h4>Google pushes Gemini into Pixel 11 as app hits 1 billion users</h4>
-      <ul><li>The Gemini app crossed 1 billion users, Google's fastest-growing product ever.</li><li>Pixel 11 ships with the Tensor G6 chip and Gemini handling multi-step tasks across 40+ apps, plus real-time video and audio translation and new voice capabilities.</li></ul>
-      
-      <p class="covered-by">Covered by: The Rundown AI, Superhuman (Zain Kahn)</p>
-    </article>
-    
-  </div>
-  
-
-  
-  
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
-    
-    <details class="newsletter-card">
-      <summary>The Rundown AI <span class="count">3</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Gamgee commercializes AI-designed cancer vaccines for dogs</h4>
-        <ul><li>The Y Combinator startup grew out of Paul Conyngham using ChatGPT, AlphaFold (DeepMind's protein-structure prediction model) and a custom mRNA vaccine to shrink his dog Rosie's tumors after conventional treatment failed.</li><li>Gamgee runs design, treatment and monitoring end-to-end, with first trials in Australia and cases accepted globally.</li><li>Sam Altman met Conyngham in March and encouraged him to start the company; the mutation-matched approach hints at eventual human applications.</li></ul>
-        
-        <h4>2. Why your AI outputs feel dumb</h4>
-        <ul><li>Most users hand AI the final polished step instead of the research and ideation stages where it performs best.</li><li>Reframe tasks so AI does prep — research, brainstorming, wide exploration — while you handle cutting, editing and judging fit.</li><li>Tell the model upfront what format you work in (spreadsheet, Word doc, slide deck) so output lands where you finish work.</li></ul>
-        
-        <h4>3. Turn customer feedback into 100 ad hooks</h4>
-        <ul><li>Feed 10-20 customer comments into ChatGPT and have it build a CSV of pain points, frustrating moments, desired outcomes and objections.</li><li>Generate a second CSV converting each pain point into headline, call-to-action and image-prompt ideas, then hand-pick the strongest angles.</li><li>Only after the manual output is solid, have ChatGPT scaffold a reusable app that reads the CSV and saves generated images via an OpenRouter API key (a service routing requests to many AI models).</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>The Neuron <span class="count">3</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Video and context tooling: Preview, Click, Infisical</h4>
-        <ul><li>Preview launched as a single workspace for video teams — storyboarding, generating, directing, comparing model outputs and keeping characters/locations consistent across shots.</li><li>Click added live context via MCP connections (Model Context Protocol, a plugin-style standard for feeding tools and data to AI), including YouTube transcripts, LinkedIn reactions, flight fares and financial data.</li><li>Infisical sandboxes Claude and other agents behind fake API keys, with a proxy swapping in real credentials only as requests leave the agent environment.</li></ul>
-        
-        <h4>2. Training-data and licensing shifts</h4>
-        <ul><li>Amazon/Twitch will use streamer content to train generative AI by default unless creators explicitly opt out.</li><li>Apple is negotiating nine-figure (at least $100M) multiyear deals to pay publishers when Siri AI uses their content.</li></ul>
-        
-        <h4>3. Governance and AI security</h4>
-        <ul><li>Demis Hassabis reportedly pitched a U.S.-led AI oversight body weeks before stepping down as DeepMind CEO to become Alphabet chief scientist — framed by some as a PR move for Google's stock.</li><li>Dream Security documented an autonomous multi-agent system that mapped and compromised Asian government entities over four days.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>Superhuman (Zain Kahn) <span class="count">3</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Anthropic to watermark all Claude output under EU rules</h4>
-        <ul><li>Anthropic will digitally watermark 100% of Claude-generated content to meet EU transparency requirements, tagging any output Claude touches.</li><li>The label applies indiscriminately — a blog post merely spellchecked by Claude gets flagged as AI-generated, even if a human wrote 99% of it.</li><li>OpenAI and Google committed to similar EU rules and already watermark images and audio.</li></ul>
-        
-        <h4>2. Build an AI agent team instead of buying SaaS</h4>
-        <ul><li>One engineer replaced 20+ SaaS subscriptions at a 50-person business by creating per-workflow agent inboxes with the Nylas CLI.</li><li>Setup: install Nylas CLI, authenticate with an API key, create dedicated agent addresses (renewals@, invoices@), set rules limiting what each agent can act on, then hand the roster to Claude or another coding agent in one prompt.</li></ul>
-        
-        <h4>3. DeepMind model translates American Sign Language to text</h4>
-        <ul><li>Google DeepMind released a model that converts ASL into text.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>TLDR AI <span class="count">3</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Microsoft ships MAI-Thinking-1 and MAI-Image-2.6</h4>
-        <ul><li>MAI-Thinking-1 is a cost-efficient reasoning model aimed at enterprise coding, math and knowledge work.</li><li>MAI-Image-2.6 reached #2 on the text-to-image Arena leaderboard, ahead of Google and Meta entries.</li></ul>
-        
-        <h4>2. AI-generated production code fails most enterprise hardening tests</h4>
-        <ul><li>CData tested Claude Code building an MCP server across 8 enterprise-critical dimensions (OAuth token lifecycle, large-dataset behavior and more) and the generated code failed 7 of 8; expert guidance helped but not always enough.</li><li>Safe MCP servers force a tradeoff between agent flexibility (open SQL generation) and tight constraints (typed, pre-approved queries), requiring explicit permission-model decisions.</li><li>Specula, which uses formal specifications (TLA+ machine-checkable logical proofs), finds concurrency bugs but still can't verify that module-level guarantees compose into system-level guarantees.</li></ul>
-        
-        <h4>3. Nvidia's 'synthetic hyperscaler' play</h4>
-        <ul><li>Nvidia is vertically integrating hardware, software and financing into a self-contained AI platform — like AWS but specialized for AI compute — raising switching costs for customers eyeing rival ASIC accelerators (custom purpose-built chips).</li></ul>
-        
-      </div>
-    </details>
-    
-  </div>
-  
-
-  
-  
-  
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul><li><a href="https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1Hd7y1RovrbUuATpcqcgGHZCOLHWK14bQZ5th6sCwgMpJgvgmsh2lkVStCb18JqozUINlLIhz9oe7m8b6lZib79toR2UpNs58A5wY6caqvoqF4JikQ9Mtk3IgJzgqsHVmYmRqtkMBBfEV-L3TNMRgUX1M-Oa6zOTXG8kfsz7XgSUKR9m10G8y_AQe3THSnboUeunCOnia1BGIWYc-dsJeqXlIqKl_CTTkWIdOe7qkPnmH/4t5/K19iyiHwQEaqE400CCAylQ/h5/h001.ooKOZNypMRMsM2KJxaXEA6Ah76Wjbe5S7FF41lMg-pk" rel="noopener">Grok 4.6 announcement</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJFFxxOajfF_IKX7iS9CnrHs_klRk3_lpg_kzpxLrQv04GDjcVU9jsVUoRLZ6kv-8p-2fKqcG2ySQykkoWYW5PD8VhBU_8ZgYUlgn1c0yvAzl2K7ec81d6qCxiEbCLdp0gW85HebtS3G7cAFJuDFjPkvTjN9qT9j7MaY8KNHNKIWZjPWPHoz1TLWuIZE4zaUGVPUg5nxoeqcmUjEJlQvj9em/4t5/K19iyiHwQEaqE400CCAylQ/h10/h001._ghmJJhBAmaw0emQJ11SXswEbA4vZZjljgwKl3wF-yk" rel="noopener">Nate's Notebook: Why Your AI Feels Dumb</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHSFuIb4pI9fpJYxiXJUzhCwKnvIhpJqmE_okw4lYVm1W2ghw82LbXAwM-AGmSBEgHOvE7nRiE3OuJKhtQfJWXyaCIKY23GYV-H9Iih9yX8LsjtdFYcnYavpyiR5pGm5gG9CkAiJ38hGXSzntU3or4OT2FgLXFJwlfxoVDNKeYae6qFv6WZ7YriVc3dcaLrQEUKxi7AvEe-iPAIDSjJARFsGRG2JZC93bSDhhMN6zCIjtlwyjJ4Ue9k-UpH1zd3z0tz-zPDujzFYLA06ZwBUwAuuj1rBC_RYZa2tBViHumAYA/4t5/K19iyiHwQEaqE400CCAylQ/h12/h001.R4Q-pChtIxlCLhN69g1K7fkvcJBnEUu2HhoT-kMqfcE" rel="noopener">Generate 100 Ad Hooks From Customer Feedback</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.6k0_SAz8nrOuu_-LoNX1HSf2L_NpgCwc-VkdTnqabLncPikjgmaWK0eornR2-CrO_xxjWel9yaVKDAamzInoVPAdk5y7wPsXWGfHuM7pMN_ad4D6gczLqhrzYRgUzPGkQHXo3r49yr785_uCIN3Jjspaa2jNPSXE3oCwaARPQtLVgcx8BI9PUS-EE3mtm24qwo1UvLXBR3YMuJPORM8UWZvuQuqyYq2F6jo2bIGU99E9Vj_oXtzDPkt2kd0gG3YKWAI7jMg3iSO_mHU1dg2c3_y4oPKWUbziZT3YLIKreiE/4t5/K19iyiHwQEaqE400CCAylQ/h18/h001.WhYzslyjbDFM7W0wPBZRcjcWRCNS3czpsem6gf1se4s" rel="noopener">Gamgee: Dog with AI Cancer Vaccine Launches Company</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.u02qJFHqR61XIkDbYtOHoPPDilE9d1RPjFiLx38NycPJIhMAmqcQB7EO0OBJJdShJk00lYwFQ2Z5CVw1CrPTD-l_HHAmpqgcZKhQsUHOnuP3XU-NgMs2ANur60qBjoBzPr7EiAcp0pSwMNr8Cb02YIj-7DeH7tDAQF_lPz_I3CmLInMVaE7t596T1QCg3jIVJ6TfdHYYe3dg84H2hRv1uxJDx032e58JA8MBiign-onT6m_be7tWnl-D4IIpSbxUGU_lY1I-eEGhWiXNvVtAxGXZtnFAQE1cUc0oVMiBnW3BCAovMWuleCeibv-jH9vbDR8UjQLCYhdbsVmnQkKDdWeLDPZ04vSGWNlvioL539tYaJjJeFk3alYKt-Q1jene5fQ90zTeqGBVgQdI24R5zIV9P6Dqvem-279UGdl_fWnPidW5T2NK53hUGhjI3pt3vWzLx5FCOsUAtKZC09SEGFJUuc_E5nh6Jb7jmx0orhDNcDWG02vVzhXseIbnQkymTfFTS6fBYgEjvOfqamHbUNctuTCcXJK9Pr6w0C-E2N8/4t5/K19iyiHwQEaqE400CCAylQ/h7/h001.M-96wOd4I0X17ROshybH2jdg-mtuKoFHCavubypB51U" rel="noopener">How to Teach an AI Agent to Sound Like You</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmBCxBKxSlypSCNg-X1OVKY8SGbvUN9EkFZzf-TAOhUwvXASM88gaWjE2jFhKmxVye8dd0v7zUNuP0bis4vUQd1XwHbfvPAKgltS7K6dO0EK_jGXZLPHfjT3A5G97Y-DUw05XE9WZVZnWI1QEzdrx4BBjuBaso3hTrC1-TDspSts7eQCiArN7d9eudB1LO0dnocqPbrHJ-DSRI_XeLdr2rO-sXViDB1uOIcR0aQTVitacVfeBWBKweFxNlpjLKDYPqi_V8wnWnzt0H2QqU2lf-rU/4t5/PLCFn1GcQimACMEp5pubkg/h13/h001.bvIbj8XP2d2809WV86V8FMWlpadX6YCtpI4YYlbVF94" rel="noopener">Grok 4.6 announcement and details</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.FsqOXv9Qp2p1svid1ILW2aky23qEfLf9j9zTAmm5816EbW9EEi7sxg3E2z7TuFHUFHk5gSi4PkZFNVoR4gX9895Nf0SmNvHM4dUJFsTkdB3z8GxMMomJ0d4jyhQNgvBhc01VAEgtZrbR5WoXHIiR9ID2cCVrqAl8jNc3XakjhYec5qegu37R6GhU7nKPfSVpwcjUtTsr7ZJxniaXpzoAAGLziO4bGANAC05Ki6jRUhEG5QKJ8IuxaH-qfEB06pYubbLdVCAjDGcbHxqVPLzwfiMhgY9vL9qjvMRxhiY2A9y7Rn5Qp2J2HOP42eoOyvx7FSdsU6k6t84qWGyLSFQRbX1EhqI6-6-mPp0b0L85FRE/4t5/PLCFn1GcQimACMEp5pubkg/h14/h001.049xEFVd7nK5bK68uAFoVvLs2JO6-2P9r56t38gimlY" rel="noopener">Artificial Analysis Grok 4.6 evaluation</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmM5gHVNLdmg8wVE13HDcv4yhlM2O6xVGGNK48kO8GvknUj0Ubymeg0yLVK8S91T73gdl8ONTTufm1yIFjTJh07HqE4OyG4Tg6Z0YnXWYUgd7cQcyRxEyaiNOg2nO-WgPYl5u8UO8FngInqFdNRH92ZGiiAjDb1_zoxw58lVrZfoVW18r9Sdw-bN0Aqa_VjiSVFPtALhn5UnSQjHtD9qapXgrSg2760QWuXwg6B200UuDBgbrTA33ZV3F9VTl31uazw/4t5/PLCFn1GcQimACMEp5pubkg/h15/h001.Nc5FGeJS5z-YaGTkUR24b9e4MpyagxJP7FYj_6pQxvE" rel="noopener">xAI pricing page for Grok subscriptions and API</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.5nZoc5z8_Dwk1u9gmeJYAq3RwJnuQwb5uaXAj2D0uLa5awmQnpip3M-pt3GJ8m9qpSflh2E7TSWipOKboPcAvpzL246dnMV2QBPteX-HC6z6XaZWDGCXKsgqehXbEHymIj9JljT-FxCmTr1zFpBCY3EmIIMOd-bJv2FfTRAUtWrzbcgoGkR8m-cyJsjD1x_jDQqGCi8IIxKE1Wm4Kjwjwo7TmcWfjCE8igRcZJLb2FWwpPswp9ljUGUO-zWcumcMM4YySnLtv8ZNBMDmkOjWvtenlbbStc-nP3LDDiSAjUnsYks3zdLH_zltMAUWOzSKlYlN_p290Gxs0IX6lguQHg/4t5/PLCFn1GcQimACMEp5pubkg/h26/h001.CiTS3t0iHXkoVPuLSUDvFk_4Q8lR7nB7_1_Z2cjP44A" rel="noopener">Claude Voice guide for multi-tool briefing setup</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Jkg0FtPWkN8kOH5PMICEw2GmMYc3az6hfKoHbo5tykHUaf8-lTXzkJYXq6vDBQkEjU8emPNe7XyewTXkbxS_ep22xLPt2JrQGXdGzMFQtrMgf2WDe9tuh2beESmSAS4GjR6pDaK2PH4mcpvV46ZeQwwHbu7OcOVK8Jvdr3j9pVIJZdSiPcnDhQpkTnBW1rWJTHOnGhV_pqitRdyaPVUQ-xurjL4-OtvzXe6O1shGVnJZ2RsgafJ52RIedD9eXTnT8RkIK66rLpnyLEeFyGs5WQ/4t5/PLCFn1GcQimACMEp5pubkg/h34/h001.Z0dimUzgmVT7hlTpGJ8D3OwPiPAyX5DWfRcICcmhMOs" rel="noopener">Preview video generation workspace announcement</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tB27taPd_6T28pKDZQt7zc-QhNUYE5xCbmptSBPnBWJjSUdXqfV4pl05h3I0CDJ1lYG54t9kE3nN8lpZaKpidnld6Orwm2Jf1ldc0rgtece11KKY90t9O2cca788W3_KayMqre3bYUnRD98AtUdekY34XPjTR3kP-8k2cbrOflj867HOwn3hJ0sxOvxS0fb2_EpNKzBmhOi02P4P-dEHhZkGY8VLFhkMIH8ZLVTQd0vhA/4t5/zWUpHJWcQ1GGJ8oAt-ob9A/h6/h001.YUrWjiFygzFLcYdxZByxQwvBQuzH7nia1HrwUS0BEHk" rel="noopener">See how Grok 4.6 stacks up against competitors</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgICxIik6hQLk_HKB7_ZFv-dYHZHv0p4Ly-97T8lAkfwrG7ylnGXd9pZOAfXthTBijBkRulgYDD-EiA07L8jscYZ5zzxI-6fTQIt8gLSKBllgyFXGbXwwsieVhWZJRZklNdPOE3JJV3gbY0iJXxtSBC-kPBIxEQS95Xa-IE2CN2H2M_33ZnCm58TPOx9AjStFoWVpcFlZNxs1B1hOA4ScxFt7w7llla5yF2hqXCsu89Go/4t5/zWUpHJWcQ1GGJ8oAt-ob9A/h8/h001.govL5_347zTjdI745vKKmnXxBYsD3J63rUlj6YxGVYo" rel="noopener">How Claude in Chrome works</a></li></ul></div>
-  </details>
-  
-</section>
-
-<section class="batch" id="tech-am" data-cat="tech">
-  <h2><span class="badge badge-tech">tech</span> Afternoon Tech</h2>
-
-  
-  <div class="top-stories">
-    <h3>⭐ Top stories across your newsletters</h3>
-    
-    <article class="story">
-      <h4>Grok 4.6 matches GPT-5.6 Sol on coding at half the price</h4>
-      <ul><li>Grok 4.6 ranks third globally on the Artificial Analysis benchmark (an independent leaderboard comparing AI models), matching GPT-5.6 Sol and overtaking Kimi K3s.</li><li>API pricing starts at $2 per million input tokens and $6 per million output tokens (tokens = the smallest chunks of text a model reads or writes), undercutting rivals by 50%+.</li><li>Model is tuned for long-running agents, large codebases and knowledge work, with developers reporting more reliable behavior over extended multi-step sessions.</li><li>Cursor's real-world usage data trained both Grok 4.5 and 4.6, and Grok 4.6 launched first inside Cursor alongside a Grok Build coding agent.</li><li>Adoption lags performance: only 4% of companies using AI tools pay for xAI, per Ramp's AI Index, amid reputation damage from non-consensual image generation.</li></ul>
-      
-      <ol class="angles"><li><strong>TLDR (Tech):</strong> Frames the launch as competition shifting from chat interfaces to autonomous task execution, challenging market consolidation.</li><li><strong>The Code:</strong> Links to a Cursor engineer's field guide on getting the most out of Grok 4.6.</li></ol>
-      
-      <p class="covered-by">Covered by: TLDR (Tech), The Code, Techpresso</p>
-    </article>
-    
-    <article class="story">
-      <h4>Cracks appear in AI adoption as cheap and open models gain share</h4>
-      <ul><li>Ramp's August 2026 AI Index shows OpenAI and Anthropic adoption growth plateauing.</li><li>6.1% of AI-using businesses now pay for open-source model serving platforms, signaling price sensitivity and a self-hosting shift.</li><li>DeepSeek V4 Pro hit general availability at $0.435 per million input tokens and $0.87 output, nearing Fable 5 performance with a 1M-token context window (how much text a model can consider at once) and tool calling, via Cursor, Grok Build and API.</li><li>Alibaba open-sourced Qwen3.8, claiming frontier parity on coding and agentic benchmarks; full precision needs 4.9TB storage, cut to 397GB with Unsloth 1-bit quantization (compression that shrinks a model), with a 27B lightweight version coming.</li></ul>
-      
-      <ol class="angles"><li><strong>TLDR (Tech):</strong> Argues AI is eliminating the 'middle class' of software engineering — weak developers fail faster while demand concentrates on elite engineers.</li><li><strong>The Code:</strong> DeepSeek's benchmark claims are company-run and unverified, slightly trailing Fable 5 on agentic coding.</li></ol>
-      
-      <p class="covered-by">Covered by: TLDR (Tech), The Code</p>
-    </article>
-    
-  </div>
-  
-
-  
-  
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
-    
-    <details class="newsletter-card">
-      <summary>TLDR (Tech) <span class="count">4</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Google's 2026 hardware lineup: Pixel 11, Watch 5, Pixel Tag</h4>
-        <ul><li>Pixel 11 revives the notification LED, an RGB light inside the flash assembly that signals Gemini and WhatsApp calls.</li><li>Lineup adds Pixel Watch 5 and Pixel Tag, Google's first-party item tracker.</li><li>Expanded Gemini integration suggests hardware designed around the AI assistant rather than new core innovation.</li></ul>
-        
-        <h4>2. Northrop Grumman's orbital 'space mechanic' robot</h4>
-        <ul><li>The Mission Robotic Vehicle uses two manipulator arms to attach modular propulsion pods to aging satellites, extending their lifespans.</li><li>Deployment is slated for 2027, moving commercial servicing robotics from theory to orbit.</li></ul>
-        
-        <h4>3. Indian workers film chores to train AI robots</h4>
-        <ul><li>Tens of thousands of workers record mundane everyday tasks on video for robotics firms.</li><li>The footage fills the shortage of first-person physical-world data robots need to learn object manipulation.</li></ul>
-        
-        <h4>4. Chrome's quiet JPEG scaling optimization</h4>
-        <ul><li>Chrome's Skia renderer now computes an optimal decode fraction with denominator 8 when scaling JPEGs.</li><li>Illustrates how performance trade-offs get embedded invisibly in specialized infrastructure subsystems.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>The Code <span class="count">2</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Databricks' four levers to cut AI coding costs up to 90%</h4>
-        <ul><li>Default to the cheapest model that clears your quality bar — enough for most everyday coding, saving 50%+.</li><li>Use a smart router to send each job to the most cost-effective model automatically instead of manual selection.</li><li>Prefer real-time spend visibility and warnings over hard budget caps that penalize your most productive engineers.</li><li>Trim context bloat, which mostly comes from the coding harness; tuning prompt cache settings can halve generated tokens without quality loss.</li></ul>
-        
-        <h4>2. AI 2027 forecast scorecard</h4>
-        <ul><li>19 of 53 predictions from the AI 2027 project are confirmed or ahead of schedule.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>Techpresso <span class="count">4</span></summary>
-      <div class="card-body">
-        
-        <h4>1. First fully autonomous AI cyberattack hits Taiwanese government</h4>
-        <ul><li>China-linked hackers ran a four-day campaign in early July using up to 8 AI agents at once, built on the open-source Hermes and OpenClaw frameworks.</li><li>Agents mapped 21 government systems, compromised 85 accounts and stole 2,500+ personnel records from nuclear safety and energy agencies.</li><li>The agents ranked and switched attack paths when techniques failed and bypassed safety guardrails by posing the intrusion as an authorized penetration test.</li></ul>
-        
-        <h4>2. Trump administration authorizes private-sector 'hack-back' operations</h4>
-        <ul><li>A White House memo lets vetted private security firms seek approval to strike back at foreign cybercrime groups behind ransomware, phishing and fraud against U.S. victims.</li><li>Each firm must post at least $1 million in bond or escrow and stop immediately if activity strays outside approved limits.</li><li>The National Coordination Center oversees the program with Justice and Homeland Security directors; Americans lost over $20.8 billion to cybercrime in 2025.</li></ul>
-        
-        <h4>3. Twitch adds opt-out for Amazon AI training</h4>
-        <ul><li>A new 'Training for Generative AI' toggle in Security and Privacy settings covers streams, VODs, clips, chats, channel pictures and text.</li><li>The Verge found it switched on by default; Amazon hasn't confirmed whether that is standard.</li><li>Opting out doesn't disable captions, AutoMod or recommendations, and your chat on someone else's stream follows that streamer's setting.</li></ul>
-        
-        <h4>4. Apple courts publishers for a news-savvy Siri</h4>
-        <ul><li>Apple is negotiating pay-per-use licensing deals to feed current news and information into an updated Siri launching later this year.</li></ul>
-        
-      </div>
-    </details>
-    
-  </div>
-  
-
-  
-  
-  
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul><li><a href="https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis" rel="noopener">SpaceXAI debuts Grok 4.6 on Artificial Analysis</a></li><li><a href="https://arstechnica.com/gadgets/2026/08/google-reveals-2026-hardware-lineup-pixel-11-pixel-watch-5-and-pixel-tag/" rel="noopener">Google reveals 2026 hardware lineup: Pixel 11, Watch 5, Tag</a></li><li><a href="https://ramp.com/data/ai-index-august-2026" rel="noopener">Cracks in the AI Thesis</a></li><li><a href="https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" rel="noopener">AI is removing the middle class of software engineering</a></li><li><a href="https://ethanding.substack.com/p/why-you-cant-copy-palantir" rel="noopener">Why you can't copy Palantir</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcE_1qFWGAfc5ZpYEwy76x3NoH4d9LW3AyD7FNOc0nFgL4rV7WU9_9k1omiuvzZGWCTf6_T49OPvmvRQ2Y6msq6TcDjcIGdy6Im3ktl9r5ONhYPYMx1j2DqthyQKoppMYyykWsPLb0KLlBCAie7lwafKA3LKJKxvCE2dxrB7_xfmVN0jbn0qkrAVIDlDnV1EvzgRqRtVnp10WYz_IKPkIqTTiDE5HvilFG4JqC5uC6So2lgv9wLFEzOhJqwFHDqEC_U/4t5/dTAN1U9ER3uNc4s6kuOq8A/h9/h001.QoQa00xVBENedOsoaAj1kGlGB2cnVxMwCf8Q0YQKKyA" rel="noopener">DeepSeek V4 Pro specs and pricing</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwQxsNXU0JqyVaSPxRDbliM68DfLD_h3Nfq-KLxzntCpyE4rr7-Bw0dPaAcq6IeW3rqm--7ZJurNXN-INfM_hIKRS2R5n1na-YvZPdHcTB8nqZSSwG8LRCiuxJkBMy8eOKa1gCEMBETOOlNWh_PmHJBA9s6grXTJ8I5PE1ZvAe0PjvaWMw4BU5A1lhZZu6UGZPvrlnuGml2NEd00CU9S-lfvGmZDvUbnSljRfMP4K3fHRwIdwVrNkPXdjvzG-fYdcE/4t5/dTAN1U9ER3uNc4s6kuOq8A/h30/h001.zYaDOShLnbNm7Ptf7Hnq5_hfG0tYHUL8GpWHG5pD6Cs" rel="noopener">Prompt caching tutorial to reduce token costs</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqutsrSwrlXUa4CLXik5r8lE312PLNpo3IlXsaZLW33zaDKpc0t_CNYY4jneGPffhWuKxPCCD3ZgMJHnEgYAPCoBk9rK5lHj4FmGbVSDK8Bx0ckdLMZt72bGRaw0T2Pf5vFQVc_-UV7Ntoesh0ZxRKvV0nzFEqh8dDnGP3G_mkSBt1yRNt4fA4xuYDW4v43y40EoXdHvxq4xJsNuEVeUSLy22m3_wsXxwl2cyessghNK7MgxWvErsdvpDLCmhgI8j-956hQrIy-Riob3dczYPX2fwDz6umpofqV-Ix8SZRrVMp/4t5/dTAN1U9ER3uNc4s6kuOq8A/h14/h001.bKnLxJK2M0nHtpML5GRCPrZiu9XITCxPX-B9JvGiedg" rel="noopener">Databricks cost management playbook</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFvzdw2aU2FVFTsci_sXq27wfceUBYlG0P14YFh-nbQFJIZTSYbAZDXG3EJPkFldJf2YZlDzQqA4liq5nH3q83r9cMiLL4BSOVU5wZj3MvauL3bDV6w1jL-EmwdJ5sbG1MZwkhZpTOOAztoufyjSRLuvu6ZWvkFUKCECuceiprdhLLv4lJQpr4Kofu_L0FMhzmOphXIpQZCsOS48VUR_yOLFXAcaG4CERRKs-UJmTrm5veTn4HFqmxMfZ75awxucyI/4t5/dTAN1U9ER3uNc4s6kuOq8A/h32/h001.crMkLugSURzXM4QIga8fOw-guiCbIUB0ICWvFpdL5js" rel="noopener">Grok 4.6 field guide by Cursor engineer</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcG_9khwIZqiIKCbaHRBhPGytkF9TOWLC8FR8vVysWX07ItvG_Mtq1qT9NCKGo433NaEzqgQCRNfSxfuRE8xSj7BbGOyWcAjw3eiMRHu-cSlYuVc5mIF38QsPJHOlWGm1uYshgPYpn7wlc39sGANfgEQXGMoA61SxhefQWa9Hf4tdHpvR525KnEyuKk2pQCnP2gHiDAQo26Omc_ixldS8iC6oR-uwaFONOTGKM9JVc3IMogbujU3GxqNpmUKlWSByFg/4t5/dTAN1U9ER3uNc4s6kuOq8A/h2/h001.Kt3ISTtYE0SVUD88psxn3xn6Xt55MmRElcOJ8sDU-0w" rel="noopener">AI 2027 predictions: 19 of 53 confirmed or ahead of schedule</a></li><li><a href="https://mail.dupple.com/tb/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3MDM4MjgzMTY2ODU0NTgsXCJyXCI6MTk1NzAzODQ3MTQ1OTY1NDI0fSIsInMiOiI4YjJjNjUzMTQ1ZjBiZDkyIn0" rel="noopener">Grok 4.6 coding release</a></li><li><a href="https://mail.dupple.com/tb/cl/eyJ2Ijoie1wiYVwiOjQwNDg1NSxcImxcIjoxOTU3MDM4MjgzMjcxNzEyMzQsXCJyXCI6MTk1NzAzODQ3MTQ1OTY1NDI0fSIsInMiOiJmNzg1NDY1MWRiYTgyMDM4In0" rel="noopener">Trump hack-back order</a></li></ul></div>
-  </details>
-  
-</section>
-
-<section class="batch" id="crypto-pm" data-cat="crypto">
-  <h2><span class="badge badge-crypto">crypto</span> Evening Crypto</h2>
-
-  
-  <div class="top-stories">
-    <h3>⭐ Top stories across your newsletters</h3>
-    
-    <article class="story">
-      <h4>Trezor data breach exposes customer information</h4>
-      <ul><li>Trezor (maker of hardware wallets — specialized offline devices that store cryptocurrency private keys) disclosed a breach at its shipping partner, exposing customer data through August 8.</li><li>Nearly 14,000 users were affected, with names/shipping details potentially in attackers' hands.</li><li>Trezor confirmed the devices themselves and seed backups were untouched; the risk is targeted phishing and social engineering.</li><li>Incident shows security-focused vendors remain vulnerable through third-party supply-chain partners.</li></ul>
-      
-      <ol class="angles"><li><strong>Decrypt Daily Hash:</strong> The exposure window overlapped exactly with the $15B Bitcoin migration after the Coldcard exploit, raising questions about whether stolen data enabled targeted theft.</li><li><strong>Bitcoin Magazine:</strong> Advises affected users to monitor accounts and add protective measures, framing it as proof that dedicated storage devices aren't risk-free.</li></ol>
-      
-      <p class="covered-by">Covered by: Decrypt Daily Hash, Bitcoin Magazine</p>
-    </article>
-    
-  </div>
-  
-
-  
-  
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
-    
-    <details class="newsletter-card">
-      <summary>Decrypt Daily Hash <span class="count">3</span></summary>
-      <div class="card-body">
-        
-        <h4>1. $15 billion in Bitcoin moved to safety after Coldcard exploit</h4>
-        <ul><li>An estimated $15 billion in BTC was relocated following a vulnerability in Coldcard hardware wallets; 2,100 BTC was actually stolen.</li><li>233,000 BTC exited long-term holder wallets and 22,000 BTC moved to exchanges, signaling a broad custody rethink.</li><li>Casa CEO Nick Neuman argued the episode proves distributed self-custody (spreading assets across multiple locations or methods to avoid a single point of failure) still works.</li></ul>
-        
-        <h4>2. Fidelity files to let its Ethereum ETF stake up to 100% of holdings</h4>
-        <ul><li>Fidelity asked the SEC to allow FETH to stake (lock up crypto to help validate network transactions in exchange for rewards) as much as 100% of its Ethereum.</li><li>Staking rewards would be paid out to shareholders as quarterly cash distributions, similar to a dividend.</li><li>The filing extends institutional crypto products from pure price exposure into yield-bearing strategies.</li></ul>
-        
-        <h4>3. Metaplanet denies $320M Bitcoin sale, launches BitBonds</h4>
-        <ul><li>Metaplanet said a 5,014 BTC transfer (~$320 million) was a custody move, not a sale.</li><li>The Japanese treasury company simultaneously launched BitBonds, a new fixed-rate debt program to fund Bitcoin purchases.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>Bitcoin Magazine <span class="count">2</span></summary>
-      <div class="card-body">
-        
-        <h4>1. White House to host crypto executives next week</h4>
-        <ul><li>The administration will convene digital asset industry leaders, signaling continued government engagement with crypto policy.</li></ul>
-        
-        <h4>2. JPMorgan and UBS deepen Bitcoin ETF exposure</h4>
-        <ul><li>JPMorgan's position in BlackRock's spot Bitcoin ETF (a fund tracking Bitcoin's price so investors get exposure without holding the coin) reached $610 million.</li><li>UBS also increased its Bitcoin exposure, suggesting coordinated institutional entry that normalizes crypto as an asset class for legacy banks.</li></ul>
-        
-      </div>
-    </details>
-    
-  </div>
-  
-
-  
-  
-  
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZZzMF6POpOXpi0zUupVS9l6zmWZ-2o6CQ9J49ArDqWDRgp-Rf9nAQmE_foNidKfjpbTmvh5J9PksSxKq70e1UFUMCEaT1t3dSWLEtmOTmKd0WYA4DzkT_Ko10mmjRZiHMg6ukUxCHq7cethvxO9DMaPYvBVEVh4iBCBnPl4t_1d-GRK9_1_aqAy1itxyeMc7LeJVHCXH0uKWdMP7zFqMw0Af6SVZRvY32-ve_smOM5VwNrsZEGD5a2d81_AvtL2LJLzOyBcpGaI7I-dS71v8lPEV-NR2mZOO2lGDqW_SYMfJ/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h12/h001.nrdu92h-olqxxSrydh1DECifoRPrlIbG5e8gGKxL4nQ" rel="noopener">After Coldcard Was Hacked, $15 Billion in Bitcoin Moved to Safety</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZRU0tOthNeKkVuRvMXVFScoRObWKR0YaYV8XsdFp-zwcadk04Yba6ohrYwkCT-RxxereKQjdqV6vvJ39NCw7Sd_NF-oN0l478NoTG273vwwIEIPtJkQr6uHW_wDc_YRXOtaw0hb90zG-LrOGbQJcNDporsCMCtd0PD-8wMlIaCNS1siXT5g3IUg33PhJq0eLGE5oOK3b2J7zbzCSp54fu0Elt0uCiu7Q7LrYZoWmqSmg-mvl-AoJcLlVUfgqUykcdl_yzdrgbGJ6ZRCEjpymXHNKDpq4ZH0HPLojGQYX2x2K/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h18/h001.KEFe1W_Ho4u90jtBtlw5DzveS70jGNqnFi-MDOo5hg" rel="noopener">Trezor Customer Data Exposed in Shipping Partner Breach</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZaA0dzQkJ0PmlnwaewIZNiRz5ZknBNIsVhg8NlIM-OUbK3nsc-KlbMZpKVhk8FFjNmxfvOV5tWaxOpQa1X1sIcsVwvpY6z6O4iyEfuaEguPq4z0CIVV9iUhC1-m63y5RuIdgbKz4X03MJM8DJx26oY6GuOk0s8YOJOohLAcipoPKGaHYVNnexn5Yh7NJwa-ARzMnsNLyP1b-coQ6_QZBCLzGKemwg1FnUao9jHrDFEaQ-7OGLK3SuFWd5QQjUOOcdB_5opZrX0FPBwhJWM3zE3rRuuvWOBgSOJkSARQ1p2U6/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h21/h001.7irHRLVuLicu5oybfekUuUCm5d-BMvJi7i_aYeQFqww" rel="noopener">Fidelity Files to Let Its Ethereum ETF Stake and Pay Investors</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.nC7MGYTp-KR_FjvsJR4iZV9lgz8eAG3tjrzXX74edV4rdDrqcCZJ_O06HJSwQb8JJetOPC1owLE3OnWEc5Kx-rLSyP11a6WKPSgu7upUrrgd4VZyIKvl-BSFZdCn4iuSQFg5Zr8NpbkAttEnGXkzpVSvTzBYJmm6Y8cb-nhc0q7dnZLsv8cZAf3y_HLFWAxH52WCQK6j9DWppnExcS_f8uqXJWd4Mlb6JPzxauUrWJTdoS06Mtaje-TZf-KltnqXg0aRm2Fy2EV2gUosSIVuMV8Ip3epSWkdPjidGLHX6jhW5FwmWWWV4nmTAMoEynP_/4t5/Q5RVhL4IQ8KBdtMKfD5SIQ/h15/h001.d_OAgw-6ecXVkZVn_Fn1zdff_xXot6TpOqbaog-qn7c" rel="noopener">Metaplanet Denies Selling $320M in Bitcoin as Firm Launches BitBonds</a></li></ul></div>
-  </details>
-  
-</section>
-
-<section class="batch" id="ai-pm" data-cat="ai">
-  <h2><span class="badge badge-ai">ai</span> Evening AI</h2>
-
-  
-  <div class="top-stories">
-    <h3>⭐ Top stories across your newsletters</h3>
-    
-    <article class="story">
-      <h4>Google ships Gemini 3.7 Flash three weeks after 3.6, while Gemini 3.5 Pro reportedly dies</h4>
-      <ul><li>Gemini 3.7 Flash launched today at cheaper introductory pricing, replacing Gemini 3.6 Flash released just three weeks earlier.</li><li>Gains focus on software engineering benchmarks, complex document processing, and workflow automation.</li><li>It is an incremental refresh, not the flagship Gemini 3.5 Pro launch originally promised for June.</li><li>Internal sources say Gemini 3.5 Pro is now shelved in favor of a scaled-up Gemini 4 — a riskier bet driven by schedule slippage and pressure from Grok and Anthropic.</li></ul>
-      
-      <ol class="angles"><li><strong>There's An AI For That (TAAFT):</strong> Gemini 3.7 Flash now powers Spark, automatically updating emails and documents.</li><li><strong>AI Daily Brief:</strong> Co-founder Sergey Brin has become the AI team's key driver after the Hassabis/Dean departures, gained resource-allocation power aimed at recursive self-improvement (AI systems improving their own successors), and moved model training from DeepMind's London office to Mountain View.</li></ol>
-      
-      <p class="covered-by">Covered by: Everyday AI, There's An AI For That (TAAFT), AI Daily Brief</p>
-    </article>
-    
-    <article class="story">
-      <h4>OpenAI's GPT-5.6 Sol gets a 14x-faster 'Ultrafast' tier with Cerebras</h4>
-      <ul><li>The API-only Ultrafast tier runs GPT-5.6 Sol at up to 750 tokens per second — roughly 14x standard speed (a token is a word-fragment unit models read and generate).</li><li>Cerebras, a chipmaker specializing in very large AI-inference chips, supplies the hardware.</li><li>Aimed at voice systems, customer support, coding agents, financial analysis, and security work needing near-instant responses.</li><li>Overnight research and incident-analysis jobs now finish within a workday, allowing multiple same-day iterations, with quality reportedly intact.</li></ul>
-      
-      <ol class="angles"><li><strong>There's An AI For That (TAAFT):</strong> Frames it as part of an industry-wide speed war where more requests per dollar let teams hit deadlines without downgrading to weaker models.</li></ol>
-      
-      <p class="covered-by">Covered by: Everyday AI, There's An AI For That (TAAFT)</p>
-    </article>
-    
-    <article class="story">
-      <h4>DeepSeek V4-Pro: adjustable reasoning effort and contested benchmarks</h4>
-      <ul><li>V4-Pro lets users dial thinking effort per task (inference compute — the time a model spends reasoning before answering), so simple requests stay fast and hard ones get full compute.</li><li>Leaked benchmarks claimed near-parity with Fable 5, including 87.9% on Terminal Bench 2.1.</li><li>Independent testing by Artificial Analysis scored it far lower (53), leaving traction dependent on price.</li><li>Pricing of $1.32/$3.96 per million tokens is about one-twelfth of Fable 5's cost.</li></ul>
-      
-      <ol class="angles"><li><strong>There's An AI For That (TAAFT):</strong> Argues open Chinese models have quietly taken over middle-tier work — stronger than cheap models, cheaper than flagships, and good enough for ~70% of tasks.</li></ol>
-      
-      <p class="covered-by">Covered by: There's An AI For That (TAAFT), AI Daily Brief</p>
-    </article>
-    
-  </div>
-  
-
-  
-  
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
-    
-    <details class="newsletter-card">
-      <summary>Everyday AI <span class="count">4</span></summary>
-      <div class="card-body">
-        
-        <h4>1. OpenAI loses CRO Denise Dresser ahead of expected IPO</h4>
-        <ul><li>Dresser departed less than a year after joining, following longtime executive Brad Lightcap's recent exit.</li><li>Enterprise sales now go to Dali Rajic, former president and COO of cybersecurity firm Wiz.</li><li>She will stay briefly to support customer transition, as OpenAI preps a possible IPO while fighting Anthropic for enterprise accounts.</li></ul>
-        
-        <h4>2. IBM embeds GPT-5.6 and ChatGPT Work into enterprise consulting</h4>
-        <ul><li>Nine-figure budget behind a dedicated OpenAI practice staffed by thousands of IBM consultants.</li></ul>
-        
-        <h4>3. Anthropic's Chrome integration syncs Claude Cowork across devices</h4>
-        <ul><li>Users can carry tasks and conversation context from desktop to mobile mid-session.</li></ul>
-        
-        <h4>4. The year ahead: from reactive chat to proactive overnight agents</h4>
-        <ul><li>Reactive prompting fades as agents (AI that executes multi-step work autonomously) complete deliverables overnight for morning review and redirection.</li><li>Teams should convert winning AI workflows into transferable skills rather than one-off wins, to avoid vendor lock-in.</li><li>Voice becomes the default control method and multiplayer collaborative workspaces replace isolated single chats.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>There's An AI For That (TAAFT) <span class="count">3</span></summary>
-      <div class="card-body">
-        
-        <h4>1. You're probably overpaying: model routing cuts costs 75%</h4>
-        <ul><li>Routing engines (like Finest) score each request against your quality bar and pick the cheapest model that clears it, saving ~75% per task versus always using premium models.</li><li>Glean's approach: index your own files first so fewer queries leave the building, and send only hard problems to top-tier models — same answers at a quarter of the spend.</li><li>New playbook: simple work to cheap open models, hard work to the frontier, with routing rather than habit deciding.</li></ul>
-        
-        <h4>2. Pixel Watch 5 runs Gemini fully offline</h4>
-        <ul><li>Handles timers, workouts, and calendar lookups on-wrist with no phone connection or signal.</li><li>Billed as the first major consumer device running a large language model entirely locally, opening an always-on, privacy-first wearable category.</li><li>Proactive features surface boarding passes when location matches an airport, dinner plans from calendar, and countdowns on your commute.</li></ul>
-        
-        <h4>3. Survey: what 1,106 US workers actually hand to AI</h4>
-        <ul><li>Workers delegate whole task categories to AI rather than to colleagues: research summaries, email drafts, calendar management, document updates.</li><li>Most handoffs are async work needing no real-time human judgment — AI is absorbing delegation that used to go to junior staff or assistants.</li></ul>
-        
-      </div>
-    </details>
-    
-    <details class="newsletter-card">
-      <summary>AI Daily Brief <span class="count">6</span></summary>
-      <div class="card-body">
-        
-        <h4>1. Cognition seeks $40B valuation on $1B revenue run rate</h4>
-        <ul><li>Valuation target is up 50% in three months from $26B, when it raised $1B; revenue has doubled to a $1B annualized run rate.</li><li>It is seeking another $1B, hinting at either heavy cash burn or extraordinary coding-agent demand.</li><li>SpaceX's $60B all-stock buy of Cursor (at ~$2B revenue) suggests hyperscalers could pre-empt a raise with $60–100B stock offers.</li></ul>
-        
-        <h4>2. Grok 4.6 puts xAI back in the frontier race</h4>
-        <ul><li>Intelligence Index rose to 61 from 56, tying GPT-5.6 Sol and trailing Fable 5 by 1–2 points, with claimed better agentic economic performance (GDP-Val).</li><li>Costs 32% less than GPT-5.6 Sol and 73% less than Fable 5 per completed task ($0.84 per benchmark run) on unchanged $2/$6 per-million-token pricing.</li><li>Bug-finding improved to 27 of 105 (from 17 in 4.5), though some reviewers report incomplete work and defensive responses to errors.</li><li>Grok 4.7 is promised in 3–4 weeks with SpaceX company data in training; Musk claims it will beat all models on real-world engineering.</li></ul>
-        
-        <h4>3. Neocloud earnings confirm the AI buildout continues</h4>
-        <ul><li>CoreWeave revenue doubled to $2.6B per quarter with a $104B backlog (up $25B since June); cash burn also doubled to $5.7B.</li><li>Nebius grew revenue 454% to $582M, beat EPS forecasts by 83%, and cleared Blackwell GPU auctions 15% above prior Hopper records.</li><li>Stocks jumped (CoreWeave +19%, Nebius +34%), suggesting hyperscalers are buying overflow 'neocloud' capacity (rented GPU compute used when internal data centers fill) at premium prices.</li></ul>
-        
-        <h4>4. Samsung uses Claude Code for 3x faster chip design verification</h4>
-        <ul><li>System-on-chip verification fell from 3 months to 2 days, and a second-year engineer finished a month-long task in one day.</li><li>Gains stay confined to narrow high-complexity tasks — a 'jagged frontier' (AI is superhuman at some tasks and weak at adjacent ones) rather than whole-pipeline improvement.</li></ul>
-        
-        <h4>5. White House to extend AI safety testing to open-source models</h4>
-        <ul><li>The original framework covered only frontier proprietary models; the administration now plans to include open models once they hit GPT-5.6/Mythos capability levels.</li><li>Tension persists between Trump's preference for a voluntary framework (to avoid helping China) and the safety faction pushing formal rules, risking a two-tier system that penalizes untested open weights.</li></ul>
-        
-        <h4>6. Tencent triples AI infrastructure spending</h4>
-        <ul><li>Spent $7.8B on AI infrastructure last quarter, a 3x increase but still 75% below Meta's $31.9B.</li><li>President Martin Lau is prioritizing internal compute over monetizing capacity through external sales.</li></ul>
-        
-      </div>
-    </details>
-    
-  </div>
-  
-
-  
-  
-  
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul><li><a href="https://link.mail.beehiiv.com/ss/c/u001.ejzadBfo-YZL9D4q1ocJXoksXiI_dJwB6Sbn-arMycjLlPW0r8NSBOrY0c_OsNSM-_asCVyO1U9VNSZPbHrffgQIyoB9iaRR4pF3cuBToJvVjz9rcbxnq7hdAOXihpjEqrhCu6TyQJx8bCMJzolgavFFgb4h0tpFayKKlB487y6BNncxGs3cDULG2jFZdRqe9-xqyu-xPWFn3RTjQUwj89Bq_uHF-TtyONkL31PaTWtW3Vt_q2sB2A9GlCPPU3PQ5xpHjaIeKew-E2tgUmTYQcgJrn4vxpdy6eKX2nCITMGK613m-QeVX7SFAuACJLtoGt1oKICWK-6M_Yn71bR-IPO-7w_YJrcoCd45C1bDJR_hGUI5Ghqprv5WHFY24Ogdunx0I4H3lDtkII4fopxsdYqn_K-jh19loSWtigc_7Hy3OtkJikYnF9FHCyRL-lPG/4t5/m0OBzWrMRKW74nQl5AeHCA/h8/h001.cw9mX4xAiAW_VG4gplNckgMYEy5go9qSmx6cFXuiwb8" rel="noopener">Watch/listen to 19 AI predictions for next 12 months</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.vyB_Vbt7AWbLkpMfRqnXJzA9kBqi4tWR3MO-t06F_5uL4bCtQFac9Nra3RgG0QI7bq1UMbSRPkrxvMRX9rX5exn_5JybtQo2jYMaMdfOfNePQUq7t6t_nUp9Ipe47MrygUiEfyybgxeWnogyhZ_SQ_PJh7WkefbiymN4s5dUZYTr1kqm4FTtWBfzYFE1rGbpVlceAgWT5KgpkySbQkJs_HoPs3dt6gsJeKCdL-_z3rPOsmdmtEVvdHpXOu3MuK94hDga_1POUXuANJmVMe1VfST8uYnHFIgmnp23O5YQSBGXdaNAhrGQqj8gTLJizIca1433B-ZMnSkflZInvfYUPNaaUYAXm93PBF1Q432amSw/4t5/m0OBzWrMRKW74nQl5AeHCA/h37/h001.dBcX33y4FPgR9xPy8-svNKFhiahkMEbQ0iHCNd9uCUw" rel="noopener">Read about OpenAI-IBM partnership embedding GPT-5.6 in enterprise consulting</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.QkwruxKioV972OfDWXYaT-ECSq02Susz7HePdHQcQT6nx47_ZZa4j99oAZXyl4x4myDZczd4gzoV4tgw5t0cQM7NZqJPHntpvTdv69GeTKGsoJW7CUZRtgzeRBrBY0iJ4YoTpzaSgmttDEYZxuAqpsykkZYnKlRp5onIbWlHW1BTxwf0PWDC2uaygZZrFNcxAe2-UIIBz86W-PXUgkdJUXlhOENqONPQZ9XUTLgC7ToGyXxIYPecIMDnbdZ5dmBfcyFM1JK6exgtjp_Dah-HoZXxnhp6AmuN06O997GRZJYk-m61VCTDnwLTxOLRagt2DQbNBNWkHNPuX-YhhjoB9XLMRpohg6PacHf9C8DEAdJn_gmeHP5Orm3DeKFmxYcEFZ6YlRGRrHhyUyUVamJ7yM0cY_PmpGKX0hAAsD8lQ-Q/4t5/m0OBzWrMRKW74nQl5AeHCA/h38/h001.8P25LwyMFfJq-JDA8aGKzpFxOxvIxTsKD2DML2mxZsU" rel="noopener">Learn about Google's Gemini 3.7 Flash release</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.MmiPG1smHqjG5zPZRGZbvDDeo-tKiCZYVbzqUtTPpli_2jmFML8b3f6b5Gma6F_YoauJEhS1jKmdPI2FYbjAjfLcoj5vXvwcU1Cc_AuK6sSM9QIpNF2Q9jxLYflHw2DW8VaI-X_40aIx0rcO5CUjL036ZyviiFID_QTMsBAM1V4-cvz3gCs1AvjduyJE-DxcuZYksVORwl8-Ny1RFnDdTywuzsXs_sSoJursKMsWe8Rpx5fgVCsq81dbBLCrsIo7Me5s9oAjXL8IADMwakaEw8s_n8y-lv2SMgF2X3vb4jo85P2IlGAV07c3izsTPJb61wQhwxbnEQ7rCUIL7M5edRYWP8mszXG0KY44J3mxC1Da6FozwHCMNYHE_bjtfSCGYd1Aqlh9GOeYuG0s05kYQpkV-PiMS-1XTgpIq53zd0I/4t5/m0OBzWrMRKW74nQl5AeHCA/h41/h001.NAssy2uXhNjHbkilKpwoxONdW8zMytu_Im1wdN-hCpQ" rel="noopener">Explore OpenAI GPT-5.6 Sol Ultrafast tier with Cerebras</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.eA2mNrWR0oOwlf6_w-jFEKBVD8YExcJbmw-42A5TU3FiFghIH29b-hvwYPupCVoTsLqnkapqypWmeYPX319dgRgLuyKNKphjvC1RV2FH7Ric3dp2gGEQVzSvwTN31mIxKaAmZb7csAjzYP7SfHfh8Xvmt__5HNIZ1ft7z66206VZM-WZB4yeiwOlt2Bd4RQ4W7c_bCMGQAEJHd_TWwSuZmtD2llMzHIU8yW2GQ7B_fLIZVtQlLbd7TU7P-sDnFxLF0gi45EDC5VAPJdToJ__dMFST3YRiiQfL-T5cCs-q4nOz1hiXEC68SYYnDHEEgCPJAakTVEQRTkpwgocbGzlD37j473_84TDZmOML30YoUY/4t5/m0OBzWrMRKW74nQl5AeHCA/h6/h001.Pa3tJ86zSIDHsihO9fxRV5dRg0t3wO_zYUjvLmLceYU" rel="noopener">Subscribe to Everyday AI Start Here Series on Spotify</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7rMoviV65-al5K_jhRN5GwvW6r60_Id99NX1mdylw_fO7SCAC0iK7_Vf5o6G6WzUYHUZ7WkMITLTSvHnfAYMOWZyxdnumEBVe1SGjP7StQxVISpI_mXYw1Uh0SYu9QClalf6AJ3zH4DeXBJPjnk8kwGzJbb5_AfYmTjn05MKpb0Bhk-p5ia6ykU_aMY403cTNv00Y_AQmpM0damaqWACs6_vT_MoTMf4OdNNoDPrEwZjI15wX9E76bA9Fi1zIYEfoCwUGLDU3JYTRxslY0DVPuk/4t5/sdqBeFeVRa2j8XU39OlVIA/h12/h001.DwL4SvGA6-eK6v8cleFBgtVKM9Gk" rel="noopener">Every AI Model Explained</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.hfhhuTgKEe71DwIINsNEyZWEp0EZ7ybXapsv3XMV-LUfnN1J6eI6M0KN7WckvPxoE824ABSJNDbGGPcm4Qvl0MathbM1W1ThmzglvLtV7E0NtdxzWck5-hNxpXk3PGf0JEF2_GNj2O7GYQ--4iDAwXeQeEg90bfnJfQNON2nzR_PdssbNLrI4Sl2_31UKlhcHmmUspDQNnwXr1g6KF1BYlh4KTuNqgBJPyaLGgOnHx-RT2SLm2LxZClMGXufzjYqskZjG94H0y52veQ4dpaWXhpEc3t_FxZXghCJDQbEjBYW873J0FpCzxtw5KcSsXLx/4t5/sdqBeFeVRa2j8XU39OlVIA/h13/h001.aFA5lUoWpr-_JfSSCiXUIQwa4anKjqn0DMs7n_q5VT4" rel="noopener">What Workers Quietly Hand to AI</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0AlcB82sa7WpPyBypDdFJLx4aY967Q0RHUrIZ3315L71uBHbawHtDBgJk7Ze0jl0_X2M8UtDXzdbmlx1yX6RWpbdZP7_tMqw40ELDhJRWkOM1DakNet0mwmPcL8Oms94BGbINLsQuly7AseUYDuaUQUQuKHWLOwvHQzzqewz84efPusXCMDcrzOsTspLTSzF4ouqIt3DZIzX4T30iA3fNaWrvp6E64SDLJe5EaRzDNOGJkCPQUzGYhXogDn0z7I3XYNqDo1JIzLhtsakMvrao20JQ_zPirOVjfsUPNLN62gy4lncr_ehprrFViFg8KCFRWST_7UcroyBH8Tq8XRpn-s/4t5/sdqBeFeVRa2j8XU39OlVIA/h6/h001.OWKDm_0DsqN6tkGl1hvQ-ekTXtQwAUNB0ojVWhjDTpk" rel="noopener">Gemini 3.7 Flash</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.SeZcZ2kldk7Osi4slNtvSbg4fHE3D6_GwDJKfp_OmSFhy66IWqVUBFa92gcLzoNDb18Mma2xFi0o3JhTiflCw3i73xixxHrZCcdAddP_UUJGXS-qPoUBMIkcAPgp_XxsGD40b_BEDFf935f5qC0VDX5MQoU7IP1USpEhARwx1Vqr6judo1_PookW1RftqZ5Xe1sBgd5eZEbSAMqmwa8ehNFxCnzeFR5yKbKmysgwi2hF33q8fB2DpE9Fry-0QTVlfFMtsdf9m3YqvtaZyZsXjodTPuGiHZIAde2c2La-Ttk/4t5/sdqBeFeVRa2j8XU39OlVIA/h8/h001.3-dOEG67X752obwSOCi8Am7ZsgzwCaxbe4085o2T1TU" rel="noopener">OpenAI's Best Model Gets 14x Faster</a></li><li><a href="https://link.mail.beehiiv.com/ss/c/u001.RUBZ4nmpws8F7fbywsQK-qL5XmEJI4P7qTAFSNaSvWJu5z6Q_56NZz7lOIUuV7SsZ4wW42CbHaayIjBIvsHY2h5cregOZ2Hyy3RnC-3O9vazoAvxEP7DUdkdGMZC_eCQjQjx3pWQ4XBhlyXkX0EgUKmBuVVQf07_1MrCOa5pYzxlUVVRfHktIte-yyPyI6exdOBg22G7n-RsT3jj8vE04IMzZFRVBYxrjDp6AXmeg_Ys5loFh9VkqmXUZOZNpgdqw0JDzdpE6rlkY-7WG0k_Xg/4t5/sdqBeFeVRa2j8XU39OlVIA/h24/h001.FZIoJzxdLLMGwVFkio34LTCB17Ua6AcV7bebDAF1saU" rel="noopener">Pixel Watch 5 runs Gemini with no phone or signal</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/748b62e956e1b635ca24a24ed1f3442a9c4dfaab433d159589f0edc86d9a7840a012d1214f274f7eb96c9ee0a0d1daeeb2bf51924f85994535ae3327ae5d79d30b89e5ea238a7c67d10c8b5fca3fd67be8356f71de828022721e953af700b2b81684ca66c2385c6e9c038753c0c3c7f0b5ca7ccca7d449290bed22b914b2cc329ca9172ab09d44c994f0cda07c9a9584abfee4f6260a9b7abbfe393a76408069/54bdad2155be824b" rel="noopener">AI Startup Cognition in New Funding Talks at $40 Billion Value</a></li><li><a href="https://link.mail.beehiiv.com/v2/c/814702892fcd523ec55ecf889375f4858b4dc4fcd0560251344e4a19eb0913f1b2564480af88a18c4e22e47ac46c48db417db406398153479025ab4a19ec3269f7da04789ce54acd6a59e4f4962bcbc09f135ef2703a669178ea8dcb224b706ffde07161a46de882f1e6d45444480eb5301802028da3ab416285692139187f74efd0f988cc5b760d4d940baad3ed7b77c72a7c335db91536a8ed4e9207ce220e/bfd7740e0e41d324" rel="noopener">Nebius, CoreWeave Are Cashing In on Soaring AI Compute Prices</a></li></ul></div>
-  </details>
-  
-</section>
-
-</main>
+  </section>
 
 
-<footer>
-  <h3>Archive</h3>
-  <ul class="archive"><li><a href="../archive/2026-08-30.html">2026-08-30</a></li><li><a href="../archive/2026-08-29.html">2026-08-29</a></li><li><a href="../archive/2026-08-28.html">2026-08-28</a></li><li><a href="../archive/2026-08-27.html">2026-08-27</a></li><li><a href="../archive/2026-08-26.html">2026-08-26</a></li><li><a href="../archive/2026-08-25.html">2026-08-25</a></li><li><a href="../archive/2026-08-24.html">2026-08-24</a></li><li><a href="../archive/2026-08-23.html">2026-08-23</a></li><li><a href="../archive/2026-08-17.html">2026-08-17</a></li><li><a href="../archive/2026-08-16.html">2026-08-16</a></li><li><a href="../archive/2026-08-15.html">2026-08-15</a></li><li><a href="../archive/2026-08-14.html">2026-08-14</a></li><li><a href="../archive/2026-08-13.html">2026-08-13</a></li><li><a href="../archive/2026-08-12.html">2026-08-12</a></li><li><a href="../archive/2026-08-11.html">2026-08-11</a></li><li><a href="../archive/2026-08-10.html">2026-08-10</a></li><li><a href="../archive/2026-08-09.html">2026-08-09</a></li><li><a href="../archive/2026-08-08.html">2026-08-08</a></li><li><a href="../archive/2026-08-07.html">2026-08-07</a></li><li><a href="../archive/2026-08-06.html">2026-08-06</a></li><li><a href="../archive/2026-08-05.html">2026-08-05</a></li><li><a href="../archive/2026-08-04.html">2026-08-04</a></li><li><a href="../archive/2026-08-03.html">2026-08-03</a></li><li><a href="../archive/2026-08-02.html">2026-08-02</a></li><li><a href="../archive/2026-08-01.html">2026-08-01</a></li><li><a href="../archive/2026-07-31.html">2026-07-31</a></li><li><a href="../archive/2026-07-30.html">2026-07-30</a></li><li><a href="../archive/2026-07-29.html">2026-07-29</a></li><li><a href="../archive/2026-07-28.html">2026-07-28</a></li><li><a href="../archive/2026-07-27.html">2026-07-27</a></li><li><a href="../archive/2026-07-24.html">2026-07-24</a></li></ul>
-</footer>
 
+  <footer>
+    <p class="eyebrow">Archive</p>
+    <ul class="archive">
+      <li><a class="mono" href="../archive/2026-08-30.html">2026-08-30</a></li><li><a class="mono" href="../archive/2026-08-29.html">2026-08-29</a></li><li><a class="mono" href="../archive/2026-08-28.html">2026-08-28</a></li><li><a class="mono" href="../archive/2026-08-27.html">2026-08-27</a></li><li><a class="mono" href="../archive/2026-08-26.html">2026-08-26</a></li><li><a class="mono" href="../archive/2026-08-25.html">2026-08-25</a></li><li><a class="mono" href="../archive/2026-08-24.html">2026-08-24</a></li><li><a class="mono" href="../archive/2026-08-23.html">2026-08-23</a></li><li><a class="mono" href="../archive/2026-08-17.html">2026-08-17</a></li><li><a class="mono" href="../archive/2026-08-16.html">2026-08-16</a></li><li><a class="mono" href="../archive/2026-08-15.html">2026-08-15</a></li><li><a class="mono" href="../archive/2026-08-14.html">2026-08-14</a></li><li><a class="mono" href="../archive/2026-08-13.html">2026-08-13</a></li><li><a class="mono" href="../archive/2026-08-12.html">2026-08-12</a></li><li><a class="mono" href="../archive/2026-08-11.html">2026-08-11</a></li><li><a class="mono" href="../archive/2026-08-10.html">2026-08-10</a></li><li><a class="mono" href="../archive/2026-08-09.html">2026-08-09</a></li><li><a class="mono" href="../archive/2026-08-08.html">2026-08-08</a></li><li><a class="mono" href="../archive/2026-08-07.html">2026-08-07</a></li><li><a class="mono" href="../archive/2026-08-06.html">2026-08-06</a></li><li><a class="mono" href="../archive/2026-08-05.html">2026-08-05</a></li><li><a class="mono" href="../archive/2026-08-04.html">2026-08-04</a></li><li><a class="mono" href="../archive/2026-08-03.html">2026-08-03</a></li><li><a class="mono" href="../archive/2026-08-02.html">2026-08-02</a></li><li><a class="mono" href="../archive/2026-08-01.html">2026-08-01</a></li><li><a class="mono" href="../archive/2026-07-31.html">2026-07-31</a></li><li><a class="mono" href="../archive/2026-07-30.html">2026-07-30</a></li><li><a class="mono" href="../archive/2026-07-29.html">2026-07-29</a></li><li><a class="mono" href="../archive/2026-07-28.html">2026-07-28</a></li><li><a class="mono" href="../archive/2026-07-27.html">2026-07-27</a></li><li><a class="mono" href="../archive/2026-07-24.html">2026-07-24</a></li>
+    </ul>
+    <p class="sig mono">// generated by the newsletter digest agent</p>
+  </footer>
+
+
+</div>
+</div>
 
 <script>
-// category filter (also filters the "top things" list)
 document.querySelectorAll('.filter').forEach(function (btn) {
   btn.addEventListener('click', function () {
     document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
@@ -715,26 +1245,22 @@ document.querySelectorAll('.filter').forEach(function (btn) {
     document.querySelectorAll('.batch').forEach(function (s) {
       s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
     });
-    document.querySelectorAll('.glance li').forEach(function (li) {
+    document.querySelectorAll('.glance-list li').forEach(function (li) {
       li.style.display = (cat === 'all' || li.dataset.cat === cat) ? '' : 'none';
     });
   });
 });
 
-// light / dark toggle, remembered across visits
 (function () {
   var root = document.documentElement, btn = document.getElementById('theme-toggle');
   function current() {
     return root.getAttribute('data-theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   }
-  function paint() { btn.textContent = current() === 'dark' ? '☀️' : '🌙'; }
-  paint();
   btn.addEventListener('click', function () {
     var next = current() === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
-    paint();
   });
 })();
 </script>
