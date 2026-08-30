@@ -12,6 +12,11 @@ from .config import SITE_DIR, SUMMARIES_DIR, TEMPLATES_DIR
 
 BATCH_ORDER = ["stocks-am", "crypto-am", "ai-am", "tech-am", "crypto-pm", "ai-pm"]
 
+# How many of the most recent digest days the site shows (one week).
+# Older days stay in data/summaries/ — only the published pages are trimmed —
+# so raising this number brings the full history straight back.
+ARCHIVE_DAYS = 7
+
 
 def save_batch_digest(date_str, batch, digest, summarized) -> None:
     day_dir = SUMMARIES_DIR / date_str
@@ -42,8 +47,9 @@ def build_site() -> None:
     )
     day_template = env.get_template("day.html.j2")
 
-    days = sorted([d.name for d in SUMMARIES_DIR.iterdir() if d.is_dir()], reverse=True) \
+    all_days = sorted([d.name for d in SUMMARIES_DIR.iterdir() if d.is_dir()], reverse=True) \
         if SUMMARIES_DIR.exists() else []
+    days = all_days[:ARCHIVE_DAYS]
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     (SITE_DIR / ".nojekyll").write_text("", encoding="utf-8")
@@ -69,6 +75,13 @@ def build_site() -> None:
         html = day_template.render(
             date=None, batches=[], glance=[], days=[], is_latest=True, root="")
         (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
+
+    # Drop published pages for days that rolled out of the window, so old
+    # digests aren't left orphaned (unlinked but still reachable) in docs/.
+    keep = {f"{d}.html" for d in days}
+    for stale in archive_dir.glob("*.html"):
+        if stale.name not in keep:
+            stale.unlink()
 
 
 def _glance(batches: list) -> list:
