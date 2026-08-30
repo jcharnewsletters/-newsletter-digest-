@@ -1,0 +1,11 @@
+# Vercel only serves the generated static site in docs/.
+# Everything below is pipeline source that runs on GitHub Actions, not Vercel —
+# excluding it keeps deploys tiny and stops Vercel from detecting a Python app.
+.github/
+src/
+config/
+templates/
+tests/
+data/
+requirements.txt
+*.md
