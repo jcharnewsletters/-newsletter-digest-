@@ -6,102 +6,144 @@
 <meta name="robots" content="noindex">
 <title>Newsletter Digest{% if date %} — {{ date }}{% endif %}</title>
 <link rel="stylesheet" href="{{ root }}style.css">
-<!-- set saved theme before paint to avoid a flash of the wrong colors -->
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-<header>
-  <div class="titlebar">
-    <h1>📰 Newsletter Digest</h1>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light / dark">🌙</button>
-  </div>
-  {% if date %}<p class="date">{{ date }}{% if not is_latest %} · archive{% endif %}</p>{% endif %}
-  <nav class="filters">
-    <button class="filter active" data-cat="all">All</button>
-    <button class="filter" data-cat="stocks">📈 Stocks</button>
-    <button class="filter" data-cat="crypto">🪙 Crypto</button>
-    <button class="filter" data-cat="ai">🤖 AI</button>
-    <button class="filter" data-cat="tech">💻 Tech</button>
-  </nav>
-</header>
 
-<main>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="{{ root }}index.html">
+      <span class="brand-mark">◆</span><span class="brand-name">NEWSLETTER_DIGEST</span>
+    </a>
+    <nav class="topnav">
+      <button class="filter active" data-cat="all">all</button>
+      <button class="filter" data-cat="stocks">stocks</button>
+      <button class="filter" data-cat="crypto">crypto</button>
+      <button class="filter" data-cat="ai">ai</button>
+      <button class="filter" data-cat="tech">tech</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">◐</button>
+    </nav>
+  </div>
+</div>
+
+<div class="rails">
+<div class="shell">
+
+  <header class="hero">
+    <p class="eyebrow">{% if is_latest %}Latest digest{% else %}Archived digest{% endif %}</p>
+    <h1>Your newsletters, <span class="hl">condensed</span>.</h1>
+    {% if date %}
+    <p class="hero-meta">
+      <span class="mono">{{ date }}</span>
+      {% if batches %}<span class="sep">·</span><span class="mono">{{ batches | length }} batches</span>{% endif %}
+      {% if not is_latest %}<span class="sep">·</span><span class="mono">archive</span>{% endif %}
+    </p>
+    {% endif %}
+  </header>
+
 {% if glance %}
-<section class="glance">
-  <h2>⚡ Top things to know today</h2>
-  <ul>
-    {% for g in glance %}
-    <li data-cat="{{ g.category }}">
-      <a href="#{{ g.anchor }}"><span class="badge badge-{{ g.category }}">{{ g.category }}</span><span>{{ g.headline }}</span></a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+  <section class="glance">
+    <p class="eyebrow">⚡ Top things to know today</p>
+    <ol class="glance-list">
+      {% for g in glance %}
+      <li data-cat="{{ g.category }}">
+        <a href="#{{ g.anchor }}">
+          <span class="idx mono">{{ "%02d"|format(loop.index) }}</span>
+          <span class="tag tag-{{ g.category }}">{{ g.category }}</span>
+          <span class="glance-text">{{ g.headline }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
 {% endif %}
 
 {% if not batches %}
-  <p class="empty">No digests yet — the first scheduled run will populate this page.</p>
+  <p class="empty mono">// no digests yet — the first scheduled run will populate this page</p>
 {% endif %}
 
 {% for b in batches %}
-<section class="batch" id="{{ b.batch }}" data-cat="{{ b.category }}">
-  <h2><span class="badge badge-{{ b.category }}">{{ b.category }}</span> {{ b.label }}</h2>
+  <section class="batch" id="{{ b.batch }}" data-cat="{{ b.category }}">
+    <div class="batch-head">
+      <p class="eyebrow"><span class="tag tag-{{ b.category }}">{{ b.category }}</span> {{ b.batch }}</p>
+      <h2>{{ b.label }}</h2>
+    </div>
 
-  {% if b.digest.top_stories %}
-  <div class="top-stories">
-    <h3>⭐ Top stories across your newsletters</h3>
-    {% for story in b.digest.top_stories %}
-    <article class="story">
-      <h4>{{ story.title }}</h4>
-      <ul>{% for p in story.points %}<li>{{ p }}</li>{% endfor %}</ul>
-      {% if story.unique_angles %}
-      <ol class="angles">{% for a in story.unique_angles %}<li><strong>{{ a.newsletter }}:</strong> {{ a.point }}</li>{% endfor %}</ol>
-      {% endif %}
-      <p class="covered-by">Covered by: {{ story.covered_by | join(", ") }}</p>
-    </article>
-    {% endfor %}
-  </div>
-  {% endif %}
+    {% if b.digest.top_stories %}
+    <div class="panel">
+      <p class="panel-label mono">★ top stories across your newsletters</p>
+      {% for story in b.digest.top_stories %}
+      <article class="story">
+        <h3>{{ story.title }}</h3>
+        <ul class="dots">{% for p in story.points %}<li>{{ p }}</li>{% endfor %}</ul>
+        {% if story.unique_angles %}
+        <div class="angles">
+          {% for a in story.unique_angles %}
+          <p><span class="mono angle-src">{{ a.newsletter }}</span> {{ a.point }}</p>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <p class="chips">{% for c in story.covered_by %}<span class="chip mono">{{ c }}</span>{% endfor %}</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
 
-  {% set nonempty = b.digest.by_newsletter | selectattr("items") | list %}
-  {% if nonempty %}
-  <div class="cards">
-    <h3 class="cards-label">By newsletter <span class="hint">(tap to expand)</span></h3>
-    {% for nl in nonempty %}
-    <details class="newsletter-card">
-      <summary>{{ nl.newsletter }} <span class="count">{{ nl["items"] | length }}</span></summary>
-      <div class="card-body">
-        {% for item in nl["items"] %}
-        <h4>{{ loop.index }}. {{ item.title }}</h4>
-        <ul>{% for p in item.points %}<li>{{ p }}</li>{% endfor %}</ul>
-        {% endfor %}
+    {% set nonempty = b.digest.by_newsletter | selectattr("items") | list %}
+    {% if nonempty %}
+    <div class="cards">
+      <p class="panel-label mono">▸ by newsletter <span class="dim">— click to expand</span></p>
+      {% for nl in nonempty %}
+      <details class="ncard">
+        <summary>
+          <span class="caret mono">▸</span>
+          <span class="ncard-name">{{ nl.newsletter }}</span>
+          <span class="ncard-count mono">{{ nl["items"] | length }}</span>
+        </summary>
+        <div class="ncard-body">
+          {% for item in nl["items"] %}
+          <div class="nitem">
+            <span class="nidx mono">{{ "%02d"|format(loop.index) }}</span>
+            <div>
+              <h4>{{ item.title }}</h4>
+              <ul class="dots">{% for p in item.points %}<li>{{ p }}</li>{% endfor %}</ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% set links = [] %}
+    {% for issue in b.issues %}{% for l in issue.summary.links %}{% if links.append(l) %}{% endif %}{% endfor %}{% endfor %}
+    {% if links %}
+    <details class="ncard links">
+      <summary><span class="caret mono">▸</span><span class="ncard-name">read more at the sources</span>
+        <span class="ncard-count mono">{{ links[:12] | length }}</span></summary>
+      <div class="ncard-body">
+        <ul class="linklist">{% for l in links[:12] %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}</ul>
       </div>
     </details>
-    {% endfor %}
-  </div>
-  {% endif %}
-
-  {% set links = [] %}
-  {% for issue in b.issues %}{% for l in issue.summary.links %}{% if links.append(l) %}{% endif %}{% endfor %}{% endfor %}
-  {% if links %}
-  <details class="links">
-    <summary>🔗 Read more at the sources</summary>
-    <div class="card-body"><ul>{% for l in links[:12] %}<li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a></li>{% endfor %}</ul></div>
-  </details>
-  {% endif %}
-</section>
+    {% endif %}
+  </section>
 {% endfor %}
-</main>
 
 {% if days %}
-<footer>
-  <h3>Archive</h3>
-  <ul class="archive">{% for d in days %}<li><a href="{{ root }}archive/{{ d }}.html">{{ d }}</a></li>{% endfor %}</ul>
-</footer>
+  <footer>
+    <p class="eyebrow">Archive</p>
+    <ul class="archive">
+      {% for d in days %}<li><a class="mono" href="{{ root }}archive/{{ d }}.html">{{ d }}</a></li>{% endfor %}
+    </ul>
+    <p class="sig mono">// generated by the newsletter digest agent</p>
+  </footer>
 {% endif %}
 
+</div>
+</div>
+
 <script>
-// category filter (also filters the "top things" list)
 document.querySelectorAll('.filter').forEach(function (btn) {
   btn.addEventListener('click', function () {
     document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
@@ -110,26 +152,22 @@ document.querySelectorAll('.filter').forEach(function (btn) {
     document.querySelectorAll('.batch').forEach(function (s) {
       s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
     });
-    document.querySelectorAll('.glance li').forEach(function (li) {
+    document.querySelectorAll('.glance-list li').forEach(function (li) {
       li.style.display = (cat === 'all' || li.dataset.cat === cat) ? '' : 'none';
     });
   });
 });
 
-// light / dark toggle, remembered across visits
 (function () {
   var root = document.documentElement, btn = document.getElementById('theme-toggle');
   function current() {
     return root.getAttribute('data-theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   }
-  function paint() { btn.textContent = current() === 'dark' ? '☀️' : '🌙'; }
-  paint();
   btn.addEventListener('click', function () {
     var next = current() === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
-    paint();
   });
 })();
 </script>
