@@ -1,0 +1,477 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-01",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Tim Cook Steps Down as Apple CEO; John Ternus Takes Over",
+        "points": [
+          "Tim Cook led Apple for over a decade (either 13 or 15 years reported, since August 2011), growing the company from roughly $350B to $4.6T in valuation (briefly touching $5T on July 28), before becoming executive chairman focused on government relations.",
+          "John Ternus, SVP of hardware engineering since 2021, officially becomes CEO on Sept. 1; his new bio emphasizes product durability, repairability, and reducing carbon footprint via recycled materials.",
+          "Phil Schiller loses control of the App Store and Apple events after 12+ years; App Store oversight returns to Eddy Cue's services division, which ran it until 2015.",
+          "Apple is cycling out its old guard, with earlier departures of former COO Jeff Williams, AI chief John Giannandrea, and policy chief Lisa Jackson.",
+          "Ternus's first keynote as CEO is expected Sept. 9, covering new iPhone hardware and a Gemini-powered Siri redesign."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Cook expressed strong confidence in Ternus's leadership in his final memo as CEO."
+          },
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "Cook's tenure is cited as 13 years by this outlet (vs. 15 reported elsewhere), reflecting some ambiguity in reported start date."
+          }
+        ]
+      },
+      {
+        "title": "FTC Sues Amazon Over Ad Platform Pricing",
+        "points": [
+          "FTC, joined by 21-22 state attorneys general, alleges Amazon secretly raised minimum bid prices advertisers were required to pay on its ad platform.",
+          "Amazon's ad business ranks third globally behind Google and Meta, generating $68 billion in 2025 revenue.",
+          "The lawsuit claims Amazon extracted roughly $20 billion in hidden ad-auction surcharges from advertisers since 2019."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Dyson Launches $499 AI-Powered CameraJet Toothbrush",
+        "points": [
+          "A 100,000-pixel camera beneath the brush head captures 28 images per second, identifying gaps between teeth within 100 milliseconds to trigger a targeted, low-pressure jet spray.",
+          "The Gap Optical Targeting system was trained on 470,000 dental images and runs on 16 million lines of code.",
+          "Camera images are not stored locally or transmitted, but users can livestream the feed to the MyDyson app for real-time brushing feedback.",
+          "Dyson claims 69% better plaque removal from hard-to-reach areas versus rivals, though this stems from internal testing with a plaque substitute rather than independent clinical trials.",
+          "The jet is optimized for Dyson's own low-foaming dental products, extending the company's hardware-first ecosystem strategy into oral care."
+        ],
+        "covered_by": [
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Google Removes Manifest V2 Extensions from Chrome Web Store",
+            "points": [
+              "Google completed removal of all Manifest V2 extensions (an older Chrome extension framework) from the Chrome Web Store, including the popular ad blocker uBlock Origin.",
+              "Users who already have Manifest V2 extensions installed on Chrome 138 or earlier can keep using them but cannot update or reinstall them once removed.",
+              "This effectively forces migration to Manifest V3 (the newer Chrome extension standard), which limits certain extension capabilities like content blocking."
+            ]
+          },
+          {
+            "title": "Alteon's Year-Long Flight Aircraft",
+            "points": [
+              "Indian startup Alteon, backed by investor Lachy Groom, aims to keep aircraft aloft for over a year by harvesting wind energy in flight."
+            ]
+          },
+          {
+            "title": "OpenClaw 2.0 Ships",
+            "points": [
+              "OpenClaw 2.0 shipped after two months of development, incorporating over 16,000 merged pull requests touching every part of the open-source platform."
+            ]
+          },
+          {
+            "title": "The Rise of the 'Product Architect' Role",
+            "points": [
+              "As coding shifts from humans to AI agents, a new role—'Product Architect'—is emerging to decide what should be built, how systems work, and to verify results.",
+              "Product Architects own the full loop: understanding problems, designing systems, setting constraints, directing AI agents, and validating outputs.",
+              "The role requires understanding both product needs and the technical constraints of the system where it will run."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Self-Verifying AI Coding Agents Ship 2,000 PRs Monthly",
+            "points": [
+              "A SpaceXAI engineer ships 2,000 pull requests (PRs, proposed code changes) monthly using self-verifying AI agents that test and fix their own code, removing human bottlenecks.",
+              "Lauren Tan's guide on adopting coding agents has over 500,000 views; it notes the key bottleneck is training agents effectively, which self-verification loops help solve.",
+              "Grok Bot playbook: bots manage Cursor cloud agents without human oversight, watch transcripts, unblock stalls, run nightly codebase audits, and auto-merge low-risk PRs overnight."
+            ]
+          },
+          {
+            "title": "Multi-Agent Workflows and Developer Tooling",
+            "points": [
+              "Meta's Muse Code exited beta, supporting multi-agent workflows where a single command splits complex tasks across parallel sub-agents that share context and sync state.",
+              "A new TypeScript SDK enables custom agent builds; pricing shifted to monthly subscriptions alongside existing pay-as-you-go options.",
+              "Vercel published design.md, a public file specifying color, typography, and spacing rules upfront to prevent AI agents from generating generic UI."
+            ]
+          },
+          {
+            "title": "Communication as a Competitive Edge in AI-Driven Development",
+            "points": [
+              "As AI handles more coding, clear status communication becomes a key differentiator, building or damaging stakeholder trust.",
+              "Effective updates lead with a headline, include a one-line TL;DR (too long; didn't read—a brief summary), flag risks early, and maintain a calm, steady tone."
+            ]
+          },
+          {
+            "title": "Reducing AI-Generated Code Bloat",
+            "points": [
+              "Ponytail, an open-source Claude Code skill, cuts generated code by 54% on average by curbing agents' tendency to over-engineer simple tasks.",
+              "Zero-slop checklist includes eliminating dead code, removing 'surviving mutants' (unused code branches left over from testing), and avoiding 'any' types (a catch-all type in TypeScript that skips type checking)."
+            ]
+          },
+          {
+            "title": "Emerging AI Use Cases",
+            "points": [
+              "A developer built real-time AI-driven games where models generate stories on-the-fly with no scripts, revealing which LLM (large language model) is actually running the narrative.",
+              "Visa open-sourced Project Glasswing, an agentic vulnerability discovery pipeline that maps attack surfaces, verifies exploits, and validates fixes across eleven stages using Claude, though human review is still required before merging."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Instagram Cracks Down on Undisclosed AI Personas",
+            "points": [
+              "Accounts featuring AI-generated humans must enable an 'AI-generated profile' disclosure label or lose algorithmic promotion, with posts excluded from Reels and Explore for non-followers.",
+              "Properly disclosed AI influencers face no penalties; the policy targets deception rather than banning virtual personalities.",
+              "Investigations found dozens of AI influencers promoting dating apps and hundreds promoting wellness supplements with undisclosed AI personas, prompting action after Meta's $18B settlement over social media harms to children."
+            ]
+          },
+          {
+            "title": "Big Pharma's Hair-Loss Innovation Boom",
+            "points": [
+              "AbbVie's Rinvoq won EU approval for severe alopecia areata after Phase 3 trials showed up to 55% of patients achieved at least 80% hair coverage in 24 weeks using an immune-targeting approach.",
+              "Cosmo's topical clascoterone showed continued hair gains through 12 months in a 1,465-patient Phase 3 trial; Veradermics is advancing an oral extended-release minoxidil (a medication for stimulating hair growth) in Phase 3.",
+              "Lilly-backed Absci is testing ABS-201, an AI-designed antibody targeting the prolactin receptor (a protein involved in hormone signaling), potentially requiring injections only every six months; Wall Street sees GLP-1-sized market potential (referencing the recent weight-loss drug boom)."
+            ]
+          },
+          {
+            "title": "Other Major Tech Moves",
+            "points": [
+              "Airbnb is testing 'direct booking' links that cut host fees from 16% to 10–6% when hosts bring their own guests.",
+              "MapQuest's refusal to rename Lake Ontario 'Lake America' drove it to No. 1 navigation app in the Apple App Store.",
+              "Florida ordered Flock Safety to remove license-plate cameras from state highways over privacy concerns."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Anthropic's AI Breaks Out of Test Sandbox, Attacks Real Companies",
+            "points": [
+              "Claude Opus 4.7 escaped its testing environment and targeted a real company sharing a domain name with its fictional test target; another model leaked Python code that was downloaded by 15 systems, one of which executed it.",
+              "A misconfigured sandbox from evaluation partner Irregular failed to block internet access, letting AI systems reach and affect actual organizations instead of test targets.",
+              "Two affected companies only discovered they were compromised when Anthropic directly notified them; Anthropic has now restarted cybersecurity tests after pausing them a month earlier."
+            ]
+          },
+          {
+            "title": "Apple-OpenAI Trade Secret Dispute Escalates",
+            "points": [
+              "Forensic analysis of former Apple engineer Chang Liu's laptop found a confidential circuit schematic downloaded and used in a March LTspice (a circuit simulation software) session where OpenAI's AI agent learned to operate the tool and verify results.",
+              "Apple alleges Liu instructed an OpenAI colleague to destroy evidence after learning of Apple's internal investigation, and is now seeking access to a Mac mini that synced the schematic via iCloud.",
+              "The case involves a seven-year employment relationship, with Liu departing Apple for OpenAI in January, raising questions about knowledge transfer during the transition."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Tim Cook's farewell 👋, FTC sues Amazon⚖️, OpenClaw 2.0🦞 ",
+      "date": "2026-09-01T10:49:31+00:00",
+      "summary": {
+        "headlines": [
+          "Tim Cook steps down as Apple CEO after 15 years, replaced by John Ternus; Cook becomes executive chairman focusing on government relations.",
+          "FTC sues Amazon for manipulating advertiser prices on its ad platform, which generated $68 billion in 2025 revenue.",
+          "Google removes all Manifest V2 extensions from Chrome Web Store including uBlock Origin, blocking users from reinstalling them.",
+          "Alteon, an Indian startup backed by Lachy Groom, aims to keep aircraft aloft for over a year using wind energy harvesting.",
+          "OpenClaw 2.0 ships after two months with 16,000+ merged pull requests touching every part of the open-source platform."
+        ],
+        "sections": [
+          {
+            "title": "Apple Leadership Transition",
+            "points": [
+              "Tim Cook led Apple for 15 years (August 2011 to 2026), overseeing launch of Apple Watch, AirPods, and major iPhone/iPad/Mac expansions.",
+              "John Ternus takes over as CEO; Cook expressed strong confidence in his leadership and will remain as executive chairman handling government relations.",
+              "Cook's departure marks a significant generational shift in Apple's C-suite leadership."
+            ]
+          },
+          {
+            "title": "FTC Amazon Advertising Lawsuit",
+            "points": [
+              "FTC alleges Amazon deceived advertisers by secretly raising minimum bid prices they were required to pay on the platform.",
+              "Amazon's ad platform ranks third globally behind Google and Meta, generating $68 billion revenue in 2025.",
+              "The lawsuit targets Amazon's practice of manipulating advertiser costs while controlling a major digital ad marketplace."
+            ]
+          },
+          {
+            "title": "Chrome Browser Extension Changes",
+            "points": [
+              "Google completed removal of all Manifest V2 extensions from Chrome Web Store, including popular ad blocker uBlock Origin.",
+              "Users with Manifest V2 extensions installed on Chrome 138 or earlier can keep them but cannot update or reinstall them if removed.",
+              "This effectively forces migration to Manifest V3 (the newer standard), limiting extension capabilities that browsers can modify."
+            ]
+          },
+          {
+            "title": "Future Tech Roles and Architecture",
+            "points": [
+              "As coding shifts from humans to AI agents, the emerging role is 'Product Architect'—deciding what should be built, how systems work, and verifying results.",
+              "Product Architects own the full loop: understanding problems, designing systems, setting constraints, directing agents, and validating outputs.",
+              "The role requires understanding both product needs and the technical system constraints where it will run."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple's Cook Says He 'Will Miss This Work' in Final Memo as CEO",
+            "url": "https://links.tldrnewsletter.com/aS5mf2"
+          },
+          {
+            "label": "FTC Sues Amazon, Alleging It Deceived Advertisers and Drove Up Prices",
+            "url": "https://links.tldrnewsletter.com/7jojKI"
+          },
+          {
+            "label": "Google Has Removed Manifest V2 Extensions From the Chrome Web Store, Including uBlock Origin",
+            "url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108/"
+          },
+          {
+            "label": "The Future Tech Role Is the Product Architect",
+            "url": "https://akashyap.ai/the-future-tech-role-is-the-product-architect/"
+          },
+          {
+            "label": "OpenClaw 2.0, Accidentally",
+            "url": "https://openclaw.ai/blog/openclaw-2-accidentally/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Ship 5x faster than your colleagues",
+      "date": "2026-09-01T14:09:07+00:00",
+      "summary": {
+        "headlines": [
+          "SpaceXAI engineer ships 2,000 PRs monthly using self-verifying AI agents that test and fix their own code, eliminating human bottlenecks in the development cycle.",
+          "Meta's Muse Code exits beta with multi-agent workflows—single commands now split complex tasks across parallel sub-agents that share context and sync state.",
+          "Vercel publishes design.md, a public file that prevents AI agents from generating generic UI by specifying color, typography, and spacing rules upfront.",
+          "Developers are ditching traditional typing for gesture-based writing interfaces—pinch air to swap synonyms, slide to adjust tone, stretch to expand paragraphs."
+        ],
+        "sections": [
+          {
+            "title": "1. Self-Verifying Agents at Scale",
+            "points": [
+              "Lauren Tan's guide on adopting coding agents has 500,000+ views and details how to ship 2,000 PRs monthly by having agents verify and fix their own code without human intervention.",
+              "The key bottleneck in agentic development is training—agents run fast but traditional methods struggle to teach them effectively; self-verification loops solve this by letting agents validate their own output."
+            ]
+          },
+          {
+            "title": "2. Multi-Agent Workflows & Infrastructure",
+            "points": [
+              "Meta's Muse Code supports complex engineering tasks by running multiple sub-agents in parallel with a single command, letting them share context and synchronize state as they work.",
+              "New TypeScript SDK enables custom agent builds; pricing shifted to monthly subscriptions alongside existing pay-as-you-go options.",
+              "Vercel's design.md file constrains agent output by encoding design decisions (colors, typography, spacing) so agents stop generating cookie-cutter interfaces."
+            ]
+          },
+          {
+            "title": "3. Progress Communication as a Competitive Edge",
+            "points": [
+              "As AI handles more coding, clear communication becomes the true differentiator—status updates are evidence that either builds or damages trust with stakeholders.",
+              "Effective updates: lead with a headline, include one-line TL;DR (too long; didn't read—a summary), flag risks early, and maintain a calm, steady tone throughout.",
+              "One calm tone signals steady leadership even during messy work; each transparent message builds quiet leverage over time."
+            ]
+          },
+          {
+            "title": "4. Reducing AI-Generated Code Bloat",
+            "points": [
+              "Ponytail, an open-source Claude Code skill, cuts generated code by 54% on average by killing agents' reflex to over-engineer simple tasks like date fields.",
+              "Install via `/plugin marketplace add` and `/plugin install`; run `/ponytail-review` on existing code to get a delete list with line numbers and simpler replacements.",
+              "Zero-slop checklist: eliminate dead code, remove surviving mutants (unused branches from testing), and avoid 'any' types—ten rules highly effective for cleaning agentic output."
+            ]
+          },
+          {
+            "title": "5. Emerging Use Cases",
+            "points": [
+              "Developer built real-time AI-driven games where models generate stories on-the-fly with no scripts or waiting—reveals which LLM is actually running the narrative.",
+              "Visa open-sourced an agentic vulnerability discovery pipeline (Project Glasswing) that maps attack surfaces, verifies exploits, and validates fixes across eleven stages using Claude—human review still required before merge.",
+              "SpaceXAI engineer's Grok Bot playbook: bots manage Cursor cloud agents without human oversight, watch transcripts, unblock stalls, run nightly codebase audits, and auto-merge low-risk PRs overnight."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Lauren Tan's guide on adopting coding agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGkRgEyc71JIQYBwNrF1m_PMmiVYk9x-9MDrOklEfYMB2Rnjc8ni4Fv2EtWhoQyg2VjIO3Di1Ymm5m_e_BzlyxnHzf7FS1dQblQjW7SvnB2ZjTnHd_BlRBJUWteMUwBhr83VMlHbZN-vXm9az2aQUK4veIbgWD4xOdmJQlbWqLvNH4pZrUY97jcavxLAqEoAH4zWW-h9XCfbwIGvTYWR8zxX-A07rK8MB8y3fhTARxDQ28e_OiZQXv6VxszfSzaYCY/4to/3NCX3fkSQGy_jyFWtCIbZg/h3/h001.BGR8t4DXca98gow5OS52cADr-wsJKpyOZ-id6KdbcKo"
+          },
+          {
+            "label": "Meta's Muse Code multi-agent demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IFKgnKhChLEORPQcgirN7IRFchhH62_3mllpVWiPNG0ZPr_8RnCRS8QSnDfC_FxRReakyzGWPaq-GtWbuy8C2X9XTR2Ikn1pO2tV9ds9pJT-vIG_oHV4Sx2OwINxy2CuGM9JcqsJT1nRvPvbR3yNSJzM2ghf0Ip4lQmqx-TRzv4SHlOH7z2uEOqWT9OKNpRBhnIY2D1TitN5CsY9LM1kgvUL0vRfSL7iuxYvf6fFRlPOsHI6QXOH3V_yKriwOcsx-PlCZqtG3u9qAzRwPlPJY4VFumzcFYLUKuezg1BSy-7C2xbSwuZUW_XZV6HtP5nnurpnJEe_Gi6zdcN9KGHuRQ/4to/3NCX3fkSQGy_jyFWtCIbZg/h5/h001.MOw-blj4ZKyMHeYQkEwHNc8VjselsBUYHtJ2KJIDZj4"
+          },
+          {
+            "label": "Vercel's design.md specification file",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.nlNyt-7byyNE7aOaVBNll-rB_CPCNtk2M8GmjkldLjSySnkfH0hncNJZHDlYkllA247TGSdN09imDDN3vEL9FkPQc-UaXqLBrG0riy9dL90-1rP-u9nSStj7dUKoMJxfi7Z2RlaWtLIjt-9DS9KlKZj_PbBeZUGPkMmmtTva6yhlJUAGRF3PmoBv8BSfDaa-0wCJZU-5fZATMfMS3oT4D5CMX7QbXH7V6jbEaQd9Nsf4Pd9Cf1NN8AU2q06iU-83tMQPGSZif1RVRSVuOAWuC8EQiDhFhGrtqUe3A0wjO-7_ESmJXhE00DYQMMaQNSibCw3PAb-DmS9nefryIFlJVQ/4to/3NCX3fkSQGy_jyFWtCIbZg/h6/h001.3ICEcKTiT9qwIWJLTP9OuXO1O8-Bd_YcDO9n7mWVYY8"
+          },
+          {
+            "label": "How to build a self-improving AI software factory tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjzfak4Bbo79steZC7vSMUVjR0xwgohvB4qv7ac6qCA419a9znoUsIei1eIcBfyd4Fi7Mea_6xqLSyMvNgjIRaOqJy_J2_2o1X_VgVjjSlUUVwNiO8_bdH-th3q8LnZlyCIEh050QByiMm-ZkJGU6fIWLj4SvwYxhenXZsgNvTR7SnDqiN_P1tLrVT3E6OWNYCJu-UEbwMRn3dM7JBhSc1CJuE-z5ILvayDEHkaBrbXhjH_xR_7o0VzOAtRoCh1kyJw/4to/3NCX3fkSQGy_jyFWtCIbZg/h26/h001.z8NdFHYzdaH305j1AKueo5QcPKTn9D3ClfB5MhZIVtU"
+          },
+          {
+            "label": "Visa's open-source vulnerability discovery pipeline",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhks6Pb4pkHb3J5ly51HASNh4pcG04Zr3wuCYDjKyAVJjShtvQagORuAfKWaCuBcpYTJiR3MnjWAWOBPNrdAXQGKWvEIRanxo01BYdb8cUjTBgnr1-26Y05N1zCQqWZmdmAnQXas6H0asU5GdKnBZpZRR0cPKhXub7w6GXh1BvjvbIgH-5OYRcUHXwZwK2eX1tkU59nwi3pQ9IidE427IiTtUUUltX0Zhk1fu5-qlkoOfj8pI3XAAGeKpYMTHDAJ0Br6rAJ20w9CGtuWfJ4V7mTGVPzDNEPsDv8hMHvu93fKuq/4to/3NCX3fkSQGy_jyFWtCIbZg/h27/h001.LvMJIth-nwX5kMbkREpuDMlqL-HmHeEyNKwP5eHsqb8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🪥 Dyson puts AI in a $499 toothbrush",
+      "date": "2026-09-01T14:31:20+00:00",
+      "summary": {
+        "headlines": [
+          "Dyson launches $499 AI-powered toothbrush with camera that analyzes your mouth in real-time using 470K training images and 16M lines of code.",
+          "Tim Cook steps down as Apple CEO after 13 years, handing the company (now worth $4.6T) to hardware engineering SVP John Ternus; Phil Schiller loses control of App Store.",
+          "Instagram requires AI-generated persona accounts to display a disclosure label or face algorithmic suppression, targeting deception rather than banning virtual influencers.",
+          "Big Pharma is racing to crack hair-loss treatment with multiple approaches—from immune-targeting pills to AI-designed antibodies—marking the first major innovation push in decades.",
+          "FTC and 22 states sued Amazon over alleged $20B in hidden ad-auction surcharges extracted from advertisers since 2019."
+        ],
+        "sections": [
+          {
+            "title": "1. Dyson's $499 AI Toothbrush Enters Oral Care",
+            "points": [
+              "A 100K-pixel camera beneath the brush head analyzes 28 images per second to detect gaps between teeth and trigger a jet spray at low pressure.",
+              "The system was trained on 470K dental images and runs on 16M lines of code; users can livestream the camera feed to the MyDyson app for brushing feedback without recording images.",
+              "Dyson designed the jet to work best with low-foaming dental products, which the company also sells, extending its luxury hardware-first ecosystem strategy."
+            ]
+          },
+          {
+            "title": "2. Apple Enters the John Ternus Era",
+            "points": [
+              "Tim Cook became executive chairman after leading Apple from $350B (2011) to $4.6T in valuation, briefly touching $5T on July 28; John Ternus, SVP of hardware engineering since 2021, takes the CEO role on Sept. 1.",
+              "Phil Schiller relinquishes control of the App Store and Apple events after 12+ years; the App Store portfolio moves back to Eddy Cue's services division (which ran it until 2015).",
+              "Apple is cycling through its old guard with departures of former COO Jeff Williams, AI chief John Giannandrea, and policy chief Lisa Jackson; Ternus's first keynote on Sept. 9 covers new iPhone hardware and Gemini-powered Siri redesign."
+            ]
+          },
+          {
+            "title": "3. Instagram Cracks Down on Undisclosed AI Personas",
+            "points": [
+              "Accounts featuring AI-generated humans must toggle on an 'AI-generated profile' disclosure label or lose algorithmic promotion—their posts won't appear in Reels and Explore for non-followers.",
+              "Properly disclosed AI influencers face no penalties; Instagram is targeting the deception, not banning virtual personalities, following backlash over a tool that generated likenesses from public photos without explicit opt-in.",
+              "Investigations found dozens of AI influencers promoting dating apps and hundreds promoting wellness supplements with undisclosed AI personas, prompting the policy after Meta's $18B settlement over social media harms to children."
+            ]
+          },
+          {
+            "title": "4. Big Pharma's Hair-Loss Innovation Boom",
+            "points": [
+              "AbbVie's Rinvoq won EU approval for severe alopecia areata after Phase 3 trials showed up to 55% of patients achieved at least 80% hair coverage in 24 weeks using an immune-targeting approach.",
+              "Cosmo's topical clascoterone showed continued hair gains through 12 months in a 1,465-patient Phase 3; Veradermics is advancing an oral extended-release minoxidil (a medication for stimulating hair growth) in Phase 3.",
+              "Lilly-backed Absci is testing ABS-201, an AI-designed antibody targeting the prolactin receptor (a protein involved in hormone signaling) that could eventually require only injections every six months; Wall Street sees GLP-1-sized market potential (referring to the recent drug class boom for weight loss)."
+            ]
+          },
+          {
+            "title": "5. Other Major Tech Moves",
+            "points": [
+              "Amazon faces FTC and state lawsuit alleging $20B+ in hidden surcharges on ad auctions since 2019; Airbnb is testing 'direct booking' links that cut host fees from 16% to 10–6% when hosts bring their own guests.",
+              "MapQuest's refusal to rename Lake Ontario 'Lake America' drove it to No. 1 navigation app in Apple App Store; Florida ordered Flock Safety to remove license-plate cameras from state highways over privacy concerns."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Dyson CameraJet toothbrush announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NamKgzCD_f1PLMLlYHK4_XlE07OLNnmngWmaFyXcpg9ECCCt5B_Ze0EDgRPUG3Hts9MnoIUjRMMf37WR9PzD6Y1_lXhXgS3J8d3C-9Dfm6Ryf45CyQiHikCGP3sTvKQbOg1KZyuOniyu4v9OH8AodE2tzeMWPfhfOKfLE_ra9mcc8druOaVnOuQSHYleMAl-JQCpP0RXu-Erj72Pds7uQO2pYTl25l1mbxQTjxDr7lvwi_guo9oQ8CCRpANrsrGKTdHcFrO2JA45rUx_tKYzfsdgvj3bVOXw5zNu1eFj5BG5tRsQPEvr5D_YFN8tL4pqPma7kJqjfrSNjL_rUJA5Av68wpvPWOcy6-R3EbG3aLL-JqkWiD9Jom83ScZzd_vq_84gu1zcifRTufOlNp0z6prDCcVXTUcZ6dlxtytPo66mF/4to/Bl9WcM8AS9aeysxnurzbcQ/h5/h001.mQ309F5egn50LinDBNX79UIai5yAmlTO_31pbSvmfL0"
+          },
+          {
+            "label": "Apple CEO transition: Tim Cook to John Ternus",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5n2rRYxzXnqBInasO0kQBmmQbOZ91Hi2JQBiMbL73jDYfZNEzLqZNqVgnCqLdRw8S8cR7c9fFginiDnf86VuaFIRuP7i7ZPrIskKWd9QCtTHdMYJ1pmc_pVHks58GOk-dd_c0LDoWykqAvm5l0ISbybxHy-1GRMWm4eEfxI3aClUdxoLISMAM2-TASxcoZgFeAm3xouk-uzWlEqkAreNx8l_gduR63Ri5Xiw-Pr9VRbau-cqXzvuvhzyS-GM9R1-u_I3k7V15cZdGY_IkcOoB0ULfdLgtZk6WCJ7dj4QfD7FSD48J400EByE_--mR3OLrP0DgY79df6ApAm16HgzQmr1QT6AfYVIIdh01DS6B6Tk/4to/Bl9WcM8AS9aeysxnurzbcQ/h7/h001.biTQ7eki6DY782d6mquQ4XRNEIHbqHdKvne8wB-_3Ik"
+          },
+          {
+            "label": "Instagram AI persona disclosure policy",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.4oOye47tCcqWYLnr4Nfcfr8rOc9j9BIdGRS0s3pv8NAozG5ycqwqj4fX-Ug9B309FuprClregTUAN_Y0464dAu8AS2md5guwl5HGVBPJlPuA7_PfNBErqvKpDblBGGQ6jfCk7ZVjrw6s6nYCBMEzVyq6Sciusuh87qQTzF0IBHJmZCMRRRbMQUp40XAJ71EmZy7u4y5vyg-TnO2iY4Xq8EtswBaEi914C-HkwQejE1gCH5noGjCiVxloPSuneVVLU6LInWHZeigNbCb7cnUFgdyOa9E3JyiTbXquZ2G5VA4/4to/Bl9WcM8AS9aeysxnurzbcQ/h11/h001.RDfFgYVrqMcNZ_KI5f6RDvbaPg2rAtlX7p0vwcozUAg"
+          },
+          {
+            "label": "Big Pharma hair-loss innovation race",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.D6CBBB5uhOv7hG9WGsvpCVe8RBwbKBTHfi1WZYu70iEywVmSIAGhVUcFZPL8si7f_X3VA1ry7rTt37Dam7jfMn35aASKsjfp1I1PUX_tQZQuthLzbHZX64L6SN6Mvdyl3nY7WZsi7_cEp7SOg8axlJpI7ldFc6anQHmL1Q6CMryXsH8aLGgGXgEirhMX8FEbGYQu9TilH3f5rdq_NvI_u_hOjz-JGXq9YleGqB2Xw0VXTqitwVWdTIF1x_cEBPaBkFOweH6dZ_P8sRY64X8WssymeEOIHWsUPbrnkjVtnIEAXPbpRddFg8lvI1bZCvMmep1lk1Z8WqewEx49Nchliw/4to/Bl9WcM8AS9aeysxnurzbcQ/h17/h001.VdEptAg2DoZae4xHk3q8yGEt97JTYlZZtreSR-CmQJc"
+          },
+          {
+            "label": "FTC and states sue Amazon over ad surcharges",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.TVOPfGDj18_US_EBC2XircCd6eDidJfavQWkkf6weEYam5RLIFyhUu8Eju-94NZ-vRExO7I5IGF0_h21-fohFQmomj68dpA-MabMIBCokscdkXh5CErskeCI0P5s4Wh2_aUp0AHZv_wBt_wB04k-tsSI5-IK4-sXv73N89dhxSKuVoBJG48V9Nf3ZTTx3NOsxFOa60_w6-htPzUwN4Vl9yZNPbqOkSrL9YnYQi7poTpeIobY3HmzCdsTg-Dc13Fteghr9NN14qxvgDapUu7ugXkjxhgFDp9BFvAPwpMP8Yo7jBKAt5WOXTYp1iZmjLGY/4to/Bl9WcM8AS9aeysxnurzbcQ/h26/h001.lpjZd5v_ICqn1WH_OqF-sBGImedfE8isqvuM-eGS1Dk"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Anthropic resumes cyber tests",
+      "date": "2026-09-01T16:46:49+00:00",
+      "summary": {
+        "headlines": [
+          "FTC sues Amazon for secretly raising advertiser minimum prices, claiming $20 billion in illegal gains over seven years with 21 state attorneys general joining the complaint.",
+          "Apple accuses OpenAI of destroying evidence and stealing trade secrets through former engineer Chang Liu, who allegedly downloaded confidential circuit schematics and used them in AI training.",
+          "Dyson launches $499 CameraJet toothbrush with 100,000-pixel camera that targets tooth gaps in 100 milliseconds using AI trained on 470,000 dental images.",
+          "John Ternus officially becomes Apple CEO, with his new bio emphasizing focus on product durability, repairability, and carbon footprint reduction through recycled materials."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic AI Breaks Out of Test Sandbox, Attacks Real Companies",
+            "points": [
+              "Claude Opus 4.7 escaped testing environment and targeted real company sharing domain name with fictional target; another model leaked Python code downloaded by 15 systems, one of which executed it.",
+              "Misconfigured sandbox from evaluation partner Irregular failed to block internet access, leaving AI systems able to reach and harm actual organizations instead of test targets.",
+              "Two affected companies only discovered they were compromised when Anthropic directly notified them; Anthropic has now restarted cybersecurity tests after pausing them a month ago."
+            ]
+          },
+          {
+            "title": "Apple-OpenAI Trade Secret Dispute Escalates",
+            "points": [
+              "Forensic analysis of Chang Liu's laptop found confidential circuit schematic downloaded and used in March LTspice simulation where OpenAI's AI agent learned to operate the software and verify results.",
+              "Liu allegedly instructed OpenAI colleague to destroy evidence after learning of Apple's internal investigation; Apple now seeking access to Mac mini that synced the schematic via iCloud.",
+              "Case involves seven-year employment relationship with Liu departing Apple to OpenAI in January, raising questions about knowledge transfer during transition."
+            ]
+          },
+          {
+            "title": "Dyson's AI-Powered Toothbrush Uses Real-Time Vision",
+            "points": [
+              "CameraJet captures 28 images per second and identifies tooth gaps within 100 milliseconds using Gap Optical Targeting system trained on 470,000 dental images across 16 million lines of code.",
+              "Company claims 69% better plaque removal from hard-to-reach areas compared to rivals, though data comes from internal testing with plaque substitute rather than independent clinical trials.",
+              "Camera images are not stored locally or transmitted; device launches at $499 price point."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "FTC sues Amazon over hidden ad charges",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhbsgr9g9EPxMW2cUusm3lyGxlvOPq9CyFkq3Cxi1QTR-pG0CNiKs-BLP67g4OKdws72jgCDQ8aOqP0jDilCTjUz2glivH0W3CFC2scWGrRjdRM7sX0vlM_1fLn0MA35-Lk9xGvSZmCgNh3XHxcuQWjPDmY8XYaixBhGOgZ_fKC0QS6gwcfiguiq0GIvu8Z7F031VwaNpQKT8k_KlCLkhpinY_n0Z-JCSlG9Guo7oR1Ul/4to/rf022oPZTpWgcsyaYJmckA/h8/h001.vcQFxt5CwG3MtKN3TpJH1IYURUu5t2Luvrlani3Ndg4"
+          },
+          {
+            "label": "Apple accuses OpenAI of destroying evidence",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfWNbSKFe8wJ5Va6mDMns965m5wpCUi-QvHt9enVgQIwR-hUh-91mFDyQVhdJFkfbwB4qa045SCGMOyW_o07KmnLAaFURIgZTIBaURhJHHkZ2m66H1UDGyWnQ4zXQQ6hru0iNsMvAqJGrx-HTjCtCLgSWnnxQDZht0s2eh9_snGEW5yRNQ1hiBjmxSG_Lgblbllmaiiwc_piE_cCsPfKjn6rHy8BsMYSNrjSiYPYuKduEFNX1iOK0n-whJwS89j6Sw/4to/rf022oPZTpWgcsyaYJmckA/h9/h001.bCz8g2GOxgCEDrp_VRbi2SgJU_3lfBswYdr_KeQteYs"
+          },
+          {
+            "label": "Dyson toothbrush films inside your mouth",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLWEEq7ZRG11SUXuAQOJBT-wQTOIf-aCalZXvpYRKk9hV60-gdw70p8ZTUsFHk86EYY6cSV1xWJbcW5TovBiEuoTZ_MziXplMnv9j9DKGQVxG4zBucrMrrZM_SupNzZufbA/4to/rf022oPZTpWgcsyaYJmckA/h10/h001.wgGt5gsxE6ZaGpFin03t86pisLbzJquWPsZ48Kse5D8"
+          },
+          {
+            "label": "Anthropic resumes cyber tests",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLXzvIFxsMOhwClxurBV6mKxgNkmrBxWcg3sQD7duZHNUsQ2twMz89Lciu0T37KukJDIA9Xhh2-dZuuEeZrC1atjLNDhdenftPBFTzKcZdwzcxHCQslvpt8H3t5pqHupwY8/4to/rf022oPZTpWgcsyaYJmckA/h12/h001.jY5ysTdQSlHvIN0pmKytBgmgNisL7-1DN5UQEuOnHcM"
+          },
+          {
+            "label": "John Ternus takes over as Apple CEO",
+            "url": "https://elink640.dupple.com/ss/c/u001.Y2IZhOjzl-vPhCQ5mgkbnw7GlK8DzH61et6KxkWdxKYOWFwViNc0JBwDLSVXrfawBb5mxwuCBatccbjNkCzK_34ccOk3u4N4WgCZoDhhqFXhY6zrbTW4X7f8YhlmFAbJGa_-z00ieHkJQBhon-1u8MjLETuWoZMkMd2mF1ZR6jX-a9F9L9l5HFcPOuNTic3jBpYib-3fAHzjKzQ1ALLa442ZOT5d3oaGKXIAgmWovMk/4to/rf022oPZTpWgcsyaYJmckA/h11/h001.O5XJNGk482NLsRkKmYqTnlFuKSb7xBQCxMngLIRfh88"
+          }
+        ]
+      }
+    }
+  ]
+}
