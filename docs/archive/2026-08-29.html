@@ -461,19 +461,38 @@
 </div>
 
 <script>
-document.querySelectorAll('.filter').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
-    btn.classList.add('active');
-    var cat = btn.dataset.cat;
+// Category filter. The choice is remembered so a refresh (or clicking into an
+// archive day) keeps you on the tab you were reading, instead of resetting.
+(function () {
+  function applyFilter(cat) {
+    var buttons = document.querySelectorAll('.filter');
+    var match = null;
+    buttons.forEach(function (b) {
+      var on = b.dataset.cat === cat;
+      b.classList.toggle('active', on);
+      if (on) match = b;
+    });
+    if (!match) return applyFilter('all');   // saved tab no longer exists
     document.querySelectorAll('.batch, .market').forEach(function (s) {
       s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
     });
     document.querySelectorAll('.glance-list li').forEach(function (li) {
       li.style.display = (cat === 'all' || li.dataset.cat === cat) ? '' : 'none';
     });
+  }
+
+  document.querySelectorAll('.filter').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var cat = btn.dataset.cat;
+      try { localStorage.setItem('filter', cat); } catch (e) {}
+      applyFilter(cat);
+    });
   });
-});
+
+  var saved = 'all';
+  try { saved = localStorage.getItem('filter') || 'all'; } catch (e) {}
+  if (saved !== 'all') applyFilter(saved);
+})();
 
 (function () {
   var root = document.documentElement, btn = document.getElementById('theme-toggle');
