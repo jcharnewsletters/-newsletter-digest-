@@ -54,6 +54,7 @@ def build_site() -> None:
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     (SITE_DIR / ".nojekyll").write_text("", encoding="utf-8")
     shutil.copyfile(TEMPLATES_DIR / "style.css", SITE_DIR / "style.css")
+    shutil.copyfile(TEMPLATES_DIR / "market.js", SITE_DIR / "market.js")
     archive_dir = SITE_DIR / "archive"
     archive_dir.mkdir(exist_ok=True)
 
