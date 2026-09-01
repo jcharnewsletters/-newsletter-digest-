@@ -101,6 +101,8 @@
 
 
 
+
+
   <section class="batch" id="stocks-am" data-cat="stocks">
     <div class="batch-head">
       <p class="eyebrow"><span class="tag tag-stocks">stocks</span> stocks-am</p>
@@ -993,7 +995,7 @@ document.querySelectorAll('.filter').forEach(function (btn) {
     document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
     btn.classList.add('active');
     var cat = btn.dataset.cat;
-    document.querySelectorAll('.batch').forEach(function (s) {
+    document.querySelectorAll('.batch, .market').forEach(function (s) {
       s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
     });
     document.querySelectorAll('.glance-list li').forEach(function (li) {
@@ -1015,5 +1017,6 @@ document.querySelectorAll('.filter').forEach(function (btn) {
   });
 })();
 </script>
+
 </body>
 </html>

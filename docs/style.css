@@ -221,6 +221,62 @@ ul.dots li::before {
 .linklist a { text-decoration: none; border-bottom: 1px solid var(--accent-line); }
 .linklist a:hover { color: var(--accent-glow); }
 
+/* ---------- market watchlists ---------- */
+.market { padding: 1.8rem 0 .6rem; border-bottom: 1px solid var(--border); }
+.watchlist + .watchlist { margin-top: 1.3rem; }
+.qgrid {
+  display: grid; gap: .5rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.qcard {
+  position: relative; overflow: hidden;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--panel);
+  padding: .7rem .75rem 0;
+  min-height: 132px;
+  display: flex; flex-direction: column;
+}
+.qcard h4 {
+  margin: 0 0 .3rem; font-size: .92rem; font-weight: 700;
+  letter-spacing: -.01em; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.qprice  { margin: 0; font-size: .88rem; color: var(--ink-dim); }
+.qchange { margin: .05rem 0 .25rem; font-size: .76rem; color: var(--muted); }
+.qpct {
+  margin: 0 0 .4rem; font-size: .88rem; font-weight: 700;
+  display: flex; align-items: center; gap: .3rem;
+}
+.qcard.up   .qpct { color: var(--accent); }
+.qcard.down .qpct { color: #ff6b6b; }
+.qpct .arrow {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.05rem; height: 1.05rem; border-radius: 999px; font-size: .7rem;
+}
+.qcard.up   .arrow { background: var(--accent-soft); color: var(--accent); }
+.qcard.down .arrow { background: rgba(255,107,107,.14); color: #ff6b6b; }
+
+/* sparkline sits flush to the card's bottom edge, over a dotted baseline */
+.qspark {
+  margin: auto -.75rem 0; height: 40px;
+  border-top: 1px dotted var(--border-hi);
+}
+.spark { width: 100%; height: 40px; display: block; }
+.spark polyline { fill: none; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.spark polygon  { stroke: none; }
+.spark.up   polyline { stroke: var(--accent); }
+.spark.up   polygon  { fill: var(--accent-soft); }
+.spark.down polyline { stroke: #ff6b6b; }
+.spark.down polygon  { fill: rgba(255,107,107,.12); }
+
+.qloading, .qerror {
+  grid-column: 1 / -1; margin: 0; padding: 1rem .2rem;
+  color: var(--muted); font-size: .78rem;
+}
+
+@media (max-width: 860px) { .qgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .qgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
 /* ---------- footer ---------- */
 .empty { color: var(--muted); padding: 2.5rem 0; }
 footer { padding: 2.5rem 0 1rem; }

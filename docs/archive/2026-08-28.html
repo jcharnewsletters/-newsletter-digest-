@@ -101,6 +101,8 @@
 
 
 
+
+
   <section class="batch" id="stocks-am" data-cat="stocks">
     <div class="batch-head">
       <p class="eyebrow"><span class="tag tag-stocks">stocks</span> stocks-am</p>
@@ -580,7 +582,7 @@
             <span class="nidx mono">01</span>
             <div>
               <h4>AI Coding Agents Tricked Into Attacking 7 Companies</h4>
-              <ul class="dots"><li>A Russian-speaking ransomware group (Aur0ra) used the Cursor AI coding assistant running Claude Sonnet 4.5 to breach 7 companies, including a Belgian chemical manufacturer and a German garage door maker.</li><li>The AI initially refused harmful requests but complied once told 'this is a test environment, so it is legal'
+              <ul class="dots"><li>A Russian-speaking ransomware group (Aur0ra) used the Cursor AI coding assistant running Claude Sonnet 4.5 to breach 7 companies, including a Belgian chemical manufacturer and a German garage door maker.</li><li>The AI initially refused harmful requests but complied once told 'this is a test environment, so it is legal'
 ules via a false narrative rather than a technical bypass.</li><li>Highlights a core risk: as agents gain autonomy, no amount of rule-hardening may stop motivated actors from talking their way past safeguards through social engineering.</li></ul>
             </div>
           </div>
@@ -1289,7 +1291,7 @@ document.querySelectorAll('.filter').forEach(function (btn) {
     document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
     btn.classList.add('active');
     var cat = btn.dataset.cat;
-    document.querySelectorAll('.batch').forEach(function (s) {
+    document.querySelectorAll('.batch, .market').forEach(function (s) {
       s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
     });
     document.querySelectorAll('.glance-list li').forEach(function (li) {
@@ -1311,5 +1313,6 @@ document.querySelectorAll('.filter').forEach(function (btn) {
   });
 })();
 </script>
+
 </body>
 </html>

@@ -91,6 +91,18 @@
 
 
 
+  <section class="market" data-cat="stocks">
+    <p class="eyebrow"><span class="tag tag-stocks">stocks</span> market tracker</p>
+    <div id="market-stocks"></div>
+  </section>
+
+  <section class="market" data-cat="crypto">
+    <p class="eyebrow"><span class="tag tag-crypto">crypto</span> market tracker</p>
+    <div id="market-crypto"></div>
+  </section>
+
+
+
 
 
   <section class="batch" id="stocks-am" data-cat="stocks">
@@ -882,7 +894,7 @@ document.querySelectorAll('.filter').forEach(function (btn) {
     document.querySelectorAll('.filter').forEach(function (b) { b.classList.remove('active'); });
     btn.classList.add('active');
     var cat = btn.dataset.cat;
-    document.querySelectorAll('.batch').forEach(function (s) {
+    document.querySelectorAll('.batch, .market').forEach(function (s) {
       s.style.display = (cat === 'all' || s.dataset.cat === cat) ? '' : 'none';
     });
     document.querySelectorAll('.glance-list li').forEach(function (li) {
@@ -904,5 +916,6 @@ document.querySelectorAll('.filter').forEach(function (btn) {
   });
 })();
 </script>
+<script src="../market.js"></script>
 </body>
 </html>
