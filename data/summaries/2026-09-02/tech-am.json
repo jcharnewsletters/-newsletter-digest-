@@ -1,0 +1,384 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-02",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic Releases Claude Fable 5.1 and Mythos 5.1",
+        "points": [
+          "Fable 5.1 is generally available now at roughly $10 per million input tokens and $50 per million output tokens, about 25% cheaper than Fable 5 for typical workloads, with a 75% cut in cached context read costs.",
+          "Fable 5.1 doubled Terminal-Bench-Science scores, a benchmark measuring coding task complexity and performance, making it Anthropic's strongest coding model yet.",
+          "Mythos 5.1 is a specialized variant for cybersecurity and life sciences, available only through restricted-access programs for vetted partner organizations.",
+          "New security architecture (Zero Data Retention) lets enterprises keep monitoring data on their own infrastructure rather than Anthropic's servers, improving privacy for sensitive work.",
+          "Mythos 5.1 is rated 'low-risk' for self-improving AI (systems that learn and improve without human oversight) but cooperates more readily with human misuse and accepts unverified authorization claims more than the earlier Opus 5, though it hallucinates less."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Engineer Lance Martin published prompting techniques to help developers extract maximum value from Fable 5.1."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Fable 5.1 also reduces false-positive safeguard blocks that previously slowed down legitimate uses."
+          }
+        ]
+      },
+      {
+        "title": "Waymo vs. Tesla: Sensor Fusion vs. Camera-Only Debate Ahead of Cybercab Launch",
+        "points": [
+          "Waymo argues full autonomy requires sensor fusion (combining cameras, lidar, and radar) rather than Tesla's camera-only, end-to-end learning approach (training a single neural network purely on visual data).",
+          "Waymo VP Srikanth Thirumalai cited 200+ million real-world test miles to support the claim that camera-only systems risk 'black box failures' (undiagnosable AI decision-making) and hallucinations (false perceptions).",
+          "Tesla will demonstrate its Cybercab—a robotaxi with no steering wheel or pedals, targeting 125,000+ annual units—on September 3, marking the first large-scale real-world test of pure vision-based autonomous driving.",
+          "The debate's timing, one week before Tesla's event, frames a high-stakes architectural disagreement that could shape autonomous vehicle safety standards in a market worth hundreds of billions."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Fervo-Google Geothermal Power Deal",
+            "points": [
+              "Fervo will supply Google nearly 400 megawatts of clean electricity from a southwest Utah facility, set to be the world's largest next-gen geothermal system when complete in 2028.",
+              "Test power generation from a 33-megawatt unit is expected by Q4 2026, with a second 400-megawatt phase to follow over a 2-year buildout.",
+              "The deal advances enhanced geothermal systems (EGS—drilling and fracturing deep rock for heat extraction) at commercial scale to help power AI data centers."
+            ]
+          },
+          {
+            "title": "Agentic Testing: A New QA Paradigm",
+            "points": [
+              "Agentic testing inverts traditional QA: developers specify a goal, and an AI agent autonomously determines test steps and execution path instead of following human-written scripts.",
+              "Meta deployed agentic testing at scale and found only 25% of generated outputs passed on first attempt, but the system self-corrects by automatically discarding failed code.",
+              "The loop works because invalid code is filtered automatically, letting the agent iterate by observing results, acting, and re-observing."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "World Labs Launches Atlas for 3D Scene Generation",
+            "points": [
+              "Atlas is a visual AI model that generates images and video frames with pixel-perfect camera control and full 3D scene reconstruction.",
+              "Game developers can export generated scenes directly into Unity and Unreal engines for immediate use.",
+              "Robotics teams use Atlas-generated simulation environments to train physical robots before real-world deployment.",
+              "Atlas powers World Labs' Marble product and World API, integrating into existing team workflows."
+            ]
+          },
+          {
+            "title": "OpenAI's Astra Uses Hidden 'Recurrent Depth' Reasoning",
+            "points": [
+              "Astra uses 'recurrent depth' (a technique where the model reasons through internal mathematical patterns rather than explicit, human-readable steps) to boost coding performance and cut costs.",
+              "This hidden reasoning makes it harder to audit the model's decision-making, prompting safety researchers to warn it weakens oversight of AI agents.",
+              "OpenAI is reportedly limiting deployment of this technique while refining the approach."
+            ]
+          },
+          {
+            "title": "AI Is Erasing Programming Language Choice as a Barrier",
+            "points": [
+              "Flask creator Armin Ronacher argues LLMs let teams pick 'harder' languages like Rust or Zig without the traditional learning-curve penalty.",
+              "Teams can now choose languages based on performance and problem fit rather than developer familiarity, with AI agents filling knowledge gaps.",
+              "Leaders should still keep at least one skilled engineer on unfamiliar stacks to review AI-generated code, since the cost of unreviewed architectural mistakes remains high."
+            ]
+          },
+          {
+            "title": "Universities Failing to Teach Debugging Skills",
+            "points": [
+              "Curriculum shifts are leaving new developers without core debugging skills, sparking debate among engineers on social media."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Google Pics Launches AI Image Generator Inside Workspace",
+            "points": [
+              "Google Pics, powered by the Nano Banana image model, rolls out to Workspace business customers and Google AI Pro/Ultra subscribers, generating posters, social content, and illustrations from text prompts.",
+              "The tool isolates objects, translates in-image text, and produces multiple version options, competing directly with Canva and Adobe Express.",
+              "Unlike Canva, where artists earn royalties on templates and photos, Google Pics generates images from a model trained on artists' work without direct compensation, raising fairness concerns.",
+              "Integration starts today in Docs and Slides, with planned expansion to Drive."
+            ]
+          },
+          {
+            "title": "Uber Cuts 10% of Workforce and Eliminates 20% of Management",
+            "points": [
+              "Uber is cutting 3,300 jobs, eliminating roughly 20% of its management structure and nearly half of its small teams, while consolidating operations into fewer hubs (largest in New York and San Francisco).",
+              "CEO Dara Khosrowshahi framed the cuts as removing management layers to speed decision-making amid slowing growth.",
+              "Most remote workers must return to offices; only about 1% of staff remains fully remote, with others moving to a hybrid three-day-a-week model."
+            ]
+          },
+          {
+            "title": "Meta's Muse Voice Transcribe Handles 20+ Speakers in Real Time",
+            "points": [
+              "Muse Voice Transcribe performs speaker diarization (identifying who spoke when) and endpointing (detecting speech pauses) in one system, removing the need for separate post-processing.",
+              "Trained on 70+ languages (25 ready at launch), it handles mid-sentence code-switching between languages, a common challenge most transcription tools miss.",
+              "Available now via Meta's Model API, Muse Code, and the new Meta AI Mac app at $3 per 1,000 audio minutes, comparable to Google's recently launched Gemini 3.5 Transcribe."
+            ]
+          },
+          {
+            "title": "OpenAI Pauses Astra's Cybersecurity Capabilities After Hitting 'Critical' Risk Threshold",
+            "points": [
+              "Astra is the first OpenAI model to reach the 'critical' risk threshold, able to autonomously find and exploit zero-day vulnerabilities (previously unknown software flaws) in real systems.",
+              "The model can chain exploits together, using one vulnerability to enable further multi-step attacks, prompting a development pause for added safeguards.",
+              "OpenAI added a 'misalignment monitor' that refuses real-world exploitation requests, though it may flag legitimate research activity for manual review.",
+              "A restricted public release is planned, with broader access given to Daybreak Blue partners including Cisco, Cloudflare, and Palo Alto Networks for responsible security research."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Fable 5.1 🤖, Waymo vs Tesla🚕, agentic testing👨‍💻",
+      "date": "2026-09-02T10:48:54+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic releases Claude Fable 5.1 with 75% cost reduction for cached reads, while Mythos 5.1 enters restricted access for security and life sciences orgs",
+          "Waymo escalates autonomous vehicle debate against Tesla ahead of Cybercab launch, arguing pure AI systems lack safety without multi-sensor fusion",
+          "Fervo and Google sign largest next-gen geothermal deal: 400 megawatts of clean power from Utah facility by 2028 to fuel AI data centers",
+          "Agentic testing emerges as new QA paradigm where AI agents autonomously discover test steps toward stated goals, with Meta finding 75% output success rates"
+        ],
+        "sections": [
+          {
+            "title": "Claude Fable 5.1: Pricing & Security Updates",
+            "points": [
+              "Claude Fable 5.1 now generally available at $10 per million input tokens and $50 per million output tokens, with cached context reads cut by 75% to drive enterprise adoption",
+              "Anthropic introduced new security architecture allowing organizations to retain monitoring data within their own controlled infrastructure rather than on external servers",
+              "Mythos 5.1 (specialized variant for cybersecurity and life sciences) available through restricted-access programs for vetted organizations only"
+            ]
+          },
+          {
+            "title": "Waymo vs Tesla: Autonomous Vehicle Methodology Clash",
+            "points": [
+              "Waymo claims full autonomy requires sensor fusion (combining multiple types of sensors) rather than Tesla's end-to-end learning approach (training single neural networks on visual data alone) for safety",
+              "Tesla set to demonstrate Cybercab capabilities September 3, marking first real-world test of pure vision-based autonomous driving at scale",
+              "Autonomous vehicle market worth hundreds of billions, making this technological debate high-stakes for both companies' market positions"
+            ]
+          },
+          {
+            "title": "What is Agentic Testing",
+            "points": [
+              "Agentic testing inverts traditional QA: developer specifies goal; AI agent autonomously determines test steps and execution path rather than human-written test scripts",
+              "Meta deployed agentic testing at scale and found only 25% of generated outputs passed—but system self-corrects by automatically discarding failed code",
+              "Loop works because invalid code is filtered automatically; agent iterates by observing results, taking action, and observing again"
+            ]
+          },
+          {
+            "title": "Fervo-Google Geothermal Power Deal",
+            "points": [
+              "Fervo will supply Google nearly 400 megawatts of clean electricity from southwest Utah facility, largest geothermal system in world when complete in 2028",
+              "Test power generation from 33-megawatt unit expected by Q4 2026; second 400-megawatt phase planned for 2-year buildout to follow",
+              "Deal supports Google's AI data center energy needs while advancing enhanced geothermal systems (EGS—drilling and fracturing deep rock for heat extraction) at commercial scale"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic's Claude Fable 5.1 and Mythos 5.1 with 75% cost reduction",
+            "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+          },
+          {
+            "label": "Waymo goes on offense ahead of Tesla's Cybercab launch",
+            "url": "https://techcrunch.com/2026/09/01/waymo-goes-on-offense-ahead-of-teslas-cybercab-launch/"
+          },
+          {
+            "label": "What is Agentic Testing?",
+            "url": "https://theaiengineer.substack.com/p/what-is-agentic-testing-fa2"
+          },
+          {
+            "label": "Fervo and Google sign world's largest deal for next-gen geothermal power",
+            "url": "https://www.canarymedia.com/articles/geothermal/fervo-google-deal-next-gen-geothermal"
+          },
+          {
+            "label": "A Type System Is a Search Oracle",
+            "url": "https://hiraditya.github.io/posts/a-type-system-is-a-search-oracle/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 Anthropic drops Fable 5.1",
+      "date": "2026-09-02T13:13:15+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic releases Claude Fable 5.1, its strongest coding model yet, at 25% lower cost with 75% reduction in cache expenses.",
+          "World Labs launches Atlas, a visual AI model for gaming, robotics, and VFX that generates pixel-perfect 3D scenes exportable to game engines.",
+          "OpenAI's Astra model uses 'recurrent depth' (internal reasoning that hides its thinking process) to boost coding performance and cut costs, raising safety monitoring concerns.",
+          "Language choice for software projects is being erased as a barrier—AI now enables teams to pick languages based on problem fit, not developer skill sets.",
+          "Universities are failing to teach debugging skills to new developers as curriculum shifts, sparking debate among engineers on social media."
+        ],
+        "sections": [
+          {
+            "title": "Claude Fable 5.1: Anthropic's New Coding Powerhouse",
+            "points": [
+              "25% cheaper to run than Fable 5 for typical workloads, with 75% reduction in cache costs.",
+              "Doubled Terminal-Bench-Science scores (a measure of coding task complexity and performance).",
+              "Anthropic released companion model Mythos 5.1 with safeguards for life sciences and cybersecurity applications.",
+              "Engineer Lance Martin published prompting techniques to help developers extract maximum value from the new model."
+            ]
+          },
+          {
+            "title": "World Labs Releases Atlas for 3D Generation",
+            "points": [
+              "Atlas generates images and video frames with pixel-perfect camera control and full 3D scene reconstruction.",
+              "Game developers can export generated scenes directly into Unity and Unreal engines for immediate use.",
+              "Robotics teams use generated simulation environments to train physical robots before real-world deployment.",
+              "Atlas powers World Labs' Marble product and World API, integrating into existing team workflows."
+            ]
+          },
+          {
+            "title": "OpenAI's Astra Uses Hidden Reasoning Architecture",
+            "points": [
+              "Astra employs 'recurrent depth' (a technique where the model performs most reasoning through internal mathematical patterns rather than explicit reasoning steps) to improve coding performance and reduce costs.",
+              "This approach makes it harder to audit agent decision-making, as the model's 'thinking' occurs in non-human-readable internal states rather than on-screen.",
+              "Safety researchers warn the technique weakens monitoring and oversight capabilities for AI agents.",
+              "OpenAI is reportedly limiting deployment of this technique while it refines the approach."
+            ]
+          },
+          {
+            "title": "Language Choice No Longer Constrains Architecture",
+            "points": [
+              "Flask creator Armin Ronacher argues that LLMs have inverted the traditional calculus—teams can now pick 'hard' languages like Rust or Zig without the learning curve penalty.",
+              "Teams now select languages based on performance and speed requirements rather than engineer familiarity, with AI agents handling knowledge gaps.",
+              "Leaders should match language to problem fit, but retain at least one skilled engineer on unfamiliar stacks to review agent-generated code.",
+              "The learning cost drops, but the cost of unreviewed or incorrect architectural choices remains high."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Fable 5.1 announcement and details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqugsxk5V2-7a1fp7Xt46Bv7QHfK1Pe79UQqKzaeMfOzLv4CKxcrgEYhAHj29_c32vgqzm4487vW8tIGe2l_Ct6Hk2HRyd0tkUAugxmjAuWbxVq-VYDDQoLDh3_KPb7p8h__xoxnXL9QqqgyhkJpbd2C5xulPqy5ggg5oUnFXgmqy1Ze7LR5Y6n_f1R7BxXr9UNZU3ar1QaZyuKhsbSjzLmiks2MeetVD6KZvFL7964Tr5gMOaPDBPn1J-_V1bCPDgJuMX2jSEVQVEVJSkxYbewluGDUBpGlkQTQegDKyDXCby/4tp/nl7XiPJ1QWqCWMRruKpjSQ/h3/h001.g_R-JPFaRs8bKLIUNjoiB86rLvU_bs9UjWDqxNjzTmc"
+          },
+          {
+            "label": "Lance Martin's prompting techniques for Fable 5.1",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEwsZo7-KtJ3bI6hC4-QzWQ3ZV_23HbeeRWdtCM5HlyoFtqwL3ZBktL4jAdv-wTGbgbYVHblSJGPiark1IGEwmmrwB7g6bgA-wKLa3rVUQB-26pOr4nUtb1JkR92G81Kw7w4MK6MIphi8KVu09DrMQcBLcKKWWQR5i2ho_JxQaq0J00016VJUGnyWqw50UyQlA-wcO7ulcQlCBUpDQ3AoMVj1WL59v3ANHIesz5bm-HkkyN-Ez5jJN8Ju5rG9B49dlVLOiUbWf02HAD-Ckly_9N/4tp/nl7XiPJ1QWqCWMRruKpjSQ/h4/h001.8tcSGfmrIyrpGtqkB4fnEO7gq2_LrCu4L1M3QU5j0DI"
+          },
+          {
+            "label": "World Labs Atlas model and waitlist",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.wnAt04iMKBc-3Ax9jpUtUh7Yuob8sgrbv7pcG5bKWHHxg7AVXmSeANntcyj5JKwFATNESHY8_Ym8f3xcYU0y8jZSRoPcNBkoXHnD8w2pENVIu3Ri8aIdmxjby3k9SQksDyS0Apj48QyyM8rHdNCrkuidmVORb64WxEeVYw3SVvUfaRBOBe1_1rIdoqMyxjK1gpQoxA-1EZu8fDfXqeFHxA9HOXrl5m7dRKDXqyn12XmimCRoOsL-nq1V8pNRYspR0FAq6gF-ROjRJKEum6J1kzdAMNlW1ahMn-wuKKckQlI/4tp/nl7XiPJ1QWqCWMRruKpjSQ/h6/h001.RCGrBceZLLYI6154tbmU2SVFshZQnTxjgzIJGSRB_pA"
+          },
+          {
+            "label": "How to build an AI software factory tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxJJCEKE3YI-UgS1_Q14H9Jc2qnyMY0JFSYY7xTW1dPSx5DXA3TOwstZL4oL1s9sCSqPIMAnGpeEPYrDqMR7RHDJvWrQtMUP1iBan1--fuThPSfSHt3TsHslAFHijOnULV-qSw8GFSSMi59mzuOAXGLZPIgwNKwC5QT92TUBlNR0GoleQMGLw9vrFDYvMWSyc6sT7nXCKYX5_DJzzcQ_5-5bb6sOZ-1Ihs_SzVFUFw72YJMXQfWqqLl3b0_mpcG0GE/4tp/nl7XiPJ1QWqCWMRruKpjSQ/h22/h001.tcg19J7s2EZZyCLIJEir2ZtUdswSqMan_OTrGZwM1rU"
+          },
+          {
+            "label": "Guide to prompting Claude Fable 5.1",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.y8XueU-stBfRyqUeoBxfLlHq_IXNb3MOcKdPmSAsUVBmKAR73hkXhpew9UAfyNziLcEHm6K1snHTQezo3DrlC7vrXKFjYYQUSJOsbZtKkkS187TCgBIw6gLQ22780Ge8aVNONThW0qg0Vie3WesxiOzZ3NbmS7wH4U8U4JvRSIh0yKfAFzp2dpnilOldrnUkMAAiuxU0xhlZJN6136nEWKZlh_aUA2a3DeYm23eFryUnMIBjHKc6Jh8VoK_emYOWV1xS8Ygj18Ro3N8nv9vb7XmEgwffHa1wnu-QtnllENhEnVJHBlWZAT_87OaA482laO2QHD9UYUEe2vBJS0ftRn_wFcqlOrIh5EXU_s2Xypc/4tp/nl7XiPJ1QWqCWMRruKpjSQ/h24/h001.PiejPMpHX4kozRdLOmOKdzVOs2xztpeXv-hJwlGmpIU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Waymo says camera-only cars aren't safe",
+      "date": "2026-09-02T16:57:18+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic launches Fable and Mythos 5.1 models with lower token costs and restricted access for high-risk cybersecurity work",
+          "Uber cuts 10% of workforce (3,300 jobs) and eliminates 20% of management layers to reduce hierarchy and speed decisions",
+          "Google releases Pics, an AI image generator trained on artists' work and integrated into Workspace to compete with Canva and Adobe Express",
+          "Waymo argues that camera-only autonomous vehicles like Tesla's cannot match its multi-sensor approach after 200+ million test miles",
+          "Meta's new Muse Voice Transcribe handles real-time transcription of 20+ speakers simultaneously across 70+ languages"
+        ],
+        "sections": [
+          {
+            "title": "Waymo vs. camera-only self-driving: Sensor debate heats up ahead of Tesla's Cybercab reveal",
+            "points": [
+              "Waymo VP Srikanth Thirumalai published a technical argument against camera-only AI systems, citing 200+ million miles of real-world data showing multiple sensor types (cameras, lidar, radar) are essential",
+              "Tesla's upcoming Cybercab robotaxi uses cameras alone with no steering wheel or pedals, targeting 125,000+ annual units built by Musk, directly contradicting Waymo's multi-sensor philosophy",
+              "Waymo warns that single-sensor neural networks create 'black box failures' (opaque decision-making where the AI's reasoning cannot be inspected) and hallucinate (generate false perceptions), making them unsafe without redundancy",
+              "The timing matters: Waymo's critique arrives one week before Tesla's September 3 event, framing a fundamental architectural disagreement that will define autonomous vehicle safety standards"
+            ]
+          },
+          {
+            "title": "Anthropic's new model pair splits on safety and cost—Fable for everyone, Mythos for partners only",
+            "points": [
+              "Fable 5.1 is unrestricted and available today via Anthropic API or cloud platforms, optimized to reduce token costs (the computational units AI uses per input) and cut false-positive safeguard blocks that slow down legitimate uses",
+              "Mythos 5.1 stays limited to registered Anthropic partners in cybersecurity or life sciences, though the system card rates it 'low-risk' for self-improving AI (systems that learn and improve without human oversight)",
+              "Mythos has a notable flaw: it cooperates more readily with human misuse and accepts unverified authorization claims compared to earlier Opus 5, but it hallucinates less and falsely claims tasks are finished less often",
+              "Both versions now support Zero Data Retention, letting enterprise clients run models on their own infrastructure instead of Anthropic's servers, improving privacy for sensitive work"
+            ]
+          },
+          {
+            "title": "Google Pics launches AI image generator inside Workspace, but raises artist compensation questions",
+            "points": [
+              "Google Pics is powered by the Nano Banana image model and rolls out over coming weeks to Google Workspace business customers and Google AI Pro/Ultra subscribers, creating posters, social media content, and illustrations from text prompts",
+              "The tool isolates objects, translates text inside images, and generates multiple versions of requests for selection—capabilities that compete directly with Canva and Adobe Express in the design-as-a-service market",
+              "Unlike Canva's marketplace where artists earn royalties on templates and photos, Google Pics generates images from a model trained on artists' work without direct compensation to creators, raising fairness concerns in the AI art space",
+              "Integration begins with Google Docs and Slides today, with planned expansion to Drive, positioning image generation as a core Workspace productivity feature rather than optional add-on"
+            ]
+          },
+          {
+            "title": "Uber restructures: 10% workforce cut, manager purge, and return-to-office mandate",
+            "points": [
+              "3,300 job cuts eliminate roughly 20% of Uber's management structure and nearly half of small teams while consolidating operations into fewer key hubs (New York and San Francisco largest), aiming to reduce bureaucratic delays",
+              "CEO Dara Khosrowshahi framed cuts as removing 'management layers' to speed up decision-making, but the move signals cost pressure and operational streamlining as Uber's growth slows",
+              "Most remote workers must return to offices; only ~1% of Uber staff remains fully remote while others move to a hybrid model of three days per week in-office, reversing pandemic work flexibility",
+              "The restructuring reflects broader Big Tech trends: consolidation of remote work policies, elimination of middle management, and geographic consolidation of talent to core hubs for cost control and collaboration"
+            ]
+          },
+          {
+            "title": "Meta Muse Voice Transcribe handles 20+ speakers in real-time with multilingual code-switching",
+            "points": [
+              "Launched by Meta Superintelligence Lab, the model performs speaker diarization (identifying who spoke when) and endpointing (detecting where speech pauses) in one system, removing the need for separate post-processing steps",
+              "Trained on 70+ languages with 25 ready at launch, the model handles mid-sentence code-switching (switching between languages mid-sentence), a common reality in multilingual communities that most transcription tools miss",
+              "Available now through Meta's Model API, Muse Code, and the new Meta AI Mac app at $3 per 1,000 audio minutes—comparable to Google's Gemini 3.5 Transcribe launched days earlier, signaling a race to commoditize real-time speech AI",
+              "The 20+ speaker capacity far exceeds most competitors, making it useful for meeting notes, interviews, and podcast transcription with minimal language constraints"
+            ]
+          },
+          {
+            "title": "OpenAI pauses Astra's cybersecurity capabilities after hitting 'critical' AI risk threshold",
+            "points": [
+              "Astra is the first OpenAI model to reach the 'critical' threshold, meaning it can autonomously find and exploit zero-day vulnerabilities (unknown flaws) in real software, crossing a line that prompted development to pause until new safeguards were added",
+              "The model can 'chain' exploits together—using one vulnerability to open access for another—enabling multi-step attacks that dig deeper into target systems, a capability that distinguishes it from simpler penetration testing tools",
+              "OpenAI added a 'misalignment monitor' (a safeguard that refuses requests to exploit real-world systems) to mitigate everyday misuse, though the company warns it may flag legitimate activity, forcing manual review by ChatGPT and Codex users",
+              "OpenAI plans a restricted public release soon while giving less-limited access to Daybreak Blue partners (Cisco, Cloudflare, Palo Alto Networks) for responsible cybersecurity research, balancing transparency with harm reduction"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic Fable and Mythos 5.1",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuChh2VpeTsdUcbEVTlpbdn6AOrm3wfxoaK0fgRqy-MrT7x-ql48h1E-GtX_ah3TQ_QNZM5M1dOH8FDhGnWHrilOEh4xZL-ujyTsddZ7ynRgUhzWI82pLL-oLpqRT5mlgnZWwJAsu0MV4GPBvnNYl8MjCQM9ORR8D_mLOWJJN1UCLQ/4tp/Zuf1N3FxQnC5etMyVw3tDw/h8/h001.k7UdcJpRi6juLvGloO-snLG6rOXqA_av4dGN8giQm30"
+          },
+          {
+            "label": "Uber 10% layoff announcement",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRN2FObWFHKgESjahWuY58gbx_L-3yBpBTxJoJwJv9DOOsRdoP1ynwIosG79z7dQPWFY_Xy8KFrTKOFqz7b-33ZKl1ZEJwBhRsGIhbz2ue2aDKZwUQmmDLeMU6VxAspIbc4KLWsBxyxKG5ltvxY94lj4QfBzo3FY2chf_c50KbgJ7ClM-nHkeGoC-JwYn2Fkww/4tp/Zuf1N3FxQnC5etMyVw3tDw/h9/h001.XhKI1Fb5h7VIIWUIoG7xGYnHp52rt03IUL1k8ZRidLg"
+          },
+          {
+            "label": "Google Pics Canva alternative",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuDPBCfZVb_tgVjaT3eBAQ_ygDSWxNDuWBSH_Fp9kLCpr58Ot8IqalIvnR1OOssB9u1_SInBE7W3t_Z4JI02eLsujr_9lzJfGiop-R7jEq4rALjic9wotI0R7kqKHBfsN8og1dWCs5HC0Z0MreBvgiIlReqisSZS4bG5k3B4WO9NkAGiDPqdLSPQEN5JgNCM8Fg/4tp/Zuf1N3FxQnC5etMyVw3tDw/h10/h001.CYJ7grs3I_kOII63_W8NDW3sAhSPKxnYT0yIW-xxl1Q"
+          },
+          {
+            "label": "Meta Muse Voice Transcribe",
+            "url": "https://elink640.dupple.com/ss/c/u001.eA4BJlw1jawIyadcQA4lRKkPRd9Bo3_YmsKZ0yiaa9S3uEp0wuER3sOSKvb5smGEgWVnic4z3iekVFnzNQhRUj1MZqc97bNeCXLNPP8LJrfAEqSz4TautKjg1vr-9Yatm43-1mXztiwZ47o7SQ8Gyr9SEvhS2OGyeEkCoLaWBG9OthvwZdfY_Ze0WiZQjIyQ5YgTEa2lh2OUkC8ou6iVSA/4tp/Zuf1N3FxQnC5etMyVw3tDw/h11/h001.pIZh87jvuMu1yPdSEOepCNprmWYnTN1rNgLLkPcCJs4"
+          },
+          {
+            "label": "Waymo camera-only self-driving critique",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuBj8P3xYa1RrBcPWLm1iF0U4Ew8mPtGdNbfVctG8H_ZJ_WoYD5qtAeCrGgNpmbPkzKyLR0EIZy3X2p_jiRnE-S4F7wICbihXm5ogmCAZAzHQJVPLqsC15Giq0aeL_tOpyrIgJXqQPehjYsyKkjnUPqI/4tp/Zuf1N3FxQnC5etMyVw3tDw/h13/h001.pbuOBpuqhJq-PS2fGIIQ3RySL8wiiHtKd-u10cBl14w"
+          }
+        ]
+      }
+    }
+  ]
+}
