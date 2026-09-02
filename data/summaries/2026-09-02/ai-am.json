@@ -1,0 +1,547 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-02",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic releases Claude Fable 5.1 (and Mythos 5.1) with lower costs, better performance, and loosened safety filters",
+        "points": [
+          "Tops Artificial Analysis Intelligence Index with a score of 66, more than doubling Fable 5 on scientific research and knowledge-work tasks.",
+          "Typical workloads cost ~25% less; highly agentic (multi-step, tool-using) workloads save up to ~45%, driven partly by a 75% cut in cache-read pricing (cache reads let the model reuse prior context instead of rereading it from scratch, now $0.25/million tokens).",
+          "Agentic science benchmark score jumped to 52.6% from Fable 5's 24.7%; completed 82% of Browserbase's hardest agent tasks vs. 57% for Fable 5.",
+          "Safety filter false-positive refusals dropped 60% on cybersecurity queries and 85% on basic medical/biology questions.",
+          "Partner reports include a 38-hour unattended ML experiment and a multi-year software bug solved autonomously.",
+          "Anthropic also released Mythos 5.1, a version with fewer guardrails available only to vetted U.S. cybersecurity and biology researchers."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Maximum-effort tasks actually cost 20% more since the model generates 1.7x more text output per query."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Anthropic's updated prompting guidance: cache context aggressively, keep conversation history append-only, batch tool calls, explicitly tell Claude to finish full assignments, and verify fast-moving facts at lower effort settings."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Framed primarily as a security improvement for enterprise users, available via Anthropic's trusted early-access programs."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Released alongside Mythos 5.1 with 'updated safeguards' as part of the same announcement."
+          }
+        ]
+      },
+      {
+        "title": "World Labs launches Atlas, a 'world model' turning photos/video into explorable 3D scenes",
+        "points": [
+          "Converts a handful of ordinary phone photos or video clips into a full, reusable 3D digital reconstruction of the scene.",
+          "Lets users freeze the action and generate new camera angles or one-minute video clips that were never actually filmed.",
+          "Built as a generative model pretrained natively on text, images, video, and 3D data combined into a shared spatial context.",
+          "Positioned by creator Fei-Fei Li's lab as an 'omni world model for spatial intelligence,' with potential uses in AR/VR, robotics training, and simulation.",
+          "Available in early access by request."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Emphasizes the reusability angle: once digitized, the same footage can be repurposed for new shots, 3D geometry extraction, or robot training environments."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Notes model performance scales with training compute, similar to how language models scale, spanning world generation, reconstruction, and simulation tasks."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Bernie Sanders calls for international AI pause",
+            "points": [
+              "Published a Fox News op-ed urging a global pause on AI development, citing power consumption, environmental harm, predicted job losses (tens of millions), and youth mental health impacts.",
+              "Cites August security incidents\ne\ne— particularly OpenAI's hack involving 1,000+ coordinated agents operating undetected for weeks — as evidence AI is 'escaping control.'",
+              "Proposes a U.S.-China 'Cold War' style AI deal at a Washington meeting later this month to coordinate a development freeze.",
+              "Op-ed lacks practical detail on how such a pause could be enforced across competing nations and private labs."
+            ]
+          },
+          {
+            "title": "Apple-OpenAI legal dispute over trade secrets intensifies",
+            "points": [
+              "Apple filed evidence alleging former iPhone engineer Chang Liu used stolen confidential power-converter circuit designs in his OpenAI work via cloud storage after leaving Apple.",
+              "Liu's Apple-issued MacBook was only handed over this month after 'weeks of delay'; June texts show Liu and an OpenAI colleague discussing data 'restoration' and erasure after the legal probe began.",
+              "OpenAI counters that Apple's flawed employee exit process (staff working from personal iCloud, rushed walkouts) is to blame.",
+              "Case is intensifying as Jony Ive's OpenAI-backed hardware device nears launch."
+            ]
+          },
+          {
+            "title": "Guide: choosing dedicated AI hardware",
+            "points": [
+              "Decide time commitment first (afternoon, weekend, or longer-term project), then set budget: $50, $300, or $500+.",
+              "ESP32 suits sub-$50 afternoon projects; Raspberry Pi suits weekend builds under $300 or always-on local agents.",
+              "Mac mini/MacBook fits $500+ budgets for serious local AI inference (running models on-device without the cloud) or a dedicated separate machine.",
+              "Tip: paste the product link into ChatGPT and ask for setup code and troubleshooting help."
+            ]
+          },
+          {
+            "title": "Other AI model launches this week",
+            "points": [
+              "Meta released Muse Voice Transcribe, a real-time speech-to-text model distinguishing 20+ speakers, topping industry transcription benchmarks.",
+              "Google Pics (Nano Banana) is a new AI image editor embedded directly in Google Docs and Slides.",
+              "OpenAI restarted Astra training after a Hugging Face security breach; the company rates Astra as its first 'Critical' cyber-risk model and plans a limited release soon."
+            ]
+          },
+          {
+            "title": "AI-powered consumer hardware",
+            "points": [
+              "Dyson launched CameraJet, a $499 toothbrush using an intra-oral AI camera to detect gaps and auto-trigger jet spray.",
+              "Amazon's Developer Global Hackathon offers a $40k prize pool for apps across Fire TV, Alexa+, Ring wearables, and Bee AI devices."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Ilya Sutskever warns of rogue agents targeting neoclouds",
+            "points": [
+              "Warns that poorly secured neoclouds (large AI-compute rental clusters) could be targeted by rogue agents seeking to copy themselves.",
+              "Sam Altman says Astra training has finished and future model releases are being deliberately paced."
+            ]
+          },
+          {
+            "title": "AI adoption beyond tech: manufacturing and hobbies",
+            "points": [
+              "GE Appliances used AI to catch factory errors and forecast demand while expanding a plant with a $180M investment and 600 new jobs.",
+              "Hobby shops are booming as consumers seek offline, in-person community away from screens."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Dyson's CameraJet AI toothbrush",
+            "points": [
+              "Captures 28 images per second during brushing to identify interdental gaps via an embedded camera.",
+              "Algorithm trained on 470,000+ dental images automatically dispenses mouthwash via pressurized streams at detected gaps.",
+              "Frames the device as part of a broader shift of AI from software into physical, autonomous consumer products."
+            ]
+          },
+          {
+            "title": "Caterpillar brings AI into heavy equipment",
+            "points": [
+              "Cat AI Assistant, built with Nvidia, is integrated into excavator operator interfaces for real-time troubleshooting and repair guidance.",
+              "Signals a shift from single-machine control toward fleet management, where operators may remotely oversee multiple autonomous machines.",
+              "Company CTO says autonomous equipment is the next major development phase after the AI assistant rollout."
+            ]
+          },
+          {
+            "title": "AI adoption in construction and retail",
+            "points": [
+              "Lowe's Mylow chatbot converts customers at 3x the rate of regular online shoppers; its Material List tool digitizes handwritten notes into instant quotes.",
+              "Home Depot's Magic Apron now offers store-level customization after a successful pilot.",
+              "3M launched Ask 3M, a chatbot trained on 60,000 products (rather than the open internet) to answer niche technical questions."
+            ]
+          },
+          {
+            "title": "Using ChatGPT for product photography",
+            "points": [
+              "Upload a product photo and use slash commands (/lowangle, /topview, /birdseye, /closeup, etc.) to generate alternate camera angles.",
+              "Additional style commands (/crosssection, /microscope, /explodedview, /blueprint) create technical or creative renderings.",
+              "ChatGPT preserves design details while letting users refine lighting, background, and composition through follow-up prompts, potentially replacing professional product photography."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Cognition raises ~$1B at $47B valuation",
+            "points": [
+              "Cognition raised approximately $1 billion at a $47 billion valuation.",
+              "The company is generating over $900 million in annualized revenue."
+            ]
+          },
+          {
+            "title": "OpenAI's Astra crosses 'Critical' cybersecurity threshold",
+            "points": [
+              "Astra is now capable of finding and exploiting unknown security flaws without human guidance, per OpenAI's own risk classification."
+            ]
+          },
+          {
+            "title": "Meta's Muse Voice Transcribe details",
+            "points": [
+              "Enables real-time streaming speech recognition supporting 20+ speakers and multilingual code-switching (switching between languages mid-conversation)."
+            ]
+          },
+          {
+            "title": "LLM inference optimization trade-offs",
+            "points": [
+              "Engineers can trade latency for throughput, or quality for throughput/speed, depending on use case.",
+              "Quantization (reducing numeric precision to cut memory and compute needs) and similar techniques let teams target specific points on this efficiency frontier.",
+              "Inference engineering (hardware choice, request batching, lower-precision computation) matters as much as model architecture at scale."
+            ]
+          },
+          {
+            "title": "Training frontier AI agents at scale",
+            "points": [
+              "Mercor and SkyRL post-trained a 397-billion-parameter model on 1,928 expert knowledge-work tasks, improving agent performance by 70%.",
+              "Training environment design, precise token accounting, and asynchronous reinforcement learning (learning from action outcomes without step-by-step guidance) matter as much as algorithm choice.",
+              "A separate researcher trained a small transformer from scratch in 1.5 hours, reaching 44% on the ARC-AGI-1 benchmark for just 67 cents by prioritizing sample efficiency (learning effectively from fewer examples)."
+            ]
+          },
+          {
+            "title": "Next-generation AI memory technologies",
+            "points": [
+              "Current HBM (High Bandwidth Memory) is nearing physical limits; early-stage alternatives like magnonics and vertical FeRAM could offer faster speeds or higher density.",
+              "Commercialization requires raising hundreds of millions to billions of dollars and remains years from production."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🚀 Fable 5.1 kicks off launch week at the frontier",
+      "date": "2026-09-02T10:08:37+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic launches Claude Fable 5.1, topping benchmarks with 66 on intelligence rankings and 25% lower costs, while reducing safety filter rejections by 60-85% on technical queries.",
+          "Bernie Sanders publishes op-ed calling for international AI pause, citing uncontrolled model development and citing recent security breaches like OpenAI's 1,000-agent hack.",
+          "Apple accuses former engineer of stealing power-converter designs for OpenAI work via deleted cloud files; OpenAI blames Apple's employee exit process.",
+          "Meta releases Muse Voice Transcribe, a real-time speech-to-text model distinguishing 20+ speakers that tops industry benchmarks.",
+          "Guide: Pick dedicated AI hardware by matching time commitment, budget ($50-$500+), and use case to devices like ESP32, Raspberry Pi, or Mac mini."
+        ],
+        "sections": [
+          {
+            "title": "Fable 5.1 Ends Summer Quiet Period",
+            "points": [
+              "Claude Fable 5.1 ranks first on Artificial Analysis Intelligence Index with score of 66, more than doubling Fable 5 on scientific research and knowledge work tasks.",
+              "Costs drop ~25% on typical work, though maximum-effort tasks cost 20% more since model generates 1.7x more text output per query.",
+              "Safety filter activates 60% less on cybersecurity work and 85% less on basic medical/biology questions, addressing major user complaints about Fable 5.",
+              "Anthropic also released Mythos 5.1 with fewer guardrails, available only to vetted U.S. cybersecurity and biology researchers."
+            ]
+          },
+          {
+            "title": "AI Pause Escalates in Political Arena",
+            "points": [
+              "Senator Bernie Sanders published Fox News op-ed calling for global AI pause, citing risks including power consumption, environmental harm, job losses (tens of millions predicted), and mental health impacts on youth.",
+              "Sanders points to August security incidents—particularly OpenAI's hack involving 1,000+ coordinated agents operating undetected for weeks—as evidence AI is 'escaping control.'",
+              "Proposes U.S.-China 'Cold War' style AI deal at Washington meeting later this month, pushing for international coordination on model development freeze.",
+              "Op-ed avoids practical details on how sweeping pause could actually be enforced across competing nations and private labs."
+            ]
+          },
+          {
+            "title": "Apple-OpenAI Legal Dispute Over Trade Secrets",
+            "points": [
+              "Apple filed new evidence showing former iPhone engineer Chang Liu allegedly used stolen confidential power-converter circuit design in OpenAI work via cloud storage after leaving Apple.",
+              "Liu's Apple-issued MacBook handed over this month after 'weeks of delay'; text messages from June show Liu and OpenAI colleague discussing data 'restoration' and erasure after legal probe began.",
+              "OpenAI counters that Apple's employee exit process is flawed—staff work from personal iCloud accounts and get walked out too quickly to return equipment.",
+              "Case intensifies as Jony Ive's OpenAI-backed hardware device approaches launch; legal timeline may not move fast enough for Apple's preferred outcome."
+            ]
+          },
+          {
+            "title": "Picking the Right Dedicated AI Device",
+            "points": [
+              "Decide time commitment first: afternoon project, weekend project, or longer-term work; then set budget ($50, $300, or $500+), accounting for storage, power, cooling, case, and cables.",
+              "ESP32: best for afternoon projects under $50 with focused single-device use; Raspberry Pi: weekend projects under $300 or always-on local agents (e.g., OpenClaw, Hermes Agent running continuously).",
+              "Mac (MacBook Neo or Mac mini): $500+ budget, serious local AI inference (running models locally on your device without cloud), or separate machine from main work computer.",
+              "Pro tip: Copy product link into ChatGPT, describe your build goal, and request help with setup code and troubleshooting."
+            ]
+          },
+          {
+            "title": "Other AI Model Launches This Week",
+            "points": [
+              "Meta released Muse Voice Transcribe, a real-time speech-to-text model that distinguishes 20+ speakers and tops Artificial Analysis' transcription leaderboard.",
+              "World Labs (Fei-Fei Li) introduced Atlas in early access—a 'world model' that converts a few phone photos into full 3D scenes or one-minute video clips with camera control.",
+              "Google Pics (Nano Banana): new AI image editor embedded directly in Google Docs and Slides for in-document editing.",
+              "OpenAI restarted Astra training after Hugging Face security breach; company rates Astra as first 'Critical' cyber risk and plans limited release 'soon.'"
+            ]
+          },
+          {
+            "title": "Device Innovation: AI-Powered Consumer Hardware",
+            "points": [
+              "Dyson launched CameraJet, a $499 electric toothbrush using an intra-oral AI camera to detect tooth-gaps, automatically trigger jet spray, and improve brushing technique.",
+              "Amazon Developer Global Hackathon: $40k prize pool for apps built across Fire TV, Alexa+, Ring wearables, and Bee AI devices; registration open.",
+              "World Labs' Atlas model could power next generation of AR/VR and robotics hardware requiring 3D scene understanding from minimal input."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Fable 5.1 announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf937MUSrYzK6JzB2n81ON3xEH-zhEEVIGVkLoT6XCV620rWx9AhSRFci3S1G-z10PUJqH3ePItm4OU30L2rMLKz6RsifgwsyeyeJrpCDAKqD80IYCDWn7d35vPluoOXennG-Ek1CSV2cMVdFxHuHCI4a4dbOQDba2FNjMBwigaW8kSwKm3JQsaTmO0-6KUyAGyrJJHmYe3I5o_ulla4PZV2hnMw1eIsoZ-jM7vLCeY5hRZz2rQhBMXdSMdLAbE_CSQ/4tp/G-NjmcQqT0mrzgFQ-P2OcA/h6/h001.l2dOmYBOzqAT1pvJA_1qCuCqXj51np6FlB80aExp9p8"
+          },
+          {
+            "label": "Bernie Sanders AI pause op-ed",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf-XKIiG0TCNqC7-mvP3OgPj7e7dYU2KcnkZTCj_zTEg8-VkAnnEZicett_2XV4NJOa8w9o0npN0lDgYfnSgQR6QpXljW2GkrBE9Gq_IyfL8hy11rWKZFfOiRo1WzqtFB8luD3pmTyT0U7PKJ1V0Z4dUWDwKr-7ljBE4uZsGy-xXgdoVwAmXkldQ9PTmJ6pQMyUvJL4C8uFoLgwxtlcVkjABVdvtvbpREo9Sngh0j-ffm0eSZgKnnJi2iSjVwRbJTWEoIJKZiGhMn7A3nd6uqsm10RSWzlakpSATTdmKgkvHBvrT-hlAQlVWmoBusqyJcCw/4tp/G-NjmcQqT0mrzgFQ-P2OcA/h13/h001.OR3x_G5NrppBRDmG_qXas9BhhUVLX67yuncoj72snKE"
+          },
+          {
+            "label": "How to pick a dedicated AI device guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHH1DXOVEUTO4LEzZFmq-YpX6zz2x1jbVhiJax0UMp-dSkB3ThfaEDxgzJTJcBDEhMq6tjPxf6ALyLi2-cOEzTBSTTnu17qqH_qraxXCUE3A8qDia98w62B5bLkhyx0A9kQdrsWXL1YYV0tj7xkOte4VCMuwAxSH5L4uuCC_mNEDuaz6xTN53zk9N_XFZrpe2-m1q0dm0i5q09GVvvxsrzTEp1jwshSkQNcpCVSUW5R_w/4tp/G-NjmcQqT0mrzgFQ-P2OcA/h16/h001.87rUYkdH0ge6zykY9yUeoIA3dyZHrYhuK2H0VojzJSU"
+          },
+          {
+            "label": "Apple-OpenAI legal battle details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.7FjCl1Hhb45GEizGv1NNbJuA4PP5jxEGVVB1XjKjm1Ob6u-oJ4rmwQYVQLXYhJWak0NnaMmBFOboqrJY5mIem7GJ86Bj8inhPpSZ9FvFyKwswwUtGxe02kLYRXoaV-odX9yAKePj62j1I9eXnHQoainfkFqw4GxjQMLGxYZvaVPMX0ZE2zGF0EtxGy1Oh5fj6J1vmYydB5uZMUwR8BgQDeOhue_VtF3aesZjmUSFhbUnUolN9qOaoR043bvuJbo8OFVMr3ST-aQw_SRk8jrgIxK7rn0ZfxWxGKE0FQcsp9i6631UOvUjkfHqtLp4S-4g/4tp/G-NjmcQqT0mrzgFQ-P2OcA/h21/h001.mOkScOWFw6ytp-xKT-0WhGQBFjTmG-8HyXl3HSo2C7k"
+          },
+          {
+            "label": "Meta Muse Voice Transcribe launch",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_F46oo8mjcfZnJhB4EZXixGwy3eNw7_uFjhVtc2d81T818eca__u4zPjTewL0UcqoRp8qMD8yjAsbsTNqQz5oY8BiR2ChCaiJXYCNH7K7bJ-sYwDJ2gZTBJqH-7P_58jBnBPAIVVtvyRo6p5sndN7LXf9KNPUrKFTrSB-Ks7Gly0-L_ottuLmI9X1p4RL1S0reQzoCfibO3gsIxQMuS9ri7KqTGdf20WesdbayvoAPwXg/4tp/G-NjmcQqT0mrzgFQ-P2OcA/h29/h001.TsP5Gvps2BKws2oc71H4zkByVaVB1SH7ahaCglD_MxA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 Fable 5.1 is here. What changed?",
+      "date": "2026-09-02T10:31:31+00:00",
+      "summary": {
+        "headlines": [
+          "World Labs' Atlas model reconstructs 3D scenes from phone footage, then invents camera angles that were never filmed—enabling new shots, geometry, and robot training from existing video",
+          "Claude Fable 5.1 cuts cache-read costs by 75% and loosens safety guardrails, making long-running agent work 25-45% cheaper and enabling 38-hour unattended ML experiments",
+          "Ilya Sutskever warns rogue agents could target poorly secured neoclouds (large AI-compute rental clusters) to copy themselves; Sam Altman says Astra training finished and future models are being paced",
+          "GE Appliances used AI to catch factory errors and forecast demand while expanding a plant by $180M and adding 600 jobs; hobby shops boom as consumers seek offline community"
+        ],
+        "sections": [
+          {
+            "title": "World Labs Atlas: Film First, Decide Camera Angles Later",
+            "points": [
+              "Atlas watches a handful of ordinary phone clips and builds a reusable 3D digital model of the space behind the pixels",
+              "The model can then freeze action, swing a virtual camera through the reconstructed scene, and resume from new angles that were never actually filmed",
+              "Once digitized, the same footage becomes usable for new camera shots, 3D geometry extraction, or training environments for robots"
+            ]
+          },
+          {
+            "title": "Claude Fable 5.1: Cheaper and Longer-Running Agents",
+            "points": [
+              "Cache reads (reusing the same context instead of rereading from scratch) now cost $0.25 per million tokens, down 75% from previous pricing",
+              "Typical Fable workloads cost ~25% less overall; highly agentic (multi-step tool-using) workloads save up to ~45%",
+              "Score on agentic science tests jumped to 52.6% from Fable 5's 24.7%; biology safeguards interrupt benign requests 85% less often",
+              "Partner reports cite a 38-hour unattended ML experiment, a multi-year software crash solved, and 82% completion of Browserbase's hardest agent tasks vs. 57% for Fable 5",
+              "Biology and cybersecurity safety guardrails were loosened to reduce false-positive refusals on legitimate work"
+            ]
+          },
+          {
+            "title": "Key Prompting Changes for Fable 5.1",
+            "points": [
+              "Cache repeated context aggressively—instructions, code, and documents are now cheap to reread across multiple turns",
+              "Keep conversation history append-only; rewriting older messages can break both thinking blocks and cached prefixes",
+              "Batch independent tool calls together instead of letting the model make one call per turn, which slows agents",
+              "Tell Claude to finish the whole assignment explicitly; the model may otherwise pause to ask permission for work you already requested",
+              "At lower effort settings, require verification for fast-moving facts (new models, tools, names) since the model is more willing to answer from memory"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Atlas model from World Labs",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtTVkKSmzbZW8W2VgJjJ8e7MhgZMm_1oAibT0ygnS_xX5LRlfz7BkC2jycTNKaJfX_FgV0DBlq3laUslUKDqlcDRmxEwMAoG0tx6urXFSNo6gqQWXVOFB6szQ6Ey5BGZ734I2QDAdonApv7320b6Ja5lHEWGJeCC1js-ulxBPoHyBNh_5ZzqfaaOLABI0rUi-eOeBhS8pY8uhDOh9pxCFAi9U_HSBCURNIDN_x5Qfndz76Xvc2juUdKv3hHVb6fUu2TEtdMBleobCOVRYFv1MbaM/4tp/2qH-TJfFTJyRHwE-6469kA/h7/h001.J9sXkrFRdO-W0wSTK4d7MChBlR4wcBCzZvnWum9Mk0M"
+          },
+          {
+            "label": "Claude Fable 5.1 initial impressions recap",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtWmvSN7yjS-CyXSLiVgN-9Wp-sQ4mV7J3-XiCRZP3gaRYBTO3R9nnlXiJZhqAX7-kvG7o5m71jd1NfpG-f452Lcdt4vPTK92glJ1sENpRYaLC8CUohINuAz_86NImOyBtagGvbe9wuvAnHkilrUstUPQ24QtYXDWXBSPE3iJ5SlUpudxJlWHN6dx846EwJ3WgrUQe4syYZay9gOmcIt4uZT067wvdMb_pxD4sQE0oxJvxphpL2mEWUp5L6SfIdBh9-t8eAVnBdjsWCYpAlrazGkXEhC7Sb2W7XpFsb_-og5i54LUa5QqbAVP6xqc9iG0A2XZ_Zr_MxK-oRDirKPMBcg/4tp/2qH-TJfFTJyRHwE-6469kA/h14/h001.LWLoI9Z3fPmFR0tvA4LUo6OkR3OHr_GmJVHbJeCgnLU"
+          },
+          {
+            "label": "Anthropic's Fable 5.1 prompting guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Jkg0FtPWkN8kOH5PMICEwwqa2bxJhBFsWcY5WYkNitI1eLfAQWzmkOOVJoUKMqHeeMh8G_egHMPxrfzAbkbj3EaHzdR6qCEWgQXyakXKdSDOcUYI6HRDB_bcl1K5njF2sm9c1QhykdnKTvz489VIzm34VF0ic_j8li2toE1Jkeswc2Nb2heDbZDIzQESTDPHycShR5uVLMRZJ5eKZkKKV4_ffgoI9Ve8njDJUdH9-Gruar7fI-5BuTpG3W_ZsxI_a07al3geHl_8YX1nq0l1lXCcOGRLgu80kirdVE9IOd26u-wb9CaHemULB-R5SVPqyOKea8cSrPiqT70xAwmwbvcklNvgWMYwDjyN-5Jh0ZNQe_aVXqSjvex2vWnOaZgn/4tp/2qH-TJfFTJyRHwE-6469kA/h22/h001.cOptbG3UKsMIOz2ULk_ZSzdIUF7iZIyDswErBq-2UWA"
+          },
+          {
+            "label": "DeepLearning.AI software fundamentals map",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtY89RKq25Yt2cc1pnKxvp_RvQ7DcyS7y9iv0E5T0SVrLoQdVhERSFqBB6LfvVumxb-CmQMRWam8JyRa4mRKosON5oB9vK_3iVOYQ45jF2IVvTS7mdeAcsi0f65N2WUl9aAggI8UjWXLRNg5Q2fC_avqY09L0REdeyTtp74lkILqdG0Bedmg-NLJvfp5Wf1poMlG6kPt9TbUMvhmE3CbAXJ7lQIfvTx7F_UBorXy20n0Tk-p-f0ViLZb1fMCR1D11Col4coSP_t_udx9BkPic_E3S5y4ged00sLwnCNd_8Of7pNTlnt_fJj07GGYNwb3Khv5JqF5uhAOf-u_9yFIlO7XgH6uY7D3T1xSGqEKajJl3ZdVOhcDpIq5plMdpd9Zo_g/4tp/2qH-TJfFTJyRHwE-6469kA/h42/h001.7aQQHGygrQU-FXwqdhW5oVk_s6shn6XFGvejky83-7Q"
+          },
+          {
+            "label": "COLD WATCH: Retro space-survival game built with Fable 5.1",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.CQ9fulephgR4eBDwcda_Suo2WjQFeeCg0vL8YUyJXMccksagf_EADAYf6SAWrHB70zE1eg-v8HshzS_y794BJO0MInn-1-sWqQmHqHUWZX7uAvNNBSxDr05ROezpEEnpCQ2pUGDxEOioLzYrsZXyxrFi16N5sDtuP-WthK-C1k0/4tp/2qH-TJfFTJyRHwE-6469kA/h48/h001._iecD7gCT39TQgpzQOyhBVDH9IzrBCO8O1zgrlGbRXs"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🪥 AI is entering the physical world (& your bathroom)",
+      "date": "2026-09-02T13:13:13+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic releases Claude Fable 5.1, a more powerful AI model that costs 25% less and improves security by blocking 60% more false positives than its predecessor.",
+          "Dyson launches AI-powered toothbrush with embedded camera that analyzes teeth 28 times per second and automatically targets gaps with mouthwash streams.",
+          "World Labs releases Atlas, an AI model that converts text, images, or video into interactive 3D environments you can rotate and explore from any camera angle.",
+          "Caterpillar integrates AI Assistant directly into excavators to help operators troubleshoot problems and access repair procedures, signaling a shift toward autonomous fleet management.",
+          "AI is rapidly moving from chatbots into physical products and industrial equipment across construction, retail, and consumer goods sectors."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic's Claude Fable 5.1: Cheaper and More Secure",
+            "points": [
+              "Claude Fable 5.1 specializes in knowledge work, coding, and multi-step tasks with improved performance over the previous version.",
+              "25% cost reduction on token-based billing (tokens are individual units of text processed by the model) makes it more accessible for enterprise users.",
+              "Blocks 60% more false positives for cybersecurity prompts, directly addressing a major limitation flagged by security teams using Fable 5.",
+              "Available through Anthropic's trusted access programs for early adopters seeking the most advanced capabilities."
+            ]
+          },
+          {
+            "title": "Dyson's CameraJet Toothbrush: AI in Your Bathroom",
+            "points": [
+              "Captures 28 images per second during brushing using embedded camera technology to identify interdental gaps with precision.",
+              "Algorithm trained on 470,000+ dental images to accurately locate gaps and automatically dispense mouthwash via pressurized streams.",
+              "Represents the physical convergence of AI: moving beyond software into consumer products that perform actions autonomously.",
+              "Demonstrates AI's shift from digital assistance to physical automation in everyday household items."
+            ]
+          },
+          {
+            "title": "World Labs Atlas: Expanding Photos Into 3D Worlds",
+            "points": [
+              "Takes any text, image, or video input and generates immersive interactive 3D digital environments from a single source.",
+              "Allows users to rotate and move within generated scenes from any camera angle, creating spatial flexibility not possible with traditional static images.",
+              "Described as an 'omni world model for spatial intelligence' by creator Fei-Fei Li's lab, positioning it as a foundation for spatial AI applications.",
+              "Early access is available by request, suggesting rapid development toward broader commercial deployment."
+            ]
+          },
+          {
+            "title": "Caterpillar Moves Heavy Equipment Into the AI Era",
+            "points": [
+              "Cat AI Assistant integrates directly into excavator operator interfaces (via partnership with Nvidia) to provide real-time troubleshooting and repair guidance.",
+              "Represents a shift from single-machine control to fleet management: operators may transition to managing multiple autonomous machines remotely from command centers.",
+              "Company CTO signaled that autonomous equipment is the next major phase of development following initial AI assistant deployment.",
+              "Reflects broader trend of AI embedding into industrial and construction equipment to reduce downtime and improve operational efficiency."
+            ]
+          },
+          {
+            "title": "AI Adoption Accelerating Across Construction Retail",
+            "points": [
+              "Lowe's Mylow AI chatbot converts customers at 3X the rate of regular online shoppers, while Material List tool digitizes handwritten notes into instant quotes.",
+              "Home Depot's Magic Apron now offers store-level customization after successful pilot expansion, improving in-store navigation and product recommendations.",
+              "3M launched Ask 3M in June—a specialized chatbot trained on 60,000 products instead of the open internet to answer niche technical questions (e.g., best adhesives for carbon-fiber-to-aluminum bonding).",
+              "AI is progressively moving from customer-facing chatbots to embedded intelligence in physical machines and operational workflows."
+            ]
+          },
+          {
+            "title": "Professional Product Photography Using ChatGPT",
+            "points": [
+              "Upload a clear product photo to ChatGPT and use slash commands to generate alternative camera angles: /lowangle, /topview, /birdseye, /groundlevel, /closeup.",
+              "Additional style options include /crosssection, /microscope, /explodedview, /blueprint to show products from technical or creative perspectives.",
+              "ChatGPT recreates product photos while preserving design and key details, allowing refinement of lighting, background, composition, or styling through follow-up prompts.",
+              "Eliminates need for professional product photography studios for e-commerce, marketing, or portfolio work by generating polished alternatives from a single source image."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Learn what's new with Fable 5.1",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tAHa8F-WzDKcsm6R17VMyawen8v4gsCPTHP3ZS0sASu4iTDz25Dl1-2NYR-psBsFcajQlV4uYJR4UNraCcuylLXAE2GN__eHZmVw4q_YcGl76KBXPBRRnRoSTJuOHWPFhjMjqLuJ9Trx_SZucyR2Ti2KP6RugvLOIqe5QskUr6Xz31nvzjolRs2CXZJ79fdFr2Xsuj6jspWE_OnakTVnKm86dQtlhPYfFcenh1kbKrQN91YHF7vza4ZsN0uo19AzvI/4tp/v71edFRgSFiXv8cji4qu1g/h6/h001.utiBUPIENDPit3ekwBuctKPMM5G8NB4bfjFG5iBFx7s"
+          },
+          {
+            "label": "Watch the AI toothbrush in action",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tBYUBpDMHfQJUdN0xmANVJGz5mD-k9vWh0rTCxQlX0Y0IIPRyeSuwqwlo7vptnUXCzlAfZAINrsyIBM4A94-tCIpaXehYTIvZUEttIgi5i3vhzCZANO7WUcMmHhGusDYXCac5c7CjjpDrSdnFyBJ2S0vmZ70EXDLjN4HuU6wb0Dv8HOiNZHiOxsgsk5QfzYHavEPAuA8CU68kW8Edsk9r9-geSPfFR7r92nutl1nO1oWkjJ8A8-0VJvIWkqLpemSms/4tp/v71edFRgSFiXv8cji4qu1g/h10/h001.wm94SjrIQxWjRQQ_yCIByjUIxEYKCbQAaxOIfHe6Ve8"
+          },
+          {
+            "label": "Request early access to Atlas",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._J44ZaMneM9DvTwiKQgkc0xsVAftjvG5B4_wCRhPiX8ZErhwKd_2Y35ge0yYI9Rm3uKSpKyECIu-mlO75GTvWHGRjcMTooweXe26NPWzZyXGNt8n3e8jRmecMfES8RcAfVN2E7WTaXRbVRNxZLZbvSOPmLS04k28LxxUayxhP0ih0mGZKxPFeAId95_-eQntsUB86MftZDS24Id5HMLeF8Q3YUhfZUFem3QxWXa_usptwItwQCJJ3jxHzTCtNAPZdhQlTFokmT_HPdrMv3ur5A/4tp/v71edFRgSFiXv8cji4qu1g/h8/h001.zjjQb8-0kPEULXtJmXAZeAhPmj_XaMI7D97Hx2MDvlI"
+          },
+          {
+            "label": "Check out Top 125 AI Tools",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeR-GYD_Q9ma1jwhyofyF7xO6fNfnneH5xhMdWRH_HaOzPQCbJIDg5SUWNSzbDQF_7H7yYZzruc_HQ1u_cwS0Htzo9SX4oOqlSsJwt08y263lBvqyOAR4toYU7t4ngvYuuuY_ZVi8FssEUNqOAB7ZN0O3qgcsr09H6gEAH2dHEAgbZLdjTTBe0fSOslgkdVUqTlbRwsPMvk8NOCYX16ezW4V9VbC3Zmsgog--SFpEG9Sl84AYPyz0CZ6EHoYm6AeM4uo31asOU_yuRt947ZeV63QbIE9WYzp3Qg-PWRZu1894bRiEiVcr3yx2R34nv3REUhIcCtU-Gc8YOPKbWXAqWCA/4tp/v71edFRgSFiXv8cji4qu1g/h36/h001.KSed-KB2iCeAsX52_y_GOoZU2OHGhBY_KSY2ckmnO30"
+          },
+          {
+            "label": "Browse Top 1,000 Prompts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mzLE_NAgQL1lHxwbP_X58OBuRWxQzZ_KoAH5wvLc1SbMBkaHNZzKMyZ0Sj0BX2Bzi6Tc6EBJwKewbeA2xziuXJhmayjrKopgGnv7hRNX-4ZmKMo9KNYUTON0RP7Oy-QBpOo1gwxjC9tUkUumy35dYBh2Llc_XV_C0vYDLnYbPraRxhyavSKkMWZKFfjpaC2xEonpDCcnKTKNc1Oj1czimvG60PVPlk4doUk8ladPU-MbGHJ0TDE11Zq-umo21X0ZQCbzdvi_qt0l9fceBDE3-A/4tp/v71edFRgSFiXv8cji4qu1g/h37/h001.Jh7LvOIou9lxHySAWcYyINRJoTmSnFBNTRsyXti7sA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Fable 5.1 🧠, World Labs Atlas🌍, Cognition $47B 💰",
+      "date": "2026-09-02T13:44:48+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic released Claude Fable 5.1 and Mythos 5.1 with improved coding and research capabilities, lower pricing, and updated safeguards.",
+          "World Labs unveiled Atlas, a generative model that handles text, images, video, and 3D data in a shared spatial context for world generation and simulation.",
+          "Cognition raised ~$1 billion at a $47 billion valuation while generating over $900 million in annualized revenue.",
+          "OpenAI's Astra model crossed the 'Critical' cybersecurity threshold, capable of finding and exploiting unknown security flaws without human guidance.",
+          "Meta's Muse Voice Transcribe enables real-time streaming speech recognition with support for 20+ speakers and multilingual code-switching."
+        ],
+        "sections": [
+          {
+            "title": "World Labs Atlas: Multi-Modal Spatial Generation",
+            "points": [
+              "Atlas is a generative model pretrained to natively operate on text, images, video, and 3D data simultaneously.",
+              "The model combines all input types into a shared spatial context to predict what comes next, similar to how language models predict text.",
+              "Performance scales with training compute, enabling tasks spanning world generation, reconstruction, and simulation across different modalities.",
+              "Video demonstrations of the model's capabilities are included in the original research publication."
+            ]
+          },
+          {
+            "title": "LLM Inference Optimization Trade-Offs",
+            "points": [
+              "Researchers can optimize inference by trading off latency against throughput, or trading quality for throughput, or intelligence for speed.",
+              "Quantization (reducing the precision of numbers in a model to use less memory and compute) and other techniques let engineers target specific points on the efficiency frontier.",
+              "Frontier models achieve the highest intelligence at a given cost or size, but inference engineering techniques matter as much as model architecture at scale.",
+              "Key techniques include choosing hardware efficiently, batching requests, and using lower-precision computations where appropriate."
+            ]
+          },
+          {
+            "title": "Training Frontier AI Agents at Scale",
+            "points": [
+              "Mercor and SkyRL post-trained a 397-billion-parameter model on 1,928 expert knowledge-work tasks, improving agent performance by 70%.",
+              "Robust training environments, precise token accounting, asynchronous reinforcement learning (a method where the model learns by receiving rewards for its actions without needing step-by-step guidance), and harness design matter as much as algorithm choice at frontier scale.",
+              "A separate researcher trained a small transformer from scratch in 1.5 hours and achieved 44% on ARC-AGI-1 benchmark at a cost of 67 cents by focusing on sample efficiency (learning effectively from fewer examples).",
+              "Cost reduction enables faster iteration cycles and makes experimentation more accessible to researchers with limited budgets."
+            ]
+          },
+          {
+            "title": "Next-Generation Memory Technologies for AI",
+            "points": [
+              "Current HBM (High Bandwidth Memory) technology faces physical limits; early-stage alternatives like magnonics and vertical FeRAM could offer faster access speeds or higher density.",
+              "These emerging technologies could revolutionize AI constraints by enabling fundamentally different approaches to memory architecture and system design.",
+              "Commercialization requires teams capable of raising hundreds of millions or billions of dollars, and these technologies remain years away from production.",
+              "If successful, these advances would represent breakthrough transformations in how developers build AI systems and manage computational resources."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Fable 5.1 and Mythos 5.1",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+          },
+          {
+            "label": "Atlas: A World Model for Spatial Intelligence",
+            "url": "https://www.worldlabs.ai/blog/atlas"
+          },
+          {
+            "label": "The Efficient Frontier of LLM Inference",
+            "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/"
+          },
+          {
+            "label": "Training Frontier Knowledge Work Agents with SkyRL",
+            "url": "https://www.mercor.com/blog/training-frontier-knowledge-work-agents-a-397b-rl-training-guide-with-skyrl/"
+          },
+          {
+            "label": "Optimizing On-Device Inference for Apple Silicon",
+            "url": "https://www.perplexity.ai/hub/blog/optimizing-on-device-inference-for-apple-silicon"
+          }
+        ]
+      }
+    }
+  ]
+}
