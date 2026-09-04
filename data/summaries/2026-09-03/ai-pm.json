@@ -1,0 +1,366 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-09-03",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "There's An AI For That (TAAFT)",
+        "items": [
+          {
+            "title": "AI Finds Interstellar Route After Year-Long Research Bottleneck",
+            "points": [
+              "Fermi Explorer plans an unmanned probe to Alpha Centauri (nearest star system) using a trajectory AI calculated.",
+              "Human researchers spent 12 months stuck on this problem before AI breakthrough provided the 80,000-year path solution.",
+              "Demonstrates AI capability in complex optimization problems beyond current AI training data."
+            ]
+          },
+          {
+            "title": "Washington Backs OpenAI's Copyright Position",
+            "points": [
+              "Trump administration filed in court claiming model training on copyrighted content constitutes fair use (a legal doctrine allowing limited use of copyrighted material without permission), not copyright infringement.",
+              "Government argues tighter AI training restrictions would slow scientific progress, harm the economy, and weaken U.S. competitiveness.",
+              "Filing directly supports OpenAI in ongoing legal battles over whether companies can freely use published works to train AI systems."
+            ]
+          },
+          {
+            "title": "Google Releases Dual Gemini 3.8 Flash Models",
+            "points": [
+              "Gemini 3.8 Flash: general-purpose model handling code, agents, and deep reasoning tasks with improved speed.",
+              "Flash Cyber: specialized version designed for security teams and infrastructure operators to find bugs and auto-generate fixes.",
+              "Both versions available now; Cyber variant restricted to select public agencies and critical infrastructure teams initially."
+            ]
+          },
+          {
+            "title": "AI-Designed Viruses Show Promise Against Drug-Resistant Bacteria",
+            "points": [
+              "AI analyzed 9 trillion DNA letters and generated 300 virus genome designs; 16 successfully killed antibiotic-resistant bacteria in testing.",
+              "All 16 AI-designed viruses worked on first attempt with no manual edits, suggesting strong pattern recognition in biological sequences.",
+              "Phage therapy (using viruses called bacteriophages to kill bacteria) re-emerged after antibiotics began failing; one case helped revive a patient from a coma.",
+              "Current viruses pose minimal risk, but the method raises safety questions about DNA screening and future capabilities requiring regulatory frameworks."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Lenny's Newsletter",
+        "items": [
+          {
+            "title": "Smaller Org, More Output: How Meta Flattened While Shipping Faster",
+            "points": [
+              "Meta reduced PM layers so no individual contributor is more than one step away from their VP, eliminating coordination tax that slowed big-company product work.",
+              "Productivity gains from less process are expected to eventually justify rehiring—ambition is higher because teams can build more, not the same amount with fewer people.",
+              "The RPM (rotational product manager) entry program continues hiring at full capacity, onboarding new cohorts into this leaner culture."
+            ]
+          },
+          {
+            "title": "The Senior IC Track Finally Reaches the Top",
+            "points": [
+              "Product managers can now advance to IC9 and IC10 levels (senior individual-contributor ranks, as opposed to management ranks) without becoming managers, a path previously only available to engineers and designers.",
+              "High-level ICs like a fifteen-plus-year PM now run billion-dollar problems solo—allocating compute across the company between frontier model training versus inference, Facebook versus Instagram.",
+              "Managers who remain are selected for coaching ability (scaling other people), not just project delivery, making hands-on individual contribution no longer a career ceiling."
+            ]
+          },
+          {
+            "title": "Three New Apps Launched in Eight Weeks Via AI-Assisted Scaffolding",
+            "points": [
+              "AI agents extracted reusable infrastructure (login, notifications, ranking) from Meta's codebase; Forum (groups app) shipped in weeks without a large dedicated team.",
+              "Seller (July) and Creator Studio (August) came from the same scaffolding line; iOS builds can be 80% auto-generated from Android blueprints by AI agents.",
+              "These standalone apps solve a prioritization problem—tens of millions of power users never passed the bar for Meta's main two-billion-user feed; small teams now own their own products without stakeholder warfare.",
+              "Cannibalization didn't occur; power users on dedicated apps produce more content that feeds both apps, leveraging Meta's distribution advantage."
+            ]
+          },
+          {
+            "title": "Evals: The New Core PM Skill for AI-Driven Products",
+            "points": [
+              "An eval (a structured method for quantifying subjective judgment) is needed because non-deterministic systems—AI outputs that vary even with the same input—can't be graded by simple pass/fail tests; PMs pick dimensions that define 'good' and rate real examples against them.",
+              "Meta's Reels team evals five dimensions (relevance, timeliness, freshness, worthiness) across a sample of user ratings, then goals the ML team on increasing five-star answers and shrinking one-stars over months.",
+              "Interview screening for this skill uses deliberately subjective challenges (e.g., 'build an eval for bath towels') to see if candidates can distill judgment into measurable metrics.",
+              "This skill may define the next generation of PMs; the scarcest asset is now judgment, not code."
+            ]
+          },
+          {
+            "title": "Data Science and Design Upleveled, Not Replaced",
+            "points": [
+              "AI absorbed routine work (query-pulling, design padding fixes); DS and design now handle tougher, strategic questions, producing more output (e.g., five deep analyses per week instead of three).",
+              "Division of labor: PM owns the first mile of a problem, the expert owns the last mile—PMs use analytics agents for intuition-building, but precise experiment analysis at scale still needs a data scientist.",
+              "The same shift happened across all functions: every role moved toward judgment and away from process, with PMs shipping less production code and engineers leveling up."
+            ]
+          },
+          {
+            "title": "Personal AI Tools Shifting from Individual Stacks to Corporate Standard Services",
+            "points": [
+              "Hand-built personal assistants (nightly briefs, inbox triage) matured into company-wide services available to all teams, even those who never started custom-building.",
+              "This shift bakes efficiency gains in as a standard baseline, raising the floor for all builders across the company."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "AI Daily Brief",
+        "items": [
+          {
+            "title": "How Loops Work and When to Use Them",
+            "points": [
+              "A loop (an iterative agent cycle) follows plan-act-check-adjust: an agent sets a goal, takes actions via tools, verifies results, and adjusts—already implemented natively in tools like Claude Code, Cursor, and ChatGPT.",
+              "A task deserves a loop if it's long-running, highly verifiable (clear 'done' state definable), and already failed on one-shot attempts; research, competitive analysis, and compliance audits qualify—executive strategy and hiring do not.",
+              "The critical distinction is loop versus automation: a schedule answers 'when' something runs; a loop answers 'until' work meets the bar, stopping based on quality rather than a clock.",
+              "Loops fail when the finish line is vague ('make it insightful'), when there's no hard cap (running forever chasing perfection), or when the task wasn't loop-worthy to begin with—a thirty-turn cap is a mandatory safety mechanism."
+            ]
+          },
+          {
+            "title": "Designing Goal Cards: The Mechanics of Agentic Autonomy",
+            "points": [
+              "A goal card specifies four things: a concrete, machine-readable objective; the output artifact (file, document, spreadsheet); explicit stopping criteria; and mandatory fail-safes (turn limit, time limit, sandbox restrictions).",
+              "Boring is optimal—the finish line must be checkable by a machine, not human taste; '200 verified data points, each with URL and date' beats 'comprehensive and insightful.'",
+              "Coding has free verification (tests pass or fail), but knowledge work doesn't; you must design the 'referee' that decides when a job is done, or avoid looping the task.",
+              "A worked example (token efficiency research in Claude Code) ran about eight cycles to exceed a 200-point target, with a thirty-cycle hard cap preventing infinite loops."
+            ]
+          },
+          {
+            "title": "Graphs: Multiple Agents Working Together",
+            "points": [
+              "A graph (a network of AI agent 'nodes' connected by information flow) is a broader structure where a loop is simply one node with an arrow pointing back to itself—the smallest possible graph.",
+              "Four progression stages exist: one agent one pass; one agent looping until done; multiple agents each handling one piece (a work graph); and persistent teams of agents handling multiple jobs (an org graph).",
+              "Escalate to multiple agents only when one worker fails: the rubber stamp effect (self-review is unreliable, models agree with themselves), context overflow, serial waiting on parallel work, shifting finish lines, or quality flatlining.",
+              "Common frameworks include drawing the graph by hand first, prompting it directly, building persistent specialized worker files, using no-code tools like n8n, or coding with LangGraph."
+            ]
+          },
+          {
+            "title": "Six Habits for Effective Agent Systems",
+            "points": [
+              "Match model cost to job importance: use cheap, fast models for mechanical steps and strong models only where judgment lives.",
+              "Pass only relevant context between nodes—a draft, a rubric, structured findings—never the entire conversation, to reduce token burn and keep nodes focused.",
+              "Spend tokens where verification pays: reserve deep multi-agent graphs for high-value tasks, not routine work.",
+              "Place humans deliberately at specific approval gates (plan upfront or final sign-off) rather than verifying every step or replicating existing human workflows—agent systems should be redesigned radically."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "There's An AI For That (TAAFT)",
+      "subject": "🦾 AI Found the Path to Another Star",
+      "date": "2026-09-03T14:33:34+00:00",
+      "summary": {
+        "headlines": [
+          "AI found an 80,000-year trajectory to Alpha Centauri after researchers were stuck for a year, advancing interstellar mission planning.",
+          "Trump administration backs OpenAI in copyright fight, arguing AI model training qualifies as fair use and benefits scientific progress.",
+          "Google launches Gemini 3.8 Flash with a specialized cybersecurity twin (Flash Cyber) for bug-finding and vulnerability fixes.",
+          "Talking to AI is reshaping how humans communicate—researchers warn that adapting language to machines subtly changes self-perception.",
+          "AI designed 300 virus genomes and 16 successfully killed antibiotic-resistant bacteria, opening phage therapy possibilities with regulatory questions."
+        ],
+        "sections": [
+          {
+            "title": "Washington Backs OpenAI's Copyright Position",
+            "points": [
+              "1. Trump administration filed in court claiming model training on copyrighted content constitutes fair use, not copyright infringement.",
+              "2. Government argues tighter AI training restrictions would slow scientific progress, harm the economy, and weaken U.S. competitiveness.",
+              "3. Filing directly supports OpenAI in ongoing legal battles over whether companies can freely use published works to train AI systems."
+            ]
+          },
+          {
+            "title": "AI Finds Interstellar Route After Year-Long Research Bottleneck",
+            "points": [
+              "1. Fermi Explorer plans an unmanned probe to Alpha Centauri (nearest star system) using a trajectory AI calculated.",
+              "2. Human researchers spent 12 months stuck on this problem before AI breakthrough provided the 80,000-year path solution.",
+              "3. Demonstrates AI capability in complex optimization problems beyond current AI training data."
+            ]
+          },
+          {
+            "title": "AI-Designed Viruses Show Promise Against Drug-Resistant Bacteria",
+            "points": [
+              "1. AI analyzed 9 trillion DNA letters and generated 300 virus genome designs; 16 of them successfully killed antibiotic-resistant bacteria in testing.",
+              "2. All 16 AI-designed viruses worked on first attempt with no manual edits, suggesting strong pattern recognition in biological sequences.",
+              "3. Phage therapy (using viruses to kill bacteria) re-emerged after antibiotics began failing; one case helped revive a patient from coma.",
+              "4. Current viruses pose minimal risk, but same method raises serious safety questions about DNA screening and future capabilities requiring regulatory frameworks."
+            ]
+          },
+          {
+            "title": "Google Releases Dual Gemini 3.8 Flash Models",
+            "points": [
+              "1. Gemini 3.8 Flash: general-purpose model handling code, agents, and deep reasoning tasks with improved speed.",
+              "2. Flash Cyber: specialized version designed for security teams and infrastructure operators to find bugs and auto-generate fixes.",
+              "3. Both versions available now; Cyber variant restricted to select public agencies and critical infrastructure teams initially."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Trump administration's fair use filing supporting OpenAI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.MIqI7kSxlxK_aonUQ9YYqLraovwHDWJBzikA6nKOa2BYs6Xqb2KKOThHCb53naD_LcG2JYVwRnLoD61uBY-Q8rWM3_6Pf1XzMoVazKi71yhl-11E5PivCYhXN9HWbUOGOb8z9PPu_BkZKWDhS398HRdt69vDlHHF72U2qufZoh9bRTcejQhwM4nzNB9v8QMdbxR5Gkkcers-eiCc7vLJ1bxfCkz2G_ZuYz2sn_mFzSN-5_538LoAqkqZzfdqC1NooHklLq5wtkMKNNj66UYU6uxiZEcVQdtUxbjj72ULgBNtbqJl9xGNrDsZcy4qx5q1d4affBAlkG4gzgouOwquoGTJB7F8NyOOXDBdhClE_EA/4tq/MgK3xneuRs22WEoL24j3-A/h7/h001.dYokFxUQxQy3Y2YMBu0lHsWfrXENSR0sYpc0zbtq2i4"
+          },
+          {
+            "label": "GoPro merges with Starman for AI data center transceivers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Fs3xQqi2MkUSUY1t8adQ8rj0UXzjEw9sjuoD65GtZkpednZg9Va4fpX3awZVNRbbKIwHA3jmxQQTh5wM1O0hjT_1RDvDSYQ9b9RyTsE7WkFuwpwbVusvXLdGQceTrIP-c9b9doYUqKz3ugXYTTrO-4XiMMdqRkHpmUIoIMKFI-C3cdyIhBrd_jnT4ZPm12SSJ1mrcwYmaHvyZuWUR3UxcpzD_8aVTb_G00Sq4Ap7TC4o5Wyb7r2nMJC80Ak8bgHwQDuW_7c8_yKyqLtejB2a1XnXeY8gqh_djUbsHmEWnsxkIiOGf58cd5k9sRpWOL63wE-gkS_DvfK43_Ct8UN4WJgW3aLrymdk3zM7zgVWHRWLAyFrX6cGWyPnIJLEL1zVtE5XrRQ5L6IHJFMhNRRVIbgGBTa9MxgmtfafNQGRFJc/4tq/MgK3xneuRs22WEoL24j3-A/h8/h001.yaTLhCRepgIJ5XKewB35A9qfW7yH3C15OyQVTxFO-WI"
+          },
+          {
+            "label": "Gemini 3.8 Flash and Flash Cyber announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0AlcB82sa7WpPyBypDdFJLx4aY967Q0RHUrIZ3315L71uBHbawHtDBgJk7Ze0jl0_d_1GhLSWLocqqUQ41u2QWLAP1mRyIDoaSiabmCpyC1UMO7H2usbgWjpUonaflAW9b8ny9eXGChPrh0d_q1WNQo47P1Y1kgNV-wG7rp0tQ86R9CcFi6dKVBIemK0pulnJLGBI5jSDe3NRmBYXGGJgtUo7l3z0RvB_-30oLYm6HUoco9R-SFcyhGSJyAFBsdAaTkkQ1cgGRRBDVGu4w4siKP7WvmTk5CuZGq1Lpn8AfTdNNBqPOdPEJx8yKk2WgzgpxDRtPsZmlW0MPl0qUMG4T4/4tq/MgK3xneuRs22WEoL24j3-A/h9/h001.99WFvgrOcaqPzmANNDxs5Vvv5L9f813snKWIlWtUc5M"
+          },
+          {
+            "label": "AI found interstellar route to Alpha Centauri",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7ibKhZJK9_hdNQc2l_qTBWwnG0yo7P6QmHmQmRMFOrEc1oQj8tXrnR4piVLq7OXiunki9oE_0yFDM9DSXYZuter3j_H-508VCvc67v20QkjPJpsR779QUTCfu4sg0SAW4hyq5Zp3-616bCG-w8vkRJITLfeRyC9nwKaHlgjt6b7QfTKowAhc5eYvsH9LkKAIQ68ExyNljdoDRozn-HLs7NwkvzenqjjuMOdEn8f8x0AB36B2llIV532zq2fqQOaxlO9ywnjtHscJ3YcJ5zhINvmRK01YWBihkmUyKyeMVZG_TG5TXSjuXms_GeLcDnbC4r0EneBuUMLa8L5CMUsDtV8/4tq/MgK3xneuRs22WEoL24j3-A/h15/h001.uStQ0H9ZTM8BQZ3W5Bnh2og2lnffzdEhan6PCUeTnHQ"
+          },
+          {
+            "label": "AI virus design and phage therapy video overview",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7rMoviV65-al5K_jhRN5GwtfuFvBFGx3nxXsDe0MI1jYATLP3-hWHzSBQuR9oX4X4egTanQ9ItI21QCEJIcEzQ4EPkjOMmWHEm-xa7BvPSdfNbksXFkq9I1KlkLbltpe1eELoNX5aQ0lo94yIAWGVKbPZRnqiQIOLPARW51lYJs-nhc3fEAiF-zoAu5aNuPxnDqMgLkov2m9LsZ-cov27p1O0WCKD2LgDbOyM9dd6mnk0CHYKyGXApTmgZzCg_flm5OufLzU3F9qOzXOgyUMnvw/4tq/MgK3xneuRs22WEoL24j3-A/h25/h001.LJgVajogZIlVQ3d3Hyn4gD_FnR9n5uGijq8MSN-KUAw"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Lenny's Newsletter",
+      "subject": "What the Past Year Taught Meta",
+      "date": "2026-09-03T15:36:59+00:00",
+      "summary": {
+        "headlines": [
+          "Meta's flatter, smaller organization is shipping more products faster by eliminating coordination overhead and letting teams own their own focused apps rather than fighting over surface space in the main platform.",
+          "Individual contributor (IC) career paths for product managers now reach senior levels (IC9-IC10) previously reserved for management, attracting senior builders back from management roles.",
+          "Data science and design functions are upleveling—AI absorbed routine work like query-pulling and design tweaking, freeing these teams to focus on high-judgment strategic problems instead of shrinking.",
+          "Meta launched three purpose-built apps (Forum, Seller, Creator Studio) in one summer using AI-assisted code scaffolding, ideas that failed prioritization for a decade when building meant a ten-person engineering tax.",
+          "Evals—converting subjective judgments into quantified measurement dimensions—are becoming the core PM skill for judging non-deterministic AI systems, fundamentally reshaping how products get evaluated and built."
+        ],
+        "sections": [
+          {
+            "title": "Smaller Org, More Output: How Meta Flattened While Shipping Faster",
+            "points": [
+              "Meta reduced PM layers so no individual contributor is more than one step away from their VP, eliminating coordination tax that slowed big-company product work.",
+              "The productivity gains from less process and fewer handoffs are expected to eventually justify rehiring—ambition is higher because teams can build more, not the same amount with fewer people.",
+              "The RPM (rotational product manager) entry program continues hiring at full capacity, onboarding new cohorts into this leaner, faster building culture from day one."
+            ]
+          },
+          {
+            "title": "The Senior IC Track Finally Reaches the Top",
+            "points": [
+              "Product managers can now advance to IC9 and IC10 levels without becoming managers, a path previously only available to engineers and designers.",
+              "High-level ICs like a fifteen-plus-year PM now run billion-dollar problems solo—allocating compute across the company between frontier model training versus inference, Facebook versus Instagram.",
+              "Managers who remain are selected for coaching ability (scaling other people) not just project delivery, making hands-on individual contribution no longer a career ceiling."
+            ]
+          },
+          {
+            "title": "Three New Apps Launched in Eight Weeks Via AI-Assisted Scaffolding",
+            "points": [
+              "AI agents extracted reusable infrastructure (login, notifications, ranking) from Meta's codebase; Forum (groups app) shipped in weeks without a large dedicated team.",
+              "Once the template worked, Seller (July) and Creator Studio (August) came from the same scaffolding line; iOS builds can be 80% auto-generated from Android blueprints by AI agents.",
+              "These standalone apps solve the prioritization problem—tens of millions of power users never passed the bar when adding bloat to a two-billion-user main feed; now small teams own their own canvases without stakeholder warfare.",
+              "Cannibalization didn't occur; power users on dedicated apps produce more content that feeds both apps, and distribution to two billion daily users is Meta's structural advantage."
+            ]
+          },
+          {
+            "title": "Evals: The New Core PM Skill for AI-Driven Products",
+            "points": [
+              "An eval quantifies judgment for non-deterministic systems (AI outputs vary with the same input); PMs pick dimensions that define good, rate real examples against them, and turn subjective calls into measurable targets.",
+              "Meta's Reels team evals five dimensions (relevance, timeliness, freshness, worthiness) across a small percentage of user ratings, then goals the ML team on increasing five-star answers and shrinking one-stars measured over months, not experiment-by-experiment.",
+              "Interview screening for this skill uses deliberately subjective challenges (e.g., 'build an eval for bath towels')—the candidate's ability to break unmeasured things into quantifiable dimensions reveals whether they can distill judgment into metrics.",
+              "This skill may define the next generation of PMs; the scarcest asset is now judgment, not code."
+            ]
+          },
+          {
+            "title": "Data Science and Design Upleveled, Not Replaced",
+            "points": [
+              "AI absorbed routine work (query-pulling, design padding fixes); DS and design now receive tougher, more strategic questions requiring judgment, producing more output (e.g., five deep analyses per week instead of three).",
+              "Division of labor: PM owns the first mile of a problem, the expert owns the last mile—PMs use analytics agents for intuition-building, but precise experiment analysis at scale (spotting polluted results, bad holdouts) still needs a data scientist.",
+              "The same shift happened across all functions simultaneously: every role moved toward judgment and away from process, with PMs shipping less production code (handing solutions to engineers after illustrating ideas) and engineers leveling up."
+            ]
+          },
+          {
+            "title": "Personal AI Tools Shifting from Individual Stacks to Corporate Standard Services",
+            "points": [
+              "Spring energy spent on hand-built personal assistants (nightly briefs, inbox triage) matured into company-wide services available to all teams, even those who never started custom-building.",
+              "This shift bakes efficiency gains as standard baseline, letting 'your real work start in the morning after that efficiency is baked in,' raising the floor for all builders across the company."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "The Skip Podcast: What the Past Year Taught Meta",
+            "url": "https://substack.com/app-link/post?publication_id=92860&post_id=213467645&utm_source=podcast-email&play_audio=true&r=8si6mw&utm_campaign=email-play-on-substack"
+          },
+          {
+            "label": "Forum (Groups App)",
+            "url": "https://substack.com/redirect/c4ead55c-b708-4c7b-b630-ff83b2b1f9f8?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Seller App",
+            "url": "https://substack.com/redirect/445f9320-1a36-4399-96bf-24aea5e11009?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Creator Studio",
+            "url": "https://substack.com/redirect/847e0835-ae08-4fd4-addf-47a4f9768a14?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "The Skip Newsletter",
+            "url": "https://substack.com/redirect/0845f8c5-a178-4f1d-b879-e2079199ec7a?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "AI Daily Brief",
+      "subject": "Agentic Loops for Knowledge Workers",
+      "date": "2026-09-04T00:22:23+00:00",
+      "summary": {
+        "headlines": [
+          "Agentic loops—iterative cycles where AI agents run repeatedly against measurable goals until tasks are complete—are moving from software engineering into knowledge work, requiring manual verification design since success metrics are often fuzzy.",
+          "A loop is a single agent running until a concrete goal is met; a graph is multiple agents working together with defined information flow, and the distinction between them is whether work requires one node (agent) or many.",
+          "Knowledge workers have an advantage building agent systems because understanding how work actually flows through organizations—versus how org charts pretend it flows—is now a core technical skill.",
+          "Loops fail most often when the goal definition conflates quality with boring, checkable metrics (e.g., '200 verified data points' beats 'make it insightful'), or when a task lacks clear stopping criteria and runs indefinitely.",
+          "Four habits separate effective agent graphs: match model cost to task criticality, pass only relevant context between nodes, verify results early before mistakes compound, and place humans at strategic approval gates rather than replicating today's human workflows."
+        ],
+        "sections": [
+          {
+            "title": "How Loops Work and When to Use Them",
+            "points": [
+              "A loop is plan-act-check-adjust: an agent sets a goal, takes actions via tools, verifies results against the goal, and adjusts if needed—every major agentic tool (Claude Code, Cursor, ChatGPT) already implements this natively.",
+              "A task deserves a loop if it's long-running (one prompt won't solve it), highly verifiable (you can define a clear 'done' state), and already failed on one-shot attempts; research, competitive analysis, and compliance audits qualify; executive strategy and hiring do not.",
+              "The critical distinction is loop versus automation: a schedule answers 'when' something runs; a loop answers 'until'—it stops when work meets the bar, not on a clock, making it fundamentally different from scheduled batch processes.",
+              "Loops fail when the finish line is vague ('make it insightful'), when there's no hard cap (they run forever searching for perfection), or when the task genuinely wasn't loop-worthy to begin with—the thirty-turn cap is a mandatory safety mechanism."
+            ]
+          },
+          {
+            "title": "Designing Goal Cards: The Mechanics of Agentic Autonomy",
+            "points": [
+              "A goal card specifies four things: a concrete, machine-readable objective ('create a token efficiency playbook with 200 unique data points'); the output artifact (file, document, spreadsheet); explicit stopping criteria (e.g., 'at least 200 sources split as 40 vendor docs, 40 practitioner sources, 20 benchmarks, zero duplicates'); and mandatory fail-safes (turn limit, time limit, or sandbox restrictions).",
+              "Boring is optimal—the finish line must be checkable by a machine, not by human taste; 'two hundred verified data points, each with URL and date' beats 'comprehensive and insightful' every time.",
+              "Coding has verification for free (tests pass or fail), but knowledge work doesn't; you must actively design the 'referee' that decides when the job is done, and if you can't manufacture a clear, verifiable finish line, don't loop the task.",
+              "The worked example (token efficiency research in Claude Code) ran approximately eight cycles to exceed a 200-point target, with a thirty-cycle hard cap preventing infinite loops—demonstrating that well-defined goals with bounded tries work in practice."
+            ]
+          },
+          {
+            "title": "Graphs: Multiple Agents Working Together",
+            "points": [
+              "A graph is a network of nodes (agents or tasks) connected by directed edges (work and information flowing between them); a loop is simply one node with an arrow pointing back to itself—the smallest possible graph.",
+              "Four progression stages exist: one agent one pass; one agent looping until done; multiple agents each handling one piece in parallel or sequence (a work graph for a single job); and persistent teams of agents handling multiple jobs (an org graph).",
+              "Most knowledge work never leaves stage one or two; escalate to multiple agents only when one worker fails: the rubber stamp effect (self-review is unreliable, models agree with themselves), context overflow (one agent wearing too many hats), serial waiting on parallel work, shifting finish lines, or quality flatlining.",
+              "Common frameworks include drawing it by hand first (forces clarity), prompting the graph directly ('research five competitors in parallel, then have a fresh reviewer verify'), building persistent worker files that specialize in specific tasks, using no-code tools like n8n, or writing in code with LangGraph."
+            ]
+          },
+          {
+            "title": "Six Habits for Effective Agent Systems",
+            "points": [
+              "Match model cost to job importance: use cheap, fast models for mechanical steps and yes/no verdicts; deploy strong models only where judgment lives, not everywhere.",
+              "Pass only relevant context between nodes—a draft, a rubric, structured findings—never the entire conversation; this reduces token burn and keeps nodes focused.",
+              "Spend tokens where verification pays: elaborate research can consume millions of tokens, so reserve deep multi-agent graphs for high-value tasks, not routine work.",
+              "Place humans deliberately at specific gates: approve the plan upfront or sign off at the end, but don't ask humans to verify every intermediate step or replicate how humans currently do the work—agent systems work differently and should be redesigned radically, not mapped to existing processes."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Listen to the episode",
+            "url": "https://link.mail.beehiiv.com/v2/c/d9bb35b338c796448409a41ad95badf68455c45b9c596810842c0ad273582c1da7db503448c8d457c208b9efa7608df9e972b8e2751ed952f126ebf2b729d449019529378289b794cabd61cff30dd5d620c120a9631bd38e2105d5ab0e458442cf88ee3f63ff07a248e7fb63c5a416845369c4b0a6a8fac302279d495f12d47b592770408769c65bfc150de165ff47e7412bb7ad3db0478ff3b308a1e55ccd35/55aca3e7419abc3a"
+          },
+          {
+            "label": "Read online",
+            "url": "https://link.mail.beehiiv.com/v2/c/923614bc76d1968e5aea3e591e175588a5d2f35a5af1c8bfcab6ff84bf01b79470e72cb7166dfbb501f5bc26863647d646ad31df1ad459eaeb6950c582043738f90ff2dba4b0fe172e09c2df2ca4ce69c019fc30b9ed878ebdd1217e691dbc68fe7fba5671255c894afe4eecead656297f17305a8561db024f746d992ab159594bb8181b21b26bd5bf01c101ee3e37a130f4ff723831dc4ee1b6ee44140d5509/9d7baf1cc682c1f7"
+          }
+        ]
+      }
+    }
+  ]
+}
