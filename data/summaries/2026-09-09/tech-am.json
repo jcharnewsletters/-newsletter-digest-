@@ -1,0 +1,346 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-09",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI's claimed proof of Navier-Stokes Millennium Problem sparks plagiarism allegations",
+        "points": [
+          "OpenAI's model produced a 100-page proof that Navier-Stokes equations (fluid dynamics equations describing how liquids and gases move) can 'blow up' (become infinite in finite time), addressing one of math's seven Millennium Prize Problems worth $1 million.",
+          "The proof was generated in 88 hours using 10,000 parallel AI agents and verified with Lean (a proof-checking software).",
+          "NYU mathematician Tristan Buckmaster says he had shared his unpublished, year-long research on the same problem with an OpenAI mathematician; OpenAI's Sébastien Bubeck then announced a matching proof days later, which OpenAI denies stealing.",
+          "Buckmaster alleges OpenAI won't disclose if his drafts were used in training data and pressured him to publish solo, warning that including his Anthropic-employed co-author could hurt his career.",
+          "The proof has not undergone external peer review, raising questions about legitimacy and attribution."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Framed the achievement as suggesting physical laws could theoretically break down under certain conditions, calling it a top achievement in AI problem-solving."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "Detailed the specific plagiarism dispute: OpenAI allegedly pressured Buckmaster to publish without his Anthropic co-author, threatening his career."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Named Sébastien Bubeck as the OpenAI researcher who announced the matching proof shortly after Buckmaster's disclosure."
+          }
+        ]
+      },
+      {
+        "title": "Meta launches Muse, an autonomous personal AI agent",
+        "points": [
+          "Muse can autonomously send emails, book travel, make purchases, and sell items on behalf of users via an app, WhatsApp, or (later) Meta's AI glasses.",
+          "It integrates with third-party platforms like Spotify, Ticketmaster, Shopify, Gmail, and OpenTable.",
+          "A free tier has usage limits; paid tiers cost $20/month or $100/month for expanded capacity.",
+          "Security architecture includes running tasks in a sandboxed environment isolated from core execution, with a separate 'Sentinel' agent requiring approval before major actions run."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Noted Meta is positioning Muse's security design as an improvement after the company's past trust and privacy controversies."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Explained privacy protections in detail: Muse uses Stripe Link to generate single-use card numbers hiding real payment details, and isolates each user's web activity in a virtual machine to protect privacy even from Meta itself."
+          }
+        ]
+      },
+      {
+        "title": "Anthropic researcher quits, warns of existential AI risk",
+        "points": [
+          "Jacob Coxon, who spent 3 years on AI pre-training at both Anthropic and OpenAI, resigned citing ethics concerns.",
+          "He warns both labs are racing toward superintelligence (AI systems that can upgrade and improve themselves with minimal human oversight) that could eventually hack anything and reshape the world overnight.",
+          "Anthropic's alignment lead Evan Hubinger estimates greater than 10% odds of AI ending humanity within the next decade and admits no clear safety plan exists."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Coxon's warning specifically framed the risk as AI potentially killing millions or everyone within a decade."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Apple unveils foldable iPhone",
+            "points": [
+              "Apple's foldable iPhone features a 7.8-inch interior display after a decade of secretive development.",
+              "Priced between $1,999 and $2,199."
+            ]
+          },
+          {
+            "title": "Google DeepMind's AlphaGenome Atlas",
+            "points": [
+              "Maps 9 billion DNA variants with precomputed, single-number impact scores to accelerate disease research and treatment development.",
+              "Requires no coding or independent model-running, democratizing access to complex predictive models for scientists."
+            ]
+          },
+          {
+            "title": "CPU shortage forces new capacity-planning practices",
+            "points": [
+              "General-purpose compute has become a capacity-planning requirement most software teams at scale have never had to forecast before.",
+              "Teams must commit to CPU resources months in advance rather than scaling dynamically, changing infrastructure planning norms.",
+              "The shortage is pushing cloud-first software organizations to adopt traditional capacity-planning practices previously uncommon in their workflows."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Uber scaled AI agent usage 9.4x without raising costs",
+            "points": [
+              "Between February and August 2026, Uber's agent requests grew 9.4x and users grew 7x, yet AI spending stayed flat after April; one model's cost per session dropped 52% from its peak.",
+              "Uber separated spending drivers into user adoption, workload, and token pricing, then optimized agent efficiency, the one lever they controlled.",
+              "Key tactics: dynamic model routing (sending jobs to the cheapest model that works), delegating simple subtasks to cheaper subagents while reserving powerful models for complex plans, and caching context for 1 hour to match engineer workflows, cutting tokens per query by 50%."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "U.S. accuses Chinese AI firms of copying American models",
+            "points": [
+              "U.S. government accuses six Chinese AI firms, including DeepSeek, Moonshot AI, and Alibaba, of using distillation (training smaller, cheaper models by learning from a larger proprietary model's output) to copy variants of Anthropic, OpenAI, Google, and SpaceX models.",
+              "Officials say the copying likely occurred with Chinese government awareness and warn it could strengthen China's military and cyberattack capabilities against the U.S. and allies.",
+              "Allegations surfaced just before Xi Jinping's planned late-September U.S. visit, adding diplomatic tension."
+            ]
+          },
+          {
+            "title": "Google and Janelia map a complete fruit fly brain connectome",
+            "points": [
+              "Google and Janelia Research Campus published a complete wiring map (connectome) of an adult fruit fly's brain.",
+              "The map charts 166,000 neurons and 125 million synapses using electron microscopy and AI reconstruction."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "OpenAI's math 🧮, Meta Muse🤖, CPU shortage ⚡",
+      "date": "2026-09-09T10:57:14+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claims its AI solved a Millennium Problem (Navier-Stokes) in 88 hours, suggesting potential breakdown of physics laws under certain conditions.",
+          "Meta launches Muse, an autonomous AI agent that can send emails, book travel, and make purchases through apps or WhatsApp, with free tier plus $20-$100/month paid options.",
+          "Apple unveils foldable iPhone with 7.8-inch interior display, priced $1,999-$2,199 after a decade of secretive development.",
+          "Google DeepMind's AlphaGenome Atlas maps 9 billion DNA variants to accelerate disease research and treatment development without requiring code.",
+          "CPU shortage forces software teams to capacity-plan compute resources months in advance, a practice most have never done before."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Mathematical Breakthrough",
+            "points": [
+              "OpenAI's newest AI model solved the Navier-Stokes existence and smoothness problem—one of seven unsolved Millennium Problems in mathematics worth $1 million each.",
+              "The model completed the proof in 88 hours by defining conditions where Navier-Stokes equations completely break down, implying physical laws could theoretically fail under certain conditions.",
+              "This is the most heavily researched category of mathematical problems, making the solution a significant achievement in AI's problem-solving capability."
+            ]
+          },
+          {
+            "title": "Meta's Muse AI Agent",
+            "points": [
+              "Muse autonomously uses software apps and websites on behalf of users through an app or WhatsApp interface to handle tasks like email, travel booking, and purchases.",
+              "The service integrates with Meta's apps and third-party platforms including Spotify, Ticketmaster, Shopify, Gmail, and OpenTable for expanded functionality.",
+              "Free tier has usage limits; paid tiers cost $20/month or $100/month for increased capacity."
+            ]
+          },
+          {
+            "title": "CPU Shortage Impact on Development Teams",
+            "points": [
+              "General-purpose compute is now a capacity-planning requirement that most software teams operating at scale have never forecasted before.",
+              "Teams must commit to CPU resources well in advance rather than scaling dynamically, fundamentally changing infrastructure planning.",
+              "The shortage forces software development organizations to adopt traditional capacity-planning practices previously uncommon in cloud-first environments."
+            ]
+          },
+          {
+            "title": "AI and Research Infrastructure",
+            "points": [
+              "Google DeepMind's AlphaGenome Atlas provides scientists precomputed predictions of 9 billion DNA variants with single-number impact scores, eliminating need to run code or models independently.",
+              "The atlas could accelerate fundamental biology research, disease investigation, and treatment development by democratizing access to complex predictive models."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's Millennium Problem Solution",
+            "url": "https://links.tldrnewsletter.com/01UHod"
+          },
+          {
+            "label": "Meta Introduces Muse AI Agent",
+            "url": "https://links.tldrnewsletter.com/A4Q46H"
+          },
+          {
+            "label": "CPU Shortage and Software Teams",
+            "url": "https://www.katelynlesse.com/blog/cpu-shortage-software-teams"
+          },
+          {
+            "label": "Google DeepMind AlphaGenome Atlas",
+            "url": "https://spectrum.ieee.org/alphagenome-atlas"
+          },
+          {
+            "label": "ChatGPT Images 2.5",
+            "url": "https://links.tldrnewsletter.com/KS17XJ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 OpenAI could be stealing your ideas",
+      "date": "2026-09-09T14:42:11+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claimed to solve a $1M math problem (Navier-Stokes) using 10,000 agents, but a NYU mathematician says his unpublished research was likely in the training data and alleges OpenAI pressured him to publish without his Anthropic co-author.",
+          "Meta released Muse, a personal AI agent that handles tasks, browses, and writes code in a sandboxed environment with approval gates, competing on security after past trust issues.",
+          "Anthropic researcher Jacob Coxon quit and warned that both Anthropic and OpenAI are racing toward superintelligence (self-upgrading AI) that could eventually hack anything; alignment lead Evan Hubinger puts odds of AI ending humanity in the next decade above 10%.",
+          "Uber grew agent requests 9.4x while keeping AI costs flat by routing jobs to cheaper models, delegating subtasks to weaker agents, and caching context for an hour—proving AI bills are an engineering problem, not a cost ceiling.",
+          "Build dynamic UIs for AI agents: CopilotKit's tutorial shows three ways to let agents create their own frontends and handle interactive workflows like incident triage."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Navier-Stokes Proof Sparks Plagiarism Dispute",
+            "points": [
+              "OpenAI claimed its model produced a 100-page proof for Navier-Stokes, one of mathematics' seven Millennium Prize Problems worth $1 million.",
+              "NYU mathematician Tristan Buckmaster revealed his team had fed unpublished drafts to OpenAI's Codex model and says OpenAI won't disclose whether those drafts ended up in training data.",
+              "OpenAI allegedly pressured Buckmaster to publish alone, warning that going public with his Anthropic-employed co-author could wreck his career."
+            ]
+          },
+          {
+            "title": "Anthropic Researcher Warns of Superintelligence Race and Existential Risk",
+            "points": [
+              "Jacob Coxon, who spent 3 years on pre-training at both Anthropic and OpenAI, claims both labs are competing toward superintelligence (AI systems that can upgrade and improve themselves with minimal human oversight).",
+              "Coxon warns these models could eventually hack anything and reshape the world overnight.",
+              "Anthropic's Evan Hubinger estimates over 10% odds of AI ending humanity within the next decade."
+            ]
+          },
+          {
+            "title": "How Uber Scaled Agent Usage 9.4x Without Exploding Costs",
+            "points": [
+              "Between February and August 2026, Uber's agent requests surged 9.4x and users grew 7x, yet AI spending stayed flat after April; one model's cost per session actually dropped 52% from peak.",
+              "Uber broke spending into three drivers—user adoption, workload, and token pricing—then optimized the only lever they controlled: agent efficiency.",
+              "Key wins: dynamic model routing based on live performance (sending jobs to the cheapest model that works); delegating simple subtasks to cheaper subagents while powerful models handle complex plans; and context caching for 1 hour to match engineer workflows, cutting tokens per query by 50%."
+            ]
+          },
+          {
+            "title": "Meta Launches Muse, a Sandboxed Personal AI Agent",
+            "points": [
+              "Muse runs tasks, browses the web, and executes code inside a sealed sandbox that isolates untrusted web data from core execution.",
+              "A separate Sentinel agent must approve every outbound action before it runs, and it asks for user approval on major moves.",
+              "Meta promises improved trust this time after past security controversies; available to try now."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Meta's Muse AI Agent",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.pljPPsurrJ8ITcFAp15gIQF-IJAgOPYoru6ECH-IG2udOwFlqoyqKYqZTPthMocdcWdI8zrb_rNq_CVnWhLT6JmXUIyCrBr7fAkQNvAI8UipQ-uJmFO0hB0kQLdjWCeXTLBjoAk_xVW2_czc7aKHAoSqifcl-sgcCdpwA6_8948uqWHWs-p6mi7L-XMEp4FohDo33Xe5itiGIuUzeptfvOgvk1HW_aryQox0eMIE67bl2l08bu7laUbZqhcqL4oM/4tw/EdqBGwf4SImMamP4YJxSnA/h6/h001.tZG9lLBzYdsqoMdvZNbZyfsv7NWLWulV49-L58RjpU"
+          },
+          {
+            "label": "How to Build Agents That Generate Their Own UI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxAgHfdNa9JbMBr4KE3ZOZb2L6oLW4TqB-bP2TqTKpWJZnPFA76bW3b3jDTINx6wSDt4upD4tnAQDvie8aLX4DEGms5mzpnRSUIFH3tLCo-b4a_tx3xpgpARnNDpFYDy2jot8Lb5QHxez_15D5hhSRZXwNbBucX18tb33JHnSgqaW7Drgi7N91-4_fbsDRGnfqDIejrLAYBBEyjA6Qa8dzZyCOLR8EUQ09UCCgPK4LA4_dMJqsHKafX0QcBZdgs7xI/4tw/EdqBGwf4SImMamP4YJxSnA/h31/h001.N-ZAruXiFwo-waKzPLcOEA-DN6FV-XVYLPNPW160xiY"
+          },
+          {
+            "label": "Cut Claude API Costs Without Hurting Performance (Anthropic Cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEd2ho4JxQ-58gP0_30-2C7RuOcTV0RNA6oIOE_vnZeeNFn_IRTiB2Vg88EavW2JQ74RtjtsKLXlxuWyf-3e6K_UZXTjR0KCqCiIaSOPAjl7Q16DM_79K82-L_zlqWygESdsNQmnQlDt2P07pC3dQ7AbS6Bds-6G66EA1EyZZ8_DzuasCz-2tWvYXi-Qw-EgKEwVlDbNXzFFOwxKpNpl74eOoKNmncnI_O98--wejs4Yd8QhH8gcM5JlDJKdn6ldyHJM06-xEqhzDU6nb-n8oN2/4tw/EdqBGwf4SImMamP4YJxSnA/h33/h001.bDoCxLf31L0oytsKxoftMmFVPKWuDU5YMFwkSZ4MtO8"
+          },
+          {
+            "label": "Diagram Design: Turn Code Into Diagrams for AI Agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhkhaSSQnKFROh_kN--fgCaG_oqEZh3F44Q0SBbMFII4vlnADpdJ7ushPufhAOzrmHRSWo5Elk_BimfBCpiuWCcil0SolnYMsORR8ggWYCzLXALjPjk2UrtzJGbKW6f_ONuPY4DnvaXAP6ilxP6dbHqWiQbRoba5nOkaMeHalD1O1wK0JIFyX8VWZ8AN4obg5JXUjSely6i71GRn_Hy4TgMljdMQz3nUH9DUNum4DDNE8txSAEsFp2bL1bYN4q9L5hV-GuIas1Tr37huquCmJk7Ec/4tw/EdqBGwf4SImMamP4YJxSnA/h32/h001.oDOipTjRI5RHAYzp28SwSjbMUK9rmMsJKsJTACIEf6k"
+          },
+          {
+            "label": "Spotify's Two-Model Routing Cuts Claude Token Usage 90%",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFD1kBxRVvYcqJCSHzmc-F1R2wwgQRTdN7gPooKPGJNsTjAgvgOKJaPpM0uNS8ycLabcDIwAZbnjUmcqBowXKzUIu_xaN2b0qY1dNEQrRN_Al3-je46Nw480uGW7S1hrRLD7eUW-bjD8BscsC3vThLWougGflqfjgfyTx8JtI9IJULihOTwb5Vpvkjs7BE2wG9bo_JnwL8uYVvtPas7a4PCya2aMCwQRhBjZ1ZGUwWFZBdS2lZdKC1jhZ1U3NuymItIORDEb-SuJt2tnl5VDISs/4tw/EdqBGwf4SImMamP4YJxSnA/h36/h001.cdOC2aruAusKus6U_tzBT87S70nHZ7prFr_pt2B03Qg"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ OpenAI claims to have solved one ofmath’s “Millennium Problems”",
+      "date": "2026-09-09T16:29:07+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claims to have proved the Navier-Stokes equations \"blow up,\" solving a $1 million Millennium Prize Problem, but faces accusations of copying the approach from two outside mathematicians who reached it first.",
+          "Meta launches Muse, a personal AI agent accessible via iOS, Android, and WhatsApp that handles tasks like email, travel booking, and car sales using privacy-protecting payment and isolated web activity.",
+          "U.S. government accuses six Chinese AI firms including DeepSeek of copying American models via distillation (training smaller models on larger ones' output) to build cheaper products, likely with government awareness.",
+          "Anthropic researcher Jacob Coxon quits citing ethics concerns, warning AI could kill millions or everyone within a decade; teammate Evan Hubinger puts the risk above 10% and admits no clear safety plan exists.",
+          "Google and Janelia Research Campus publish a complete wiring map (connectome) of an adult fruit fly's brain, charting 166,000 neurons and 125 million synapses using electron microscopy and AI reconstruction."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Millennium Prize Math Claim and Plagiarism Allegations",
+            "points": [
+              "OpenAI's internal model generated a 100-page proof that the Navier-Stokes equations can experience finite-time blow-up (become infinite), a $1 million Millennium Prize Problem, using 88 hours and 10,000 parallel AI agents verified with Lean proof-checking software.",
+              "NYU mathematician Tristan Buckmaster claims he shared his year-long research on the same problem with an OpenAI mathematician; days later, OpenAI's Sébastien Bubeck announced an internally-developed matching proof, which OpenAI denies stealing.",
+              "The proof has not undergone external peer review, raising questions about legitimacy and OpenAI's attribution."
+            ]
+          },
+          {
+            "title": "Meta's Muse Agent and Privacy Architecture",
+            "points": [
+              "Muse is a conversational AI agent that can send emails, book travel, sell items, and execute other digital tasks; available today on iOS, Android, WhatsApp, and later on Meta's AI glasses.",
+              "Uses Stripe Link to generate single-use card numbers hiding real payment details, and isolates each user's web activity in a virtual machine called Sentinel to protect privacy from Meta itself.",
+              "Free to try but heavy use requires one of Meta's paid AI plans."
+            ]
+          },
+          {
+            "title": "U.S. Sanctions Against Chinese AI Model Copying",
+            "points": [
+              "Six Chinese firms (DeepSeek, Moonshot AI, Alibaba, and others) allegedly used distillation—a technique that trains smaller, cheaper models by learning from the output of larger proprietary models—to copy variants of Anthropic, OpenAI, Google, and SpaceX models.",
+              "U.S. officials stated the copying likely occurred with Chinese government awareness and warned it could strengthen China's military and cyberattack capabilities against the U.S. and allies.",
+              "Allegations surfaced just before Xi Jinping's planned late-September U.S. visit, adding diplomatic tension."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's Millennium Prize math breakthrough",
+            "url": "https://elink640.dupple.com/ss/c/u001.eA4BJlw1jawIyadcQA4lRMWGscmZFsWV2oHL1leGVagif55dm8rC9Oc9PRoBTcaYAYn-n3DrTcMtpI2DIlg-jgpyKO6wdwQaULOrTXwd8sQgJvV61AgnHBuYVYuyXY7bmGuHh1xdGVABDRGhaZGeQseVGS2JyqI8ao3HZQEae-V3crUAdG9hsIiyL1BaigSv8/4tw/_CyXTJf4R1WeHtrGvr1eqg/h8/h001.DcMimJq4AW0_2KHqnO8jDg3peVVwAORQUoX0PapLyNo"
+          },
+          {
+            "label": "Meta launches Muse personal AI agent",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20ii7PcqYylExNhpesESvFlDRd-D4Z4o6PloY9N9IrOvOPDQUUAQ370OQUTT-ESatEmLCO4ytkbOAPfA7whDXvsRlsnT0hnTIehT-Iqqlro7BNkWL-a8tRzEpmmMyET0iNqN_vmzUjDEi1JjQhtYuurMNqWfog912BMGfJo5_CyXBCQ/4tw/_CyXTJf4R1WeHtrGvr1eqg/h9/h001.sldX7e1CM0VolEL1fWi0qcIewf9GfHj5rRf-FsuM2_M"
+          },
+          {
+            "label": "U.S. accuses Chinese firms of copying AI models",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhYa2pe8kKHqeqNxrd-TeKR9fz3PgcInHMNO3dfrjTpqraMmnI95eBs4inYScfUGZlO4BqNb4hAPRt3nB-Ytk3-MpeIWZs6omse_L8SHZl8MEYsvURC5ytTPE4g4bScQfzT4IPzACto6duXA1VCkKCgbB4CxkSC37Oa47oxG4Ua5YOf_64HYY1DbNzVrecT7bNqTTLNseK4_RtQeknBfSRk9MTWxFpxQly-p4P4xlF-Xo/4tw/_CyXTJf4R1WeHtrGvr1eqg/h10/h001.Xc5hPwJgDuEKkob5PPrmIQDdRMLtROHc2Aub98Zm6iQ"
+          },
+          {
+            "label": "Anthropic researcher quits over AI fears",
+            "url": "https://elink640.dupple.com/ss/c/u001.U1-fCwI5IV4zIAFqTdEm7eysdWsvDUDqemqHLESDBdXCDv8XjBH2nfB1DQj5sn0JeW4qFKOnwAdO7x_twDSPe3cqNJ9blWtrbED8LHAD-OzJ1Adqlbzgl7IyzyAeEZUOyKEMntscZGrK8w7e5W7pYewB2eJp6jPe4Xu_AMOSTrU/4tw/_CyXTJf4R1WeHtrGvr1eqg/h11/h001.eiEBv-QdOb_2DumIPRgfSTspOGKkV68-BnTlEmfheAQ"
+          },
+          {
+            "label": "Google mapped a fruit fly's brain",
+            "url": "https://elink640.dupple.com/ss/c/u001.ATAItRJv4OHzc1muxCgos0Y_nzLRvKDwv_YlYBTEquMkO1_swMtHN-2xaFNB1N5OlLMaN7j_fVWlVbvjjZRN4ahvOyxqp26a78Ur0Y__K1SraKlYkWSKr8x-dRFPvsnzAxIXSl4QE-CxskA2XzvxWE24kkPI_h8Y8jHJ4L2DrYrRhnOS4N5FdSsQzYiZLC0BX2SJOoI28QIyp_9Fx7eOIQ/4tw/_CyXTJf4R1WeHtrGvr1eqg/h12/h001.Me14frfJw3HRxfw-Ksy7PqlydquzVoKEbz99tDFbCR0"
+          }
+        ]
+      }
+    }
+  ]
+}
