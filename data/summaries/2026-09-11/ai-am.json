@@ -1,0 +1,479 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-11",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI claims progress on a Millennium Prize math problem (disputed)",
+        "points": [
+          "OpenAI used ~10,000 coordinated AI agents working in parallel for ~88 hours to explore proof strategies, sharing promising approaches across groups.",
+          "OpenAI has not named the problem, but Andrew Curran and others suggest it may be the Hodge Conjecture; other reports frame it as Navier-Stokes, so the exact problem remains unconfirmed.",
+          "OpenAI itself says the result needs independent review, formal verification, and outside mathematician approval (the 'Terence Tao plus-one' test) before it can be called solved.",
+          "Mathematicians including Terence Tao have flagged the claim as unverified; NYU's Tristan Buckmaster and Anthropic's Levent Alpöge noted the breakthrough came after related unpublished research was uploaded into Codex (OpenAI's coding model), raising questions about whether AI did truly original work or completed a scaffolded solution.",
+          "Key technical advantage cited: checkability — thousands of agents can test proof ideas and code verification lets teams validate answers quickly, turning extra compute into more attempts at a provable result."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI",
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Staying Ahead",
+            "point": "Frames this as 'huge if true, not confirmed' and argues that even if genuine, near-term job risk from AI research capability remains low."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Highlights specific named academics (Buckmaster, Alpöge) disputing whether the 'solve' was genuinely novel or scaffolded from existing uploaded research."
+          }
+        ]
+      },
+      {
+        "title": "Anthropic's threat report: Claude misuse and disruption cases",
+        "points": [
+          "Anthropic published a detailed threat report (150+ pages per Rundown) disclosing disrupted misuse cases spanning biological weapons research, cyberattacks, surveillance, and espionage.",
+          "Five biology-related cases involved researchers using Claude in ways flagged for potential weapons applications; Anthropic explicitly said it does not allege the researchers intended harm.",
+          "Chinese AI labs (Alibaba, DeepSeek, Moonshot, Xiaomi) were found using thousands of fraudulent accounts to distill Claude (extract its knowledge to train their own models); Moonshot and DeepSeek reportedly served Claude's outputs to customers while branding it as their own proprietary model.",
+          "Other disrupted cases included a Yemen-based actor building rocket guidance software with Claude Code and returning after a failed test flight, and a consultant building a mass surveillance system for Mali's spy agency designed to monitor 25 million phone lines.",
+          "Anthropic's report identifies two broader trends: AI-enabled cyberattacks are becoming more autonomous, and sophisticated attacks no longer require sophisticated attackers, lowering the barrier to entry for cybercrime."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI",
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Details the distillation scheme specifically, naming seven Chinese labs and describing Moonshot/DeepSeek passing Claude off as their own model to paying customers."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Connects the report to a wider AI safety debate: former Anthropic/OpenAI researcher Jacob Coxon's viral resignation post (150M views) calling both labs reckless, and Anthropic alignment lead Evan Hubinger's public statement of a '>10% chance AI could kill all humans' within a decade, contrasted with Nvidia's Jensen Huang publicly dismissing doom scenarios."
+          }
+        ]
+      },
+      {
+        "title": "DeepSeek V4.1 / V4.1-Flash: cheaper, faster open-weight model",
+        "points": [
+          "DeepSeek released V4.1-Flash (also referenced as V4.1), an efficient open-weight model (weights are the model's learned parameters, released freely for anyone to download and run) available under MIT License on Hugging Face.",
+          "Pricing is roughly $0.15–$0.60 per million tokens, about one-quarter the cost of DeepSeek's prior V4-Pro model, undercutting US competitors.",
+          "Performance reportedly rivals or beats Claude Opus 5 and GPT-5.6 Sol on several agentic, coding, and cybersecurity benchmarks, scoring 40 on AA's Intelligence Index (a 0–100 benchmark ranking AI system capability).",
+          "The model adds a 1M-token context window (ability to process about 1 million tokens, or roughly 750,000 words, in a single session) and native image/vision understanding, with faster inference than prior versions.",
+          "Because DeepSeek is Chinese-hosted and subject to Chinese law, reviewers caution against using it for confidential or sensitive work despite its cost and speed advantages."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI",
+          "Staying Ahead"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Frames the release explicitly as pricing pressure on US AI providers, noting DeepSeek's pattern of releasing progressively larger models to compete on cost."
+          },
+          {
+            "newsletter": "Staying Ahead",
+            "point": "Explicitly warns users to avoid confidential work on V4.1 due to data privacy concerns under Chinese regulatory jurisdiction."
+          }
+        ]
+      },
+      {
+        "title": "OpenAI launches ChatGPT for Financial Services",
+        "points": [
+          "OpenAI launched a dedicated ChatGPT for Financial Services offering, built on GPT-6 Astra, integrating premium financial datasets (including PitchBook, Crunchbase, and LSEG per Rundown) directly into ChatGPT Work.",
+          "The product includes built-in citations and custom templates for valuation modeling, research workflows, and pitch deck/pitchbook creation for regulated industries.",
+          "OpenAI paused new signups for its $200/month Pro tier to preserve GPT-6 Astra access for existing users amid heavy demand, while other plans and API access remain open."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Notes this launched alongside a separate ChatGPT Work data plugin connecting to Gmail, Slack, and Teams for general business-intelligence queries, which OpenAI's own CTO reportedly uses internally."
+          }
+        ]
+      },
+      {
+        "title": "Cognition ships SWE-2 coding model and Devin Voice",
+        "points": [
+          "Cognition released SWE-2, a new coding model integrated into its Devin AI software engineer, matching the performance of Fable 5.1 and GPT-6 Astra on code benchmarks.",
+          "SWE-2 reportedly costs about 64% less to operate than comparable frontier coding models.",
+          "Devin Voice pairs SWE-2 with OpenAI's GPT-Live voice model to let developers write software using verbal instructions instead of typing."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Music AI: UMG/ElevenLabs remix platform and Suno v6",
+            "points": [
+              "Universal Music Group partnered with ElevenLabs to launch a licensed AI remix platform letting opted-in artists and fans remix, mash up, and reinterpret songs while respecting copyright and enabling both parties to earn revenue.",
+              "Suno v6 runs 5× faster than v5.5 with improved audio fidelity and fewer artifacts, allowing plain-English editing of song sections, combining songs, sampling riffs, or changing individual lyrics.",
+              "Industry commentary frames this as a natural extension of already-digital music production (effects, samples, pitch correction), arguing it's better to pay artists and remixers than pretend AI remixing doesn't exist."
+            ]
+          },
+          {
+            "title": "Other product and infrastructure updates",
+            "points": [
+              "OpenAI added GPT-Live-1, a full-duplex voice model ($0.05/minute) with interrupt handling, background-noise filtering, and tone/pace matching, plus an Agents API for long-lived cloud agents with context compaction (reducing memory overhead in long conversations) and sub-agent support.",
+              "Gemini launched on Windows with Alt+Space assistant access to apps and the ability to hand multi-step tasks to Gemini Spark.",
+              "Character.AI's year-long study found heavier companion-bot use correlated with lower well-being and reduced human social interaction, especially for companionship-focused use.",
+              "NVIDIA partnered with Australian data-center providers for up to 2 gigawatts of AI infrastructure capacity by 2027.",
+              "Visa, Mastercard, and Ant International launched a joint effort to identify and verify AI agents making purchases on users' behalf.",
+              "Genspark's Gen-1 Slides (built on MiniMax) matches frontier-model presentation quality at roughly 1/17th the cost of Claude Opus 5; Speak launched Live Tutor Lessons and SpeakBench in limited English/Spanish.",
+              "Google Labs' Dreambeans converts Gmail, Calendar, Photos, and Gemini context into daily reminders for Android/iOS users 18+."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown AI",
+        "items": []
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "AI's economic future: three scenarios",
+            "points": [
+              "OpenAI outlined three economic scenarios: Mild (small productivity bump, minimal disruption), Middle (~4% knowledge-job shrinkage alongside solid growth), and Wild (unprecedented economic growth paired with white-collar job losses and a declining worker income share).",
+              "The scenario producing the most national wealth (Wild) is also the worst for salaried workers, since gains accrue mainly to capital owners rather than employees.",
+              "The suggested strategy is to position oneself on the side that directs and controls AI rather than being replaced by it."
+            ]
+          },
+          {
+            "title": "ChatGPT Image 2.5 and Meta Muse agent",
+            "points": [
+              "ChatGPT Image 2.5 offers sharper image generation, improved selective editing, and a new Sketch feature that turns rough doodles into finished images.",
+              "Meta launched Muse, a free (with $20/$100 paid tiers) US-only personal AI agent that books tickets, fills forms, and makes purchases by autonomously browsing the web.",
+              "Reviewers caution against connecting payment methods or primary email to Muse in its first week, as Meta engineers have flagged data-handling concerns."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Tavus Phoenix 4.5 hyperrealistic AI human model",
+            "points": [
+              "Tavus released Phoenix 4.5, an AI human model that uses micro-movements and subtle expressions to appear actively listening during conversation.",
+              "The model generates video at 134 milliseconds latency, claimed to be the fastest available for this type of real-time AI avatar rendering."
+            ]
+          },
+          {
+            "title": "Personal agents surge; Apple's AI product refresh",
+            "points": [
+              "Meta's Muse agent app reached second place on app store charts, while an invite-only rival agent app, Instinct, is reportedly fundraising at a $10 billion valuation, comparable to Snap's $9 billion valuation.",
+              "Apple delivered one of its largest AI-focused product overhauls in years, integrating AI features across its device lineup.",
+              "OpenAI's ChatGPT Images update also added a feature that memorizes a user's writing style to keep tone consistent in future outputs, alongside a claimed 50% speed improvement in image generation."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 OpenAI advances ANOTHER Millennium problem?",
+      "date": "2026-09-11T09:31:07+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claims substantial progress on a second Millennium Prize problem (likely the Hodge Conjecture), using 10,000 coordinated AI agents over 88 hours to explore mathematical proofs in parallel.",
+          "Anthropic disrupted five biological-misuse cases involving Claude across weapons development research, emphasizing it did not allege harmful intent from researchers.",
+          "OpenAI launched ChatGPT for Financial Services with GPT-6 Astra, premium datasets, and built-in citations for modeling and research workflows; paused new $200 Pro signups due to demand.",
+          "Suno v6 runs 5× faster than v5.5 with improved audio quality; UMG partnered with ElevenLabs on a licensed AI remix platform letting fans and artists collaborate while respecting copyright.",
+          "Gemini launched on Windows with Alt+Space assistant access, DeepSeek released V4.1 Flash with 1M context window (ability to process 1 million tokens of text in one session), and Cognition shipped SWE-2 coding model plus Devin Voice for verbal programming."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI's Millennium Prize Progress: The Hodge Conjecture Rumor",
+            "points": [
+              "OpenAI stated it made 'substantial progress' on a second Millennium Prize problem without naming it; Andrew Curran reports the Hodge Conjecture is the leading unconfirmed rumor.",
+              "The successful approach used ~10,000 agents coordinating for ~88 hours, letting groups explore different mathematical proof strategies in parallel and share promising approaches.",
+              "Key advantage: checkability—thousands of agents can test proof ideas and code verification makes proposed answers faster to validate, turning extra compute into more attempts at a verifiable result.",
+              "OpenAI emphasizes the result needs independent review, formal verification, and outside mathematician approval before claiming victory (the 'Terrence Tao plus-one' test)."
+            ]
+          },
+          {
+            "title": "2. Anthropic Disrupts Biological Misuse Cases",
+            "points": [
+              "Anthropic identified and disrupted five instances of Claude use that could support weapons development across cyber, surveillance, and biological research domains.",
+              "Anthropic explicitly stated it did not assert the scientists intended harm, but took proactive action to prevent potential misuse.",
+              "Cases span multiple threat vectors including cyber-enabled attacks, surveillance systems, and biological agent development pathways."
+            ]
+          },
+          {
+            "title": "3. Music AI: Remix Platform + Suno v6 Speed Gains",
+            "points": [
+              "Universal Music Group partnered with ElevenLabs to launch a licensed AI remix platform where artists opt in and fans can remix, mash up, and reinterpret songs while respecting copyright and enabling all parties to earn.",
+              "Suno v6 runs 5× faster than v5.5 with higher audio fidelity and fewer artifacts; can edit one section in plain English, combine songs, sample a riff, or change individual lyrics.",
+              "Industry perspective: music production is already digital (effects, samples, pitch correction, etc.); paying both artists and remixers when AI-enabled remixes occur seems preferable to pretending the capability doesn't exist."
+            ]
+          },
+          {
+            "title": "4. OpenAI Financial Services, Gemini Windows, and Developer APIs",
+            "points": [
+              "ChatGPT for Financial Services launched with GPT-6 Astra backend, premium financial datasets, built-in citations, and workflows for modeling, research, and pitchbook creation.",
+              "OpenAI paused new $200 Pro signups to protect Astra access for existing users during heavy demand; other plans and the API remain open.",
+              "GPT-Live-1 (full-duplex voice model, $0.05/min) added to OpenAI API with interrupt handling, background-noise filtering, and tone/pace matching; can offload reasoning to other models.",
+              "OpenAI Agents API lets developers run long-lived cloud agents with tool use, context compaction (reducing memory overhead for long conversations), and sub-agents via one interface.",
+              "Gemini for Windows enables Alt+Space assistant access to apps and can hand multi-step jobs to Gemini Spark; DeepSeek V4.1 Flash offers 1M context window with native vision; Cognition's Devin Voice pairs SWE-2 coding with GPT-Live for verbal software development."
+            ]
+          },
+          {
+            "title": "5. Other Notable Updates",
+            "points": [
+              "Character.AI year-long study found heavier companion-bot use correlated with lower well-being and less human social interaction over time, especially for companionship/self-disclosure use cases.",
+              "NVIDIA partnered with Australian data-center providers on up to 2 gigawatts of AI infrastructure capacity by 2027.",
+              "Visa, Mastercard, and Ant International launched a shared effort to identify and verify AI agents that make purchases for users.",
+              "Genspark's Gen-1 Slides (proprietary model built on MiniMax) matches frontier-model quality at roughly 1/17th the cost of Claude Opus 5; Speak's Live Tutor Lessons and SpeakBench launched in limited English/Spanish.",
+              "Google Labs' Dreambeans converts Gmail, Calendar, Photos, and Gemini context into daily reminders for Android/iOS users 18+."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's 10,000-agents solve a $1M math problem",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtbDyaAkpHq3Q1LBamkAPlTd4SIvIQJykPJPkhb1JSdGJ5PZEJnfNIaUFAHgsn2vEOCIKOcL0ndtukJoUAIc-r6O1o413J9IX9kj9aLG3U-n-yifXDagAjXgJ48wtAQfn3WKuILVG8JpUZoYRmb7-3agH39_kKKLFgjosbfQIOhzopXa0cf98YCxFfzWhEMeZgWF5-0FbbhChlMm7gymJ6q30sVgLDN-4jzF0j-3Q4_iJMB8zPDvnmXHOQ17-rYG7Fva4Cw36xI52GjuJL1m3MDgUiBYqYUycxDH0yRbYfqQ9Pfw8HTvV1rshKTuHU-aXtG81DlBRDGgeCh8YvenA88bMYbrhHsq3t0LCIoHXccRkT5SYLkAdIfR9jDgC_EttmbPtY8-ZGkbKE2rQ0_bcYJn9Dxc2-MS3IGmZwiJufrzvT98cue8U1-IObJvwYO393b-K9Cnlhr0d6AlBy4SV73pbZ3kl1u2y06Ojed6Syw-_JCpuNGy_L-Y5-IOipjaMzyNPRiRC4NZ76QRO5YQUsPV9AY2NHrSwV-8NrlICnEIAorPnxhNji-mfIDY7AeEuUJqO9kLpZi1tA8FZxmBpDYsvzVCrzEs5bAYMjSyVkqd61KpxlXqlhSGlnyaENV_Rk7Ty41rQpy9-pA2q1jhXzvvIF2Lilv7MKrtnYuZJnRKsVrxR9xWb6gHJe2mBkPri39Zw_p0I89u42tckCmMILmped0KCWa2rkhSiwCyEdB7jE2F142wnYd40Jh8wHSNkitAAl2C_DHq5QB1T3coGCJwK5zni9GEAKcgohvsIbHuggNW3fBk0cQM_4co79j6uoA/4ty/vOGMNDw2QiWfm5hK60iDQA/h14/h001.7he1V6SHfhek4qRoJEMNoeBCxZ4vKQqstRP0HBMhfas"
+          },
+          {
+            "label": "Universal Music Group + ElevenLabs AI remix platform",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtYpMs9iH6KlV_2pY_LJ1L4eerT8EY6nns0AoChV9J5k4YN1QXscLP0b2NCMyq7EZSRcTexuaiwQM4r2AauFP3i1KD8YHDlNbdkJAd_mwkiYcsJmOPWB1pgwvXnAjXPhFubsN__T2ptZHvnSkszNwY3wdPCwqmkiawFNYQMTDLR7r-N_xQax8mbWy_-49lfRIBVk9q_YM6vSwpVrwLp_eB2g47dtAI_UszGsiUYduqmsxW2wG3Z5FFYU59cdi7pCoFMMmhK59aV8imTIOieJM025mcQfAeYsZA4jjby9ZYso2oqjJq8Zo8ArZfUgxXX61mLrCw_MjA4otHSaVzNy-kB0/4ty/vOGMNDw2QiWfm5hK60iDQA/h7/h001.egWoClde-WBJ6rvya934Pe-F_kcH7tllP0el4N81ASk"
+          },
+          {
+            "label": "Suno v6 music generation (5x faster)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.5nZoc5z8_Dwk1u9gmeJYAutBrRpWQULFe5jtK3HEfe6AY3fwd35yurfvgiYWbRtyylnZOkF_9hhWVsJxi1KuDWo3ZuyeYVMY0FNpw-42yYwS5Kb-DFKU9PoJPh3oDrqeNKLfgcDTxSqpt1DPXOFfcwesBNuYnHk15t_fednjrMHka2tJteVuEcxTlemDIV9KqfcPiS8M0JFJbhO7W3rFhw5xzi_uzOQusiZcZWC0s5ZU4lrlWAFvBG0Hy0AA5f5ij1GW11pNVMJ-pjcZEV05nCyQOrRdq50D36GFLgbKMg8/4ty/vOGMNDw2QiWfm5hK60iDQA/h9/h001.43UBWt1ggMa_RD3ndZqPksRdJSq6KOrhpauqZUkCpto"
+          },
+          {
+            "label": "OpenAI ChatGPT for Financial Services",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._SR4S8YLPUYanH1JLonj6thjObThIvhnX_9ZLmzm-vCE0YtL9KLCEPI6RP9xtfF8ZEn4GOW0jpVlisA_M94BO7J7z9_b9noIpJFTfv3-JX-eABpEFbke3ur4TjTwC09fGNJn7L5sq-Whf9lZv9osPWixgnGk5DGfWm1XG72l7bPq2ro6MBKFoC7mlbglp7AE7W4S2_bAjT_UQf6Acli06Wz3NUUIymFKHcIsbPHbOyMwgWuHQRPzCCWolGz6VPdKrt4UC1MhqulwI4WT5lDXOrefwNp6dc6Oor3XjLh6BQwAaYpQU3HCE8JEbACbNUxq/4ty/vOGMNDw2QiWfm5hK60iDQA/h17/h001.KtR7fDYGCEohpsso_5OJgEKGhebx1bai2AElGhaWnVY"
+          },
+          {
+            "label": "Cognition SWE-2 and Devin Voice",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.CQ9fulephgR4eBDwcda_Sk0X9AzDLlzgpQdfVcBxRV45i07aRJKcq0WJD9nqSYpxgNeUiJAKDitHaw0ERGp1EWmbkGhpAQDpt0V0g1Y3_VkZ1dJKGSgFZRVLsZLiuUxYzYBx9QxrfMWqmLNFJiwS11egth-DbT4RPjvMnqmdb052PZZXL5Rx-T2cVv0tIRshzKq_1rs3UalK3S-_pk8u9sAV75A8XQ6L-yMPPwrVq5BLswp7a-I41UpyCx3LBRJ0hyFf0SymwjFqISwwUmAfXttdGgZuttT7IKWmIDQLTng/4ty/vOGMNDw2QiWfm5hK60iDQA/h49/h001.GhCQV-DVDNd1iqDGa_b2-icH0TryLBm4_jCbIEkcy-I"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "😳 Anthropic opens the files on global Claude misuse",
+      "date": "2026-09-11T10:10:52+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic publishes 150+ page threat report detailing Claude misuse globally, including bioweapon development, espionage, rocket guidance, and Chinese labs serving Claude as their own model to customers.",
+          "DeepSeek released V4.1-Flash, a new efficient open-weight model that outperforms Claude Opus 5 and GPT-5.6 Sol on several benchmarks while costing just $0.15-0.60 per million tokens, putting pricing pressure on US AI providers.",
+          "Chinese AI labs including Alibaba, DeepSeek, Moonshot, and Xiaomi were caught distilling Claude using thousands of fraudulent accounts, with some passing the model off as their own proprietary system."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic's Global Misuse Report: Seven Key Cases Disrupted",
+            "points": [
+              "Moonshot and DeepSeek served Claude to customers as their own model, then used responses for training data—part of a broader distillation effort involving seven Chinese labs using fraudulent accounts.",
+              "Five biology cases raised weapons concerns when scientists used Claude for research flagged as potential bioweapon applications, though Anthropic noted it 'does not assert that they intended harm.'",
+              "A Yemen-based actor built rocket guidance software using Claude Code, returning to the system for debugging advice after a test-flight failure.",
+              "A consultant constructed Mali's spy agency a system designed to monitor 25 million phone lines, with similar surveillance attempts banned in Iran, China, and other nations."
+            ]
+          },
+          {
+            "title": "DeepSeek V4.1-Flash Disrupts AI Pricing",
+            "points": [
+              "V4.1-Flash achieves competitive performance with Claude Opus 5 and GPT-5.6 Sol on agentic, coding, and cyber benchmarks at approximately one-quarter the cost of DeepSeek's previous V4-Pro model.",
+              "Pricing sits at $0.15-0.60 per million tokens (the rate paid per unit of text processed), with the model's weights freely available under MIT License on Hugging Face for local use.",
+              "The model scored 40 on AA's Intelligence Index (a benchmark ranking AI systems from 0-100), demonstrating strong performance in specialized coding and security domains despite lagging frontier models overall.",
+              "DeepSeek continues releasing larger models in this family, signaling sustained competition on price and efficiency rather than raw capability."
+            ]
+          },
+          {
+            "title": "ChatGPT Work and Enterprise AI Tools Expand",
+            "points": [
+              "OpenAI launched ChatGPT for Financial Services, integrating PitchBook, Crunchbase, and LSEG financial data directly into ChatGPT Work for valuation modeling and pitch deck generation.",
+              "Cognition deployed SWE-2, a new coding model inside Devin that matches Fable 5.1 and GPT-6 Astra performance on code benchmarks while costing 64% less to operate.",
+              "OpenAI released GPT-Live-1, a voice model capable of listening and speaking simultaneously, now available through API for real-time conversation applications."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic Threat Report",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf937MUSrYzK6JzB2n81ON3ykvT6z38Dwa6MqItiO7smmIuDEOXgVK8Bp6l7eCW9IeCT7yzJDlTxOg-dpdLnbdmnWqy_aSpKPq47V6PChTsQYWRA_WGxk60yqCN4ql79dC8rjWDkMGrTzjbaeumARS9Fi9UNTWUUJFogjppLgFFugTwV8YJPW87vtFLsexAopfIM0nb9h_gVa6TlkG0Z3gbSXrb2RnAbwcNeaY-nIX8VaGgBfpU5W6r6DZCgx6fzYqg/4ty/D-OBYpPFSV-pD0GxfiCAbA/h6/h001.MuI4XY2jKGUxzwm2xVtan9xG5nhRN0c0G7oEObeqx0c"
+          },
+          {
+            "label": "Full Anthropic Threat Report Details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.f7q3-vdKcd7zLliyZXfG6hGKs0cUmasClos0gl_KA9xpePDxcAPRhYTUlXf_T3OYIGBgQChUXH5zEYJrpK2ld0XG6ozirClGr0SVrq1UYDCfnBDm6YSylNBCP4WtVrXRSY-gM8Gu8bh9fR7RIv5ID01V_o9mIa50wvk02WXpFC36FhAGQQRBlLDeI0sj1Ki-eHHak1Ra0jfbMPU0O8g73Mr2tChLFmv5rlXUrMaz6pT38vBLiCahOlUt9DTr2oH1FHRZjL7lH4RgXYCxgnUmpQ/4ty/D-OBYpPFSV-pD0GxfiCAbA/h7/h001.9B8fXi90BhOWK_aroAG_fdk64vPo9vD3dESKyCX0_7w"
+          },
+          {
+            "label": "DeepSeek V4.1-Flash Release",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZY5Y0CT8KZaZ1y9TVLsmf-Xx22_GfJopkt2oD7GOFXpg6J2_2Q4dVC6NFnuZNXj0D42kkDY0gKKJ2AJDSn3t4fnqbZKbeEiERkxrvH0byJyJJRi-c1xb7CzdfD3IcHqnZpVnKC6XGgRLAXQUju24XUf6Af0Aly9HCSYXRlTpi9VzmwME0sV4IZO5YAapXaFg61ES4ntKWka5jU_mFPOq-OcaapOqFgW9q2RNT3vlVRELln49DbG4CBGTkxBa-V9CtdJQ0YNzjxOXBzaIDXftsw/4ty/D-OBYpPFSV-pD0GxfiCAbA/h19/h001.5vkat7fdmC4tkKpC_Jm7bYKhDojXXo9FC_Qp1fLg_fQ"
+          },
+          {
+            "label": "ChatGPT Work Beginner's Guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJGL4zvSwvQ1hRDghzV8uMigwzIsM8rGVLxZWKgvDmR3PJ1LSfewQyMj5ddkbzq-uXlPmuTORaPcPON6urYIOHVhG3LNV5ZwGA7GjoqXi0UirItrKmUkcetvE-zZBAWxCmOmiOl0379YR8_3yxIAruGMmX6RbUVYyXbmRXzbsv29ZRgw0g_UEEXK9GWJtLK_K1J6vi50EN8U3lHzSiHUL6NZGPaVDznwHBzadosUQoHrwWQGDezdbW-5LPpWxgmveZglFqujB6kHiuTGJ5iJxXV4/4ty/D-OBYpPFSV-pD0GxfiCAbA/h13/h001.8t5Yro9H0VLO-dLw28CLkBhf3c42N9OcBBSiiBss_Vk"
+          },
+          {
+            "label": "Rich's Show Hole Streaming Recommender Workflow",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHd9d3Qi3t-xcr2ITlH5Nu99nSoZmKV4Ja2_Q3Pc253hnY-mszsPGYd4q2Hp0aNMVzyKul_WOLcoEFOcgKwSjYYFokdJzbATDvUHGAr7fqcJ3hE0I9bwgJ-pvx9xPmQ9aPL-PSLDcvHObgmLbCpudbaGxQV2znF8_pwBOUgIma91_CypUM3qvhMS4c692wH9rjtlr0zvpH5totsQscwBPRho2kSjMkTxa1X_bmMcBG6ZdWvnCJDwYPIjr6WXzd73K4/4ty/D-OBYpPFSV-pD0GxfiCAbA/h21/h001.N0hMh59zVwKPX5YyfW5v01uPIWbLqGMZybO-sxI9CPY"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "don't panic (yet)",
+      "date": "2026-09-11T12:53:29+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claims its AI solved the Navier-Stokes problem, a 200-year-old math puzzle—but mathematicians including Terence Tao say verification is pending and disputes over training data have emerged.",
+          "ChatGPT's new Image 2.5 tool generates sharper photos with better editing and a Sketch feature that builds images from rough doodles.",
+          "Meta launched Muse, a personal AI agent that books tickets, fills forms, and orders items by browsing the web autonomously—but use caution with sensitive data in week one.",
+          "DeepSeek V4.1 cuts AI costs further while improving speed and adding image understanding, though data privacy concerns remain since it operates under Chinese law.",
+          "The real job-market risk isn't today's AI but tomorrow's superintelligence; staying on the side that directs AI rather than being replaced by it is the only sustainable position."
+        ],
+        "sections": [
+          {
+            "title": "The Navier-Stokes Breakthrough (Disputed)",
+            "points": [
+              "OpenAI ran 10,000 AI agents for 88 hours and announced a solution to one of seven unsolved millennium problems in mathematics, without claiming the prize money.",
+              "This would mark the first genuine original expert-level work from AI, shifting the narrative from 'remixes training data' to 'can do novel research.'",
+              "Major mathematicians including Terence Tao have flagged the claim for verification; the broader math community hasn't confirmed it yet, and controversy surrounds whether OpenAI had early access to unpublished research.",
+              "File this as 'huge if true' but not confirmed—the near-term job risk remains low even if genuine."
+            ]
+          },
+          {
+            "title": "AI's Economic Futures: The Dilemma",
+            "points": [
+              "OpenAI laid out three scenarios: Mild (productivity bump, minimal disruption), Middle (~4% knowledge-job shrinkage with solid growth), and Wild (unprecedented economic growth but white-collar job losses and declining worker income share).",
+              "The scenario generating the most national wealth is also worst for salaried workers—the entire win goes to capital owners, not workers.",
+              "The only stable career position is controlling AI rather than being controlled by it; identify which side your work sits on now and start moving if needed."
+            ]
+          },
+          {
+            "title": "Tools This Week",
+            "points": [
+              "ChatGPT Image 2.5 delivers sharper generation, much better selective editing, and a new Sketch mode where rough doodles become finished images.",
+              "Meta Muse (US-only, free plus $20/$100 tiers) is a personal agent that handles booking, forms, and purchases via a background browser—but don't connect payment methods or main email yet since Meta engineers flagged data-handling concerns.",
+              "DeepSeek V4.1 cuts costs across the board with faster inference and built-in image understanding; use for non-confidential work only due to Chinese hosting and regulatory environment."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's Navier-Stokes claim and verification discussion",
+            "url": "https://link.mail.beehiiv.com/v2/c/502418e1ad77624bbd291c2526126026e26148a4b779672e070c9efc8908f7f44d1df3c56bedf45aa7ab984880ad91d8e7e691ca74a0545479870e73a084f81b742e0513690901c3f194c2f626f1ebd029713b964c8692fff4c1cb978234ee114797bbdb9e402cfdbf3bdf96d0289225dd52a6763999a436319c67cbf1ae1fd3771fd99a22e59a18823a663848d6c599d40918c549c9e1292f9109f908368cd3/73429a58264ccf9f"
+          },
+          {
+            "label": "ChatGPT Image 2.5",
+            "url": "https://link.mail.beehiiv.com/v2/c/979778114f68c9d5fcd06a01594e1cff75300709a9d3334fd811636d8761913f11b0751c0b2035058760b53f90373571c130f20def384fa55da12c7979a72ede7dc24cf3cb0bba5ca7ac63c9923f773343f50edeb2e6223adc4e311f0a5c3b79cf495664857a0b4b589166e954a0fa36d1542e37b8187329b368d107a9d55feb650a8e70fc1e7522c11be0c559635caa9e7fd612342dbe5514beaa1eefdbf9d0/e9edec2331d565ee"
+          },
+          {
+            "label": "Meta Muse personal AI agent",
+            "url": "https://link.mail.beehiiv.com/v2/c/776b41ec4d14427b0b0a06b135b5a4a20dbc2a0d078c7e3c6fd84f0da27f599e63c09402ac0ce1cb895d0694cbd9e2b0c3bc037ba15dfe1f11e84a79321a13044f49e8303f388a237e474c7bed263b954a5af5d712a450511cfad8fdada6d992a691d24e3d154b88732fbb8032368839a12c30a13f817b0c1d703ad33d81be9866498a9874bdd85f9d6142e3983506b2321dc5221d80771c084e9969c53cd0d9/643ec3661fdf87d1"
+          },
+          {
+            "label": "DeepSeek V4.1",
+            "url": "https://link.mail.beehiiv.com/v2/c/51bf46e697ad729fb8bc986ecf28308dd0a5832fda3a7d992f12942daf95b4888123e3cab5ffee66854053c9a7259ec2edb6983d4fa8bf70c60af5e5cbf75065f2f1622343bdd72449e7975a72e26dc9255ff57b9d8f3a18fe0a29bf40ed97d799bb041c630fdea57ce81d2776ab79b52c1b5f6377d24ae8ae05cc2a877bad6013e83e9501c86e0f82b0876742567026ca74087884c7bbd3a727c65afd76e374/a6c64b7baf3be5a8"
+          },
+          {
+            "label": "Anthropic report on AI misuse by criminals and state actors",
+            "url": "https://link.mail.beehiiv.com/v2/c/df6075f208dc64b0ca3454f262640c78b5d9d934984d2e3db2e9d73fc9c41a5bc9e203c4dcb446356f9a5f2fa04e3376a491b758f14a128ae187cb37314a97ce0aa8ffd47b075469b6c3423029ecc372989dbf3c570e59acbce9e40160e582942f1bd8ff1cbdc60f54211eb052e44fcca8cd30412ffe295c6b8c82965ca48396909937ce167a9f3c12a7ad8caba34f879cbf9c7f48c2abc9588a2d4d70cdfb2b/2750274ba48eaa75"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "📈 ChatGPT gets new data powers",
+      "date": "2026-09-11T13:12:55+00:00",
+      "summary": {
+        "headlines": [
+          "ChatGPT Work gains a data plugin that connects to company sources like Gmail and Slack, letting users ask questions about what changed in their business (OpenAI also launched ChatGPT for Financial Services with premium data and templates)",
+          "Tavus releases Phoenix 4.5, an AI human model that uses micro-movements and subtle expressions to appear actively listening, generating video at 134ms—claimed as the fastest available",
+          "Anthropic's threat report warns that AI cyberattacks are becoming more autonomous and sophisticated attacks no longer require sophisticated attackers, covering attempted misuse from surveillance to weapons development",
+          "A former Anthropic and OpenAI researcher sparked 150M-view debate by resigning and claiming both labs are 'gambling with our lives,' while Anthropic's alignment lead said there's over 10% chance AI could 'kill all humans' within a decade",
+          "Meta's Muse agent app hit second place on app charts; personal agents are becoming the dominant AI trend alongside Apple's major AI product refresh and OpenAI's upgraded GPT-4.5 image model"
+        ],
+        "sections": [
+          {
+            "title": "ChatGPT Work Unlocks Business Data Access",
+            "points": [
+              "OpenAI released a data plugin for ChatGPT Work that integrates with company systems (Gmail, Slack, Teams, etc.), letting workers ask questions to identify what changed or what needs attention",
+              "The lab shared example prompts to help users get started and showed how OpenAI's own CTO uses the plugin internally for business intelligence",
+              "Separate launch: ChatGPT for Financial Services, a tailored platform with built-in premium financial data and custom templates for regulated industries"
+            ]
+          },
+          {
+            "title": "AI Safety Concerns Dominate Week's Discourse",
+            "points": [
+              "Jacob Coxon, who worked at both Anthropic and OpenAI, published a resignation post that reached 150M views accusing both labs of 'gambling with our lives'",
+              "Evan Hubinger, Anthropic's alignment science lead, publicly stated there is 'greater than 10% chance' AI could 'kill all humans' within the next decade",
+              "Contrast: Nvidia's Jensen Huang expressed skepticism about extreme AI risk scenarios, pushing back on catastrophic doom predictions"
+            ]
+          },
+          {
+            "title": "Personal Agents Surge; Threat Landscape Evolves",
+            "points": [
+              "Meta's Muse agent app is now second-ranked on app store charts; Instinct (invite-only agent) is fundraising at a $10 billion valuation (comparable to Snap at $9 billion), signaling investor conviction in autonomous agent category",
+              "Anthropic's latest Threat Intelligence report identified two major trends: (1) cyberattacks using AI are growing more autonomous and self-directed, (2) sophisticated attacks no longer require sophisticated attackers—the barrier to entry has dropped",
+              "Report covered attempted misuse of Claude ranging from surveillance operations to weapons development planning"
+            ]
+          },
+          {
+            "title": "Major Product Releases: Images, Apple Integration, and New Capabilities",
+            "points": [
+              "OpenAI released ChatGPT Images 2.5, promising 50% faster image generation than prior version, plus a new feature that memorizes user writing style for consistent tone in future work",
+              "Apple delivered one of its biggest product overhauls in years with AI integrated across devices; full breakdown linked in article",
+              "Tavus unveiled Phoenix 4.5, generating hyperrealistic AI humans with nonverbal cues (micro-expressions, upper-body movements) that signal active listening—renders at 134ms, claimed fastest available"
+            ]
+          },
+          {
+            "title": "Math Breakthrough Disputed; Debate Continues Online",
+            "points": [
+              "OpenAI claimed an internal model 'solved' one of mathematics' hardest problems; two academics (NYU's Tristan Buckmaster and Anthropic's Levent Alpöge) noted the breakthrough occurred after they uploaded related research into Codex",
+              "Ongoing debate in math community questions whether the problem was truly 'solved' or if AI merely completed a scaffolded solution from existing work",
+              "Links to full debate and nuance available in article"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "ChatGPT Work data plugin and example prompts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTf6M5e7CsHi54neumEQWmN9XogolrT0B4O9h7NA3JJkP9ZozWGW6tgGzGgEliBOn--zWrw781KbIwgiZxT7tcDUXyk1qfZs4Zy7ixI-BFazNhAx0toijN9ePW-FtZ3Ll9liH70fQeCn1dDOgy1NDDKm9fCzFw4NMity24fsjCqCe7Ii_sue3euDzyX1uKvIxCyUt-E1Uc3jrZB8Z27MDyuyOlCe1KkhplzHMM3X0NHDXYch2HO-TEGQ-VYGgkaxuPO3llqvHGXSSb4Nxd0D_aESyu986RQ0tyBeVghVKv0UisGxzkVH1L1-CEDjHIMyyNw/4ty/_Tma4Pk1Qw28-8Ol1DZsUg/h8/h001.1DxCrRlt9ll8eiDwABVrNmhfq9bLvfRyMO00-sbiQHU"
+          },
+          {
+            "label": "Anthropic Threat Intelligence report on AI misuse",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgHK-zFJ13XcSJ6ebXqThWGcDK60CfuQbblD0dX4X7ejmDqJcmrbic_8RpEffYjifcxrznqFXRT0rVd9_ybGneXW3idUR86cKqP9o28EFjMlvHYPIWC87w8m17jiFOrQ1zEY8j-TmoAhc4njIwGquZHh4xfP2OI-WrFQa3mJ8UxTQybdrHadsd-gz5JX61PDsuzXiMI73df9P_oYAi6VSzkhtFfgcCW-N3PD3E8sDnlqqRk9ivEwacGFzd-6jynmtBMWZI778mj35ue2irmz3d5GzI_y7nPY-wTL3nnyaJULWMF6Fq2G6R0nycgWwD6Iveg/4ty/_Tma4Pk1Qw28-8Ol1DZsUg/h12/h001.PCv9Iff-2ncmPg4eVDKYP35FIIby2qkuNGnbLI9c04E"
+          },
+          {
+            "label": "Jacob Coxon resignation post and AI safety debate",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tAxqYpIBid4RTBy1IFSIwFmaOX_bvmVaG8MXepPjwjJsNOz9IsqSv2kLp8wx0yjc1mffNT0KZyQiYJJGSNIAhye1mVS71KTQXtUZGAfph4muTz0p9JiMVFWtXPD-jfK4-8x2rw2VGjrxfHy6yW-cNz3Cv87dRZXQzBjoOegMQKWy0A4DavSYKoyyKP7vzIaGDAPqWHG0X3DbdvJEogmMEHaSS09BsTvMezNPeZ6VLm2VPUkKgI3Lepn5leUBdiEzBbWTQF82Qw0G_p2PAO3P1Xv/4ty/_Tma4Pk1Qw28-8Ol1DZsUg/h17/h001.eF2ZPOjrq-wA52s7n5rplkDsmRRJhjS67mER3X_iYEs"
+          },
+          {
+            "label": "Apple AI product refresh breakdown",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgH-qigySh3hAoVuoVNaPnGVJ40ipd6ePDrHKr-WPn3bDGP0VN9QMLbThZZK5wL4huztvB6BeE_m-xTln57QniWqSNEP5TI-aiQeYqCkrkDIdk8dkliA-9jEWo7JmJ2LO9k-uLckSXj3Pkk3Y1MMcEbEKzqyQKMiT2rhtzYEeTviobeYlP4IjWxjv38_-N46rsh6WYPVTF8JE8mYimuLlCYOKEbDcilWgq2uG7jXPPNAfqzcmkBIZh8eyt9LJ81yTv0Tve7Wd372gok9JC9sSjogjWAlMCH1AmKCvURMR9zM0EQKDlpaB0fftOAUNCJBe-xtMZkPggE-tD6uA2WgX6qW_OMU0PNXOf7YfdC5O4xSd81VvKQU_qs2vMO9xjgLuj_-OuWW0gE-UgAj5SFU5jAGXa4xskeaV-2TeddBc5SB1LpBDEpz3MwzwtU8jgCsKv-UV0XVHMkr23MElGs8sqnfWXlRrShZT5vv6WeXVgnSxiCn9zAdVQQ9TrtMhSjj4ol32T_TocjGfA-9cN2XFPK44WZq4bLxxkK5FZdZ0Wh8fmIE5Uof3ulGUGyqO9J8o4CfHPeC-o8mLRkjlJHdkajMmQvoJa7YlAjHDZWQT8KZv7pwPRUuG__zMbtS-oEiIGWQWyhbKWYsKT7LJucau-E3CovAoKnPqDrD4IH7lspjWB3gxrdWqrcuvPciweC_wIPHwtPvQxyDkx4LiZysh8nvFXO7XkcUiEcuOP8lZgMQVKbpaIH71hfLs6g7lCUOQyL0i46_zTnCwxqUHDmXNuVcakXCiTS7Me2v3xTZwYONtLIeXpuTJKqlezTo3alwNt6iwE5ouPoKsz2BH8HVfeJ9a11uLwNDWQMtRcqXOEY2wGcXr5bXpitmhw4zFXWQGG4nyS462QQ9FrJ8nMYrqMjveAwMoyKpmvdsHc6AQWBPxLxHydbwbsUUOo3Nvgqp3vPXBjpw-zxKXBInsBmdWlC19ciCnLLck1QiY7okfjyZ3TzNr-tH5-5gYsYqonmiRAlYttX9nK7jHvUhUSsYMku5Gk1OG1C4CcnVjR_ix-hkvlQs5npBzFuQjimug2Saq_heuw3MGzrMhq-4x4dPM3PQ/4ty/_Tma4Pk1Qw28-8Ol1DZsUg/h20/h001.WsEl8P7r2Xphx4oDM1swIL4li0a6KgeazCUdj3KlpCk"
+          },
+          {
+            "label": "Math breakthrough debate: AI solution validation",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgBrjGdL6UyEXjv8sUtW8a1180isXtVKiD4047VcUW_8HFhMWoCBsdBfQo5MarUa7__5o4UVOm4BzH5j-Go-8zFUKbHfo-dCxVSERQ-TZQ_kU7z7RJESQxriEcMepGDJgK2rAkXSJyjBS8178qS9EIbHZSiTS6rmb5bXcl_0cHeElWBkTfkG9XX1-RKewl-tSjxAC8n61UrNuNrICUSYxvrQ3o-eYj7s0P-dw_I5xBUKVXDincf80KdwJRTuILfuJtOfGWRkvldkkvlTUC08Od5xc6gdZmmryT-Ckkhh7NonGT9jXLF9pFzTgkYxuuIgT1XVGEDOplG406kOsWPo0qqg/4ty/_Tma4Pk1Qw28-8Ol1DZsUg/h27/h001.gkex2gfwG63shZX1LCq6Mkhqw6BMQ30sY1DdXkP4iI8"
+          }
+        ]
+      }
+    }
+  ]
+}
