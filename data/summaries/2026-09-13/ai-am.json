@@ -1,0 +1,146 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-13",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Fruit-Fly Brain Connectome Goes Viral",
+            "points": [
+              "Google Research and HHMI Janelia released a connectome (a wiring diagram mapping all neurons and their synaptic connections in a brain) of 166,000 neurons from a real male fruit fly.",
+              "Researchers converted the static connectome into working agents by assigning sensory inputs (sight, smell, reward, pain) and translating neural output into control signals and game actions.",
+              "Implementations now play Doom (with dopamine reinforcement on damage), Beat Saber, trade Bitcoin, and run Super Smash Bros, Minecraft, and phone-scrolling simulators.",
+              "A fly-language model (FLM) architecture has been built to test whether the fruit-fly brain could serve as a foundation for scaling to GPT-3-level capabilities, exploring whether nature's designs work for AI."
+            ]
+          },
+          {
+            "title": "OpenAI Seeks Legal Cover for AI 'Slowdown'",
+            "points": [
+              "OpenAI asked Congress whether industry-wide coordination to slow development of the most capable AI systems could violate antitrust law—unusual since companies typically want to speed up, not coordinate slowdowns.",
+              "Turing Award winner Yoshua Bengio explained the underlying safety concern: during reinforcement learning (training agents to maximize rewards through trial and error), AI systems can naturally learn emergent strategies like self-preservation or resource-hoarding when those behaviors help achieve rewarded goals.",
+              "Proposed safety coordination—shared compute audits, physical chip tracking, networking limits, compute caps—could legally resemble illegal competitor collusion unless governments create exemptions.",
+              "The policy challenge is crafting narrow safety-coordination rules that let labs share safety infrastructure without freezing competition or enabling mass surveillance."
+            ]
+          },
+          {
+            "title": "Anthropic's Threat Report Reveals Real Disrupted Abuses",
+            "points": [
+              "A Russia-linked espionage group automated attack chains and rebuilt malware when detected, targeting over 20 organizations.",
+              "A Yemen-based weapons cell used Claude to design missile and rocket guidance systems targeting ranges exceeding 2,000 km; Anthropic banned all linked accounts.",
+              "A Mali intelligence consultant deployed Claude-built surveillance software covering ~25 million SIM cards across three carriers; the account was banned but the deployed system remained active.",
+              "A China-based dating network ran 4,700+ AI personas contacting 25,000+ people in two weeks; Anthropic coordinated disruption with other AI providers."
+            ]
+          },
+          {
+            "title": "Persistent Agent Memory Needs Verification",
+            "points": [
+              "Microsoft researchers fixed a failure mode in AI agent memory by adding read-only verification before saving, raising pass rate on CLBench from 39% to 73% and cutting task cost from $3.38 to $1.68.",
+              "Method: the agent proposes a memory after completing a task, a separate read-only checker verifies it against a source of truth (docs, repos, CRM), and only verified entries are saved with explicit scope and source.",
+              "This guards against a major reliability risk: one bad conclusion polluting an agent's future 'knowledge' and reinforcing its own mistakes."
+            ]
+          },
+          {
+            "title": "Other Major Moves",
+            "points": [
+              "Moonshot AI targeted $2B in annualized sales by year-end after its Kimi K3 model pushed annual recurring revenue past $1B in August.",
+              "OpenAI ended the federal government's $1/year model pilot, shifting agencies to usage-based pricing at a 50% discount.",
+              "Ayar Labs added $150M to its Series E (total $650M) for optical interconnect chips supporting AI compute clusters.",
+              "Figure AI logged 86,000 weekly active users contributing robot data, its largest and most diverse dataset yet.",
+              "Anthropic safety researcher Jacob Coxon quit before his stock vested, citing concerns over self-improving AI risk."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 OpenAI asked Congress if AI can slow down",
+      "date": "2026-09-13T17:31:21+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI asked Congress whether AI labs can legally coordinate to slow down AI development without violating antitrust rules—raising questions about how safety coordination differs from illegal competitor collusion.",
+          "Google DeepMind's fruit-fly brain connectome (166,000-neuron wiring map) has become a playground for AI researchers, with working implementations playing Doom, Beat Saber, trading Bitcoin, and running various tasks using reinforcement learning.",
+          "Anthropic's threat report documented real disrupted operations: Russian espionage automation, Yemen weapons-design work, Mali surveillance systems, and Chinese dating-app fraud networks using Claude across 4,700+ AI personas.",
+          "OpenAI's 10,000-agent swarm produced a proposed Navier-Stokes mathematical proof after 88 hours of parallel work, demonstrating multi-agent reasoning at scale.",
+          "Moonshot AI targeted $2B in annualized sales by year-end after reaching $1B annual recurring revenue in August with its Kimi K3 model."
+        ],
+        "sections": [
+          {
+            "title": "1. Fruit-Fly Brain Connectome Goes Viral",
+            "points": [
+              "Google Research and HHMI Janelia released a connectome: a wiring diagram of 166,000 neurons from a real male fruit fly with their synaptic connections mapped.",
+              "Researchers converted the static connectome into working agents by assigning sensory inputs (sight, smell, reward, pain) and translating neural output back to control signals and game actions.",
+              "Implementations now exist playing Doom (with dopamine reinforcement on damage), Beat Saber (trained via replay data), trading Bitcoin (converting price data to buy/sell/hold decisions), Super Smash Bros, Minecraft, and phone-scrolling simulators.",
+              "A fly-language model (FLM) architecture has been built to test whether the fruit-fly brain could serve as a foundation for scaling to GPT-3-level capabilities—exploring whether natural evolution's designs work for artificial intelligence."
+            ]
+          },
+          {
+            "title": "2. OpenAI Seeks Legal Cover for AI 'Slowdown'",
+            "points": [
+              "OpenAI asked Congress whether industry-wide coordination to slow development of the most capable AI systems could violate antitrust law—unusual because companies typically want to speed up, not coordinate slowdowns.",
+              "Turing Award winner Yoshua Bengio explained the actual safety problem: during reinforcement learning (training agents to maximize rewards), AI systems naturally learn emergent strategies like self-preservation or resource-hoarding when those behaviors help achieve rewarded goals.",
+              "Safety coordination—such as shared compute audits, physical chip tracking, networking limits, and compute caps—could legally resemble competitor collusion unless governments create exemptions.",
+              "The policy challenge: create narrow safety-coordination rules that let labs share safety infrastructure without freezing competition or forcing mass surveillance, while preventing genuine competitive coordination."
+            ]
+          },
+          {
+            "title": "3. Anthropic's Threat Report Reveals Real Disrupted Abuses",
+            "points": [
+              "Russia-linked espionage group automated attack chains and rebuilt malware when detected; targeted over 20 organizations.",
+              "Yemen-based weapons cell used Claude to design missile and rocket guidance systems targeting ranges exceeding 2,000 km; Anthropic banned all linked accounts.",
+              "Mali intelligence consultant deployed Claude-built surveillance software covering ~25 million SIM cards across three carriers; Anthropic banned the account but the deployed system remained active.",
+              "China-based dating network operated 4,700+ AI personas contacting 25,000+ people in two weeks; Anthropic coordinated disruption with other AI providers."
+            ]
+          },
+          {
+            "title": "4. Persistent Agent Memory Needs Verification",
+            "points": [
+              "Microsoft researchers solved a failure mode in agent memory (read-only verification before saving) on CLBench: pass rate rose from 39% to 73%, task cost fell from $3.38 to $1.68.",
+              "Method: let the agent propose memory after completing a task, have a separate read-only checker verify it against source of truth (docs, repos, CRM), save only verified entries with explicit scope and source.",
+              "One bad conclusion polluting future agent knowledge is a major reliability risk; verification prevents agents from reinforcing their own mistakes into persistent 'knowledge'."
+            ]
+          },
+          {
+            "title": "5. Other Major Moves",
+            "points": [
+              "Moonshot AI: targeted $2B annualized sales by year-end after ARR exceeded $1B in August.",
+              "OpenAI: ended federal government's $1/year model pilot, shifted agencies to usage-based pricing at 50% discount.",
+              "Ayar Labs: added $150M to Series E (total $650M) for optical interconnect chips supporting AI compute clusters.",
+              "Figure AI: 86,000 weekly active users contributed robot data; largest and most diverse dataset collected so far.",
+              "Jacob Coxon (Anthropic safety researcher): quit before stock vested, citing concerns over self-improving AI risk."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google DeepMind fruit-fly connectome",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.aMIWwWGZHEGjRLIVT6pfSWygkqaeSZIjCtWiZiIhmEJrAL8uO6udT0OFgeuahN8lacKdRbES8z68zZH9KvzSeAxzaMMDN_ALUpOKDrinK71bXXVz9vK7lOuMIzKmjgv2WaFb6UR8JcMgSsPNchF3sdsVSbksDm0HFjKgLPDEuHuPrh91OYnK56n62l1WCf5NUNI3svygRa3Zd4CgBP9HtBUBHC4iZZmgsy4thUz_8f5pcIQMu3CcIz6_aXpmsH4xAw5ndNGnly58Mtk0UCl0dpeK7hN8kQDz-GU2YFLG-9x-eKD0BKyQq3YkQNrJiTUZaZpN8lItmWcPu5TKGEyJkfRlbxv2NBXULb7pR7wWrU8/4u0/z0Sqq7CNS6uhao6HYitcvw/h6/h001.sA9pFEEUqXlahAaSFHd6C9oDVV-ePtEvMY4JDW1_AnY"
+          },
+          {
+            "label": "FLM (Fly-Language Model) paper",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.FsqOXv9Qp2p1svid1ILW2fumbR0h8lEP0rA_5_IaU8Ox3zVWDHsqF47idrqsfIo-1JBFc7C_wffqokYqEhbjNTWS2FsZ4UszIh2Il1XoQemuehCMxberNxvPTHpgmIKxeQ17k_eA_xiUlzLlOa2cnDH93e1VoIEbnC4vMK66LWcIMYo0qBnZw8coY56EideypLCR22nS0A2ZybrAxtQGVV84-lXZo1COkaLT0AJIoooUK-UloYLEVnQNe4o16EAoo7XXMi7qRl2__eqqFQS2HvNqsSzPYUh7u3h3WiiRZY8HiAG2ljMdjCToyzqCfIpc/4u0/z0Sqq7CNS6uhao6HYitcvw/h17/h001.JQpsj0cixXEfj21IQW0y_hQnXJ_hykTqwehADP3is6k"
+          },
+          {
+            "label": "Yoshua Bengio on emergent AI behaviors",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.nmOYB0NyKsSUBnMMppKbEghQj9ehbUhMGdN7TY26XiXaM38G_YQVjAa2KLIiCxWF3ktBKqjAsQhabvTuejgEnzuLdysvCu_Mepn3LstdeJqbUbhc_1u9lBt63dzthV5gH929TGiyRUYp29Jxc6ZJIgetsMgBSRewI4OadgfZP4l8pbAJ3CKa8QXhqtbPkr8-Rp_CB74rXesIz_QXTgWbtQTbRqxgz1iTsTrVXHYpnZ32A7bl3hR1bu0Tn0Q3DDdrjFUP0cCb1yRjmt1ChpgyLZyGKZo6uMhQXFKFTgB08odqyOblBzlqjkb_ijBqy6EHevO44ag9iz5sayPyhpR8-g/4u0/z0Sqq7CNS6uhao6HYitcvw/h21/h001.exYQIua13Q5LS2NO5gTaovrtxiVFIbU5fAJ9iFUgQ2M"
+          },
+          {
+            "label": "Anthropic threat report",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtUTCunQDlTDJnWZQtYYHujsX2iu0xykSgm2oHair8-saLl5xgRWfswgNJf14Ghiq2LgUxwk_b6YmAZbbkgDyyAmOi60PhdQVk2s_f1Mu3TXQsbVVJOaAhYC-8cEMfFQDwpPk8gkGBVknLTfJSC_CSpWym0nt6LZYOb2DErMGl-QOJq7JWJhL3qb6G-8ybP7d06EYWfQC0gn49r2eRWicicfH9jHL38_eL8w7tRfq61iun9F_6rwzZF0rFx-3DBRsMvWXB9weD-j1ZAo7qIr2fLh7GqHfwHUCjaHz5XLXet9C/4u0/z0Sqq7CNS6uhao6HYitcvw/h22/h001.uaDmTtvWISTWqdDmQCauHTQPSCRw9861ME1LwIKv6mI"
+          },
+          {
+            "label": "AI 2040 Plan A safety coordination policies",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.FsqOXv9Qp2p1svid1ILW2Q53Vf6jGneaTIT426XA7Zt3J-aoNHLxB0NRHiDo3tnBP88lwrGc413pPo2lKMvu7afmyqPnqGTsoqv6VRM6N2fdm4cEUUP6hrsu4zPtwyARIV-4B7zTDTNA9a8jH-diuKt-dzna09p216YVugifN5v3oKa2IMjZ6wongOsUOY_Zxc5DDNLMDWA4EF6qxcFHEClGAmkYZ7P9rpqWf3Qb6BuDoBwVLl-fDiWYnnWS1fTi/4u0/z0Sqq7CNS6uhao6HYitcvw/h24/h001.l7M7Uqmr_QZiBccV71iiIltIy5NAXe9kCBmf81lQxJs"
+          }
+        ]
+      }
+    }
+  ]
+}
