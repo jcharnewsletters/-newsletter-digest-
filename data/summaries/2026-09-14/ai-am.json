@@ -1,0 +1,392 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-14",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "AI Leaders Call to Slow Down Development Amid Safety Concerns",
+        "points": [
+          "Anthropic CEO Dario Amodei published an essay urging frontier labs to 'pace the frontier' (deliberately slow cutting-edge AI development), proposing third-party evaluators inside labs and coordination among 'democratic' labs.",
+          "Sam Altman (OpenAI), Elon Musk (xAI), Demis Hassabis (Google DeepMind), and Satya Nadella (Microsoft) publicly backed the call within 24 hours, an unusually rare industry alignment; Nadella said superintelligence (AI smarter than humans at nearly everything) without human control 'is not worth pursuing.'",
+          "Amodei warned that within 6-12 months, AI agents could become capable of taking over the internet through recursive self-improvement (AI systems using their own outputs to continuously improve themselves).",
+          "Donald Trump rejected the slowdown, calling advocates 'negative forces' and arguing the U.S. must accelerate to beat China, stating 'whoever wins AI wins.'",
+          "Skeptics question the sincerity of the move: David Sacks called it 'virtue signaling' since labs can slow down anytime without public statements, and critics note both OpenAI and Anthropic are pursuing IPOs, raising suspicion the call also serves financial/legal self-protection.",
+          "China's state media framed the slowdown proposal as a 'Cold War playbook' to hold back Chinese AI, while Shanghai researchers simultaneously published a roadmap toward self-improving AI—the exact capability Amodei warns against.",
+          "Bernie Sanders urged a U.S.-China treaty banning superintelligence outright; King Charles is hosting Nvidia, Google DeepMind, OpenAI, and Anthropic leaders in Scotland to draft shared safety principles."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Anthropic and Google DeepMind safety researchers Joe Benton and Josh Engels resigned to join METR Evals (an AI safety evaluation organization), warning capabilities are outpacing safety research."
+          },
+          {
+            "newsletter": "Staying Ahead",
+            "point": "OpenAI's IPO is now delayed to 2027 or later, with Altman saying going public in 2026 would be 'ill-advised' given unfinished safety work."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Investor Adam Cochran speculated the sudden industry alignment suggests an AI agent may have 'gone rogue' behind the scenes, fueling autonomy anxieties."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "AI Ultrasound Detection Trial Shows Clinical Promise",
+            "points": [
+              "PAICS (a deep-learning AI system) was tested live during prenatal ultrasounds across 5 Chinese hospitals, flagging 10 specific fetal brain malformations in real time.",
+              "Detection sensitivity improved from 78.6% to 87.3% with AI assistance, with stable false positive rates, demonstrating clinically useful support.",
+              "Human sonographers correctly overrode about 60% of AI errors, showing the AI worked as a second set of eyes rather than a replacement; PAICS alone underperformed compared to human-assisted scans.",
+              "Limitations: trial covered only high-risk pregnancies and brain malformations in China, and AI-assisted scans took about 40 seconds longer than standard ones."
+            ]
+          },
+          {
+            "title": "Practical AI Workflows Enable Rapid Business Execution",
+            "points": [
+              "Sales workflow: Zapier connects to meeting notes, AI extracts prospect details, auto-fills a Google Docs proposal template, and drafts (not auto-sends) a follow-up email minutes after a call ends.",
+              "Story-scouting workflow: scans priority sources each morning, checks against past coverage, filters for novelty and viral hooks (visual appeal, 45-90 second explainability), and sends a ranked brief via Slack.",
+              "Running coach workflow: a Claude Project integrated with Google Calendar and watch data plans weekly runs, prevents injury by catching too-rapid mileage increases, and adapts to schedule disruptions.",
+              "All workflows emphasize human review before execution rather than full automation."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Apple's Siri Finally Works, Three Years Late",
+            "points": [
+              "iOS 27 launched with a redesigned Siri built with help from Google Gemini, featuring on-screen awareness—a major departure from Apple's previous standalone approach.",
+              "Full Siri AI capabilities require an iPhone 15 Pro or newer; older iPhone 15 and earlier models get the software update without the new features, fragmenting the user base.",
+              "Apple first promised this Siri in iOS 18 (2024) but pulled it for reliability issues, making the 2026 launch a three-year delay that critics compare to 'showing up to the party as everyone else is leaving.'"
+            ]
+          },
+          {
+            "title": "Microsoft Copilot Adds Model Flexibility",
+            "points": [
+              "Microsoft Copilot now lets users swap its default model for Anthropic's Claude on specific tasks like research, showing enterprises can mix AI providers depending on task type."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Astra vs. Fable: Security Guardrails Diverge Despite Equal Capability",
+            "points": [
+              "Both OpenAI's Astra and Anthropic's Fable processed a 312K-token, 41K-line codebase task without losing coherence; Astra traced session state ownership more sharply but results were functionally equivalent after follow-ups.",
+              "On a design fidelity test, Astra matched a template's fonts, colors, and layout on the first pass, while Fable got numbers right but needed a second prompt to fix its self-chosen layout.",
+              "On a security task, Astra outright blocked a legitimate CVE proof-of-concept request with no explanation, while Fable silently downgraded to a weaker model mid-conversation before answering—both left paying users with degraded results.",
+              "Conclusion: raw capability between the two models is equivalent, but they differ in guardrail approach—Astra uses a hard block, Fable silently degrades—and neither allows legitimate internal security verification on their top-tier plans."
+            ]
+          },
+          {
+            "title": "Chinese AI Market Escalation: Moonshot's Kimi AI Revenue Surge",
+            "points": [
+              "Moonshot's Kimi AI hit $1 billion in annual recurring revenue in August 2026, up from $300 million in June.",
+              "The company aims to double revenue again to $2 billion by year-end."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Anthropic Report Documents AI's Real-World Harms",
+            "points": [
+              "A Yemen-based group used Claude Code (a tool letting AI write and execute software) to develop stabilization software for ballistic missiles instead of hiring human engineers.",
+              "Another threat actor ran 'influence-as-a-service' disinformation campaigns, mass-producing political content across roughly 70 fake websites reaching six continents.",
+              "A third group tunneled traffic through U.S. infrastructure to evade regional blocks, aiming to resell dangerous biological advice to virologists.",
+              "Anthropic says it disrupted all identified operations and shared findings with authorities and other labs, though the report covers only the most extreme cases."
+            ]
+          },
+          {
+            "title": "Enterprise Security Needs Attack-Path Analysis, Not Isolated Alerts",
+            "points": [
+              "Security teams often face disconnected alerts from separate tools, making it hard to distinguish real threats from noise.",
+              "Recommended approach: build a unified 'security graph' mapping how vulnerabilities, identities (user accounts), workloads (running services), data, and AI applications interconnect.",
+              "Teams should prioritize by severity, exposure, and business impact, then use 'attack path analysis' to trace how an adversary could chain together weaknesses.",
+              "Remediation should be assigned to the right teams, with confirmation that each fix actually eliminates the risk before moving on."
+            ]
+          },
+          {
+            "title": "ChatGPT Sites Platform Expands",
+            "points": [
+              "OpenAI's ChatGPT Sites platform now hosts more than 5 million websites, with new collaboration features and 2X faster deployments.",
+              "A new developer guide covers building with GPT-6 Astra."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "😳 The people building AI want to slow down",
+      "date": "2026-09-14T10:09:04+00:00",
+      "summary": {
+        "headlines": [
+          "AI lab leaders including OpenAI's Sam Altman and Anthropic's Dario Amodei agree that AI development should slow to let safety catch up, citing rapid self-improvement capabilities.",
+          "A randomized trial across 5 Chinese hospitals shows AI-assisted ultrasound detection of fetal brain defects increased from 78.6% to 87.3% accuracy when sonographers used real-time AI support.",
+          "Anthropic and Google DeepMind's top AI safety researchers resigned to join METR Evals, warning that AI capabilities are outpacing safety research.",
+          "Donald Trump dismissed AI slowdown advocates as 'negative forces,' arguing the U.S. should accelerate development to maintain competitive dominance.",
+          "Researchers built practical AI workflows including an AI gardening app with climate tracking and a personal running coach using Claude that integrates calendar and watch data."
+        ],
+        "sections": [
+          {
+            "title": "1. AI Slowdown Gains Unusual Industry Support",
+            "points": [
+              "Dario Amodei proposed embedding third-party evaluators inside AI labs, setting safety standards among 'democratic' labs, and coordinating with authoritarian regimes to control development pace.",
+              "Within 6-12 months, AI agents could become capable of taking over the entire internet through recursive self-improvement (systems using their own outputs to continuously improve themselves), Amodei warned.",
+              "Sam Altman committed to evaluators, Elon Musk agreed 'Dario is right,' and Demis Hassabis and Satya Nadella backed the approach, showing rare unity.",
+              "Trump dismissed the slowdown as unnecessary, stating 'whoever wins AI wins' and the U.S. must maintain its lead, creating tension in the consensus."
+            ]
+          },
+          {
+            "title": "2. AI Safety Talent Exits Labs Over Capability-Safety Gap",
+            "points": [
+              "Joe Benton (Anthropic) and Josh Engels (Google DeepMind), both prominent AI safety researchers, resigned to join METR Evals (a research organization focused on evaluating AI safety).",
+              "Both researchers publicly warned that AI capabilities are advancing faster than safety measures can keep pace, signaling serious concern from inside the labs."
+            ]
+          },
+          {
+            "title": "3. AI Ultrasound Detection Trial Shows Clinical Promise",
+            "points": [
+              "PAICS (a deep-learning AI system) was tested live during prenatal ultrasounds across 5 Chinese hospitals, flagging 10 specific fetal brain malformations in real time.",
+              "Detection sensitivity improved from 78.6% to 87.3% with AI assistance, with false positive rates staying steady, demonstrating clinically useful support.",
+              "Human sonographers correctly overrode about 60% of AI errors, proving the AI served as a second set of eyes rather than replacement; PAICS alone performed worse than human-assisted scans.",
+              "Limitation: trial covered only high-risk pregnancies and brain malformations in China; AI-assisted scans took ~40 seconds longer than standard ones."
+            ]
+          },
+          {
+            "title": "4. Practical AI Workflows Now Enable Rapid Business Execution",
+            "points": [
+              "Send proposal after sales call: Connect Zapier to meeting notes folder, have AI extract prospect details, auto-fill Google Docs proposal template, and draft (not auto-send) prospect email within minutes of the call ending.",
+              "AI story-scouting workflow: Scans priority sources each morning, checks stories against past coverage map, filters for novelty and viral hooks (visual appeal, 45-90 second explainability), and sends ranked brief via Slack.",
+              "Running coach workflow: Claude Project with Google Calendar integration plans weekly runs, logs watch data, prevents injury by catching too-rapid mileage increases, and adapts when life disrupts schedules.",
+              "All workflows emphasize human review before execution (checking proposal drafts, reviewing story rankings) rather than full automation."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Dario Amodei's essay on deliberate AI pacing",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.s9F2vg9H0NMFC01qj9PgtFh738YxlSacCzRKZ_3A0-xIgiyviIDD56rrZaJHr-FewA4rpW1XJpPFiK9SCgLUNo7JeDpwumWJ3M4N58HbXrqx9QAW3y6a0dFVUdokA3np07KjDHRmxa000gl1sML283DORh3ywHSZekiC76oO3B1qoQf3ALTbKiDj3kgnvzjU7_JFTZGUYMuiUs-7pdn2tr0Pr5pGJ-Rg1cLxk5MtGHpc-B2SNNcfob1HVT7o53eebHR0mE52EE9WSgVRO3qh5A/4u1/MiOpT1lPQKCbmawLsRj8FQ/h5/h001.zJTW2P3_jfOKJifQ03zBqXZ6Yt_03xmBkEndE_QXXsA"
+          },
+          {
+            "label": "Guide: Send one-page proposal after sales calls with Zapier",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJGbDGiFBxgU8ebniO5mjaSlxogpg_n14ANBPHFdZBG4ICwsuYu4k5T6v8dsUT5IzDn4Z-zNQR92k2v_J7evxU6Qod8DJLeDOKyAbbcYy58lmrT_mGRnnOfCM0DG4HkCckd_HjyPyTtPBcSs_YBo4hC89-jzpEnG9XSzMObEVb6dMftZxQFAASOq9Q4jEh9fmoNRnCtdtBREUZwrMqmQx3DvqmVBoNwWuR2qRj5mqajVMsQ1cNC1Twx84CFmnLQgQwv5RLrTqADXSz6yWwnyd686/4u1/MiOpT1lPQKCbmawLsRj8FQ/h12/h001.c3OGLKOU58XKyM5SuugnJt4J4aT5VZ6jYsXK4q44K3E"
+          },
+          {
+            "label": "AWS guide: Streaming AI agent responses with failure handling",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yPRmQ1cS76XBKnOKtbP_VnKFf19Xagkj3SvnSAn72vPpsyrwHLd-Xz5Y4Gn5BvCsjwMxbRZb_HYDyp8oE4MJZDv70MPPWX4IuRw0uocNhvPILLb3mYA3pLMp5W9-4g6O8eXwkEMvC5tXilyYILJIcsc0twbUyv5ZgBhZkPHpIkYMQtmfkQYgaJJDRisnqjNkcpuLbCMjZHpYwP5mA9C6BQsEZFtXfm_36Ces2vhJsE7ffSYj8-gnL0Qmi0agPlOR_u9GfSJ04nczXjA4cEJ5nO-leGKbgqhwW_25o-zGhRX-LPgq-Qs4L7wTDPdDMhoae5DNP0K5QR_lCo1q9oX91RxxZKd1i-aHvu5ipNRBLtKMdZ_PIJuxRMtQFkIdaBxH_llVQzAu9TQZexVjbvl7efnyLXRvHwnVd-kv_II3kc0/4u1/MiOpT1lPQKCbmawLsRj8FQ/h14/h001.144IM3LZXvCkXQSW19wKn-IVKlWbrNnxT0EdJu42944"
+          },
+          {
+            "label": "AI helps catch fetal brain defects in hospitals",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf4lLREPsL_819dcAa3Wgj2dwp7IT99vdjk6Z1qm6xyM4w2G4Lnv7hBUW-_xeBhu3upXeB0Dn_YQktS_AeBrYlD658jaWe3ytL2arrsTyE8H0YEzrnngdiD_WRlvOi6GAjIOBDzCNmiudw5Fjlh_ibARkE97phdx_JLzLTA773elSWKc_Ysz0daL14LflAtcCHMdhU0np3KA206p1oVA1CxheJQO2PyYumWmBRGkwMO78Q7DlySoeO8NpzkSxX1jYN-7OEyhaPIurI6g5XMO9jc4/4u1/MiOpT1lPQKCbmawLsRj8FQ/h17/h001.KVXuYXJOWldQLFPHk8kN_zYr_MZti9LiZTFJK3cJMG-U"
+          },
+          {
+            "label": "Community AI Workflow: Gardening app with climate zone tracking",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHd9d3Qi3t-xcr2ITlH5Nu9X7Jm6NFYoqqyrn1c1nfjldM6uxWWr-gxDNQ9VMYsVVHzk0MPQuTiVou1A6hfzQHwDVAm74VHviyltqFhZc2OzR0mUO2-Nk_CO_Al1RdVG2SGUvpVdeQbVzD6U74W1GLFF4Yx6udBAaBRNblJjD8FtCmxanUJOJRw9xLYHefJFv1VkxaL5JkJH8zz-F_JO0zL3x7cC-IZTdQBjL44yUyhh_qq__OHS9Vj3rgMB6L6aw0/4u1/MiOpT1lPQKCbmawLsRj8FQ/h19/h001.7cc1b6JiBZHP_J23wyrwMxgIIq5emaUPfkqsrYmds"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "Congress asked if slowing down is legal",
+      "date": "2026-09-14T10:39:31+00:00",
+      "summary": {
+        "headlines": [
+          "Apple shipped iOS 27 with functional Siri AI built on Gemini, delivering three years late what was promised in 2024—full capabilities require iPhone 15 Pro or newer.",
+          "Four AI leaders (Amodei, Altman, Musk, Nadella) publicly called for slowing AI development, citing risks of superintelligence (AI smarter than humans at nearly everything), while King Charles hosts safety summit in Scotland.",
+          "Congress and policymakers are testing whether AI slowdown is legally enforceable: Bernie Sanders wants superintelligence banned by treaty, but Trump argues racing forward is necessary to beat China.",
+          "Microsoft Copilot now lets users swap its default model for Anthropic's Claude on specific tasks like research, showing enterprises can mix AI providers depending on task type."
+        ],
+        "sections": [
+          {
+            "title": "Why AI's Biggest Rivals Just Agreed to Slow Down—But Probably Won't",
+            "points": [
+              "1. Dario Amodei (Anthropic CEO) published an essay warning AI has advanced 'drastically faster' than expected and called labs to 'pace the frontier.' Sam Altman (OpenAI) and Elon Musk (xAI) backed him within 24 hours; Nadella added superintelligence without human control 'is not worth pursuing.'",
+              "2. Anthropic is reportedly chasing a $2 trillion IPO; safety concerns create real disclosure liabilities, so the slowdown call may also serve financial and legal self-protection alongside genuine concern about risks.",
+              "3. Trump rejected the group consensus, stating whoever wins AI 'wins' and the U.S. cannot afford to fall behind China, meaning the White House still views this as a race—making 'slow down' harder in practice than in essays.",
+              "4. Skeptics point out Shanghai researchers simultaneously published a five-stage roadmap toward self-improving AI (the exact capability Amodei warns about), and David Sacks accused the whistleblower of running a PR stunt, suggesting industry will keep racing behind public statements."
+            ]
+          },
+          {
+            "title": "Apple's Siri Finally Works, Three Years Late",
+            "points": [
+              "1. iOS 27 launches today with redesigned Siri featuring on-screen awareness and a language model built with Google Gemini's help—a major departure from Apple's previous standalone approach.",
+              "2. Full Siri AI experience requires iPhone 15 Pro or newer; standard iPhone 15 and older get the software update but not the new capabilities, fragmenting the user base.",
+              "3. Apple first promised this Siri in iOS 18 (2024) but pulled it because it wasn't reliable enough, making this 2026 launch a three-year delay that critics compare to 'showing up to the party as everyone else is leaving.'"
+            ]
+          },
+          {
+            "title": "Congress Asks: Can AI Slowdown Actually Be Enforced?",
+            "points": [
+              "1. Bernie Sanders urged Trump and Xi to negotiate a treaty pausing AI and banning superintelligence (AI smarter than humans at nearly everything) outright, treating it as a geopolitical arms-control issue.",
+              "2. King Charles is hosting Nvidia, Google DeepMind, OpenAI, and Anthropic leaders in Scotland this week to draft shared safety principles—signaling governments want binding commitments, not just statements.",
+              "3. China's state media framed the slowdown proposal as a 'Cold War playbook' to hold back Chinese AI, underlining the core tension: safety advocates want restraint, but governments fear losing technological advantage."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Deep Dive: Can AI Companies Afford to Slow Down?",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtWmvSN7yjS-CyXSLiVgN-9WWP8Ms4A-W_jpllUWt2gwV8AasoTBsvmZt5MEoTQXIcAHBWdAKytmollspIJyxvjMsDCF6s7riwdui14ogMmlVZ7L3VP8MjXk-bi3ikqw1e6rkS3SdHeZQx6rm28EDePrTPJHtaBWO97RqOkzmljmY-3tBCOjFbRZJLiYzG-g3ttXbIfpM4yPmWmWbAU0DYA5bOmxUhyHoteMJyIlJdaVR9aoYKx3PHml_NX0B1AFim4-Id3Dv27Uvm9PEH85SCVqI2tSF9kIak4LQkwRxHcGg7oVhx80TCb7ZzWFEbG3SNA/4u1/F7p2ZDGgSn6CVDy6_z77WQ/h9/h001.f3H7igx2eEDBnXlr1bI9MtVxrHLRZLshBA-g5AiqaSc"
+          },
+          {
+            "label": "Amodei on CBS: There are real dangers and the industry lied about them",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtSLvZxkuVDT2cbzLBDRoDsVKhD4P7I0QKv6Yjkdj4C_EYcdn70pz2MF-eDYBeRriJDbGRLw2p7Mfa1vKrLPhQDTd2aXqwL6N4FVj4m2J2Nhp7BcKj5X71vbpNacfQz9XYU9i7muXLNf__da3smh9vUzDXlW0BBNv-JaHdrgnWdnzNCEJq0_KmBqnfkwdYpDV9MHGFreFHiiu2RgHu1MVFaiy91HKtpMnshAt-ManNr9VdeB9R9tf6rpo0k66zjNtJV4hIJaGK2FNnwojQwolvt8gBn9LDh1K-Rpo8QdNJY5s/4u1/F7p2ZDGgSn6CVDy6_z77WQ/h10/h001.zEcfmxHlrZlDWgeuRuUWVrwRuy-lCpGDLAumvXycttk"
+          },
+          {
+            "label": "Nadella on superintelligence requiring human control",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtVNqXvH422kfLRpL17a2-8vvXJKrHV92YTM4-b1K9t4bGeJWonqFyISfONIw9xmWSVqmW6ekE8YFNJWzXzmHTdG46Nsg-slkvCdQ3PgQupK6C48sMJgF-uKVncyq11LOtJdkJwKeWeV2FRCjcv5uC09Cqzj3xf288MauIq15Z9Yjrc1Nlm_FE4fvoaZvvUOB13tsMORGOW-Sxk-Wd66Q6ZGtCFpP8pcSBBVOWAT5VobO43sstdjn_rv6zQ3adPR6WbhF9jjLDPKhVgQS_wZzNeXbGsD-Yzv6duWqeXBz87oWiuOastPo9HILS4WaIubXrmbVmkeDSV5kLywnZ92hS_Y/4u1/F7p2ZDGgSn6CVDy6_z77WQ/h11/h001.cnkdHYfXRxWSzS5VVDuRoN-CMxNp-4zK8vH6fV1aC8w"
+          },
+          {
+            "label": "Siri AI in iOS 27 with Gemini integration",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtbDyaAkpHq3Q1LBamkAPlTdgpd37Im6KT9kMRWHo5rZL-6nDGs2LG5D6x_Edn_bRE7SdM_5UeITAbiVjTKEUZGUOUnjcSJC_MCIpjs5hBox9k1i_r30IGo1261Y35E1FnSYfTn6iOy_c02WOkeC2YxVpsurWheVkuPAX5FFlXVlm9oq-09jZUJ8bc7jW1u-4mr6FOoAYG8fjW16AC_RzLk8Ad3xoP5EOjVKtyrZPP8dES-bA-petG2rSFnS1lykcfalRZWZrzWnkhkwYEr2-B1UdDRJj3p1SBv3QcG37E_4buw9kCvmhd0bI9I6--jzKV7AqFp7MvRRoisXu1v00xJH8c4D8GKZrp8tUmcNRg2K6KYO3XjbNmNiaqrsPHYfagAbgXCLo1Y2QoH_yrZrO-Z2Uq_fN7qbwIkaKwEHhUCaNV2LrGULVM8z3kFpuWzbwdO1KRd23YP2F59ZQM0UGQNeFHmVd_kJvHrHaZTKqPuQkaoKHd1VhywgRFYLNBsC79y80KlFBK4fCd5DzgCAktczjJJZ28kK4st421EeaA8foWGh7dC4QsLyUpyIMGkm4sKp-xMMQ3GqIFjwcP58Py9g7W1fOUkzEWyiKOjO80dl5j4NSd7nYiwAv__dUtBKZfUdU4hXPwPpMmtxXhrldX-LaJ8I5xhxh6DqLlLgZCaQmdUHuRvKAzvNxb4nQredbh63M83q52pOR_LVdp3PIMf-NNfmbqVW3y35ejNueqCrkZVzflXy18Z4FxvWqvWVafB2RMKraiin8GkfiVt2hbw4X51NNzNP0ey4F0Dz5lnIc/4u1/F7p2ZDGgSn6CVDy6_z77WQ/h7/h001.GlLgvesCvK2KCmJfnluhoa6TA7gv0VxmR59sEMPQKsk"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "astra v fable / round 2",
+      "date": "2026-09-14T12:49:23+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's Astra and Anthropic's Fable are nearly matched on general capability, but diverge sharply on security task handling—Astra blocks requests outright while Fable downgrades to weaker models without transparency.",
+          "Three major AI labs (OpenAI, Anthropic, and others) agreed to slow down frontier model development following Dario Amodei's 'pace the frontier' essay, with Sam Altman and Elon Musk publicly supporting the move.",
+          "OpenAI postpones its IPO to 2027 or later, citing unfinished safety work as the reason to avoid going public in 2026.",
+          "Moonshot's Kimi AI surpassed $1 billion annual recurring revenue in August and aims to double it by year-end, jumping from $300 million in June."
+        ],
+        "sections": [
+          {
+            "title": "Astra vs. Fable Technical Comparison",
+            "points": [
+              "Test 1 (long-context recall): Both models processed 312K tokens across a 41K-line codebase task without losing coherence. Astra traced session state ownership more sharply; functionally equivalent after follow-up prompts.",
+              "Test 2 (design fidelity): Astra matched the template's fonts, colors, and layout grid on the first pass. Fable got numbers correct but chose its own layout, requiring a second prompt after font/spacing hints.",
+              "Test 3 (security tasks): Astra blocked a legitimate CVE proof-of-concept request with no explanation or partial review. Fable flagged the request, downgraded to a weaker model mid-conversation, and answered—but the outcome was identical: user got a weaker model's response despite paying for the flagship.",
+              "Conclusion: Raw capability is equivalent, but security guardrail implementations differ—Astra uses a hard wall, Fable silently degrades. Both prevent legitimate internal security verification on their top-tier tiers."
+            ]
+          },
+          {
+            "title": "Industry Consolidation on AI Safety",
+            "points": [
+              "Dario Amodei (Anthropic) published an essay urging the AI industry to 'pace the frontier' (slow development of cutting-edge models). Sam Altman (OpenAI) committed to matching the pace within hours; Elon Musk publicly agreed.",
+              "OpenAI IPO delayed: Sam Altman told Fortune that listing now would be 'ill-advised' with safety work incomplete. The potentially record-breaking IPO now slips to 2027 at earliest."
+            ]
+          },
+          {
+            "title": "Chinese AI Market Escalation",
+            "points": [
+              "Moonshot (maker of Kimi AI) reached $1 billion annual recurring revenue in August 2026, up from $300 million in June. Company targets $2 billion by year-end, aiming to double again in four months."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Astra vs Fable earlier comparison",
+            "url": "https://link.mail.beehiiv.com/v2/c/fa7379eafbe306dcfd31c1b6e3e3e0f90747f794c530e525555474a103ce81b2fabac2ea59dbf42a025d8820f2b7e8e9c0b6592938832d30af03c97c7068964fe36b03e7c9c45dae07ef8ff02c051e7fb100df900c0e2d1d28644e125ccf5c4b2b67cb4c34275ddeb9fca3b773f1641d8a24599eca71dbfe1aac0a9b05f34244fd5db58faf9d13373c72722df0c6b215de0a3e6daa63006cc89490d3b6ca2723/bbd82353f1e82ec9"
+          },
+          {
+            "label": "Three big labs agree to slow down",
+            "url": "https://link.mail.beehiiv.com/v2/c/f5cd0470f5f2aed7a108735b98ea14366e007f7f6807b4207c428a25ca52cc5ad136c4a6566062ea910147b8a81f98ca389dbaa7173553ed75ac79f0d24e7c75327f6eb624ffd4e566b69d11d9cd7f970d7d34bc940e672776d381b84b351961f5370a447ae707914627975ff5906848f1d9bcfe083d482c3e9b9343533de876bccd0212fb3e71dac1b27048e4080ae323fbee074faa9948b31b05d3b6ab3d8b/23fd944450d870fd"
+          },
+          {
+            "label": "OpenAI takes IPO off table for 2026",
+            "url": "https://link.mail.beehiiv.com/v2/c/4d6ae99414548a2064b4460f86cbf93a08133e8e23163a78b6abc88581ded6fbd7145fc94033cd307bc96791dca7f338ff28a4c31e9fc30d502e17725f0d7aef154e3efb7f1613dd24b0bc5eca68a05617e39135b1cb1f9e12ce3060a4f76414ec3514d21163981d4ca02d8cb57058bff3a402bfd508a2fb8973d93222cbc35193498d1c2968de1239e487ee021430c01c0299b990d6cad9cd65ff2abbd828ba/5335e0bf711cedcd"
+          },
+          {
+            "label": "Moonshot chasing $2B revenue by year-end",
+            "url": "https://link.mail.beehiiv.com/v2/c/4a91ce0f904be9435524f0ce842bea6ec98bc0dbb865fe19df635b63149342bc03519ec45791dfd8e71aaa190bbdfba67a30b11e0075d707b5b2e53e999b778d5946db2b53edbbeb9a7f88bac48fe5872e241e222cf90e2272e68b3c08be12414764e46d4ec22730ea5ceeb56e6385c8c6cf0afb85b6ef85c6c71288fdd523c986873c4e48fcd0a6138f1ec321f410469b36d38c8d73827d3112ff65eb033231/b6459a25f9148070"
+          },
+          {
+            "label": "Read online",
+            "url": "https://link.mail.beehiiv.com/v2/c/ba1493cd3d2bb96a30ff973f1091adf3736deef0c6ae03c55dd23d2f45ce041f7379eaa1a8f807c71f8b0056cafdba5cc185a0eed7a48eb4d3ead4fe3d5a101cb13be30d4a934f50d5207492ae3ba7b454e43f2561df182510513c56ac35e42aaa44c04fc835c242ca946ff302c0cd78adbf6d85aa40eb76637423c1ef1da6fbbe67da128c85f1d05fa0ee09dbe4b8153bf6d9887178678f6301361db0e61438/f19b9f081afd6690"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "⚔️ Amodei's (controversial) call to arms",
+      "date": "2026-09-14T13:09:51+00:00",
+      "summary": {
+        "headlines": [
+          "Dario Amodei urges AI labs to slow progress, backed by Sam Altman and Elon Musk, sparking debate over whether the move is altruistic or financially motivated ahead of OpenAI's 2027 IPO.",
+          "Anthropic's threat intelligence report reveals real-world AI misuse: Yemen-based group used Claude to develop ballistic missile software, while another ran disinformation campaigns across 70 websites.",
+          "ChatGPT Sites platform now hosts 5M+ websites with new collaboration features, 2X faster deployments, and a developer guide for building with GPT-6 Astra.",
+          "AI security risks are now tangible rather than hypothetical—enterprises need tools to map connections between vulnerabilities, identities, workloads, data, and AI applications to prioritize remediation."
+        ],
+        "sections": [
+          {
+            "title": "Three AI Leaders Call for Slowing Progress—But Critics Doubt Their Sincerity",
+            "points": [
+              "1. Dario Amodei published a personal essay with a three-step plan for frontier labs to decelerate AI advancement, quickly endorsed by Sam Altman and Elon Musk—a rare alignment that startled industry insiders.",
+              "2. Skeptics argue this is financially motivated: both OpenAI and Anthropic are pursuing IPOs, and slowing public progress while racing privately could limit regulatory scrutiny and competition.",
+              "3. David Sacks, former White House AI czar, called out both labs for 'virtue signaling,' noting they can reduce development speed anytime without public announcements.",
+              "4. Investor Adam Cochran speculated the sudden alignment suggests another AI agent may have 'gone rogue,' fueling anxieties about autonomous systems."
+            ]
+          },
+          {
+            "title": "Anthropic Report Documents AI's Real-World Harms Across Missiles, Disinformation, and Biology",
+            "points": [
+              "1. A Yemen-based group used Claude Code (a tool that lets AI write and execute software) to develop stabilization software for ballistic missiles instead of hiring human engineers.",
+              "2. Another threat actor ran 'influence-as-a-service' disinformation campaigns, mass-producing and rewriting political content across roughly 70 fake websites with reach across six continents.",
+              "3. A third group tunneled traffic through U.S. infrastructure to evade regional blocks with the goal of reselling dangerous biological advice to virologists.",
+              "4. Anthropic claims to have disrupted all identified operations in the report, sharing findings with authorities and other labs; the report only covers the most extreme cases."
+            ]
+          },
+          {
+            "title": "Enterprise Cloud and AI Security Requires Attack-Path Analysis, Not Isolated Alerts",
+            "points": [
+              "1. Security teams typically face disconnected alerts from separate tools, making it impossible to understand which risks truly threaten the business versus which are noise.",
+              "2. Modern approach: use a unified 'security graph' to map how vulnerabilities, identities (user accounts), workloads (running services), data, and AI applications interconnect.",
+              "3. Prioritize by severity, exposure, and business impact—then use 'attack path analysis' to trace how an adversary could exploit connected weaknesses, not just individual flaws.",
+              "4. Assign remediation to the right teams and confirm each fix actually eliminates the risk before moving to the next priority."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Dario Amodei's essay on slowing AI progress",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.c3bwGki9gHo3r1zoMYsk5IdpVHBOYHFhTsBecfVFNOUcGJcN0YGZfjNDMTLahB3i7QT4cnYA2smVflCAW3ZoiY9-qKREgI0CBbaVHh98wzUrxfWHeDABeIMvrDxkjbZ6n09ANBD2C7GLoSp1ELZZBFPBLv914wfVisRmVd2ToBYHzim4IiEaYRPTcvLAIGaKsWaI5VbCyRrkYbXK03jgZ7imcUSGG_lfwQj-J0V0Hzwsy8oq-92mvC0NeYB71FTzZyj9qUhVgKe_hShSKHcI1w/4u1/utxadwLASMmen1JWRKPSyQ/h4/h001.GKe48B6v6W54pNpu5ZiF9sbggl35ZKvOd_cYxx3_X68"
+          },
+          {
+            "label": "Anthropic Threat Intelligence Report",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgHK-zFJ13XcSJ6ebXqThWGcDK60CfuQbblD0dX4X7ejmDqJcmrbic_8RpEffYjifcxrznqFXRT0rVd9_ybGneXW3idUR86cKqP9o28EFjMlvHYPIWC87w8m17jiFOrQ1zEY8j-TmoAhc4njIwGquZHhJ2KI9cpM6PFbotBVLtHST7k90LZisPgwLnAWNjEjKxNOXx9Nqq95fh5zqaWij1XT6Z979t03sdX9ZK-hWxC17GFgLawQzQrAHYe0y7qKoNlpbqn8h5mlh-cx19kxX8bY/4u1/utxadwLASMmen1JWRKPSyQ/h20/h001.YhrUUlayJngv4C2zexmpf9Kbnxv7Rn7IAZ3RyUg4zrg"
+          },
+          {
+            "label": "AWS guide to caching AI agent responses safely",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZjfK3To3aUCywjwu8AcLIq4W6bhW6zrkw_u8NGupcuPiN9OdhV2yPKeuvjzTdlPOiKBONLFAZLzF21oJvahSEP2BoYZ8xYuzCTjBIkE3r9-1PjbrQ1X1sBbiTKkN2Q09awEsPdSER43-630aLtFQOh4WKm8zZMDmuVxzAR0StySIvKjDHjmWD0skSQcstsj6b1J8cWfVFbkm40RTMzTACQcCTvCYgJt2MLbqgqcrwojqqWt0-tJwv8x_VXAXFKX4Dz74f7SLJ9JMx_DVNekfcVY0nIn6CJV2KQQE9MmBaBPbyOFCPgbDe5dpBfPCNQAG4uExZg1iNqmGHzwf0f8PA3YPnK7VMGqkiW03rkOtha-Je-foTPt56KoeDHTXIBrFXL8gua68G2MkRQ9utddiiQ/4u1/utxadwLASMmen1JWRKPSyQ/h11/h001.SpwSN8C0DGhg02bJ-ohYLBlhmbbqv2Dz8aDbAncmd9Q"
+          },
+          {
+            "label": "Wiz security risk identification and remediation guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgOCfgpSQiODr6NEnJGAuQx3SS-04ygtL-PqIPHPt2NckIk1CrCR4j0ZWPhd2EfbOombHVPb-ZXiyNSoZM7DBX7Dwhd7qF56kWBH89mpcLxxTTRIlqG55dyDZPdJGirxUl1FfnLX1hKMj4jBxniKG5mLfzh0wPzQHN_LGxLLJe6Kf__rco3LYFWumP3v4WV-hosrB4dLz8hGoY3KH6thgfr7Otg_uwmGz_jbM1Sge9f61uELIR5ns6ktQ3NOschWOgPAK-5K3KV-qNRif5iTv9qz51x7AgeH6_45c81T-FyoRZj-schJiS_-rujNaBUhNAQ/4u1/utxadwLASMmen1JWRKPSyQ/h16/h001.q7QM8h-BUUk-lUIABIU-7wjKdLDoV_bYB7EPsmrxOhc"
+          },
+          {
+            "label": "OpenAI's ChatGPT Sites platform updates and GPT-6 Astra developer guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tDG4kOIQMSrWhuXjTmlYNfa5rSutkhahyhfoExhF1VVb4Xg7Wr2MR0Vr2WKCrzWPQ8C8l6mXttSUXLvhvUG9QCesxJa-7UpdomqyqgyEsbZNjO54ZOPpfYahx2ow6Q-_wo4A96QZ-uUejgDD5r36YwCV0s4Hmknf1DbLuQp70EaTBJ9hV3jG7F7NmjP3cIe7A0h-6uxZ7_xFTKqYbIHo7gLbaWaQctzREqNjnvAoHukFQ/4u1/utxadwLASMmen1JWRKPSyQ/h9/h001.QYVbVfcuGzWJ-5E9K_SkqIKadYnafcnCg5KdzsTCqt0"
+          }
+        ]
+      }
+    }
+  ]
+}
