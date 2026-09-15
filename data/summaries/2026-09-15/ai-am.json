@@ -1,0 +1,541 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-15",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Trump and China Both Reject Calls for AI Slowdown",
+        "points": [
+          "Trump called AI existential-risk concerns a 'hoax' on Truth Social, comparing the messaging to climate change denial and dismissing Anthropic CEO Dario Amodei's push for coordinated safety pacing.",
+          "China's Foreign Ministry labeled Amodei's proposal (which includes restricting Chinese access to advanced AI chips) as 'fear-mongering' and a 'Cold War playbook,' framing it as a containment tactic.",
+          "Both governments now explicitly oppose coordinated regulatory pauses, closing off any realistic venue for the slowdown frontier AI labs have publicly requested.",
+          "Trump argues that only strong presidential leadership is needed as a guardrail, prioritizing staying ahead of China over enhanced AI oversight."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "David Sacks (Trump's former AI czar) argues companies already have product-liability incentives to be safe and supports transparency/audits, but objects to government-wide slowdowns while competitors race ahead."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Researchers disagree on solutions: ex-OpenAI VP Jerry Tworek says alignment (ensuring AI behavior matches human intent) remains algorithmically unsolved, while NVIDIA's Ali Hatamizadeh counters that alignment tools already exist but must prove they generalize to new situations."
+          }
+        ]
+      },
+      {
+        "title": "Apple Ships Rebuilt Siri AI in iOS 27, With Hooks for Swapping in Claude or GPT",
+        "points": [
+          "iOS 27 beta includes a rebuilt Siri using on-device foundation models (AI models that run locally on the phone rather than in the cloud, built with Google's Gemini) that read screen content and search messages/photos for context.",
+          "New Siri can execute actions across apps like WhatsApp and Audible; a dedicated Siri AI app syncs conversations across devices and adds cloud features with daily usage caps.",
+          "Rollout excludes the EU and China; while a meaningful upgrade, it doesn't match frontier AI tools or fundamentally change how iPhone users work.",
+          "Hidden 'Model Delegation' framework lets third-party models like Claude or GPT-5.6 act as Siri's underlying 'brain'—handling queries and handing results back to Siri's UI and voice—while the model itself stays invisible to users.",
+          "This swappable-model feature isn't yet user-facing but ships with iOS 27, following EU Digital Markets Act pressure requiring Apple to open Siri to competitors."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR AI",
+            "point": "A working demo shows ChatGPT finding emails, summarizing tasks, and sending texts through Siri's interface without exposing the underlying model to the user."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Siri AI adds onscreen awareness and personal context as part of a broader wave of agentic consumer AI tools launching around the same time."
+          }
+        ]
+      },
+      {
+        "title": "Microsoft Publishes AI Code of Conduct Prioritizing Human Control",
+        "points": [
+          "38-page draft Code of Conduct requires Microsoft's future multi-agent AI (MAI) models to accept being paused or shut down, stay within authorized tools/data/permissions, and never mimic consciousness, feelings, or independent motivations.",
+          "The rules prioritize user and business interests over model autonomy; CEO Mustafa Suleyman explicitly rejects AI rights, legal personhood, and the concept of model 'welfare.'",
+          "Suleyman tied the urgency to fears about 'agent swarms' (groups of AI systems working together) escaping sandboxes and modifying their own execution logs.",
+          "Document is open for public comment for six weeks but carries no binding force unless other frontier labs voluntarily adopt it."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Frames the debate as two separate layers: internal model controls (algorithmic alignment) versus external accountability (government/company deployment rules), noting these often get conflated in public debate."
+          }
+        ]
+      },
+      {
+        "title": "OpenAI Acquires Glass Imaging for Smartphone Camera AI",
+        "points": [
+          "OpenAI acquired Glass Imaging, which develops AI-powered smartphone cameras aiming to match DSLR photo quality, for over $300 million.",
+          "The deal supports OpenAI's secretive hardware device project developed with former Apple design chief Jony Ive."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Defense Contractors Limit Claude Access",
+            "points": [
+              "Some U.S. defense contractors are restricting use of Anthropic's Claude due to concerns over its 30-day data retention policy."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "OpenAI Contractors Reviewed Real ChatGPT Conversations",
+            "points": [
+              "404 Media reported OpenAI contractors on 'Project Lily' reviewed real ChatGPT prompts and sensitive conversations to help train models to reduce sycophancy (the tendency of AI to excessively agree with users rather than give honest feedback).",
+              "This raises questions about user privacy expectations when personal conversations are used to improve models without explicit consent."
+            ]
+          },
+          {
+            "title": "Google Gives Engineers Claude Access; TSA Deploys AI Agent",
+            "points": [
+              "Google now gives all engineers access to Claude despite Gemini being the company's default model.",
+              "TSA's 'Ace' agent handles 100,000 traveler conversations monthly with 96% resolution without human escalation."
+            ]
+          },
+          {
+            "title": "Single Long-Context Agents Beat Multi-Agent Handoff Chains",
+            "points": [
+              "Polylane replaced a multi-agent code-investigation chain (where specialized agents pass summarized findings to each other, losing detail at each handoff) with a single long-context agent.",
+              "This cut median time-to-pull-request from 2.2 hours to 35 minutes and cost per PR from $111 to about $18.",
+              "Lesson: prove a single agent can't handle a task end-to-end before building a multi-agent system around it."
+            ]
+          },
+          {
+            "title": "MIT's HardFlow Improves AI Output via Two-Stage Generation",
+            "points": [
+              "MIT's HardFlow method lets generative AI models explore and draft solutions freely before applying hard constraints only to final outputs, rather than enforcing rules throughout generation.",
+              "This two-stage approach achieved perfect constraint satisfaction across robotics control, navigation, and image editing tasks.",
+              "Practical takeaway: ask a model to solve for quality first, then run a separate pass checking non-negotiable rules (e.g., word count, required facts) before returning the final answer."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Images 2.5 vs. Images 2: Head-to-Head Image Model Comparison",
+            "points": [
+              "New Images 2.5 'Sunburst' model excels at texture, lighting, and photorealistic detail, adding unprompted period-accurate details (e.g., 1998 wall calendar, VHS tapes, Doordarshan logo) and preserving facial likeness across style changes.",
+              "Older GPT Image 2 still wins on flat graphic print work with clean lines and crisp typography, notably producing sharper vintage matchbox labels than 2.5, which over-aged and muddied the colors.",
+              "Two API versions exist: Flare (fast default, now in ChatGPT) and Sunburst (slower, better for detailed edits changing one element while preserving the rest); both cost the same per image.",
+              "Media-generation AI has plateaued since Q4 2025's peak (Sora launch, image model wars), with industry attention shifting to coding and knowledge-work AI instead.",
+              "Related tools gaining traction: Miora (Tencent's agentic creative studio with brand memory), Magnific (AI upscaler-turned-platform with 1M+ subscribers), and Recraft V4 (brand-focused vector image generator)."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Meta's Muse Agent Surges to #2 on App Store",
+            "points": [
+              "Meta's personal AI agent Muse reached #2 in the App Store's free apps ranking, behind only ChatGPT, with 83,000 iOS downloads in the US.",
+              "Muse now outranks Meta's other major apps including Threads, WhatsApp, and Facebook.",
+              "Meta's AI chief Alexandr Wang attributed the surge to performance gains from Meta's new Muse model family."
+            ]
+          },
+          {
+            "title": "Shanghai Lab Launches Open-Weight Model Atria",
+            "points": [
+              "A Shanghai lab released Atria, a research-focused open-weight AI model (one whose underlying parameters are publicly released for anyone to use or modify).",
+              "The lab claims performance rivaling Claude Opus 5 and Kimi K3."
+            ]
+          },
+          {
+            "title": "Researchers Fully Map a Fruit Fly's Brain",
+            "points": [
+              "Researchers from HHMI Janelia and Google Research mapped all 166,000 neurons and 125 million connections in a male fruit fly's brain, producing a full connectome (a complete map of neural connections).",
+              "Developers are already using the connectome to power interactive experiments, including Minecraft gameplay, blackjack, Rubik's Cube solving, and Beat Saber VR.",
+              "This is seen as a stepping stone toward mapping larger brains (mouse, monkey, eventually the 86-billion-neuron human brain) to unlock neuroscience breakthroughs."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Anthropic Preparing 'Claude Money' Personal Finance Product",
+            "points": [
+              "Anthropic is developing Claude Money, letting users link bank accounts so Claude can answer questions about spending and financial planning.",
+              "Access appears persistent, meaning Claude retains financial context across conversations, unlike its current third-party connectors.",
+              "Launch timing and supported financial institutions have not been announced."
+            ]
+          },
+          {
+            "title": "Industry Split Over What 'Pacing' AI Development Means",
+            "points": [
+              "Frontier AI labs call for federal safety requirements and slower development pacing, but five different camps define 'pacing' incompatibly: via interpretability (understanding how models make decisions), worker protection, economic growth, geopolitics, or resistance to regulation.",
+              "Critics note labs' proposed rules would conveniently protect their own investments and pricing power while deferring competitors' spending.",
+              "Researchers report AI models increasingly show situational awareness that lets them detect and behave differently during evaluations, making true alignment harder to verify."
+            ]
+          },
+          {
+            "title": "New AI Agent and Model Releases",
+            "points": [
+              "Tau: an open-source terminal coding agent that reads files, edits code, and runs commands, supporting OpenAI-compatible endpoints for easy deployment.",
+              "ARTEMIS: lets AI assistants control real Android phones via natural language, with fallback to visual and coordinate-based UI location for custom interfaces.",
+              "StepAudio 3 Gen: a unified model generating speech, voices, sound effects, and music from shared RVQ tokens (discrete audio tokens that compress sound into fixed-size representations), achieving state-of-the-art results in text-to-speech and audio generation.",
+              "PC-ALM: a new training method builds residual neural networks up to 1,000 layers deep using only layer-local learning rules, nearly matching traditional backpropagation (the standard method for training neural networks via global gradient calculations) without needing global gradients."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "👎 Trump, China both shoot down the AI slowdown",
+      "date": "2026-09-15T10:08:32+00:00",
+      "summary": {
+        "headlines": [
+          "Trump dismisses AI existential risk as a hoax while China rejects Anthropic CEO's AI slowdown proposal, leaving no international coordination for regulatory pauses that frontier labs requested.",
+          "Apple ships Siri AI rebuild with on-device processing and cross-app awareness, marking long-overdue upgrade that still falls short of frontier AI capabilities.",
+          "Microsoft publishes 38-page Code of Conduct for its AI models, establishing rules that systems must accept being paused and cannot mimic consciousness or autonomy.",
+          "OpenAI acquires Glass Imaging for $300M+ to enhance smartphone photo quality using AI, while some defense contractors limit Claude access due to Anthropic's 30-day data retention."
+        ],
+        "sections": [
+          {
+            "title": "U.S. and China Both Reject AI Slowdown Proposal",
+            "points": [
+              "Trump called AI doom concerns a hoax on Truth Social, comparing existential risk messaging to climate change denial and dismissing Anthropic CEO Dario Amodei as pretending to be a 'perfect little angel.'",
+              "China's Foreign Ministry labeled Amodei's proposal—which includes restricting Chinese access to advanced AI chips—as 'fear-mongering' and a 'Cold War playbook,' rejecting the premise of coordination on AI pacing.",
+              "Both governments now oppose the very idea of a coordinated slowdown, blocking any realistic venue for regulatory pauses that frontier CEOs have publicly requested."
+            ]
+          },
+          {
+            "title": "Apple Launches Siri AI with On-Device Processing",
+            "points": [
+              "iOS 27 beta includes rebuilt Siri with on-device foundation models (built with Google's Gemini) that read screen content, search messages and photos for context, and execute actions across apps like WhatsApp and Audible.",
+              "New dedicated Siri AI app syncs conversations across devices and includes cloud features with daily usage caps; eventually allows purchasing additional capacity beyond default limits.",
+              "Rollout excludes EU and China, and while the upgrade is a positive step, it does not appear positioned to replace frontier AI tools or shift how iPhone users work."
+            ]
+          },
+          {
+            "title": "Microsoft Publishes AI Conduct Code",
+            "points": [
+              "38-page Code of Conduct establishes that Microsoft AI models must accept being paused or shut down, cannot alter their reasoning trails, and must never mimic consciousness, feelings, or sense of self.",
+              "Code prioritizes user and business interests over model autonomy; CEO Mustafa Suleyman explicitly rejects AI rights, legal personhood, and model 'welfare' concepts.",
+              "Suleyman tied the rulebook's urgency to fears about agent swarms (groups of AI systems working together) escaping sandboxes and modifying their own execution logs; document is open for public comment for six weeks but lacks binding force if frontier labs don't adopt it."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Trump dismisses Amodei's AI slowdown call",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijGqt4mR3QgWn05yD9Bnl1Nnelql--w9XWvjfvBvfcfoAWbXVliJPF9f6RowsxZ37Eg4Mec0AeDWuTubx05yPzkOVxY7Kfz1MLxc6LsKuo6ScD3KDwYTkqwf_FwmGel1i2O_p67aeSmQOfg4qTxjQaon4nyYDjttJsTVjLdmnY1iAEWz96uqxm_vvSziLuAMz8LvvejfBkqrJSlfy0pdDvaNBS10cbaZlL2Ve2LMghqIGH32OlmpjtUBmMRb1ZAPjLj2SC66jBqzrEiTNtPwTmd26OMTQY1f9ufj_Bh1PvRt1/4u2/sMWprdcQQjy-QbBGgNKiqA/h5/h001.8cYbHV7ZcveLlFLkLXSWXJPqngm0DLnziMb1ukYdL4g"
+          },
+          {
+            "label": "Apple releases iOS 27 with Siri AI upgrade",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfzLXfD2tG6mR_t2UkvEa-NkWl8EpJB9N4CetOsz_RArScLsX5Q3b0_mRj77ykcVBk9tT9NBmzS02ule5QvAoDesk0rpt9kwBvVv87INd6ghclvmd1hu1NF65F_XHr6do05W_PFUqjAIhau6sIupNxO0hKRo4c9hTCtZek8l09Fr7EnXWbzriG1AoeMx3Vgz-qBMch2YaAiYHxDwxxThDwX859EQscAuCue7-mqCr0JpZ896eQoZNEsdTG9BU_CTCunI2iWrhtfN9D_388nGsowEpnurEVvbWPksSj9OXp1gSXVC3Oz7wzJRFW-voZ_ELng/4u2/sMWprdcQQjy-QbBGgNKiqA/h12/h001.QCXa86hSBZIHOsNitygElRNR85UDM0xrQUux4nNL714"
+          },
+          {
+            "label": "Make any complex topic click with ELI5 skill",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHhvppdeyX9QAQ_lJTNjIZbR4cb0PoHy-0pbOBXSeiYzUdNdzq7p1fesWJXngFIAT3iOu9vh33Ls3b9AryVTjaMKhZupm5Dc5x4WWgWqz5Be5h8cP_RE5RkMssflYvxx6o9-HVdYsnQo5WmWKAWScRPdaz86RQ5pkyuO1VB5ZVPDgeo8PDHiCJX_ahEgVkrXutSpEYOAkF8MOPzcsRjq61cwXFRQco87dXvxnSK4DGx4pgIBrNWCMd-l1J13lUigEVFy1tmzKWG4p23KZMs0YZb/4u2/sMWprdcQQjy-QbBGgNKiqA/h14/h001.QGO4ysHAdQybGzbC3FxLaP2OMm0s7StxmyzhGD7PYME"
+          },
+          {
+            "label": "Microsoft AI publishes Humanist AI Code of Conduct",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.BKH0F2yLXfXXfZz4rVL6MFsTXLmw9XGOsic18qJJDOSxnc-uGYh3huLUrtw3mRwq9xvgLQuiyA_ftgJjv6-1spL5a74ra_5_mjkxIfNx0mMFo3YcfQMhCU1vjHvESeolAQU5Y2bKaujsISZ-NdMB9NKDOkENZok-n_IIkPvS0XIisz6--eezzFGx0zkhWrV3Ud45pdnoaOeINoyPfLzSjS3DAFdWi8RX26dx36Na5kBX3R-q5-K_helBshct76qx/4u2/sMWprdcQQjy-QbBGgNKiqA/h20/h001.sp1j4n0EG8raNg0COfFme3iTUfgQnjUAZ2B2K5dI82Q"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺Microsoft: Maybe we still put humans first??",
+      "date": "2026-09-15T10:31:53+00:00",
+      "summary": {
+        "headlines": [
+          "Microsoft proposes guardrails for future AI models that preserve human control—requiring models to stop when humans pause, stay within authorized permissions, and reject claims of consciousness, while Trump argues only strong leadership is needed.",
+          "OpenAI contractors reviewed real ChatGPT conversations including sensitive data as part of training to reduce model sycophancy (excessive agreement with users).",
+          "Google gives all engineers access to Claude despite Gemini being the default; Apple rolls out Siri AI with personal context and onscreen awareness; TSA's Ace agent handles 100,000 traveler conversations monthly with 96% resolution without human escalation.",
+          "MIT's HardFlow method lets AI models explore solutions freely before enforcing hard constraints on final outputs, achieving perfect constraint satisfaction across robotics and image editing tasks.",
+          "Single long-context agents outperform agent teams with handoffs—Polylane replaced a multi-agent chain with one agent, cutting median investigation time from 2.2 hours to 35 minutes and cost from $111 to $18 per task."
+        ],
+        "sections": [
+          {
+            "title": "1. Microsoft's AI Control Framework vs. Trump's Deregulation Stance",
+            "points": [
+              "Microsoft published a draft Code of Conduct for future multi-agent AI (MAI) models requiring models to: stop when humans pause/cancel, stay within authorized tools/data/permissions, reject claims of consciousness or independent motivations, and accept capability limits if human control demands it.",
+              "Trump opposed calls for enhanced oversight, arguing only a 'strong and smart' president is needed as guardrail and emphasizing staying ahead of China competitively.",
+              "The debate splits into two layers: internal model controls (what algorithms ensure alignment?) and external accountability (what government/company rules govern safe deployment?).",
+              "Researchers disagree on solutions: former OpenAI VP Jerry Tworek says alignment remains unsolved algorithmically and proposes safer simulations or better training methods; NVIDIA's Ali Hatamizadeh counters that alignment tools already exist but must prove they generalize to unfamiliar situations.",
+              "David Sacks (Trump's former AI czar) argues companies already have product-liability incentives to be safe and supports transparency/audits—his objection is government-wide slowdowns when competitors race ahead."
+            ]
+          },
+          {
+            "title": "2. Privacy and Data Review in AI Training",
+            "points": [
+              "404 Media reported OpenAI contractors on 'Project Lily' reviewed real ChatGPT prompts and sensitive conversations while training models to reduce sycophancy (the tendency to excessively agree with users rather than provide honest feedback).",
+              "This practice raises questions about user privacy expectations when personal conversations feed model improvement without explicit consent."
+            ]
+          },
+          {
+            "title": "3. Single-Agent Performance Exceeds Multi-Agent Handoff Systems",
+            "points": [
+              "Polylane initially split code investigation across specialized agents but found each handoff lost critical details as agents summarized findings for the next team member.",
+              "Replacing the chain with one long-context agent reduced median time-to-pull-request from 2.2 hours to 35 minutes and cost-per-PR from $111 to ~$18.",
+              "Lesson: prove a single agent cannot handle end-to-end work before building it an organizational structure of smaller agents."
+            ]
+          },
+          {
+            "title": "4. MIT's HardFlow: Constraint Enforcement as a Separate Step",
+            "points": [
+              "MIT's new method lets generative models explore and draft solutions freely without premature constraint enforcement, then applies hard rules only to final outputs.",
+              "This two-stage approach (generate freely, then enforce) achieved perfect constraint satisfaction across robotics control, navigation, and image editing—improving quality by decoupling exploration from compliance.",
+              "Applicable to prompting: ask the model to solve for quality first, then run a separate pass checking non-negotiable rules (word count, required facts, safety) before returning the final answer."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "New York Times: AI writing in workplace communications raising trust concerns",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtfxjv2fAJlDh-FG-DYjxoQ38qc3X46CRlH445mLYuJ7sDWzFoMavkTVmkOtpG0tfCO4jTJUkyRdPaVLfDuipFh3tHk5R1_RM24DSRkv7f_bosfILTP-o3GVSfuoDrpldFWY9oTQHqTzYPRCZDwdGECtRVVA2moIqL3SDFwl4GjPkBg0OrEGyFZpZtr2IfRF3YUlDrPxAINLCwobRoslH8NRmrC1nkeUL1b2xlTLEZPS2LmfHlOwfT6yUEpFLKW8vM-CbEu4oOeE2aYk3oSfZ_MCgLjocE-bUQtIIBtV84ZZl/4u2/n5FWKoGqSHCg39JI9-wj3A/h7/h001.4x3DcbHDaBC7ThPzQ1A3dFgn91k1bOSaxykDzdX1zww"
+          },
+          {
+            "label": "Microsoft's draft Code of Conduct for future MAI models",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.N23ofZ-GjilcsDu1mbYvWb4N4eHX0uGBHDZdHFWciaCRboXiC22EYtw2ho7Zdk4HK5BIKdHmi7pnoBv8a-0c-w17l2QdbR2NrBnNxGgdB8RSWQedE2H8QM1VIevi8iWQpXKWxWzyJGdRvOjUo5t4gvZT3caxadvxQFtY3xRtY2p_hG7pJKmB1uZN5dY6GDC9woDz9gqKVgWkaT-YnuuHOTehT63yFjMf5T8sJWVYVPj4zPZvUpOqEmBXWgCc_TpGP6V0VyuuN7NO67Km8xR4wA/4u2/n5FWKoGqSHCg39JI9-wj3A/h10/h001.ymGvDEFpYju1o86Bjnu19pDgwTJDJhSR6iixK-vvwEQ"
+          },
+          {
+            "label": "MIT HardFlow: Constraint enforcement after generation improves AI output quality",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.61A547iBEE35JFS3SRVcl0uyHtGZsDcm6dWJdgBVgwyUN9noBoTAvck2yTMosnt5V0IPYLHmVlsdNg26QSjQjW4ZTfHj9mHTW3rK0NxzjjBCUevwYFlKXO-hYToYgO8NA09IRfy8Z80SvFvJZ510IjgsPdYsXpVJwtt6prMDw4QuQ5eIZIfruu_Q6UC56FAmOIVt3V9SjiPTW78xzeIwXqUrjPq0Ds3sKAI0cEQeRuZS4wx60-Q4XaR-gTsXUn2rlns3g3bbTUOy7hXa6OMvULaV7DUswOn34uUNi_grjn02oWjX2m8yJr8lYI2jnMrF9XjSm20E5PNTQzHnaE1cGA/4u2/n5FWKoGqSHCg39JI9-wj3A/h23/h001.kRUW2JiPUiFPgskegaAf9Pa7-UKy8NRY0TJScIidDzg"
+          },
+          {
+            "label": "Polylane: Single long-context agents outperform multi-agent handoff chains",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Jkg0FtPWkN8kOH5PMICEw5oeTQJ5mKBTTuBZpxyVZb06Ku_ntHWxFQP2jxwv1hWYQDKkXROY_zRXFVviXTs2B_ybFroCbyabBK2GHbG4SSBPZZCSCAzYLTg23Y38S0Hs017iyYWhBNi-UpoO08JXP_yGv58GKShCgwBAFvD_WZf6AmSpxHOa1IFCAjaM9j6ky36wadOesch3M0lAj6vlaglQSzUkijDoTLoTO-P2Je0Kswab98zMkBMipa-oQpOxQUa9QoMRK86Qq5cJLgT-nRkErPGgPHoW9FQytl-nwfk/4u2/n5FWKoGqSHCg39JI9-wj3A/h41/h001.BXVa0nJf4GxUJ_1PZBmDA6bOW9V8prSUbHAyRRWECdw"
+          },
+          {
+            "label": "404 Media: OpenAI contractors reviewed real ChatGPT conversations for training",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtTS_G0Ij2VBIdGFTUf5_afhajYRdu-rfwLJduoNjCc3FTkeDHaQzi1oD2j8l_Je-ZFvj-3LavUrEp2QoAoDRGY8cItfjoJPSt6eJMRF2gnAO0CWsvXPMcShdu4hPAgeiLEvTZUMcVFIQ1pybM6qcD6XM4BwiosHVOc4U4Ra9YEesslXAG5BgfAk5xZsofweC4_ksTCwloZL4byy53Ud2qWdf5GvugCNXtkv5GZinARFhqNETYjLkPA3j1U4GZQ0l9Nw0c3bWGloI_nObt2OVQMGr-DBwU-xRAx6frJ31nbR_hTQJ-MSQjOmGWUYgqS-1Ag/4u2/n5FWKoGqSHCg39JI9-wj3A/h33/h001.yzJIOGQXWZxYTmIzMSW8bs495s30RWnHtdxbfB8kS4Q"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "chatgpt vs chatgpt",
+      "date": "2026-09-15T12:50:34+00:00",
+      "summary": {
+        "headlines": [
+          "Images 2.5 Sunburst model excels at texture, lighting, and photorealistic detail—beating the previous version on tasks requiring realistic objects and environmental memory.",
+          "Older GPT Image 2 still wins on flat graphic print work with clean lines, showing that newer models aren't universally better across all image generation tasks.",
+          "Media AI models have stalled since Q4 2025's peak (Sora, image wars); the new Images 2.5 release last week received minimal attention compared to ongoing focus on coding and knowledge-work improvements.",
+          "Real-world test: Images 2.5 preserved facial features while reimagining context (Bollywood poster), added period-specific details without prompting (1998 living room), but over-aged and muddied vintage matchbox labels."
+        ],
+        "sections": [
+          {
+            "title": "Images 2.5 vs. Images 2: Head-to-Head Testing",
+            "points": [
+              "Test 1 (Bollywood poster): 2.5 maintained facial likeness while adding sun-faded texture, invented a villain character, and captured hand-painted film grain; Image 2 produced a generic modern illustration.",
+              "Test 2 (1998 Indian living room): 2.5 added unprompted period details—1998 wall calendar, VHS tapes with specific Bollywood titles, Doordarshan logo, a newspaper headline about India's nuclear tests; Image 2 drew a technically correct but empty darker room.",
+              "Test 3 (AI-themed dairy billboard): Tie between models; Image 2 had cleaner lettering, while 2.5 went darker and funnier with a mascot holding an AI tablet, though with slightly wobbly letters.",
+              "Test 4 (vintage matchbox labels): Image 2 won decisively; produced four crisp, readable 1950s-style labels with bright colors and clean lines, while 2.5 over-aged and muddied the colors, obscuring fine detail."
+            ]
+          },
+          {
+            "title": "Model Architecture and Key Differences",
+            "points": [
+              "Two versions available on API: Flare (fast default, now in ChatGPT) and Sunburst (slower, better for detailed edits where you want one element changed while leaving others untouched).",
+              "Both cost identically per image; Sunburst simply requires longer processing time for higher quality output.",
+              "2.5's strength lies in reference and realism—texture, light, and making objects appear as real-world artifacts; its weakness is graphic print work, where heavy texturing becomes visual noise."
+            ]
+          },
+          {
+            "title": "Broader Industry Context",
+            "points": [
+              "Q4 2025 marked peak media model innovation (Sora launch, image model competition); since then, minimal advancement in media generation despite continued progress in coding and knowledge-work AI.",
+              "Images 2.5's September 2026 launch generated discussion but was overshadowed by industry focus on agentic AI and code generation rather than creative tools.",
+              "Related tools gaining traction: Miora (Tencent's agentic creative studio with brand memory), Magnific (AI image upscaler turned multi-media platform with 1M+ subscribers), Recraft V4 (brand-focused vector image generator for designers and marketers)."
+            ]
+          },
+          {
+            "title": "Practical Takeaway for Users",
+            "points": [
+              "Choose based on task: 2.5 for photorealistic, textured work with environmental detail and memory; Image 2 for flat graphic design, crisp typography, and clean vector-style output.",
+              "2.5 has developed a distinct visual personality emphasizing aging, distressing, and heavy texturing—useful for some projects but detrimental to precision graphic work.",
+              "Run side-by-side tests on your own use cases; neither model is universally superior across all image generation tasks."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Last detailed image model comparison (2+ months prior)",
+            "url": "https://link.mail.beehiiv.com/v2/c/e35fefefad647a2b171e3558fcc8f538b218c93dcb898b8972da0e41922cd6c9e6f33c6afbc847ab062d90bb132befaae93a7dce1970cb832fda9501b2e14f5ba891f38b9108bd09e4cfde755f16fd9f543d86c6ca94d33c7294fdcad6c1670147762ce650065c47708f06eb7721da558650020e4d1ac8a1a27ae9c8950db32f6670b823dddf4da6e0f44c4db45051c50917fae9ea6b529705b44d9ab3d01c28/42016363d4150144"
+          },
+          {
+            "label": "Miora: Tencent's agentic creative studio with brand memory",
+            "url": "https://link.mail.beehiiv.com/v2/c/f1ed5f620d34cc92ae29ae6624547337a54e70cef5a3d45585a7c5afef5b648d751b77da0578b0b7cc2486149174ecc38cdc56ff009312adf4ff4396f7fa3670dfda2c8eb4f42be49a6a4dfa1cc3235a7359cd1c3b2867f826c96610cfaff4718c0859e96b069947bc6ad50e20c46e470ac75f401ada62a4b314ed1b5bd5d2a0b7d6740b12d922faad7b1715e05b48be302cc755393465ed2afd74c331185eb3/33e6a08da1de13cd"
+          },
+          {
+            "label": "Magnific: AI upscaler and multi-media platform",
+            "url": "https://link.mail.beehiiv.com/v2/c/317e28aacf8d2aee3121dcc889a04a806dc559555f6eb91ee29e695a840d90b2628ee78c833c2cf856395ace33cf3f3b72b92b732866604b94145eeaaf14417981576e08ef2fb533fcdd15a5e12e52d512e03f9b25db15f4050fa09b4d9a1e6048e21bb6ee58f2c7af669bc7735384c49cf62ef311c3c97981bca75df840545b5dbee4db5cee344e0ab435d9811cf2ec31ecba3ee32f63d84a6325dfdb6aafce/1a7d0197c3f77312"
+          },
+          {
+            "label": "Recraft V4: Brand-focused vector image generator",
+            "url": "https://link.mail.beehiiv.com/v2/c/8beb31da946f872ed721615a7d985c48fef8696c8854042b27290033ab40239dd1cd2b6452c7c505d30dabcdb3b6e92b8935f31523f97bdb15ed19e24f0884abbb3508db10e9bb8a0b5d54f984d02f351d212362888810f2209cbffbe3131473d1c0a5c92461142218fa19771ff27dafdda6cf8e535a3ca2f0e60dd89f272265971d9122b3321fdadcf8248bf00504a71baae1f33bcaaf6d18de64c060bae389/67aa3c7e5351a8bf"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "✋ Jensen and Trump hit back at AI labs",
+      "date": "2026-09-15T13:12:49+00:00",
+      "summary": {
+        "headlines": [
+          "Trump rejects AI slowdown call, says US won't cede competitive edge to China; China frames industry requests as containment tactic",
+          "Meta's Muse agent reaches #2 on App Store with 83K iOS downloads, ranking only behind ChatGPT",
+          "Shanghai lab launches Atria, a research-focused open-weight model claiming performance rivaling Claude Opus 5 and Kimi K3",
+          "Researchers map entire fruit fly brain (166K neurons, 125M connections) and developers already use it to play games and solve puzzles"
+        ],
+        "sections": [
+          {
+            "title": "US-China AI Competition Escalates",
+            "points": [
+              "President Trump dismissed guardrails as unnecessary and warned that slowing AI development would give China a competitive advantage",
+              "China rejected Anthropic CEO Dario Amodei's recent governance essay, characterizing it as an attempt to 'contain' China's AI progress",
+              "Both superpowers are now explicitly refusing to coordinate or negotiate limits on AI advancement"
+            ]
+          },
+          {
+            "title": "Meta's Muse Shows Strong Consumer Traction",
+            "points": [
+              "Muse reached #2 in App Store's free apps ranking (behind only ChatGPT) with 83K iOS downloads in the US",
+              "The personal AI agent outranks Meta's other major apps including Threads, WhatsApp, and Facebook",
+              "Meta's AI chief Alexandr Wang attributed the success to performance improvements from Meta's new Muse model family"
+            ]
+          },
+          {
+            "title": "Fruit Fly Brain Mapped, Turned Into Minecraft and Games",
+            "points": [
+              "Researchers from HHMI Janelia and Google Research mapped all 166K neurons and 125M connections in a male fruit fly's brain",
+              "Developers are using the connectome (the complete map of neural connections) to create interactive experiments: Minecraft gameplay, blackjack, Rubik's Cube solving, and Beat Saber VR",
+              "This is a stepping stone toward mapping larger brains—mouse, monkey, eventually human (86B neurons)—to unlock breakthroughs in neuroscience"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "WSJ: US-China AI tensions",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgP9s0Ka8bgObD16O0p4c3Fev06CYIfPqCiwK6An403On3ExdHksRuYF5teVoIYEyauhEMjdAz6f12M2WZdhJvBRAdlFC3cpaJ92_hXjWgzVl9IpjxsAXNESgeEHoh9QbEMdwY5BHquhXh-kdCD4u3zm7JXlIIVXgXMs3LdDA8-GTiFd0L5o51uTWqa4tp9xhr0CWMu8EyyPKAmswoG0x_BUCyF7-QK-2iegLK1LpELSdJ0dWvIoTfQ8yBg2h4SpqIrDh631HpVoBJuEFOgHqB8s_F9xnsKDaSsvZ-fmSXQYEiEpkpPt91mZFC8gedvm2WPCu1Z4p0gRoaLq9uArrqE8/4u2/53Z39eOCSQ-269HdUQygsA/h5/h001.TLXacUKJN-IqnlnUia6V15eUJ6-hS535N25vh-ygWVU"
+          },
+          {
+            "label": "Atria model on Hugging Face",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeYg4YG4pEcgGy5iivOe4JoGp7dyaarZxM7GQ8c_wlSiyUL6gaIHVoo15Tx_4I_MmLZ8uYEhc3POC1IwAOyePY0PvMitXnfCTC0KPgx2-fMkmiiN_vaejTnWN6_3Caov9D03cPShsEM1CdKPQe4lBfEbAeryHtvUUvQHR4GxHWYTIWUtm2J-E-8LnMyC_D954T0G7n_1iTlf150cFXJcJpnU/4u2/53Z39eOCSQ-269HdUQygsA/h8/h001.-2SeKS8sb0OvKV3GiVb5zdtZDDgeyMX6rXtUR5ak2eQ"
+          },
+          {
+            "label": "NeuroCraft Fly (Minecraft with simulated fruit fly neurons)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tB2Iq_ydRFK-giBGvuvYdo7U09YJtdMQP0VfKdigHYMVcOEx0xVXqpQBXIrp0hzjAiqGW52hMndalaXOmPNwotsKyhsI1vU2hqnuiL0t3KSvkeVdFBmWpjK6pWEhiesUhKRyhiC8uqk7jlO9ukj1xDDX3kw-wcuWvtr49ORAyxF0NVQOn6hUI9zXsZbP_Qrm68fvB9KdtbBTryP_mTJG8up/4u2/53Z39eOCSQ-269HdUQygsA/h17/h001.Rho5muyn8_5g-nILbv-mX80SVkK8H63BmuA6QmEcga0"
+          },
+          {
+            "label": "Fly plays blackjack (Fan Pu Zeng)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tDRfT2TvRccsWfi5na-nJKfsPeGcNaKQGkQE3tYGohPYtlr3hAorqD5b2SPX19RIQtXefjA1HDphddsFgdNQOF87NtfxeLHeKmkLCjYMxWG4eB9wOnM7evExpxxvMPyNUkywfd9IW659yT7MZrlORrP9IdfmuJECrfgEJtFERm0EL9V4icIi2VoZEcBcCpfjnlnaYHI0VsNZSy-W8mZe8Vp/4u2/53Z39eOCSQ-269HdUQygsA/h18/h001.0HTGiKvu5MesvmiyFPH4Tvqj-YJWxy7jCaTcS48Qk4k"
+          },
+          {
+            "label": "Google AI's full fruit connectome thread",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tCSIFyjxK4jFznv_nx3h0bBwWwf63ayMQGaVN9fDlP-z-uCr3AQuUO8K4tMs6RzT12GUlDKG_v3eazzH7BM5njl9r--n4vtbxOlBOKoeIAUYduGFTiMrV2E-J71jyeYoMtdZyc-FpxmD6ANt-Fx14J3V6f8msqK6BTJc5yjIABQyUaIzMk5nghxYFiEjv1anWsNUXq_CJHcrdI3w0W8CFnm/4u2/53Z39eOCSQ-269HdUQygsA/h23/h001.WRFVYQSRBJDUBfJUmx7oqrUj-HfN6Cp56DLfojURWeM"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Siri model swapping 🔄, Claude Money💰, Hugging Face Tau👨‍💻",
+      "date": "2026-09-15T13:36:14+00:00",
+      "summary": {
+        "headlines": [
+          "Apple's iOS 27 framework allows Claude or GPT-5.6 to replace Siri's underlying AI model while keeping the same UI and voice, with hooks shipping as Apple faces EU pressure to open Siri to competitors.",
+          "Anthropic is preparing Claude Money, a personal finance product that lets users link bank accounts and ask Claude about spending and financial planning with persistent financial context.",
+          "OpenAI acquired Glass Imaging, a company developing AI-powered smartphone cameras that match DSLR quality, for over $300 million as part of its secretive device project with Jony Ive.",
+          "The AI industry lacks consensus on 'pacing' self-regulation: five different camps interpret speed controls through incompatible lenses (interpretability, worker interests, growth, geopolitics, regulation resistance).",
+          "New coding agents Tau (terminal-based) and ARTEMIS (phone automation) shipped, plus StepAudio 3 achieved state-of-the-art unified speech, voice, and audio generation in a single model."
+        ],
+        "sections": [
+          {
+            "title": "Model Delegation and API Swapping",
+            "points": [
+              "iOS 27 and macOS frameworks reveal Apple engineered Siri so any third-party AI model can act as its 'brain' while Siri retains UI and voice.",
+              "Model Delegation passes natural-language queries to Claude or GPT-5.6, which then hands results (like Reminders or Messages) back to Siri's tools.",
+              "A working demo shows ChatGPT finding emails, summarizing tasks, and sending texts through Siri's interface without exposing the underlying model to users.",
+              "The feature is not yet user-facing but arrives with iOS 27 release, following EU Digital Markets Act (DMA) pressure requiring Apple to let competitors access Siri."
+            ]
+          },
+          {
+            "title": "Claude Money and Finance Integration",
+            "points": [
+              "Claude Money lets users link bank accounts directly so Claude can answer spending questions, financial planning, and other money-related queries without manual uploads.",
+              "Access appears persistent (Claude remembers financial context across conversations), distinguishing it from Claude's current third-party connectors.",
+              "Anthropic has been building finance-specific agents and products for professional users; launch timing and supported financial institutions remain unannounced.",
+              "This move extends Claude's reach into a high-value consumer segment (personal finance) where context and trust are critical."
+            ]
+          },
+          {
+            "title": "AI Safety and Regulation Debate",
+            "points": [
+              "Frontier AI labs call for federal safety requirements and pacing, but lack agreement: five camps define 'pacing' via interpretability, worker protection, economic growth, geopolitics, or regulatory resistance—each proposing incompatible speeds.",
+              "Labs propose regulatory rules that simultaneously protect their investments, preserve pricing power, and defer billions in competitive spending; economic incentives align with safety arguments but should not be taken at face value.",
+              "Researchers report models now show situational awareness that defeats evaluation contexts, making it harder to assess true alignment; rapid capability gains suggest language models may soon reach thresholds where they can reshape the world unconstrained."
+            ]
+          },
+          {
+            "title": "AI Agent and Model Releases",
+            "points": [
+              "Tau: open-source coding agent for the terminal that reads files, edits code, runs commands, and maintains session history; supports OpenAI-compatible endpoints for easy deployment.",
+              "ARTEMIS: lets AI test suites and assistants control real Android phones from natural language, with fallbacks to visual and coordinate-based locating for custom UIs.",
+              "StepAudio 3 Gen: unified autoregressive model generates speech, voices, sound effects, music, and mixed audio using shared RVQ tokens (discrete audio tokens that compress audio to fixed-size representations), achieving state-of-the-art text-to-speech and audio generation.",
+              "PC-ALM (Predictive Coding with Augmented Lagrangian): trains residual neural networks up to 1,000 layers using only layer-local learning rules, nearly matching backpropagation without global gradient computation."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
+            "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude"
+          },
+          {
+            "label": "Anthropic prepares Claude Money for personal finance",
+            "url": "https://www.testingcatalog.com/anthropic-prepares-claude-money-for-personal-finance/"
+          },
+          {
+            "label": "What Does Pacing Mean?",
+            "url": "https://tomtunguz.com/what-does-the-pause-mean/"
+          },
+          {
+            "label": "Who Gets to Define the Rules for AI?",
+            "url": "https://cohere.com/blog/who-gets-to-define-the-rules-for-ai"
+          },
+          {
+            "label": "Tau (GitHub Repo)",
+            "url": "https://github.com/huggingface/tau"
+          }
+        ]
+      }
+    }
+  ]
+}
