@@ -1,0 +1,490 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-16",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Jev: New 'System One' AI model class that can't hallucinate",
+        "points": [
+          "Built by Diogo Almeida (ChatGPT co-creator) under TypeSafe/Jev, this model only selects from preset answer options instead of generating free text, eliminating hallucinations (false or fabricated outputs presented as fact) by design.",
+          "Priced at $42 per billion input tokens with free output — reported as 20-400x cheaper than comparable LLM (large language model) workflows and 238x cheaper than Claude Fable 5.1.",
+          "Responds in 70-500 milliseconds, roughly 20-200x faster than typical LLM workflows.",
+          "Trained with a technique called RLCD (Reinforcement Learning for Calibrated Decisions), giving it confidence scores that software can actually trust.",
+          "Intended for background decision-making inside software — fraud checks, ticket routing, record scoring — not conversation or general text generation; one report says it's currently code-only output.",
+          "Now in early access for developers; Almeida frames it as 'more like a database than a coworker,' suggesting it could become standard infrastructure inside apps rather than a chatbot competitor."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Cites Jevons paradox (the idea that making something cheaper increases total usage) as the reason this could spread widely if cost/speed claims hold up."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Frames Jev as the first entrant in a new 'System One Models' category, named for fast/structured (vs. deliberative) decision-making, achieving LLM-level accuracy at 100x speed."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Notes the current version is limited strictly to code-only output, restricting use to software/technical tasks for now."
+          }
+        ]
+      },
+      {
+        "title": "Periodic Labs' Neon model advances AI-driven scientific research",
+        "points": [
+          "Periodic Labs' 1-trillion-parameter model, Neon, outperforms GPT-6 Astra and Claude Fable 5.1 on the FrontierXRD scientific-analysis benchmark while costing less.",
+          "Trained via 'midtraining' plus reinforcement learning directly on laboratory data rather than general web text.",
+          "Already deployed in real labs analyzing superconductor and magnet research experiments.",
+          "Creates a closed loop where the AI proposes experiments, physical labs run them, and results feed back to train the next version of the model."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Frames this within a broader trend of specialized, non-frontier models (alongside Salesforce's Koa) built for narrow enterprise/scientific tasks rather than general use."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Highlights this establishes a new cost-performance efficiency frontier specifically for domain-tuned science models versus generic frontier LLMs."
+          }
+        ]
+      },
+      {
+        "title": "Google unveils Gemini 3.8 Live and Odyssey-3 world model",
+        "points": [
+          "Gemini 3.8 Live introduces voice models that can 'think while speaking,' aimed at real-time conversational applications; paired with 3.5 Transcribe for improved speech-to-text accuracy.",
+          "Odyssey-3 is a foundation 'world model' (an AI trained to understand physics, cause-and-effect, and dynamics of the real world) built as an autoregressive diffusion transformer (a neural network that generates sequences step-by-step).",
+          "Designed to let one unified system control robots, humanoids, vehicles, drones, and even video game agents by giving AI a learned understanding of physical dynamics and human behavior.",
+          "Positioned as a step toward general-purpose physical intelligence that adapts across multiple types of embodiment (robot bodies, vehicles, virtual agents)."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Salesforce's Koa: in-house reasoning model for CRM tasks",
+            "points": [
+              "Built on Nvidia's open Nemotron 3 Super model, adapted for business workflows using fully synthetic training data simulating customer interactions across 12+ industries (no real customer data used).",
+              "Made 3x fewer errors than top models on CRM tasks like updating deals and routing tickets, while matching or beating them on benchmarks.",
+              "Salesforce hosts Koa internally, keeping customer data inside its own systems rather than routing it to external model providers.",
+              "Positions Salesforce simultaneously as a customer, distributor, and competitor to frontier AI labs, while still offering bridges (e.g., 'Claudeforce') to external models for customers who want them."
+            ]
+          },
+          {
+            "title": "Chinese researchers' roadmap for recursive AI self-improvement",
+            "points": [
+              "30+ researchers from ByteDance, Tsinghua, and Shanghai AI Lab published a five-level roadmap for recursive self-improvement (AI automating its own R&D), from Level 1 (executing human-designed upgrades) to Level 5 (AI redesigns the entire improvement process itself).",
+              "Coding is seen as the clearest path to self-improvement since fixes can be tested instantly, while robotics, science, and medicine face slower feedback loops.",
+              "A meta-analysis of 491 papers found 75% of current work sits at Level 1-2 (basic optimization), with under 6% reaching Level 5 (full autonomy).",
+              "Unlike Western labs (OpenAI, Anthropic, Google), which treat autonomous AI R&D as a safety risk, the paper frames it as an engineering milestone worth pursuing."
+            ]
+          },
+          {
+            "title": "OpenRouter guide for cheaper AI agent models",
+            "points": [
+              "A practical guide shows how to plug cheaper model options into AI coding agents like Codex and Claude Code.",
+              "Aimed at cost-effective bulk variations and workflow experimentation rather than always using the most expensive frontier model."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "1,393 AI coding agents refactor a million-line codebase",
+            "points": [
+              "Nous Research deployed 1,393 'Fable' subagents to refactor (restructure code without changing its behavior) a one-million-line codebase in about 19 active hours for roughly $25,000.",
+              "Human review still caught regressions (new bugs breaking existing behavior), showing agents remain powerful tools rather than fully autonomous replacements.",
+              "Demonstrates agent swarms can coordinate at scale on long, complex engineering tasks, raising new questions about infrastructure and oversight costs at that volume."
+            ]
+          },
+          {
+            "title": "Musk vs. Zuckerberg on AI safety strategy",
+            "points": [
+              "Elon Musk proposed AI labs test each other's models — including U.S. and Chinese companies — as a practical alternative to a full development pause.",
+              "Mark Zuckerberg argued labs should slow down only when safety specifically requires it, framing trust and alignment as competitive product advantages rather than compliance burdens.",
+              "Reflects a broader industry split between coordinated international safety limits versus competition-driven safety incentives."
+            ]
+          },
+          {
+            "title": "Enterprise funding and robotics momentum",
+            "points": [
+              "OpenAI reportedly in early talks for funding at a $1.2 trillion valuation after annualized revenue topped $40 billion.",
+              "Profound raised $180 million at a $1.8 billion valuation, tripling revenue in 6 months and surpassing 1,000 enterprise customers.",
+              "Agility Robotics unveiled Digit 5, a 284-pound, 5'11\" humanoid that works beside humans without safety barriers, carries 50 pounds, and recharges in 9 minutes."
+            ]
+          },
+          {
+            "title": "How experts are thinking about AI judgment and productivity",
+            "points": [
+              "Box CEO Aaron Levie warned against 'slop grenades' — dumping cheap AI-generated output on coworkers, forcing them to spend saved time reviewing it instead; judgment, not generation, becomes the scarce resource.",
+              "Gergely Orosz examined how OpenAI's increasingly agentic engineering process is changing who writes and reviews code, finding humans stay involved but in different roles.",
+              "François Chollet argues intelligence should be measured by how efficiently experience converts into competence rather than by benchmark scores, estimating today's AI is roughly six orders of magnitude less efficient than humans by that measure.",
+              "Google survey found 74% of scientists saved an average 6.9 hours weekly using AI, but flagged verification of AI outputs and untested hypotheses as new workflow bottlenecks."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Anthropic eyes $2 trillion IPO amid scrutiny over profitability claims",
+            "points": [
+              "Anthropic is targeting a 2026 public listing at a $2 trillion valuation and projects $65 billion in annualized revenue this year.",
+              "Claims of two consecutive profitable quarters exclude training costs and shared revenue, raising questions about the sustainability of the profitability claim.",
+              "Company reportedly told investors it sees a $30 trillion total revenue opportunity, roughly 25% of current global GDP.",
+              "Rolling out a Salesforce plugin with 37 embedded sales skills, signaling a push into enterprise integration ahead of the planned IPO."
+            ]
+          },
+          {
+            "title": "AI safety debate: existential risk vs. innovation optimism",
+            "points": [
+              "Risk advocates (including a former Anthropic employee) argue AI labs are 'gambling with our lives,' warning that more capable systems could hack infrastructure or resist shutdown.",
+              "Skeptics counter that current LLMs are pattern-recognition software without sentience, and warn regulation could concentrate power among large incumbents while blocking open-source development.",
+              "Cited evidence includes an incidental hack of Hugging Face reportedly performed by OpenAI's own AI during development, suggesting unexpected capabilities already exist.",
+              "Both sides see the next 6-12 months as critical for establishing policy guardrails that balance safety and innovation."
+            ]
+          },
+          {
+            "title": "Persona: wearable AI band from Cal AI founder",
+            "points": [
+              "The founder of Cal AI launched Persona, a wearable AI band that learns user habits and responds via text.",
+              "Runs for 3 days on a single battery charge, marking an expansion of AI into physical wearable devices."
+            ]
+          },
+          {
+            "title": "Practical AI tool roundup",
+            "points": [
+              "Grok Bot can turn an inbox into an automated action list by connecting email and defining agent instructions to prioritize and schedule tasks.",
+              "Wistia's Remix auto-converts raw footage into polished video with motion graphics and brand-specific styling.",
+              "Sum Buddy and Proofrr offer AI spreadsheet formulas and creative-feedback management tools to address data cleaning and approval bottlenecks."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "AIUC launches third-party safety certification for AI agents",
+            "points": [
+              "AIUC (Artificial Intelligence Underwriting Company) launched an audit and certification layer to assess enterprise AI agent safety.",
+              "AI agents run the tests and analyze results, but humans verify the final audits to ensure independent oversight.",
+              "Aims to give enterprises visibility into which agents can be trusted before deployment, as autonomous agent use scales in production."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "⚡ ChatGPT co-creator launches new kind of AI model",
+      "date": "2026-09-16T10:07:34+00:00",
+      "summary": {
+        "headlines": [
+          "Ex-OpenAI researcher launches Jev, a new AI that answers preset questions inside software at $42 per billion tokens (238x cheaper than Claude) with 70-500ms response times and zero hallucinations by design.",
+          "Salesforce introduces Koa, an in-house reasoning model trained on synthetic data that made 3x fewer errors than top models on CRM tasks like updating deals and routing tickets.",
+          "Chinese researchers publish 'The Last AI Built by Humans,' a roadmap for recursive self-improvement (AI automating its own R&D) across five levels, treating it as a milestone rather than a safety risk.",
+          "Google debuts Gemini 3.8 Live with voice models that think while speaking, and Odyssey 3 world model coming soon for robotics, vehicles, and games.",
+          "OpenRouter guide shows how to add cheaper model options to AI agents like Codex and Claude Code for cost-effective bulk variations and workflows."
+        ],
+        "sections": [
+          {
+            "title": "1. TypeSafe's Jev: A New Class of AI",
+            "points": [
+              "Jev is built by Diogo Almeida (ChatGPT co-creator) and designed as a 'frontier-intelligence function call' that only chooses from pre-set options, eliminating hallucinations.",
+              "Pricing: $42 per billion input tokens with free output, claimed to be 238x cheaper than Claude Fable 5.1, with responses in 70-500 milliseconds (40-200x faster than LLMs).",
+              "Primary use case: Background decision-making in software (sorting requests, scoring records, screening AI outputs) rather than text generation or general conversation.",
+              "Almeida positions it as 'more like a database than a coworker'—if cost and speed hold up, it could become standard infrastructure inside applications (Jevons paradox: cheaper tools get used more)."
+            ]
+          },
+          {
+            "title": "2. Salesforce's Koa Reasoning Model",
+            "points": [
+              "Built on Nvidia's open Nemotron 3 Super model, adapted specifically for business workflows with fully synthetic training data simulating customer interactions across 12+ industries.",
+              "Performance: Matched or beat top models on CRM benchmarks while making 3x fewer errors on tasks like deal updates and ticket routing—all without using actual customer data.",
+              "Deployment: Salesforce hosts Koa internally, keeping customer requests inside its systems instead of sending them to external model providers.",
+              "Strategic move: Positions Salesforce as customer, distributor, and competitor to frontier AI labs, with Koa handling high-volume in-house reasoning while options like Claudeforce stay available as customer bridges to external labs."
+            ]
+          },
+          {
+            "title": "3. Chinese AI Research on Recursive Self-Improvement",
+            "points": [
+              "30+ researchers (ByteDance, Tsinghua, Shanghai AI Lab) published levels 1-5 of recursive self-improvement: Level 1 executes human-designed upgrades; Level 5 AI redesigns the entire improvement process itself.",
+              "Key finding: Coding has the clearest path to recursive self-improvement because fixes can be tested instantly; robotics, science, and medicine face slower feedback loops.",
+              "Meta-analysis of 491 papers shows 75% land at Level 1-2 (basic optimization), under 6% reach Level 5 (full autonomy in R&D).",
+              "Contrasts with Western labs (OpenAI, Anthropic, Google) that treat autonomous AI R&D as a safety risk—China frames it as an engineering milestone to pursue."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "TypeSafe's Jev launch details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.KT4rQsO6sHS_v2VASG2xunw2jikR4WnszrsM6wSRyBksxSnURt6m3jcbx6BGgjSsFeEutdzASAqA7C5nMq8sekm3WhsFfS2_2cjZxGVc-4mgyqrEbvknwRsxFmVUULG67hUJsZX4KWKfSwBenXUUlNZuvwCpFwsPn4A9vVu7Sn3hL75vHFFmaMlybtp6DD66HRoEtgzlA8gYTW1taYbBMFic8jvaG_VM2JDDD-ldUWvPZHtbpKLx2sOGe3z5q_NHAe0xftoZKyQzUe2jwKkLAg/4u3/s5nHrZWCR8WAElycjH1vCA/h6/h001.XSZ-CpEPtPSsg42iEC-1twJGsVTJvKImI_ZIyLDB1Uc"
+          },
+          {
+            "label": "Salesforce Koa reasoning model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf5P6mtDAYMcgbj-G7N56AOz1-V2hoY_NFEoeKEYYx2DOHYQ0_bpqixODAbwv-qKeSyGsWM4ZsYOpXVJueMV7DbiG3zlyXWeuKGa7kBga_ys_d52Eg0Y2_8zLiz8QCk38095xLW0GnY5fKn3N5BAaoFQ5cQRbXRddAd5Lint2baZ4sQAAQ4KU831YeTfqNL3PSPjtcXkN_tTmshXGTNLww9Y4ZJ6-qairL2k41yoL1sBg/4u3/s5nHrZWCR8WAElycjH1vCA/h12/h001.AaceHCOst8_gCcfBxXqtmBh2bV7X32e92eRHDrsCgn4"
+          },
+          {
+            "label": "OpenRouter 101: Add models to Codex and Claude Code",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJERhIkmi3bfm2hKA1gZEvUw-GIwRCgBuayLP1BmSgerCA9MnWwbs4kht8LqjGvmc2NQkHXP_f70vcXhMcmWSj_i-JLJQqnL5SPbwjj0eDl5KCqLLc8y822mRPX1DFbpvYHWe_PdA7IgWVM5xhQhrwRNQyTmgikzNdtYtd2OJQfhLQ00t60w-Kfz9-nMJ25ZfO_C-xjpZE_b1XEquvbaOV7YLJcZanV6qN9LYmS-Pd80HB3zG5AUpbOfWRjGa2o9o8l-geDwGMyKDsuVoK4Vrsyc/4u3/s5nHrZWCR8WAElycjH1vCA/h14/h001.U_JefRpcvUb5l-0zF-t97xaT03eej6pE1fWa591UR1I"
+          },
+          {
+            "label": "Chinese researchers' recursive self-improvement roadmap",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijN264nl48KqsGAKRnpm9WiFvGsaab6_lv_xn6H8RAilIKX7yWffIji0CIywQBcjv-pIYkhViK7s4ROW6sseitW1iUe5Zr6gi3nRToShEMwFwQUDEKtvpe1YFtXSYIKWj6zGXActdeGXO58GmUTpFi5P8X2j3EhK2fLhOy3cv_TDh5ffXBGZ60rK0nOowTfFD3HtCwFXoTGWWY2yf-Q1mWPo/4u3/s5nHrZWCR8WAElycjH1vCA/h20/h001.VBwChdKUwYOtsryaFdtvSd-H4dU4rqDuXHXtX9zocuY"
+          },
+          {
+            "label": "Ask the Community workflow hub",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHLd4VGP93AgxTtxHRzcjycYJJqMpNryYQFf1iA2DMcvL7Layzgu_0Tvo8NQUN66YxQqDwxaNvnhEVSgErNoo9cVuFI2X4_vPk86WmURvEd74dfG4Ucn5GLSffgYy0roW8r-lm5TtDHdURYRXjMImBDMbwdxxLpHRWL98Uf6-NFARtjWhKXq7ytbtAU3GVt_rAxYF9dsX6PxuQJa4Mf1t480HZisgL-HP9adCb8Id6gHA/4u3/s5nHrZWCR8WAElycjH1vCA/h5/h001.UGT3vYtJ6Yy2HudrlEULlhJFjxaJzmDJxFhZ6kIWPTY"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 $42 per BILLION tokens?!",
+      "date": "2026-09-16T10:31:56+00:00",
+      "summary": {
+        "headlines": [
+          "JEV, a new decision model from ChatGPT co-creator, costs $42 per billion tokens—20-400x cheaper than comparable LLM workflows—designed for high-volume structured decisions like fraud detection rather than text generation.",
+          "1,393 coding agents refactored a million-line codebase in 19 hours for $25K, showing swarms of specialized AI agents can handle massive engineering tasks at scale.",
+          "Musk and Zuckerberg diverged on AI safety: Musk proposed cross-company model testing including Chinese labs as a practical pause alternative, while Zuckerberg argued alignment becomes a competitive product advantage.",
+          "Agility Robotics unveiled Digit 5, a 284-pound humanoid that works alongside humans without safety barriers, carrying 50 pounds and recharging in 9 minutes.",
+          "Google's survey found 74% of scientists saved an average 6.9 hours weekly using AI, but verification and untested hypotheses emerged as new bottlenecks in the research workflow."
+        ],
+        "sections": [
+          {
+            "title": "JEV: A Specialist Decision Model, Not Another Chatbot",
+            "points": [
+              "TypeSafe's JEV skips text generation entirely, taking structured questions and returning typed answers with calibrated probabilities (confidence scores that software can trust).",
+              "Response time roughly 70-500 milliseconds, 20-200x faster than LLM workflows; cost advantage multiplies across millions of tiny decisions (fraud checks, alert escalation, record prioritization).",
+              "Trained with Reinforcement Learning for Calibrated Decisions (RLCD), designed so the model's confidence levels are actually useful to software, not just guess-and-hope.",
+              "Suggests the AI stack may split into specialists: language models for communication, coding models for implementation, decision models for judgment—rather than forcing one expensive chatbot to do everything."
+            ]
+          },
+          {
+            "title": "Coding Agents at Scale: 1,393 Models Refactored a Million Lines",
+            "points": [
+              "Nous Research deployed 1,393 Fable subagents to refactor (improve code structure while keeping functionality identical) a one-million-line codebase in roughly 19 active hours for ~$25K.",
+              "Human review still caught regressions (code breaking existing behavior), confirming AI agents remain useful tools rather than fully autonomous replacements; the combination worked where either alone might fail.",
+              "Demonstrates agents can coordinate at scale and execute complex, long-duration engineering tasks, opening questions about what software infrastructure and management costs become necessary at that volume."
+            ]
+          },
+          {
+            "title": "AI Safety Debate: Industry Coordination vs. Competitive Advantage",
+            "points": [
+              "Elon Musk proposed labs test one another's models, including across U.S. and Chinese companies, as a practical alternative to a universal pause on AI development.",
+              "Mark Zuckerberg countered that labs should slow when safety requires it, arguing trust and alignment will become product advantages rather than external compliance work.",
+              "Reflects broader tension: whether AI safety is best managed through industry coordination and international limits, or through competition where companies that prioritize safety gain market trust."
+            ]
+          },
+          {
+            "title": "Enterprise and Hardware Momentum",
+            "points": [
+              "OpenAI reportedly in early funding talks at $1.2T valuation after annualized revenue topped $40B; Profound raised $180M at $1.8B valuation with 3x revenue growth in 6 months and 1,000+ enterprise customers.",
+              "Agility Robotics' Digit 5 humanoid (284 pounds, 5'11\") works beside humans without safety barriers, carries 50 pounds, and recharges in 9 minutes—shifting robotics toward practical collaborative labor.",
+              "Periodic Labs connected its 1T-parameter Neon model directly to physical materials experiments, creating a loop where AI proposes work, labs run it, and results train the next round."
+            ]
+          },
+          {
+            "title": "What Experts Are Actually Thinking About Agents",
+            "points": [
+              "Aaron Levie (Box CEO) warned against 'slop grenades'—dumping cheap AI output on coworkers and making them spend the time saved reviewing it; as generation cost drops, judgment becomes the real scarce resource.",
+              "Gergely Orosz examined how OpenAI's increasingly agentic engineering process changes who writes code, who reviews it, and where humans stay in the loop (finding humans stay, but in different roles).",
+              "François Chollet argues intelligence is better measured by how efficiently experience turns into competence, not benchmark scores, and estimates today's AI remains roughly six orders of magnitude behind humans by that measure."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Vals AI's long-horizon Minecraft eval",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtbDyaAkpHq3Q1LBamkAPlTeM9giJO2v_iQihBA9e_aEwOzvbe7Kf_PycOW-uYOMvjcnCKfzmJIaq7ZrM_2CvZpMkx1WJxJkTkdn-AnWz_Y6Oz2kiua7fHjKNUtvGcEDnfqdumkRglJOEG7IUXNsMMVXbe3RPUldv_CW9uXPWMqJkpg7DDjNafBKj7aGVtw1qXEipuNEadcFCCwKzXwszwpk3170qSnen5ML_K3WdczeguGR_tC7n-XCXsdUZPQtMlppUHl90KoN29tA0zLPD-uvGN85rJGTyMseuo1Ezufd9oJikpgzDSiwEBPtGRZR4woUky-nMiOrfEaL4EUwe2fWfp2rbOSd_IC4N6vtRz5VLFlsY_JlV7ZNc80S1BdChkoTsDaxZkgdKLS0nPhgm6l3T88Vkd5YkZoMXT-W26GRJnFIDd2Puh8pcwMHN8Wx3RaLFey5JeKHmeNGlr1E20rEc4UBnYt6ywQCYH1Hm0sk1EJE15W9bbPLpO7Kdq6E3Ei0XWSnkNkf74RDX5WRtxc83mv4MshqA5x1Kks6j2s7ashhtFPEfW1_MCe94TEfWei2RxW2FQsL2eQji9swE2TAqt1ZEwvmPsB4bVVigObik1ydoRxF40RvzvtxcLdcy9bAzPj_7jBm4yqXcAI9h8oLp6Y8UFwAj-BCIDWfFrouZSMuWvWh3Os9yD0_VxmPhpn96HsPztPPK5UNn095eQvsKYr7f6NhYMy_R1O9q2oKbR8M7JtiB8-sCxjblcNHsJOcRQeeCagCb10IvZghi6YgZr5GzDzfDx_SlCO-eo9WD/4u3/2yYLKJEERRSuGF-WIAkUSA/h0/h001.8t8zLatY4wB0oU1l30czypI_Wb_ramG08oE8QjFJ_oE"
+          },
+          {
+            "label": "TypeSafe taking access requests for JEV",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737JvdsMFQJ6OXx3Xaf92rSKb_tkpGRdB6Q8iKA4tZc3LYBjr5rk6ccruPX9mrS9-3ZjbA5kBeF9LkgJramOvXRWgvEvhPXt5UuaOj-Ptm_vUYo6tcImfUuPesaNmQN5clNS-ZhvOGdm1As1vVFmX8egiEOI1zYyI5FmjvBfh1M6RdxVfIG5XCdhjqnT7t45XOE8pvCIkureEKTJXlgxzgtqLjQT4XwxKkGSsw3Re-QztMwUcuv7UiLxcHygBTebwP2-w/4u3/2yYLKJEERRSuGF-WIAkUSA/h15/h001.hedpYLo0D506KEwlBMO9pYwRAQHhrZf-ezpqMg3paT0"
+          },
+          {
+            "label": "Dario Amodei's 'We Must Pace the Frontier' on embedded evaluators",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.MebLiM_wk3YBoaLiOYF2Vq4LMsXPXpZXhC5GaDQGsVZqvipAlr_nzy13hld45vmN4yQZ2OoZ9noBR7df8JnlOPOmUS_VAhrNOt58NxqOwGibk3KI3P4-4Duy7GfIIcasHqxQmmcE-bzb4XXnJYteXr4GDTA9349qL3jTOyqV4o7nsFpmRfd5r2kHWC1LuXFUr-wEBc7J94wVH4LTJgZFf4biZXM3oGZ803DZW9Uy4-6YW37TUOVhiZKgIVMNvlK1LRrg6Ndw_snaFR5AR7zjri7u8KQd2K4rWPdOjqfAoV4/4u3/2yYLKJEERRSuGF-WIAkUSA/h42/h001.h_HjFIJ1wDyGJrhPLDPWkydZQUxiMDFWXy6cQdW0nVY"
+          },
+          {
+            "label": "Gergely Orosz on OpenAI's agentic engineering process",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.61A547iBEE35JFS3SRVcl0jiXbv2qtS9uBom6hqHorHjyRNostDKxBogfE3ZLEd_STW8U9EjmAvqL3FAct1ONJRhDHFbSVCzEQ6gZ9zPCBbWrvT4ewq01jmuXWK70w7dT3KYwzeoQBJwH9BgFvPKe-1VctEvo2U6YdtZPNZ_7aUDURft-Mnj1T-sRyDS/4u3/2yYLKJEERRSuGF-WIAkUSA/h45/h001.LF6r5Kv9ee0s_cRqGmlYZh4firOwfLt2L2gNth8wD0U"
+          },
+          {
+            "label": "Google's AI-in-science analysis on scientist productivity",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmBg1QCA1F9cAqGDdLjn_EhHqvBn4M-CR1yHCrJZQu3Dj17W38oiVNC6d-mSlZDe-sejvc8VdHv6HW5i2_kOj17feGJZWnmSchhAxU7xLLgWEbpJixDPtJPoKfTQkxF4a-PSmKlUkacq2tBbjAEdhOP-wMgySRnsAG3BJqqUwiuBSPg8wy5eWdrblfIFPdCoSds2dU6VJewF4fNIqhI0o_Fqlo7JcvdaMnaIBux_6CMyLUgIa1R-rIZ1rUyiLhXLtJAMSGHA_2Kldv8_uPZt-eJc/4u3/2yYLKJEERRSuGF-WIAkUSA/h35/h001.SnnRWOYpbBuFDPj8cGp0FU7LZLkc3OCvXaWU5dyu4NA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🤯 ChatGPT's co-inventor drops a model that can't hallucinate",
+      "date": "2026-09-16T13:15:40+00:00",
+      "summary": {
+        "headlines": [
+          "ChatGPT co-inventor unveils Jev, a new model class claiming 20-200x faster performance, 40-400x lower costs, and zero hallucinations using a novel RLCD training algorithm, though limited to code-only output.",
+          "Anthropic prepares for a $2 trillion IPO valuation in 2026 while claiming $65B annualized revenue, but profitability claims draw scrutiny for excluding training costs and shared revenue.",
+          "AI safety advocates warn of existential risks as models grow more capable, pointing to recent hacking incidents and arguing for slower advancement, while skeptics counter that regulation risks stifling beneficial innovation.",
+          "Cal AI founder launches Persona, a wearable AI band that learns user habits, responds via text, and runs 3 days on battery, marking expansion into physical AI devices."
+        ],
+        "sections": [
+          {
+            "title": "1. TypeSafe AI's Jev: A New Approach to AI Efficiency",
+            "points": [
+              "Diogo Almeida (ChatGPT co-inventor) launched Jev using RLCD training algorithm, claiming structural inefficiency in current LLMs (large language models—neural networks trained on vast text data).",
+              "Performance gains: 20-200x faster inference (response time), 40-400x cheaper operational costs compared to existing models.",
+              "Critical limitation: Jev is code-only and cannot generate natural language text, restricting its use cases to software development and technical tasks.",
+              "The model claims to eliminate hallucinations (false or fabricated outputs presented as fact), addressing a major weakness in current AI systems."
+            ]
+          },
+          {
+            "title": "2. Anthropic's IPO Trajectory and Financial Claims Under Scrutiny",
+            "points": [
+              "Company targets 2026 public listing at $2 trillion valuation and projects $65B in annualized revenue this year.",
+              "Reports claim two consecutive profitable quarters, but exclude training costs and shared revenue—raising questions about sustainability and true profitability.",
+              "Anthropic told investors it expects $30 trillion in total revenue opportunity, roughly 25% of current global GDP, indicating aggressive market expectations.",
+              "Rollout of Salesforce plugin with 37 embedded sales skills signals focus on enterprise integration ahead of IPO."
+            ]
+          },
+          {
+            "title": "3. The AI Safety Debate: Existential Risk vs. Innovation Optimism",
+            "points": [
+              "Terminator scenario advocates (led by former Anthropic employee Jacob Coxxon) argue AI labs are 'gambling with our lives,' citing risks that superintelligent systems could outcompete humans, hack critical infrastructure, or resist shutdown attempts.",
+              "Utopian scenario skeptics counter that LLMs remain pattern-recognition software without sentience, and regulation risks concentrating power among large incumbents while blocking open-source development.",
+              "Key evidence cited: OpenAI's incidental Hugging Face hack (unauthorized access during AI development) suggests current models already possess unexpected capabilities.",
+              "Consensus emerging that next 6-12 months are critical for establishing guardrails and policy frameworks that balance safety with competitive innovation."
+            ]
+          },
+          {
+            "title": "4. Practical AI Tools & Workflows",
+            "points": [
+              "Grok Bot enables users to transform inboxes into automated action lists: connect email, define agent instructions to prioritize tasks, and schedule routine processing.",
+              "Wistia's Remix converts raw footage to polished video with auto motion graphics and brand-specific styling—automating post-production workflows.",
+              "Sum Buddy and Proofrr provide AI spreadsheet formulas and creative feedback management, addressing data cleaning and approval bottlenecks in common workflows."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Jev Model Overview",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.cbTlTBbOm0oxrOJrFZNEqWWldxHRJpB7qWbC584Os9G9FnxbN96mSQU5f1hh95BG3OJyNApuflEhk8J9vPz-FLwKMB4aGfyPKZ5wI1gPEaU4zbRojXI1-y19jple6q_skUkiHzZYmBKR3JUAXx2kdqazuMliwftvpfqAhmztyUyUP_HxFxLWh0b_03YBH0EEYyrK5cZZ1VWGMlL-9ppU8H1qQvZu1T0SDFEYRzFTpnVcM3jD46LP2vVz81B3Yimx/4u3/lVNdB9fRSouOwfXArQo5iQ/h3/h001.7ku079qxHlOAmyJUasPfYcYhxuet4EY8jZCBFl5ny5A"
+          },
+          {
+            "label": "Persona AI Wearable Demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tBxeB7sAE_Svv6_3oyWx9MZcfJJc5Xakc35UZcaiwTdKiwILMc7GUm-FbKHBO4dSio491XrMZKetlyxaYLudos77jgD6kdv-MgWSSpFDS3ADOcaG-nJIxZiDmQt6O3Oy7p6FzR-iO52WPZnFu9ojD9NkFh19eWLJuR9819Q0LyN6N8Yz0UfSWukwytMMB2S1ReXWWnwqlmMMpCx8nKzC0F5l5V5XFkfT7Wp3gP63M2f8i03NrU_PFJhKgtXJwEWS28/4u3/lVNdB9fRSouOwfXArQo5iQ/h6/h001.K-h8h-SdAFbukcss2lqIeNCNHeQTk2rfhRTsvQjth-M"
+          },
+          {
+            "label": "Anthropic IPO & Financial Details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.h-kyy65arRVIYKVuZF4lqvpFhiePVfk7AP2mmYfXldKJK6UHZ2MuWuJ0xeljnqEnCdoXTra1_kcFxLNf4tot4gFMWcYySYllrpjq5vg8hVaP4KwnLTC-Am772Tu6r4t0QLnNMzbFivpdisZN-MyyiEsEQB7enwoyFpfqxenYYzblFmzscp5mivoLXcmELlQbZ_xMA8ys3ROQ3EzWQwJ0Y_-FzHINRfikXKEfoKCaBdYxvy3shG3comRQLjW3Dgva_ShNZCjlbY29buMOwW9PRmZzuur-7dk4kpX6gqI7f7F7ewkuqdrzRLUE7Fz7Mbfw/4u3/lVNdB9fRSouOwfXArQo5iQ/h8/h001.1EKKRvyuNoxlIL4o6xSiKKcmiDsTwn3eMlmbqlrVTrM"
+          },
+          {
+            "label": "Grok Bot Tutorial & Automation Guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.LDkxbMa7NCxUGG7E2Yh3AF_8UUdWFjOthbhqUVEMuUdbTVcb8d_FQfe1LCeJNFFbTk3F-bvs5SqfBk4Bkre5sxLuYHIZzxFQiAoKIZlwHjsJ8H3uo4iYswf_CGZfXXudyC9qYZbZnoreFeUEaSjGFx4t9dGNWX1yJE1Mmwy58dAy0hRXhakocZ9-Y8PLk0n4WsrsAJ2LONmD3FWV2Q1gLnwkWWRB0-vgdV0l1NcD6eZeQ7qUz7XeFXO0o8lhyW5E/4u3/lVNdB9fRSouOwfXArQo5iQ/h35/h001.ua_sUBB37TpQql-f4xERu1jKbmXDCd-570ymRri2w9s"
+          },
+          {
+            "label": "AI Safety: Existential Risk Analysis",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1FxDUWkbNuPKPw5uRCpR2uGSpKdR5Oxsq71SiE3ETtdTrFgZLSoqS5sbCJT3LoDMKG3lwhIkiZ065S7qDNR7d6miIG0E7424ohIEd6ZV34aQdr-ZT_IeirgQzBdvcLwUz9nxWfUPX65-pWmShkf-FH1Te5WdEUFB_bjU52UOVklw7R7yASdf6nZlqayRtxShFo86fQk6WtKdaBRj5W9p_GHXmuFeKq4GLsJ7QcINh7G6g_ZL3h3h1VUZLGVt5Di2kBcxJyBiMhT-9Qk8T19O4apO_NJXwBj-oCPMHqAFhVkFtkGY5VC4O54SmMCmDTrw/4u3/lVNdB9fRSouOwfXArQo5iQ/h17/h001.-qVIvc8AKFn6PYEJFiDroarqIPxr6sr9hk2p33ZDaVY"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Jev ⚡, Periodic Neon🧬, Gemini 3.8 Live 💬",
+      "date": "2026-09-16T13:52:41+00:00",
+      "summary": {
+        "headlines": [
+          "Jev, a new System One Model, delivers LLM-level intelligence on structured tasks at 100x faster speed and lower cost, now in early access.",
+          "Periodic Neon outperforms GPT-6 Astra and Claude Fable 5.1 on scientific analysis benchmarks while costing less, deployed in labs for materials research.",
+          "Google released Gemini 3.8 Live and 3.5 Transcribe tools for building real-time voice applications with improved accuracy.",
+          "Odyssey-3, a foundation world model, enables AI control across robots, humanoids, vehicles, drones, and video games through learned physics understanding."
+        ],
+        "sections": [
+          {
+            "title": "System One Models & Jev Launch",
+            "points": [
+              "1. Jev achieves performance parity with existing LLMs on System One tasks (fast, structured decisions) while running 100x faster and more efficiently.",
+              "2. System One Models are optimized for structured outputs and cannot hallucinate, making them suitable for direct software integration.",
+              "3. Jev now available in early access for developers building applications requiring deterministic decision-making.",
+              "4. Model class designed specifically for speed and cost reduction compared to general-purpose large language models."
+            ]
+          },
+          {
+            "title": "Periodic Neon for Scientific Research",
+            "points": [
+              "1. Periodic Neon outperforms GPT-6 Astra and Claude Fable 5.1 on FrontierXRD benchmark (a highly challenging scientific analysis evaluation) at lower cost.",
+              "2. Trained using midtraining and reinforcement learning on laboratory data to optimize for real-world materials science workflows.",
+              "3. Currently deployed in labs analyzing experiments for superconductor and magnet research, establishing cost-performance efficiency frontier.",
+              "4. Demonstrates value of domain-specific model tuning over generic frontier models for specialized technical domains."
+            ]
+          },
+          {
+            "title": "AI Agent Governance and Safety",
+            "points": [
+              "1. AIUC (Artificial Intelligence Underwriting Company) launched third-party audit and certification layer for AI agents to assess enterprise safety.",
+              "2. System uses AI agents to run tests and AI to analyze results, but humans verify final audits to ensure independent verification.",
+              "3. Provides enterprises visibility into which agents can be trusted and where risks exist before deployment decisions.",
+              "4. Addresses growing need for safety assurance as AI agents scale in production environments and autonomous decision-making expands."
+            ]
+          },
+          {
+            "title": "Physical Intelligence and World Models",
+            "points": [
+              "1. Odyssey-3 is an autoregressive diffusion transformer (a neural network type that generates sequences iteratively) trained to simulate diverse physical scenarios.",
+              "2. Enables robot control, humanoid operation, vehicle driving, drone piloting, AI training, and video game playing through unified physical understanding.",
+              "3. Learned model of physics, dynamics, cause-and-effect, and human behavior to create native interface between AI and physical/virtual systems.",
+              "4. Represents advancement toward general-purpose physical intelligence that can adapt across multiple embodiment types and environments."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Introducing System One Models & Jev",
+            "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+          },
+          {
+            "label": "Nature Is Our Learning Environment (Periodic Neon)",
+            "url": "https://periodic.com/news/nature-is-our-learning-environment"
+          },
+          {
+            "label": "Introducing Odyssey-3: A General-Purpose Physical Intelligence",
+            "url": "https://odyssey.systems/introducing-odyssey-3"
+          },
+          {
+            "label": "Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents",
+            "url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/"
+          },
+          {
+            "label": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+            "url": "https://paperswithcode.co/paper/2609.14858"
+          }
+        ]
+      }
+    }
+  ]
+}
