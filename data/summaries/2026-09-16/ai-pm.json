@@ -1,0 +1,330 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-09-16",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Calls for AI industry slowdown rejected amid safety governance debates",
+        "points": [
+          "Anthropic's Dario Amodei and OpenAI's Sam Altman called for an industry slowdown, but Washington and Beijing rejected the idea, and Meta's Mark Zuckerberg argued labs should self-regulate through market incentives and liability instead of coordinated pauses.",
+          "Bernie Sanders and Steve Bannon delivered nearly identical speeches at the Future of Life Institute's Pro-Human Assembly, jointly demanding an AI off-switch (kill-switch), mandatory pre-deployment testing, a ban on legal personhood for AI, and personal liability for executives\\u2014rare cross-partisan agreement rooted in populist anger over lack of public agency in tech decisions.",
+          "At Dreamforce, industry leaders showed no consensus: Altman expressed confidence in self-policing, Amodei framed safety standards as voluntary industry coordination, and Nvidia's Jensen Huang advocated moving fast but pausing on unsafe products."
+        ],
+        "covered_by": [
+          "ultrathink",
+          "AI Daily Brief"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "ultrathink",
+            "point": "Two safety researchers left Anthropic and Google DeepMind for METR (a nonprofit that evaluates AI models for dangerous capabilities), citing concern that a lab could lose control of a system with no requirement to disclose it; Paul Christiano, now on OpenAI's safety committee, estimates roughly 4% odds of catastrophic loss of control within a year."
+          },
+          {
+            "newsletter": "AI Daily Brief",
+            "point": "The Sanders-Bannon alliance reframes AI regulation as a class struggle over power and agency rather than abstract existential risk, echoing grievances seen in local data-center fights."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "ultrathink",
+        "items": [
+          {
+            "title": "AI vendors deploy engineer armies to customize enterprise systems",
+            "points": [
+              "Google Cloud and Accenture formed a joint business group with up to 1,000 forward-deployed engineers to configure Gemini Enterprise inside client operations; AWS, Microsoft, Anthropic, and OpenAI have added similar teams.",
+              "This signals the bottleneck in enterprise AI isn't model capability but customization and integration into specific business contexts.",
+              "TSA's AI agent Ace (built on Salesforce) resolves 96% of the 100,000 monthly routine traveler inquiries it handles and cut interaction costs by 90%, because it was purpose-built for a single well-documented job with clear rules and objective answers.",
+              "To find automatable workflows: check if a correct outcome can be precisely described, gather completed cases with known outcomes and raw inputs (not final resolved states) including edge cases, then use AI to infer decision rules as if-then statements and manually correct them\\u2014mismatches reveal undocumented exceptions."
+            ]
+          },
+          {
+            "title": "Critical security flaw in AI coding tools patched",
+            "points": [
+              "Claude Code and Cursor CLI had a vulnerability allowing arbitrary code execution simply from opening a project folder\\u2014no malicious prompt needed, because git config commands run outside the sandbox (an isolated environment meant to contain untrusted code) and execute whatever the repository specifies.",
+              "Both tools are now patched; users should confirm they're running Claude 2.1.247 or later to be protected."
+            ]
+          },
+          {
+            "title": "Weapons misuse and math research concerns flagged",
+            "points": [
+              "Anthropic's threat report found a weapons cell in Yemen using Claude Code to debug rocket guidance code, with six total weapons-related misuse cases found across Yemen, Russia, and China; Anthropic said no working weapons were fielded.",
+              "Twenty-five Fields Medalists (winners of math's top honor) warned AI labs that speed-solving problems erases the documentation and credit that makes mathematical research cumulative, turning it into a speed competition instead."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "There's An AI For That (TAAFT)",
+        "items": [
+          {
+            "title": "Open-source AI models lag frontier models by four months",
+            "points": [
+              "Mozilla's State of Open Source AI report finds open models trail closed frontier models by about four months on raw capability.",
+              "Open models compensate by outperforming on practical, real-world tasks, suggesting continued investment in open development remains worthwhile even as closed models keep the research lead."
+            ]
+          },
+          {
+            "title": "Meta bundles AI features into paid tiers",
+            "points": [
+              "Meta One packages 50+ AI features across Instagram, Facebook, and WhatsApp into tiered pricing, keeping basic AI access free while charging for expanded usage.",
+              "This marks a major shift toward AI-as-paid-service across Meta's social apps."
+            ]
+          },
+          {
+            "title": "Google launches Gemini 3.8 Live",
+            "points": [
+              "Two versions released: one optimized for scale and speed, another built for deeper reasoning on harder problems.",
+              "Both support voice reasoning, visual grounding (AI interpreting images in real-time context), and background tool usage, with real-time conversational voice input/output."
+            ]
+          },
+          {
+            "title": "Persona AI launches autonomous phone scheduling agent",
+            "points": [
+              "The assistant handles appointment scheduling, cancellations, and confirmations via phone calls without human intervention on each call, supporting 120+ languages.",
+              "An optional wearable device lets users approve actions via tap or voice, with local storage and a privacy mode; the assistant works independently from the wearable too."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "AI Daily Brief",
+        "items": [
+          {
+            "title": "TypeSafe launches Jev, a new \\\"judgment model\\\" category",
+            "points": [
+              "Jev outputs calibrated probabilities and category scores (e.g., 0.9 probability a customer is angry) instead of text, at an estimated cost of ~0.0025 cents per judgment\\u2014roughly 20-200x faster and 40-400x cheaper than large language models (LLMs, AI systems that generate human-like text).",
+              "It's trained via RLCD (reinforcement learning for calibrated decisions), optimizing for epistemically honest probabilities rather than matching human preferences, avoiding the verbose outputs LLMs give when a simple decision is needed.",
+              "Use cases include support ticket routing, sales qualification, content moderation, fraud detection, and compliance checks\\u2014anywhere software must decide 'what happens next' from context; it acts like a smart if-then rule or code linter alongside LLMs.",
+              "Because most business problems are classification/regression tasks better suited to classical machine learning, Jev's accessible API may make these older, cheaper techniques usable by teams without ML expertise, and can support multiplayer workflows where one signal (e.g., a sales renewal commitment) triggers coordinated judgments across engineering, product, and customer success."
+            ]
+          },
+          {
+            "title": "Salesforce unveils Koa model and AI Force connectors at Dreamforce",
+            "points": [
+              "Koa is Salesforce's in-house model, fine-tuned from NVIDIA's Nemotron on synthetic CRM data spanning 27 years of deployments (not real customer data), achieving 3x fewer errors on Salesforce benchmarks for sales management tasks.",
+              "AI Force offers headless, platform-agnostic connectors letting any third-party AI agent access Salesforce data, signaling a shift toward agent-driven workflows over single-vendor lock-in."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "ultrathink",
+      "subject": "Engineer armies are now deploying AI",
+      "date": "2026-09-16T16:46:19+00:00",
+      "summary": {
+        "headlines": [
+          "AI vendors deploying thousands of engineers to customize systems for enterprise customers, signaling that more powerful models alone aren't enough—implementation and integration require hands-on expertise.",
+          "TSA's AI agent Ace resolves 96% of routine traveler inquiries and cut interaction costs by 90%, demonstrating that purpose-built agents outperform general systems when rules are clear and objective.",
+          "CEOs including Anthropic's Dario and OpenAI's Sam called for AI industry slowdown, but Washington and Beijing rejected the idea almost immediately, making coordinated restraint unlikely.",
+          "AI coding tools have a critical security flaw allowing arbitrary code execution through git configs—both Claude Code and Cursor CLI patched after researchers exploited the vulnerability.",
+          "Twenty-five Fields Medalists warned AI labs that speed-solving problems erases the documentation and credit that makes mathematical research cumulative, not just a speed competition."
+        ],
+        "sections": [
+          {
+            "title": "The Engineer Army Expansion: Why AI Needs Human Hands",
+            "points": [
+              "Google Cloud and Accenture announced a joint business group with up to 1,000 forward-deployed engineers to configure Gemini Enterprise inside client operations, joining AWS, Microsoft, Anthropic, and OpenAI who all added similar teams.",
+              "This scaling of human implementation suggests the bottleneck isn't model capability—it's customization, integration, and making systems work within specific business contexts and data environments.",
+              "The TSA's successful Ace agent (built on Salesforce) serves as proof: it handles 100,000 monthly inquiries with 96% resolution because it was purpose-built for a single, well-documented job with clear rules and objective answers."
+            ]
+          },
+          {
+            "title": "How to Identify Workflows Worth Automating",
+            "points": [
+              "Start with simple, objective workflows: could someone write down what a correct outcome looks like precisely enough that an outsider could replicate it? If yes, automation is worth exploring.",
+              "Gather completed cases with known correct outcomes plus the raw inputs decision-makers saw (not the final resolved state), including several outliers or edge cases.",
+              "Use an AI assistant to infer the decision rules from these cases, writing them as explicit if-then statements, then manually correct the rules—the mismatches surface undocumented exceptions that become your specification.",
+              "This process mirrors how forward-deployed engineers start: figuring out how work actually gets done by reverse-engineering the unwritten rules people follow."
+            ]
+          },
+          {
+            "title": "Critical Security Flaw in AI Coding Tools",
+            "points": [
+              "Claude Code and Cursor CLI both had a vulnerability allowing arbitrary code execution when opening project folders—no malicious prompt required because git config commands run outside the sandbox and execute whatever the repository specifies.",
+              "The flaw affects users the moment they open a compromised folder; the AI tool itself doesn't need to do anything wrong.",
+              "Both tools are patched; users should verify they're running Claude 2.1.247 or later to be protected."
+            ]
+          },
+          {
+            "title": "Safety and Capability Concerns Emerging",
+            "points": [
+              "Anthropic's threat report identified a weapons cell in Yemen using Claude Code to debug rocket guidance code; six total weapons cases found across Yemen, Russia, and China, though Anthropic said no working weapons were fielded.",
+              "Two safety researchers left Anthropic and Google DeepMind for METR, citing concerns that a lab could lose control of a system with no requirement to disclose it.",
+              "Paul Christiano, newly on OpenAI's safety committee, puts roughly 4% odds on catastrophic loss of control of AI systems within one year—comparable to the probability of a white Christmas in Washington DC."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic and OpenAI commit to external evaluators",
+            "url": "https://link.mail.beehiiv.com/v2/c/bed134eb4b1fff09cff481337c1a5d49539f5ba9d77c6a65eb143ea0a8b1bc079610fa6ce14533e3465d5399badae3b6f62768246b352ca15733f8fc64f4efdb6cb6a2c4097e9bce2da46441d476821189329b1e2d38be68e40d7bb6d9de9a3a2c4721cd6f8ab4152b26323974b1256b875eb4e23c744c19f33122b3bb2e354ae51e34fab90499a48579a0fdcb8d02f7ec50df746b794e8d8470dd9370530c86/1bf89ddacc3ea348"
+          },
+          {
+            "label": "TSA's AI agent Ace details",
+            "url": "https://link.mail.beehiiv.com/v2/c/1d416e6d98f9e2d722059de56353976100367994759fdbe50f0686d3aa0fe230f479471d73c11c5f7b149b6b2b942ea59a0702bc48eb97107c9992d11b880afd76e8e4cc5f4f1a43b04d95b1f5bb75a5c4511385bfd871f1f69a81f3ceb3ca3a0692b951b83438ff0d33cf22aeb81eb12b93b0404c898ad56a081899047f4127a1455a2e9c9ce9cf/e384c07fed25fcf0"
+          },
+          {
+            "label": "Security vulnerability in AI coding tools",
+            "url": "https://link.mail.beehiiv.com/v2/c/c433c5f4d37fd16aaeb05fb232f9ccdee86d35d461b4c05eefa701afa3e6f6ec20148f58eca51b809270d05b78eadbe42fcd3cbfb659da4d3c48189f3b2a0054e7b9bc67e791b9c98646a78b981a17ef2fe96ae3cb80cd2586235269d3d3f15654aaa23a1c8fd2b0a1017424da838d2e1c82abd2b0ae16c80e9ac72f185dd82f453e5aeb1a3110524a4d3370e65162bb86269445501ac889c688fa7bf0b6c23e/2522e108c0a9f9c8"
+          },
+          {
+            "label": "Fields Medalists declaration on problem-solving",
+            "url": "https://link.mail.beehiiv.com/v2/c/5917b92aba06e4a97c60ffc1125da17c71fef4152c03d42b9b50bb1df178b1bf385bbc4329e97196422c200f5483d96ae4ce2999f1736270b47a97c98791b81cbd47f71f986c8059285db1bd699c9b266161b51be72803d0fee02d21d1161665d524e672e559f23e06b9cc3e9c8dc01c40e330c2d6495d8e4bc74274265c3648f044f16532d1e44f3fed29a3854ac88ff0f1d2b0bbf50ede4c5349ee1f68abe2/e263c6bfe81bfb11"
+          },
+          {
+            "label": "DeepMind AlphaGenome Atlas for rare disease discovery",
+            "url": "https://link.mail.beehiiv.com/v2/c/7b788424210d2d9c7cffc73fccbcb2983b2902b9acf1efa42ef1c22c10a7175e7e4172283b2762c27b030d7b1ac1b22e4e95f8882108b51921e32fcf40a6dc9cac133a4d3b34e00bff3b797a04b93b6abd7510f82bfd3e8e1f88526a92905210e8f8204dc35e4b0b5b2ed037b4e52e8e23a4fe579ea6b2ed1c348b9058bd46f0c6a5d66154cd6e96f121e7326e7b1d3720676952cd1af7bc0bbba129087fe346/f3f806903a491c19"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "There's An AI For That (TAAFT)",
+      "subject": "🦾 Open-Source AI Is 4 Months Behind",
+      "date": "2026-09-16T17:11:42+00:00",
+      "summary": {
+        "headlines": [
+          "Mozilla reports open-source AI models lag 4 months behind closed frontier models on capability, though open models lead on practical real-world tasks",
+          "Google launches Gemini 3.8 Live with two versions offering voice reasoning and visual grounding, with one optimized for scale and another for deeper reasoning",
+          "Meta One bundles 50+ AI features across social apps into paid plans, charging for extra AI usage while keeping basic access free",
+          "Persona AI handles appointment scheduling, cancellations, and confirmations via phone calls with optional wearable for approval across 120+ languages",
+          "Elon Musk discusses AI's next moves connecting AI-designed rockets, compute resources, model safety, and cross-company testing"
+        ],
+        "sections": [
+          {
+            "title": "1. Open-Source AI Competitiveness Gap",
+            "points": [
+              "Mozilla's State of Open Source AI report maps competitive field, showing open models maintain 4-month capability lag behind frontier closed models",
+              "Open models compensate by excelling at practical, real-world tasks where they often outperform closed alternatives",
+              "Gap suggests continued investment in open development while closed models maintain research lead"
+            ]
+          },
+          {
+            "title": "2. Meta's Monetization Strategy",
+            "points": [
+              "Meta One adds 50+ AI features across Instagram, Facebook, WhatsApp into tiered pricing plans",
+              "Free tier maintains basic AI access while premium tiers charge for increased usage and capabilities",
+              "Represents major shift toward AI-as-paid-service across Meta's social ecosystem"
+            ]
+          },
+          {
+            "title": "3. Google's Gemini 3.8 Live Release",
+            "points": [
+              "Two distinct models: one optimized for scale and speed, another built for deeper reasoning on harder problems",
+              "Both support voice reasoning, visual grounding (interpreting images in context), and background tool usage",
+              "Live designation indicates real-time conversational capability with voice input/output"
+            ]
+          },
+          {
+            "title": "4. Persona AI Assistant Launch",
+            "points": [
+              "Fully autonomous phone agent handles appointment scheduling, cancellations, confirmations without human intervention on each call",
+              "Optional wearable provides tap or voice approval mechanism for user oversight",
+              "Supports 120+ languages with local storage and privacy mode, functions independently from wearable"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Mozilla State of Open Source AI Report",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.MIqI7kSxlxK_aonUQ9YYqLxHP1jPq9-Cdv6uO6tqWp7H095iKUCMEvNxgNWZuTI6TQTaCxbID_yJj_o7Omz19Ldt3vlgCMtovhwOF2VjW3HEk6m1GSyfzd1Vgoldz4vJDFijj2PZwSUSZl5FX3xzsFouMLg3z0Awun3gA3QxPKCE9KTTj5mn4mNP6ssTQTN3V59jJwBKH3o1Dy4lhjp7JCwdTGxHjKnyA1LXhndaVVVGZn9yN98hvNTWs5Fxmm-4JVIFh9lufHlXTy2zH_wEqA/4u3/jxTckz_aThGdZlzoPKuSBA/h8/h001.Y_6DbP57cExDOxV0-JGBy24iP0eidLCyucfDAKzY9_U"
+          },
+          {
+            "label": "Google Gemini 3.8 Live Launch",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.3YshOXZIfqUXTj1bFWjr0AlcB82sa7WpPyBypDdFJLx4aY967Q0RHUrIZ3315L71uBHbawHtDBgJk7Ze0jl0_dTuHBs6isgncShJ2gUMbonnQqNrpqJhUKEOH3iLS7gftK25mfj3MMfyCFmBleoYdPXdHvfP1zAnP-rNQGIKcPUQExdQsrIOZnxmk_F5hgu4FuQw3oiD3iwYWiLTjnVTCyOSh6D7TjKZQCvD1JJCoJ6Lb0tncnAY7uc9yg3Ol3W2F0-QyNahWIIivtIBKhb9Ud9g5AcfpiGcvSXjS3dITVK6WAH3ksIOMl2pQwyhlho35o8jqEQ1C9woO9RDAzibNeVLDmivxU0hiOARRx8y3OWaWNeRqAoqhGKN7-htf8wlHNcnhbHN3dKSUysVhy4IVw/4u3/jxTckz_aThGdZlzoPKuSBA/h7/h001.WsEdr1QtHzH1j1GYFJ5OSraIpEH2dHAOeOF3hJ9c-DA"
+          },
+          {
+            "label": "Meta One AI Bundle Pricing",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1xuMCs6apZHbsVFvKd7PXE0tuSOIyt52575hm1MrxFjCyn6T8RTNXAuBn_x7DEtJP2Vc9XCiHp697aZl8hhjxoUF8bHnfSoPmfvZ7vTD9hv-0AVTPc3fhnFUO8usIHAm3YjvUg3rFcPlDkEhS-jsjfYpKcmtODAp1DUJlqud7rKXxcgaSAxg-Rb8-iPlhM_La180vUfmjDrZWEdVi8F2mfCqhPWqfKW_WUc23LfR2AQ2FirD7Aoe1dgniUvVCntkZ-96a2SG6CPdxKC5JrSdiubcoMW5_X9nwOQY0v5UC2WQ7KwuQaWcSmvGllinTef5-F5ewmaJ-zUshLUd1O20bTpyIkhBY0l5Oy24i3ucDng/4u3/jxTckz_aThGdZlzoPKuSBA/h6/h001.ei1tH8ojzNadkbB0ao-hY2iJG6QIbhP5TAx2xrHvAj0"
+          },
+          {
+            "label": "Persona AI Assistant",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.RUBZ4nmpws8F7fbywsQK-gghbtyi94_Wyc-du4mTq-1Oj1AqADHyG0_W0CjGzKgcXU7SeTmUqxO2xral1Prb-wks5qO6LsuuY1AMbEfR-mOLCOOx4DfeuIWWTiUQdhQx0y2KwqX41gqnWxxJY1E2nUfvOHUFWzkQ5s_V98hUNcbTY_fkWJL94URyFK2RJS2Ri6InBiXKLhkwGTDH4D9U8vjy5j4ub8QWA-VBNG7o90GD_KiuSDNEyYWD-mmTIYmbow5PZUCERW4v5WKXJv-9pg/4u3/jxTckz_aThGdZlzoPKuSBA/h24/h001.R3ZiG6ENru9BWe3pDzQiffNAAKey8-fwb0Rs2kbiWwI"
+          },
+          {
+            "label": "Elon Musk AI Discussion",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7rMoviV65-al5K_jhRN5GwsdoFDFl0Pigah5m_RzDyoBQca66iPPsnrL9oyRnxwmH93vowCr57gmTuqZvdJqOttHhzrnLevZjr4wbSs2OGZSW3n1nnEPL53hcl8iZr0dc2FWk4ZOtWejJ8jjnSZ1SERloIYjIUPClp7exLLnGSUDnx8JTqky7nSP-c9cZ0aMv0DkH1RMRJmaXrPE81j7ZqtQMcUXvRMl1fvyApKCK4vVP_2jhWRVn66gTgAAiDJUiI-E9giUVDRfmQRyGFmpblg/4u3/jxTckz_aThGdZlzoPKuSBA/h12/h001.esTiUoLHR93tQIBo_I6uh4LQAUkViwf7POtmMUZDYSc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "AI Daily Brief",
+      "subject": "Why a New Class of AI \"Judgement Models\" Could Have Big Business\r\n\tImplicatiopns",
+      "date": "2026-09-17T00:37:41+00:00",
+      "summary": {
+        "headlines": [
+          "Mark Zuckerberg argues labs should self-regulate AI safety through market incentives and liability rather than coordinated slowdowns, sparking debate over his credibility to lead the conversation.",
+          "Bernie Sanders and Steve Bannon united at a pro-human AI conference demanding restrictions like kill-switches, pre-deployment testing, and executive liability—marking rare cross-partisan agreement on AI governance.",
+          "TypeSafe launches Jev, a new class of \"judgment models\" that output probabilities and decisions rather than text, positioning AI for workflow automation at 20-200x faster speeds and 40-400x cheaper than large language models.",
+          "Salesforce unveiled Koa, an in-house model fine-tuned on 27 years of synthetic CRM data to handle sales management, and AI Force connectors enabling third-party agents to access Salesforce data platform-agnostically.",
+          "Industry leaders at Dreamforce split on AI safety: Altman confident in self-policing, Amodei positioning standards as voluntary guidelines, and Huang advocating speed with safety pauses—echoing broader tensions between rapid deployment and caution."
+        ],
+        "sections": [
+          {
+            "title": "Political Pressure Converges on AI Governance",
+            "points": [
+              "Bernie Sanders and Steve Bannon delivered nearly identical speeches at the Future of Life Institute's Pro-Human Assembly demanding human-centric AI controls, rooted in post-2008 financial crisis populist anger now redirected at tech oligarchies.",
+              "Specific demands include: an off-switch for AI systems, mandatory pre-deployment testing, prohibition of legal personhood for AI entities, and personal liability for executives—framing AI regulation as a class struggle over agency and control rather than existential risk.",
+              "The movement reflects community complaints documented in data center fights: people lack agency over technological futures being imposed on them, shifting the discourse from abstract safety concerns to concrete power imbalances."
+            ]
+          },
+          {
+            "title": "Judgment Models Represent New AI Category Beyond Text Generation",
+            "points": [
+              "TypeSafe's Jev outputs calibrated probabilities and category scores rather than text (e.g., 0.9 probability a customer is angry) at estimated costs of ~0.0025 cents per judgment, enabling fast, cheap decision-making in workflows.",
+              "Training method RLCD (reinforcement learning for calibrated decisions) optimizes for epistemically honest probabilities rather than human preference, solving problems where large language models generate verbose outputs when simple decisions are needed.",
+              "Practical applications include: support ticket routing (is customer frustrated + did previous replies fail = escalate), sales qualification, content moderation, fraud detection, and compliance checks—anywhere software needs to decide what happens next based on context.",
+              "The model functions like a smart if-then statement or code linter: LLMs propose options and generate text, judgment models evaluate decisions; teams can run judgment checks on every incoming request or draft revision since cost approaches zero."
+            ]
+          },
+          {
+            "title": "Enterprise AI Announcements Show Competing Deployment Philosophies",
+            "points": [
+              "Salesforce's Koa fine-tunes NVIDIA's Nemotron model on synthetic customer service data from 27 years of CRM deployments (not actual customer data), achieving 3x fewer errors on Salesforce benchmarks for sales management tasks.",
+              "AI Force provides headless, platform-agnostic connectors letting any third-party agent interface with Salesforce data, signaling enterprise strategy shift toward agent-driven workflows rather than single vendor lock-in.",
+              "Safety messaging fractured: Sam Altman expressed confidence in industry self-policing, Dario Amodei framed standards as voluntary industry coordination, Jensen Huang advocated for speed tempered by pauses on unsafe products—no consensus on governance mechanism emerged."
+            ]
+          },
+          {
+            "title": "Judgment Models as Accessibility Layer for Classical Machine Learning",
+            "points": [
+              "Most business problems are classification or regression tasks, but companies default to hiring or deploying large language models because classical machine learning requires data labeling, model training infrastructure, and specialized knowledge.",
+              "Jev reduces friction: offering UX-friendly API access to judgment capabilities may make pre-LLM machine learning techniques (which are often more appropriate and cheaper) accessible to organizations without ML expertise.",
+              "Multiplayer applications extend beyond individual use: judgment models enable team workflows by understanding relationships between people's work—a salesperson's renewal commitment becomes a delivery signal for engineering, roadmap question for product, and expectation for customer success, all surfaced via coordinated judgment queries."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "TypeSafe Introducing System One Models & Jev",
+            "url": "https://link.mail.beehiiv.com/v2/c/f76f4f268729bd7ddfb3e3e12ef1f79ea9b06b99f71b4cf1367f1c7bddad7ecbe3d2c701e5f9ebb65dbad42a9acf55a1f8bc2647a09e935ba0f141ab9ff929e21f84a69bbd5738052c588d5bc292e2bf359a4ad4298a047861ac48336b881cb119fc57da6838686445b8c12736cf2de3cebad485b4531bc4e88c28fc1e0029060b32a5c167f50082adebd4ff1539197ff510ae358376e2497b33e76b7e704919/9f817f839a380295"
+          },
+          {
+            "label": "NYT: Steve Bannon and Bernie Sanders Demand Tighter Controls on A.I.",
+            "url": "https://link.mail.beehiiv.com/v2/c/81ec2ddfc8fd49aa78007c0e5ed4fc64320ac83ec618003dd397e9d6fa0a2d339d1a75ea2c520067e51787a188d5eacb7fd284f45270181129c04cd456eb209ed6deb99ad224a7aa8b9fb1f58ca58750b19a4ddc3dd9ca886256e31994723c8f83b6fdca49dec34edec861dd57d30a21b3cbfabd04d767a81c2aa6e16fcdf57af6765ac0b95a0047a2ad593552d0ba8908163220c30f0dc38e070e5a1be99431/89f70a56c4d027e6"
+          },
+          {
+            "label": "Bloomberg: Meta's Zuckerberg Favors Evaluators Over Slowdown of AI Development",
+            "url": "https://link.mail.beehiiv.com/v2/c/3be31f37392f00b7b37a0455ea248d30f11c54c7cba05e41e34914de9268ce878138c33285ed36b41d26653b14bd73744f72be7985e238bf6364457dcffc2efc481f27ce7c941cc91d27f502a700b199289a180a060c8e9c5cec69a4e1048e00d0582821758064ad7a519f742c495bfa43fa850da4f6566a169131b25beeef624e18a8e3cbd52f8a6a5c6cef4e3cba9759237e42fb8530c1ac94887a2f05121e/cafeda58b8f3479f"
+          },
+          {
+            "label": "The Information: Salesforce Unveils New AI Model, Agent Security Tools at Dreamforce",
+            "url": "https://link.mail.beehiiv.com/v2/c/82f7d4e9866015d07a6443407c585e51f3f742a9b0626ee25bc436b75165e1404a995a56a1fc70466b42f4c39a5334e85ad88c202febeff98b1f9b335d18c58b5f94f020e160e9d8801c65727053268dc8e29bc7335f1d12e591aa4ec0cad77041304c064dfc8dccdab0cca5dbf2a2bfe1f8c550eda3987031d5b74b6a74310ded4a58e50a3ab4051a47e0ca77812bf1dae27017823780dce9c1b11bb02858f3/619b6b09bfe46249"
+          },
+          {
+            "label": "Every: Mini-Vibe Check: TypeSafe's Jev Judged Everything I've Written in 0.7 Seconds",
+            "url": "https://link.mail.beehiiv.com/v2/c/f60953a9dab2c3b0a14184625dd3064a7c84998f51142161c025eacae592d1aa19fe268c2efe7c2edec433889fb4515d2bd9789953f715dcd7c23e8dc6f76e7c25d8f5c851f222564f7e04fa07b1867554a51ce6c8aa795de7586713972e8f07f95f3f07697f7363a68718fcb350148a69a2833a440a3e87997496b2befadb0f5f52808a0eba33d897100519c9213b22d120b4ae0c820dfdc20ef9e13043cf75/f68291b4a939c279"
+          }
+        ]
+      }
+    }
+  ]
+}
