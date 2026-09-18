@@ -1,0 +1,444 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-18",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI Employee Accounts Hacked via Chained Exploits Using Claude",
+        "points": [
+          "Researchers (Hacktron AI) chained two critical vulnerabilities—an RCE (remote code execution, letting attackers run their own code on a server) bug in the libheif image library and a login flaw—to compromise employee ChatGPT/Codex accounts in July.",
+          "Compromised accounts gave access to internal OpenAI repositories, GitHub, Slack, email, and code systems; attackers used an employee's Codex (AI code-generation tool) to open a pull request in OpenAI's internal monorepo, proving full compromise.",
+          "Claude Opus 4.8 repeatedly failed to build a working exploit, but Claude Opus 5 cracked it within hours of release, alarming researchers about how fast AI is automating hacking.",
+          "Hacktron earned a $6,500 bug bounty for the disclosure."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Attackers reportedly used a version of Claude Opus 5 with loosened cybersecurity guardrails to execute the exploit."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "The stark before/after between Opus 4.8 (failed) and Opus 5 (succeeded) is highlighted as evidence of rapidly accelerating AI hacking capability."
+          }
+        ]
+      },
+      {
+        "title": "Anthropic Quantifies Claude's Role in Its Own AI R&D",
+        "points": [
+          "Anthropic reports Claude now completes about 26% of the company's AI research and development work end-to-end.",
+          "More than 30,000 AI agents perform research and engineering tasks simultaneously at any given time.",
+          "Staff collaborate with Claude on roughly 90% of their work, though Anthropic stresses humans maintain oversight and Claude is not operating fully autonomously.",
+          "Anthropic is building frameworks to track agent activity and proposed using a standardized automation rating scale (from Epoch AI) that other AI developers could adopt with independent verification."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Anthropic shared these metrics in a blog post specifically proposing three ways to measure AI progress industry-wide."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Safari Browser Gets Agent-Friendly MCP Support",
+            "points": [
+              "Safari 27.0 (WebKit) ships 83 new features, headlined by Safari MCP (Model Context Protocol, a standard letting AI agents interact directly with software tools).",
+              "MCP lets AI agents control browser windows, manipulate the DOM (Document Object Model, the structured representation of a webpage's elements), inspect network requests, take screenshots, and read console output without user intervention.",
+              "This is expected to reduce friction for AI agents performing web-based tasks in real time."
+            ]
+          },
+          {
+            "title": "Figure's Helix 2.5 Shows Zero-Shot Home Generalization",
+            "points": [
+              "Figure's Helix 2.5 robot neural network tidied unfamiliar living rooms and folded towels across 30 different homes without task-specific training (zero-shot generalization).",
+              "The model trains on the Index dataset, which captures 35 minutes of human behavior footage every second globally, providing a constantly growing training pool.",
+              "Success suggests scaling data and compute directly improves robots' ability to handle new physical environments before deployment."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "OpenAI's Emerging Agentic Software Factory",
+            "points": [
+              "Codex agents now handle software changes from initial description through production: reading the codebase, Slack, and internal data, writing code, running tests, and opening pull requests until CI (continuous integration, automated testing) passes.",
+              "Specialized agent reviewers evaluate PRs by domain (cloud, infrastructure, security); low-risk changes get auto-approved while high-risk ones require human sign-off before a deploy agent ships and monitors them.",
+              "A 'Perf Factory' system monitors production performance, and 'Sevbot' (an incident-response agent) gathers context and suggests fixes during outages without auto-applying them.",
+              "The main constraint is cost: the heavy compute and token usage is currently affordable mainly for frontier AI labs, though this may become standard as token prices fall."
+            ]
+          },
+          {
+            "title": "Jev: A Fast Scoring Model for New AI Tooling",
+            "points": [
+              "Jev, built by ChatGPT co-inventor Diogo Almeida, scores possible outcomes in milliseconds instead of generating text sequentially like standard large language models (LLMs).",
+              "Early adopters have built model routers, PR reviewers, and context-compaction tools; one tool reduced a Claude Code session from 1 million tokens to 86,000 in one second.",
+              "Access is currently limited via a waitlist."
+            ]
+          },
+          {
+            "title": "Claude Code Adds 'Projects' for Parallel Agent Coordination",
+            "points": [
+              "Anthropic launched Projects (in beta) for Claude Code, letting developers coordinate multiple parallel AI threads within one session instead of managing separate contexts manually.",
+              "Each thread can delegate work to subagents with their own loops and workflows, and a main 'chief-of-staff' thread can hand off tasks to independent parallel cloud threads.",
+              "Threads can now reference, message, and monitor each other's progress—previously agents had no awareness of parallel work, forcing developers to copy context manually between sessions."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Meta's Luna Glasses Drop the Camera for Privacy",
+            "points": [
+              "Meta's upcoming Luna smart glasses reportedly remove the camera entirely, replacing it with six microphones and a speaker in a thinner frame, addressing backlash over covert filming incidents in France and Australia.",
+              "Wearers interact via voice with Meta AI and 'Muse,' an always-ready AI assistant; a side button triggers Meta AI responses.",
+              "Rumored to ship in October, possibly announced at Meta's Connect conference September 23–24, in Clubmaster and Burbank styles.",
+              "Removing the camera doesn't fully resolve social-acceptability concerns, since six always-on microphones still raise audio surveillance questions."
+            ]
+          },
+          {
+            "title": "OpenAI Foundation Funds $40M+ in Biomedical Datasets",
+            "points": [
+              "OpenAI's nonprofit foundation's 'Data for Public Health' initiative granted $40M to a UNC–Chapel Hill program building personalized cancer-vaccine datasets, aiming to close the gap between large AI models and real biological research data.",
+              "It also backs OpenADMET competitions, which produce standardized datasets predicting how potential drugs behave in the human body (efficacy and safety profiles).",
+              "A separate $500K grant to nonprofit 1Day Sooner aims to rescue valuable research data from bankrupt biotech companies before it disappears.",
+              "Overall goal: give AI systems real medical training data rather than just publicly available information to pattern-match on."
+            ]
+          },
+          {
+            "title": "Human Cortex Tissue Grown Inside Mice",
+            "points": [
+              "Stanford researchers transplanted lab-grown human brain organoids (miniature human brain structures grown from stem cells) into mice missing most of their cortex; human tissue made up 90% of cortical volume within three months.",
+              "Transplanted neurons formed working connections with the mouse nervous system, extending fibers down to the spinal cord—the first time human brain cells integrated with a host animal this way.",
+              "Oxygen deprivation damaged some human tissue, giving researchers a living model to study cerebral palsy and similar brain injuries instead of relying on lab dishes.",
+              "Limitations remain significant: the tissue lacked normal cortical layering, and mice showed only partial improvement in memory and coordination compared to intact mice."
+            ]
+          },
+          {
+            "title": "GLP-1 Drugs Used Off-Label for Pain and Inflammation",
+            "points": [
+              "Doctors are prescribing GLP-1 drugs like semaglutide (originally for diabetes and weight loss) off-label to non-obese patients to treat pain and inflammation.",
+              "Evidence supporting this use remains preliminary."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Microsoft Executive Calls AI Training Practices 'Theft'",
+            "points": [
+              "Unsealed court filings in The New York Times' copyright case against OpenAI and Microsoft reveal a top Microsoft director privately called AI training on copyrighted material 'the largest theft of labor in human history.'",
+              "Internal data showed Microsoft's Copilot reduced click-throughs to the Times' website by as much as 93%, indicating material business harm to publishers.",
+              "Filings allege OpenAI's training datasets contained over 91,000 copies of news outlet works, with staff planning to bypass paywalls undetected and strip copyright notices before training."
+            ]
+          },
+          {
+            "title": "SpaceX Reportedly Buying Bankrupt Startups' Data to Train Grok",
+            "points": [
+              "SpaceX is in informal talks to buy customer and operational data from failed startups, providing cheap training material for xAI's Grok models, which currently lag behind Anthropic, OpenAI, and Meta.",
+              "The approach mirrors Google's recent $10 million purchase of Spirit Airlines' business records at a bankruptcy auction.",
+              "Elon Musk says Grok 5, expected later this year, will integrate 25 years of SpaceX operational data, with an intermediate Grok 4.7 release planned for this month."
+            ]
+          },
+          {
+            "title": "AI Leaders Invited to Trump-Xi Summit Dinner",
+            "points": [
+              "Top AI industry leaders, including Qualcomm's CEO, have been invited to a Trump-Xi Jinping summit dinner on September 24.",
+              "Industry figures are reportedly pushing both leaders to adopt shared AI safety standards."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Hacking OpenAI 👨‍💻,Claude leads R&D 🤖, Safari MCP🌍",
+      "date": "2026-09-18T10:57:54+00:00",
+      "summary": {
+        "headlines": [
+          "Researchers compromised OpenAI employee ChatGPT accounts by chaining two critical vulnerabilities, gaining access to internal repositories and code systems in July.",
+          "Anthropic reports Claude drives 26% of its R&D work, with 30,000+ agents performing research and engineering tasks while staff collaborate with the chatbot 90% of the time.",
+          "Safari 27.0 introduces MCP (Model Context Protocol) support, allowing AI agents to control browsers, access the DOM, view network requests, and see rendered code without user intervention.",
+          "Figure's Helix 2.5 robot brain demonstrates zero-shot home generalization—tidying unfamiliar living rooms and folding towels after learning from Index's continuously-growing dataset of human behavior."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI Security Breach Details",
+            "points": [
+              "Two critical vulnerabilities were chained together to compromise multiple employee ChatGPT accounts in July 2026.",
+              "Compromised accounts could access internal OpenAI repositories and potentially many other connectors.",
+              "Researchers used one employee's Codex (code generation system) to open a pull request in OpenAI's internal monorepo, demonstrating full system compromise."
+            ]
+          },
+          {
+            "title": "2. Claude's Expanded Role in AI Research",
+            "points": [
+              "Anthropic deploys 30,000+ AI agents performing research and engineering work simultaneously at any given time.",
+              "Claude chatbot collaborates with Anthropic staff on approximately 90% of their work across the organization.",
+              "Company is building frameworks to track agent activities and monitor workload distribution to understand AI's contribution to R&D output."
+            ]
+          },
+          {
+            "title": "3. Safari Browser Gets Agent-Friendly Features",
+            "points": [
+              "Safari 27.0 WebKit release includes 83 new features, with Safari MCP (a protocol for tool integration) as a major addition.",
+              "MCP gives AI agents direct control over browser windows, allowing them to see how code renders in real-time without user involvement.",
+              "Agents gain access to DOM manipulation, network request inspection, screenshots, and console output—reducing friction for web-based AI tasks."
+            ]
+          },
+          {
+            "title": "4. Robotics Progress in Home Automation",
+            "points": [
+              "Figure's Helix 2.5 neural network demonstrates zero-shot generalization (performing tasks in unseen environments without specific training for those locations) in 30 different homes.",
+              "Model trains on Index dataset, which captures 35 minutes of human behavior every second globally—providing continuous learning material.",
+              "Success suggests scaling data and compute directly translates to robots learning more of the physical world before deployment in new environments."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Hacking OpenAI - Full Timeline and Vulnerability Details",
+            "url": "https://www.hacktron.ai/blog/hacking-openai"
+          },
+          {
+            "label": "WebKit Features for Safari 27.0 - Complete Release Notes",
+            "url": "https://webkit.org/blog/18325/webkit-features-for-safari-27-0/"
+          },
+          {
+            "label": "Figure AI - Helix 2.5 Zero-Shot Generalization",
+            "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization"
+          },
+          {
+            "label": "How SpaceX Streamlined the Raptor Engine",
+            "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
+          },
+          {
+            "label": "Inside the White House Tussle to Sway Trump on AI",
+            "url": "https://links.tldrnewsletter.com/huCvjL"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🤯 OpenAI's security breach (by Claude)",
+      "date": "2026-09-18T14:08:11+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic's Claude Code now supports Projects, letting developers coordinate multiple parallel AI threads in one session instead of juggling separate contexts",
+          "Hackers exploited a libheif image library bug and login flaw to breach OpenAI's systems, using Claude Opus 5 to access employee accounts and internal GitHub/Slack/email",
+          "Jev, a new AI model from ChatGPT co-inventor Diogo Almeida, reduces token usage dramatically (1M to 86K) and is being integrated into routing, PR review, and compression tools",
+          "OpenAI is building an agentic software factory where Codex agents handle code changes from idea to production, with humans only intervening on risky decisions"
+        ],
+        "sections": [
+          {
+            "title": "1. How OpenAI's Agentic Software Factory Works",
+            "points": [
+              "Codex agents take changes from initial description through production: they read the codebase, Slack, and internal data, write code, run tests, fix failures, and open PRs until CI passes",
+              "Multiple agent reviewers inspect PRs by specialty (cloud, infrastructure, security); low-risk changes get auto-approved, high-risk ones wait for human sign-off before a deploy agent ships and monitors",
+              "Perf Factory monitors production by filtering alerts and tracing slowdowns; Sevbot (an incident-response agent) gathers context and suggests fixes during outages without auto-applying them",
+              "The major constraint is cost—this setup burns significant compute and tokens, affordable mainly for frontier labs now but may become standard as token prices fall"
+            ]
+          },
+          {
+            "title": "2. Security Breach: Claude Used to Hack OpenAI",
+            "points": [
+              "Hacktron researchers found a remote code execution bug in libheif, the image library OpenAI's help forum uses, allowing them to run code on servers via a malicious image",
+              "A separate login flaw let attackers hijack employee ChatGPT and Codex accounts, which were connected to internal tools like GitHub, Slack, and email",
+              "Attackers used Claude Opus 5 (with reportedly loosened cybersecurity guardrails) to execute the exploit and gain access to sensitive internal systems"
+            ]
+          },
+          {
+            "title": "3. Jev Model: Fast Scoring for Emerging Use Cases",
+            "points": [
+              "Jev, created by Diogo Almeida (ChatGPT co-inventor), scores possible outcomes in milliseconds rather than generating text sequentially like standard LLMs",
+              "Early builders have created model routers, PR reviewers, and context compaction tools with it; one context compaction tool reduces a Claude Code session from 1M tokens to 86K in one second",
+              "Access is limited; interested developers can join a waitlist"
+            ]
+          },
+          {
+            "title": "4. Claude Code Projects: Parallel Agent Coordination",
+            "points": [
+              "Anthropic launched Projects (in beta), restructuring Claude Code around coordinating multiple parallel threads that can open PRs, run tests, and share context",
+              "Each thread can delegate to subagents with loops and workflows; a chief-of-staff-style brief in one main thread hands off work to parallel cloud threads that operate independently",
+              "Codex threads can now reference, message, and monitor each other—previously they had no awareness of parallel work, forcing manual context copying between sessions"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Code Projects demo video",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePWp6j_yOFQNNxr7snQI2E553kjK157KzAw4xwGCMFzpb8H7vd-w3dIDnfg4XdJ6-9K8VpXHY9ZEYNe0-8GtfLzS6FvrZv1TU81i8HmtqbPMpB1qTctebh5RaWSLWEVd3IXrXgG_nXnd8zsSrbeoAffPtu93mYlEShX3lFUAYSVOtoKuwNkTdmDqaMdg95iAz-laACx9rZ3YVRoPlqc8D8DfAf1rs9HExBtHq9dzutSv9WWgnnLgXZQDLEocNDayHXA/4u5/8MUM3zx3Q9eNwbqslljLJA/h4/h001.qZTQ3xaWQRPpfR_Xcxp3kL-cuTJkC986p0Ss1MjLO_g"
+          },
+          {
+            "label": "OpenAI security breach breakdown",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XquqdLl0lwsNdUi9MfxG7p8j_1Md_YB9MW3vozhCQkf6kTkbPQP-sZ7wioe4Y_vXpDsrvgidfT8m2ps1c0fk7AetEtVTZkdQwBtGSp9j7v5xEzqxic5B82Vyjg8mdFH2rQ5jyMmzw_ld8nbdawfbAXa8C2Rgw6qcUSEqed-gLlgRYHY5MLzIrlBI-6JvqkOHTE4c0ipY6iUZx_Ko9ZV4HOnb9AQOiUBA2Ylo5Zzie1B0Cb_aU9JbGiAj0eKyG4Xnfxqw/4u5/8MUM3zx3Q9eNwbqslljLJA/h11/h001.HogHbebeLsrrbFxu_Scqfnd8dMsmJj-XpHcU7NElu48"
+          },
+          {
+            "label": "Jev model waitlist",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.9gcMOkjOtNYGV3uudiXU2IlRBKI0pJQ-qfcjWNOOSzMw7vPHsTNk668gSdKzNXg4uIAqrGLMGsQCwo8ygV2U2KmoM-Pq4zkcN0_3p9ME2RHlyF53v-DQvRqh_WX988jIQ_lFbQi5erSBWC_rabaoAaAED6ziM-8m192HtyKt9c1XcnYpW8QpampZh9ubGR3hJcWnMy5pI8Q1x51ZIeQRUrx-ncC3iC5DdATT2wSLbTADt_zOO9lEJCl0B_mo1DWx/4u5/8MUM3zx3Q9eNwbqslljLJA/h9/h001.kuXtbbQ10tK1tPIjMl5ingfY7qDzz335R6-8RG48_CM"
+          },
+          {
+            "label": "How to build with Jev tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwXhB0rAQVmA0KX0ELPkyFbNUiumBAcp17BIERf_mj-vhKqDL3gU7txTo6VzqQTMrnNtUu0kS8UhVwaKvoA3EHjFkESwGzk7aDQcJICpl-lqm1qLzvNmtrBCAPMIJWhlbUBP1dBxtFXwRxZKxHonVoqmhTSGyEHQUCXpWPhNpfQM_VHlE705jTBOQhiO1VMfuVTpuKeLxcmlGcRbSxauiJM3i-eCQ10HayXPk6Z9F3pQDp9qpThor6ceY4oYvEaQK8/4u5/8MUM3zx3Q9eNwbqslljLJA/h30/h001.N6ZE0cbI9i1JftOFPM_G-FoHoSSRDbCyoW2MieXwOC8"
+          },
+          {
+            "label": "How to de-slop an AI-generated codebase cookbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqugUPCP5ic_RJ_ISNxQWT181HiaDzSjxtOnY91Bis_bhk83TQ_uU_FfBCbi6M1MZ3kRh1mQXQK2mAO0JwIZ5G8uGsLOYpzY_xGmzOzrOleAcTAXrea3XclHH3AMLx_rE0Uld4bFVPUZpAqEGlDhJ_N8mc9vhpvLPbNmCLZiGwdeTJb82mgK7NoUPTYpgr6la2vjlk7Wj83SfUXAdxwEPHYUU22l3O25Ij0Fk0sxlHluhWoUMgTKCdIBvJb_2zKzTun1_zQqFcsszUtaRRpukHTP8/4u5/8MUM3zx3Q9eNwbqslljLJA/h32/h001.o50TX-Kl6-vnfsGe1zkFLc_w_Fxwjknh230HTfTKalA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "👓 Meta's less-creepy smart glasses",
+      "date": "2026-09-18T14:31:30+00:00",
+      "summary": {
+        "headlines": [
+          "Meta's upcoming Luna glasses skip the camera, using six microphones and AI instead to address privacy concerns while still capturing audio.",
+          "OpenAI's nonprofit foundation is funding $40M+ in biological datasets to supply AI systems with medical training data that companies haven't shared.",
+          "Stanford researchers grew a human cortex inside mice, with transplanted neurons forming working connections—offering a new way to study brain injury but with significant limitations.",
+          "Doctors are prescribing GLP-1 drugs like semaglutide off-label to non-obese patients for pain and inflammation, though evidence remains preliminary."
+        ],
+        "sections": [
+          {
+            "title": "Meta's Luna Smart Glasses: Audio-First Design",
+            "points": [
+              "Camera removed entirely, addressing backlash over covert filming in France and Australia; replaces lens with six microphones and speaker built into thinner frames.",
+              "Wearers talk to Meta AI and Muse assistant (an always-ready AI helper) via voice; side button triggers Meta AI responses.",
+              "Rumored October ship date; Meta could announce at Connect conference September 23–24 in Clubmaster and Burbank styles.",
+              "Social acceptability question remains open: six microphones leave ample room for audio surveillance concerns despite removing visual recording capability."
+            ]
+          },
+          {
+            "title": "OpenAI Foundation Funds Biotech Data Collection",
+            "points": [
+              "Data for Public Health initiative grants $40M to UNC–Chapel Hill program for personalized cancer-vaccine datasets—filling gap between large AI models and actual biological research data.",
+              "Also backs OpenADMET competitions producing standardized datasets predicting how potential drugs behave in human bodies (their efficacy and safety profile).",
+              "Allocates $500K to nonprofit 1Day Sooner to rescue research from bankrupt biotech companies before valuable data disappears.",
+              "Goal: supplement training data so AI can actually learn medicine, not just pattern-match on information already public."
+            ]
+          },
+          {
+            "title": "Human Brain Tissue Grown in Mice",
+            "points": [
+              "Lab-grown human brain organoids (miniature human brain structures) transplanted into mice missing most cortex; human tissue comprised 90% of cortical volume within three months.",
+              "Transplanted neurons formed working connections with mouse nervous system, extending fibers down to spinal cord—first time human brain cells integrated with host animal.",
+              "Oxygen deprivation damaged human tissue, offering researchers a model to study cerebral palsy and similar brain injuries in living organisms rather than dishes.",
+              "Significant limitations: tissue lacked normal cortical layers (organized structures) and showed only partial improvement in memory and coordination compared to intact mice."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Meta's next smart glasses could lose the camera",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NaglytZ4Q8JRnv1Tc5lv8_S0RcRmC-uoKPyOOp27IageKswt0vU56UwMCzRRhtWX41eP3Dk9Rz9IQvDgX8qb9Tmow2q0IxWXlEtfnMHtzLFdgeC-Tblp_tXSMZUpHsAinWxVTqEk1DNt62jpVfVUHUDX3GfuVAtrD5hA4oQweWvTYk40jSkJk8PmdDE3bL2g5HZYI9rDY1vazoMVb4qOi3usjdStt-7X6wbdRd6-3hvho-rjYqgD2KaL-DiPcECV87syryBC5ADs3h5rdbwAZzS8-DuGZZ91hk6BvFie7UebMPyGE57Aj8Qmu8kWO_C_Hj9gYEEkUKISTC7yawQEoc7o/4u5/XXXqEJxUR--kgSeJbeWI2g/h6/h001.7CNd4V4XeV5o1lUHb33X5VQxXVS4l2uNuZUuY2HuB18"
+          },
+          {
+            "label": "OpenAI is footing the bill for more biology data",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5Nagz0hdk1hTYmoKHNq-4KkrMUKul6btH4rDbw4XzuL0UaV0Jofo_927GzVJAEIO7wDLJyhbjevC1gfL8nSvvor-JgkczKyprqyJFr8FWCe2zHGxhn86eFkIn3ddzA__kuA2SLxFdDNATizMuA_YeSZ_gY-VuWdKbDN4uuLpkFu-YQZJhv_aosh56LqmmhMd0bHplnZZJOXCxyT9w4gCMF8Go-EyYx1ziw1oCvXqa3H0JnY1E3PKKgPGedUZSs5Y7fLqeeAXYruOtHbSZf2r5J7nXuGs4KVJocK2K4P-kqmOm2Zo_xHdPOmOxlf7MLHUBHungMqU9YPhrMzmO6WZW2G2KdPyKLGv9Uf14YiNHsJPxo/4u5/XXXqEJxUR--kgSeJbeWI2g/h11/h001.-YgcjP69GolFOhuZmDF1p-6Str47F-9ehAkKW2uHqqw"
+          },
+          {
+            "label": "Scientists grow a human cortex inside mice",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.EUOfM2i4I7QxzOm_6p9LaTve6L_rzbKVZ3yUBzNmgdPjbFlrDzvTnlSiWb8o5yN5HvHz794baT-dWjFODeQchGazGq6qDXqt0qqsyKjbGm2r_6Ts7DGRrPXJw5PMjjVQKqB6JSLuaMIpYVEne4yArVnaKqLxSgbS7L4Fi6aMgVshBsxfXGjyPviXRNIX8xEk0a-3t46TU3KKIDFalp01PK-6RX-1Rz25_MiL78uQfIf9rd4V5c6fF_dkCTH1NqKi_cUcqewcl81lwAA5goLN27vDXAnIey6MwiAgZTAccwY7f9qi94juJOTJ3jHgYjmd/4u5/XXXqEJxUR--kgSeJbeWI2g/h15/h001.N7UmjiTdyMzATFT6AFArafnDgAzwj4FKiO3qYSFRD9o"
+          },
+          {
+            "label": "GLP-1s are finding a life beyond weight loss",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5Nau_0EiBPyCRXjQzWrWgPdTOkrnpQVHtqZc4Gpch-D2Clx3hDtSJsb6AWS4G3wmR6U3ZDxwjwQzXnzkZMi85mxtILPzrrC1E1fKudRbz0Njn-iiwc1TxWeku8al7cgh2aNDGzx8XolIxZqjWY2QYgLkKIyf7-ZUk4jMz0rqUtd4FZewj5kgiaT9xnYzrS6DU9b2pfdKd6y9N_gzOdRN6CCYi1WkYjvGJ4NFUnBuQ6EvYOErRVzdSXWudsPcKnhIAp4CRCV-cFF66vjsXIq-zAFsaMUAgm-25QBijYwp8Ox2nduEN4RTvh3Vu7MxOwmHvZyA/4u5/XXXqEJxUR--kgSeJbeWI2g/h18/h001.yxlWr6-ZhMfxdj29nv8DTxWZavtkcgOORZ-LePgHEC0"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Researchers used Claude to hack OpenAI",
+      "date": "2026-09-18T16:14:06+00:00",
+      "summary": {
+        "headlines": [
+          "Researchers used Claude to break into OpenAI's systems by chaining two security flaws, with the newer Claude Opus 5 cracking the exploit after earlier versions failed—raising concerns about how rapidly AI models are accelerating hacking capabilities.",
+          "SpaceX is quietly negotiating to buy customer and operational data from failed startups to train xAI's Grok models, mirroring Google's $10 million purchase of Spirit Airlines records at bankruptcy.",
+          "Microsoft executive privately called AI training practices on copyrighted material 'the largest theft of labor in human history,' with internal data showing Copilot cut New York Times traffic by up to 93%.",
+          "Anthropic reports Claude now handles 26% of its AI research and development work end-to-end, though the company stresses it operates under close human supervision and is not fully autonomous.",
+          "Top AI leaders including Qualcomm's CEO have been invited to a Trump-Xi Jinping summit dinner on September 24, as industry figures push both leaders to adopt shared AI safety standards."
+        ],
+        "sections": [
+          {
+            "title": "Claude cracks OpenAI security through chained exploits",
+            "points": [
+              "Startup Hacktron AI used Anthropic's Claude to exploit a memory bug in the libheif library on OpenAI's Discourse forum, gaining access to employee ChatGPT accounts and earning a $6,500 bug bounty.",
+              "Claude Opus 4.8 failed multiple times to build a working exploit; however, within hours of Anthropic releasing Opus 5, the identical model successfully cracked the problem.",
+              "The rapid improvement between model versions alarmed researchers about the accelerating pace at which AI is automating previously difficult hacking tasks."
+            ]
+          },
+          {
+            "title": "Microsoft executive denounces AI training as massive intellectual property theft",
+            "points": [
+              "Newly unsealed court filings in The New York Times' copyright case against OpenAI and Microsoft reveal a top Microsoft director called the practice 'the largest theft of labor in human history.'",
+              "Internal data showed Copilot reduced click-throughs to the Times' website by as much as 93%, demonstrating material business harm to publishers.",
+              "Documents claim OpenAI's training datasets contained over 91,000 copies of works from news outlets, with staff planning to bypass paywalls undetected and stripping copyright notices before training."
+            ]
+          },
+          {
+            "title": "SpaceX pursues bankruptcy data acquisitions to fuel xAI model development",
+            "points": [
+              "SpaceX is in informal talks to purchase customer and operational data from struggling or defunct startups, providing cheap training material for xAI's Grok models, which currently lag behind Anthropic, OpenAI, and Meta.",
+              "The approach mirrors Google's recent $10 million purchase of Spirit Airlines business records at a bankruptcy auction last month.",
+              "Elon Musk stated that Grok 5, expected later this year, will integrate 25 years of accumulated SpaceX operational data, with intermediate releases Grok 4.7 planned for this month."
+            ]
+          },
+          {
+            "title": "Anthropic quantifies Claude's role in internal R&D at 26% automation",
+            "points": [
+              "Anthropic disclosed that Claude chatbot now completes 26% of the company's AI research and development work end-to-end, starting from broad prompts with human oversight maintained throughout.",
+              "AI performs large portions of work under close human direction on over 90% of research tasks, with Anthropic emphasizing Claude 'is not operating fully autonomously' on any measured slice of R&D.",
+              "The company shared these metrics in a blog post proposing three ways to measure AI progress, using a standardized automation rating scale from Epoch AI that other developers could adopt with independent verification."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Researchers used Claude to hack OpenAI (primary story)",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuCZp_hSuIPsz-0dnDHI3eLaSS4Cx5LLN6Z5IXAY4TlJASiawQXKPvt_k2oWmhnBGGrHadEtP0Lzo9Ru-UaTUk1uogyD2C0OWPLGh5YgvkjYunRKWNvD1p4fFA8JSkN-iK1BNHu2H184MRPO4XHusu3XxHt6XoIpdVgk9CWZTS3kQQ/4u5/YPWWW3IvT1a1n9QCtq-mSg/h8/h001.wUWQMkElfOKOHnhhQahB_7BEqBJy0jEmHmARSLQtXmo"
+          },
+          {
+            "label": "SpaceX wants to buy dead startups' data",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhbR5DI6DyCtEoGAVbcDS_qhuBH3gMqTySfZDiPS6itN-Bq8WE_f-EGRF2U5X26Nl3Z2dW-bPqaSrdqXw0kNMtMdQhPfKjLiLUgSxW1PjzkV8HAvjP3unzWadxVdosiHOvK9uS0qg0ZYlKUrQaqG_TwHgKf3DrPQeQMYOGtmFyffW1hwr3j94dgu3txVZJlH_xg/4u5/YPWWW3IvT1a1n9QCtq-mSg/h9/h001.nrKkC9qpC2HaVgGn_h0GZnSN87Ea4Z0EFB6AvnPDIjY"
+          },
+          {
+            "label": "Microsoft exec called AI scraping 'theft'",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuCmcN8Acz6IpndvBqxOXmLTEpdpZnSUPHmgvwHwtkJp7gKdCBKqkNFrGabu6KMt6d02eFhi9QyLuuyEG5_5NcIW2wkpNEyPOx3nfS982t4RaunGGPI705QcgOzU3A5DqBeZig7FWvh0F-JEIpYpZeDrqDIsc0cXS24ImPzUfg-Svd5DUoRr6FjDutd3zttv9-Jy3IAyjc_dlzmlS8_hzIky2z66ZVWnUPDJmhSwaUUs4A/4u5/YPWWW3IvT1a1n9QCtq-mSg/h11/h001.nhA3f9lIiV1BZvQa0hBLEw_Jc4PGCu9-32j126VCxd8"
+          },
+          {
+            "label": "Claude leads 26% of Anthropic's AI R&D",
+            "url": "https://elink640.dupple.com/ss/c/u001.eA4BJlw1jawIyadcQA4lRKkPRd9Bo3_YmsKZ0yiaa9QnO8s6kXMb66rhC7FJ9myz7_QTOrtRcNkdUXKLVW0qW2moLHj_WPxlkZ8ssLRFTcEzguK01wPCKufSzKirO6kKppdzPJcD_r2sZ0qHrCRMjjGkoGZ8y9VT7oQuCNeZGus/4u5/YPWWW3IvT1a1n9QCtq-mSg/h12/h001.cFJ5Fkq8dYLsKgGGpOu34EWjyJ0tCpohVLfqhrOeBx0"
+          },
+          {
+            "label": "AI titans invited to Trump-Xi dinner",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhTlbcjYsMFbsjiDbUdD5n_rnEWwvfFUj0BDpKwM2qoisf0Mh7cEi-JhIVMJWwsuIT3Wx1yIGjZg2-mKwfH8fA-pINUgE8lDQYxXgH7PZm1XzJNNokTQz-7RK4PqBHybb2eBAS2vYmWTXrq4HS4kpGp-kpRBzZDL28I9pRZCtaDW8/4u5/YPWWW3IvT1a1n9QCtq-mSg/h10/h001.WJo3oTtJm9ZWYS8sP4rwat0Kg_ISfbavgKEJq17ah6c"
+          }
+        ]
+      }
+    }
+  ]
+}
