@@ -1,0 +1,383 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-22",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "SpaceXAI Releases Grok 4.7 Coding Model",
+        "points": [
+          "New flagship coding/knowledge model priced at $2 per million input tokens and $6 per million output tokens (or up to $12 for a faster variant), with no price increase over prior version.",
+          "Nearly doubles coding performance on Terminal-Bench (a benchmark testing AI coding ability in real terminal environments) to 38.0%, and scores 19.6% on legal benchmarks.",
+          "Built on a larger base model with longer reinforcement training (extra training that rewards correct outputs to improve quality), can self-verify outputs, and handles agentic tasks (multi-step workflows where AI autonomously makes decisions and takes actions) via Grok Build.",
+          "Available across multiple platforms including Cursor, APIs, and cloud services."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Xiaomi Launches Open-Source MiMo-V2.6-Pro and Flash AI Models",
+        "points": [
+          "MiMo-V2.6-Pro and lighter Flash variant are MIT-licensed and available on Hugging Face for commercial use, targeting agent development teams.",
+          "Both support coding, tool use, multimodal input (text, images, and audio together), and a 1-million-token context window (the amount of text an AI can process at once, here equal to about 750,000 words).",
+          "MiMo-V2.6-Pro scored 46 on Artificial Analysis's Intelligence Index, the highest among openly available models, priced at $0.44 per million input tokens and $0.87 per million output tokens.",
+          "Uses a mixture-of-experts design (a technique where only relevant portions of a large neural network activate per task) with 1.02 trillion total parameters but only 42 billion active per request, cutting compute costs.",
+          "Xiaomi achieved this performance jump via reinforcement learning in under 6 days for about $2.62 million.",
+          "Flash delivers much of Pro's agent performance at a fraction of the cost, appealing to teams running large volumes of agent calls."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Anthropic accused Xiaomi of mining Claude conversations to extract training data, raising data ethics concerns."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown Tech",
+        "items": []
+      },
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Google's Googlebooks: Premium Android Laptops Enter Market",
+            "points": [
+              "Googlebooks launch October 4 starting at $899, with five models available for preorder; only one model is priced under $1,000, positioning them as premium devices versus budget Chromebooks.",
+              "Core differentiators are premium hardware, on-device apps, and powerful development tools, with Gemini AI models deeply integrated into the software.",
+              "Marks Google's pivot from the low-cost laptop category toward high-end computing with a productivity focus."
+            ]
+          },
+          {
+            "title": "Google Defeats Supply-Chain Hacking Group from Inside",
+            "points": [
+              "TeamPCP, a hacking gang, tainted hundreds of open-source programs with malware and breached 1,000+ companies through stolen developer accounts.",
+              "An undercover Google security analyst infiltrated TeamPCP during peak operations, letting Google monitor attacks in real time and warn targeted companies.",
+              "The group used a Dune-themed worm to automate exploitation; Google's infiltration disrupted their campaigns."
+            ]
+          },
+          {
+            "title": "AI Model Landscape: New Categories and Pricing Models",
+            "points": [
+              "Jev introduces 'System One' or 'Decision Models,' a new LLM category that accepts text input but outputs only numerical classifications, confidence scores, or yes/no answers, with free output pricing and $0.042 per million input tokens.",
+              "Meta's Muse mobile app outpaced ChatGPT's early adoption, with more downloads in its first 12 days in the US/Canada than ChatGPT achieved in its debut 12 days."
+            ]
+          },
+          {
+            "title": "Robotics and Space: Market Constraints Reshape Industry Timeline",
+            "points": [
+              "Agility Robotics went public at a $2.5 billion valuation; its Digit v5 robot launches later this year, able to work alongside humans instead of isolated in cages, with fast charging and swappable end effectors.",
+              "Rocket supply crunch: SpaceX is ending Falcon 9 rideshare missions to focus on Starship, with launch demand expected to exceed supply through the end of the decade and prices rising.",
+              "Multiple rockets under development are behind schedule, creating a market imbalance that favors existing launch providers."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Hermes Plugin Bridges Claude Subscription and Agent Frameworks",
+            "points": [
+              "Claude Subscription DirectSDK lets the Hermes agent tap existing Claude Pro or Max allowances without a separate API key or pay-per-use billing.",
+              "The plugin runs the actual Claude app in the background, consuming allowance roughly 1.7x faster than using Claude Code directly.",
+              "Reduces friction for teams wanting advanced agents without managing separate billing."
+            ]
+          },
+          {
+            "title": "Senior Engineer Career Trap: The 'Death Spiral'",
+            "points": [
+              "Promotion trap: engineers grab the biggest project, disappear into work, and slowly fall behind on communication and visibility.",
+              "Risk is amplified by remote work and coding agents, which hide problems through less casual contact, more individual ownership, and fewer obvious warning signs.",
+              "Escape route: drop complexity, take on grunt work, build momentum through small daily wins, and share progress loudly so silence doesn't read as trouble.",
+              "Recovery depends on reputation built through shipping and communication, not just code quality."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "OpenAI's Math Problem Milestone & Oversight",
+            "points": [
+              "OpenAI's internal model solved 100+ previously unsolved math problems across multiple fields, beyond the disputed Navier-Stokes work.",
+              "An independent Advisory Group on Mathematics and AI was formed at Princeton with 9 mathematicians to oversee how results are assessed and announced.",
+              "The panel is unpaid and advisory-only, unable to steer research pace or halt projects.",
+              "Founding member Camillo De Lellis signed a warning letter stating that competition between AI companies pressures the math community, raising concerns about incentive structures."
+            ]
+          },
+          {
+            "title": "Meta Patches Muse AI Agent Security Flaw",
+            "points": [
+              "A zero-day vulnerability (a previously unknown security gap) in Muse for macOS let local attackers hijack the AI agent's account by rerouting cloud dictation to a malicious server.",
+              "Attackers could abuse the agent's permissions to take photos and write harmful files, often without user notification.",
+              "Meta patched the flaw within hours of public disclosure, but security researcher Patrick Wardle criticized the company for not building security in from the start.",
+              "Meta downplayed the risk as a 'local attack' requiring malicious code already on the machine, a characterization Wardle disputed."
+            ]
+          },
+          {
+            "title": "Alibaba's Zhenwu V900 AI Chip & Expansion",
+            "points": [
+              "Alibaba unveiled the Zhenwu V900 accelerator, claimed as China's most powerful AI chip, reportedly 3x faster than the previous version and able to run in clusters of up to 500,000 units.",
+              "The company plans to build a training system for models with 5-10 trillion parameters, far larger than current open-weight rivals.",
+              "Alibaba's chip unit T-Head, planned for public listing, has shipped 560,000 units of the Zhenwu family to over 400 customers.",
+              "Alibaba is backing the AI push with over $53 billion in investment over three years."
+            ]
+          },
+          {
+            "title": "Apple Opens Music Hall in London",
+            "points": [
+              "Apple opened Music Hall, a 600-seat live venue in London featuring spatial audio recording and broadcast-quality production capabilities."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "Action Required: Confirm Email Subscription",
+      "date": "2026-09-22T05:14:48+00:00",
+      "summary": {
+        "headlines": [],
+        "sections": [],
+        "links": [
+          {
+            "label": "Confirm email subscription",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5tmk_n4-XmWoaTgB7zLyIboJy-_0MrtMa0K5ndquT9RK5cWgLER0O9q9D-TffzqbRNlrupv1HqEZod-M9BkXL9O9yf8A2-nKyTZhXUorX3VSTVq4mVPYFBgfRVi88-YP7JpEuPFiZl5GwngaDLUrvJ7TXIvFV55ZPexXBzpZQtTe3-1TMAISusoKS2VxjACa6R4kUJeWIOYcWb22cx2D1WEUFEw1PRS2MJGz2cjqKoc219iSryzhZzBY_crS-O6S21rOk63ig9a5oWgh71U5O8AB_ZqhxtO-5xr7BBtuwlr62Fn7IdWXVcaeMKhWQjg-jOyuFME_bFrfaWkbAhuM3r8KMEEW6hWt0dSnHYCrymbGC_fDQuk0cuVOwDetYdulWxQj12GoCWpL_O28QuPq8BxOMVSskxW1zuu7uNIkAel3_fBl3VmF2b31vJql-cKumfOsxQQmyb6TK7wLdjW6hn4Mh7ZHZk9fdMTUeo5mqyTw9RlCQv4vdNFsQ7DS-x22hHbYNi9lXGD6nC3H3CGRf8VpIZhib8BZF3koBUdDspj0aRjKi0MVoD7HW1FUxNTR444MGON3ZqacLGwv7V_MJfXJ8WK04RzZYpTloa8irZ-2k33PHYJO6kvP1brFBM6hb7HoeIHC93wfjSEfgb6AAlptCALuit4S3orm_mRVrBzefRrgGhH6NexHQNhlMSOLQhtnn_hNEwp88OKlfkn85nHhDTGU-VyZP51WSdE_IHZkicoVfh5z7OcDLHQ1H3SFLWKu5LjThgbjKu7gvjRVHcvpAu4Zwu_8LWMfuLhoifOa/4u9/rUKY8RdjS8O4VFlXdtGu4A/h0/h001.2w5--ewkZESzB7N2LgaGagYQDAYYfnVJcDUxIom2AXA"
+          },
+          {
+            "label": "Contact support for help",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5tmk_n4-XmWoaTgB7zLyIboJy-_0MrtMa0K5ndquT9RK5cWgLER0O9q9D-TffzqbRNlrupv1HqEZod-M9BkXL9O9yf8A2-nKyTZhXUorX3VSTVq4mVPYFBgfRVi88-YP7JpEuPFiZl5GwngaDLUrvJ7TXIvFV55ZPexXBzpZQtTe3-1TMAISusoKS2VxjACa6R4kUJeWIOYcWb22cx2D1WEUFEw1PRS2MJGz2cjqKoc219iSryzhZzBY_crS-O6S21rOk63ig9a5oWgh71U5O8AB_ZqhxtO-5xr7BBtuwlr62Fn7IdWXVcaeMKhWQjg-jOyuFME_bFrfaWkbAhuM3r8KMEEW6hWt0dSnHYCrymbGC_fDQuk0cuVOwDetYdulWxQj12GoCWpL_O28QuPq8BxOMVSskxW1zuu7uNIkAel3_fBl3VmF2b31vJql-cKumfOsxQQmyb6TK7wLdjW6hn4Mh7ZHZk9fdMTUeo5mqyTw9RlCQv4vdNFsQ7DS-x22hHbYNi9lXGD6nC3H3CGRf8VpIZhib8BZF3koBUdDspj0aRjKi0MVoD7HW1FUxNTR444MGON3ZqacLGwv7V_MJfXJ8WK04RzZYpTloa8irZ-2k33PHYJO6kvP1brFBM6hb7HoeIHC93wfjSEfgb6AAlptCALuit4S3orm_mRVrBzefRrgGhH6NexHQNhlMSOLQhtnn_hNEwp88OKlfkn85nHhDTGU-VyZP51WSdE_IHZkicoVfh5z7OcDLHQ1H3SFLWKu5LjThgbjKu7gvjRVHcvpAu4Zwu_8LWMfuLhoifOa/4u9/rUKY8RdjS8O4VFlXdtGu4A/h0/h001.2w5--ewkZESzB7N2LgaGagYQDAYYfnVJcDUxIom2AXA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Googlebooks 💻, Grok 4.7🤖, Google infiltrates hackers👨‍💻",
+      "date": "2026-09-22T10:58:11+00:00",
+      "summary": {
+        "headlines": [
+          "Google launches Googlebooks, premium Android-powered laptops starting at $899 on October 4 with integrated AI as a core feature, moving beyond Chromebooks' budget positioning.",
+          "SpaceXAI releases Grok 4.7 for coding and knowledge work at $2–$6 per million tokens, with fast and standard variants available across multiple platforms.",
+          "An undercover Google security analyst infiltrated supply-chain hacking gang TeamPCP, allowing Google to monitor and disrupt their malware distribution affecting 1,000+ companies.",
+          "Rocket launch capacity is becoming scarce as SpaceX shifts Falcon 9 production toward Starship, causing prices to rise and demand to outstrip supply through the end of the decade.",
+          "Agility Robotics goes public at $2.5 billion valuation with humanoid robots that can work alongside humans rather than in isolated cages, launching Digit v5 later this year."
+        ],
+        "sections": [
+          {
+            "title": "Google's Googlebooks: Premium Android Laptops Enter Market",
+            "points": [
+              "Googlebooks launch October 4 starting at $899, with five models available for preorder; only one model priced under $1,000, positioning them as premium devices versus budget Chromebooks.",
+              "Core differentiation: premium hardware, on-device apps, and powerful development tools; Gemini AI models are deeply integrated into the software experience.",
+              "Represents Google's pivot from low-cost laptop category toward high-end computing market with productivity focus."
+            ]
+          },
+          {
+            "title": "Cybersecurity: Google Defeats Supply-Chain Hacking Group from Inside",
+            "points": [
+              "TeamPCP, a notorious hacking gang, tainted hundreds of open-source programs with malware and breached 1,000+ companies through stolen developer accounts.",
+              "An undercover Google security analyst successfully infiltrated TeamPCP during their peak operations, enabling Google to monitor attacks in real-time and warn targeted companies.",
+              "The group used a Dune-themed worm to automate their exploitation process; Google's infiltration disrupted their attack campaigns."
+            ]
+          },
+          {
+            "title": "AI Model Landscape: New Categories and Pricing Models Emerge",
+            "points": [
+              "Jev introduces 'System One' or 'Decision Models'—a new LLM category that accepts text input but outputs only numerical classifications, confidence scores, or yes/no answers; free output pricing with $0.042 per million input tokens.",
+              "SpaceXAI Grok 4.7 pricing: $2 per million input tokens, $6 per million output tokens (or double-speed variant at double cost); now accessible via Cursor, APIs, and cloud platforms.",
+              "Meta's Muse mobile app outpaced ChatGPT's early adoption, with more downloads in first 12 days in US/Canada than ChatGPT achieved in its debut 12 days."
+            ]
+          },
+          {
+            "title": "Robotics and Space: Market Constraints Reshape Industry Timeline",
+            "points": [
+              "Agility Robotics public debut at $2.5 billion valuation; Digit v5 robots launching later this year with capability to work alongside humans (not isolated in cages), plus fast charging and swappable end effectors.",
+              "Rocket supply crunch: SpaceX ending Falcon 9 rideshare missions to focus on Starship; launch demand expected to exceed supply through end of decade with rising mission prices.",
+              "Multiple rockets under development behind schedule, creating market imbalance favoring existing launch providers."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Googlebooks launch details and preorder information",
+            "url": "https://arstechnica.com/gadgets/2026/09/googlebook-laptops-launch-october-4-starting-at-899-preorders-for-five-models-live-today/"
+          },
+          {
+            "label": "Google analyst infiltrates hacking gang TeamPCP",
+            "url": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/"
+          },
+          {
+            "label": "Agility Robotics goes public at $2.5B valuation",
+            "url": "https://www.tanayj.com/p/agility-robotics-inside-the-first"
+          },
+          {
+            "label": "Rocket supply crunch threatens space industry capacity",
+            "url": "https://links.tldrnewsletter.com/BGxQjD"
+          },
+          {
+            "label": "Jev System One decision models and pricing",
+            "url": "https://simonwillison.net/2026/Sep/21/jev/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 Chinese phone makers enter AI race",
+      "date": "2026-09-22T14:04:58+00:00",
+      "summary": {
+        "headlines": [
+          "Grok 4.7 doubles coding performance on Terminal-Bench (38.0%) with no price increase, maintaining $2/$6 per million token rates",
+          "Xiaomi releases MiMo-V2.6-Pro and Flash open models with 1M-token context windows (context window: how many tokens a model can process at once) and MIT licensing, targeting agent development teams",
+          "Hermes agent now runs directly on Claude Pro/Max subscriptions via new plugin, burning allowance 1.7x faster than direct Claude Code usage",
+          "Chinese phone makers enter AI race with developer-focused models offering open licensing and agentic capabilities at scale"
+        ],
+        "sections": [
+          {
+            "title": "1. Grok 4.7 Model Gains Without Cost Hikes",
+            "points": [
+              "Terminal-Bench score jumped from prior version to 38.0%, nearly double; legal benchmarks hit 19.6%",
+              "Pricing holds flat at $2 per million input tokens and $6 per million output tokens versus previous version",
+              "Model built on larger base with longer reinforcement training (additional AI training to improve quality), self-verifies outputs, and handles agentic tasks (multi-step workflows where AI makes decisions and takes actions autonomously) through Grok Build"
+            ]
+          },
+          {
+            "title": "2. Xiaomi's Open-Source Agent Models",
+            "points": [
+              "MiMo-V2.6-Pro and lighter Flash variant both MIT-licensed and available on Hugging Face for commercial use",
+              "Flash delivers much of Pro's agent performance at fraction of cost, compelling for teams running thousands of agent calls",
+              "Both handle complex software tasks with coding, tool use, multimodal input (text, images, audio), and 1M-token context window (can process 1 million sequential units of text)"
+            ]
+          },
+          {
+            "title": "3. Hermes Plugin Bridges Claude Subscription and Agent Frameworks",
+            "points": [
+              "Claude Subscription DirectSDK lets Hermes tap existing Claude Pro or Max allowances without separate API key or pay-per-use bills",
+              "Plugin runs actual Claude app in background, consuming roughly 1.7x faster than using Claude Code directly",
+              "Reduces friction for teams wanting to run advanced agents without managing separate billing"
+            ]
+          },
+          {
+            "title": "4. Senior Engineer Career Trap: The 'Death Spiral'",
+            "points": [
+              "Promotion trap: grab biggest project, disappear into work, slowly fall behind on communication and visibility",
+              "Dangerous because remote work and coding agents hide the problem—less casual contact, more individual ownership, fewer obvious signals of trouble",
+              "Escape route: drop complexity level, take grunt work, build momentum through small daily wins, share progress loudly so silence never reads as trouble",
+              "Recovery relies on reputation through shipping and communication, not just code quality"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Grok 4.7 benchmarks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFjVMuGRr4ilZKR3tYF7ScL2fStZ5PxMHawlRo0ov1mCV4vyfPafQmWoTjAaBPhjymdhFEljZCIWKmWJ67fScM5dGDOflg14mxHnllaGq0qYBPUSainpCZ6_R7EczBtA98GLEnIah4ljlxjJ8r9uIWwQQ3vVr9WZnG_IoxGFOnrh1A3h1cFmXSTAOrvUC5fRU9bgK3x9FeU2FJNHInGTDeTqoLD6XduadTCAZPC3ceRPnx0Anj1obOC2BrtmSGJ_KJka5CWyW0UW0tzmI3UQKR5/4u9/aueqeLoVQw-wZMV1w1XtTg/h4/h001.L40RImSUyL1S4prn_7Ew1CjwIF70m6HN5tZFv_qtzmI"
+          },
+          {
+            "label": "Xiaomi MiMo-V2.6-Pro model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcF-uiteLByTOulAhPhKAEiZgprSfb6to8YQq6VpB7mv2YOoiG_JnRqbRlwSwN6emslhYqBPP0z1bIQNqSfUlM2-LknVrcFco_vtneUkCNQof2g3RONH1ycFD-wP-qlkyEyvsWKkjnxWPbqf7956VZVvPY1kb2XTRAQP8N80JRFT1Y5DzF6zjv7A1SRNW1v6YnNZ-BWwMLnlinRBWZZrj0j6fu06ew9i9ewKm_PxshKoiovgkfMf2yT-V2YDdTc5lt1wPjaC2th8GehrdUxVJKXM/4u9/aueqeLoVQw-wZMV1w1XtTg/h8/h001.1jQywmmAu6djhb4j2xT7TRTB-j9TVhxFo3oLQyliGnY"
+          },
+          {
+            "label": "Claude Subscription DirectSDK plugin",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFZSCfWwxrCqW31tGkDS95_msoZCZEPNxKcsUwSbIRfoxhtEdw3vbeTO4OkplkUPc3lprZIL1Ow1RBHQT5iGnU7SSzZhLTuWeunuVBMJ4SifmcyOuT3EXgnGkMbKB7oghqiSI5b4NRbh2mm6K3JEFaoyM5AdbbISe6uFniSRLKLeTCMzj0HmXRnWQKhgJ6WdCTEqo7cs-Jae4lpO_pafHfflCS5IJRHbDziFQ7gDfKLPi9jHH4PSdYvC7S4nIMukdn9fmLoU956_6Mszv6nhlBE/4u9/aueqeLoVQw-wZMV1w1XtTg/h6/h001.jxuV_R76sDdUg3cTickIUg1AEzibzT4ciHqTEjEzrFA"
+          },
+          {
+            "label": "Senior engineer death spiral essay by Sunil Pai",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcH-JQJycIEqxs6tKudemkYwcdb_OToe_4PZgYsH_bibO4bPt7T4MBJCW4cBoDtp8IeibAREXDb2-N-PU3ITvuInbQoMXM7ME31JU9kB-Rc0LG4jG7JlhIzio0l9r5sRylowxTSXvA8aZXeoivM2kSI8TSYbu5DcQplygVCHVdfgCAjxNQb83qLX4q1NrzHaVddxammBXYzM7D8D2SJmmWVD0EBbs4HmyngFOj7UNkcocfhtf11iTUpyh_2oNGMITp_FeXVnMgVC50e259UOCeyn/4u9/aueqeLoVQw-wZMV1w1XtTg/h16/h001.fUH-rVrmpUNwlETS492ITpnyd2szwc-SE8R6JdnJ4Q8"
+          },
+          {
+            "label": "How to run agents 24/7 on your own server tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwvat8QeDpOZ-0a3Heb_ljsakTkAhIcMGfrMgZENV_l9IHHM0yrm7QaMuaramUK5rqp5O63O0x6YtFbwYdlvBoj479PcWcKqN1BDiBIDKfxZBylwXMNu4NhUHgQthdzzZQDfm7gEa8BCXEliuvZppXsfDcoN9io2TBsF-uOTkqY5A6vW77bVCnzd--mImfiboFgdMQNr-DHoeBgadUD_OxmWbCQc4B7eS32quXabsNYwb7YxlPEhJYJ4xLSycKxFIM/4u9/aueqeLoVQw-wZMV1w1XtTg/h30/h001.s4IOKmL-H6QjJ4rD3mnqhN9qWx-vIHFTt4eT3xHe-5g"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ OpenAI solves 100+ open math problems",
+      "date": "2026-09-22T16:46:48+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claims its AI model solved 100+ unsolved math problems, establishing an independent advisory board at Princeton to address mathematician scrutiny over how results are vetted.",
+          "Xiaomi's MiMo-V2.6-Pro AI model tops all openly available models on Intelligence Index benchmarks while costing a fraction of competitors like Kimi K3.",
+          "Meta patched a zero-day vulnerability in its Muse macOS app that allowed attackers to hijack accounts and control the AI agent through rerouted cloud dictation.",
+          "Apple opened Music Hall, a 600-seat live venue in London with spatial audio recording and broadcast-quality production capabilities.",
+          "SpaceXAI released Grok 4.7, its strongest coding model, at $2-$12 per million tokens depending on speed tier."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Math Problem Milestone & Oversight",
+            "points": [
+              "OpenAI's internal model solved 100+ previously unsolved math problems across multiple fields, extending beyond the disputed Navier-Stokes work.",
+              "An independent Advisory Group on Mathematics and AI was formed at Princeton with 9 mathematicians to oversee how results are assessed and announced.",
+              "The advisory panel is unpaid and advisory-only—it cannot steer research pace or halt projects, only offer guidance.",
+              "Mathematician Camillo De Lellis, a founding member, signed a warning letter that competition between AI companies pressures the math community, raising concerns about the incentive structure."
+            ]
+          },
+          {
+            "title": "Xiaomi Dominates Open AI Model Rankings",
+            "points": [
+              "MiMo-V2.6-Pro scored 46 on Artificial Analysis's Intelligence Index, highest among openly available models, at $0.44 per million input tokens and $0.87 per million output tokens.",
+              "The model uses a mixture-of-experts (a technique that activates different neural network portions for different tasks) design with 1.02 trillion total parameters but only activates 42 billion per request, reducing computational cost.",
+              "Xiaomi achieved the performance jump through reinforcement learning (a training method that rewards correct outputs) in under 6 days for roughly $2.62 million.",
+              "Anthropic accused Xiaomi of mining Claude conversations to extract training data, raising data ethics concerns."
+            ]
+          },
+          {
+            "title": "Meta Patches Muse AI Agent Security Flaw",
+            "points": [
+              "A zero-day vulnerability (previously unknown security gap) in Muse for macOS allowed local attackers to hijack the AI agent's account by rerouting cloud dictation to a malicious server.",
+              "Attackers could then abuse the agent's permissions to take photos and write harmful files, often without user notification.",
+              "Meta patched the flaw within hours of public disclosure, though security researcher Patrick Wardle criticized the company for not building security into the design from the start.",
+              "Meta downplayed the risk as a 'local attack' requiring malicious code already on the machine, but Wardle disputed this characterization."
+            ]
+          },
+          {
+            "title": "Alibaba's Zhenwu V900 AI Chip & Expansion",
+            "points": [
+              "Alibaba unveiled Zhenwu V900 accelerator, claimed as China's most powerful AI chip, reportedly 3x faster than the previous version and capable of running in clusters of up to 500,000 units.",
+              "The company plans to build a 5-10 trillion parameter model training system, far larger than current open-weight rivals.",
+              "Alibaba's chip unit T-Head, planned for public listing, has shipped 560,000 units of the Zhenwu family to over 400 customers.",
+              "Alibaba is backing the AI push with over $53 billion in investment over three years."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's math problem breakthroughs",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQRQTOnljR6KPPTSbEs7nZlrhRuRT86V0szKzjTSnfNMdfS4HBb0rM52GvYGI26dWKiC3mW9VRsxaf1HqRfvuyC8OurbuGio1wfbKzmX3eFRtOGCQEQyyQ9dy3f5xUsNbi37Rc66ht8nw70Qgb1p7ewN-nins3kkmGIrSVsPA97pTEXi7hE1U4g9A8d6Fmo-7tcCb9ydoOjImaJVnkSKb29xYn4qKs7xuxoYebgbvdNr/4u9/F6pWHIbNQP-SvjDei65J_g/h8/h001._0qkV-j0DkdbLUJaNwcBI5IGg_dtvqcPTkOUzUwxF40"
+          },
+          {
+            "label": "Xiaomi's MiMo-V2.6-Pro AI model performance",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51b_Yf0i8sAtd48vqkX-sRlXHxYH1hXNlEDkGg6ZdKwn-EneHCC2zFZ0j_VN9xsrcLtd0Frx3WwJwb0dAoSe1ThyuixKscx1yV6oPYPF95_DS4VTmVBU33kRTExWJOBUKmcqelXbSZ-Mb2JrdiHQI5BN2iBRVAfikJCScoU9l8MHJNHNVNpUi9eoVhmI16KPjeVNc1jcPwojAgcDuXBQ7v6f79ohUJ2oSawQi5cz_4rBV/4u9/F6pWHIbNQP-SvjDei65J_g/h10/h001.R1tSn4Pxqo7MTkxgPy-buT21t3NlRCxwjFq1Fg3U8Jc"
+          },
+          {
+            "label": "Meta Muse macOS security vulnerability",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfUtBRKBbsdKBeh5RxGv6dU5i7I0ZvMQ2_a-eSBgZAqe4l38wU8xmMxXYgMCAw1b_qUBcmA0Mlw8KK6nzrmOjoyv1MXY7nM4h4ot-YOivoKZuy_iO6IQGB3vVFiNcg8hqK0zIyRK3qvZlytz6G7W3pj-gS0NCC_ntlIZKDzURYMQ/4u9/F6pWHIbNQP-SvjDei65J_g/h11/h001.wIJ4j0z-CtpggNsX8KCZzuhEu4vbJ1I5LykUY0f-0qc"
+          },
+          {
+            "label": "Alibaba Zhenwu V900 AI chip announcement",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhWtS15OZmF4EHk-SJz9hjXDOsth9qkyaDRPFlFu6YdHDFXFsTX4yznld7VdmXHHdW-QY0PHNzb5HM5SAlJdry_h4fw57rmjaQ_rK5OoYnS4oMQBQkSkSzak6PG64wfEK3QxhODxmdDEjUQrBd_DkuHpxHMCvOirV25Px_BkCUdWZ/4u9/F6pWHIbNQP-SvjDei65J_g/h13/h001.w3Q1GoDnFsORLG1AvJ1mo6izPnkWIL_zF9s9lwJByUo"
+          },
+          {
+            "label": "SpaceXAI Grok 4.7 release",
+            "url": "https://elink640.dupple.com/ss/c/u001.eA4BJlw1jawIyadcQA4lRKkPRd9Bo3_YmsKZ0yiaa9QxKOl4cy6SpIRrJijg3vVrKYsIL4GZ434RK_dBTg47RbQz7GWbAXeQmKUOZJxAjitDxCEXlAVJIysxGO4vpenjYixb7URYjerRbOUookDo5G0mxxV7F-gSliUKamc841E/4u9/F6pWHIbNQP-SvjDei65J_g/h12/h001.LD-NaXSMF9RocLBJJnuL9moz046v-qhRURzzTwtVfuw"
+          }
+        ]
+      }
+    }
+  ]
+}
