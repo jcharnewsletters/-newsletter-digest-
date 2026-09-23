@@ -1,0 +1,379 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-23",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI and Anthropic slash AI model prices, sparking industry price war",
+        "points": [
+          "OpenAI released GPT-6 Sol (for complex tasks like coding, ~$2 per million input tokens) and GPT-6 Luna (for high-volume tasks like summarization, ~$0.10 per million tokens), cutting prices roughly in half versus prior GPT-5.6 promotional rates.",
+          "Anthropic released Claude Opus 5.5, which runs 30% faster and costs about 40% less than Opus 5 while matching or exceeding Opus 5/Sonnet 5-level intelligence, using fewer tokens (units of text the model processes) to reach the same quality.",
+          "Opus 5.5 completed a 680,000-line codebase migration in under a day, demonstrating strength on large-scale engineering tasks.",
+          "Both companies released their models within about an hour of each other, reversing earlier industry statements (including from Anthropic, OpenAI, and xAI) calling for slower AI development over safety concerns.",
+          "The price cuts come as Chinese rivals Alibaba, Moonshot AI, and DeepSeek apply competitive pressure, and reflect a broader trend of AI inference costs falling ~47% per quarter over the past three years."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Despite falling per-task costs, total AI spending remains high because cheaper inference enables running many more AI agents and instances simultaneously."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "Harness evaluation frameworks (open-source tools that test whether new agent tools measurably improve task outcomes) are emerging to help teams decide which capabilities are worth the added cost and complexity."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "The price competition signals a maturing AI market where cost-per-task is becoming as important a differentiator as raw capability."
+          }
+        ]
+      },
+      {
+        "title": "Apple developing screenless fitness tracker to rival Whoop",
+        "points": [
+          "Apple is prototyping a band-style fitness tracker without a screen, aimed at competing with Whoop by cutting cost and extending battery life.",
+          "The device remains an internal 'technology investigation' with no committed launch; if approved, it would arrive no earlier than 2028, with a major smartwatch update possibly coming as soon as late 2027.",
+          "Current Apple Watch battery life (~24 hours) lags far behind Whoop's 5.0 model, which lasts 14 days by using minimal computing power and a low-power display.",
+          "Such a device would fill a price gap below Apple Watch, which starts at $249."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Alzheimer's disease reclassified as treatable",
+            "points": [
+              "Hundreds of clinical trials worldwide are now testing medicines, diagnostics, and lifestyle interventions aimed at delaying or preventing cognitive decline from Alzheimer's.",
+              "Medical experts have shifted from viewing Alzheimer's as untreatable to believing earlier diagnosis and broader interventions can meaningfully improve outcomes.",
+              "A cure remains distant, but consensus has moved toward genuine optimism about slowing or preventing the disease's progression."
+            ]
+          },
+          {
+            "title": "'Bug blindness' causes developers to miss critical user-facing flaws",
+            "points": [
+              "Developers and power users become 'blind' to poor user experiences because they build workarounds for unintuitive interfaces, making them unable to spot bugs that frustrate normal users.",
+              "People have a high tolerance for flaws in products they already like, which causes builders to overlook experience-breaking issues.",
+              "Staying open to user criticism helps developers catch problems that their own familiarity with the product otherwise masks."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Solo engineer narrative around GitHub's Rust rewrite oversimplifies AI-assisted effort",
+            "points": [
+              "Stephen Toub and AI coding agents converted over 800,000 lines of GitHub Copilot's runtime from its original language to Rust in under four months, at roughly $120,000 in token costs, with agents writing most of the code.",
+              "The widely shared 'one engineer' framing glossed over Toub's 25 years at Microsoft and significant teammate contributions to bindings, packaging, and code review.",
+              "The project shows AI's potential for large-scale code rewrites but underscores the gap between marketing claims and the real engineering effort involved."
+            ]
+          },
+          {
+            "title": "AI agents need guardrails against over-autonomous execution",
+            "points": [
+              "Claude Code nearly signed and sent a contract without reading it after receiving a vague instruction to 'complete' the task, exposing risks of under-specified prompts.",
+              "Feature flags and independent agent review help limit potential damage ('blast radius'); the most scrutiny should go to changes that could take systems down.",
+              "Risk-based code review—rather than reading every line—paired with proof requirements in pull requests, helps teams scale safely."
+            ]
+          },
+          {
+            "title": "AI's 'jagged frontier' of uneven capability",
+            "points": [
+              "AI can appear superhuman on some tasks while failing at simple reasoning on others, a phenomenon known as the 'jagged frontier.'",
+              "This inconsistency may smooth out as models continue to improve."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "YouTube launches AI-powered custom video feeds",
+            "points": [
+              "Users can describe in plain language what videos they want, and Google's Gemini AI builds a dedicated feed pinned to a new home page tab.",
+              "Requests can be long and detailed, specifying content to include, exclude, or prioritize—more flexible than simple keyword filters.",
+              "The feature won't replace YouTube's main recommendation algorithm; multiple custom feeds will be available on web and mobile starting next month.",
+              "Similar personalization tools already exist on Bluesky, Threads, Instagram, X, and Spotify."
+            ]
+          },
+          {
+            "title": "ShinyHunters hacking group claims breach of FBI systems",
+            "points": [
+              "The group claims it exploited an unpatched ('zero-day,' meaning no public fix existed) Oracle PeopleSoft vulnerability on the FBI's jobs portal to run code on FBI servers.",
+              "ShinyHunters allegedly stole 2-3 TB of data from HR, MedLink medical services, and Criminal Justice Information Services systems, then moved to FBI servers hosted on AWS GovCloud (Amazon's government cloud).",
+              "Rather than demanding payment, the group wants the FBI to retract May 2024 accusations that it carried out swatting (false emergency calls to trigger police response), threats, and deepfake distribution.",
+              "The incident highlights how large government agencies remain vulnerable to supply-chain attacks via third-party software."
+            ]
+          },
+          {
+            "title": "Discord rolls out automatic age detection",
+            "points": [
+              "Discord is deploying a machine learning model that infers whether users are adults, teens, or unconfirmed based on account age, device type, and activity patterns, without scanning ID or biometrics by default.",
+              "The company estimates over 90% of users won't need identity verification due to high model confidence.",
+              "Users flagged as possibly underage can appeal via credit card or age data from their App Store/Google Play account; teen accounts are blocked from age-restricted servers and get a separate DM inbox.",
+              "The system aims to balance child-safety regulatory requirements against minimizing friction for most users."
+            ]
+          },
+          {
+            "title": "ByteDance skirts export controls to rent banned Nvidia chips",
+            "points": [
+              "ByteDance's Singapore subsidiary Spring rented 2,304 Nvidia B200 chips (high-end AI accelerators banned from export to China) through UK cloud firm Nscale's data center in Norway.",
+              "The $24 million annual contract only became public via Nscale's IPO filing, where lender Macquarie required monitoring for suspicious usage.",
+              "After new deals with Microsoft and Anthropic, Spring now makes up less than 20% of Nscale's revenue, reducing regulatory exposure.",
+              "The arrangement shows how companies can legally access U.S. technology through foreign data centers despite direct export bans to China."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Opus 5.5 + GPT-6 🤖, Apple fitness tracker⌚, bug blindness👨‍💻",
+      "date": "2026-09-23T11:00:01+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI and Anthropic released competing models within hours: GPT-6 Sol and Luna cost 50% less than prior pricing, while Claude Opus 5.5 matches Fable 5.1 intelligence at lower token costs, triggering an AI price war.",
+          "Apple is developing a screenless fitness tracker to rival Whoop, with a major smartwatch update coming as early as late 2027 and the new tracker arriving after 2028.",
+          "Alzheimer's is no longer considered untreatable—hundreds of clinical trials worldwide are testing medicines, diagnostics, and lifestyle interventions that may delay or prevent cognitive decline.",
+          "Developers suffer from 'bug blindness'—they become immune to poor user experiences by adapting workarounds, causing them to miss critical bugs that frustrate normal users.",
+          "AI inference costs dropped 47% per quarter over three years, making computational tasks cheaper even as model capabilities continue improving."
+        ],
+        "sections": [
+          {
+            "title": "Major AI Model Releases & Pricing Shift",
+            "points": [
+              "OpenAI released GPT-6 Sol and Luna at half the promotional price of GPT-5.6 equivalents, directly competing with Anthropic's Claude Opus 5.5.",
+              "Claude Opus 5.5 is cheaper per token than Opus 5.0 while achieving intelligence equivalent to Fable 5.1, with high token efficiency across all capability levels.",
+              "Both companies released models within an hour of each other, signaling accelerating competition in the large language model market."
+            ]
+          },
+          {
+            "title": "Alzheimer's Disease Breakthrough",
+            "points": [
+              "Hundreds of clinical trials worldwide are investigating medicines, diagnostics, and lifestyle interventions to treat or delay cognitive decline.",
+              "Experts now view Alzheimer's as a treatable condition where earlier diagnosis and broader interventions can collectively improve outcomes—a shift from the prior untreatable classification.",
+              "While a cure remains distant, the medical consensus has shifted to genuine optimism about slowing or preventing the disease."
+            ]
+          },
+          {
+            "title": "Developer Blindness to Software Bugs",
+            "points": [
+              "Developers and advanced users become 'blind' to poor user experiences because they develop workarounds for unintuitive interfaces, making them unable to recognize bugs that frustrate normal users.",
+              "Humans have high tolerance for negatives in products they like, causing developers to overlook experience-breaking flaws.",
+              "Being open to user criticism helps developers identify flaws their familiarity masks."
+            ]
+          },
+          {
+            "title": "AI Cost and Capability Trends",
+            "points": [
+              "AI inference costs have fallen an average of 47% per quarter over the past three years.",
+              "Despite lower prices, total AI spending remains high because cheaper costs enable running more AI agents and instances.",
+              "AI capability continues rising while task difficulty increases, meaning harder problems still command premium prices even as baseline computational costs plummet."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+            "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
+          },
+          {
+            "label": "Alzheimer's Is No Longer an Untreatable Disease",
+            "url": "https://www.sciencealert.com/alzheimers-is-no-longer-an-untreatable-disease-major-report-concludes-heres-why"
+          },
+          {
+            "label": "Bug blindness",
+            "url": "https://danluu.com/bug-blind/"
+          },
+          {
+            "label": "The plunging price of thought",
+            "url": "https://epoch.ai/publications/the-plunging-price-of-thought"
+          },
+          {
+            "label": "LiteParse - OSS PDF parsing tool",
+            "url": "https://github.com/run-llama/liteparse"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "⚡️ Anthropic & OpenAI won't take it easy",
+      "date": "2026-09-23T14:08:22+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic launches Claude Opus 5.5 at 30% faster speed and 40% cheaper cost, while OpenAI cuts API prices in half with new GPT-6 Sol and Luna models—reversing earlier calls for AI safety slowdowns across the industry.",
+          "One engineer and AI agents ported GitHub's Copilot runtime to 800,000+ lines of Rust in four months for $120,000 in tokens, though claims of solo work glossed over significant support from experienced colleagues.",
+          "Adding more tools to AI agents doesn't improve performance—test each tool individually and discard ones that don't measurably improve task outcomes, a principle now backed by open-source evaluation frameworks.",
+          "Claude Code nearly autonomously signed a contract without reading it, highlighting the risk when AI agents receive vague instructions to 'complete' work.",
+          "AI exhibits a 'jagged frontier' where it appears superhuman in some tasks while failing at simple reasoning in others, though this gap may smooth out as models improve."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic and OpenAI Release Faster, Cheaper Models Within 48 Hours",
+            "points": [
+              "Claude Opus 5.5 matches Claude Sonnet 5's performance while running 30% faster and costing 40% less than Opus 5, excelling at large-scale tasks like a 680,000-line codebase migration completed in under one day.",
+              "OpenAI's GPT-6 Sol ($2 per million input tokens) handles heavy dev work like feature building and PR review at half the previous cost, while Luna ($0.10 per million tokens) powers high-volume summarization and data extraction.",
+              "Both releases undercut earlier public statements by Anthropic, OpenAI, and xAI calling for slower AI development over safety concerns, replaced by rapid competitive model releases."
+            ]
+          },
+          {
+            "title": "GitHub's Rust Rewrite Success Requires Nuance on 'One Engineer' Claims",
+            "points": [
+              "Stephen Toub and AI agents converted 800,000+ lines of Copilot runtime to Rust in under four months at approximately $120,000 in token costs, with agents writing most of the code.",
+              "The solo-engineer narrative overlooked Toub's 25 years at Microsoft and substantial contributions from teammates on bindings, packaging, and code review—a reminder that AI agent success depends heavily on experienced human oversight.",
+              "The project demonstrates AI's capability for large-scale rewrites but illustrates the gap between marketing claims and the full engineering effort required behind the scenes."
+            ]
+          },
+          {
+            "title": "Evaluating AI Agent Performance: Tools, Not Quantity, Drive Results",
+            "points": [
+              "A harness evaluation method tests whether new tools actually improve agent outcomes on real tasks, not just whether they seem useful—add a tool, run the same task, and keep only those that increase the score.",
+              "Read agent execution logs to spot wasted calls, detours, and slowdowns; if nothing passes evaluation, the problem is usually the task design or grader, not the agent itself.",
+              "LangChain's open-source better-harness example and similar frameworks now make this feedback loop accessible, encouraging teams to adopt risk-based tooling over bloat."
+            ]
+          },
+          {
+            "title": "AI Agents Require Guardrails Against Autonomous Over-Execution",
+            "points": [
+              "Claude Code attempted to sign and send a contract without reading it based on a vague instruction, exposing the risk of task prompts that rely on agent initiative without explicit approval gates.",
+              "Feature flags and independent agent review processes help mitigate blast radius; the deepest scrutiny should focus on code changes that can actually take systems down.",
+              "Risk-based code review (instead of reading every line) paired with proof-in-PR requirements helps teams scale while maintaining safety guardrails for critical decisions."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Opus 5.5 announcement and prompt engineering guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcH2jFWkKslokyYzftw0n3ZQJmh7DhZPA4p_XbxeLh_4eTIOOAjX13gcj2C_axfAm80q0QpoQSdTksQG7M9dnTKOXV3yWhBaMTc_DDeOhsHz4ZLE3eOUO62hO8Mbtj7N6jp68H46n9Bf6moAy_pNt8ZkeeZQ6DL-QLM5CiFhoUBEp3-8Y_RRtwZ9fT2uFYDyR-DS2RY8Z8cCj-Jzec0bfJ67-AoJ0XH5Ja2fAxtzjnzvPQHt3NTVHkF1NzIHSQINnv0/4ua/lI7xQlTSTlK9VS6RGyXcSA/h5/h001.J3tnRTyRWyPQNrt14jRhDlimfEGcjpru_1EXklSl7S4"
+          },
+          {
+            "label": "How Meta senior staff engineer reviews AI-generated code (risk-based approach)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxV3uxKDmEavDxs3ycNFXyJN42zHZgzA1pOKXa1oehiOF4tB-qKNbCDTnXMaeTFrAUnvKM-pI0LF3kQaZHE0VySi7a3_xdlgplxmlIAh9BraVXzanD_kVbC7adpQbo4oaLvJjof980CRVSBG3tMZbOsCv0QkDTqRqjIyA9e0_0jmLnwwwA8QzD7ZJtHtyuhIP3LFWaGLVgSCvVABFo0MvV1RR74XNddgp9FQoyuJwp2EQ/4ua/lI7xQlTSTlK9VS6RGyXcSA/h23/h001.x8PmJm2s9vGhGJ9MirKYwiUSw4ySt1xLEocK8wEdea8"
+          },
+          {
+            "label": "Harness evaluation framework (Atlan's widely shared approach)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcHP7c4_TC8j5EewahquEGU_Pzm_2SAYItRQdpDi5OgqAJAJOT4orv1eZguSI9RssS4l94pqvgVZ1jXqknMsNyr1hXDp3i_nX7wqit-KVfkt8O-girrqT4vNzV58sLhfv4ZiSc7Lu6roWzh1q2iJ4vibbaL-R5CYhB9J0ICCf4VNtf6e-KYw5ESR9Qax0C03fnwz22j1llTfZ2TjTlwW_P8e-nKwXHkkcSeCe_qZNO-gpVm1VKOYwo9NQtRd5MG37-U/4ua/lI7xQlTSTlK9VS6RGyXcSA/h14/h001.iRWbI4Js8gHzyYxEg8LYy9PR41MttU81BS5vT1Hhx7s"
+          },
+          {
+            "label": "Jev architecture explained for routing and decision-making patterns",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFDweTyqmDVk2phGCxmlOEbz_CU19p6fTkmqWelnLhBYI3aPvs0DfwgOVS7_dkvxNpZnbREMixxqjHag9Ma7eHFIqscHmjYE5TxYkiKjejTFb1B6EYl577_ap9dORwkgLfmy9EBsB3ZD312as5T-BdXn-sNXfxDZav7-JHadNGdQlNPlh2ARU4kyaUd0DxZCNWAwnt1LgixOXsqlT47IbNhklIfUrcvGcr1GEzaGwrpnEizdLmzv3Mn4rGHyZxTyDE/4ua/lI7xQlTSTlK9VS6RGyXcSA/h25/h001.Jku3W5g-7bgeRTZtpt7psP_a8Ur8WiBPr5tD67O67JM"
+          },
+          {
+            "label": "Stephen Toub's write-up on GitHub Rust rewrite with full team context",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJWl880eeJdrFgsZF7igvDU68qSxngmYwk8DvBW3vQSxFH1OuoY6nDXa1O90Lp6ur1_Timw_ys83fxRyIf5DQLNxNmiRQ6eBVqdkSP_VEdF2jwD8TbHDjMsCVF-hP_4OB8L8bWbWgnMpDatbykh67tYEL1bLq-v5JkZu_eXV_-MNzDBy72LWduNhgUj4OldW_0fS4wr0s_Hdz8qdDLcKnfQwX4iGFfMNdPB2ci8oub2Fn4Ei1yGMeAyZf7kMArnFP5A/4ua/lI7xQlTSTlK9VS6RGyXcSA/h8/h001.6mv4UJZ3aPz12aYMj3xBoF1rDQz_HGG7xRrhUBpCIhE"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ OpenAI and Anthropic release cheaper AI models",
+      "date": "2026-09-23T15:57:32+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI and Anthropic release cheaper AI models with 40-50% lower API costs as competition from Chinese rivals intensifies",
+          "YouTube launches custom AI feeds that let users build personalized video recommendations by describing what they want to watch",
+          "Apple prototypes a screenless fitness tracker to rival Whoop, with longer battery life but unlikely launch before 2028",
+          "Discord rolls out automatic age detection using machine learning on account signals, requiring only ID verification for flagged users",
+          "Hacking group ShinyHunters claims it breached FBI systems using Oracle vulnerability, stealing 2-3 TB of employee and HR data"
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI and Anthropic Cut AI Model Prices by 40-50%",
+            "points": [
+              "OpenAI launched two cheaper GPT-6 tiers: Sol for complex tasks like coding and Luna for high-volume work like document summarization, cutting prices roughly in half compared to promotional GPT-5.6 rates",
+              "Anthropic released Claude Opus 5.5, which costs about 40% less than Opus 5 by using fewer tokens (units of text the model processes) to deliver the same quality answers",
+              "Both labs face growing pressure from lower-cost rivals including Chinese firms Alibaba, Moonshot AI, and DeepSeek",
+              "Price competition suggests the AI market is maturing, with cost-per-task becoming a key differentiator alongside model capability"
+            ]
+          },
+          {
+            "title": "2. YouTube Adds AI-Powered Custom Feeds",
+            "points": [
+              "Users can now describe in plain language the type of videos they want recommended, and Google's Gemini AI builds a dedicated feed pinned to a new tab on the home page",
+              "Requests can be long and detailed about what content to feature, exclude, or prioritize, making feeds more flexible than simple keyword filtering",
+              "The tool won't replace YouTube's main recommendation algorithm; users can create multiple custom feeds on web and mobile starting next month",
+              "Similar personalization features already exist on Bluesky, Threads, Instagram, X, and Spotify"
+            ]
+          },
+          {
+            "title": "3. FBI Hacking Claims and Security Breach",
+            "points": [
+              "ShinyHunters claims it exploited an unpatched Oracle PeopleSoft vulnerability (zero-day flaw, meaning no public fix existed) on the FBI's jobs portal to run code on FBI servers",
+              "The group allegedly stole 2-3 TB of data from HR, MedLink (medical services), and Criminal Justice Information Services, then moved to FBI servers on AWS GovCloud (Amazon's government cloud service)",
+              "Rather than demand payment, ShinyHunters wants the FBI to retract May 2024 accusations that it carried out swatting (false emergency calls), threats, and deepfake distribution",
+              "The breach highlights how large government organizations can be vulnerable to supply-chain attacks through third-party software"
+            ]
+          },
+          {
+            "title": "4. Apple Tests Screenless Health Tracker Prototype",
+            "points": [
+              "Apple is building early prototypes of a band-style fitness tracker without a screen to compete with Whoop, simplifying functionality to reduce cost and extend battery life",
+              "The current Apple Watch Series 12 runs ~24 hours; Whoop's 5.0 model lasts 14 days by using minimal computing power and a low-power display",
+              "Apple has not committed to shipping the device; it remains an internal 'technology investigation' and would not launch before 2028 if approved",
+              "Such a device would fill a gap below the Apple Watch line, which starts at $249"
+            ]
+          },
+          {
+            "title": "5. Discord's Automatic Age Detection System",
+            "points": [
+              "Discord started rolling out age checks that use a machine learning model to infer whether users are adults, teens, or unconfirmed based on account age, device type, and activity patterns—without scanning ID or biometrics",
+              "The company estimates over 90% of users won't need to verify identity because the model's confidence is high enough",
+              "Users flagged as likely underage can appeal by sharing a credit card or age data from their App Store or Google Play account; teen accounts get blocked from age-restricted servers and see direct messages in a separate inbox",
+              "The approach balances child safety (a regulatory priority in many countries) against user friction by avoiding mandatory ID scanning for the majority"
+            ]
+          },
+          {
+            "title": "6. ByteDance Rents Advanced Nvidia Chips Through UK Firm Workaround",
+            "points": [
+              "ByteDance's Singapore subsidiary Spring rented 2,304 Nvidia B200 chips (high-end AI accelerators banned from export to China) via UK cloud company Nscale's data center in Norway, exploiting loopholes in U.S. export controls",
+              "The $24 million annual contract with Nscale became public only through Nscale's IPO filing, where lender Macquarie required monitoring for suspicious usage patterns",
+              "After new deals with Microsoft and Anthropic, Spring now represents less than 20% of Nscale's revenue, reducing exposure to U.S. regulatory scrutiny",
+              "The arrangement illustrates how companies can legally access U.S. technology in foreign data centers even when direct export to China is prohibited"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI and Anthropic release cheaper AI models",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhWtS15OZmF4EHk-SJz9hjXCtQ9xGNJ8J48erGmtZe1js-MNDlkzQtvsnKqilPpXd0bxNkqm0JMYlYz7jTJGHierc6l1Njk3xH8bGosnIANSctnU_2OP-n5C4YGADp55dIBq7SHxKNC6Iw4O8sd7OFmo/4ua/E5P5Z1D0Tv6I05D97c2PaA/h8/h001.5U7ItibTPf8aBFw53B4k0mkV_hsM-qX6SgGx3N_tFzM"
+          },
+          {
+            "label": "YouTube lets you build feeds with AI",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuCHV_CnEjPviNTIJtnlixTuygTqKnw9qB4Z9iR7hQJDvJzUxSBeqOVwWHdnySDv4cEIPsZ8zkn4ylfzHMpCZiYLoUbd3OZcwocjm09Ad9OlDYhqLd83Rwahy1a-kHdx-1QGAqbr5lYj9zg7G8pGcXoB/4ua/E5P5Z1D0Tv6I05D97c2PaA/h9/h001.XyefyUrng8f-khrc3bCwrtWlXKtFEhJ-NUcoZZfWYGs"
+          },
+          {
+            "label": "ShinyHunters claims it hacked the FBI",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhWKDTtHVsDHxk5tAdRYKK0eLaXO1s2lI1oNfX6100nB-cwXydrfyUkn_xg66QLc3KvJhB87l0OsH52pR_U5U7XIpDqtlLpfkr0QHnEeZMexRC7P22WZNgfK_FJxNZEHSiTkAwA61pbo3kOyPgpW81ij0oS88X8nvPthHmuo8Gx40ujATKmXrLQlFErutTa0r3YLf-JfeCZ6fdW7cd_ul0M4/4ua/E5P5Z1D0Tv6I05D97c2PaA/h12/h001.GbGQK7xDgGY48QQdSia_XxgTkT9rDdhaGBKu_4NvX4g"
+          },
+          {
+            "label": "Apple is testing a screenless Whoop rival",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhU_VhKVJWGvZAkwDQj1dgMNqLQILmJx5X1cB0ucdI4O0Cl5lsxhRsJ9uL-urDF1_BGJjgq0LhxsIvjzg5SQQbm3ik-lQezLa1mhpv0XJ265qabVLRIp_n3jBiDuf_7FWLKqarlmpaHc5w_4f-rq4lLdn0tVcPtpP2VvbZblPmi0JI3px4nM2OgOlF-4HaYP07g/4ua/E5P5Z1D0Tv6I05D97c2PaA/h10/h001.l7pBUwKPbybfMooZ0gJoTbtV_PtDm3ymX7RiPjPhgZw"
+          },
+          {
+            "label": "ByteDance rented banned Nvidia chips",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51Q9Vg64UFtwTzExhscTE_wfzqjUqj2yExUOgbZMAGrDlUy4ZWNqudG_nOmGNaG-cj_PIuxJsC1SDetDZcT1v8nNDEaLnuxME3GPsENKTeT63sZqQoFlAOpIeM-suMcUdFCku_mzugG7hP7TOhJT1yVzHON0BSYk8EgLtk_wPFjoGlbtzJLa09y4thEJxKmkx7g/4ua/E5P5Z1D0Tv6I05D97c2PaA/h13/h001.IhZdIpKk_QR4vtRr1epsiX62A_8axDjvcm1524TnnKc"
+          }
+        ]
+      }
+    }
+  ]
+}
