@@ -1,0 +1,382 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-23",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic launches Claude Opus 5.5, undercutting OpenAI on price and performance",
+        "points": [
+          "Opus 5.5 scores 58 on Anthropic's Intelligence Index, topping previous leaders Fable 5.1 and GPT-6 Astra (both at 53).",
+          "Matches Fable-level performance while costing 40% less than the previous Opus 5 model, with extra savings from token caching (reusing previously computed sequences within 30 minutes to cut costs).",
+          "Addresses widely criticized unnatural 'Claudish' writing style, producing more natural text across applications.",
+          "Achieved its best-ever score on internal alignment/safety benchmarking (a measure of how well an AI follows intended values), the first release under Anthropic's stated 'pacing' commitment.",
+          "Paid plans get expanded five-hour usage limits plus an on-demand rate-limit reset feature to encourage adoption."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Released just 90 minutes before OpenAI's competing GPT-6 launch, intensifying the industry's release-day rivalry."
+          }
+        ]
+      },
+      {
+        "title": "OpenAI launches GPT-6 Sol and Luna at half the price",
+        "points": [
+          "Two new models: GPT-6 Sol for advanced reasoning/complex problem-solving, GPT-6 Luna optimized for speed and everyday tasks.",
+          "API pricing cut roughly 50% (Luna at $0.10/$0.50 per million tokens, Sol at $2/$10), while performance improves only slightly.",
+          "Extends advanced coding, factuality, and computer-use (AI interacting with software interfaces like a human would) capabilities down to cheaper tiers.",
+          "Rolling out immediately across ChatGPT Work, Codex, and most subscription tiers, with banked usage-limit resets mirroring Anthropic's competitive moves."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Sam Altman said the industry's 'pacing era' 'does not mean stopping,' framing continued rapid releases despite safety calls."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "OpenAI taps mathematicians to review AI math breakthroughs",
+            "points": [
+              "OpenAI's internal math model has resolved 100+ open problems across most branches of mathematics since August 28, including a claimed resolution of Navier–Stokes (a centuries-unsolved fundamental fluid dynamics equation).",
+              "Nine top mathematicians, including Fields Medalists Timothy Gowers and Martin Hairer, now advise via Princeton's Institute for Advanced Study to vet results for correctness, originality, and credit—but cannot control the model's output pace.",
+              "Move responds to a letter from 27 Fields Medalists accusing AI labs of rushing unreviewed results, though the new process doesn't actually slow releases."
+            ]
+          },
+          {
+            "title": "a16z launches $42M AI-era college alternative",
+            "points": [
+              "Andreessen Horowitz's 'Horowitz Andreessen Academy' is a one-year, $42M program for recent high school grads starting Fall 2027, replacing degrees with startup projects and industry mentorship (including Sam Altman).",
+              "Admissions judge what applicants have built rather than grades/test scores; founding class capped at ~50 students.",
+              "Students get $50,000 in compute credits, $5,000 travel budgets, and startup internships, with no homework or exams; a pricier two-year version is planned for 2028 pending regulatory approval."
+            ]
+          },
+          {
+            "title": "OpenAI and Sam Altman sued over Tumbler Ridge shooting",
+            "points": [
+              "British Columbia alleges OpenAI and Sam Altman failed to alert police after the Tumbler Ridge shooter's flagged ChatGPT usage."
+            ]
+          },
+          {
+            "title": "Alibaba unveils next-gen AI chip and massive scaling plans",
+            "points": [
+              "New chip delivers 3x performance gains over its predecessor.",
+              "Alibaba plans 5–10 trillion parameter models and 20 gigawatts of data-center capacity by 2032."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": []
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Mirage ships Tesseract, an AI video-editing suite for agents",
+            "points": [
+              "Lets AI agents work directly with video editing tools—compositions, keyframes, audio—to create and refine video assets."
+            ]
+          },
+          {
+            "title": "AI agent security: isolating OAuth tokens from agents",
+            "points": [
+              "Agents reading malicious documents can be tricked into following hidden instructions; if they hold a user's OAuth token (an access credential for connected apps/APIs), this can turn into full account takeover via prompt injection.",
+              "WorkOS Relay keeps credentials on WorkOS servers, attaching them only to pre-approved requests sent to allow-listed servers, so the agent itself never sees the token."
+            ]
+          },
+          {
+            "title": "Grok Bot automates new-hire onboarding",
+            "points": [
+              "Connects to Google Drive, Notion, SharePoint, Outlook, and Teams to pull handbooks, checklists, and IT guides automatically.",
+              "Given just a hire's name, role, and start date, it builds a first-week checklist and answers questions only from approved company sources.",
+              "Can be tested, corrected, and saved as a reusable 'Skill' for standardizing onboarding across future hires."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "SWE-Bench Pro V2 reveals harder, more realistic coding benchmark",
+            "points": [
+              "New benchmark includes 642 real-world software engineering tasks drawn from 11 code repositories, fixing errors present in earlier versions.",
+              "Top models, including GPT-6 and Claude Opus 4.1, score only about 23%, sharply lower than on previous benchmarks, reflecting realistic multi-file coding complexity."
+            ]
+          },
+          {
+            "title": "AI leaders to address UN Security Council on safety",
+            "points": [
+              "Sam Altman (OpenAI) and Dario Amodei (Anthropic) are expected to speak to the UN Security Council about AI safety and regulation amid rising concerns over AI risks."
+            ]
+          },
+          {
+            "title": "AI safety and infrastructure advances",
+            "points": [
+              "Google published RRSI, a method for self-improving AI agents that reduces benchmark overfitting (over-tuning to specific test cases) while improving real-world performance across eight benchmarks using fewer policy tokens (decision outputs).",
+              "vLLM introduced hardware-agnostic layers supporting diverse GPU types while retaining 96.6% of the efficiency of native implementations on premium hardware.",
+              "New memory optimization techniques bound four major bottlenecks in training large Mixture-of-Experts models (architectures that split computation across specialized sub-models) without sacrificing calculation accuracy."
+            ]
+          },
+          {
+            "title": "China and biotech AI infrastructure developments",
+            "points": [
+              "China's ChangXin Memory Technologies claims parity with Samsung and Micron, with a new DRAM platform yielding 50% more chips per wafer and 50% higher capacity than its prior generation.",
+              "The Biological Computing Co. partnered with AWS to commercialize neuron-derived AI video models, porting insights from lab-grown neurons into software that runs on standard cloud GPUs without biological hardware."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🚀 Anthropic, OpenAI's dueling release day",
+      "date": "2026-09-23T09:04:55+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic's Claude Opus 5.5 tops leaderboards at 58 on the Intelligence Index while Anthropic addresses its writing style criticism, releasing 90 minutes before OpenAI's competing GPT-6 Sol and Luna at half the previous price.",
+          "OpenAI's internal math model has resolved 100+ open problems since late August and now includes nine top mathematicians in an advisory role to vet results, though they cannot control the model's pace.",
+          "Andreessen Horowitz launched the Horowitz Andreessen Academy, a $42M one-year program for recent high school grads emphasizing startup projects over traditional degrees, with admissions based on what students have built.",
+          "OpenAI and Sam Altman face a lawsuit from British Columbia alleging they failed to alert police after the Tumbler Ridge shooter's ChatGPT use was flagged.",
+          "Alibaba unveiled its next AI chip delivering 3x performance gains over its predecessor, alongside plans for 5-10 trillion parameter models and 20 gigawatts of data-center capacity by 2032."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic & OpenAI Launch Competing Models Within 90 Minutes",
+            "points": [
+              "Claude Opus 5.5 achieves a score of 58 on Anthropic's Intelligence Index, surpassing previous leaders Fable 5.1 and GPT-6 Astra (both at 53), with improved writing that reduces the 'Claudish' jargon users criticized.",
+              "OpenAI releases GPT-6 Sol and Luna at 50% cost reduction ($0.10/$0.50 per million tokens for Luna; $2/$10 for Sol compared to previous versions), with slight performance improvements despite lower pricing.",
+              "Anthropic reports Opus 5.5 achieved 'the best score to date' on internal alignment benchmarking (a measure of how well AI systems follow intended values), marking the first release after Anthropic's stated 'pacing' commitment.",
+              "Both releases demonstrate continued competition despite industry calls for a 'pacing era,' with Sam Altman noting that pacing 'does not mean stopping.'"
+            ]
+          },
+          {
+            "title": "OpenAI Taps Mathematicians to Review AI Breakthroughs",
+            "points": [
+              "OpenAI's internal model resolved 100+ open mathematics problems across most mathematical branches since August 28, requiring human review for correctness, originality, and proper credit attribution.",
+              "Nine top mathematicians, including Fields Medal winners Timothy Gowers and Martin Hairer, now advise at Princeton's Institute for Advanced Study on vetting and releasing results but have no control over production pace.",
+              "This advisory structure responds to a letter from 27 Fields Medalists accusing AI labs of rushing results without proper peer review or credit, though the current setup does not slow model output.",
+              "The model's claimed breakthrough includes resolving Navier–Stokes (a fundamental fluid dynamics equation unsolved for centuries), adding urgency to proper vetting procedures."
+            ]
+          },
+          {
+            "title": "a16z Launches AI-Driven College Alternative",
+            "points": [
+              "The Horowitz Andreessen Academy is a $42 million, one-year program for recent high school graduates starting Fall 2027, replacing traditional degrees with startup projects, tech company co-ops, and instruction from Silicon Valley leaders like Sam Altman.",
+              "Admissions prioritize what students have built or shipped over grades and test scores, with the founding class capped at roughly 50 students.",
+              "Students receive $50,000 in compute credits, $5,000 travel budgets, and internship access to partner startups, with no homework or final exams; a two-year version planned for 2028 could charge elite-college tuition if regulators approve it.",
+              "This model challenges traditional education as AI transforms workforce needs, offering few alternatives beyond Alpha School to the pre-AI classroom structure."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic releases Claude Opus 5.5",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf937MUSrYzK6JzB2n81ON3z0bEWUqpxtr4xLr_VbbehKqdNbeQ7V5ldrzeI3oW3j4_RKUc9A59h6nnkUpSQi4_eDjH7lCfaqO_I47EpVkjZ9mJ3d_9f2eP8hIpjhLsMT4N8xv9pEmbFlbToh_z-HtuXgWvJnUfHQD__Rl_ysDGIy6SpKWG9bP079GCNbTmDLMsfw024l8v20lQF0BsinjIrsrYfj-YEGU03XLOCvAPoE/4ua/LXawP2AbQ0GoIZIKG_1gxA/h5/h001.zxT2puz2b9ZKeyqmeXmpenKWfpwmVop4d0zQ2UWCvAU"
+          },
+          {
+            "label": "OpenAI announces GPT-6 Sol and Luna models",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa-IUY9yqSc2cx0km5OJXo-Nhz-5b3By2ggLYYTnAdhB7FTbJ6mtjhsdY4qJt3h6cGlXRYUVICiDgfYtLwTHqY_-0jkPWvo2VK37Eb-6bIX_DmvH-ntFMA3nW4OPVpRCkytrWm0x1iXKIWcq8bjzBZGIfff4iXF3IwXc9Y-PcL4BuNnaIeQ86Xlq1iVVn1O-LqQSne1Xl4_cFpFwu3pSFnJQZeIMWYv0gGMSCupHjpu32olj9CqNBXoIE0euLOiHxVQ/4ua/LXawP2AbQ0GoIZIKG_1gxA/h7/h001.9Jika3Og-nSqmvWlGPqSS5hsXvNzQ3WYMvb-cONBcd0"
+          },
+          {
+            "label": "OpenAI taps mathematicians to check its AI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa-IUY9yqSc2cx0km5OJXo-PacPl2Sr99l1FAnzmciAl-ql-HCj_M1f7pS2Pwxrx5ZspRpb_iyxpRO9THpvG5w1DN8daaFsgqtrr6-l-k_m-RKRT_gCZsGwXyk5KHUYw42b_xskLmNIqSV4bF3sFpdwIU4Vb2wLQj60vT-zt34cBKZ9_yPuHmzfRie_UtTIMMvXJuH-c0n9DUWb7i3Fp1xMei2DG05eT8dhfp_uSqC3efKwP6z4IWAAS84_dmnubGLg/4ua/LXawP2AbQ0GoIZIKG_1gxA/h11/h001.eGJWWno-73eQluH_JFUW8Cv-Skkp6BVRXDgdUEmcmBU"
+          },
+          {
+            "label": "a16z launches AI-driven college alternative",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfzO0n1-nGX-eR-IMR0LdnpDSLc3-Oudjr5OIPsfzyDKzK9gLe4ahW3yWddQAkAoXJ_AZT9_RtiidSzgU0eCreD-e67xxRIC4fSeAULTtzu8tKmDzePNdGbS50XBOZmulY-qpcTmTFx5o5LyIrKAj6XsBKV7hqCI-pnt_HT0AqFAH7MuTK275taSDoT3Nk03FX2WpsF9X9Lhd_TebN1i0hVySY147gD-BxtGCQ4t6ZaCG21Gwywc8Cx4ZRFMkMdC1D4EUOmkDVq_KLl_r1pLywDm4yEIWp79mqcwatZZ3cZgq/4ua/LXawP2AbQ0GoIZIKG_1gxA/h19/h001.V-xwc88c5JOcpow8tZP1A-OKBSyU0phLeblX_dH_5VQ"
+          },
+          {
+            "label": "Build, test, and publish an app without leaving Codex",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHX4_GuKkRvG-6u77JRKkGeimgs-0iRld1ed5l130cGz5krpcFn3IwAInCokIxBPq6CBJcXaPzqXyfft3rOZ-T6hmQ4AMzw7y1VCh7L85Kn6HIayp5x646hljON8xFtBdgb55Hx36EozJFElJBj1RGYYPZ84TmfwMJkrTEWwiaoika-LRCTMDqFTDE5VEC5eb-nFPnMbG5_s4pPhjzSbGlm2z8itcFGh8B4YABaoDpSTfxEmkkVLW6DmKc7eE7C0Hw/4ua/LXawP2AbQ0GoIZIKG_1gxA/h14/h001.kqijwmscMVsZ3LW_9fKydp0kw82ZrnJpp2Uw8IeAFfk"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😼 AI skills your boss wants NOW",
+      "date": "2026-09-23T12:20:03+00:00",
+      "summary": {
+        "headlines": [
+          "The Neuron newsletter focuses on making AI accessible to busy professionals through quick news hits, tool reviews, and practical prompts they can use immediately."
+        ],
+        "sections": [
+          {
+            "title": "What The Neuron Covers",
+            "points": [
+              "Around the Horn: Quick-hit AI news summaries so professionals stay informed for meetings without reading lengthy articles.",
+              "Treats to Try: Curated AI tools that have been tested to help readers avoid wasting time on ineffective options.",
+              "Prompt Tip of the Day: Ready-to-use ChatGPT and Claude prompts (language model systems that generate text based on instructions) that actually produce useful results.",
+              "Daily rotating features: Monday memes, Thursday trivia, and other content designed to make learning about AI engaging rather than tedious."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Click here to stay in the loop",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtbDyaAkpHq3Q1LBamkAPlTdInWCiM6bQuE6Oza3VZ8tzhPhqrKmfTDLXTEB8OO5x2Dv15LvNMkbIzFCmvVp0dykAGzSb5Sn8pCGgPR3MztzoEmpyuNJ7MCYrIB7L2jdhy8LKy-Bfzy__B3FEl57BHPBpnQiFUbcFtGR94wm8Lb-uBQszkZaelJdHEXhrqcDXcz-fRcVbh8JTVUrEwgxTSowfrJpM1hEK8S4fboiLyVh2fwlMdNIsE3blQtO6BxMLe3C8Q5yFw33ehndQMGiMt1NQ2w_Hv3j-IJqoLA_2jntYcnSmVr0DnLGiAuHP29svX1UAf2vxisYUZJhtQbSkPox6zMLCfHhZ396YIBShGNaGOxvflsmofUmT1Iawsrwh73inLJRWHll2XhQ9iVUj_FYCu9KDVekPt9nZKArZ5v9pn4xo1V5eoYZm2tKNUsu_cF52NScZ0wHmLBYB86SikiRyxDbuTTIcy_p42ZVfuchPfDjXg1q3nfZNvgcI7cMTNNMEXRu9wGfzXMYIvwujfCF4Bts3uSqMxiIcrWv0xiUZY5hs9MCM1upk52c42BPMK9tnGAsKs55AesgOCsYl_JtaGil-ZEvfUSIaWzZFvBueY-W_WEbGQ16cq_vheRAdJTeTz4GcFl-O8Y1E9L_lTcmX-kPOApUAhAugkIGbujvtcZm7djbHUxQ8prcXcBYPUCDqdxigCH-HtOsddUUhhnf2phzc5zIupn9eXQptXKW8/4ua/DZKU0DnGSseeGGPjJrDqxw/h0/h001.km8_P48vV5Rq8s3OM8GVFcTxaxfodsdHM1N_BvKl6rI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🦾 Anthropic's Opus 5.5 matches Fable, but cheaper",
+      "date": "2026-09-23T13:13:49+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic launches Opus 5.5 with Fable-level performance at 40% lower cost, matching competitor capabilities while offering expanded usage limits across paid plans.",
+          "OpenAI releases GPT-6 Sol for advanced reasoning and GPT-6 Luna for everyday tasks, cutting API pricing 50% and matching Anthropic's usage expansion tactics.",
+          "Mirage ships Tesseract, a creative suite that lets AI agents work with video editing tools (compositions, keyframes, audio) to create and refine video assets.",
+          "Grok Bot enables fully automated new-hire onboarding by connecting to systems like Google Drive and Notion, building personalized checklists from company documentation."
+        ],
+        "sections": [
+          {
+            "title": "1. Anthropic's Opus 5.5 Shifts Model Competition",
+            "points": [
+              "Achieves Fable-level performance (matching top competitor benchmarks) while costing 40% less than Opus 5 previous generation.",
+              "Addresses user complaint that recent Claude models sound unnatural; writes more naturally across applications.",
+              "Increased five-hour usage limits on paid plans and added a rate limit reset feature users can trigger anytime to drive adoption."
+            ]
+          },
+          {
+            "title": "2. OpenAI Counters with Dual GPT-6 Strategy",
+            "points": [
+              "GPT-6 Sol targets advanced reasoning tasks requiring complex problem-solving; GPT-6 Luna optimized for speed and cost on routine work.",
+              "API pricing cut by 50% with banked usage limit resets, matching Anthropic's competitive pressure on pricing and availability.",
+              "Both models rolling out across ChatGPT Work and Codex most subscription tiers immediately."
+            ]
+          },
+          {
+            "title": "3. AI Agent Security: OAuth Token Isolation",
+            "points": [
+              "Agents reading malicious documents can follow hidden instructions; if holding a user's OAuth token (access credential for APIs), prompt injection becomes account takeover.",
+              "WorkOS Relay solution keeps credentials on WorkOS servers, attaches them only to approved requests, sends only to allow-listed servers—agent never sees the token itself.",
+              "Prevents agents from accidentally or maliciously abusing user permissions without degrading their ability to perform authorized tasks."
+            ]
+          },
+          {
+            "title": "4. Automating New-Hire Onboarding with Grok Bot",
+            "points": [
+              "Connect onboarding resources (Google Drive, Notion, SharePoint, Outlook, Teams) at Connectors section; bot accesses checklists, handbooks, IT guides, policies.",
+              "Provide clear brief per hire: name, role, start date; bot builds first-week checklist, pulls relevant docs into one place, answers questions from approved sources only.",
+              "Test bot on real questions, correct mistakes, then save as reusable Skill for future hires to accelerate standardized onboarding across team."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Best prompting practices for Opus 5.5",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.JtFbHcnj7MmUqbdsCSlCvBEk0LWGq-7zfWv8dN_6AfXqLhjfek_2DQjnr86G812JgeEjNknvnSMcptISubn13mJTH5wTpIw-Ac4sUZdvLHyjECCaOIG6bQrYm4_DUW1zFQZE0dtqyiRz9uNXSvQYcneLEmg3z7FDQ2iRN7Dca4joLhnhgCGzIpBoJHOjQCX1PDSHp_8cgnv99ZVYWxpT0t0ANDw0K4d-QzJlI_RL6InlhntrMd4L9J3f3jJvEJS3nOlk3swUYq2FSeLj-vXG89U9OIyuNGqAW74RupLRL3PL1bAxoF1eoSWkYn4BqzxB_xw1vbNNLYZTeFQ-e2xvXBaPYB6out1hne6BxQoMtIE/4ua/-g_wCOHaRgCCrQ2ZOVKJYg/h4/h001.GD1o6TaHk38uWT8a0KcmdV7bGUoKvsXervadIreqPwQ"
+          },
+          {
+            "label": "Learn about GPT-6 Sol and Luna",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1FxDUWkbNuPKPw5uRCpR2uGSpKdR5Oxsq71SiE3ETtes-NCEHsd7CxwV9zI11CPYNCDgihTrgdD9UmTWfW-O27Gn-Gl4N65XsT4mQdqs8LAEaYaP1MvdLuwUzwWJtc5x1g_jolGMGpzRqXBDc3urwmIOEvBMDbXFHAzrXIc6Yl33f1hYYZmYmRrCN7JHsPKraa1L7fTWZLhJxmlusfxoK1dk0sBamuqAipS3zzh08ub-90V0PG9ChrsthZGBuLPvBs8nDY1B8-Se69iejaJYaZZMy3tGpQM9moMltyuKlWY/4ua/-g_wCOHaRgCCrQ2ZOVKJYg/h6/h001.ljBV5UoTFyFzPixMXpYD1UdKE8HLRyW6VYbZfDzZ0LU"
+          },
+          {
+            "label": "Tesseract creative suite for agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DbzK6ussT05IJzzbg4YqOm14frZCWQxTPXevKZ7EsrT8Ls3Qq54FcmlofVhZFB7onvFZ388a1vZtvsQez8R81eaLnaVPraHU4u3g0eS50m7KLly4CN1aC9NT3b7sO_r5CtW9sLAmW_cB2NRxURFP-aPLO_LIRfnQUQbBSNK6WfYQhLA1DgaU1vi5yX4mtv53oe0P3LY9d7qbiaTHnXEKNuF6ZtC6FZQm46ALO2yqdM6-0aDLh-s3j4WZJsQ5QzBzMv7dhubobYj4VVMopBFthg/4ua/-g_wCOHaRgCCrQ2ZOVKJYg/h7/h001.YIQIH2KyE0N3Ksrc7RwCMSdwT2dm_NXzP_CIq1HiFik"
+          },
+          {
+            "label": "Grok Bot onboarding manager",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.LDkxbMa7NCxUGG7E2Yh3AHr3_sy2bUez8t6gVwjnGeImh-uXWHHH4mvFA3NNn01T-YWRgma5Md8e7S2a2SKB7sWqO1fiuuv7BB8a7qvufsgFUnUb4Wir62VeiNs9Osywewyczo7B4lyLp1wOeyeBpEiq533YJo3iTdeJfr87546_dJ3x96-hJB37mKyRW88VVBik6Cx-9GO6vAaUvRjsFycZXCJJqbJNgVTcTn1Iab1GR0so8k_HAiEdjlrg02dWpTAo4TDDlXG7uS2VDTptTA/4ua/-g_wCOHaRgCCrQ2ZOVKJYg/h14/h001.XGEZbx0AYR4AGO4-JN6A7NTQU6kTQTxkL2L2pICDtPc"
+          },
+          {
+            "label": "Anthropic blog: Getting the most out of Opus 5.5",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTY9bM2Bsu0kUiWKyseZN5MPjC1UQrA-eu4r2yUViEpHX3aaqYEDpB7ogWx_Ap41xsmCVfsnaUF7-JAyygl2_1Mg6L3tDaUM49lkr7Cfk3pMWbzn-e4h33OnBrqF4kvvGxSdP58-nans3ewOPz0nOFjfMjxe50x1bQNfCCzL6RbVMusa9rJpQRcmKBLY9mdsQ8UtP7NtO7VYHqsDW3-efoEVtrWAmgdqgB887GYVqRAn1hJAXQvrn6Eq20sfODjH_XSbf_JPkwITVtEA70gyGTVY/4ua/-g_wCOHaRgCCrQ2ZOVKJYg/h16/h001.LS7q3Jh0D_dqnHZVvPKQPMfGrLBK8q1LChDPaFdtWLw"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "GPT-6 ⚡, Opus 5.5 🧠,AI leaders at UN 🌐",
+      "date": "2026-09-23T13:52:33+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI launched GPT-6 Sol and Luna as faster, cheaper alternatives to GPT-6 Astra, extending advanced coding and factuality capabilities to lower-cost models",
+          "Anthropic released Claude Opus 5.5, matching Opus 5.1 performance at 40% lower cost and achieving its strongest automated safety audit results",
+          "SWE-BENCH Pro V2 benchmark released with 642 real-world software engineering tasks, showing top models like GPT-6 and Claude Opus 4.1 score only 23%, indicating significantly harder evaluation than previous versions",
+          "AI leaders Sam Altman (OpenAI) and Dario Amodei (Anthropic) are expected to address the UN Security Council on AI safety and regulation"
+        ],
+        "sections": [
+          {
+            "title": "1. Model Efficiency & Cost Reductions",
+            "points": [
+              "Claude Opus 5.5 costs 40% less to run than Opus 5 while maintaining performance parity with Fable 5.1, with additional savings from token caching (storing previously computed sequences to avoid recomputation)",
+              "Opus 5.5 reduces expenses through cheaper input/output tokens and cache read discounts for content reused within 30 minutes",
+              "GPT-6 Sol and Luna bring advanced capabilities in coding, factuality, and computer use (ability to interact with systems like humans do) to more affordable price tiers"
+            ]
+          },
+          {
+            "title": "2. Software Engineering Benchmark Evolution",
+            "points": [
+              "SWE-BENCH Pro V2 introduces 642 tasks from 11 real code repositories, fixing errors from earlier versions and creating a more realistic evaluation",
+              "Top models now score only ~23% on the public test set, down from higher scores on previous benchmarks, proving the benchmark's increased difficulty",
+              "Performance drops reflect realistic multi-file coding scenarios and language complexity that earlier benchmarks didn't capture"
+            ]
+          },
+          {
+            "title": "3. AI Safety & Infrastructure Advances",
+            "points": [
+              "Google published RRSI, a method for self-improving AI agents that reduces benchmark overfitting (overtuning to specific test cases) while improving real-world task transfer across eight benchmarks using fewer policy tokens (decision outputs)",
+              "vLLM introduced hardware-agnostic layers supporting diverse GPU types while maintaining 96.6% efficiency of native implementations on premium hardware",
+              "Memory optimization techniques now bound four major bottlenecks in large Mixture-of-Experts model training (architectures splitting computation across specialized sub-models) without approximating calculations"
+            ]
+          },
+          {
+            "title": "4. AI Governance & Emerging Competition",
+            "points": [
+              "Sam Altman and Dario Amodei will address UN Security Council on AI safety and regulation amid growing concerns about AI risks",
+              "China's ChangXin Memory Technologies claims technology parity with Samsung and Micron, with new DRAM platform yielding 50% more chips per silicon wafer and 50% higher capacity than prior generation",
+              "The Biological Computing Co. partnered with AWS to commercialize neuron-derived AI video models, translating learnings from lab-grown neurons into optimized software that runs on standard cloud GPUs without requiring biological hardware"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "GPT-6 Sol and Luna",
+            "url": "https://links.tldrnewsletter.com/RM8wFX"
+          },
+          {
+            "label": "Claude Opus 5.5",
+            "url": "https://www.anthropic.com/claude-opus-5-5"
+          },
+          {
+            "label": "SWE-Bench Pro V2",
+            "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2"
+          },
+          {
+            "label": "Training AI From Real-World Tool Use",
+            "url": "https://www.perplexity.ai/hub/blog/learning-from-real-world-experience"
+          },
+          {
+            "label": "Hardware-Agnostic Models in vLLM",
+            "url": "https://pytorch.org/blog/hardware-agnostic-models-in-vllm/"
+          }
+        ]
+      }
+    }
+  ]
+}
