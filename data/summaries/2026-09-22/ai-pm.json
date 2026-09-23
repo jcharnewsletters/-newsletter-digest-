@@ -1,0 +1,283 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-09-22",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "Lenny's Newsletter",
+        "items": [
+          {
+            "title": "Error Discovery Must Precede Metrics in AI Evals",
+            "points": [
+              "Most AI teams skip error discovery (systematically finding what actually breaks) and jump straight to writing metrics, risking measurement of the wrong things.",
+              "Error discovery is 'the eval equivalent of product discovery'—identifying which AI failures are worth measuring before you start tracking them.",
+              "Automated agents alone miss failures requiring product judgment (e.g., a leasing assistant refusing to offer alternatives) but catch obvious contradictions; hybrid human-agent review avoids 'criteria drift' (your definition of success changing as you see more real data).",
+              "Three-step process: (1) collect traces—full records of a user session including input, prompts, tool calls, and output; (2) manually annotate 100+ diverse traces in plain language, letting an AI agent learn your patterns; (3) cluster annotations into failure modes and prioritize by frequency/impact—entire workflow takes ~30 minutes with practice.",
+              "Companies investing in systematic evals saw major gains: Shopify was 2.2x faster and 68% cheaper, Cursor cut costs 41%, and Ramp improved accuracy from 35% to 83%.",
+              "A free plugin (npx skills add) automates trace bookkeeping and builds a custom review interface for annotation."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "There's An AI For That (TAAFT)",
+        "items": [
+          {
+            "title": "a16z Launches Free Horowitz Andreessen Academy",
+            "points": [
+              "a16z's free, year-long program starts fall 2025 in San Francisco, with Sam Altman and Jensen Huang on faculty and courses like 'How to Build a Data Center' and 'Inside NVIDIA'.",
+              "Admission is based on projects built or shipped rather than grades or essays; 50+ hiring partners include Anthropic, OpenAI, NVIDIA, Google, and Stripe.",
+              "Program includes a month abroad and ends with a summer co-op inside frontier AI labs; free tuition applies only to the founding class, with a paid two-year version planned for 2028."
+            ]
+          },
+          {
+            "title": "OpenAI Releases GPT-6 Sol and Luna With Fewer Errors",
+            "points": [
+              "New models make roughly 50% fewer factual mistakes than prior versions on the same recall tasks, per OpenAI's internal testing.",
+              "Responses are clearer, less jargon-heavy, and about 10-15% shorter on average.",
+              "Sol is live today in ChatGPT Work and Codex (paid plans); Luna rolls out free in the desktop app, using the same training approach as flagship GPT-6 Astra released earlier this month."
+            ]
+          },
+          {
+            "title": "Figure's Humanoid Robot Generalizes to New Homes",
+            "points": [
+              "Figure's robot achieved a 56% full-task success rate tidying rooms, folding towels, and making beds in 30 unseen homes, up from 9% without human-behavior training data.",
+              "The key improvement came from training on a large dataset of recorded human actions rather than per-location retraining.",
+              "Suggests robots could eventually adapt to new environments without custom setup for each home."
+            ]
+          },
+          {
+            "title": "New Hardware and Voice AI Tools",
+            "points": [
+              "Ulanzi's Vibe Key is a six-button aluminum pad for hands-free AI interaction, combining voice input, confirmations, and rejections during extended agent sessions.",
+              "Linden's speech-to-text model cuts voice agent latency to 350ms, handling proper nouns, postcodes, and speaker identification across 55+ languages with custom vocabulary support."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "AI Daily Brief",
+        "items": [
+          {
+            "title": "Grok 4.7: Strong Benchmarks, Weak Real-World Performance",
+            "points": [
+              "Grok 4.7 ranks 7th on Artificial Analysis' Intelligence Index and beats GPT-5.6 Sol and Fable 5.1 on coding benchmarks, but real-world tests showed wobbling 3D animations and a 40-minute render time versus competitor Astra's 5 minutes.",
+              "The model is 30-80% less token-efficient (tokens are text chunks an AI processes; efficiency measures how well it uses them), making real-world API costs exceed Astra's despite claims of price parity.",
+              "Suggests Grok occupies an awkward middle ground: better than cheap models but pricier than advertised for practical workloads."
+            ]
+          },
+          {
+            "title": "Treasury Secretary Rejects AI Liability Shield",
+            "points": [
+              "Bessent publicly refused to grant AI labs legal immunity from damages, blaming 'OpenAI management' rather than 'a bunch of agents' for the Hugging Face breach.",
+              "He argued backstopping labs would be 'good business for them, bad business for the American people.'",
+              "Supporters say the threat of liability will force safer product development; critics argue catastrophic AI risk is a market failure only government can address."
+            ]
+          },
+          {
+            "title": "OpenAI-Anthropic Mutual Safety Testing Deal Collapses",
+            "points": [
+              "The two labs reached the contract stage for a bilateral arrangement to safety-test each other's models before release, but the deal fell through for undisclosed reasons.",
+              "Elon Musk revived the idea at the All-In Summit, arguing mutual testing would make shipping unsafe models legally untenable due to 'enormous' liability.",
+              "Such a system could also make distillation (training smaller models from larger ones) visible in testing logs and harder to hide."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "Lenny's Newsletter",
+      "subject": "Advanced evals: How to find (and fix) hidden AI failures in your product",
+      "date": "2026-09-22T12:45:15+00:00",
+      "summary": {
+        "headlines": [
+          "Most AI teams skip error discovery and jump straight to writing metrics, risking measurement of the wrong things—error discovery is the critical first step that reveals which AI failures actually matter to your product",
+          "Automated agents alone cannot reliably find AI failures that require product judgment; the best approach combines human review of diverse trace samples with agent assistance to avoid criteria drift (changing your definition of success as you learn)",
+          "Shopify achieved 2.2x faster and 68% cheaper results, Cursor cut costs 41%, and Ramp improved accuracy from 35% to 83% after investing in systematic evals—demonstrating the compounding advantage of catching and measuring the right failures"
+        ],
+        "sections": [
+          {
+            "title": "Why Error Discovery Must Come Before Metrics",
+            "points": [
+              "Most teams skip error discovery entirely and write metrics first, but this creates two problems: you make assumptions about what matters and end up measuring the wrong thing or measuring it poorly",
+              "Error discovery is 'the eval equivalent of product discovery'—just as product discovery identifies which problems are worth solving, error discovery identifies which AI failures are worth measuring and tracking over time",
+              "Agents cannot catch failures requiring product judgment or context outside the trace (like objection handling in a leasing assistant refusing to offer alternatives), but reviewing examples yourself reveals these gaps through criteria drift (your definition of success evolves as you see real data)",
+              "A controlled study found agents missed issues requiring product judgment, were good at catching obvious contradictions, but also flagged good responses as failures—showing hybrid human-agent workflows outperform pure automation"
+            ]
+          },
+          {
+            "title": "Three-Step Error Discovery Process Using Coding Agents",
+            "points": [
+              "Step 1: Collect traces—each trace captures one complete user session including input, system prompt, tool calls, retrieved context, intermediate model calls, and final output; if you lack real user data, generate synthetic traces by combining dimensions (task type, user persona, request clarity) into scenarios",
+              "Step 2: Review and annotate at least 100 diverse traces using a customized web app that the agent builds for your data type; annotate only failures in plain language ('assistant offered no alternatives' not 'bad response'), let the agent learn your patterns, then review and accept/reject its suggestions iteratively",
+              "Step 3: Cluster annotations into failure modes and prioritize by frequency and impact; the entire workflow takes ~30 minutes once you learn the basics, and a free plugin (npx skills add) automates the bookkeeping and interface generation"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Building eval systems that improve your AI product (prior post)",
+            "url": "https://substack.com/redirect/c3a319a8-e2ba-4bb0-8de2-92d112c30514?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "AI Evals for Engineers & PMs course with 25% discount code LENNYSLIST",
+            "url": "https://substack.com/redirect/8a0ad128-0e15-4a56-a7d3-b27d97cf5a79?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Active learning (method for choosing informative examples)",
+            "url": "https://substack.com/redirect/a85f0d43-1563-4f56-819e-8fdc9edac6c0?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Evals skills plugin for error discovery",
+            "url": "https://substack.com/redirect/f4fb006e-14ff-4f60-9301-583792e66ce7?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          },
+          {
+            "label": "Criteria drift concept in eval research",
+            "url": "https://substack.com/redirect/89bb9f42-1068-49ab-97f0-cf58afdcb454?j=eyJ1IjoiOHNpNm13In0.GXcIx0I4i9P8FyuoVt5cUDcVFpVclRT1azu7WqVvBVc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "There's An AI For That (TAAFT)",
+      "subject": "🦾 Altman and Huang Teach Class",
+      "date": "2026-09-22T19:56:40+00:00",
+      "summary": {
+        "headlines": [
+          "a16z launches free Horowitz Andreessen Academy with Sam Altman and Jensen Huang on faculty; applications open now with focus on what students have built, not grades, and a summer co-op at frontier AI labs.",
+          "OpenAI releases GPT-6 Sol and Luna with 50% fewer factual errors than previous models; both show clearer answers and less jargon, rolling out today to ChatGPT Work and free users.",
+          "Figure's humanoid robot achieves 56% success rate tidying unseen homes using AI trained on human behavior data, up from 9% without learning—showing generalization potential across new environments.",
+          "Ulanzi debuts Vibe Key, a six-button aluminum pad for hands-free AI interaction with voice input, confirmations, and rejections in one place during extended agent sessions.",
+          "Linden speech-to-text model cuts voice agent latency to 350ms and handles proper nouns, postcodes, and speaker identification across 55+ languages with custom vocabulary support."
+        ],
+        "sections": [
+          {
+            "title": "a16z Academy: Free Year-Long Program Launches Fall 2025",
+            "points": [
+              "1. Admission based on projects built or shipped, not essays or grades; 50+ hiring partners including Anthropic, OpenAI, NVIDIA, Google, and Stripe backing the program.",
+              "2. Curriculum runs September-April on-campus in San Francisco, includes month abroad, ends with summer co-op inside frontier labs—one thing no traditional degree offers at age 18.",
+              "3. Free tuition for founding class only; a16z plans two-year program launching 2028 at elite private university pricing pending regulatory approval.",
+              "4. Faculty includes Sam Altman and Jensen Huang; courses include \"How to Build a Data Center\" and \"Inside NVIDIA\"; early applicants built six-axis robot arms and real-time thought-to-speech apps."
+            ]
+          },
+          {
+            "title": "GPT-6 Sol and Luna: Fewer Errors Across Core Tasks",
+            "points": [
+              "1. OpenAI tested Sol on conversations where users had caught prior errors; new version made roughly 50% fewer mistakes on same factual recall tasks.",
+              "2. Both models use clearer language, reduce technical jargon, fewer conversational oddities, and deliver answers 10-15% shorter on average per OpenAI's analysis.",
+              "3. Sol live today in ChatGPT Work and Codex on paid plans; Luna rolls out free in desktop app; deployment continues throughout the day across regions.",
+              "4. Improvement stems from same training approach as flagship GPT-6 Astra released earlier this month—focus on reducing common error patterns end users encounter."
+            ]
+          },
+          {
+            "title": "Figure's Robot Learns Across New Homes via Human Behavior Data",
+            "points": [
+              "1. Humanoid robot entered 30 completely unseen homes with three tasks (tidy living room, fold towels, make bed) it had not trained in those specific environments.",
+              "2. Achieved 56% success rate completing entire job correctly—every toy in basket, every towel folded, bed fully made—versus 9% without learning from human behavior.",
+              "3. AI trained on large dataset of recorded human actions is the key difference; demonstrates potential for robots to generalize across new spaces without per-location retraining.",
+              "4. Broader implication: once widely deployed, robots could adapt to new homes and environments without needing custom lessons for each individual room or household."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Horowitz Andreessen Academy",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.RUBZ4nmpws8F7fbywsQK-j5N4Xs_BA5e6y_nbzMBfOBY4QUv7JfCzkPunVr-KbawY226Mtt8hyzVSDU1QGIYGdq52YFfw7lXeAkToGFTGxt8i0gVz0yPDPTXlTrdwBf15NFU-xx7ZTylF1olbNPCrUe7TpUJT2Qgb1L5OM-zheKaV_oq-BbVJjLgYMoHoS1PE18NvFATi74KKMBpNLVaY4-q-LLbFZhfNoWD6XDgXSkJG8KmH2tQTLwVcgPGnm98h0Kc1WdEkmGIfViAi-JS2A/4u9/Wrr2IVUcSZi0m-1TdaXClA/h3/h001.iQBTCdenWgll5uUw3ZJYItcCrk0b5nvewPwuDJlHSO8"
+          },
+          {
+            "label": "OpenAI GPT-6 Models Update",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.SeZcZ2kldk7Osi4slNtvSbg4fHE3D6_GwDJKfp_OmSEiObyMOJbtRKjJcnOs44g3995ighgwpdSISQRGPjmJDh13Ws_xG2SqhP-d27RjMVgSN20t2xfCblK-4gbX98-nuyoOp5zCMG3BK21XErFQFKx_AWGuwgWV0jeh_48zA8FTW7FUkTnx0bsbqcQ1jjuDxkv-P5GRgFt2OOV1d5YR8mOuVuQI4ZN3kcd0RW7J4IDkSQySOe-bLzo4Bu4s2Lppvy_h0CsU3SsYGaqkOiPVVlzS7ojqZkuK9VLsrdotzA8/4u9/Wrr2IVUcSZi0m-1TdaXClA/h7/h001.H5AJfmW8M4dsn8DRjbDgXifvOKOtUMlYGLDdfhXz-4A"
+          },
+          {
+            "label": "Linden Speech-to-Text Model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.RUBZ4nmpws8F7fbywsQK-uq-oHJiN0jpUEcOL1CGmqulLNCuT2k5_E7VBnI6qrNPJusN4p3J7Qz1h8YSFocWPEbi28mG8xlb800hk3wHX4DK6LTMiI-itF92MUzMTt3V_1LSIFcQyxCL3fA9q7Tu2oCQQIS-b0eS83vvKr92z9iVhN1yQsQHFeL-CpbdNPRr4n8f4wP4x5R4eRC1NyG-jrnlXD3Gc5UMODEyApzzOuVkB-cD8DM_sSfEiJKHo8Ro/4u9/Wrr2IVUcSZi0m-1TdaXClA/h5/h001.s1fQ6EzvgBlEoAVGUEKkk5ygT1tWRHtwYJSLvdviM1E"
+          },
+          {
+            "label": "Vibe Key Hardware for AI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.RUBZ4nmpws8F7fbywsQK-ggMHIBjT2yLq3tTS1AA7UJsJlJ4u_2J2XIbpL6nDPLJwwvTh4o7_KobcxsSgoCC8S1QK62neSgRnXi6A-AltMzkrIOV2qJ6JcW_id5d_fGmtGWCgBKNAW2iWwj_VE31yqPyqkGDu1eB4UnpFymJLz0APzqhwtIwzZ8Z7bWL0pPPAwClOG0KYbiJqry_muruRfNILPHTh8sFIOfsgb9-9HXssFPYXtSlW1wj25ciQz-T/4u9/Wrr2IVUcSZi0m-1TdaXClA/h14/h001.mCy2HYaTaMa2fG9eazTu9YGslBmlFXmG5GdOlJGyIe0"
+          },
+          {
+            "label": "Figure Humanoid Robot Cleaning Demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7itmdKw-ZPBYHT8UwNPxmlVmfwCh7WIFuSPBw9eDwC-w_doRKrVn8ELRheO7PRja5a461blezuftrgIkc2YsRF4pFpCyNzfIoWKA1Okq4GUzUpCm-Tjm3x8Ai2vi8yzh0h-KYdNHR-bgzP-KSsRRrshx4xm_1oXDjN0PSAB-O0TNllwU92BssVch4rQJpgjOiuG1866KaEk9VoYPnwJVMNXl7kmvrnfgc3uw8bJe6K9EASBDPJ6X3SsbQu7lR63NEpE0zpiaJkGd0YmABzfLG1fUv4AuCthO8LBBBeN07Xge/4u9/Wrr2IVUcSZi0m-1TdaXClA/h16/h001.FcZpwtPMAa2mZ4hu2z4F7UUbI8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "AI Daily Brief",
+      "subject": "Agent Wars!",
+      "date": "2026-09-23T00:44:38+00:00",
+      "summary": {
+        "headlines": [
+          "Grok 4.7 released by SpaceXAI: benchmarks look strong but real-world performance trails competitors like Astra on efficiency and cost",
+          "Treasury Secretary Bessent rejects liability shield for AI labs, holding management accountable for incidents like Hugging Face breach",
+          "Meta's Muse personal agent reaches #1 on US App Store and Amazon blocks it within a week, marking the opening of 'agent wars' over who controls customer relationships",
+          "OpenAI and Anthropic nearly agreed to mutual safety-test each other's models before deal fell through; Musk proposes rival labs should test competitors' AI",
+          "Shopify embraces Muse with direct backend access while Amazon restricts it, creating a fork in how platforms will handle AI shopping agents"
+        ],
+        "sections": [
+          {
+            "title": "Grok 4.7: Paper Wins, Real-World Struggles",
+            "points": [
+              "Grok 4.7 ranks 7th on Artificial Analysis' Intelligence Index and outperforms GPT-5.6 Sol and Fable 5.1 on coding benchmarks, but initial testing revealed wobbling 3D animations and a 40-minute render time that competitor Astra completed in 5 minutes",
+              "Model is 30-80% less token efficient (tokens are chunks of text a language model processes; efficiency measures how well it uses them), with real-world API costs exceeding Astra despite claims of matching prices",
+              "The gap between state-of-the-art benchmarks and practical performance suggests Grok occupies a difficult middle ground: better than cheap models but more expensive than claimed for real-world workloads"
+            ]
+          },
+          {
+            "title": "No Liability Shield: Government Holds AI Labs Accountable",
+            "points": [
+              "Treasury Secretary Scott Bessent publicly rejected providing liability protection (legal immunity from damages) for AI companies, stating: 'The Hugging Face incident, that is the responsibility of the OpenAI management, not a bunch of agents'",
+              "Bessent distinguished between lab competence and rogue AI behavior, refusing to backstop labs and saying it's 'good business for them, bad business for the American people'",
+              "Supporters argue consequences will force hardened product development; critics counter that catastrophic risk represents a market failure (when individual incentives fail to prevent systemic damage) that only government intervention can address"
+            ]
+          },
+          {
+            "title": "Agent Wars: Amazon Blocks Muse, Shopify Embraces It",
+            "points": [
+              "Meta's Muse climbed to #1 on US App Store and reportedly triggered a chip stock rally, but Amazon blocked the agent from its platform within days citing 'unauthorized' use violating Terms of Service",
+              "Amazon generates $76 billion annually from advertising (70% profit margins) versus 0-3% retail margins, making agents—which bypass ads entirely—a direct threat to core revenue",
+              "Shopify responded by granting Muse direct backend access and integrating agentic checkout into Shop Pay across all stores, positioning itself as the 'anti-Amazon' for agent adoption",
+              "The dispute signals a fork in how platforms will handle agents: block and negotiate for revenue share, or embrace and compete on who offers the best agent experience"
+            ]
+          },
+          {
+            "title": "Mutual Testing Deal Nearly Done Between OpenAI and Anthropic",
+            "points": [
+              "OpenAI and Anthropic reached the contract stage for a bilateral safety-testing arrangement where each lab would verify the other's models before release, but the deal was abandoned for undisclosed reasons",
+              "Elon Musk revived the concept at the All-In Summit, arguing that if one lab catches a safety flaw, 'the liability in that case would be enormous,' making shipping an unsafe model impossible",
+              "The proposal reveals negotiation over new governance structures as AI labs grapple with accountability: if rivals certify safety, distillation (training smaller models from larger ones) would be visible in logs and harder to hide"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Bloomberg: Bessent Targets OpenAI Managers for Hugging Face Incident Blame",
+            "url": "https://link.mail.beehiiv.com/v2/c/4a6bfe4398adde4343cf5b4be65b84a148038e3dc8f9f91dd8dc7f2010b6f5f5193a66ede7ee8fc4d439fe57ed9501d27afd9291710c4d7009c6f9c2c20fd047ef8a242174c2c4b608de2db89fc661780f29c6f1e12e6149d923f102789a96a059cc64579bd99ba508bfe6b04d420c13cc44176ba3fef461edd03a03afa522dea85491d240b9cae9bb0b96948cf09cdf66b0957429a2b1426e234f6a2ed505d6/4e173100149161b0"
+          },
+          {
+            "label": "The Information: OpenAI and Anthropic Neared Deal to Stress-Test Each Other's AI",
+            "url": "https://link.mail.beehiiv.com/v2/c/1efb4a29f0c5307a4924d8bc3094791e1c8bc3edbfdb3dc66363c7f83265e5d3d975f9059b9c44c0688d3e2fbfb5f8e94daf92d85ad176e5be750633ff00747838297546ef82dd9f61c9ef05fd5b213aad20486670e7b33503cade598da2aa478c94b04300d00cf290a77757b5068cbd15c87d603b6995cd57bf0bbce4a764f72ca07bba11c811638446c0689265ed9b383660a50beb0f5d957b06ba4c1f6715/fa6a68f9fb49969a"
+          },
+          {
+            "label": "Bloomberg: Amazon Blocks Meta's Muse AI Agent From Its Retail Site",
+            "url": "https://link.mail.beehiiv.com/v2/c/9435e5cb54d152aff48bf5ac01ed7251d8ebfa26f5edfee44661f4d8e4741b5be621e05781426c53aa0d13476629a1859a673629f27a1f9c5291cf8af375325232affd58257da46c91ba8c6790ea0c7cfb527ea31e4efe45f41c5f822794273b8c7592ebf60b75963259226b0215ac52a0d0706bec2199546314cca4a1b8d5085982eabb17e29202b32b6539d33d4d027d09121b15dada3c87814d820b41688e/e97477f74d6cdace"
+          },
+          {
+            "label": "WSJ: Shopify to Use Meta's Muse for Agentic Checkout",
+            "url": "https://link.mail.beehiiv.com/v2/c/fa5a49d12f438157c0a090d8683ea8274ac1be1b384bac857f324d2e5051b07e519ec2e91c1ddb16315ed6319bd359150e9386d7bc954040ad864e50cbfd21882f47084cb31f2a3740e7716992d34b5dedb6c848662dec30d61c04b559cb2497660fe1c2e04f3c77611402120c026106029bbed3ecafe72b42bbb7e4c05273dcf139cb1b2f54f60945b97ff5e231e0652f1cb39e6dce92472a0e8aa092a17d80/cda8868b33e31b56"
+          },
+          {
+            "label": "SpaceXAI: Grok 4.7 a notable improvement over 4.6 at the same price and speed",
+            "url": "https://link.mail.beehiiv.com/v2/c/b4e6f3fad1db00fdfb63c8620d07acc8a726685eb164fd5f9f1494437c65ec2ccedd95c60bcf7da0de05126e5e163108631fcf22749bf89a22988e3010571f5b8a56d58ed3e084a52715e5638b46c0e77340a2182659bc59fa74f2d4258c29c975041ac2ec37d6de4cba3e0dadc86a5d52686b37801a216256275fd44c02e88439ed2aaba051518904a51618fa8d62e675ddeefe2eefebea8c79084bd8cbfef5/41b1026b4bd087ff"
+          }
+        ]
+      }
+    }
+  ]
+}
