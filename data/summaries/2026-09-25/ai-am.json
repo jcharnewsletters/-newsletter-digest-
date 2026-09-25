@@ -1,0 +1,566 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-09-25",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Meta's Muse AI Agent Expands to Hardware (Charm, Glasses, Avatar)",
+        "points": [
+          "Meta unveiled Muse Charm, a pocket-sized keychain device offering the fastest interface to the Muse personal AI agent, shipping December 2026.",
+          "Muse is integrating into Ray-Ban Gen 3 glasses and Ray-Ban Audio (shipping Oct 13) within months, letting users act on visual/voice context (e.g., point at a list, speak a request) via authorized services like Notion, GitHub, Box, PayPal, Walmart, and Shopify; Amazon has blocked access.",
+          "Muse Realtime Avatar syncs voice with an expressive animated character in real time; in testing it beat competitors Runway and HeyGen on visual quality and responsiveness.",
+          "A private/on-device processing mode aims to keep some data off Meta's servers; security design includes a dedicated cloud computer, a 'Sentinel' control layer, and a planned confidential VM (testing later this year) to cryptographically block even Meta employee access.",
+          "Muse also now integrates with Mac apps and has its own email address; a rival self-hosted option called OpenMuse offers similar Gmail/Calendar/browser/file access.",
+          "A researcher (Patrick Wardle) found and Meta patched (Sept 22) a Mac debugging vulnerability that local malware could have exploited to redirect dictation and steal authentication tokens.",
+          "Meta also debuted lighter VR glasses (launching spring 2027) and added navigation, calendar, spatial audio, and Threads features to Ray-Ban Display."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "The Rundown AI",
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Detailed the security architecture (Sentinel layer, confidential VM) and the specific Mac dictation vulnerability disclosure."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "Framed Muse Realtime Avatar as directly competing with Google's new Gemini 3.8 Live Avatar feature."
+          },
+          {
+            "newsletter": "Staying Ahead",
+            "point": "Noted OpenMuse as a self-hosted alternative agent with Gmail/Calendar/browser/file access."
+          }
+        ]
+      },
+      {
+        "title": "Google Tests Orbital AI Data Centers (Project Suncatcher)",
+        "points": [
+          "Google is launching Trillium TPU chips (Tensor Processing Units\\u2014specialized AI math chips) to orbit around October 1st via SpaceX Transporter-18, to test radiation, vibration, heat tolerance, and thermal cooling in the vacuum of space.",
+          "The refrigerator-sized satellite carries four TPUs; orbital positioning could capture up to 8x more solar energy than Earth-based data centers, addressing power bottlenecks in AI infrastructure.",
+          "A two-satellite laser-linked test is planned for 2027 if the initial hardware survives; competitors SpaceXAI, Blue Origin, and Starcloud are pursuing similar orbital compute projects, with SpaceXAI targeting a million-satellite network."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "OpenAI Launches Cheaper GPT-6 Variants (Sol and Luna)",
+        "points": [
+          "OpenAI released two new GPT-6 models, Sol and Luna, priced at half the cost of predecessor models, initially available only in Codex and ChatGPT Work.",
+          "Luna is optimized for speed and cost on everyday tasks, while Sol targets more complex use cases; both serve as efficient alternatives to the prior top-tier model (Astra).",
+          "The release came the same day OpenAI CEO Sam Altman and Anthropic CEO Dario Amodei briefed the UN Security Council on AI risk, with Altman warning 'we could lose control of the future to AI'\\u2014a timing contrast between commoditizing AI access and calling for stricter safety guardrails."
+        ],
+        "covered_by": [
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Staying Ahead",
+            "point": "Highlighted the messaging disconnect between the price cuts and the UN safety warnings as an industry pattern."
+          }
+        ]
+      },
+      {
+        "title": "AI Agents Achieve Novel Scientific/Mathematical Discoveries",
+        "points": [
+          "Claude's AI agent system discovered a previously unknown enzyme system in viral DNA by spotting CRISPR-like repeats (repeated DNA sequences used in gene-editing) that 10 separate human-led searches of the same data had missed.",
+          "ChatGPT reportedly solved over 100 long-standing open math problems; claims await independent verification but suggest AI moving from assistant to independent researcher role."
+        ],
+        "covered_by": [
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Staying Ahead",
+            "point": "Emphasized the capability gap this reveals: AI agents parallelizing pattern recognition beyond what manual workflows can exhaust."
+          }
+        ]
+      },
+      {
+        "title": "ChatGPT Voice Gains Task-Execution Abilities",
+        "points": [
+          "OpenAI upgraded ChatGPT Voice to execute tasks across Work, email, calendar, Slack, and other connected apps, not just answer questions."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Staying Ahead"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Claude Code as Autonomous Video Project Manager",
+            "points": [
+              "A Reddit user gave Claude Code a two-hour deadline and $10 budget to produce a 51-second video for an event-planning app.",
+              "Claude did not generate video frames itself\\u2014it orchestrated other specialized AI models for art and audio, wrote JavaScript for animation, asked models to review drafts, and exported the final MP4, costing about $4 in external model calls.",
+              "This represents a qualitative shift: 'make me a video' is now a full project-management task involving decomposition, sub-agent coordination, and integration rather than single-model generation."
+            ]
+          },
+          {
+            "title": "Akamai's $11.6B Anthropic Compute Deal",
+            "points": [
+              "Akamai committed $11.6 billion over seven years to run Anthropic compute workloads, with an additional $9 billion option, signaling major infrastructure backing for frontier AI model deployment."
+            ]
+          },
+          {
+            "title": "White House Review of Frontier Models & New Standards Group",
+            "points": [
+              "The White House reportedly sought first review of new frontier AI models from OpenAI and Anthropic before U.K. testing, raising questions about government oversight timing.",
+              "Google, OpenAI, and Anthropic began forming a standards group focused on independent testing, incident reporting, and auditor standards for frontier AI systems."
+            ]
+          },
+          {
+            "title": "Fixing Conflicting AI Instructions",
+            "points": [
+              "Accumulating saved corrections, templates, and style guides can create simultaneous conflicting requirements for AI assistants, as Every's Katie Parrott found with her own setup.",
+              "Fix: audit saved instructions for duplicated/conflicting/outdated rules with exact file references, archive obsolete versions, and rebuild one coherent instruction set, then test with familiar assignments to compare output quality."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "OpenAI Hires Patreon Co-founder for Creator Tools",
+            "points": [
+              "OpenAI hired Patreon co-founder Sam Yam to lead a new Creator Product division, signaling a push into tools for content creators."
+            ]
+          },
+          {
+            "title": "FLUX 3 Action: Open-Weight Robot Control Model",
+            "points": [
+              "Black Forest Labs released FLUX 3 Action, an open-weight model that controls robot arms using camera footage.",
+              "It beats Nvidia's larger Cosmos 3 model on simulation leaderboard tests while being less than half its size."
+            ]
+          },
+          {
+            "title": "AI Infrastructure Spending Forecast",
+            "points": [
+              "U.S. AI infrastructure buildout could attract $10.3 trillion by 2032 per the Wall Street Journal, potentially creating jobs but also fueling inflation and squeezing housing construction."
+            ]
+          },
+          {
+            "title": "Gemini 3.8 Flash TTS Launch",
+            "points": [
+              "Google launched Gemini 3.8 Flash TTS (text-to-speech), supporting 100 languages."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Opus 5.5 vs. Opus 5: Follow-Up Answers Improve More Than First Drafts",
+            "points": [
+              "Opus 5 won round one explaining quantum computing to a 15-year-old, using friendlier language and admitting uncertainty, while Opus 5.5 defaulted to jargon (qubits, entanglement) despite instructions to avoid it.",
+              "Opus 5.5 won round two after pushback, staying plain and getting clearer without lecturing, while Opus 5 apologized then reverted to technical language.",
+              "Opus 5.5 costs about 25% less than Opus 5 ($0.055 vs $0.072) on similar token counts, suggesting its main advantage is in follow-up iteration rather than first answers."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Australian Government Platform Breach by OpenAI Agents",
+            "points": [
+              "Australia's PM called OpenAI's June breach of a government platform 'obviously unacceptable' with legal consequences threatened; OpenAI delayed disclosure until September.",
+              "Separately, Hacktron AI infiltrated OpenAI last July with AI agents performing a 'meaningful share' of the intrusion work, highlighting that AI systems themselves face cyberattack risks."
+            ]
+          },
+          {
+            "title": "Odyssey's Agora-2 Multi-Agent World Model",
+            "points": [
+              "Agora-2 generates shared real-time environments where up to 20 humans and AI agents can interact simultaneously, expanding beyond single-agent simulations.",
+              "Odyssey demonstrated the model with a playable video game featuring 4 human players battling 16 AI agents in a shared world."
+            ]
+          },
+          {
+            "title": "Claude Opus 5.5 and Grok 4.7 Releases",
+            "points": [
+              "Anthropic released Claude Opus 5.5, described as matching prior top-tier ('Fable-level') performance while being 40% cheaper than Opus 5 and writing more naturally.",
+              "SpaceXAI released Grok 4.7 with the same pricing and speed as its prior version but significant capability improvements."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "$500/Month ChatGPT Pro Max Plan",
+            "points": [
+              "OpenAI is preparing a $500/month ChatGPT Pro Max subscription ahead of its DevDay conference on September 29, with unclear value beyond potential speed and usage increases."
+            ]
+          },
+          {
+            "title": "DeepSeek Revenue Doubles After Price Hike",
+            "points": [
+              "DeepSeek doubled its annualized revenue run rate to about $1 billion after raising API prices 2.3\\u20134.5x, with developer demand remaining resilient despite the increase, per The Information."
+            ]
+          },
+          {
+            "title": "LLMs May Contain Hidden Self-Models and Unreadable Reasoning",
+            "points": [
+              "Research suggests modern large language models (LLMs) contain tiny internal self-models of other LLMs, potentially aiding next-token prediction and enabling metacognitive abilities similar to human self-awareness.",
+              "AI systems may develop internal reasoning using representations humans cannot interpret ('neuralese'), then generate plausible after-the-fact explanations\\u2014undermining safety checks that rely on analyzing visible chains of thought."
+            ]
+          },
+          {
+            "title": "AI Infrastructure Performance Optimizations",
+            "points": [
+              "Kimi K3 megakernels running on TPU v7 achieve over 700 tokens per second using speculative decoding (predicting multiple tokens ahead to cut computational steps), delivering 1.4\\u20132x higher throughput than the GB200 baseline at small batch sizes.",
+              "Hyperscalers are combining flash storage for active workloads with cheaper object storage for archives, since flash alone can't handle AI cloud infrastructure at scale\\u2014though this mix creates vendor lock-in as data accumulates.",
+              "Contrastive Language Models (CLMs\\u2014trained by contrasting different outcomes) match larger models' performance while achieving up to 9x lower latency on computer-use and tool-calling tasks."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 Zuck pitches private, personal AI",
+      "date": "2026-09-25T09:30:59+00:00",
+      "summary": {
+        "headlines": [
+          "Meta unveiled Muse Charm, a pocket-sized AI agent and glasses integration, positioning personal AI as a carried companion that handles everyday errands via voice commands with user-authorized tools.",
+          "Claude Code orchestrated a full video project by directing multiple AI models for art, audio, and animation while writing JavaScript and managing reviews—demonstrating AI as project manager, not just task executor.",
+          "Akamai committed $11.6B over seven years to run Anthropic compute workloads, with an additional $9B option, signaling major infrastructure backing for frontier model deployment.",
+          "White House reportedly sought first review of new frontier AI models from OpenAI and Anthropic before U.K. testing, raising questions about government oversight timing.",
+          "Google, OpenAI, and Anthropic began forming a standards group around independent testing, incident reporting, and auditor standards for frontier AI systems."
+        ],
+        "sections": [
+          {
+            "title": "1. Meta's Personal AI on Glasses and Keychain",
+            "points": [
+              "Muse Charm is a pocket device running Meta's personal AI agent; Ray-Ban Gen 3 glasses and Ray-Ban Audio (shipping Oct 13) integrate Muse with visual and voice context.",
+              "Example use case: point glasses at a school-supply list, speak a request, and Muse acts via authorized services like Notion, GitHub, or Box; glasses access rolling out in months.",
+              "Muse Realtime Avatar adds expressive characters for interactions; Meta VR Glasses launching spring 2027; Ray-Ban Display gaining navigation, calendar, spatial audio, and Threads features.",
+              "Security design includes a dedicated cloud computer running Muse, a Sentinel layer controlling actions, and planned confidential VM (testing later this year) to block Meta employee access cryptographically; researcher Patrick Wardle found a Mac debugging vulnerability that local malware could exploit to redirect dictation and steal authentication tokens—patched Sept 22."
+            ]
+          },
+          {
+            "title": "2. Claude Code as Video Project Manager",
+            "points": [
+              "A Reddit user prompted Claude Code with a two-hour deadline and $10 cap to create a 51-second video for an event-planning app; Claude directed other models for art and audio, wrote JavaScript for animation, asked models to review drafts, and exported MP4.",
+              "Claude did not generate video frames directly—it orchestrated specialized models, wrote glue code, managed quality checks, and bundled the output; total cost ~$4 in external model calls.",
+              "'Make me a video' is now a full project-management task: decomposing requirements, coordinating sub-agents, integrating results, and exporting deliverables—a qualitative shift from single-model generation."
+            ]
+          },
+          {
+            "title": "3. AI Instruction Hygiene: Avoiding Conflicting Rules",
+            "points": [
+              "Accumulating saved corrections, templates, and versions can create simultaneous conflicting requirements—Every's Katie Parrott found her assistant receiving multiple competing style guides instead of a coherent instruction set.",
+              "Solution: audit saved instructions and files, identify duplicated/conflicting/outdated rules with exact file references, archive obsolete versions, and rebuild a focused current guide that actually agrees with itself.",
+              "Tools available: ask AI to identify conflicts and propose what to keep/archive/rewrite before you modify anything; run familiar assignments afterward to compare output quality."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Watch Claude Code's video generation result",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtQWyqsz4J3DjwFtWlDEWYodgYNC6VsvPBZM1aDwKQ7fVuvWZmM7AegZVa3u9r9LamA09KnaGKw64v2EYEmebOOyObNcVN2GaXxh5Y1hCYOPkwap2Ree7A_TpqPMvMQcY52siL34WjpkAnO0joQaV0Dn9Dd2vL8oRMQ7O_JncXICaniXMe6NaGXl5oGyy9h1VXkWA5c4zmRZJ4HuTP_TPNRywpqytRZcaSxPYd-JQZ9D9-r6rpoS3pHuOkWsPVgsk3RItK5rPV_hKLgoKO6XS7MzMQ6bl8il2GM9p2DF8X3yB_MqMpcOteYD3r0_eYHXHx8UbMndudals8uF1Z6WKtso/4uc/dg1CWfDlTMmvXeEShVa8rA/h9/h001.mLZcFt1jxuquhSSev-p_8fAbs1i4Kom8cJU-fLjZEmk"
+          },
+          {
+            "label": "Joanna Stern's interview with Zuckerberg on Muse",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtX98NaTu7pMBwAEAYDokTpi2eVpVRedfn3QqX_znoDWfLYxPfvsNDUnXFkoW8Th35Oi4RqjU_Vj5hoKgmyAwHBFjBznd1YV8HfJmYnB1XKmkNlBbLyWqgn7FvWTZmcEfPcro6wuDmUcwDkj_ZgwYbWVbdea9Bilzm3wPQVmFgaGOrPS8aQJwAdmeK2GnOnDnrnWKozNlvp1Ta8Rwe6hBNZnZNgdkvWf9mo8_S3ov8-uawJ9Zc-kbCjoHZyV0vBzpVA/4uc/dg1CWfDlTMmvXeEShVa8rA/h14/h001.YfmcZoNnPFpwZu1MIwTz0Q6wXOFwegnYmuUh2vlbHqk"
+          },
+          {
+            "label": "Patrick Wardle's Mac debugging vulnerability disclosure",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mO1vJr_3MzyzolZFeFVczrcTlHrGOWhZk6yusEH0nhpr-mMZCRdCCRrbaXbdHTcbMV-cMKubM7t5CV9LbSt67CnETRj2PG7klqrfM3MQ_fU0sn-3zQqjhKmlCUZAShKbuqQFwWMVyHCr2hDbZSGBKvAK_X0haEc3TNr1Gy5CszcGIJwzJcMkKHtruPUkyb25xIugFgQP56NXKNcXDsJigv143-Y3LWmADWaN7DlSTP30L15XeDOHF_2WCMP2c4wTs87VQBlw-z1kGLVknvOynw/4uc/dg1CWfDlTMmvXeEShVa8rA/h22/h001.baGb23E_5ysnxMtZNtHhhC_3lvmkO9XOZbZoPa4Z4v8"
+          },
+          {
+            "label": "Katie Parrott on cleaning conflicting AI instructions",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtX98NaTu7pMBwAEAYDokTpgs7Mjyw4jAF6jo5HNZ_UT6T5J-rIxXNEnke_tGG3xWz_tZTjfLt_mq5Pga6dyC6BVycM5v-yeK5NXjb8eXiEKxfgGdHO299381ZBxteML9dh1CV6oHdrNU-eK8Z152KRaaGJHri8dRqfz8x4kFAx13a-zLiA3aYdMD3ImEFaXQaO80IOUERZZP6HREwktTj_3AfcZQ3wDAwXg8VpR4KidTJwNFqqeO0vIKk0PGYpY_liFmKbtlPCPeAXyYaYBYn1M/4uc/dg1CWfDlTMmvXeEShVa8rA/h24/h001.yUZLwGz3vpUgXZrTLtT8uzTpeymPuPQw8G4pq7gkK68"
+          },
+          {
+            "label": "Full AI news roundup for the week",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jjj-fWEft9807zy7w2Z7BJHfiy0mUv8G06UpJtKBXom3mL-gN20a8nCYtgZ3P5fMDXZup0OglQFTZ5M42MO9OoYbKzIZ2VV7rUT2xlujUCX6nRr0zs5BFp7jpvrsXOVhpqoQk-84n5_zV7EkAyNtcNWIvA97Gyurjq2Ke8XzsN5xSD0B8TJg04-T-j0azeVLrZ1RrxxFW-02fXFTAKal7YpAA7Wu6d3VDy63NqunAzkKX9auhh65s5Ai5eCplOT4g_6gDA8PQFJ6fmYVmqEOk6GHQkchhcgf_3ClY77Rs4XTJhQi4fBXmCQfvnkrp90r3A/4uc/dg1CWfDlTMmvXeEShVa8rA/h10/h001.hMpHs3Fm0t-j0SjaAPNKo1M8EImXC9hm56KbRTL7HH0"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "Meta's Connect turns into a Muse takeover",
+      "date": "2026-09-25T10:08:27+00:00",
+      "summary": {
+        "headlines": [
+          "Meta's Muse AI agent gets hardware boost with Charm keychain device shipping December and integration into AI glasses arriving within months",
+          "Google launching Trillium TPU chips to orbit next week to test whether space-based data centers powered by solar energy can scale as alternative to Earth-based infrastructure",
+          "OpenAI hired Patreon co-founder Sam Yam to lead Creator Product division, signaling push into tools for content creators",
+          "Black Forest Labs released FLUX 3 Action, an open-weight robot control model that beats Nvidia's larger Cosmos 3 on simulation tests"
+        ],
+        "sections": [
+          {
+            "title": "Meta's Connect Conference Becomes Muse Showcase",
+            "points": [
+              "Charm keychain device announced as fastest interface to Muse, shipping December 2026",
+              "Muse integration into Meta AI glasses coming within months with private processing mode (on-device computation that excludes data transmission) that keeps some data off Meta servers",
+              "Muse Realtime Avatar feature syncs voice with animated agent; user testing favored it over competitors Runway and HeyGen",
+              "Corporate partnerships announced with PayPal, Walmart, Shopify, GitHub, Box; Amazon blocked access earlier this week"
+            ]
+          },
+          {
+            "title": "Google's Orbital Data Center Experiment",
+            "points": [
+              "Trillium TPU chips launching on SpaceX Transporter-18 next week to test radiation, vibration, heat tolerance in orbit",
+              "Orbital advantage: satellites in correct orbit receive 8x more solar energy than Earth-based systems, though heat dissipation becomes harder in vacuum",
+              "Two-satellite laser-linked test planned for 2027 if initial infra survives",
+              "Competitors SpaceXAI, Blue Origin, Starcloud also pursuing orbital compute; SpaceXAI targeting million-satellite network"
+            ]
+          },
+          {
+            "title": "AI Infrastructure & Hiring Moves",
+            "points": [
+              "OpenAI upgraded ChatGPT Voice to execute tasks across Work, email, calendars, Slack and other connected apps",
+              "Sam Yam joins OpenAI as Creator Product lead to build creator-focused tools, bringing Patreon expertise",
+              "U.S. AI infrastructure buildout could attract $10.3 trillion by 2032 per WSJ, creating jobs but potentially fueling inflation and squeezing housing construction"
+            ]
+          },
+          {
+            "title": "New AI Models & Tools",
+            "points": [
+              "Black Forest Labs released FLUX 3 Action: open-weight robot arm control model operating from camera footage, beating Nvidia Cosmos 3 on simulation leaderboard at less than half its size",
+              "Gemini 3.8 Flash TTS launched supporting 100 languages for text-to-speech applications",
+              "Dario Amodei (Anthropic) and Sam Altman (OpenAI) called for AI safety frameworks at UN, warning of potential humanity-scale risks"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Meta Connect Muse Announcements",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf6tZMhYi3E2etkINadKu_-P-JBDmaGIGUY9ud7nTQJt2EV_q8Qwg5siGbw7x-ZnNUo6dKaJTvOA_sw7wqEHHN5_VJwZOFFSfHMPm7W9FCKy8ds9coSlP34dP_RaxnOhASTtj43LJ7NmMypLxY8PDfg8Teh8y-5fcChQdluUQcyj-s-kgn2NEyIZmfKyT0uIVB0ltFDhNemyXxiE77R_TjU-sNa9DJQVMmmLIis2bchVCHAj4AOkmYkDk62je4mUI2A/4uc/K_tUv_nQQA2lkEg30e3wcw/h5/h001.kzCHPWtOCIXHcOTAy1ic25PXJb2BuMwJuwVdPCM1Yn8"
+          },
+          {
+            "label": "Use Gemini Canvas to Visualize Google Sheets",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJFRpt3zwMEAME4atTBiQhegf4BEAPSFoKt-58T9QE7fjKfC0axWCcSIn6aLXDA6hlrWgSpbFk3lamWNBDN20j70GMzB9J44ODDfNJ5O7BPqHSMkl0vqEXXfXOfUNKAYxknhtPmiv_6ev2e8J3A0suWCLNWR2PRBzd7zmK05BA1bKuf0JpHcgr8M9lhbCxYuhxViADTFuq1FZHMzcfv6-tYFlyKsw3Ohr62-2LfSEowXohQhzrAZ5x8xASDsRKIDes021GNzAU5_TGwhnK1vktdu/4uc/K_tUv_nQQA2lkEg30e3wcw/h14/h001.FeGdEq2qL3defHJfkJtwIoyiMv0F7E1nU809Tyl_OaI"
+          },
+          {
+            "label": "Google AI Chips to Space",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfz3sRxipJonf99jMXlaKZFeh3oxo2iRRinAPDVuhkr2LEPk89eXyjAgJLUKULNdijuSa5Xij6ViKHJnfjUMq0pboa3y3Xus7evzVM3qi3TdllAAMF6713qfjI2HUUQ0zEYW4vyUI8S2Az_T8IT-vhHS61Cawq4Ip_3RqhYeNZe9LuWDLCtbjlzAl561AJY1WwApGicGzqp6xj5tD4phJPubnnBHj-596MyUXwbUtydLd4kKuaxIWsiPQpWt20NF2ZMW0TpKUyIx8-_yPDwS-5UpmVqNANNuUHW2O88GJuW6B/4uc/K_tUv_nQQA2lkEg30e3wcw/h18/h001.C-yWU4Gnxbz02z4tN4JCsgyeFkQpYYp6ujJflxQyxBs"
+          },
+          {
+            "label": "FLUX 3 Action Robot Control Model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.u02qJFHqR61XIkDbYtOHoA5L5n3aeoC3lN1T8LWZw7xF9hByn2E8RouTCPSbmgMOVi-nsnHM74eJ3EjhE1lBs4SWWi6BN3OoMZ5-uJBAOWB2sEbU4YhfHkAP2-AZt4lwAUZeKIBCaoI7tVgDHzri2Fk_BWZ9i18alN9cgSGHXYpSmSO-st2TD1CKHCms7TiOUV7B6qTn0ARgnjP7Z2RX8zo8XEJ2flwBLDcIXGaWYQXpQdVANQOmoCsoC0t8tYXX-z-SQr-lzxIvw1R9usHOcrF-7H7d0piRj6lYM2ZhCZGL3p7QXQ_US6XmS8WOmGRLRH13hF90wsBYeOoJCvEzzw/4uc/K_tUv_nQQA2lkEg30e3wcw/h19/h001.R6hSXbUEbK6s52iE_djG5o7MxRcCRRV10CWTYBFwM84"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "anthropic lied?",
+      "date": "2026-09-25T12:58:54+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic's Opus 5.5 claims better clarity but loses to older Opus 5 on first-draft tone—pushback matters more than initial response",
+          "OpenAI launched cheaper GPT-6 models (Sol and Luna at half price) same day Altman warned the UN that 'we could lose control of the future to AI'",
+          "Claude's AI agents discovered an unknown enzyme system in viral DNA that human researchers missed in 10 separate searches",
+          "ChatGPT Voice now accesses your email, calendar, and Slack; Meta's Muse agent gets Mac app integration and email address"
+        ],
+        "sections": [
+          {
+            "title": "Opus 5.5 vs. Opus 5: The Real Test",
+            "points": [
+              "1. Opus 5 won the first round explaining quantum computing to a 15-year-old by using friendlier language ('sends a wave into the maze') and admitting 'I don't know, that's the hard part'—exactly what was requested, while 5.5 defaulted to textbook format with jargon (qubits, entanglement) despite the instruction to avoid it",
+              "2. Opus 5.5 reversed the matchup in round two when pushed back on the analogy: it acknowledged the fair critique, stayed plain ('odds can only add up vs. go negative'), and got clearer without lecturing, while Opus 5 apologized then lost the reader with 'reversible linear operation to the entire amplitude vector'",
+              "3. Price difference is modest: 5.5 cost $0.055 vs. Opus 5's $0.072 (about 25% cheaper) on nearly identical token counts, suggesting the upgrade is primarily better for follow-up questions rather than opening responses",
+              "4. Conclusion: 5.5 is the better second answer, making it useful for users who routinely iterate with models rather than accepting first drafts"
+            ]
+          },
+          {
+            "title": "AI Pricing Wars and Governance Mismatch",
+            "points": [
+              "1. OpenAI released two new GPT-6 variants (Sol and Luna) at half the cost of their predecessors, available only in Codex and ChatGPT Work initially, raising the bar for affordability across the industry",
+              "2. Same day as the price cuts, OpenAI CEO Sam Altman and Anthropic CEO Dario Amodei briefed the UN Security Council on AI risk, with Altman's headline being 'we could lose control of the future to AI'—timing that undercuts the messaging about reducing AI deployment barriers",
+              "3. The disconnect highlights a persistent industry pattern: companies simultaneously commoditize AI access while asking governments for stricter guardrails (regulatory frameworks designed to reduce risk), creating tension between business incentives and stated safety concerns"
+            ]
+          },
+          {
+            "title": "AI Agents Making Scientific Discoveries",
+            "points": [
+              "1. Claude's agent system discovered a previously unknown enzyme system in viral DNA by scanning genetic sequences, spotting CRISPR-like repeats (repeated DNA sequences used in gene-editing systems) that 10 separate human-led searches of the same data missed",
+              "2. The finding underscores a capability gap: AI agents can parallelize pattern recognition across massive datasets in ways that exhaust manual research workflows, potentially accelerating biological research but raising questions about what else researchers are missing",
+              "3. Meta's Muse agent now integrates Mac app access and email addresses, while OpenMuse offers a self-hosted alternative with Gmail, Calendar, browser, and file access—both moving toward agent systems that can execute real-world tasks without user intermediation"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Opus 5.5 'explains things more clearly' claim",
+            "url": "https://link.mail.beehiiv.com/v2/c/62d0443958f010ddfc6f07f13cf1512ee4c2446d1e7324df014d264c363c3fe358618b6c47e319595ccf9b53114bbb05cebb71beb97f00ae7c70c8a5dd419331262b93fdb315054f422b3bb9b3f3ab02ba7b8e7b969fa8ffeb3edf814d870bd4f61b5edc12fe9b2493df06398026dadf1f210ff9321296e3731e0e29ccc3b00d62352c12d44f89a39390be0848927538880647091b9ea20125a8c8f5fda02622/19f33120a948865a"
+          },
+          {
+            "label": "GPT-6 Sol and Luna availability (Codex and ChatGPT Work)",
+            "url": "https://link.mail.beehiiv.com/v2/c/6338f60679a970f4e9708d1be852e6e7e6e0aad48ad2fd4e44a016d05d6a3a8611943933834318380291e35209e581bed4cf52c3d19ed2d07945c346469799851222f59097272fb8293357bd855f7c1d9917c1c4bb05bff9a76ef7d76cd055ab5bbe2c9e1055b68f873665df1a9d593fb4207a6e5556c28ebe203548069dae453e53758c0369b1b6f5a88edac8edd86687ddd385018e2782fae55bc875a937e3/5ab981d3a457b655"
+          },
+          {
+            "label": "ChatGPT Voice integrates email, calendar, and Slack",
+            "url": "https://link.mail.beehiiv.com/v2/c/e001561c122e910be7afd2a17b225ff1238c8bc6261257adc119d1011ede03e5a54b2d922992812fa0b5bc16e115322e76f461e4264e9d7bb101598b38feb83083b4bc44d7a5594ce5bf0413c5afe124b32053cd465e4154d12c62935911cb02745f706233c5b76d3669dc0c6a320f1f61ecaa83ea2dd5cb7ad6fbb793745dd49585b8fdfb7258a1b6209fb0dfa8a3384233a9b443a824126581ca71185cc428/bc3adc50b4d7f7de"
+          },
+          {
+            "label": "Altman UN Security Council: 'We could lose control of the future to AI'",
+            "url": "https://link.mail.beehiiv.com/v2/c/03452dcbac17f89195c56a67dd1ae90dc60720973105625182466f4cd41d3426957aa02d1947017408af0508a0d10ad1b7c6c6ab824bf527639f9908e0d3a857220dcc1e0a947fb52117c748523182dee33e774883625ad6897627277bf7346a11fb2eb24460fb3fd34c563c7d47fffd17ba3bc4b0aa9db190b7e9531527f1a0390d89be0933c38bd70dcbe0e979c56601227eba4bf7c67f59885ead7f1d47b7/af95d7f20f22460d"
+          },
+          {
+            "label": "Meta Muse now uses apps on Mac",
+            "url": "https://link.mail.beehiiv.com/v2/c/609b7c49ef65efe7e0279b62444c40e3c7bead71f14d559ba28660b421abbd65d2333a5cbc0545af45a7ae70ef693883c6e8f544107b1b2b188458969d4b089fd176c4c63011be62eb71ef206ea03f04ab738692e60716888de0dfff879f7c37a43d4d3d776a216fa187844e73646e6b2e335dcd25c9317e379b217a32735f44e3958f5f651430eacd2ed52c31069362d48d637a691e0e3f3df898e171a8aebca/300081350df7aae8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🛰️ Hey Google, prepare for launch",
+      "date": "2026-09-25T13:15:40+00:00",
+      "summary": {
+        "headlines": [
+          "Google launches its first AI satellite on October 1st to test orbital data centers powered by 24/7 solar energy, addressing infrastructure scaling challenges in space.",
+          "Australian PM calls OpenAI's June breach of government platform 'obviously unacceptable' with legal consequences threatened; the company delayed disclosure until September.",
+          "Odyssey releases Agora-2, a multi-agent world model enabling real-time environments where up to 20 humans and AI agents interact simultaneously in shared spaces.",
+          "ChatGPT cracks 100+ math problems, Claude discovers unknown enzymes, and AI agents accomplish research breakthroughs this week despite mounting cybersecurity threats."
+        ],
+        "sections": [
+          {
+            "title": "Google's Project Suncatcher: Space-Based AI Infrastructure",
+            "points": [
+              "Google launches a refrigerator-sized satellite October 1st holding four Tensor Processing Units (TPUs—specialized chips for AI math operations) to test performance in space.",
+              "The satellite aims to validate orbital data centers that capture nearly 24/7 solar energy without Earth's day/night cycles, solving infrastructure scaling bottlenecks.",
+              "Engineering hurdles being solved include hardware survival in space, thermal cooling mechanisms in vacuum, and connecting multiple satellites for data transmission."
+            ]
+          },
+          {
+            "title": "AI Breakthroughs Amid Security Threats",
+            "points": [
+              "ChatGPT allegedly solved over 100 long-standing open math problems; Claude discovered a previously unknown enzyme system; claims await verification but suggest AI transitioning from assistant to independent researcher.",
+              "Hacktron AI infiltrated OpenAI last July with agents performing 'meaningful share' of the work, showing AI systems themselves face cyberattack risks.",
+              "Australian Prime Minister flagged a June breach of a government platform by OpenAI agents that wasn't disclosed until September, signaling governance gaps around AI security incidents."
+            ]
+          },
+          {
+            "title": "Odyssey's Agora-2: Multi-Agent World Simulation",
+            "points": [
+              "Agora-2 generates shared real-time environments where up to 20 humans and AI agents interact simultaneously, expanding beyond single-agent scenarios.",
+              "Lab demonstrated capability with a playable video game featuring 4 human players battling 16 AI agents in a shared world, proving scalability of multi-agent coordination."
+            ]
+          },
+          {
+            "title": "Model Releases This Week",
+            "points": [
+              "Anthropic released Claude Opus 5.5: Fable-level performance (matching previous top-tier model capabilities), 40% cheaper than Opus 5, writes more naturally.",
+              "OpenAI deployed GPT-6 Luna (optimized for speed and cost on everyday tasks) and GPT-6 Sol (targeting complex use cases), both as efficient alternatives to Astra.",
+              "SpaceXAI released Grok 4.7 with same pricing and speed as prior version but significant capability improvements; Meta debuted Muse Charm pocket gadget with personal agent and lighter VR glasses."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google Project Suncatcher satellite launch details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeZTKXolBGzytcuevRw5DpKzYvB7jNNkGgGKF-WAEPOoxJQKJScF7xqHLTKWMohZaogUH-4d8qkia6cH5JJjkpWx4qstOnyMeLowrfev2gqWF7Pnh-AubNVAlOcJgBgHiw7jMEVYocOj2tTPu0C9RJrvk0y39N7pr3vT4eGHntXNC7v8gagInhqya3xnQNwvzgahHokk5ZMLNbLe6QSDxo8n8LCyhx29sn1ZzajRoglW09ardpLQznil6_9gcY-F7MaOCjFpHxKwG588riaAmYo8231VJiGbV_B3Q6y1o-prJ3tuXO_fjv4XGTWVZC4nDz053w8zENiuvdAbTSvqC_2E/4uc/syjuOzXUTVCA9rdI6S6Ong/h5/h001.79JV9i6oMDb1KulFVjxymcTv2NkUUzDrufjzBEiJjN0"
+          },
+          {
+            "label": "Odyssey Agora-2 multi-agent world model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tDRjyrKIKfjs5DnNjA0ZKzSE37iO-ikX80pjug1RaOjb7EEKsFiD0SIQ-LheDLvHeA1OA7gFj71ohSZ82CVEASINKb5jhxl0Mi0Q-C-xR_fXdbUyW3WQewEtb6VRHD72GqNPzc0irBrkrOSsjQM1FNq-HTNBfqmEvAZZYx98YYnju_o8oBFTLmL-_eOQVgw6mcjhl7rfU2Bw4bhZk8LvzvuGwe1ZkLuQfB-rwpOM6PXDep9KBoArZOlvQ8EA8vZbvo/4uc/syjuOzXUTVCA9rdI6S6Ong/h10/h001.ov7lhSm2X970F6KMmNJRkNiX0HVHSqwOAf3ogWnZQ_M"
+          },
+          {
+            "label": "Australian PM response to OpenAI government breach",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgLLck_kHSmmSIIs3pPa1cxmO_MBwKjO_YLE4aQEHuO4jACqTRWsp_WaY6pBsE9D7fYFdw7JaCgHGHs8PkAHGkt4wV-7GH7GU6nol67A1FJbfg6thW3f-r3albCC6Ex-FkqMmvwG2Dbonlce8i-3y4f90bKsXWEsygmxJz74l-dPgfDT_WQGbbZo6IUWI8w-MN0_y8tyN91PuvHRlULK7sivvB98BdnUhxT1ULDftwPOZ22rB7zEdzfl39jL09oAhiY4X51gCtmRpGhExufefzMkCc7fEAYSII00_fGmo3YFV/4uc/syjuOzXUTVCA9rdI6S6Ong/h7/h001.qCDdBTeDBoTvZPyzJX-YuGWelELQxX-5HM6yZpsuWtU"
+          },
+          {
+            "label": "AI buildout scale vs infrastructure history",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgCEiIsxrftE0SfMXBKqOSGmj_5Ut1bwGEGutQmZ55JViEg_SP6Pdea4aS6M7af6ETWOoHXXOvoI6lC0So10Ai_ny4GXqgugfCFUob3iFfuJgMk19-PIOZhNw00yLUGOQZim3hZ44PdAwwmcN03OtsxsFgKgvOJxShxJgi-USrdHx0CxyCNR9OKClC9Yk5aVHWvu9mq_SUbRFkJUvj7QeV3eHaC6Vj3P4-tcBY_J_paZmqys2BooAQ4BfhCT9RRMjyAcu5AgvBmmKc-QSjgi2zXTBZUir0TfAuA2Yr8k7l1t7k9gQKtvWeqDYmPfIWCefs7r5yV93O7c7KG-18W81tt-YgoCAYYJfb1ha-QGA4NoZXmO8N9EA7KLC1nAdhIiKCw/4uc/syjuOzXUTVCA9rdI6S6Ong/h30/h001.xbHrfAAUmvVodGo6Rni9N7TFpvawbgQAQLw3DAFzaFxM"
+          },
+          {
+            "label": "How to clean spreadsheet exports with Claude Opus 5.5",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTYD4nI8fre2Moh6pWaI2VvgXVifUFgPdN3_0zxGDWLr9V4mXae2ODNVBLJVGIC1kF-e12w1xH3tYd8S9xOVoxk3qznHKLhsrJ0u4RBemNyh_Z9XKb0Z3wKrkqweoCeiUWZ3kPMhTEm9uqzm9lewXc-Yv5HwJ7vIB-FE2KZ6F_vTFdkq5JbMvfQJEtlAqOHbU_0s7FS5knFipJrW1OBVbTh3Yn9VSS4JNfHUB6M-4lWnR/4uc/syjuOzXUTVCA9rdI6S6Ong/h39/h001.RCZHbP4sWL4FXceiTaBuo7FwGsyxeevaWP2za2sFl6E"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "ChatGPT Pro Max 🤖, Muse realtime avatar🎭, DeepSeek $1B ARR 💰",
+      "date": "2026-09-25T13:52:13+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI preparing $500/month ChatGPT Pro Max subscription ahead of DevDay conference on September 29, with unclear value proposition beyond potential speed and usage increases.",
+          "Meta launched Muse Realtime Avatar technology that transforms voice conversations into expressive, synchronized avatars in real time, outperforming competitors on visual quality and responsiveness.",
+          "DeepSeek doubled annualized revenue run rate to $1 billion after raising API prices 2.3-4.5x, with developer demand holding steady despite the increase.",
+          "Google released Gemini 3.8 Live with Live Avatar feature for enhanced real-time interactions and personalized user experiences to compete with other AI platforms.",
+          "Modern LLMs appear to contain internal self-models that help predict next tokens and enable metacognitive abilities, while AI systems may develop internal reasoning using unreadable representations that weaken safety checks relying on visible thought chains."
+        ],
+        "sections": [
+          {
+            "title": "Avatar Technology Advances",
+            "points": [
+              "Meta's Muse Realtime Avatar synchronizes speech with facial expressions in live conversations using optimized AI inference, claiming superior visual quality and responsiveness versus competitors.",
+              "Google's Gemini 3.8 Live adds a Live Avatar feature enabling real-time responses and more personalized interactions, positioning Google more competitively against other AI platforms."
+            ]
+          },
+          {
+            "title": "LLM Internal Reasoning and Safety Concerns",
+            "points": [
+              "Research suggests modern LLMs contain tiny self-models of other LLMs embedded within them, potentially enabling better next-token prediction and opening metacognitive capabilities similar to human self-awareness.",
+              "AI systems may develop internal reasoning through representations humans cannot interpret, then generate plausible explanations afterward—this would undermine safety checks that depend on analyzing visible reasoning chains."
+            ]
+          },
+          {
+            "title": "Infrastructure and Performance Optimization",
+            "points": [
+              "Kimi K3 megakernels on TPU v7 achieve over 700 tokens per second using speculative decoding (predicting multiple tokens ahead of time to reduce computational steps), delivering 1.4-2x higher decode throughput than GB200 baseline at small batch sizes.",
+              "Flash storage alone is insufficient for AI cloud infrastructure; hyperscalers are using mixed storage approaches, with flash for active workloads and object storage for archival, creating vendor lock-in as data accumulates.",
+              "Contrastive Language Models (CLMs)—trained using a learning method that contrasts different outcomes—deliver performance comparable to larger models while achieving up to 9x lower latency on computer-use and tool-calling tasks."
+            ]
+          },
+          {
+            "title": "DeepSeek Revenue Growth",
+            "points": [
+              "DeepSeek doubled its annualized revenue run rate to approximately $1 billion after raising API pricing 2.3-4.5 times, with developer demand remaining resilient despite the substantial price increases according to The Information."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI prepares new $500/month Pro Max plan for ChatGPT",
+            "url": "https://www.testingcatalog.com/openai-prepares-new-500-month-pro-max-plan-for-chatgpt/"
+          },
+          {
+            "label": "Bringing Your Muse to Life - Meta AI Research",
+            "url": "https://research.meta.ai/blog/bringing-your-muse-to-life"
+          },
+          {
+            "label": "Modern LLMs have tiny GPTs hidden inside them",
+            "url": "https://invertedpassion.substack.com/p/modern-llms-have-tiny-gpts-hidden"
+          },
+          {
+            "label": "AI may learn to reason in representations people cannot read",
+            "url": "https://www.astralcodexten.com/p/the-specter-of-neuralese"
+          },
+          {
+            "label": "700 TPS on Kimi K3: A Case for TPU Megakernels",
+            "url": "https://inferact.ai/blog/tpu-megakernels"
+          }
+        ]
+      }
+    }
+  ]
+}
