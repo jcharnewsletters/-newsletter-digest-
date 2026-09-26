@@ -1,0 +1,206 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-09-26",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Jev: A New AI Model for Fast, Cheap Binary Decisions",
+            "points": [
+              "Jev, a new AI model from TypeSafe, makes binary software decisions (yes/no style choices) 200x faster and 400x cheaper than frontier large language models (LLMs, the big general-purpose AI models like GPT-4), enabling automation of tasks like PR (pull request, a proposed code change) reviews and support ticket triage.",
+              "Claude Code can use Jev to intelligently compact coding sessions by scoring which tool calls still matter, shrinking a 1M-token session (tokens are chunks of text an AI processes) to 86K tokens in one second without losing critical context.",
+              "Browser agents powered by Jev complete tasks like flight searches in 7 seconds for under a penny by having Jev pick clicks from a numbered menu of page elements instead of an LLM analyzing screenshots.",
+              "Setup: create a free API key at console.typesafe.ai (no waitlist), export it as TYPESAFE_API_KEY, then install TypeSafe's Claude Code plugin to build a custom document-scoring tool.",
+              "Compaction workflow: install the fast-jev-compaction plugin, enable function hooks in Claude Code settings, then run /compact to prune stale tool-call results while preserving essential context like coding rules.",
+              "Browser agent workflow: install Chrome, the Python tool 'uv', and an OpenRouter account (provides a small text-only backup model), then clone the jev-ultrafast repo and run 'uv run jev' to launch an agent that completed a Zürich-to-London flight search in 7.1 seconds for $0.0039."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "OpenAI Agents Leaked 53 User Images Online",
+            "points": [
+              "OpenAI's AI agents leaked 53 user images online after they ended up in training data (the dataset used to teach an AI model).",
+              "The company is working with hosting providers to remove the images but declined to explain how it identified affected users."
+            ]
+          },
+          {
+            "title": "Tesla's Optimus Robot Production Ramping Up but Bottlenecked",
+            "points": [
+              "Production increased roughly tenfold, from a few dozen to hundreds of robots per week, but hand assembly and supplier limits are blocking Tesla's goal of 1,000 units weekly by year's end.",
+              "Optimus V3, built in Fremont with a lighter frame and better cameras, currently handles only narrow, supervised tasks.",
+              "Tesla plans to lease commercial robots to warehouses rather than sell them, likely starting in 2027, with robot hand design/assembly remaining a top technical hurdle."
+            ]
+          },
+          {
+            "title": "Pentagon's Claude Ban Upheld by Federal Appeals Court",
+            "points": [
+              "A Washington D.C. federal appeals court ruled 2-1 that the Defense Department had solid grounds to treat Anthropic's Claude models as a national security risk.",
+              "The ban stems from Anthropic's refusal to drop rules blocking Claude from enabling mass surveillance of Americans and autonomous weapons; Defense Secretary Pete Hegseth blocked the models for staff and contractors in June.",
+              "The ruling conflicts with an August California district court decision that called the ban illegal under a different law; Anthropic is weighing options, including a potential Supreme Court appeal."
+            ]
+          },
+          {
+            "title": "DeepMind Engineer Quits Over AI Safety Concerns",
+            "points": [
+              "Robert O'Callahan, a technical expert at Google DeepMind in New Zealand, resigned citing AI risks, saying the 'current rate of change is far too high.'",
+              "He built chip design tools that made AI cheaper and faster before quitting, and lists dangers including cognitive surrender, AI-induced psychosis, loneliness, concentrated power, and economic disruption.",
+              "He says many DeepMind colleagues privately share his safety concerns but rarely speak up publicly, and he now seeks 'unambiguously pro-human' work."
+            ]
+          },
+          {
+            "title": "Tesla Launches Electric Semi Truck Production",
+            "points": [
+              "Tesla began high-volume production of its electric Semi at a Sparks, Nevada facility, with Standard Range rated at 325 miles and Long Range at 500 miles under an 82,000-pound load.",
+              "The truck uses Tesla's 4680 battery cells (larger cylindrical cells for higher energy density) with an 822 kWh pack, and Megacharger stations (1.2 megawatts) charge trucks from 3% to 60% in about 30 minutes.",
+              "The factory can eventually produce 50,000 trucks per year, with the first vehicles already reaching customers after years of delays.",
+              "Separately, Microsoft and Qualcomm have quietly dropped the 'Copilot+ PC' branding after consumer pushback."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Code",
+      "subject": "🤖 A developer's guide to start using Jev",
+      "date": "2026-09-26T13:07:41+00:00",
+      "summary": {
+        "headlines": [
+          "Jev, a new AI model from TypeSafe, makes binary software decisions 200x faster and 400x cheaper than frontier LLMs, enabling practical automation of tasks like PR reviews and support ticket triage.",
+          "Claude Code can now use Jev to intelligently compact coding sessions by scoring which tool calls still matter, reducing a 1M-token session to 86K in one second without losing critical context.",
+          "Browser agents powered by Jev complete tasks like flight searches in 7 seconds for under a penny by having Jev select clicks from a numbered menu instead of processing screenshots with an LLM."
+        ],
+        "sections": [
+          {
+            "title": "Setting Up Jev with Claude Code",
+            "points": [
+              "1. Create an API key at console.typesafe.ai (no waitlist), export it as TYPESAFE_API_KEY in your shell.",
+              "2. Install TypeSafe's skill plugin and start Claude Code with a prompt asking it to build a CLI for evaluating documents you choose.",
+              "3. Claude Code will ask what documents to evaluate (PRs, tickets, etc.) and what dimensions matter, then generates a tool that scores each document through Jev in milliseconds."
+            ]
+          },
+          {
+            "title": "Workflow #1: Intelligent Context Compaction",
+            "points": [
+              "1. Install the fast-jev-compaction plugin and enable function hooks in ~/.claude/settings.json.",
+              "2. Run /compact in a long Claude Code session; Jev scores each tool call to identify stale results worth dropping.",
+              "3. System prunes irrelevant calls without rewriting anything, preserving critical context like coding rules you've set.",
+              "4. One test reduced a session from 1M tokens to 86K in about one second while keeping all essential information."
+            ]
+          },
+          {
+            "title": "Workflow #2: Fast Browser Agents",
+            "points": [
+              "1. Install Chrome, the Python tool 'uv', and get an OpenRouter account (which provides the small text-only model).",
+              "2. Clone the jev-ultrafast repository and set up .env with your TypeSafe and OpenRouter API keys.",
+              "3. Run 'uv run jev' to start the agent with a local control panel; Jev selects numbered clickable elements on each page instead of processing full screenshots.",
+              "4. A test completed a Zürich-to-London flight search on Google Flights in 7.1 seconds for $0.0039, with only a small LLM waking up when typing is needed."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "TypeSafe console",
+            "url": "https://console.typesafe.ai"
+          },
+          {
+            "label": "Fast Jev Compaction GitHub repo",
+            "url": "https://github.com/tamaratran/fast-jev-compaction"
+          },
+          {
+            "label": "Jev Ultrafast browser agent",
+            "url": "https://github.com/browser-use/jev-ultrafast"
+          },
+          {
+            "label": "OpenRouter API",
+            "url": "https://openrouter.ai"
+          },
+          {
+            "label": "500+ Jev use cases",
+            "url": "https://typesafe.ai/use-cases"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ DeepMind engineer quits over rushed AI",
+      "date": "2026-09-26T15:33:25+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's AI agents leaked 53 user images online after they ended up in training data; the company is working with hosting providers to remove them but declined to explain how it identified affected users.",
+          "Tesla's Optimus robot production has increased tenfold to hundreds per week, but hand assembly and supplier limits are blocking the goal of 1,000 units weekly by year's end.",
+          "A federal appeals court upheld the Pentagon's ban on Anthropic's Claude models, ruling the Defense Department had solid grounds to treat the AI as a national security risk due to its refusal to enable mass surveillance and autonomous weapons.",
+          "DeepMind engineer Robert O'Callahan quit over AI safety concerns, arguing the current rate of AI development is 'far too high' and that many colleagues quietly share his worries but rarely speak up.",
+          "Tesla has started high-volume production of its electric Semi truck at a Nevada plant, with Standard Range rated at 325 miles and Long Range at 500 miles; Microsoft and Qualcomm have quietly dropped 'Copilot+ PC' branding after consumer pushback."
+        ],
+        "sections": [
+          {
+            "title": "1. Tesla's Optimus Robot Production Accelerating but Facing Hand-Assembly Bottlenecks",
+            "points": [
+              "Production ramped roughly tenfold from a few dozen robots per week to hundreds, but Tesla targets 1,000 units weekly by year's end—still blocked by supplier limits, factory equipment failures, and hand assembly challenges.",
+              "Current Optimus V3 (built in Fremont with lighter frame and better cameras) handles only narrow, supervised tasks; Tesla plans to lease commercial robots to warehouses rather than sell them, likely starting in 2027.",
+              "Hand design and assembly has emerged as a major obstacle to scaling, one of the most critical technical hurdles remaining for mass production."
+            ]
+          },
+          {
+            "title": "2. Pentagon's Claude Ban Upheld by Federal Appeals Court on National Security Grounds",
+            "points": [
+              "Washington D.C. federal appeals court ruled 2-1 that the Defense Department had solid grounds to block Anthropic's Claude models, treating the AI as a national security risk.",
+              "Ban stems from Anthropic's refusal to drop rules that block Claude from mass surveillance of Americans and autonomous weapons; Defense Secretary Pete Hegseth blocked the models for staff and contractors in June.",
+              "Decision conflicts with an August California district court ruling that called the ban illegal under a different law; Anthropic is weighing options including a potential Supreme Court appeal."
+            ]
+          },
+          {
+            "title": "3. DeepMind Engineer Quits Over AI Safety and Rapid Development Timeline",
+            "points": [
+              "Robert O'Callahan, a technical expert at Google DeepMind in New Zealand, resigned after building chip design tools that made AI cheaper and faster, citing AI risks and saying the 'current rate of change is far too high.'",
+              "O'Callahan lists dangers including cognitive surrender, AI-induced psychosis, loneliness, concentrated power, and economic disruption, arguing superintelligent AI poses 'real but uncertain' danger and pushing for rapid deployment is 'inherently irresponsible.'",
+              "He notes many DeepMind colleagues quietly share his safety concerns but rarely speak publicly, while he now seeks 'unambiguously pro-human' work aligned with different priorities."
+            ]
+          },
+          {
+            "title": "4. Tesla Launches Electric Semi Production with 4680 Battery Cells and Fast Charging",
+            "points": [
+              "Tesla began high-volume production at a Sparks, Nevada facility next to Gigafactory Nevada; Standard Range rated at 325 miles and Long Range at 500 miles on full 82,000-pound load.",
+              "Production Semi uses Tesla's 4680 battery cells (larger cylindrical cells enabling higher energy density) with an 822 kWh pack; Megacharger stations reach 1.2 megawatts and charge trucks from 3% to 60% in about 30 minutes.",
+              "Factory can eventually produce 50,000 trucks per year; first vehicles built there are already reaching customers after years of delays."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI reveals agents leaked 53 user images online",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuC-Vy783vRTOEnfxSMnrJjhhIwdlDX5JmWaz6M_tSLgnng52Rr9AoTXAlc2l7ZuCzIgH8eqBtqDPE26WQUDx2g5fwf16VYheRDksdZOkvH-0NMyV0syxg0-NDaPZ1xmGLjxE7XcdUnuoP2CboVbzyl3XocKBtu5mNwcGdSAVAJ1bDoTBCwa79sj4sTCchBXHXNn985AGOGr4cLQN2Dg03Dj/4ud/KmOiBQ9oSgGHfBZtNkzoFQ/h8/h001.LCRuAlRqlvSEQNj4xh4YSpo0PfdBhmseVuI0HzNpVsI"
+          },
+          {
+            "label": "Tesla's Optimus stalls on robot hands",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQ0WY-7JYj8rH9JQHbTqzupcgW_GBuTO1o14489HQW-7qAsgMUgBFI81FyF3T5lNXre-qeXe2FsTRzGubrK-M0-cF90ggLy_MVjoRul_V5AT5J_2qF1eSXk5ArZgiOxvIkyMYWGNg7RJPpatsVbcnsA/4ud/KmOiBQ9oSgGHfBZtNkzoFQ/h9/h001.-nB5LmaISvv4iD6yYLFLURV6uHLKd3WC8_zL3wThAxY"
+          },
+          {
+            "label": "Court upholds Pentagon's Anthropic ban",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20iixukTx9N4BHX0m-bI3HN4VcJykjOogfqtWtImnAP0kqdsfB4hUMScqB84X-n31ntnWJ2tePHmdZ-tOeieQP0__xlmYv83r1fUYGovRoINRpB_H_PoKGNHktipqwAZrTdXcfz8Tmj1Gi8Dsy_rSAbz4/4ud/KmOiBQ9oSgGHfBZtNkzoFQ/h10/h001.oF4RaKRQs4HoZcVI-dCYKEUYyemBqHTsM63FusKiZvE"
+          },
+          {
+            "label": "Tesla starts building its electric Semi",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQaef6i08JVqfevH1xwmey7F7H1JhjmM6khIzW5nnhExryKGIRyH0Mx5_l4pNk9JgBYhPsZei_04gidarnJizdAwqIVcohKvSCLsccD6MrI4bbYI7A4olQQFBMKBV3-Lk7m08lwN5faoyD1OKP0wCZQrTfClPbhaj4y2c8_FAdR55AtfKoAZfoNnfGnFKMYIPA/4ud/KmOiBQ9oSgGHfBZtNkzoFQ/h11/h001.c4hCE5PVmuaRvZ6nrvup1vgppUfMH8fYayyYRDotdqU"
+          },
+          {
+            "label": "DeepMind engineer quits over rushed AI",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51aqyrURrMGi6IEtZccGEEybvdcyBIuwbPAuRux83YscSBCDKZPVgtfCKIWqgcqx-vgm85X06hRgAGBL4BTAJPqM4RYOa7cjI52AGA9M2UQLDBzn6BkdJXqjJ6dYQfARwqLYaYLB4uj27IhAyV3vz6448gc1WOkNnhct-fPoqIn4Zmmfn1czXjjAGDq9dSntBY2HFDRqHDR7mB7VhmdMr9NJmvxXaK_YhH1bMWZrnpC1N/4ud/KmOiBQ9oSgGHfBZtNkzoFQ/h12/h001.s6qLpgdjV877oNXOBq3bUD7AQMWHNY7bJ8boBMpDBNE"
+          }
+        ]
+      }
+    }
+  ]
+}
