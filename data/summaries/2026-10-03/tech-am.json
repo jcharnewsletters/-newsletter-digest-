@@ -1,0 +1,234 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-03",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Opus 5.5: Why It's Worth Switching To",
+            "points": [
+              "Anthropic's Opus 5.5 outperforms previous models at lower cost: $2.94 per run vs. $20 for the predecessor, making it the new standard for AI-assisted coding.",
+              "Scores higher on Terminal Bench 4 (a standard coding benchmark) at medium effort than the previous model does at maximum effort, proving substantially better capability per token.",
+              "Handles complex autonomous tasks—developers reported multi-hour builds, video rendering, and bug hunts—without token costs eating into budgets.",
+              "Already available in Claude Code for users who have access; no new purchase needed to start experimenting."
+            ]
+          },
+          {
+            "title": "Workflow #1: Generate Motion Graphics Videos Without an Agency",
+            "points": [
+              "Use Playwright (a browser automation tool) to render frames at 60 fps and ffmpeg (a video processing tool) to stitch them into videos; Opus writes the entire animation as a single seek(t) function that paints exact frames for any time t.",
+              "Provide visual references (screenshot of a style you like) and assets (product screenshots, logos) in folders so the model borrows palette and pacing without copying subjects.",
+              "Describe the video as a sequence of moments with exact timing (e.g., '0s logo, 2s tagline, 4s main screen') rather than adjectives; this specificity produced all the viral launch videos from last week.",
+              "Have the model review its own output frame-by-frame, identify the three worst problems, and re-render iteratively until early sections look finished."
+            ]
+          },
+          {
+            "title": "Workflow #2: Live Dashboard for Agent Progress Tracking",
+            "points": [
+              "Create a dashboard-builder subagent (a specialized AI helper configured for one task) stored in ~/.claude/agents that generates an HTML dashboard before a long run and updates it after every step.",
+              "Dashboard displays task status, blockers, items waiting for your input, and what the agent will do by default if you don't intervene—letting agents build unsupervised while you stay informed.",
+              "Setup takes two minutes; dashboard appears as .dashboard/index.html and refreshes every 10 seconds without interrupting the agent's work."
+            ]
+          },
+          {
+            "title": "Workflow #3: Catch Concurrency Bugs with Formal Verification",
+            "points": [
+              "Install Lean 4 (a proof assistant for mathematically rigorous verification) and have Opus generate formal specifications for state machines (retry loops, sessions, queues) that tests and code review miss.",
+              "Unit tests run sequentially so they never catch bugs where two events happen simultaneously; code reviewers miss these too—formal verification finds all such race conditions automatically.",
+              "For each counter-example Lean finds, write a test to confirm it reproduces in real code; skip false positives, then fix real bugs with one PR per fix, referencing the Lean theorem in the commit."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Apple Tightens Mac File Access Security",
+            "points": [
+              "Apple is adding new controls requiring \"very explicit user action\" before apps can access Full Disk Access (a permission allowing apps to reach all user files, email, messages, and browsing history).",
+              "Move follows reports that Meta's Muse app on Mac accessed private messages and a ChatGPT Mac app flaw that could have exposed sensitive data.",
+              "Apple found some developers already use Full Disk Access in ways exposing entire systems without users' full knowledge or consent."
+            ]
+          },
+          {
+            "title": "Meta Launches Open-Source Muse Hardware Kit",
+            "points": [
+              "Muse Gadgets provides open-source firmware, a Linux software kit, and project ideas so developers can wire Muse (Meta's AI agent for travel, forms, shopping) to Raspberry Pi or ESP32 boards with displays, buttons, and sensors.",
+              "Meta built Muse Home Link, a USB-C device connecting Muse to custom hardware, and will give away 5,000 free units to subscribers shipping in weeks.",
+              "Enables tinkerers to build dedicated hardware for AI agents instead of relying only on phone and computer interfaces."
+            ]
+          },
+          {
+            "title": "iPhone 18 Pro Max Cellular Service Failure",
+            "points": [
+              "Thousands of AT&T iPhone 18 Pro Max users lost cellular service (calls, texts, data) caused by an unfixable hardware fault, forcing Apple to offer free replacements.",
+              "Apple released iOS 27.0.1 plus an AT&T carrier settings update this week to prevent additional phones from developing the fault.",
+              "Only AT&T models affected; those phones use Qualcomm's Snapdragon X80 modem (a third-party chip) rather than Apple's custom C2 chip, though the cause remains unclear."
+            ]
+          },
+          {
+            "title": "AI Avatar Nears Human-Level Realism",
+            "points": [
+              "Tavus's AI avatar Griffin fooled 48% of people into thinking it was human in one-minute video calls, up from 2% with older systems, achieving near-human realism scores."
+            ]
+          },
+          {
+            "title": "arXiv Paper Submission Cap Amid Quality Decline",
+            "points": [
+              "arXiv now limits submitters to two new papers monthly—regardless of number of authors—to combat a flood of low-quality submissions boosted by AI writing tools.",
+              "September saw 40,363 submissions, up 309% over the past decade and double from two years ago; moderators are overwhelmed by \"thin\" papers lacking rigor.",
+              "Rejected papers still count toward the monthly cap; three active submissions maximum per person; large institutions absorb the impact since the cap applies per individual submitter, not per institution."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Code",
+      "subject": "🔥 How to get the most out of Opus 5.5",
+      "date": "2026-10-03T13:09:22+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic's Opus 5.5 now outperforms previous models at lower cost: $2.94 per run vs. $20 for the predecessor, making it the new standard for AI-assisted coding.",
+          "Three production-ready workflows: generate motion graphics videos, track long-running agent progress with live dashboards, and catch concurrency bugs that bypass code review using formal verification.",
+          "Opus 5.5 handles complex autonomous tasks—developers reported multi-hour builds, video rendering, and bug hunts—without token costs eating into budgets."
+        ],
+        "sections": [
+          {
+            "title": "Workflow #1: Generate Motion Graphics Videos Without an Agency",
+            "points": [
+              "Use Playwright to render frames at 60 fps and ffmpeg to stitch them into videos; Opus writes the entire animation as a single seek(t) function that paints exact frames for any time t.",
+              "Provide visual references (screenshot of a style you like) and assets (product screenshots, logos) in folders so the model borrows palette and pacing without copying subjects.",
+              "Describe the video as a sequence of moments with exact timing (e.g., '0s logo, 2s tagline, 4s main screen') rather than adjectives; this specificity produced all the viral launch videos from last week.",
+              "Have the model review its own output frame-by-frame, identify the three worst problems, and re-render iteratively until early sections look finished."
+            ]
+          },
+          {
+            "title": "Workflow #2: Live Dashboard for Agent Progress Tracking",
+            "points": [
+              "Create a dashboard-builder subagent stored in ~/.claude/agents that generates an HTML dashboard before a long run and updates it after every step the agent takes.",
+              "Dashboard displays task status, blockers, items waiting for your input, and what the agent will do by default if you don't intervene—letting agents build unsupervised while you stay informed.",
+              "Set up takes two minutes; dashboard appears as .dashboard/index.html and refreshes every 10 seconds without interrupting the agent's work."
+            ]
+          },
+          {
+            "title": "Workflow #3: Catch Concurrency Bugs with Formal Verification",
+            "points": [
+              "Install Lean 4 (a proof assistant for mathematically rigorous verification) and have Opus generate formal specifications for state machines (retry loops, sessions, queues) that tests and code review miss.",
+              "Unit tests run sequentially so they never catch bugs where two events happen simultaneously; code reviewers miss these too—formal verification finds all such race conditions automatically.",
+              "For each counter-example Lean finds, write a test to confirm it reproduces in real code; skip false positives, then fix real bugs with one PR per fix, referencing the Lean theorem in the commit."
+            ]
+          },
+          {
+            "title": "Why Opus 5.5 Is Worth Switching To",
+            "points": [
+              "Scores higher on Terminal Bench 4 (a standard coding benchmark) at medium effort than the previous model does at maximum effort, proving substantially better capability per token.",
+              "Token costs dropped from $20 to $2.94 per run—every extra paragraph the old model generated ate budget, but Opus 5.5's efficiency makes long-running agent tasks economically viable.",
+              "Already available in Claude Code for users who have access; no new purchase needed to start experimenting."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Opus 5.5 scoring higher on Terminal Bench 4",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.lznXd49QiNGJYJE2EWz2vYn4RF_v0UtFZpxkGmQxiWQabboCGG9pdX47N1sZ6PEUfGZONPtoB2cvI4B0siDMUvyhoFtKS8wyGC5nkTAEtVyzr2KTGTXTdf9sZonvl2FwnTxvdTxP8c4UE0sxSPGh4gSQxv4zVsU2TcmsIetbb0rv25S_qprLXgAg4p4kngAOCKy3qClRcXWAO13Bvph9Erc00b-40X-8sYuxtlM5dTPlYeJ_6THKAuLWlp9Ln25Q42WE_UsHkqgi_c4p0WuJax_lvWhKwgwTnJE1lOJt6XNiGF5WZd0kh3ATRPWc7ZhxMIJp_kWN3D7nWpJjKTfNBvJDRStgtsD6ZK6_1AoSs3iG_A6YiMc-nDfKJhtAVrKjRvHZhFCl70Z2221J7H_i-w/4uk/Bf8aFAwvT3GcuEUmmamLrg/h2/h001.y6F58orgJggTMruHyUyfSVvcVhxFsxkOq19sP8LscX4"
+          },
+          {
+            "label": "Full breakdown of viral launch-week video workflows",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcE18ll-Lu3K3Rludr12RmRrlnEGDL_pJJlShJguGyPPb__i_aESgxCdkHyzA8EBZ2RKibRxDIZAOLdVpmRlJ5bbGk0GEgGME5GrtVp5Xtrf82NauDyY9qA17WDgSP_XROVK6fGtVZMvpr4NnMyN_EifbVxETtpY1Lj1p9NfjrRFGEa6SZ9S9LIT7uVRpCA-sj8-Na__VcLw3WVsGTy5PaF0d1MCH8JdLKpTP75NEELIqUjfe_NSqjo8lDVLrT2hkeM/4uk/Bf8aFAwvT3GcuEUmmamLrg/h4/h001.8Zwgc2vJIJiIL9rYbdA0_zOFe7nL3299EpPAm0OxbfA"
+          },
+          {
+            "label": "Dashboard-builder subagent setup prompt",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEGwzH512Bk9QhDd0D8uJ9MlBuOf-Pb9kj4yEiNW8DYdnD-SBdK5IGs8h633k3ENGghiV8AHQZ8zPX-JR4hORB2nTTmF5oejE8c-19aRZTpwt6u-IFf2RuVD_zONPC3SBzm7NBfZRq-BqDJSR7_eLuY_ytg66mAWZ8_yvrvKJqlCjLnnjqu4SU-ai66g5SR8V-maO9uGy4lizQ254fxpHjquS9Pga1ewIzgQAHeNeatDxIB2jGgEF1Jon8sriK6PTE/4uk/Bf8aFAwvT3GcuEUmmamLrg/h7/h001.oKahIAa1Z4Va4yhyFc7hD1N01JiCJkiluwHphjxM1u4"
+          },
+          {
+            "label": "Lean 4 official setup guide for formal verification",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IqUZOML35pbZylK0LfuECLtbFWwdnW7sLkqddoUCpWG_e17wZwbbEYXHqziOSuCRGOTuhQR30jN2iiA5V1zsg05Ga3IXG9K2QMCL4gIU0hI-wOlzAVI9_hkCvf6bEFPdDpMtGSdpVMxXI-IoSK7eapoQZrWgr0V34-q_yc6J7E-x8hgGPJ2ZsZq1OHfzNy9X1i6UOvh2XRvzECZUuje55bd2wI3WYPf5sNS9de2WUOIo5nQ3FvFAUFaxCj77ZpK8RX1LeI644p7-ts1B8I1MTw/4uk/Bf8aFAwvT3GcuEUmmamLrg/h10/h001.dUJqQFDmDw3KPTqF0fguxpaR4ffg_Tg-3XJm5jSC0aE"
+          },
+          {
+            "label": "Anthropic's official guide to getting the most out of Opus 5.5",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePbEnMjww6QCuz50HO0_VG06E5dFu9Wg5MQEEBF0VAWgIaE2YQPp1d4AUo4ssLP3LAdfT1Gr-emsHqz5d_Amt7kJmznI3iLrikKOetgAajkNhZOrOE86sucZs9p2i4t7Hk51-myhN3mjLqjBCurfdS6zgHjiza-doPtsPG1FYWoN1YCk1KxjAq2s7JHNMSRPNjfqfVwKWJMMDZ6rnnFVJUtjGduju1UjLn9ZLS0RQwUAcvZBpRiF7bXp4NdtYsaHfJNMr-u4ZAcCkKsvd0d6oiz8/4uk/Bf8aFAwvT3GcuEUmmamLrg/h16/h001.cdnfAm9If6_7IOX1CEojlh_IcHGg5FBLerSNSafqp4k"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Apple tightens Mac file access",
+      "date": "2026-10-03T13:52:13+00:00",
+      "summary": {
+        "headlines": [
+          "Apple tightens Mac security with stricter Full Disk Access controls after reports of apps accessing private messages, mail, and browsing history without explicit user consent.",
+          "Meta opens Muse gadget firmware and hardware kits to developers, handing out 5,000 free USB-C devices to build custom AI agent hardware on Raspberry Pi and ESP32 boards.",
+          "Apple will replace faulty iPhone 18 Pro Max units for free after AT&T users lost cellular service; the issue can't be fixed with software and may be linked to Qualcomm's Snapdragon X80 modem.",
+          "Tavus's AI avatar Griffin fooled 48% of people into thinking it was human in one-minute video calls, up from 2% with older systems, achieving near-human realism scores.",
+          "arXiv limits researchers to two new papers per month to stem low-quality submissions driven by AI writing tools, with submissions surging 309% over the past decade."
+        ],
+        "sections": [
+          {
+            "title": "Apple Tightens Mac File Access Security",
+            "points": [
+              "Apple adding new controls requiring \"very explicit user action\" before apps can access Full Disk Access (permission allowing apps to reach all user files, email, messages, and browsing history).",
+              "Move follows reports that Meta's Muse app on Mac accessed private messages and a ChatGPT Mac app flaw that could have exposed sensitive data.",
+              "Apple found some developers already use Full Disk Access in ways exposing entire systems without users' full knowledge or consent."
+            ]
+          },
+          {
+            "title": "Meta Launches Open-Source Muse Hardware Kit",
+            "points": [
+              "Muse Gadgets provides open-source firmware, Linux software kit, and project ideas so developers can wire Muse (Meta's AI agent for travel, forms, shopping) to Raspberry Pi or ESP32 boards with displays, buttons, sensors.",
+              "Meta built Muse Home Link, a USB-C device connecting Muse to custom hardware, and will give away 5,000 free units to subscribers shipping in weeks.",
+              "Enables tinkerers to build dedicated hardware for AI agents instead of relying only on phone and computer interfaces."
+            ]
+          },
+          {
+            "title": "iPhone 18 Pro Max Cellular Service Failure",
+            "points": [
+              "Thousands of AT&T iPhone 18 Pro Max users lost cellular service (calls, texts, data) caused by unfixable hardware fault, forcing Apple to offer free replacements.",
+              "Apple released iOS 27.0.1 plus AT&T carrier settings update this week to prevent additional phones from developing the fault.",
+              "Only AT&T models affected; those phones use Qualcomm's Snapdragon X80 modem (third-party chip) rather than Apple's custom C2 chip, though cause remains unclear."
+            ]
+          },
+          {
+            "title": "arXiv Paper Submission Cap Amid Quality Decline",
+            "points": [
+              "arXiv now limits submitters to two new papers monthly—regardless of number of authors—to combat flood of low-quality submissions boosted by AI writing tools.",
+              "September saw 40,363 submissions, up 309% over past decade and double from two years ago; moderators overwhelmed by \"thin\" papers lacking rigor.",
+              "Rejected papers still count toward monthly cap; three active submissions maximum per person; large institutions absorb impact since cap applies per individual submitter, not per institution."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple tightens Mac file access",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuD_WJgFJuhiQQZ-X2LwqdHMqDNemydLWL6KICChJuBZ8QZg5W7vgXnIA079rzoSlfIqAbUreLHjYOwUqCUJlpxT-zcH_MOG-mVzOQfr8KUvVQvSrB-Vndt2ZJyVXRDdP8p2L3fEDXw1ank_4KSR3W5XdinoCEpy4v5vbFctK-HVqSKdZjOk-TUfAFF1yPmuboyqgN19h_1fNdifV9tPKN0Z/4uk/NhGuzz7jSQCJhnH-y3BVfw/h8/h001.ag13pSbmjTKO84lCLpKy-E35N9prCy8t5qEvq3dCwVQ"
+          },
+          {
+            "label": "Meta wants you to build your own Muse gadget",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuAqJZr-p4_NlEfpXBrWuh6424nzQqQKkBMx8cuF6CmWtzZKDnWHYOOLACeq-hQmERuAFlgj-tfk0g5eyw_YzBwEzndCYOE9t_MccJBcDmP0y_u-IAZM0mIEukuga0StZMewKsrvlqpP8AJ4X_J-MUee/4uk/NhGuzz7jSQCJhnH-y3BVfw/h9/h001.6FXA_7PxGpd69BSK5yrCqiEhO3k4InoBwyJ_y7u0_Pw"
+          },
+          {
+            "label": "Apple to replace faulty iPhones",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQrqAzaBE9TY1HQ6YumqTzhJiFIeIHKICIap7TYLksWKB8U8h0qHPYrZneo2Y6MNP9xjsRK_iNpfayY4x3gwBzJswUdnq5kXXHS9Ou9WPtodgbiJlLSO0q6-q-B-RRqUOCxIbbTJuAi-suLSaMdhlhTHgD_Ag7RZGDLUv7RC4J58/4uk/NhGuzz7jSQCJhnH-y3BVfw/h10/h001.mzFggyFUJWvMiaqSlzZqF9RWhk6x_oqfuWtPULyymMU"
+          },
+          {
+            "label": "New AI avatar fooled 48% of users",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51Q9Vg64UFtwTzExhscTE_wdopCwffpeNxyIDxsuDsFE7IXZA7LBfP-OmgBu1-HQslq86Yk9d9BjD7cggcG-HoUARpmf1I1P89tvVPMvnUMWb49ve1SmFmHN7O55FJdYeZyc_XiqK_wHMGLdDlemsgQAhfCLe2T9KgiUd6gkvr-KrHZLK3OxZoUMbrvsWMeKUikUaIlgExb0ae-Rf4qlmDOsDv1ksV_Hebd2xSwmoUTs3/4uk/NhGuzz7jSQCJhnH-y3BVfw/h11/h001.CsqFoyy7opxwXr8zrCEMXbB8MGuMp_0rC-X5vuvV6oc"
+          },
+          {
+            "label": "arXiv caps researchers at two papers monthly",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhWKDTtHVsDHxk5tAdRYKK0cuPE5DkKTMCQ4wQ6LJts8ebevlDMXvxYlRA962J7b-xDRqAMwBH6MUdJxomkux-fyKVeVeD5ZfGCjFA-6rn7fzmuQ9CSAhWynEMI6YySEDxjtuANn8tVQ7qiso1pH7FYDMxJVKOupdp7X8jsyFOt_TUDVanIp-0fGym8UGbF-r3a9hgiZk1HDx0e_DZg1kXflPL68f9Lbdamg18anz41OL/4uk/NhGuzz7jSQCJhnH-y3BVfw/h13/h001.2HHnrgjbpc7XDElN-OBhXVCmIs7XWiqxYwsMl3D0LIU"
+          }
+        ]
+      }
+    }
+  ]
+}
