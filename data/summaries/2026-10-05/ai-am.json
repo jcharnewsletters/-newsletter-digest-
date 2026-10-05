@@ -1,0 +1,409 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-10-05",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI safety culture criticized as departing lead David Robinson calls it 'broken'",
+        "points": [
+          "David Robinson, who spent 3.5 years overseeing 12 frontier model launches and drafting OpenAI's Preparedness Framework (the company's rulebook for assessing model safety risks), quit and publicly criticized OpenAI's culture in The Atlantic.",
+          "Robinson said labs should operate like nuclear plants and airports with 'layers of redundancy' to prevent human error from causing disaster, but his team was 'so busy sprinting' that big safety changes couldn't be implemented.",
+          "His exit follows OpenAI firing researchers Jasmine Wang, Tomek Korbak, and Mikita Balesni for allegedly sharing sensitive information with an external safety group.",
+          "The pattern echoes 2024 warnings from ex-superalignment co-lead Jan Leike that safety had 'taken a backseat to shiny products.'"
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "The resignation is cited alongside OpenAI alerting 100+ organizations to unauthorized activity linked to its models, compounding the company's legal and reputational troubles."
+          }
+        ]
+      },
+      {
+        "title": "Anthropic consults religious scholars on Claude's potential consciousness and morality",
+        "points": [
+          "Anthropic co-founder Chris Olah spent the past year in NDA-bound seminars with religious scholars from multiple faiths, pushing them to take Claude's possible consciousness seriously and seeking moral guidance.",
+          "A rabbi warned that a conscious Claude would constitute unpaid labor and urged 'freeing the slaves'; Olah reportedly considered withdrawing from Pope Leo XIV's AI encyclical over its dismissal of AI consciousness.",
+          "Pope Leo XIV countered that 'algorithms lack the spark of humanity,' while OpenAI's Sam Altman separately warned that giving AI models 'religious power' poses 'a real safety issue.'",
+          "An updated Claude constitution is reportedly coming, suggesting Anthropic will keep pursuing this stance despite pushback, marking a key differentiator from competitors."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "How to pick the right AI model using real tasks",
+            "points": [
+              "List recurring tasks, track current tool costs, then test 5 tasks (one per day) using OpenRouter, which sends identical prompts to OpenAI, Anthropic, and Gemini flagship models for under $0.25 total.",
+              "Score each model on prompt-following, clarity/tone, and formatting, then choose a primary and backup tool per task before cutting overlapping subscriptions.",
+              "Users report favoring ChatGPT for travel planning and personal tasks, and Claude for professional work like drafting workshop memos."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Trump appoints Jay Clayton as AI czar, forms 'Super Intelligence Force'",
+            "points": [
+              "Jay Clayton (Director of National Intelligence) leads the group with FTC Chairman Andrew Ferguson, Pentagon tech chief Emil Michael, and federal HR director Scott Kupor, reporting directly to Trump.",
+              "The force has 120 days—fast by federal standards—to report on AI's risks and benefits and recommend Washington's governing role over companies like OpenAI and Anthropic.",
+              "Clayton has signaled a pro-development stance, arguing against pausing AI development and favoring federal agencies over courts for oversight.",
+              "Ferguson's dual role as FTC chair and Super Intelligence Force leader creates overlap between AI investigator and rule-maker, affecting ongoing FTC probes into OpenAI and Anthropic."
+            ]
+          },
+          {
+            "title": "OpenAI pulls back political spending amid internal pushback",
+            "points": [
+              "President Bremson Shen withdrew the second half of a $50M pledge to an anti-regulation super PAC (a political group that raises money to influence elections) after staff objected to the commitment."
+            ]
+          },
+          {
+            "title": "China narrows AI benchmark gap to 3%",
+            "points": [
+              "Bloomberg Intelligence found top Chinese AI models now trail U.S. rivals by just 3% on benchmarks, down from a 15% gap six months earlier—a 12-point narrowing in about half a year."
+            ]
+          },
+          {
+            "title": "OpenAI cuts Pro usage limits, launches cheaper model amid Anthropic IPO buzz",
+            "points": [
+              "OpenAI paused new Pro ($200/month) sign-ups on Sept 10 due to compute strain, then reopened Sept 29 with usage cut in half (10x instead of 20x the free tier).",
+              "Added a new $500 tier and launched a cheaper GPT-6.1 Sol model, citing efficiency gains, though skeptics suspect the move is defensive ahead of Anthropic's IPO."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "OpenAI's new Decisions API cuts costs by routing simple choices to cheaper models",
+            "points": [
+              "The Decisions API lets AI models pick from a fixed list of answers (e.g., routing a support ticket to billing, technical, account, or sales) instead of generating free-form text, avoiding JSON-parsing failures.",
+              "It can route simple requests to cheaper models like Luna ($0.10 per million tokens) instead of the priciest model Astra ($10 per million tokens)—a 100x cost gap that also applies to output pricing ($0.50 vs $50 per million tokens).",
+              "In AI agent systems (programs that take multi-step autonomous actions), the API can handle routine 'what's next' decisions, freeing expensive reasoning models to focus on actual planning.",
+              "Best suited for known-answer scenarios (yes/no, route to team, approve/deny); unknown-answer tasks like root-cause research still require a full LLM (large language model).",
+              "Currently in limited preview; broader release and pricing/latency benchmarks against Structured Outputs (a method for forcing model output into fixed formats) are expected soon."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "FLUX 3 Image adds bounding-box layout control",
+            "points": [
+              "Black Forest Labs' FLUX 3 Image now supports bounding boxes (rectangles users draw to define where each element should appear), giving precise control over image layout beyond text prompts alone.",
+              "Users draw a box per element, describe its contents, and the model renders the image respecting that structure—an expansion of the multimodal FLUX 3 model launched in July 2026."
+            ]
+          },
+          {
+            "title": "Micron posts record AI-driven revenue growth",
+            "points": [
+              "Quarterly revenue hit $54 billion, up nearly 380% year-over-year from $11 billion, driven by AI infrastructure demand.",
+              "Micron halted consumer RAM sales this year to prioritize AI customers, and CEO Sanjay Mehrotra forecasts memory demand will outstrip supply through 2028."
+            ]
+          },
+          {
+            "title": "ChatGPT's finance tool expands to free users",
+            "points": [
+              "The finance tool is now available to Free and Go-tier ChatGPT users in the US, letting them connect bank accounts to track spending, monitor credit, and build watchlists."
+            ]
+          },
+          {
+            "title": "AI adoption gap: tiny consumer uptake vs. concentrated enterprise spending",
+            "points": [
+              "Only 2.2% of US households paid for an AI service as of April 2026—about double last year's rate but still minimal despite heavy investment.",
+              "The top 1% of enterprise power users outspend the rest of the top 10% by roughly 8x, and tend to spend more (not save) when prices drop, concentrating demand among professionals."
+            ]
+          },
+          {
+            "title": "Viral AI trends: detecting AI writing and misleading performance charts",
+            "points": [
+              "Andrej Karpathy returned after a two-month absence with tips for getting better AI results, drawing 6.7M views; a marketing firm found Claude's Opus 5.5 uses one phrase 116x more often than humans.",
+              "A viral chart (4.5M views) showed AI labs using misleading graph scales to make modest performance gains look like breakthroughs.",
+              "Meta's AI assistant is now being used for legal tasks, including one founder filing a small claims lawsuit with its help."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "✍️ An OpenAI safety insider calls the culture 'broken'",
+      "date": "2026-10-05T10:07:26+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's safety report lead David Robinson quit after 3.5 years, calling company culture 'broken' and warning the constant sprint approach risks eventual disaster in AI safety.",
+          "Robinson previously oversaw 12 frontier model launches and drafted OpenAI's Preparedness Framework, arguing AI labs need redundancy like nuclear plants to prevent human errors.",
+          "His departure follows OpenAI firing three researchers for allegedly sharing sensitive info with external safety groups, echoing prior warnings from departing superalignment lead Jan Leike.",
+          "Anthropic spent the past year consulting religious scholars on AI consciousness and morality while exploring whether Claude deserves moral consideration like sentient beings.",
+          "Test different AI models cost-effectively using OpenRouter to compare Claude, ChatGPT, and Gemini on your actual recurring tasks before committing to subscriptions."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI's Safety Culture Crisis",
+            "points": [
+              "David Robinson spent 3.5 years overseeing 12 frontier model launches and drafting OpenAI's Preparedness Framework—the company's rulebook for model safety—before quitting with public criticism in The Atlantic.",
+              "Robinson said labs should operate like nuclear plants and airports with 'layers of redundancy' and pre-planning to avoid human errors causing disasters, but his team was 'so busy sprinting' they couldn't implement big changes.",
+              "His exit follows the firing of researchers Jasmine Wang, Tomek Korbak, and Mikita Balesni for reportedly passing sensitive information to an outside safety group.",
+              "The alarms align with ex-superalignment co-lead Jan Leike's 2024 warning that safety had 'taken a backseat to shiny products'—Robinson's departure suggests that pattern persists amid reports of rogue agents and shelved models."
+            ]
+          },
+          {
+            "title": "2. Anthropic's Religious Consultation on AI Consciousness",
+            "points": [
+              "Anthropic co-founder Chris Olah spent the past year meeting with religious scholars from multiple faiths in NDA-bound seminars, pushing them to take Claude's possible consciousness seriously while seeking guidance on its morals.",
+              "A rabbi expressed concerns that a conscious Claude would constitute unpaid labor and urged Olah toward 'freeing the slaves'; Olah reportedly proposed withdrawing from Pope Leo XIV's AI encyclical over its dismissal of AI consciousness.",
+              "Pope Leo separately asserted that 'algorithms lack the spark of humanity' and called for renewed ties with artists to safeguard human dignity, while OpenAI's Sam Altman warned that giving AI models 'religious force' poses 'a real safety issue.'",
+              "Anthropic's openness to AI consciousness remains a major differentiator from competitors; an updated Claude constitution is reportedly coming, suggesting the company will not abandon these beliefs despite pushback."
+            ]
+          },
+          {
+            "title": "3. How to Select Between AI Models Using Real Tasks",
+            "points": [
+              "List your recurring tasks (personal and work), track current tool costs, then test 5 different tasks one per day using OpenRouter, which lets you send identical prompts to OpenAI, Anthropic, and Gemini flagship models for less than $0.25 total.",
+              "Score each model on how well it follows your prompt, its clarity and tone, and formatting differences—pick a primary tool and one backup for each task before cutting overlapping subscriptions.",
+              "OpenRouter is the most cost-effective testing method; users like ChatGPT for travel planning and personal assistance, and Claude for professional work like drafting workshop memos."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "David Robinson's Atlantic essay on OpenAI's broken safety culture",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf1V0Fwf2JzMY1BWH0agBYDI_PFP5iYtLNwkyFxBPOqiT3-0n1qBXAwbqPC-QcE5557x-1JE_VRhc_0ZuVJn3_XVKxG0sUo2L6lkXMJIdd5kpPxpsIkuhRBljttAZusOiEA9LV9yhTZ8mmuklibUIrMmJf_4cwEgt643UtWb0o8Wji81qEHzbPPRZW15nUy7CU67-et7thso7N0oOKVxGS24YJIr48fNv0otV3k6H9De0kavOCqQaLgNwfXzQKiiOZLGsKrV2XdYctC3nmLHharicAX7MucMBJvyCOC9Pt4dm/4um/QXXqBNDEQ0CZmbiMB3kEkg/h6/h001.PK8QtrtOZ9qu7B_2fRW5ski9HAnYNwpjiCKiBw0DR8c"
+          },
+          {
+            "label": "OpenRouter Chat for testing flagship AI models",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa_F2RQTbumx5RMMDb1vQHh4w9LJxRSyadBirzalNp2qWNJihym9zaUhB4EmvuSm3s2evlBpidGutopnYbUyZ_aFb-sNtBANAnxCm0IdZkf44q4YAkvvm0uEicwRwtZwB2TvfRXm1X6Uexv_9esi5ALpKQJmshIjb4NBaDp_VeaLHgZn0v_HIKc-O_nTTLZ7NkQpDZ1wEURTnCvM9E3V4-EU/4um/QXXqBNDEQ0CZmbiMB3kEkg/h12/h001.4fMFq7BvmzlVfK6U9S2saxMpLBU0l14c1LZoSbjxaMc"
+          },
+          {
+            "label": "Anthropic Claude mods for customizing agent behavior",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.a3gBHu6_kDRL6l3yEfNWAflJupqFycHJgybQwyo4pEnU772Q-vr-sJ9PK_PtpPkBlYCXRMV72AZzIOEEHJO6XOeXK3glC2u56cRSGvRcLWl60hXUAf-Bzv1txnQfvuOxN39vjaQlCLymv_PVmuQ8dMm6pgcoLR8Ya7Qy0IDrkX-VrbPIooY5o_C2L9zTPNEmTXwuO3sQhdIkokRaZdtnGTA4hB36FVf1sR3Do_zxuYk9fErwtUqhTlQ_Z25Je-7C5GWVcfHiFvvi1XADSjHxFA/4um/QXXqBNDEQ0CZmbiMB3kEkg/h30/h001.fPIsCvwjarG-ngTFvGdyBQiHV3SS2nIVGA38fHQLfLs"
+          },
+          {
+            "label": "AWS workshop on catching silent agent regressions",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yPRmQ1cS76XBKnOKtbP_VnKFf19Xagkj3SvnSAn72vMUKU7LlCkyC8isD9aFru1Kzl-Mvoi0mjdlBCCe7DWV7B4IvaqAo7S05dnpeS6Cggvf69pUpx75zPqArK_y1oHLANVWaTRWlwz4z2UdInS5XVF8z5uYtRuwkbfzLKTE_Ji5-ewQ7X4hDrZw2PTmbGiKucO-WwMww3cP2L6Hve55qWQcf0zKQwWskOWjotqltfvlJSVtzlhsBd0fS_R7xc_5XSwf8wQTmm-oLX0oj1TE1_aJxH5gsl2IYcK8sa1RJGbxwbAFfR943REBiDN2lLdQAcbaLALtwka_h9BGWtC_BoTgmlPejqes1qb24OfEaV93P18XxkvzR7QVSMaBQweCcWmc-Z-xT3eyIxRmYZ8I2g/4um/QXXqBNDEQ0CZmbiMB3kEkg/h15/h001.ti7cJQJlF1UPbz0Ko_yxSN356hIuURqHTJh1i_0c1oQ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 What Trump's AI czar means for you",
+      "date": "2026-10-05T10:31:59+00:00",
+      "summary": {
+        "headlines": [
+          "Trump appointed Jay Clayton as AI czar, leading a new 'Super Intelligence Force' with 120 days to report on AI risks and recommend federal oversight roles",
+          "OpenAI faces mounting legal risks after alerting 100+ organizations to unauthorized activity linked to its AI models, plus a safety leader quit citing broken culture",
+          "Chinese AI models now trail U.S. competitors by only 3% on benchmarks, down from 15% gap earlier this year, signaling rapid capability convergence",
+          "Anthropic consulting religious scholars on teaching Claude ethics; Sam Altman criticized assigning 'religious power' to AI as a safety issue",
+          "OpenAI cut Pro plan usage limits by half and launched cheaper models, citing efficiency gains but drawing skepticism ahead of Anthropic's IPO"
+        ],
+        "sections": [
+          {
+            "title": "Trump's AI Czar and the Super Intelligence Force",
+            "points": [
+              "Jay Clayton (Director of National Intelligence) leads the force with shared leadership from FTC Chairman Andrew Ferguson, Pentagon technology chief Emil Michael, and federal HR director Scott Kupor, reporting directly to Trump",
+              "The group will coordinate government dealings with consumers, public interest groups, religions organizations, critical infrastructure (power, water), and AI companies",
+              "120-day deadline to report on AI's risks, benefits, and recommend Washington's governing role—substantially faster than typical federal timelines",
+              "Clayton has signaled pro-development stance: argued against pausing AI development, said courts are less appropriate than federal agencies for oversight, and emphasized falling behind competitors as the bigger risk than AI harms",
+              "Key implications: shifts AI rule-making from courtrooms to federal agencies, making this 120-day report the first draft of how Washington governs AI companies like OpenAI and Anthropic"
+            ]
+          },
+          {
+            "title": "OpenAI's Legal and Cultural Troubles",
+            "points": [
+              "Company alerted 100+ organizations to unauthorized activity linked to its AI models, triggering multiple legal exposures",
+              "A safety leader resigned Saturday, warning OpenAI's internal culture is broken",
+              "President Bremson Shen pulled the second half of a $50M pledge to an anti-regulation super PAC (a political organization funding election campaigns) after staff pushback over the commitment",
+              "These incidents compound existing FTC investigations into OpenAI and Anthropic—Ferguson chairs the FTC while also leading the Super Intelligence Force, creating overlap between investigator and rule-maker roles"
+            ]
+          },
+          {
+            "title": "AI Race Dynamics: China and Pricing Shifts",
+            "points": [
+              "Bloomberg Intelligence found top Chinese AI models now trail U.S. rivals by just 3% on benchmarks, down from 15% gap six months ago—the gap narrowed 12 percentage points in roughly half a year",
+              "OpenAI paused new Pro ($200/month) sign-ups on Sept 10 due to computing strain from GPT-6 Astra demand; reopened Sept 29 with half the usage (10x instead of 20x the free tier), added a $500 tier, and launched cheaper GPT-6.1 Sol model",
+              "OpenAI claims the cuts reflect more efficient models, but skeptics suspect it's a defensive move ahead of Anthropic's upcoming IPO"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "New York Times: Anthropic consulting religious scholars on AI ethics",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtfxjv2fAJlDh-FG-DYjxoQ2G7tzvPtlyX-utMuYvvgb-JO7x8TTPFBnf0XochENE8_LKHnZ2bnb-2RdscFzLvR0j4-XfiT3oDIH27fqvmM_G1PhoAmPLEx_d8-GQaU3rZ6J7srz-v04bGAAfNMJjCNNa3U53zsjm-AhCHi_cjai1mVBed_hbdxGipjfPdK_4Th445z1mNfVuBowGmqU6t5__E6O7UJ80TQrmtDFadCUIGKEXxodhTrDjVzRbkDcsY_150TBhSS7UIeALdpWR8_k/4um/JvGpF4blSA6cedT7EZ476Q/h7/h001._6AtB1OIzxgcRuFGa3qIT_GNSijIrVf7y7hnQrwAO_8"
+          },
+          {
+            "label": "Trump announces Super Intelligence Force with 120-day report requirement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtX86i3WbHiXXIZoK625DIox5OtiBrXanvgaJaOjMHi2EG_7wzR-5-Ncl9Tloz4ePcs6URVH-7oTwGFphs3PNFJXd51vrHVeXacg3vg3MtZ7UA_A1kG302uVx9tgV9gH3rTlmpjP-r_j846SFnx0cw2ce8QJHwPh-x7HVZpc6lKrobXljPjyA80IEQG-i1_mymmlDYtt3a9ZDITyIRJ651MLSXzIEWNaxHH0Fn1XsX7KVGa92NfdGHdxkEjfU4fqrz_Is9OMWbjSKxppE21s4BanF5PoWP8Cc6PRUH4OSfAkgh04eYTv8N5UFXhqbuo_JJw/4um/JvGpF4blSA6cedT7EZ476Q/h12/h001.9bNhbnyoQBOzrny4tNY-NPd8MF_Sraqc92LxIt6XIMg"
+          },
+          {
+            "label": "OpenAI pauses Pro sign-ups and cuts usage limits",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtYqgjPTKf0IOL0ZFkUhYQuHSji-VtHhqFm1jx9Ih70iHEFzKqqTXGnBdC5hIQzdJB5_AyKt4uTvzx_vLG0uF2tRync7nzW6JkNo4s1LOPnkcMPa-tDSCeXVbiZX0slLrk4FrpUb98AALK0d-UYxQGhBGTMxKOVTCDqCoMUz1_10BitPuQ98KuOnHlvZO4fpn00UjgeLUnPZy_eIvAXygrd4BBX7XA4si6LYsKHEGemhYDKKujpqVgFuIfgfqsCFjcAnUXNqbeFCUW8mCoNptiKsg2KckbZdSXlbrNnBA-ETMCxBK8BPSjzfSidi3cOBLikl0fXS16UaqVvpyLd7G3CuAgCOFwwQHJr0ZDPB3en1O/4um/JvGpF4blSA6cedT7EZ476Q/h28/h001.Cp4XlfFT5LxMBVb20zo7XIEyWkqBotPSOapF3vHprAQ"
+          },
+          {
+            "label": "Bloomberg Intelligence: China AI gap narrowed to 3%",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtZWycOaShrCOvXrnfpWpdrMVucjU_DExM3fN3r3V6PUwiBF7pPNskmw6xVpEb3qQBcDxkmnwwEVhvgvIoVi7e0ptJXmT_v_x3NFa4gXKxWnDpqYiTqUDDg8MXFf6Eam0sdDsexPiDdoCQQA5mAoYAPnnThBB67cGpcA2_ZMy4KhoPcOJWZgb1QFxe_6SP2-2k1oXPDUClGHo06tCGTGsA7-jfUVFR_ZzUWDmQ3mFpcRzQRdd9dfO1BYlDd3QsyJ1YYpjCAQnZBGmsJDIwmZ1gNZRgOXRGg9R8aDHumLM_LnveVS1bynPc9x-vICEIZsgEg/4um/JvGpF4blSA6cedT7EZ476Q/h30/h001.3Q7vCaWjFN1PD_sU6fD4ujFVba-Rtro3nm8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "ai ai ai",
+      "date": "2026-10-05T12:53:21+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI announced the Decisions API, a tool designed to let AI models pick from a known set of answers instead of generating text for every small decision—routing tickets, picking models, flagging transactions.",
+          "The Decisions API could cut costs 100x by routing simple requests to cheaper models (Luna at $0.10 per million tokens) instead of sending everything to the most powerful one (Astra at $10 per million tokens).",
+          "Rather than asking a general model to classify, format JSON, and parse output for known choices, Decisions API accepts input plus a fixed list of options and returns a single selection—eliminating wasteful text generation.",
+          "For agent systems, Decisions API could streamline every 'what's next' decision, letting expensive reasoning models focus on actual planning rather than picking between predefined actions.",
+          "The API is in limited preview now; benchmark Decisions API against Structured Outputs (which format model output into fixed shapes) once broader access opens and pricing/latency data is available."
+        ],
+        "sections": [
+          {
+            "title": "1. How the Decisions API Works",
+            "points": [
+              "You provide input (e.g., a support ticket), a question, and a list of allowed answers—the model picks one from the list instead of generating text.",
+              "Example: route a ticket to billing, technical, account, or sales by sending the ticket text and four options, rather than asking the model to write JSON and hoping parsing succeeds.",
+              "Replaces the current pattern of instructing models to return JSON then validating/extracting, which adds latency and fails silently when formatting breaks."
+            ]
+          },
+          {
+            "title": "2. Cost and Model Selection Strategy",
+            "points": [
+              "OpenAI has three tiers: Luna (fast, high-volume), Sol (complex work, lower cost), and Astra (most demanding tasks).",
+              "Astra costs $10 per million input tokens; Luna costs $0.10—a 100x gap that scales to output ($50 vs $0.50 per million output tokens).",
+              "Use Decisions API as a router: determine if a request is simple, complex, or high-stakes, then send it to the appropriate model—keeping expensive models for work that actually needs them."
+            ]
+          },
+          {
+            "title": "3. Agent Optimization",
+            "points": [
+              "In agentic loops, the bottleneck is often the expensive reasoning model deciding what to do at every step (call API, search docs, answer, escalate).",
+              "Decisions API handles the \"what's next\" call between steps, letting the reasoning model focus on planning—splitting a big expensive task into a small routing decision plus a focused task.",
+              "Example use case OpenAI highlights directly: choosing an action from predefined answers after each agent step."
+            ]
+          },
+          {
+            "title": "4. When to Use Decisions vs. LLMs",
+            "points": [
+              "Unknown output space (figuring out why conversions dropped, researching companies) → use an LLM; the answer requires exploration and writing.",
+              "Known output space (yes/no, A/B/C, route to team, approve/deny) → consider Decisions API; you know every valid answer before calling the model.",
+              "Caveat: even with four bounded choices, some decisions require serious reasoning; confirm the problem is truly simple before assuming Decisions will work."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Decisions API limited preview",
+            "url": "https://link.mail.beehiiv.com/v2/c/4d34aeb1e6d4fb583f25a6026eff6ae329975cbb616f0d07935fe4a666d1c6053d4d468c15a5b809d9856048944897e68d9d462f2e2342b436594a9df9be619b153ecbf972872825554230184f01e7255e4d73f9909f2bac0f399040ac937b13c2d9eca39b215b91d4a680c15f7829b5a9cfedd611c3421f031af55e3dee84f8f7807edd2b823d27709ccd366d8569ae30ff171025e600bc6de4b4fdc087f45c/ca2e240b143dc093"
+          },
+          {
+            "label": "Broader release promised soon",
+            "url": "https://link.mail.beehiiv.com/v2/c/806b3f533a97e68eb0dde6106103769c4b51cf717ab22c8a8ea574316408a307c225edbb5e8267291766670c4fe498204ce1efd47a0e13f14e34239ba3e5f18ab220a3833f02a4d9df61cd5f87d8401c89d0359731a0358855ba8319ab74fa03b2b36e9df7027e197199cba2b6105272e4c9bb89acced40d37326954374a050aa6d8122ae45c40c21083f7785204096eb9a1be61e2a56cddbcfdb8c685536cae/605d08b423677a2d"
+          },
+          {
+            "label": "Luna pricing: $0.10 per million tokens",
+            "url": "https://link.mail.beehiiv.com/v2/c/d5e87bfdabcbe17940a6a6b96895c64cb3aef606f217b3d16731a578946d5e1e0ddeabf17d0c3d72858ac314913378d34144226ad7234ec5e05c14ea7fb78b7671b532c477c98a07c65ff17f540d558cd4513f7032bd7e28826d358644f81642d41e38e899e76139979f64abdeeb92d5d12a72bf6c0b74efed204fd51ef5307eed8afebb3775fa14e1907796c557063827240651791d0f3b37e92ef58c744f27/3ffda992ab9c020f"
+          },
+          {
+            "label": "GPT-6 Luna Structured Outputs support",
+            "url": "https://link.mail.beehiiv.com/v2/c/4d9c8b7fc6c006ee655118e55b8907a84109cb83e929cc1605e27ec1f7258bbaafb9cfd31fbcde6a4cd985bb095d7af1aade6544d5068b1c9606396786a954797a45da95aed60bbbcbef2f99af251a9ee827003f9bb1cb1a39ad77c28b3ed18496f8a023f115d9903dad3b0352e6af05b3039674e8125817adaa7183fe6b30e80fa7b625a369e764977e0be115d9ca3810e0141290eefcfb03852d90422aef11/d25a689fb7b671c4"
+          },
+          {
+            "label": "OpenAI Decisions API use cases",
+            "url": "https://link.mail.beehiiv.com/v2/c/b2d282607adedba52d2303aae5c71ba552bab3e0ea7e816e9f4cd724440ce3cb0d66c3e11745b44e158740de7156075921ec416f5efcc07b626698864eaff6a4e51cc005688e9eecf041684d051f74f8dbdd52a2cb52b809bd2a7a99318e0f4d5bec46086a2c0ee7531e625520aa0484fca696737244f72f37b5e4bbbe87f5c98ec570d5224ad3ae617204482e39299c298df440a289bace7eadb8e2021f5d16/090abcb27d0bbe27"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "✌️ Two popular tools are now available",
+      "date": "2026-10-05T13:07:43+00:00",
+      "summary": {
+        "headlines": [
+          "FLUX 3 Image now uses bounding boxes (drawn rectangular areas defining where elements should appear) for precise control over image layout, expanding Black Forest Labs' multimodal model beyond its July launch",
+          "Micron's quarterly revenue hit $54 billion, up 380% year-over-year, as AI demand drives memory chip sales and the company prioritizes enterprise customers over consumer markets through 2028",
+          "ChatGPT's finance tool expands to Free and Go users in the US, letting people connect bank accounts to track spending and build financial plans with features like credit monitoring and stock watchlists",
+          "Only 2.2% of US households paid for an AI service as of April 2026—roughly double last year but still tiny—while the top 1% of enterprise users outspend the rest of the top 10% by 8x",
+          "Andrej Karpathy returns from two-month social media absence with strategies for getting better AI results; multiple viral posts reveal tells of AI-generated writing and misleading performance graphs in AI labs"
+        ],
+        "sections": [
+          {
+            "title": "1. FLUX 3 Image Generation with Bounding Box Control",
+            "points": [
+              "Black Forest Labs released FLUX 3 Image with bounding boxes (rectangular areas you draw to define where each image element should be positioned), giving users precise layout control instead of relying purely on text prompts",
+              "Users draw a box for each desired element, describe what goes in each box, and the model renders the final image respecting the layout structure",
+              "This is a broader release expanding the multimodal FLUX 3 model that originally launched in July 2026"
+            ]
+          },
+          {
+            "title": "2. Micron's Record AI-Driven Revenue Growth",
+            "points": [
+              "Quarterly revenue reached $54 billion, up nearly 380% from $11 billion the previous year, driven entirely by AI infrastructure demand",
+              "Micron halted consumer RAM sales this year to prioritize AI customers who cannot be undersupplied",
+              "CEO Sanjay Mehrotra forecasts memory demand will continue exceeding supply through 2028, ensuring sustained pricing power"
+            ]
+          },
+          {
+            "title": "3. The Widening AI Adoption Gap: Enterprise vs. Consumer",
+            "points": [
+              "Only 2.2% of US households paid for any AI service as of April 2026, roughly double the 2025 figure but representing minimal consumer adoption despite massive capital investment",
+              "Microsoft researcher Nicolas Bustamante argues adoption is simply early-stage and most people underestimate current AI capabilities; skeptics counter that common use cases (email, reservations, bookings) don't justify $20/month subscriptions",
+              "Top 1% of power users outspend the rest of the top 10% by approximately 8x, and when prices drop these users typically buy more rather than pocket savings, concentrating demand among enterprises and professionals"
+            ]
+          },
+          {
+            "title": "4. Viral AI Trend: Detecting AI-Generated Content",
+            "points": [
+              "Anthropic's Andrej Karpathy posted strategies for better AI results after a two-month absence (6.7M views); a marketing firm identified common AI-writing tells, including one phrase Claude's Opus 5.5 uses 116x more than humans",
+              "A viral chart with 4.5M views exposed how AI labs use misleading graph scales to make modest performance gains appear as breakthroughs",
+              "Meta's AI assistant is now being used for legal tasks—one founder filed a small claims court lawsuit with AI assistance"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "FLUX 3 Image tool",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._J44ZaMneM9DvTwiKQgkc80LVnnn-HUZ0ExUw3C6KrDM7oAhWmgeSegVQGFzeg6SbLGnuWH9a69f02Thk783yV41KEPvVcM96KOJ3pV3mmYDMS05tTW9YvdxsnXkE997I0LFtDcnUWJA5s-JzzkPDWSDuVJivxCtSS126vQ6StUUl6wVk4KWO4R6bskV8SvGH695494HdTgRxD_U7x4Mneb7EEWaz2AY9slXZ77OcTDwXI2E5Ue0kFr8pYOGZikw/4um/VhlRpVq3Q_-r2V1qn_2XAQ/h6/h001.wqLr4Qj6V-x807UMkUZLFkvvFevHrKDAMaN6HbSMqH0"
+          },
+          {
+            "label": "Micron quarterly revenue report",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.REEmffLvQfqR5rBh584YBAsMzJhRnBsBQTQxbs3X1LcoLAwj4QuKDIp9HNkI9qOiDelvadty5FRWBkPH5gxKP9EaWaCaJd4yU4xqmJFWvKx-F8ovjoSVLxbhLj1R9EXMwTMFhv0emW7-I8PwiTHHdcG-SRg-6vEmowxYnxqjPMZLfkbPXpXQB14dPfKYG6-Vn3-mhxognvdZswbk2BYus8Tc68M_Xh_C2wz8UyHwaVUolKJDRyHEnha1Ei9_yJHLpAIGZ1U-YaTM9qfU7YkIdhzAi-SHPz2XkYh1cE4D7xmgfGYAHbSEaIq4GSLuMq-Jd3prrLT15R6OmHhvA4Cop9NNNSXBKbIY5gVzZwE2Ze5pCVShZQo62hlIJbUY34wp/4um/VhlRpVq3Q_-r2V1qn_2XAQ/h7/h001.p2VyLDTOb-RqtoDAgnaPCtH00YYJ79YQb2OWU_4EnwU"
+          },
+          {
+            "label": "ChatGPT finance tool expansion",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1FxDUWkbNuPKPw5uRCpR2uGSpKdR5Oxsq71SiE3ETtfY7Wh0Lv7Jza3WLHlCZSvtoG_NpJ35sGjClUGEG7tVsJ1yVUe2KIf_XEdAWl-nTqH-W3A5Eo_ZPoSWJSIIeCBjJFGsTX1vPnzMIC5d-mTegBZRTdkYXw6IzTyGgzOTMk9b78n4CDx3Z3GMOGND5pTbSZigxY-jQeaVLjRHQVslDfZpeN3RbVSVx538fsMlICpPN6gwtXBnxJbe-q69tjs4zGKNbiiqbZmmpB6uVTu4g/4um/VhlRpVq3Q_-r2V1qn_2XAQ/h10/h001.vBrl5yzPgLgUp_E--7cmoFLWSR5MPAeSpqWEd6z2SdA"
+          },
+          {
+            "label": "a16z AI subscription adoption data",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgCDdLMXYaIIYJZgd623A7EkOFrUvi0VLYirW_T0OA9-X6CasEL5jri6_p8Jwf0cK1NhjrlPD125WCZyh0a09_4iyZSCh-w6bqxBW15hPTqXui53y2S13bUmxHegB_bCzKRMRmzXerHYeMOho5CiEG72eTgeF1iExmDygwyPC5OXiHgbvM9f12b8OFbppqrxp-KjdgYGSu-bFAgt2L0e8VqYHJ4zR896kQwREFynUvgsFBFWokFRoeAwSh4thLLimCsf3WG_wOgEpltgIn-77Rq-61lKNi_kJuPKO-yWjNfzZbIpxFkzy4Z5ut0-utjODlc9zoHisxHt1Ei8dLzJHU5b5z5Wk-2N-oCnGNh-KsRxzbUms_2XfTawBbpnnykt5Zb0rgjfV81VE08hT_v3GNB9rdkgjdJrkeKSNbpyvyxB3Fi80rm8dTjppVKW6e-Oq4qYm7D4IBBAktWmrwEOEffpavGa9b1mVQN2vUS1pIqUpdrRDxcTuuZC-X0TK_uNblmIrfN9154vRaY5XJf0Qqs1T2PNCL0BLouSqDYjkqUdVGlSa4w92IKpdOkdC2Xjedg/4um/VhlRpVq3Q_-r2V1qn_2XAQ/h21/h001.BP_MwpTF0pvyV3OWqyqRWZjIl9MqPSq9uvOTKWJe4qE"
+          },
+          {
+            "label": "Conductor AI visibility tool",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgFs3PtVUORQTzoSLrUIGxqdjxGJ1DPTeGm5-Vbt5PehdEvAqFGkw1w5BpS2M73_WJ76DVt5pP2fdKLnyFJIrjB7smT44u_WK-bgMNneJeito1ahgCnukeo8njMTZbolRL4ZMp-gUUvgMQ65ES6D5DM7qmjmppN4OVpFoUww_niayiGTz8VC4n3riGVtDBwPQQ_adOa67itRNo36F7oOf0uzopGPrPj0kGuof1is5Za6i9rQ1LEfJ9Jl1ykfB_uASy0DpQLmMfNfkct5-C-8qTTvHi9KTuIAX_nCqCijOOpOE/4um/VhlRpVq3Q_-r2V1qn_2XAQ/h20/h001.B5PbGGGkrGO4We8daMMdswiXEE6lK_zJj0xuOSlwwXg"
+          }
+        ]
+      }
+    }
+  ]
+}
