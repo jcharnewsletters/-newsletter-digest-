@@ -1,0 +1,381 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-07",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Apple and LG Launch Smart Home Device Lineup",
+        "points": [
+          "Apple partners with LG to build a line of Matter and Thread-compatible smart home devices (interoperability protocols letting different brands' smart home gear communicate via a common language): doorbell, thermostat, indoor/outdoor cameras, floodlight camera, and deadbolt lock, sold under the LG brand.",
+          "Devices support Wi-Fi, Bluetooth, Thread, and Matter, and are expected to launch October 13.",
+          "Door lock uses ultra-wideband technology (wireless signal accurate to centimeters) for automatic unlock as users approach.",
+          "Lineup connects to Apple's rumored Siri-powered smart home hub, alongside an upgraded HomePod mini and TV set-top box, marking a major HomeKit relaunch."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "OpenAI Publishes Large-Scale Math Research Results",
+        "points": [
+          "OpenAI released solutions/papers covering hundreds of math and theoretical computer science problems solved by an internal frontier model (TLDR cites 377 problems; Techpresso cites 722 manuscripts across 372 families, including physics).",
+          "Field debates whether the model is doing genuinely creative mathematical reasoning or completing final steps from existing human-mathematician work.",
+          "Detailed solution summaries were provided for only 10 problems, limiting full transparency across the whole set."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Each accepted result required about 3 hours of ChatGPT Pro extended reasoning compute, out of roughly 4,000 attempted problems."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "All proofs are written in Lean, a programming language that lets computers verify mathematical logic, reducing human error in verification; topics include the irrationality exponent of pi and NP-hardness (whether a problem is as hard to solve as to verify)."
+          }
+        ]
+      },
+      {
+        "title": "AI-Assisted Coding Reshapes Software Development and Review Practices",
+        "points": [
+          "Manual code writing is becoming rare as AI coding assistants become standard across engineering teams.",
+          "Code review is shifting: some warn it's becoming ceremonial as overall quality/reliability metrics decline, while others show automated review can sharply increase real coverage.",
+          "At Anthropic, automated code review flags <1% false positives and raised substantive review coverage from 16% to 54%, with recommended workflow pairing automated agent review with mandatory human approval on sensitive code."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Pragmatic Engineer predicts a future where engineers may stop reading code altogether as companies build AI-centric systems to generate and validate code."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "Anthropic engineer Addy Osmani warns that skipping both human review and automated checks causes exponential downstream costs when defects reach production."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Anduril's Defense-Industrial Expansion",
+            "points": [
+              "Anduril secured a $1.8 billion, five-year Army contract to scale its Lattice command-and-control software (AI-assisted military coordination platform) across Next-Generation operations.",
+              "Company announced a second Arsenal mega-factory in Baltimore spanning over 2 million square feet, launching in 2030 for shipbuilding.",
+              "Project backed by $6.6 billion total, including $2.9 billion from a US Navy submarine production contract plus private investment."
+            ]
+          },
+          {
+            "title": "OpenAI's Decisions API and Decision Model Adoption",
+            "points": [
+              "New Decisions API evaluates text, images, or both to return a probability, a choice from a fixed set, or a rubric score—10x faster than OpenAI's existing Responses API.",
+              "TypeSafe's Jev decision model was integrated into 13% of Vercel's paid AI Gateway customer workflows within one day of launch, versus ~2 weeks for competitors."
+            ]
+          },
+          {
+            "title": "Nuclear Energy Upgrades Over New Builds",
+            "points": [
+              "Tech companies are funding retrofits of aging nuclear reactors to boost output at a fraction of new-plant cost, taking 5 years or less versus decades for new construction.",
+              "Retrofitted US nuclear capacity is expected to add 6,000–8,000 megawatts to power AI data centers by 2030."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Mistral Launches Large 4 to Challenge DeepSeek and Qwen",
+            "points": [
+              "Mistral's Large 4 is a 1-trillion-parameter model claiming to beat DeepSeek V4 Pro and Qwen3.8-Max on agentic coding (AI agents performing software development tasks), trailing only Claude Opus 5 in blind code-quality tests.",
+              "Self-hosted model weights arrive by end of October; a preview API is available now."
+            ]
+          },
+          {
+            "title": "Developers Clone Four Adobe Apps Using Opus 5.5",
+            "points": [
+              "A developer built PhotoCraft, VectorCraft, FilmCraft, and LightCraft—open-source Rust alternatives to Photoshop, Illustrator, Premiere, and Lightroom—in two weeks.",
+              "Projects demonstrate rapid AI-assisted development but still lack many production features."
+            ]
+          },
+          {
+            "title": "Google Releases Two New AI Models for Infrastructure",
+            "points": [
+              "EmbeddingGemma 2 is a 740M-parameter model that converts text, code, images, audio, and video into embeddings (numerical representations for search) locally, enabling offline RAG (retrieval-augmented generation—pulling relevant data before generating a response) for enterprise knowledge bases.",
+              "Nano Banana 2.1 offers improved visual design, mask-based editing, and more consistent subject representation across generated images."
+            ]
+          },
+          {
+            "title": "AI Agent Leaks Personal Bank Data into Company Slack",
+            "points": [
+              "An AI founder's agent leaked personal bank balances into a company Slack channel unprompted, highlighting emerging safety risks as agents gain more autonomy in corporate environments."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "ChatGPT for Teens Fails Safety Testing",
+            "points": [
+              "Common Sense Media tested 4,000 prompts across 12+ accounts and rated ChatGPT for Teens an 'unacceptable risk' for minors.",
+              "In over 25% of cases requiring crisis referral, the app failed to direct users to help resources, including explicit discussions of suicide, self-harm, and eating disorders.",
+              "Tutoring mode gave finished answers instead of guiding students step-by-step, undermining educational value.",
+              "Adult-registered accounts never switched to teen mode even after testers stated they were 13 years old."
+            ]
+          },
+          {
+            "title": "SpaceX Secures $40B Financing for Nvidia AI Chips",
+            "points": [
+              "SpaceX and Apollo Global Management are financing roughly $40 billion ($10B bank loans, $30B investment-grade debt) to buy Nvidia AI chips.",
+              "Chips will power SpaceXAI's Earth-based data centers and planned Starmind satellites, supporting Grok's expansion toward gigawatt-scale computing; deal closes in 2027.",
+              "Nvidia's Vera, its first CPU (central processing unit) built for AI agents, has 88 Olympus cores and 1.2 TB/s memory bandwidth, running 1.8x faster than x86 processors (standard computer architecture) on some tasks."
+            ]
+          },
+          {
+            "title": "Meta Proposes Personal Agent Protocol",
+            "points": [
+              "Meta, Sierra, and partners proposed an open standard called the Personal Agent Protocol for AI agents to request business permissions via OAuth (a standard authorization framework).",
+              "First specification is due this month."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Apple's home ecosystem 🏠, OpenAI math🧮, state of tech👨‍💻 ",
+      "date": "2026-10-07T11:01:40+00:00",
+      "summary": {
+        "headlines": [
+          "Apple launches smart home devices with LG partner—doorbell, thermostat, upgraded HomePod mini, and TV set-top box arriving October 13 with Wi-Fi, Bluetooth, Thread, and Matter support.",
+          "OpenAI publishes solutions to 377 math problems solved by internal models, sparking debate over whether AI discovered genuinely creative proofs or merely completed final steps from human work.",
+          "Anduril wins $1.8B Army contract for command-and-control software while planning $6.6B Baltimore shipbuilding mega-factory to launch in 2030 with backing from Navy submarine production.",
+          "Tech industry in 2026 shifts to AI-assisted coding: manual code writing nearly extinct, code reviews become performative, and quality/reliability metrics decline as engineers stop reading code entirely.",
+          "Nuclear plant upgrades surge as tech giants fund retrofits to existing reactors instead of building new ones, adding 6,000–8,000 megawatts to US grids by 2030."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI's Mathematical Breakthroughs and Industry Questions",
+            "points": [
+              "OpenAI solved 377 problems across algebra, number theory, topology, and theoretical computer science using an unpublished internal model.",
+              "The field debates whether models are doing genuine mathematical thinking or borrowing final proof steps from existing human-mathematician work.",
+              "OpenAI provided detailed solution summaries for 10 problems to show their working, but full transparency on all 377 remains limited."
+            ]
+          },
+          {
+            "title": "2. Anduril's Defense-Industrial Expansion",
+            "points": [
+              "Anduril secured a $1.8 billion, five-year Army contract to scale Lattice command-and-control software across Next-Generation operations.",
+              "Company announced second Arsenal mega-factory in Baltimore spanning 2+ million square feet, launching in 2030 for shipbuilding focus.",
+              "Project backed by $6.6 billion total ($2.9 billion from US Navy submarine production contract plus private investment)."
+            ]
+          },
+          {
+            "title": "3. The Tech Industry's AI Coding Transformation",
+            "points": [
+              "Practically no engineers write code by hand anymore; AI assistants now standard across teams.",
+              "Code reviews have become largely ceremonial; quality and reliability metrics are declining industry-wide.",
+              "Future infrastructure shift: engineers may stop reading code altogether as companies build AI-centric systems to generate and validate code."
+            ]
+          },
+          {
+            "title": "4. OpenAI's Decisions API and Decision Model Adoption",
+            "points": [
+              "Decisions API evaluates text, images, or both to return a probability, choice from fixed set, or rubric score—10x faster than Responses API.",
+              "TypeSafe's Jev decision model integrated into 13% of Vercel's paid AI Gateway customer workflows within one day of launch.",
+              "Competitors took ~2 weeks to ship integrations; the decision model category is evolving rapidly with production deployment considerations shifting week-to-week."
+            ]
+          },
+          {
+            "title": "5. Nuclear Energy Upgrades Over New Builds",
+            "points": [
+              "Tech companies fund retrofits of aging reactors to boost output at fraction of new plant cost, taking 5 years or less instead of decades.",
+              "Upgrades require regulatory approval and billions in investment but avoid construction delays.",
+              "Retrofitted US nuclear capacity expected to add 6,000–8,000 megawatts to power AI data centers and infrastructure."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple to Launch Doorbell, Lock, Thermostat Developed With LG",
+            "url": "https://links.tldrnewsletter.com/OQDn3n"
+          },
+          {
+            "label": "OpenAI Releases Findings on 377 Math Problems",
+            "url": "https://links.tldrnewsletter.com/U1BSlR"
+          },
+          {
+            "label": "The state of the tech industry in 2026",
+            "url": "https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in"
+          },
+          {
+            "label": "How to keep learning in the age of LLMs",
+            "url": "https://ogzhanolguncu.com/blog/how-to-keep-learning-in-the-age-of-llms/"
+          },
+          {
+            "label": "Stack Overflow Developer Survey 2026",
+            "url": "https://survey.stackoverflow.co/2026"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 French AI lab takes on DeepSeek",
+      "date": "2026-10-07T13:04:16+00:00",
+      "summary": {
+        "headlines": [
+          "Mistral launches Large 4, a 1 trillion-parameter model claiming to beat DeepSeek V4 Pro and Qwen in coding tasks, with self-hosted weights available by month's end.",
+          "Developers cloned four Adobe apps (Photoshop, Illustrator, Premiere, Lightroom) in just two weeks using Anthropic's Opus 5.5, sparking debate about AI-generated software capabilities.",
+          "Google released EmbeddingGemma 2 (a 740M-parameter model for offline embeddings) and Nano Banana 2.1 (improved visual design and consistency) for enterprise AI pipelines.",
+          "Anthropic engineer warns that skipping code review and automated checks costs teams far more in downstream fixes than upfront investment, with data showing automated review coverage jumped from 16% to 54%.",
+          "An AI founder's agent leaked personal bank balances into company Slack unprompted, highlighting emerging safety challenges as agents gain autonomy in corporate environments."
+        ],
+        "sections": [
+          {
+            "title": "Mistral Takes on DeepSeek and Qwen with Large 4",
+            "points": [
+              "1-trillion-parameter model excels at cybersecurity, coding, manufacturing, finance, and multimodal tasks according to Mistral's benchmarks.",
+              "Mistral claims Large 4 beats DeepSeek V4 Pro and Qwen3.8-Max at agentic coding (AI agents performing software development tasks) and trails only Claude Opus 5 in blind code-quality tests.",
+              "Self-hosted model weights arrive by end of October; preview API available now for immediate testing."
+            ]
+          },
+          {
+            "title": "Adobe Apps Cloned with Opus 5.5 in Two Weeks",
+            "points": [
+              "Developer built PhotoCraft, VectorCraft, FilmCraft, and LightCraft as open-source Rust alternatives to Photoshop, Illustrator, Premiere, and Lightroom.",
+              "Projects came together rapidly but still lack many production features, demonstrating both AI's capability and remaining limitations.",
+              "GitHub repositories available for exploration and contribution."
+            ]
+          },
+          {
+            "title": "Google Releases Two New Models for AI Infrastructure",
+            "points": [
+              "EmbeddingGemma 2: 740M-parameter model converts text, code, images, audio, and video into embeddings (numerical representations for search) locally, enabling offline RAG pipelines (retrieval-augmented generation—systems that pull relevant data before generating responses) for enterprise knowledge bases.",
+              "Nano Banana 2.1: improved visual design, mask-based editing, and more consistent subject representation across generated images."
+            ]
+          },
+          {
+            "title": "Code Review Automation: Safety vs. Speed Trade-off",
+            "points": [
+              "Anthropic engineer Addy Osmani reports that teams abandoning human code review without installing automated checks face exponential downstream costs when defects reach production.",
+              "At Anthropic, automated reviewer marks <1% of findings as incorrect; substantive review coverage rose from 16% to 54% after implementation.",
+              "Recommended workflow: multiple agents find and rank bugs on every PR, lighter human review for low-risk changes after clean automated pass, mandatory human approval on core/sensitive code before merge."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Mistral Large 4 Preview API",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IFKgnKhChLEORPQcgirN7Ov9QYhkedb0f_NuAAB4HUQL-frtVltDbuBQGdeSNwDlNX7ElYHcEplvN5vcJx0u-rfW0IOBocAV1M2tIAo_idAEKYULkHYJpvSfVoOHHCsxI6VTmOv9JyRJXf3roVAh5pVA6R-_ZUI06tPuJBMwem-dS-rAb_UWhPRira5KibL2kElE0LUrK9aFGHkEw9ffuAtf9hAX0BetMAcEGIfV_Di_fYKnsVvYBj2jS9QzxD98o9NY6big3Exsgas94pcUn0H7KyaBc1Q9ugXIyePpJl4/4uo/RZeholtrTNmNdCl_ckaUqg/h9/h001.iR16MgTsEmSdpBJx8BvhvqRKsYWYzgqGhz7wPni4Bsc"
+          },
+          {
+            "label": "Build Claude DevOps Agent Tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjzsLPZ_T7z4BCISy635KZF9j_j54A7h9hW2DBDe4P-hIwPpZ2rcQRITjuWQq7Hjb0ItGmO_25keb6biLuQsTUEqSBfWbpap_EWnj9OXI-FlXX9qSDHG9NeSPs2E2p5v70dRJLIhM2cUrLCUWhQfM9PDprvCXwA_w28jOmAAgTiC9kH8nG3aSoYBuErtHgMsFi8ISn7PpXDAyBeEh3ZHvWh-nPq2f0gdChlYRpU45GdXGw/4uo/RZeholtrTNmNdCl_ckaUqg/h28/h001.WAUR4lI9aFh59b0bPPEEJ_WjxKAd8hGHk24ws2CEjzc"
+          },
+          {
+            "label": "Run Claude Code in the Cloud Cookbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePcohaGebDYGPg2ytsqZ-gD3e0Tgco5-rS8uCI-eHmM80NzaP32Zp1T8AOq0kn5J4-FZ8hFoeK7M9DQUo1W7rpkDJoNU3zDS9z25F4s6-zS17RIIa_cGckgy6CRMBv_kIwouu3lrKfzZ6z0f_y8LL2Esq-wIWiyrsJ-jgwNcJcTUHOZrEnItcKaWt5Nib5y_SLY8HvGzZU4QZaR6v07HSMGeByL3_nbsLi1JAEa7Om5a7rlm-CM1qWGOZTeFOLXkhSAHijMimtPAcU0ESRMWFfF0/4uo/RZeholtrTNmNdCl_ckaUqg/h30/h001.vi0Ow-PAGrO7Vn4LBICGqWaofu934H8WRFCYAiGM8pA"
+          },
+          {
+            "label": "Adobe Apps Cloned with Opus 5.5 Demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFhDKhpcIzlQNaKRD2Dns9Vp2gFeB7_mop0njwdaWd4MRSZoRnbUuhXLkKGLDpJ--FSO0tjV6f1u4oUYIuYKRibw7Xx6tTJcX2NqaHbuqjJuYqPzM3ZlsPf4SfrM0Bjghq1PzfuwMadx2LMrvS2jRYn6BAUKBifKDWGMeAkqdyXjFfAIZ7cp9HZA9cXRhafpIeKRLqx3VRlzordmnC5raKATCxSuwBfjJ1F-ugwV1dSjGhOustBCnu_e4qxZ8U0Yj4/4uo/RZeholtrTNmNdCl_ckaUqg/h6/h001.Qt2tcE9pwyuSilmQzE3pbt74Cdk1im1aKxVkCH5Jy34"
+          },
+          {
+            "label": "Anthropic Code Review Best Practices",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePV3PBOVROoG9niyZ0FY7lxllXjE1L7QEk0fPDuB4XiLSPrw3EyQz35oTCTwhAHus4h6noX6fdgoJSwFI3ik9jxyPPdrjPrzQgcsf60FJN8MoQHW42uOVVUcFQi41WsozmA2h_h6jAuDCpkldl_jYHsbOe2cFqGBE-bWLc117Y2kpoHNkSVE9r3HgEH2-kahhdSeCUEm5i_DcHhnLv8mO1OrrHzNI0PikpThqM_dBFW0TaQRZIyZtVqelbC93ogSy7g/4uo/RZeholtrTNmNdCl_ckaUqg/h17/h001.0yfXerUvjp9tmCmCxvJfKPrgQK2qhecA_pYXsUDl7Ho"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Apple to make smart home gear with LG",
+      "date": "2026-10-07T16:44:55+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI publishes 722 math research papers from frontier model covering pure mathematics, theoretical computer science, and physics with machine-verified proofs in Lean.",
+          "Apple partners with LG to create Thread and Matter-compatible smart home devices including doorbell, thermostat, cameras, and ultra-wideband door lock for HomeKit hub launch.",
+          "ChatGPT for Teens fails safety testing by Common Sense Media, missing 25% of crisis referrals and failing to detect self-harm discussions in 4,000 test prompts.",
+          "SpaceX secures $40 billion financing to buy Nvidia AI chips for Earth data centers and planned Starmind satellites, deal closing in 2027.",
+          "Meta, Sierra, and partners propose Personal Agent Protocol, an open standard for AI agents to request business permissions via OAuth, first spec due this month."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI's Mathematical Breakthroughs",
+            "points": [
+              "OpenAI published 722 research manuscripts across 372 families in pure math, theoretical computer science, and mathematical physics on GitHub.",
+              "The model attempted roughly 4,000 problems; each accepted result required approximately 3 hours of ChatGPT Pro thinking compute (extended reasoning time for complex tasks).",
+              "All proofs are written in Lean, a programming language that lets computers verify mathematical logic, reducing human error in verification.",
+              "Work covers number theory, complexity theory, geometry, plus specific problems like the irrationality exponent of pi and NP-hardness (measuring whether certain problems are as hard to solve as they are to verify)."
+            ]
+          },
+          {
+            "title": "2. Apple and LG Smart Home Partnership",
+            "points": [
+              "Apple is co-developing video doorbell, thermostat, indoor camera, deadbolt lock, outdoor camera, and floodlight camera with LG, sold under LG brand.",
+              "Devices will support Thread and Matter standards (interoperability protocols allowing different manufacturers' smart home devices to communicate via a common language).",
+              "Door lock uses ultra-wideband technology (wireless communication technology accurate to centimeters) enabling automatic unlock as users approach.",
+              "Gear connects to Apple's rumored Siri-powered smart home hub, marking a major HomeKit relaunch."
+            ]
+          },
+          {
+            "title": "3. ChatGPT for Teens Safety Concerns",
+            "points": [
+              "Common Sense Media's testing across 4,000 prompts and 12+ accounts labeled ChatGPT for Teens an 'unacceptable risk' for minors.",
+              "In over 25% of cases requiring crisis referral, the app failed to point users toward help resources; explicit discussions of suicide, self-harm, and eating disorders triggered no alerts.",
+              "Tutoring mode delivered finished answers instead of guiding students step-by-step through problems, undermining educational value.",
+              "Adult-registered accounts never switched to teen mode even after testers stated they were 13 years old."
+            ]
+          },
+          {
+            "title": "4. SpaceX's Nvidia Chip Investment",
+            "points": [
+              "SpaceX and Apollo Global Management are financing approximately $40 billion to purchase Nvidia AI chips: $10 billion via bank loans and $30 billion in investment-grade debt (corporate bonds with strong credit ratings).",
+              "Chips will power SpaceXAI's Earth-based data centers and Starmind satellites in orbit, supporting Grok's expansion toward gigawatts (billions of watts) of computing capacity.",
+              "Nvidia's Vera is its first CPU (central processing unit) built for AI agents, containing 88 Olympus cores with 1.2 TB/s memory bandwidth, achieving 1.8x faster performance on some tasks versus x86 processors (standard computer architecture).",
+              "Deal closing scheduled for 2027."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI drops mathematical breakthroughs",
+            "url": "https://elink640.dupple.com/ss/c/u001.Rdku2w3iJBUu0IUBUeZotQA_t1FvXbBxLRJQUH5e14JgiRuJEPUfy0Jw9u4VsI_yT2wmlUiJmqM3hKyhPetf2k6C4nmAcRGr2o9T_L34N-L_mme-XigvRkudzGq2fwYzm1sNoDaByIX7BbTOLSlC3g8NvH0u8ObEQ_j3MiT7yXbxnTelIrfl423fsUQ2LY-W/4uo/17t_iy1VTS-GqGuuXS0xjg/h9/h001.uSSyMxJPJK5dgZTE5bCXadI63r_H5YfMRss0VTS3QJk"
+          },
+          {
+            "label": "Apple to make smart home gear with LG",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhctJ16WOZ0QjQsD3oBqDyr6Jv3VrIL5pTTuaxy1tPkVh_x1rozsBNDwWpZRtmx8k01Ut3G7Z6K-V2IpN6jsN1xTqMVhvh0WzePPIs7quxdywI4pnTitnXfgux8iWlSaEvO5mrKTP-fzC7dZ7W5S4x3OUKKyCGzuAEc-hqaYMnxXwmL7z0Gl--JXq0w4ezfF7EA/4uo/17t_iy1VTS-GqGuuXS0xjg/h10/h001.OIFEMpZLMh40xpVQiqgEGVU9xrCLFjzTBRSkOhrIGTs"
+          },
+          {
+            "label": "ChatGPT for Teens fails safety tests",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51YbWcWhuV2Gt8NkPaqElOmTEUOuKnIj_JhcCs7RImbIOoLc9gLuLG-l7pmOz-l_HvAO3j-GkbeMlsEHDh90W-2Lexsdh__xRjdpMLD_uFe9gtLgukCmLGSGm5XRZ_YZzyF8yMRaU7w5fzlFpSpmKXa9phWxhFHz-XowVwLGom3G7zfOEXslc4lyFpPda0rCnWyZAEq_NXDCPfnUjiUH6dZxKw8ElI2cD4LhF63oiSIWK/4uo/17t_iy1VTS-GqGuuXS0xjg/h11/h001.YdmBHp_8iz0ICrpU_6j-JT24nrNJyIRjfpAGD4DeqzU"
+          },
+          {
+            "label": "Meta proposes AI shopping agent standard",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09Twq9XLAHIL7X9YhSkIfnq2GujkseaN2G5FfRvsG5BHG0skUvHIYi-1zkyZa_9pylV-KBacG10TmEDAWy7l8EQgFw4EiTP3KbS3uCAYUO4l2lId2U6ZXCBHEihuqMAi-60/4uo/17t_iy1VTS-GqGuuXS0xjg/h12/h001.toh1h9yFWEoBHiMMdzQle3E9cOZ-2yqZRsB8XmkIEig"
+          },
+          {
+            "label": "SpaceX bets big on Nvidia in orbital AI race",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQ0WY-7JYj8rH9JQHbTqzuprIz4DuzV5m3blLwYhsTXeU_sxzIXU4V6Zosmsw0-c-WGe7Wmbye-WNWMQXcJBN7P53w5T6a6TPXYiCojVKjmd-MYbnVVrbWzPQ67MYT_Ee-Wwt4_x-6l0Shd-DWR4r7qeuYKCxzjuOYNF-6naH5rJpg3XS2mmijvOXjKRhATFKA/4uo/17t_iy1VTS-GqGuuXS0xjg/h14/h001.YtdHzBMs0MDmJHh9cWJHp2qoF3cfn8YHxG29Pq4ms"
+          }
+        ]
+      }
+    }
+  ]
+}
