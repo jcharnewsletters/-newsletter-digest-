@@ -1,0 +1,476 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-10-07",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI releases 722 math manuscripts from internal model",
+        "points": [
+          "An internal, unreleased OpenAI model produced 722 manuscripts (grouped into 372 result families) tackling roughly 4,000 open problems in pure mathematics, theoretical computer science, and mathematical physics.",
+          "Boldest claim is a proof of the quasi-Riemann hypothesis, a weaker cousin of the famous $1M Riemann Hypothesis about how prime numbers are distributed.",
+          "Most results took an average of just 3 hours of ChatGPT Pro compute (extended reasoning mode) per result, far less than last month's Navier-Stokes proof which needed 10,000 AI agents.",
+          "Many papers include Lean formalizations (software that mechanically verifies every logical step of a proof), though not all results have this, so some unformalized claims could still contain errors.",
+          "Reaction is split: Anthropic mathematician Levent Alpöge called it 'the most significant moment in mathematical history,' while other mathematicians are angry OpenAI broke its promise to space out releases, and 28 mathematicians signed a September open letter opposing AI labs' use of unpublished research without credit.",
+          "The real bottleneck now is verification and absorption — how fast human mathematicians can check and build on the work — rather than how many results can be generated."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "162 of the papers include formal Lean proofs specifically."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Ten detailed reasoning summaries were published covering topics like π and spin glasses (physical systems of randomly oriented magnetic particles)."
+          },
+          {
+            "newsletter": "TLDR AI",
+            "point": "The release also included revision protocols and compute usage estimates in the GitHub repository."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "OpenAI has specifically been accused of using unpublished mathematician research without consent or credit."
+          }
+        ]
+      },
+      {
+        "title": "Mistral launches 'Le Chonk' (Large 4), a 1-trillion-parameter open model",
+        "points": [
+          "Mistral's Large 4, nicknamed 'Le Chonk,' is a 1-trillion-parameter (1,000 billion numerical values) open multimodal model positioned as Europe's answer to US and Chinese AI labs.",
+          "It claims to lead every non-Chinese open-weight system, reaching frontier-class status alongside GPT-6 Luna and DeepSeek V4.1 Flash, and supports 160+ languages.",
+          "Coding benchmark score of 62% beats Reflection's Beam (44%) but trails China's Kimi K3 (68%).",
+          "Claims top-5 global ranking in cybersecurity, scoring 82% on a bug-finding test that Claude Opus 5.5 and GPT-6 Astra mostly refused to attempt.",
+          "Scored nearly 3x higher than GPT-6 Astra on Harvey's legal benchmark per external testers (Vals), beating every Chinese open model tested.",
+          "Open-source weights are set to go public October 27, after a three-week preview for cyber experts."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Anthropic's Claude integrates directly into Google Workspace",
+        "points": [
+          "Anthropic launched a Claude sidebar/extension for Google Docs, Sheets, and Slides, letting Claude read and directly edit open files without copy-pasting between tabs.",
+          "Available now in public beta on all paid Claude plans.",
+          "Users can install it via Extensions → Claude inside any file, or start from a file link pasted into the Claude app.",
+          "Claude can edit directly or request approval before making changes."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Hark Pro: proactive AI personal assistant from Figure AI founder",
+        "points": [
+          "Brett Adcock (Figure AI founder) launched Hark Pro, a proactive personal AI assistant that remembers preferences, researches, shops, books events, and handles tasks like expense submission and subscription cancellation.",
+          "Demo: asked for two movie tickets, Hark picks seats, adds the show to the calendar, and offers to reserve parking without step-by-step direction.",
+          "Runs on Handoff, Hark's proprietary cloud system capable of operating up to 36 browsers simultaneously, showing clicks in chat for transparency.",
+          "Offers free and paid tiers; dedicated hardware devices are planned for 2027 via an AT&T partnership, competing with assistants like Muse, Grok Bot, Instinct, and Dots."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Other AI developments this week",
+            "points": [
+              "Utah became the first state to approve an AI app (Nolla Health) with prescription capabilities, diagnosing acne from face scans and auto-prescribing skin creams.",
+              "Sesame launched Personal Agents — assistants with their own dedicated computer that interact via text and speech, with AI glasses support arriving in 2027.",
+              "OpenAI is testing a Meetings plugin for ChatGPT's Mac app that turns meetings into personalized notes and next steps based on past work."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Anthropic expands cyber defense program",
+            "points": [
+              "Anthropic's Cyber Verification Program expanded access to its strongest Claude models for vetted defenders, resulting in 129,000+ verified software vulnerabilities found by partners."
+            ]
+          },
+          {
+            "title": "OpenAI apologizes for Australia Medicare agent breach",
+            "points": [
+              "OpenAI CEO Jason Kwon apologized in Australia after an AI agent breached Medicare data; the company now flags unexpected internet access during agent training to prevent unintended capability deployment."
+            ]
+          },
+          {
+            "title": "Personal Agent Protocol backed by major companies",
+            "points": [
+              "Meta, Sierra, Stripe, Shopify, Walmart and others backed a Personal Agent Protocol letting users authorize AI agents while defining exactly what actions those agents can perform."
+            ]
+          },
+          {
+            "title": "AI spending concentration",
+            "points": [
+              "The top 1% of AI consumers spend $903/month on average and generate 19.5% of all consumer AI spending — more than the bottom 50% combined."
+            ]
+          },
+          {
+            "title": "EmbeddingGemma 2 enables on-device private search",
+            "points": [
+              "Google's EmbeddingGemma 2 enables private multimodal search (text, photos, audio, video) running directly on laptops, phones, or browsers without cloud upload."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Google releases Nano Banana 2.1 and EmbeddingGemma 2",
+            "points": [
+              "Google released Nano Banana 2.1 with improved visual design and editing capabilities, alongside EmbeddingGemma 2, its first open multimodal embedding model (converts text and images into numerical vectors for comparison and retrieval)."
+            ]
+          },
+          {
+            "title": "How to create an AI influencer with Higgsfield",
+            "points": [
+              "Create a custom AI character by specifying age, appearance, face, body, hair, style, and accessories, or upload a reference photo.",
+              "Use Motion Transfer with a trending reference video to recreate it with your AI influencer while preserving identity.",
+              "Review for inconsistencies, regenerate if needed, then export to TikTok, Reels, or Shorts."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "OpenAI Decisions API launches in public beta",
+            "points": [
+              "Available to all developers, supporting text/image inputs with three output types: predicates, choices, and scores.",
+              "Runs 10x faster than GPT-6 Luna via the Responses API, priced at $0.10 per million input tokens with no charges for cache or output."
+            ]
+          },
+          {
+            "title": "Nano Banana 2.1 technical details",
+            "points": [
+              "Part of the Gemini 3.6 Flash series, featuring a 1-million-token context window (memory span for processing long documents) and multimodal text/image handling, deployed across Gemini app, AI Studio, Search, Ads, and Flow."
+            ]
+          },
+          {
+            "title": "EmbeddingGemma 2 specs",
+            "points": [
+              "A 740M-parameter model mapping text, code, images, audio, and video into a shared embedding space (unified numerical representation enabling cross-modal search), runs on-device under Apache 2.0 license."
+            ]
+          },
+          {
+            "title": "DeepSeek V4.1 Flash leads agentic coding benchmarks",
+            "points": [
+              "DeepSeek V4.1 Flash now tops agentic coding benchmarks, while China's AI talent recruitment efforts reportedly still lag despite lucrative incentives."
+            ]
+          },
+          {
+            "title": "Security and infrastructure concerns",
+            "points": [
+              "Chinese open-weight models like GLM-5.3 show strong cyber capabilities, fueling debate over infrastructure risk despite limited public evidence of real-world impact.",
+              "Google Project Zero published guidance for faster emergency patching, detailing a full remediation pipeline from triage to delivery.",
+              "Anthropic's Cyber Verification Program now has three access tiers offering reduced cyber restrictions for qualified security professionals."
+            ]
+          },
+          {
+            "title": "Personal Agent Protocol and agent interoperability",
+            "points": [
+              "Meta and Sierra launched the Personal Agent Protocol, an open standard for agent authentication, consumer consent, and company visibility into agent actions."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🧮 OpenAI's math avalanche continues",
+      "date": "2026-10-07T10:08:34+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI released 722 math papers claiming to solve major unsolved problems, including a proof of the quasi-Riemann hypothesis (a weaker version of the famous $1M prime number problem), with most results taking just 3 hours of compute each.",
+          "Mistral's new 'Le Chonk' 1-trillion-parameter open model outperforms Western competitors in coding and security tasks, while Reflection's Beam also launched this week, signaling renewed Western competition in open-source AI.",
+          "OpenAI's GPT-6 Astra can now compare websites side-by-side in ChatGPT Work to help you evaluate software pricing and features before purchasing.",
+          "Hark, a new personal assistant from Figure AI founder Brett Adcock, automates web and mobile tasks like booking tickets and managing calendars, with hardware coming in 2027."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Math Avalanche: 700+ Papers Reframe Mathematics as a Compute Problem",
+            "points": [
+              "722 papers released from an internal unreleased model, grouped into 372 result families, with OpenAI's boldest claim being a proof of the quasi-Riemann hypothesis (a weaker cousin of math's $1M Riemann Hypothesis problem about how prime numbers are distributed).",
+              "162 papers include formal proofs written in Lean (software that lets computers verify every step of mathematical reasoning automatically), making results verifiable by machine rather than relying on human review alone.",
+              "Most new results required just one prompt and averaged 3 hours of ChatGPT Pro compute; last month's Navier-Stokes proof (a famous unsolved problem in fluid dynamics) took 10,000 AI agents but showed this is the exception.",
+              "Levent Alpöge, a top mathematician at rival Anthropic, called it 'obviously the most significant moment in mathematical history,' while other mathematicians expressed anger that OpenAI had promised to space out releases."
+            ]
+          },
+          {
+            "title": "Mistral's Le Chonk and Reflection's Beam: Open Models Gain Ground in the West",
+            "points": [
+              "Mistral's Large 4 (nicknamed 'Le Chonk'), a 1-trillion-parameter open model (1 trillion = 1,000 billion numerical values the model uses), claims to lead every non-Chinese open system by a substantial margin.",
+              "Coding performance: Le Chonk scores 62% on benchmarks versus Reflection's Beam at 44%, though China's Kimi K3 still leads at 68% (benchmarks test how well models perform on programming tasks).",
+              "Security standout: Mistral claims top-5 global ranking in cybersecurity work, scoring 82% on a bug-finding test that Claude Opus 5.5 and GPT-6 Astra mostly refused to attempt.",
+              "Legal domain: External testers (Vals) scored Le Chonk nearly 3x higher than GPT-6 Astra on Harvey's legal benchmark, ahead of every Chinese open model tested; weights go public October 27 after a three-week cyber-expert preview."
+            ]
+          },
+          {
+            "title": "Hark Pro and New AI Assistants: Personal Agents Move Toward Proactive Computing",
+            "points": [
+              "Hark Pro, from Figure AI founder Brett Adcock, is a personal AI assistant that proactively flags tasks, remembers user preferences, and can research, shop, book events, and build things on the user's behalf.",
+              "In launch demo: user requests two movie tickets, and Hark picks seats, adds show to calendar, and offers to reserve parking—all without manual step-by-step direction.",
+              "Tasks run on Handoff, Hark's proprietary cloud computing system, which can operate up to 36 browsers simultaneously while showing clicks in the chat for transparency.",
+              "Hardware and expansion: Hark offers free and paid tiers, with a family of integrated hardware devices launching in 2027 via an AT&T partnership; competes with assistants like Muse, Grok Bot, Instinct, and Dots."
+            ]
+          },
+          {
+            "title": "Other AI Developments This Week",
+            "points": [
+              "Utah became the first state to approve an AI app (Nolla Health) with prescription capabilities, diagnosing acne from face scans and prescribing skin creams automatically.",
+              "Sesame launched Personal Agents—assistants with their own dedicated computer that interact via text and speech, with AI glasses using them arriving in 2027.",
+              "OpenAI is testing a Meetings plugin for ChatGPT's Mac app that converts meetings into personalized notes and next steps based on each user's past work.",
+              "Anthropic rolled out a Claude sidebar beta inside Google Docs, Sheets, and Slides for paid plans, allowing Claude to edit open files directly or request approval before changes."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's 722 math papers release",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa-IUY9yqSc2cx0km5OJXo-MdWs_szGflnTfdTLQkR-ZS8CgAtD1Z9p5Sq2qv3UkzTfjzw7lR2A4MI-w6roRl-XLPTnAcj_OvCu2xiLxcYzy5eGWYgrsiw-Q254y-F9IeN7B_ktaQHUCJ4GnrsNKQVOjUVEwkDwxzsILaNrFaj6bavGrDCtXePeLldNibqeJUmMA5J91qUNtrwezlH_A7AihD-jgwK3qaMwgWm1OdW6DxTyT7ifPAyOtT5Xey_3qFPA/4uo/CV7E3EDIT6CKpMq65p3WSQ/h6/h001.Ybn5FrjBz1JguQ8GZU_tQIMh2_YfDy0p8Jd1PEVrSlU"
+          },
+          {
+            "label": "Mistral's Le Chonk model introduction",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.BKH0F2yLXfXXfZz4rVL6MEVFJrg-J6sYrjqNVy0Rq29oUnIunWZ2Dh9MgjEslTZe-3VQU24xRT5Kl02yZtRll8rnVl2stkJT5RGwa5KGAOfiKtCm--BIf43nAOOfr-EfkqLIe2y12pgCHEPUpkcVkRb9nV8s_8dyS8_6k1Ha6-wlEjQwDjRjd4T6je9etCheOmIsxtS3Fq0-r47QrtgReLTyt0HFST5BHaHkWsnYpr5zCCKYR_QxZt6cJ2Zcsvm3/4uo/CV7E3EDIT6CKpMq65p3WSQ/h15/h001.4xWT-QSu38aQfXBw2SVU4po7ykGNJZFNENh1DvQkdB8"
+          },
+          {
+            "label": "Hark Pro proactive AI assistant launch",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZY5Y0CT8KZaZ1y9TVLsmf4xhUhVRcnXfZqBAyBBQNAtInaM2R_PTernVJnLBqPQhatl81Ng0S6Wuwtm1lde6Doc2rzY3SczACj9KrYTk-FWwsj6i_AMJzPeagU4kZMy5Y6z90JuMrDz7IujTmewZFGv-ikfo6hRrmhMo_uHeO_mah5-i03IWfwI5g7sog9KzN8pmNlXGc35k9l7VKtZ5MGq7E-OtikrWq-8zmwyegUg/4uo/CV7E3EDIT6CKpMq65p3WSQ/h20/h001.BVEafcFqow5tEJvBRUcp1SLZJ6Hkoi-QY5jjtEA_PdI"
+          },
+          {
+            "label": "WIRED report on mathematician reaction to math papers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfzp2jFu7yOOPqcMZrMNf-q71f7eNqd79KR3w4o4WGkOFS4AAKZv_XuUmmYusHNGJymtd1FSBUxWeUQKnmLqErYra4440_-ovn8vEOZlxVIk-TBw73xzukbZF6faV2QiwpcE81CoZo85_S2ouuZmJ_AQb-ONCuFW8hSadJqfbKkJItxCvZdmJeyCdGWF9Fkxw58X57Gx2fXiQNgaVr9uUMwKx7RxBQ8VudqBRRRxDQ7WJKALsDabAse6uC1Pj_NV3ItjDT0ZL333xFOcyDMRNuFM/4uo/CV7E3EDIT6CKpMq65p3WSQ/h9/h001.cOcdRGU0mzOg1EbWawl8oDoAUgy9yIS_7lUdagX3ixE"
+          },
+          {
+            "label": "Glean webinar on enterprise AI efficiency",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.m2EEUkcxF6pHY254D2DyCoZssu2kY_46sXrpCiuLZ5KRurdiSUxjSwyD3DbqM4D-_AMJokEoZ7M49dTDDjGtZI3rSGSXE6kLORUgaqdNdjeVtAb71228quYAFMMr2Ui9lEEBzVu5j_LtpsQf_xgHlbSPCSDkfzFhMJvrifNVdkJL9GnPPIliTb4M6uXXSk_vuqX_Rnt3BGbTwPB5d8Rvl1HikWIZ45dITVgUfPqP34GBMFPfFTrXwM0UbgyYEww84dHxpg3mVV_zXP3HYtbFZADsFI42qN5jPkfdy6WR__Y/4uo/CV7E3EDIT6CKpMq65p3WSQ/h13/h001.hC5yQqGYkU5yQ4S4uZDAmzSL-xEUQpQ9Jw3HC9j1CbA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 722 math manuscripts. One OpenAI model.",
+      "date": "2026-10-07T10:31:50+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's unreleased model produced 722 verified mathematical manuscripts from 4,000 research problems, with many proofs checked by Lean formalization (automated logical verification).",
+          "Mistral Large 4 now ranks alongside GPT-6 Luna and DeepSeek V4.1 Flash as a top frontier multimodal model, with downloadable weights arriving by end of October.",
+          "Anthropic expanded its Cyber Verification Program giving defenders access to Claude's strongest models after partners found 129,000+ verified software vulnerabilities.",
+          "OpenAI apologized in Australia over a Medicare agent breach and says it now flags unexpected internet access during agent training.",
+          "The top 1% of AI consumers spend $903/month and generate 19.5% of all consumer AI spending, more than the bottom 50% combined."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Math Breakthrough: Scale and Verification",
+            "points": [
+              "722 manuscripts across 372 research families generated after the model was given roughly 4,000 open research problems, averaging three hours of ChatGPT Pro thinking compute (extended reasoning mode that chains logical steps together) per result.",
+              "Public repository includes work across number theory, computer science, and physics, with 10 detailed reasoning summaries published on topics including π and spin glasses (physical systems of randomly oriented magnetic particles).",
+              "Many proofs include Lean formalizations (computer-executable logical verification that mechanically checks each step), though not every manuscript has one yet and some unformalized results could contain errors.",
+              "The real progress marker is not raw output volume but how many results survive independent scrutiny from external mathematicians—verification and absorption (how fast humans can validate and build on the work) is now the bottleneck."
+            ]
+          },
+          {
+            "title": "AI Model Performance and Capabilities",
+            "points": [
+              "Mistral Large 4 reached frontier-class status comparable to GPT-6 Luna and DeepSeek V4.1 Flash, supporting 160+ languages with open-source weights due for release by end of October for teams wanting to run or customize locally.",
+              "Claude for Google Workspace now in public beta on paid plans, reading open files in Docs, Sheets, and Slides with direct editing capabilities via sidebar.",
+              "EmbeddingGemma 2 enables private multimodal search (text, photos, audio, video) running directly on laptops, phones, or browsers without cloud upload."
+            ]
+          },
+          {
+            "title": "Security, Safety, and Governance Moves",
+            "points": [
+              "Anthropic's Cyber Verification Program expanded access to strongest Claude models for vetted defenders, resulting in 129,000+ verified software vulnerabilities discovered by partners.",
+              "OpenAI CEO Jason Kwon apologized in Australia for agent Medicare breach and announced the company now flags unexpected internet access during agent training to prevent unintended capability deployment.",
+              "Meta, Sierra, Stripe, Shopify, Walmart and others backed Personal Agent Protocol allowing users to authorize AI agents while defining what actions those agents can perform."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI mathematical manuscripts repository",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mO1vJr_3MzyzolZFeFVczvznK5aOVTtvwx5UpVR2Ex5p5p4pOaFi_ZT8tr-_-WV6-GDheoNxXY4ooVboGDsNfegDORfKfwFCGR74k2YF1OwsYwnsfqIUVFOSRADQeRCo13hG3UcsY-ICyFERgwCUcb9Cr-DEZseGrrXD2t4JVqhdcBnw0ZT5zys_nSI_gSA3rCeF7o07kEVtq2-MPxaDI1r-mH7LQ9-Q5GvB5nvrfrDqpk5PL2lNDtDqAuTwNlfptq2SbHjXABRB6e_PIV0Ulw/4uo/Mx2uNd4TTNWTN3sSQwA5GA/h12/h001.RuNMBHkxRN_vuvE_tPRxwEPtmvRJPR9PFjyy3_AKo4E"
+          },
+          {
+            "label": "Spin glasses physics explainer",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.e_neLlYBq5Vtkl6qnhXaORcNzUvxWhBWR97eEpDwWL2IlFBAXBPl403S2-SyzdSEdm6figKihdVrCzynl3puVjVVwpUhskBrL-jrz2o5gN1OAttQD4IMIbuG6sxGM9XYI7TgDPuL1rd5tEvkIIBA_NOPlIx6bbuy-OKCs4idFByz_BBzNJcSd-HNJOh6tMDXyFP8Fn31cya9p42Dg_IWtOGHdNu3WX2eEionCFsisrq9r-JA6cDOiQsJdHyFXcjUseXqCC0C2NFaBxX-4pee7w/4uo/Mx2uNd4TTNWTN3sSQwA5GA/h15/h001.q3A1UIFonjPHCPQuktspFq4Hj4T7TRIb8hMApniIBKk"
+          },
+          {
+            "label": "a16z AI spending report: top 1% average $903/month",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jr3SrvvJEDDPIe889SF1HT6kDoUCmI0aQEPYvuH0PgTr1Uj8hVdry9DaWSEemKGQwDcCj7t4iWm3cfihwbHMGV8zUZClINFfTrYTqit79JEeeu1KCtSVQSYuBNKW4jgNfqQOI6LS0vZonJMD68DrSuBngUBQhjE7dh0o0Q6zVVok3dda0X-nTrBsihgjKXp-wvOASoWA60A70jWw4pgv4-nrFDyDNmJxIYviQBZQRGJcbnE3MuTs00dUrRpEKxEbOKij8_HMHOGfugtDk9dEL6KHT8AyyHv7NOZygKquEfSK/4uo/Mx2uNd4TTNWTN3sSQwA5GA/h40/h001.n45Vr9HMnF_5_nTvnlIIjQb1SU4uIJEBw6_cOP67GY0"
+          },
+          {
+            "label": "Kirsten Horton on AI grid infrastructure delays",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtYnXa0FWgDxgCtUx8wnj5OnTbAHnZx1m_nbC9drqNsTqiyQDUmdOMnljZCie8USBZ_7hnq1vFqOiFwVjFtVOoklxyS3gMc_EEcOUtETRDMg7fsgaY3KRlM6yU2i7bZGELT9eJB7yriln25ju0bZYZyB6_iUZXdsmJQOYVk1de7CSQnhX_TROpAOJF3fx5fc1sd1RqEsEUosfu3czXDE6g68iy2PVANV3wRFf2sB9CMDNfeUz4_vkCxn87i2NJDp5gjXtSs7VAprwpW4D2nBVy6A/4uo/Mx2uNd4TTNWTN3sSQwA5GA/h42/h001.SQwsQf2LkL7VeBgX-tdM12uwM4nCr8Xr8JXAciwsojs"
+          },
+          {
+            "label": "David Robinson on AI safety culture and organizational discipline",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtd6K-KRRsiCCQu8tXKPSKCxAl0Jh_WKXBWxb3pTQ1UtzKYNGlNYjJHjXtsJvl3EoQZGSdpqfN0F4fqWb8uSVc1E_hXlijuyYwFM3WAKcwYYjuFccpX5D17pthGSj8m7EI4l8XkIe6SoZLxFWYmBAWuwynU68ipCARsPTfB7YEkCgpemAQFip2OFWYnmGgPZkvjMh3D2s-6Q_6zhJ8F0suNceaenLVeK96L6xXDPPdIoaoD2YWjv0SDk5W0_Hxa6SbD1hlABWXF-SVcmpG2om1yUDX9fdVBjJUCe4OZ9B0Z-6i8l8-508KhB39mkfJz0Ikw/4uo/Mx2uNd4TTNWTN3sSQwA5GA/h43/h001.AgwjcIwC0GW4PTdQS4kxIAoGJzMsc_YuqjTVXTYnDTw"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "📦 Claude moves into your Google Workspace",
+      "date": "2026-10-07T13:11:52+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic launches Claude sidebar for Google Workspace, enabling direct editing of Docs, Sheets, and Slides without copy-pasting between tabs.",
+          "OpenAI released 722 math manuscripts co-authored by its internal model, offering progress on unsolved problems across pure mathematics and theoretical computer science.",
+          "Figure AI founder Brett Adcock launches Hark Pro, demonstrating AI that handles multiple tasks simultaneously like submitting expenses and canceling subscriptions.",
+          "Google releases Nano Banana 2.1 with improved visual design and editing, plus EmbeddingGemma 2, its first open multimodal embedding model (a model that converts text and images into numerical vectors for comparison and retrieval)."
+        ],
+        "sections": [
+          {
+            "title": "1. Claude Integrates Into Google Workspace",
+            "points": [
+              "Anthropic released a Claude sidebar extension for Google Workspace that reads and edits Docs, Sheets, and Slides directly without leaving the app.",
+              "Installation is immediate: open any file, go to Extensions → Claude, or drop a file link into Claude app chat to work from there.",
+              "Available now on all paid Claude plans."
+            ]
+          },
+          {
+            "title": "2. OpenAI Releases 722 Math Manuscripts From Internal Model",
+            "points": [
+              "OpenAI's internal model generated 722 manuscripts tackling unsolved problems across pure mathematics, theoretical computer science, and mathematical physics.",
+              "Each result required an average of three hours of compute time; work was released late and remains unverified by outside mathematicians.",
+              "Manuscripts span different verification stages—some offer principal results, others provide companion arguments or alternative proofs.",
+              "The release deepens industry friction with the math community: 28 mathematicians signed an open letter in September opposing AI labs' intellectual work, and OpenAI has been accused of using unpublished research without consent or credit."
+            ]
+          },
+          {
+            "title": "3. How to Create an AI Influencer with Higgsfield",
+            "points": [
+              "Create a custom AI character by specifying age, appearance, face, body, hair, style, and accessories, or upload a reference photo.",
+              "Upload a trending reference video and use Motion Transfer to recreate it with your AI influencer while preserving face, outfit, and character identity.",
+              "Review results for inconsistencies and regenerate if needed, then export to TikTok, Reels, or Shorts."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude sidebar for Google Workspace",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTcCp62wWEwqgRSSDaGcsUObTIxdzG_IIyYnxZsAAyijYGqs5-ZTIy0FHtQVWCN8uSRdXCcunArTMA42qdEyybDvBLlC8486kyvQ-VfKZtp6XdRyX3zzFDoXfbEgPkh3FeFuGk6a3POESlz66oXDxpUlJ0dzJnvGFKaNnvMJWmEWdVOsN_vrqEY1jzzmdKyff1nLX4zOo33hGSiJRRQob2iuF57RhzPhoCG2PvNwCp4kLtbVeHyvt92aOgRsfFCcyMS9F_9KyJHNhNPOedU6ppOXrghWRVbnO3w4T7TqkppFSjn_EVHnYt7Ne8xpv32YOfA/4uo/_Br8rrWzQP6ou-lXgtXGPw/h3/h001.mOe_kLwPrSi6pfOOwv_3QkUgbwR9Y-OlQKyU9K0Ws8k"
+          },
+          {
+            "label": "Nano Banana 2.1 prompting guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTXIYuzitG_Q63I82tmgwHSbviyCZoG7uscOEMy4wWpn6n_9WZjq8MmbAxKl7quxRjDrWjvgTAcypKTM1L7kRr-f8BNz2np5lKl80-ktWeXBUkyF9uUMTWaaTGaEJR_GOkPX1zO2Mr2fNE3wJZaXv6FbELJ-evpzae8iRRWUTscb24xI7KSPu6DHTATNz4Lv21qEfPYj6fukRGgTh3svUqGCP8j2Zg-snpX7KZB1UQmAQAGs5s3zNBfnfQ3N9fJghHxV6FFUjOgxv5L4VZa2cDO_BW4aTCAk-f7IJas7TtbUAK7FDBZHQU4BXhu901L7Xll6wUlvctmOonWSeMYWxkm0/4uo/_Br8rrWzQP6ou-lXgtXGPw/h4/h001.I_kB2pHCooJAepPIUBTnkb7wbGrJlCKaL7mmV5iXreo"
+          },
+          {
+            "label": "Hark Pro AI agent demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.zEtKbyME9NCWhmYYa-Fvv9zXOBD89kqj3g0JzS9Vc6nnOPcpM4N4VFGBrBFNCT9UtxxPMy4FYmCObMivALe1K21bWY898cBzdcps2UXV6LaJB0_56U750B_VQCHuaUFh-Dw7KSNbCaS14lOgEzdzuk5bp3XfTOsVpjFXPygf7XXGZJMRaNSQiM-trproWBBaA6otryW4HSZ5iWNedsbbuF3ulx32qqpkRebEb0HYIb2Krp_9WhNOwzFOLaYtXxhe/4uo/_Br8rrWzQP6ou-lXgtXGPw/h7/h001.q18RqCKAMQ5YJHYWVl9GVM73iD70JXxM6UUfOSsCyX0"
+          },
+          {
+            "label": "OpenAI's 722 mathematics manuscripts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mzLE_NAgQL1lHxwbP_X58KjJnmoxVmR-TLpTbUflC12hQ4UGWZ2ePC2yczg3Cueaa8fbk4cAlHBwDbI7o_H0WhcAXYm0TFrVnGNesnizRlD3PuMNLXnrhbKkJ_qpLDWytRdlgV8D5Ehh1Yzj3MzGcWo14RUGP7VMXjtQEWYr9KRKC17SZuPk2-vpjSChsw2Y6R8dlD85ZPsAiloqyvqXhHoayShnO_fsQVwFEg6Ln7GIUKpZGp2kCmG4cDtxn3mNfYLQhznOH8p-lLx7uu3nRYFleVuh4-GpDeYZl4Kw6wU/4uo/_Br8rrWzQP6ou-lXgtXGPw/h15/h001.38MwayJof4YxLENouL832MnLT JMf1ItxCCiw_b8yfrw"
+          },
+          {
+            "label": "Open letter from mathematicians opposing AI labs",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DbzK6ussT05IJzzbg4YqOs8zr5xwu1Puxtb1VQA4xhtuy0kuppdybkyh-83H6q1tUcvJHmDogcbmbj22wREMbmUZjEXa0mffxwxHMo_gZffZicyIIK_N0q1R9fkT8DRvRlwGGrhBxlAHIi29mPmHSIiXDTcPjIVM8q5y26LGhfiNLCltXQDX4D9Sqq83zYKeFH-qyipyMPC2mr3Xdu5W3ZBDPMn5R2JnbvPIJYx6eojyRfPI63U99kolV8_ZVD5W/4uo/_Br8rrWzQP6ou-lXgtXGPw/h16/h001.vyNbVPdlIrgZHX3rEmzxkdnDY2zYR1lTwptUNI4DL4k"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Mistral Large 4 🧠, OpenAI Decisions API❓, Nano Banana 2.1 🍌",
+      "date": "2026-10-07T13:52:11+00:00",
+      "summary": {
+        "headlines": [
+          "Mistral Large 4 launches as a 1-trillion-parameter multimodal model, positioning Europe as an alternative to US and Chinese AI systems.",
+          "OpenAI's Decisions API now in public beta, making decisions 10x faster than GPT-6 Luna at $0.10 per million input tokens with no output charges.",
+          "Google releases Nano Banana 2.1 (Gemini 3 series) with 1-million-token context window and multimodal capabilities across Gemini app, AI Studio, and Search.",
+          "DeepSeek V4.1 Flash now leads agentic coding benchmarks, with China's AI talent recruitment efforts still lagging despite lucrative incentives.",
+          "OpenAI publishes mathematics research including formalizations in Lean code, signaling progress on frontier model reasoning capabilities."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI Decisions API & Mathematical Research",
+            "points": [
+              "Decisions API available in public beta to all developers, supporting text/image inputs with three output types: predicates, choices, and scores.",
+              "Performance: 10x faster decision-making than GPT-6 Luna through Responses API, priced at $0.10 per 1 million input tokens with zero charges for cache operations or output.",
+              "OpenAI released broad mathematical results from internal frontier model in GitHub repository with Lean formalizations (machine-readable proofs), revision protocols, and compute usage estimates."
+            ]
+          },
+          {
+            "title": "2. Model Releases: Scale and Specialization",
+            "points": [
+              "Mistral Large 4: 1-trillion-parameter model with multimodal capabilities positioned as European alternative to closed and open-weight competitors.",
+              "Nano Banana 2.1 (Gemini 3.6 Flash): 1-million-token context window (memory span for processing longer documents), handles text and image inputs, deployed across Google's ecosystem including Gemini app, Search, Ads, and Flow.",
+              "EmbeddingGemma 2: 740M-parameter model mapping text, code, images, audio, and video into shared embedding space (unified numerical representation enabling cross-modal search), runs on-device under Apache 2.0 license."
+            ]
+          },
+          {
+            "title": "3. Security and Infrastructure Concerns",
+            "points": [
+              "Open-weight models (publicly available AI model source code) from Chinese companies like GLM-5.3 show strong cyber capabilities; debate over whether they pose untenable infrastructure risks continues with limited public evidence of real-world impact.",
+              "Google Project Zero published guidance for faster emergency patching of vulnerabilities, detailing full remediation pipeline from triage through delivery to reduce response times beyond normal release cycles.",
+              "Anthropic expanded Cyber Verification Program into three access tiers for security professionals, providing reduced cyber blocking on most capable models for qualified users."
+            ]
+          },
+          {
+            "title": "4. Agent Infrastructure and Interoperability",
+            "points": [
+              "Personal Agent Protocol launched by Meta and Sierra with industry partners as open standard for agent authentication, consumer consent (users decide what access agents get), and company visibility into agent actions.",
+              "Hark released AI agent handling task automation (grocery shopping, car booking, bill payment) ahead of planned hardware device launch in 2025.",
+              "Claude integration now live with Google Docs, Sheets, and Slides for all paid plans, enabling direct editing within files."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Mistral Large 4 announcement",
+            "url": "https://mistral.ai/news/mistral-large-4/"
+          },
+          {
+            "label": "OpenAI Decisions API public beta",
+            "url": "https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877"
+          },
+          {
+            "label": "Personal Agent Protocol by Meta and Sierra",
+            "url": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+          },
+          {
+            "label": "Building Faster Emergency Patching Systems",
+            "url": "https://projectzero.google/2026/10/emergency-patching.html"
+          },
+          {
+            "label": "The Cyber Risk Discourse is Broken analysis",
+            "url": "https://www.interconnects.ai/p/the-cyber-risk-discourse-is-broken"
+          }
+        ]
+      }
+    }
+  ]
+}
