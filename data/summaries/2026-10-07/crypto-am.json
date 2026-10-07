@@ -1,0 +1,191 @@
+{
+  "batch": "crypto-am",
+  "label": "Morning Crypto",
+  "category": "crypto",
+  "date": "2026-10-07",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Polymarket Launches Protocol V2: Ground-Up Rebuild",
+        "points": [
+          "Polymarket rebuilt its entire prediction market system (a platform where users bet on outcomes of real-world events) from scratch, replacing the 2019 Gnosis Conditional Tokens Framework.",
+          "New architecture consolidates fragmented contract layers into a single ERC1155 positions contract, one pUSD collateral token, one exchange, and one router.",
+          "Settlement (the mechanism determining winners and paying out profits) is now faster, reducing wait times for payouts after events resolve.",
+          "An OracleAggregator with pluggable resolution modules connects to UMA, Chainlink, and future oracle sources (services that feed real-world data on-chain) for flexible market resolution.",
+          "First-class multi-chain bridging support for positions, collateral, and resolutions lays groundwork for expansion without disrupting existing integrations.",
+          "Launches with four market types — Binary, Atomic Neg-risk, Incremental Neg-risk, and Combinatorial — upgradeable via governance.",
+          "Rebuild targets higher concurrent trading volume and lower transaction costs, addressing technical debt from years on the old system."
+        ],
+        "covered_by": [
+          "CMC Spotlight",
+          "TLDR Crypto"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR Crypto",
+            "point": "Specifies the new protocol replaces the 2019 Gnosis Conditional Tokens Framework and details the exact consolidated contract structure and four launch market types."
+          },
+          {
+            "newsletter": "CMC Spotlight",
+            "point": "Frames the rebuild as addressing years of accumulated technical debt and preparing for mainstream adoption of crypto derivatives."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "CMC Spotlight",
+        "items": []
+      },
+      {
+        "newsletter": "TLDR Crypto",
+        "items": [
+          {
+            "title": "FinCEN Withdraws 2023 Crypto Mixing Regulation",
+            "points": [
+              "FinCEN withdrew its 2023 proposal that would have designated international crypto mixing (combining funds from multiple sources to obscure transaction trails) a 'primary money laundering concern' under Section 311.",
+              "Also abandoned a 2020 proposal requiring banks and money services to verify identities and keep records on self-hosted wallet transactions above $3,000.",
+              "Decision cited concerns that broad definitions would chill legitimate privacy use, referencing a July 2025 President's Working Group report acknowledging lawful privacy use of mixers.",
+              "FinCEN will continue monitoring mixers for illicit use but says existing obligations remain unchanged since neither proposal was finalized."
+            ]
+          },
+          {
+            "title": "Stripe Taps Privy Founder for Stablecoin Platform",
+            "points": [
+              "Stripe appointed Privy founder Henri Stern to lead a stablecoin developer platform.",
+              "Platform integrates Bridge, Privy, Tempo, and Open USD to treat fiat and crypto as interoperable layers."
+            ]
+          },
+          {
+            "title": "Chainalysis AI Traces $387M Bitget Hack to North Korea",
+            "points": [
+              "Chainalysis attributed the $387M Bitget breach to North Korean actors using custom AI tools that compressed bridge reconciliation analysis from over 20 hours to under 10 minutes.",
+              "The attribution pushes North Korea's (DPRK) 2026 crypto theft total past $1 billion.",
+              "Within 3 hours, attackers dispersed funds across Ethereum (49.7%), XRP (40.8%), Zcash (7.6%), and Tron (1.8%) in 23 transfers.",
+              "Stolen XRP was routed through cross-chain liquidity protocols to convert to Bitcoin over roughly 36 hours."
+            ]
+          },
+          {
+            "title": "Near Intents Recovers $3.8M Stolen Funds in 48 Hours",
+            "points": [
+              "Near Intents recovered the full $3.8M stolen within 48 hours after identifying the attacker on-chain and issuing a return deadline with an implicit deanonymization threat.",
+              "This was the second major security incident on the platform in one week.",
+              "The exploit targeted a flaw in the Omni deposit/withdrawal layer's interaction with the main smart contract.",
+              "The attacker returned funds and posted an on-chain message acknowledging fault, urging use of bug bounties instead of exploits."
+            ]
+          },
+          {
+            "title": "Zcash NU7 Upgrade Accelerates Block Times",
+            "points": [
+              "Zcash activated the NU7 upgrade on public testnet, cutting target block time from 75 seconds to 25 seconds.",
+              "Three-confirmation finality time drops from 225 seconds to 75 seconds.",
+              "Block rewards split 40/60 between miners and a reserve for future mining rewards, with per-block rewards reduced to one-third to preserve ZEC's issuance schedule despite tripled block rate.",
+              "Upgrade retires Sprout, Zcash's original shielded payment protocol (a privacy feature hiding transaction details), requiring holders to migrate funds before the planned November 5 mainnet activation.",
+              "Both major node implementations (Zakura and Zebra) shipped compatible releases in early October, with an October 20 decision targeted for mainnet confirmation."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "CMC Spotlight",
+      "subject": "Polymarket Just Rebuilt Its Entire Protocol From the Ground Up",
+      "date": "2026-10-07T11:39:36+00:00",
+      "summary": {
+        "headlines": [
+          "Polymarket completely rebuilt its prediction market protocol from scratch to improve scalability and user experience after operating on its previous infrastructure for years.",
+          "The new architecture introduces faster settlement times and reduced transaction costs, making it more competitive with traditional prediction market platforms.",
+          "Polymarket's protocol redesign suggests the platform is addressing technical debt and preparing for increased trading volume as crypto derivatives gain mainstream adoption."
+        ],
+        "sections": [
+          {
+            "title": "Polymarket's Complete Protocol Rebuild",
+            "points": [
+              "1. Polymarket migrated its entire prediction market system (a platform where users bet on the outcomes of real-world events) to a new protocol architecture designed from the ground up.",
+              "2. The rebuild focused on core infrastructure improvements including transaction speed, cost reduction, and platform reliability rather than feature additions.",
+              "3. Settlement processes (the mechanism that determines winners and pays out profits) now execute faster, reducing the time users wait to receive winnings after an event resolves.",
+              "4. The new protocol aims to handle higher concurrent trading volumes without performance degradation, addressing bottlenecks from the previous system."
+            ]
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "newsletter": "TLDR Crypto",
+      "subject": "Crypto Mixing Update 🌪️,Polymarket Protocol V2 ⚙️, Hack Recoveries🧑‍💻",
+      "date": "2026-10-07T12:15:22+00:00",
+      "summary": {
+        "headlines": [
+          "FinCEN withdraws 2023 crypto mixing regulation, citing concerns that broad definitions would chill legitimate privacy use and citing lawful use cases for financial privacy.",
+          "Stripe appoints Privy founder Henri Stern to lead stablecoin developer platform integrating Bridge, Privy, Tempo, and Open USD to treat fiat and crypto as interoperable layers.",
+          "Polymarket launches Protocol V2, consolidating fragmented contract layers into unified architecture with pluggable oracle modules and multi-chain bridging support.",
+          "Chainalysis AI tools traced $387M Bitget hack to North Korea in under 10 minutes by compressing what would have required 20+ hours of manual analysis.",
+          "Near Intents recovered full $3.8M in stolen funds within 48 hours after identifying attacker on-chain and issuing deadline, second major security incident on platform in one week."
+        ],
+        "sections": [
+          {
+            "title": "Regulatory Shift on Crypto Mixing and Privacy",
+            "points": [
+              "FinCEN withdrew its 2023 proposal that would have designated international crypto mixing (combining funds from multiple sources to obscure transaction trails) as a 'primary money laundering concern' under Section 311.",
+              "Agency also abandoned a 2020 proposal requiring banks and money services to verify identities and keep records on self-hosted wallet transactions above $3,000.",
+              "Decision cited commenters' concerns that broad definitions would chill legitimate financial privacy uses, and referenced a July 2025 President's Working Group report acknowledging lawful users may employ mixers for privacy.",
+              "FinCEN said it will continue monitoring mixers for illicit use but emphasized existing obligations remain unchanged since neither proposal was finalized."
+            ]
+          },
+          {
+            "title": "Polymarket Protocol V2: Consolidated Architecture",
+            "points": [
+              "New protocol replaces Gnosis Conditional Tokens Framework from 2019, which had accumulated feature layers over time, with ground-up rebuild consolidating into one ERC1155 positions contract, one pUSD collateral token, one exchange, and one router.",
+              "OracleAggregator with pluggable resolution modules connects to UMA, Chainlink, and future oracle sources, enabling multi-oracle flexibility.",
+              "First-class bridging support for positions, collateral, and resolutions provides infrastructure for multi-chain expansion without disrupting existing integrations.",
+              "Launches with four market types (Binary, Atomic Neg-risk, Incremental Neg-risk, and Combinatorial) and upgradeable behind governance process."
+            ]
+          },
+          {
+            "title": "Hack Attribution and Recovery Speed",
+            "points": [
+              "Chainalysis attributed $387M Bitget breach to North Korean actors using custom AI tools that compressed bridge reconciliation analysis from 20+ hours to under 10 minutes, pushing DPRK's 2026 crypto theft total past $1 billion.",
+              "Within 3 hours, attackers dispersed funds across Ethereum (49.7%), XRP (40.8%), Zcash (7.6%), and Tron (1.8%) in 23 transfers, then routed stolen XRP through cross-chain liquidity protocols to convert to Bitcoin over ~36 hours.",
+              "Near Intents recovered full $3.8M stolen funds within 48 hours after General Manager Alex Shevchenko identified attacker on-chain and issued return deadline with implicit deanonymization threat.",
+              "Near Intents exploit targeted flaw in Omni deposit/withdrawal layer interaction with main smart contract; attacker returned funds and posted on-chain message acknowledging fault and urging use of bug bounties instead of exploits."
+            ]
+          },
+          {
+            "title": "Zcash NU7 Upgrade Accelerates Block Times",
+            "points": [
+              "Zcash activated NU7 upgrade on public testnet, cutting target block time from 75 seconds to 25 seconds and reducing three-confirmation finality from 225 seconds to 75 seconds.",
+              "Upgrade splits block rewards 40/60 between miners and a reserve for future mining rewards, and reduces per-block rewards to one-third current amount to maintain ZEC's issuance schedule despite tripled block rate.",
+              "Upgrade retires Sprout, Zcash's original shielded payment protocol, requiring holders to migrate funds before planned November 5 mainnet activation.",
+              "Both major node implementations (Zakura and Zebra) shipped compatible releases in first two days of October, with developers targeting October 20 decision on mainnet confirmation."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "FinCEN withdraws crypto mixing rule",
+            "url": "https://links.tldrnewsletter.com/Qs15dG"
+          },
+          {
+            "label": "Polymarket Protocol V2",
+            "url": "https://links.tldrnewsletter.com/ycyZHW"
+          },
+          {
+            "label": "Chainalysis AI traces Bitget hack to North Korea",
+            "url": "https://decrypt.co/380005/chainalysis-ai-87m-bitget-hack-north-korea"
+          },
+          {
+            "label": "Near Intents recovers $3.8M after 48-hour ultimatum",
+            "url": "https://decrypt.co/380014/near-intents-recovers-3-8-million-after-48-hour-ultimatum"
+          },
+          {
+            "label": "Zcash NU7 25-second blocks on public testnet",
+            "url": "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule"
+          }
+        ]
+      }
+    }
+  ]
+}
