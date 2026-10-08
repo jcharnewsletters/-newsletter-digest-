@@ -1,0 +1,374 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-08",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic releases Claude Haiku 5.5 at steep price cut",
+        "points": [
+          "Priced at $0.10 per million input tokens and $0.50 per million output tokens for requests up to 100,000 tokens (a token limit measuring how much text the model processes at once)\\u2014about 90% cheaper than Haiku 4.5.",
+          "This matches OpenAI's GPT-6 Luna pricing for smaller workloads, but above 100,000 tokens output pricing jumps 5x, making Haiku less competitive for large-context tasks.",
+          "Haiku 5.5's tokenizer counts roughly 1.25x more tokens than Haiku 4.5 for the same text, partially offsetting the advertised savings.",
+          "Supports adjustable reasoning effort (a mode where the model spends more or less time 'thinking' before responding), defaulting to medium, with low/medium/high options.",
+          "Claude's Python and TypeScript SDKs now support computer and browser automation in beta, removing the need to manually code automation loops.",
+          "Image/drawing generation quality improved significantly; one complex test task cost just over 3 cents to run."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Reports Haiku shows higher benchmark scores than GPT-6 Luna for workloads under the 100,000-token threshold."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "Built for 'sub-agent' work (smaller AI helper tasks within a larger system) and integrates directly into automation workflows."
+          }
+        ]
+      },
+      {
+        "title": "Grok Bot routes tasks to rival AI models",
+        "points": [
+          "Elon Musk's Grok Bot now automatically routes work to outside AI services\\u2014Claude Opus 5.5 for reasoning, Midjourney for images, and Suno for music\\u2014picking the best provider per task.",
+          "Users cannot manually select which model handles a request; Grok Bot decides automatically, though usage logs show which model was used.",
+          "Billing follows whichever model actually performs the work, and early users report zero API costs for X (formerly Twitter) search and monitoring without needing extra connectors.",
+          "Enterprise customers can set an allowlist of approved models, but Grok Bot warns it may not always honor the list; no published data yet proves the routing actually improves results."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Highlighted as a surprising strategic move since SpaceX/xAI competes directly with the AI labs whose models it's now routing to."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI's unreadable 'mathpocalypse' proofs",
+            "points": [
+              "OpenAI released 372 mathematical proofs claimed as breakthroughs, but the writing is so poor that human experts cannot verify them without AI-assisted translation.",
+              "Citations within the papers are frequently irrelevant or confusing, raising doubts about the proofs' actual rigor and validity.",
+              "No human has yet confirmed understanding of any of the proofs, highlighting a gap between AI-generated research output and human-readable documentation."
+            ]
+          },
+          {
+            "title": "Zuckerberg's Biohub launches $1.8B biological data initiative",
+            "points": [
+              "Biohub (a Zuckerberg-cofounded nonprofit) is partnering with the DOE and NIH to build standardized, AI-ready biological datasets for disease research.",
+              "DOE is committing over $500 million over five years for lab measurement, modeling, and computation infrastructure; NIH will coordinate dataset contributions from existing repositories.",
+              "Goal is to give AI models structured training data to help discover new disease prevention and treatment methods."
+            ]
+          },
+          {
+            "title": "First nuclear clocks built in Vienna and Beijing",
+            "points": [
+              "New nuclear clocks lose only about one second every few million years, offering extreme timekeeping precision.",
+              "They could potentially detect dark matter particles by measuring subtle wobbles in thorium atomic nuclei."
+            ]
+          },
+          {
+            "title": "Open-source AI clones threaten Adobe's Creative Suite",
+            "points": [
+              "Developer Artcraft released early alpha open-source tools recreating Photoshop, Illustrator, Premiere, Lightroom, After Effects, InDesign, and Acrobat Pro.",
+              "Built using Claude Opus 5.5 (Anthropic's most capable language model); still 'super early alpha' but developer projects 99% feature parity within months.",
+              "Could disrupt Adobe's subscription-based business model if full feature parity is reached at zero cost to users."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Google Playground turns text prompts into playable games",
+            "points": [
+              "Lets teams describe a 2D or 3D game in natural language, then tweak physics, rules, and mechanics in real time without writing code.",
+              "Enables quick validation of game concepts before committing full engineering resources.",
+              "Planned Unity Spark integration will convert browser prototypes into production-ready Unity builds.",
+              "Currently live for U.S. users, with AI-generated games playable directly in-browser."
+            ]
+          },
+          {
+            "title": "A practical framework for building reliable AI evals",
+            "points": [
+              "One successful AI output proves nothing; reliable systems need repeatable tests against known-good answers scored with error margins.",
+              "Cheap automated checks (like code linters) catch obvious errors but miss subtler semantic mistakes; AI 'judge' models can catch more but need their own validation.",
+              "Roughly 60+ test cases are needed to reliably detect a 12+ percentage point difference in performance.",
+              "Production systems should use clear release thresholds and ongoing monitoring rather than relying on public benchmarks, which shift over time and with setup."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "OpenAI launches GPT-6 for all users",
+            "points": [
+              "New 'intelligent UI' builds interactive diagrams and comparisons progressively as it generates them, rather than waiting for the full response.",
+              "Improved judgment on when to search the web versus rely on trained knowledge, boosting accuracy for time-sensitive questions.",
+              "Strengthened safety training resists multi-turn attacks (attempts to bypass safety rules across several conversation turns) involving cyberattacks, bio-threats, and violence."
+            ]
+          },
+          {
+            "title": "Samsung forecasts record $80 billion quarterly profit",
+            "points": [
+              "Projected 107 trillion won (~$80 billion) operating profit marks a fourth consecutive record quarter\\u2014the highest ever for any tech company.",
+              "Profit surged nine-fold year-over-year, driven by AI-fueled demand pushing up prices for DRAM, NAND flash, and high-bandwidth memory (specialized memory chips used in AI processing).",
+              "Chip division drove most gains, while the smartphone unit struggled as higher component costs squeezed profitability."
+            ]
+          },
+          {
+            "title": "AI threatens to crack crypto wallet encryption",
+            "points": [
+              "Ethereum researcher Justin Drake warns AI could break ECDSA (the cryptographic algorithm securing crypto wallets) within months rather than years.",
+              "Cites recent AI math breakthroughs, including 10,000 AI agents reportedly solving the Navier-Stokes equation in 88 hours, as evidence attackers could recover private keys sooner than expected.",
+              "Advises large crypto holders to move funds to fresh addresses now, while cautioning that a hasty mass migration could itself cause problems."
+            ]
+          },
+          {
+            "title": "Google Cloud launches Gemini agent for enterprise",
+            "points": [
+              "New AI agent connects to business systems and delivers results directly into documents, email, and developer tools employees already use."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Claude Haiku 5.5 🤖, mathpocalypse🧮, designer influence👩🏻‍🎨",
+      "date": "2026-10-08T11:00:57+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic releases Claude Haiku 5.5 at $0.10 per million input tokens, matching GPT-6 Luna pricing for tasks under 100,000 tokens but losing competitiveness at higher volumes.",
+          "OpenAI published 372 breakthrough mathematics proofs, but experts say the papers are unreadable without AI assistance due to poor writing and irrelevant citations—no human has yet understood any proofs.",
+          "Zuckerberg's Biohub partners with DOE and NIH to invest $1.8 billion in building AI-ready biological datasets for disease prevention and treatment research.",
+          "First nuclear clocks built simultaneously in Vienna and Beijing lose only one second every few million years and could detect dark matter particles through wobbles in thorium nuclei.",
+          "Developer releases open-source clones of Adobe's Photoshop, Illustrator, Premiere, and other tools using AI, claiming 99% feature parity within months."
+        ],
+        "sections": [
+          {
+            "title": "Claude Haiku 5.5 Pricing Dynamics",
+            "points": [
+              "Model priced at $0.10 per million input tokens and $0.50 per million output tokens up to 100,000 tokens (limits on data volume processed in a single request).",
+              "Above 100,000 tokens, output pricing jumps 5x, making it significantly more expensive than GPT-6 Luna for large context tasks.",
+              "Under 100,000 tokens, Haiku matches Luna pricing but reports higher benchmark scores, giving it a clear advantage for smaller workloads."
+            ]
+          },
+          {
+            "title": "The Mathematics Credibility Crisis",
+            "points": [
+              "OpenAI released 372 new mathematical proofs claimed as breakthroughs, but readability is so poor that human experts cannot verify them without AI translation tools.",
+              "Citations in the papers are frequently irrelevant and confusing, raising questions about the proofs' actual validity and rigor.",
+              "This highlights a fundamental problem: AI-generated research may be mathematically sound but unusable by the academic community without human-readable documentation."
+            ]
+          },
+          {
+            "title": "Biohub's $1.8 Billion Biological Data Initiative",
+            "points": [
+              "Partnership between Biohub (Zuckerberg-cofounded nonprofit), DOE, NIH, and other funders aims to create standardized, AI-ready biological datasets.",
+              "DOE commits $500+ million over five years for lab measurement, modeling, and computation infrastructure; NIH coordinates dataset contributions from repositories and knowledge bases.",
+              "Goal is enabling AI models to discover new disease prevention and treatment methods by providing researchers with structured training data."
+            ]
+          },
+          {
+            "title": "Open-Source Adobe Alternative Threat",
+            "points": [
+              "Developer Artcraft released early alpha versions of open-source tools recreating Photoshop, Illustrator, Premiere, Lightroom, After Effects, InDesign, and Acrobat Pro interfaces.",
+              "Built using Claude Opus 5.5 (Anthropic's most capable language model), the suite is in 'super early alpha' but developer projects reaching 99% feature parity within months.",
+              "Represents a potential disruption to Adobe's SaaS subscription model if functional feature parity is achieved at zero cost."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Haiku 5.5 Announcement & Pricing",
+            "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+          },
+          {
+            "label": "The Mathocalypse: OpenAI's Unreadable Proofs",
+            "url": "https://scottaaronson.blog/?p=10169"
+          },
+          {
+            "label": "Zuckerberg Biohub DOE NIH Biological Data Investment",
+            "url": "https://links.tldrnewsletter.com/AvzMzJ"
+          },
+          {
+            "label": "Nuclear Clocks in Vienna and Beijing",
+            "url": "https://links.tldrnewsletter.com/08ykNi"
+          },
+          {
+            "label": "Artcraft Open-Source Adobe Clones",
+            "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🎮 Google turns prompts into video games",
+      "date": "2026-10-08T14:07:13+00:00",
+      "summary": {
+        "headlines": [
+          "SpaceX's Grok Bot now routes complex tasks to rival AI models like Claude and Midjourney, with early users reporting zero API costs for X monitoring",
+          "Anthropic releases Claude Haiku 5.5 at 90% lower cost ($0.10/$0.50 per million tokens) with adjustable reasoning effort, plus new computer and browser automation capabilities",
+          "Google Playground lets teams build playable 2D/3D games from text prompts with real-time physics tweaking, integrating with Unity for production builds",
+          "Building reliable AI systems requires proper evaluation frameworks—test suites catch mistakes that prompt tweaks alone can't fix, with statistical rigor preventing false improvement claims"
+        ],
+        "sections": [
+          {
+            "title": "SpaceX's Grok Bot Adopts Model Routing Strategy",
+            "points": [
+              "Grok Bot now routes tasks to external models including Claude Opus 5.5 for reasoning tasks, Midjourney for image generation, and Suno for music",
+              "Simple questions go to fast, small models while complex requests are routed to more capable 'heavyweight' models for efficiency",
+              "Early users report no API costs for X search and monitoring capabilities without requiring connectors",
+              "This marks a surprising move for a company competing directly against the AI labs whose models it now integrates"
+            ]
+          },
+          {
+            "title": "Anthropic's Haiku 5.5: Cheaper and More Flexible",
+            "points": [
+              "New model costs 90% less than Haiku 4.5 at $0.10/$0.50 per million input/output tokens, designed for sub-agent work",
+              "Adaptive thinking (a reasoning mode where the model spends more time on hard problems) is adjustable from low to medium to high effort by default at medium",
+              "Claude's Python and TypeScript SDKs now handle computer and browser automation in beta, eliminating manual loop coding for driver integration",
+              "Supports context windows up to 100,000 tokens (a context window is the amount of text the model can 'see' at once)"
+            ]
+          },
+          {
+            "title": "Google Playground: Prototyping Games from Text",
+            "points": [
+              "Describe a 2D or 3D game in natural language, then iteratively tweak physics, rules, and mechanics without writing code",
+              "Teams can quickly validate game concepts before committing engineering resources to full development",
+              "Planned Unity Spark integration will convert browser prototypes into production-ready Unity builds",
+              "Live for U.S. users now with real-time playability of AI-generated games in browser"
+            ]
+          },
+          {
+            "title": "Building Robust AI Evals: A Practical Framework",
+            "points": [
+              "One successful output proves nothing—repeatably test systems against known-good answers and score results with error margins to detect real improvements",
+              "Cheap automated checks (like code linters) catch obvious errors but miss semantic mistakes; judge models provide deeper evaluation but require their own validation",
+              "Only detect statistically significant improvements with adequate test coverage (roughly 60+ test cases can catch 12+ percentage point differences)",
+              "Production systems need clear release thresholds and ongoing monitoring, not reliance on public benchmarks that shift with setup and age quickly"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Haiku 5.5 announcement and pricing",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqugsxk5V2-7a1fp7Xt46Bv7QLsXb-hOUIEPWBMBkF8u4bR4Zqznm15a1W1bdnhFXOepiPklAc_WUF-YPHpfIbVSgaULkhs94nAqqfW6eMej_2DTGTN1ix06uDHON9wXDItB4M9T4efuWfyzn6qgUUNGS2ULG30JN8JThJfs2A5O4gxvIaQJd1pWCmKRqztksZk5eM-eZFKQTtWcxmKbrZECAwUMXT2DjoSri9a4WWURis2GPXGrNisC4qW05Koyn2OHYraDu_wqg6FwzHiBAn2JU/4up/FtuDhimsQgOSkGHzBJhSiA/h6/h001.yPMjsQcvacsyTR_SaQ6v1_zyZU9RHXeYIojCuNahO_k"
+          },
+          {
+            "label": "Google Playground game creation tool",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIAGQZmb0x9YTiAbUsrUYpyBy4XF1hsbCO3McHypEEeIz9ty7efhlQgzby1zNhdMFXBE1IHllFb_KDSZhE_NVdG808kuT-gEEus4_LeP2Xm8DNxj1qAM2vOsj6JiBkIYrEC6CBxHxBDW4HGlLZ_xGKOymy4BviPsUwJKBJECqChsLs9qVm-0SntUWsUTIbSHWdzfWaO-7jA-BB0z65DLTkN7ZI9kNL5O4eYJ55P4ZKpuhbi5TBjbtetyGx54RbR_RsUvtMrfN1ZdwR2hOR2E2ZYBwYHqIUXF_4_drbqXN5rdNd9VEx-zbGV8pRa2lshk1jd04Tljv_od8qkTrBJyIIlQU/4up/FtuDhimsQgOSkGHzBJhSiA/h9/h001.eoGJNwXwgsDL4iUxTjr5vp6eJWvos4ZfXcoIWWs_hIk"
+          },
+          {
+            "label": "Sergii Makarevych's eval playbook guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcHcVdcULL4zYGvnsuMd6wmB3q33ePvrT_b9PkBXMkOzRUvEaCypRh9H-inJ-nE-H28qQc63oZ_gQUvKugRFvlien_IuVkRt4ub30jvmGScsEvW9iuACdBaobcMLqehWsskhyOyu0EGBXuWQ5_2j4YOuin_1S01tCzgA-HoSwbDil6xqmwbxL7qczrm2kdJ0E-Cleu1XQiJqiukJs2GjPfLbQ7_APIAJT30k_id4f0oS8MU0xhtesP_xYxS1f67XFwocTzChxK2m6znhjcOIsXEl/4up/FtuDhimsQgOSkGHzBJhSiA/h15/h001.u9QhDnpVojgAOd2anqXhCxrSpBdQCbyhMyYkdCi8NFU"
+          },
+          {
+            "label": "Claude Code tutorial: building AI software factory",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjw2WAYioYg4y2o5YJgoh8yTey3jENUTwf0SKOBNp4yIbrl3tn8H0ZfBH1T62VP0xUA2Zx2Zsg7shZtcXhQ9nz8aPMMcJMF_HsU70XY7C-CcDbh6DuETP8S4zjczVo2swNnBqpRwGscqC2A13hIQkJF2vcmI5LujFCrQe0D3iykaOOwrO-UUEsG1zEU-04oyA2c-YAPSpeL2TaJppn_RUgSzMBQbjwrlVh394ylsbRk_Wbm_-TMdM8FJzjSZ3uw6izw/4up/FtuDhimsQgOSkGHzBJhSiA/h30/h001.H6NINhae1on2lU47hIGmApzI2wd4plfHg4HujneCS6k"
+          },
+          {
+            "label": "When to load MCP tools (Google cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGdhpWG77XHkNj1Dxmt-Rfzu2PRmkKAm5aHF3WWOPol4Z1sr-FfbOkmKZwc-XMC2nrI8v0rsGpLK26yRdnD-anPrPHVELg1yDOKmg80Vg7nQRHSi-On4fbty14wUf-6Di25WNU9Z0uIriSnKe61KDUPIPde8JNavmYlQyfulc-xIjvts9JM3LyOl2U8-bCs3_0AhtGs9K89ENdAuQCdIAAis9-qU0QJmBDASklpJpAtTfoGnQkVrrnYQQMsnoKNHDv0Vw1uNCgCYdZM4KkBx4ue/4up/FtuDhimsQgOSkGHzBJhSiA/h32/h001.pioWF5wHLXgCLNFPXye8_9_bHb8ue53Mu37In99FeT8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ OpenAI launches GPT-6 for everyone",
+      "date": "2026-10-08T16:19:22+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI launches GPT-6 with intelligent UI that generates interactive diagrams and comparisons on demand, improving web search and resisting multi-turn safety attacks.",
+          "Samsung forecasts $80 billion quarterly operating profit—a tech industry record—driven by AI-fueled memory chip demand pushing DRAM, NAND flash, and high-bandwidth memory prices higher.",
+          "Ethereum researcher warns AI could crack ECDSA crypto wallets in months, urging users to move funds to fresh addresses before quantum computers pose the same threat.",
+          "Grok routes jobs to rival AI services including Claude, Midjourney, and Suno based on task type, with billing following whichever model actually does the work.",
+          "Google Cloud launches Gemini agent for enterprise work, connecting to business systems and delivering results in documents, email, and developer tools employees already use."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI GPT-6: Streaming UI and Safety Improvements",
+            "points": [
+              "1. Intelligent UI builds interfaces piece by piece using streamable components and a compiler, so results appear progressively instead of waiting for the full response to load.",
+              "2. GPT-6 decides more wisely when to search the web instead of relying on trained knowledge, improving accuracy for time-sensitive queries.",
+              "3. Safety training resists multi-turn attacks (attempts to bypass safety rules across several conversation turns) involving cyberattacks, biological threats, and violence."
+            ]
+          },
+          {
+            "title": "Samsung's Record $80B Quarterly Profit",
+            "points": [
+              "1. 107 trillion won (~$80 billion) operating profit marks the fourth straight record quarter and the highest ever for any tech company.",
+              "2. Profit surged nine times year-over-year due to global AI demand pushing up prices for DRAM (memory for running applications), NAND flash (storage), and high-bandwidth memory (specialized chip memory for AI tasks).",
+              "3. Chip business drove most gains; smartphone unit suffered as higher component costs forced price increases, making phones less profitable."
+            ]
+          },
+          {
+            "title": "Crypto Wallet Security Risk: AI Breaking ECDSA Encryption",
+            "points": [
+              "1. Ethereum researcher Justin Drake warns AI could crack ECDSA (Elliptic Curve Digital Signature Algorithm—the cryptography protecting wallet access) in months rather than years.",
+              "2. Recent AI math breakthroughs, including OpenAI's 10,000 AI agents that solved the Navier-Stokes equation in 88 hours, mean attackers could recover private keys from public keys far sooner than expected.",
+              "3. Drake advises large crypto holders to migrate balances to fresh addresses first, cautioning that a rushed mass migration could backfire."
+            ]
+          },
+          {
+            "title": "Anthropic Releases Claude Haiku 5.5 at 90% Price Cut",
+            "points": [
+              "1. Haiku 5.5 costs $0.10 per million input tokens and $0.50 per million output tokens—roughly 90% cheaper than Haiku 4.5—matching OpenAI's GPT-6 Luna pricing up to 100,000 tokens.",
+              "2. Pricing jumps 5x beyond 100,000 tokens, and Haiku 5.5's tokenizer counts about 1.25x more tokens than Haiku 4.5 for the same text, partially offsetting the savings.",
+              "3. Model supports reasoning levels (a feature that lets users control how much thinking the AI does before answering) and defaults to medium; drawing quality improved significantly and a complex test cost just over 3 cents."
+            ]
+          },
+          {
+            "title": "Grok Routes to Rival AI Services",
+            "points": [
+              "1. Elon Musk announced Grok Bot automatically routes work to outside AI services—Anthropic's Claude Opus 5.5, Midjourney (image generation), and Suno (music)—picking the best provider for each task.",
+              "2. Customers cannot manually select models; Grok Bot manages the choice automatically, but usage analytics show which model handled each request and billing follows the model that did the work.",
+              "3. Enterprise teams can set an allowlist of permitted models honored by default, but Grok Bot warns it may not follow the list; no testing data proves the routing improves results."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI GPT-6 launch",
+            "url": "https://elink640.dupple.com/ss/c/u001.EKDPp8hM6wEpmmpraTs1UW101VfC9LrxPqLBglq_Digl8sfJoQ2br_PH8rHVlj_as3GT85haKbAJJGT7CqPoyXe5cZnDxMqGfvsvI9m9qVasmGAyH40AhtUiFniQ734stu0CaAqQrT75ro7gWWI-ew/4up/hNzibJ-xRySgxFXNQSjMNA/h8/h001.nogIeQ7FUEf89o18rim5jBtABrClz2QJ3pGLzZg-w94"
+          },
+          {
+            "label": "Samsung record $80B profit",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20iiZ9Putwz7KYP12ihc0n-wvLFdNwMryMYtWDV1T9f_dIWKBvQV8gb3XQ5SE5cEZdPM0DPTFqA0KnWwGNI8y_IqtrLqZ7mcb_YrzcNXIqUBqDcZ-JmXyoACrGDCBIdwraoaYu9C_FTX-kn1X-EIwDCko/4up/hNzibJ-xRySgxFXNQSjMNA/h9/h001.wrBCxJWMZDqqApGZ5ESg5diMOuoEi47M2LxrgFORB54"
+          },
+          {
+            "label": "AI crypto wallet security warning",
+            "url": "https://elink640.dupple.com/ss/c/u001.yrpcv-6znE4A9OOUDCb3Gf_FDC-lL-hpfN3eNrQgUFwSsU_KtEPBK7C8_20gGrVEUGMu9pW1qnHvoAmRPgmIA_USKTFQR1RRBjUxP879g92H4ZGtvjmx9hPvKwIOrIuY06LfA514Tee2_k6t5PKXfQeiGH1Jbd_NbvK3ZdaY0cT2Gg2Uj4IUJtoIrZIxeh5HPWXGcghUNpPJDw2-cPGo81LrlMypHMq0y_EgLmrrdTYOiP4q4iy_BnKQfQChuTqUUpSLxrh_yypnYxKxK382ZxVoVpAfkkeA0usZSa7jMQFpjLrOlMOfZMe5su1X1obz/4up/hNzibJ-xRySgxFXNQSjMNA/h10/h001.PILKatV9RhF0w6sROzBAM9KWEBp_1TFFWnPniFIi4z4"
+          },
+          {
+            "label": "Grok routes to Claude and other AI services",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09Qvocsj5bLfCROvjmcxF-yAP1JZORIApr6M1L3F33rRXeOArZzLSLwrdIdapT4YC26nA1FRqC4sY_KVNSLa2Ko_xl0Xv1_0poEP85IhWk2W-w/4up/hNzibJ-xRySgxFXNQSjMNA/h11/h001.gs-WeBcYTIzkrUPwX_nl8v0WsPr_HSMpLbBtYFpX160"
+          },
+          {
+            "label": "Anthropic Haiku 5.5 pricing and features",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8BhiC9hD5WF_fFX7FG6pwN7IUZ03tOidsCWnrrVha7hpR40uIuXsQvU1tXBYBiMz_YnmzX-y067XRWIuVmxX8_889zxu4HAh2NWus9KAUX0k5iQO1zOCEALwdlU8fGC0CA/4up/hNzibJ-xRySgxFXNQSjMNA/h13/h001.uW4BMyVpkT9sY2O8e9TfE3w6qm8wPSbKlsgVqVisnZ4"
+          }
+        ]
+      }
+    }
+  ]
+}
