@@ -1,0 +1,174 @@
+{
+  "batch": "crypto-am",
+  "label": "Morning Crypto",
+  "category": "crypto",
+  "date": "2026-10-12",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "CMC Spotlight",
+        "items": [
+          {
+            "title": "A Bug Just Showed XRP Could Be Minted for Free",
+            "points": [
+              "A bug in the XRP Ledger's token creation mechanism allowed XRP to be minted without normal cryptographic verification, meaning new coins could theoretically be generated without legitimate authorization.",
+              "The vulnerability threatened XRP's core economic model, which relies on a fixed maximum supply of 100 billion tokens to maintain scarcity and value.",
+              "Security researchers disclosed the issue responsibly rather than exploiting it publicly, giving developers time to assess and fix the flaw before it could be exploited.",
+              "Unlimited token minting would flood the market with new supply, causing severe dilution and devaluation of existing XRP holdings.",
+              "The incident underscores the importance of rigorous code auditing in blockchain infrastructure managing billions of dollars in value."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR Crypto",
+        "items": [
+          {
+            "title": "FinCEN Withdraws Crypto Mixing Rule",
+            "points": [
+              "FinCEN is withdrawing its 2023 proposal that would have labeled international crypto mixing (combining multiple users' crypto transactions to obscure their origin) a 'primary money laundering concern' under Section 311 of the Bank Secrecy Act.",
+              "The agency cited concerns the proposal's broad definition would chill legitimate privacy use, and referenced a July 2025 Presidential Working Group report recognizing lawful privacy use of mixers.",
+              "A separate 2020 proposal requiring banks to verify identities and report self-hosted wallet transactions above $3,000 is also withdrawn.",
+              "Existing obligations remain unchanged since neither proposal was finalized; FinCEN will keep monitoring mixers for illicit activity."
+            ]
+          },
+          {
+            "title": "Stripe's Stablecoin Platform",
+            "points": [
+              "Henri Stern, founder of Privy, is leading a new Stripe division to build an open, modular, global stablecoin (a cryptocurrency pegged to a stable asset like the US dollar) developer platform.",
+              "The platform integrates Bridge, Privy, Tempo, and Open USD to treat fiat and crypto as interoperable layers, letting businesses like Meta, Ramp, and Deel handle cross-border payments without rebuilding from scratch.",
+              "Stripe holds conditional OCC national bank trust charter approval in the US plus MiCA and EMI licenses in Europe, positioning it for compliance with the GENIUS Act (a US regulatory framework for stablecoins).",
+              "Existing clients show demand: Meta pays creators in real time, Ramp runs fiat and stablecoin flows in parallel, and Deel routes contractor payouts worldwide."
+            ]
+          },
+          {
+            "title": "Polymarket Protocol V2",
+            "points": [
+              "Polymarket replaced its 2019 Gnosis Conditional Tokens Framework (a smart contract system for creating conditional prediction markets) with a rebuild consolidating the stack into one ERC1155 positions contract, one pUSD collateral token, one exchange, and one router.",
+              "A new OracleAggregator with pluggable modules connects to UMA, Chainlink, and future oracle sources (services that feed real-world data to resolve market outcomes), with first-class multi-chain bridging support.",
+              "The protocol launches with four market types—Binary, Atomic Neg-risk, Incremental Neg-risk, and Combinatorial—all upgradeable behind governance.",
+              "Consolidating the stack lets the team ship new features without disrupting existing integrations."
+            ]
+          },
+          {
+            "title": "Hack Recovery Efforts",
+            "points": [
+              "Chainalysis used AI to trace the September 24 Bitget breach ($387M) to North Korean actors in under 10 minutes, compressing work that normally takes 20+ hours; funds moved across Ethereum (49.7%), XRP (40.8%), Zcash (7.6%), and Tron (1.8%) in 23 transfers within three hours.",
+              "The attacker routed stolen XRP through cross-chain liquidity protocols to convert to Bitcoin over about 36 hours, avoiding direct exchange exposure and nearing the $1 billion mark for North Korea's 2026 crypto total.",
+              "Near Intents recovered its full $3.8M in stolen funds within 48 hours after its general manager identified the attacker on-chain and issued a public return ultimatum with an implicit deanonymization threat.",
+              "The Near Intents exploit targeted a flaw in how the platform's Omni deposit/withdrawal layer interacted with its main smart contract, forcing halts across its 35-blockchain cross-chain swap service."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "CMC Spotlight",
+      "subject": "A Bug Just Showed XRP Could Be Minted for Free",
+      "date": "2026-10-12T11:29:19+00:00",
+      "summary": {
+        "headlines": [
+          "A critical bug in the XRP Ledger revealed that XRP tokens could theoretically be created without cost, threatening the integrity of the token's fixed supply mechanism and raising security concerns across the network",
+          "The vulnerability exposed a fundamental flaw in the ledger's token minting process that could allow unlimited XRP generation if exploited",
+          "Security researchers identified and disclosed the issue responsibly, prompting immediate investigation and potential remediation by the XRP Ledger development community"
+        ],
+        "sections": [
+          {
+            "title": "XRP Ledger Minting Vulnerability Details",
+            "points": [
+              "1. A bug in the XRP Ledger's token creation mechanism allowed XRP to be minted without the normal cryptographic verification requirements, meaning new coins could be generated without legitimate authorization",
+              "2. The vulnerability threatened XRP's core economic model, which relies on a fixed maximum supply of 100 billion tokens to maintain scarcity and value",
+              "3. The issue was disclosed responsibly by security researchers rather than exploited publicly, giving developers time to assess and fix the flaw before widespread knowledge could enable attacks"
+            ]
+          },
+          {
+            "title": "Implications for XRP and Cryptocurrency Security",
+            "points": [
+              "1. The bug highlighted systemic risks in blockchain networks where flaws in consensus or token creation mechanisms could catastrophically undermine confidence in the asset",
+              "2. Unlimited token minting would flood the market with new supply, causing severe dilution and devaluation of existing XRP holdings",
+              "3. The incident underscores the importance of rigorous code auditing and security testing in mission-critical blockchain infrastructure, particularly for systems managing billions of dollars in value"
+            ]
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "newsletter": "TLDR Crypto",
+      "subject": "Crypto Mixing Update 🌪️,Polymarket Protocol V2 ⚙️, Hack Recoveries🧑‍💻",
+      "date": "2026-10-12T12:12:53+00:00",
+      "summary": {
+        "headlines": [
+          "FinCEN withdraws proposed rule that would have restricted international crypto mixing, citing concerns about chilling legitimate privacy use.",
+          "Stripe hires Privy founder Henri Stern to build a stablecoin developer platform integrating fiat and crypto as interoperable layers.",
+          "Polymarket redesigned from scratch—consolidating its contract stack into one positions contract, one collateral token, and one exchange to support multi-chain expansion.",
+          "Chainalysis used AI to trace the $387M Bitget hack to North Korean actors in under 10 minutes, compressing work that normally takes 20+ hours.",
+          "Near Intents recovered its full $3.8M in stolen funds within 48 hours after the general manager issued a public return ultimatum to the attacker."
+        ],
+        "sections": [
+          {
+            "title": "1. FinCEN Withdraws Crypto Mixing Rule",
+            "points": [
+              "FinCEN is withdrawing its 2023 proposal that would have labeled international crypto mixing a 'primary money laundering concern' under Section 311 of the Bank Secrecy Act.",
+              "The agency cited commenters' concerns that the proposal's broad definition would chill legitimate privacy use, and acknowledged a July 2025 Presidential Working Group report recognizing lawful users employ mixers for financial privacy.",
+              "A separate 2020 proposal requiring banks and money services businesses to verify identities and report self-hosted wallet transactions above $3,000 is also withdrawn.",
+              "Existing obligations remain unchanged since neither proposal was finalized; FinCEN will continue monitoring mixers for illicit activity."
+            ]
+          },
+          {
+            "title": "2. Stripe's Stablecoin Platform",
+            "points": [
+              "Henri Stern, founder of Privy, is leading Stripe's new crypto and stablecoins division to build an open, modular, global stablecoin developer platform.",
+              "The platform integrates Bridge, Privy, Tempo, and Open USD to treat fiat and crypto as interoperable layers, allowing businesses like Meta, Ramp, and Deel to handle cross-border payments and creator payouts without rebuilding from scratch.",
+              "Stripe holds conditional OCC national bank trust charter approval in the US plus MiCA and EMI licenses in Europe, positioning it for compliance with the GENIUS Act (a regulatory framework for stablecoins).",
+              "Existing clients show demand: Meta pays creators in real time, Ramp runs fiat and stablecoin flows in parallel, and Deel routes contractor payouts worldwide."
+            ]
+          },
+          {
+            "title": "3. Polymarket Protocol V2",
+            "points": [
+              "Polymarket replaced its 2019 Gnosis Conditional Tokens Framework (a smart contract system for creating conditional markets) with a ground-up rebuild that consolidates the entire stack into four modular components: one ERC1155 positions contract, one pUSD collateral token, one exchange, and one router.",
+              "New OracleAggregator with pluggable modules connects to UMA, Chainlink, and future oracle sources (enabling different data providers to resolve market outcomes), while first-class multi-chain bridging support prepares infrastructure for expansion beyond Ethereum.",
+              "Protocol launches with four market types: Binary (yes/no), Atomic Neg-risk (self-resolving negative risk markets), Incremental Neg-risk, and Combinatorial, all upgradeable behind governance.",
+              "Consolidating the stack enables the team to ship features without disrupting existing integrations."
+            ]
+          },
+          {
+            "title": "4. Hack Recovery Efforts",
+            "points": [
+              "Chainalysis attributed the September 24 Bitget breach ($387M) to North Korean actors using custom AI tools to trace dispersed funds across Ethereum (49.7%), XRP (40.8%), Zcash (7.6%), and Tron (1.8%) in 23 transfers within three hours—compressing 20+ hours of manual work into under 10 minutes.",
+              "The attacker routed stolen XRP through cross-chain liquidity protocols to convert to Bitcoin over ~36 hours before reaching attacker-controlled addresses, avoiding direct exchange exposure and the $1 billion mark for North Korea's 2026 crypto total.",
+              "Near Intents recovered its full $3.8M in stolen funds within 48 hours after General Manager Alex Shevchenko identified the attacker on-chain and issued a return deadline with an implicit deanonymization threat.",
+              "The Near Intents exploit targeted a flaw in how the platform's Omni deposit/withdrawal layer interacted with its main smart contract, forcing halts across the 35-blockchain cross-chain swap service."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Treasury withdraws crypto mixing rule",
+            "url": "https://links.tldrnewsletter.com/Qs15dG"
+          },
+          {
+            "label": "Chainalysis Used AI to Trace the $387M Bitget Hack Back to North Korea",
+            "url": "https://decrypt.co/380005/chainalysis-ai-87m-bitget-hack-north-korea"
+          },
+          {
+            "label": "Near Intents Recovers $3.8 Million After 48-Hour Ultimatum",
+            "url": "https://decrypt.co/380014/near-intents-recovers-3-8-million-after-48-hour-ultimatum"
+          },
+          {
+            "label": "Polymarket Protocol V2",
+            "url": "https://links.tldrnewsletter.com/ycyZHW"
+          },
+          {
+            "label": "Zcash's 25-Second Blocks Go Live on Public Testnet Ahead of Schedule",
+            "url": "https://www.coindesk.com/tech/2026/10/05/zcash-s-25-second-blocks-go-live-on-public-testnet-ahead-of-schedule"
+          }
+        ]
+      }
+    }
+  ]
+}
