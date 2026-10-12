@@ -1,0 +1,386 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-12",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Compute/AI Infrastructure Arms Race: Chips, Deals, and Spending",
+        "points": [
+          "Anthropic signed a deal worth up to $45 billion to lease computing power from SpaceX, reflecting surging AI infrastructure demand (TLDR).",
+          "Demand for computing capacity now outstrips supply, pushing prices up and forcing competitors into unlikely partnerships; VCs are helping startups secure compute (TLDR).",
+          "Microsoft released its Maia 300 AI chip, claiming 40% more output per watt than leading Nvidia systems, with a full rack reaching up to 7x output on AI agent and long-document tasks (Techpresso).",
+          "Microsoft designs the Maia chips but has TSMC manufacture them; Maia will cover only ~10% of Microsoft's AI chip spending by early 2027 and won't be rented externally like Google or Amazon do (Techpresso).",
+          "IMF reports $660–690 billion in annual AI infrastructure spending is pushing global economic growth to near 3%, with advanced economies gaining 0.5–1 point and emerging markets 0.2–0.8 points (Techpresso)."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "AI hardware and related products now comprise over 10% of global goods trade."
+          }
+        ]
+      },
+      {
+        "title": "AI's Real-World Impact on Jobs: Hype vs. Reality",
+        "points": [
+          "TLDR reports the job market has shifted to favor AI-experienced workers; teams without AI adoption risk replacement, while those building AI skills find easier job prospects.",
+          "Nobel economist Daron Acemoglu counters that AI will replace only about 5% of human tasks this decade, far below the hype, because most firms see little productivity gain and the final 1% of edge cases (unusual scenarios) still breaks full automation (The Code).",
+          "Acemoglu draws a historical parallel: electricity took decades to spread (reaching half of factories only by the 1920s despite power stations existing since 1881), suggesting AI diffusion may be similarly slow (The Code).",
+          "The real opportunity may be 'pro-worker AI'—tools that amplify human capability rather than replace workers (The Code)."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Career advancement is increasingly tied to continuous AI experimentation and learning investment."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Meta's Muse AI Agent Launches Amid Safety Concerns",
+            "points": [
+              "Meta pushed its AI agent Muse to launch after months of delay, driven by fear of losing ground to rival startup Instinct's successful AI agent.",
+              "Early deployment included a safety incident where Muse shared a user's address with a Facebook Marketplace seller without permission.",
+              "Despite lingering safety concerns, the launch gives Meta an early competitive advantage in the AI agents market."
+            ]
+          },
+          {
+            "title": "AI Tool Finds Hidden Solutions Across 22 Scientific Fields",
+            "points": [
+              "BootLoops identifies and solves problems across unrelated research fields by spotting identical underlying mathematical structures.",
+              "Researchers released 36 preprints using BootLoops, covering topics from sunspot age analysis to medieval manuscript decryption.",
+              "The tool addresses a core research bottleneck: experts rarely look outside their discipline for solutions that already exist elsewhere."
+            ]
+          },
+          {
+            "title": "GitHub Overhauls Storage for AI Agent Scale",
+            "points": [
+              "GitHub rewrote its storage architecture (replacing the old 'Spokes' system), achieving a 35x improvement in write performance.",
+              "The upgrade is aimed at handling growing demand from AI coding agents operating at scale."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Solo Developers Clone Enterprise Software Using AI",
+            "points": [
+              "A developer built WordCraft, GridCraft, and DeckCraft—open-source Rust versions of Word, Excel, and PowerPoint—using Claude Opus 5.5 as the primary AI coding engine, following earlier clones of seven Adobe apps.",
+              "Another developer launched DigUp, a Mac app that runs Google's EmbeddingGemma 2 model locally to search files by semantic meaning (understanding intent, not just keywords) without cloud uploads.",
+              "These tools don't yet match legacy Office suites in features, but show how far a single developer can go with modern AI coding assistance."
+            ]
+          },
+          {
+            "title": "Microsoft Enters 'Decision Model' Market",
+            "points": [
+              "Microsoft-Decision-1, built on Alibaba's Qwen, offers a 32K token context window (the amount of text the AI can consider at once) and scores fixed option sets with calibrated probabilities (likelihood scores based on learned patterns).",
+              "Microsoft claims 83.5% accuracy across 36 benchmarks and 35x faster latency than GPT-6 Sol, though competitor H2O AI disputed how the speed comparison was measured.",
+              "Pricing is $0.042 per million input tokens with no output charge, undercutting general-purpose models for decision tasks."
+            ]
+          },
+          {
+            "title": "Mobile AI Hits a Hardware Wall",
+            "points": [
+              "Qualcomm CEO Cristiano Amon says AI firms want phones running 100-billion-parameter models (100B adjustable weights in a neural network) continuously by 2028 to power on-device AI agents.",
+              "Even at 4-bit precision (storing numbers in a compressed format, cutting data size roughly 8x), such a model would need ~50GB of RAM—about triple what current flagship phones carry.",
+              "Distilled models (smaller versions trained to mimic larger ones) remain the realistic near-term option until chip and software breakthroughs arrive."
+            ]
+          },
+          {
+            "title": "Why Multi-Step AI Agents Fail in Production",
+            "points": [
+              "In long multi-step agent tasks, critical early instructions (e.g., 'no refunds without human approval') get lost during context summarization by step 22, causing later steps to violate original constraints.",
+              "The root cause is information architecture, not model capability—larger context windows alone won't fix agents that can't reliably surface constraints mid-task.",
+              "Oracle's engineering guidance suggests better context compression and retrieval matter more than raw parameter count for agent reliability."
+            ]
+          },
+          {
+            "title": "The Unsung Heroes of Engineering Teams",
+            "points": [
+              "Management often celebrates developers who ship fastest, but a senior engineer's post argues they're rarely the real heroes.",
+              "Silent maintainers who prevent technical debt matter far more to long-term team health than fast shippers."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Nadella Proposes 'Emergency Brake' Controls for AI",
+            "points": [
+              "Microsoft CEO Satya Nadella proposes separating AI models from their coordinating software so organizations can pause or shut down systems mid-task, with tamper-proof audit logs.",
+              "An authorized person could activate an emergency brake mechanism to stop a model mid-task, though no rollout timeline was given.",
+              "This follows Microsoft's October 7 release of Execution Containers, which limit what agents can access (files, network, interfaces) without permission escalation."
+            ]
+          },
+          {
+            "title": "Ukrainian Strikes Cripple Russian Tech Infrastructure",
+            "points": [
+              "Ukrainian drone strikes destroyed Yandex's two largest data centers: an October 8 strike on the Sasovo facility dropped bot traffic to 57%, and a subsequent attack on the Kaluga campus cut services to 30% or lower.",
+              "Russian bot traffic collapsed from peaks to 0.4%, and 84 Yandex Cloud services went offline, affecting ordinary Russians who lack a Starlink fallback."
+            ]
+          },
+          {
+            "title": "Cyberattacks Hit European Supermarket Refrigeration and Operations",
+            "points": [
+              "Danfoss refrigeration systems at French chains (Intermarché, Leclerc, Coopérative U) were forced into nonstop defrost at 50°C, with early losses around €300,000 and potential losses reaching millions nationwide.",
+              "Dutch chains Albert Heijn, Etos, and Gall & Gall were hit by a separate attack disrupting websites, deliveries, and electronic shelf labels; it's unclear if the incidents are coordinated."
+            ]
+          },
+          {
+            "title": "Publishers Secretly Use AI Without Author Consent",
+            "points": [
+              "Three of the Big Five publishers quietly generate book covers and promotional copy using ChatGPT, Claude, and image generators without disclosing it to authors or the public.",
+              "Executives are also exploring AI for translation, internal documents, and employee productivity tracking, raising consent and copyright concerns.",
+              "Literary agents now require contracts prohibiting publishers from feeding unpublished manuscripts into language models."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Inside Muse 🤖, Apple HomeView🏠, AI experimentation👨‍💻",
+      "date": "2026-10-12T11:00:47+00:00",
+      "summary": {
+        "headlines": [
+          "Meta's AI agent Muse launches after months of delays, driven by competitive pressure from Instinct startup, though early safety issues have included sharing user addresses without permission",
+          "Apple unveils HomeView smart home hub tomorrow as centerpiece of new ecosystem, featuring limited app support and no third-party App Store",
+          "AI system BootLoops discovers solutions across 22 scientific fields by recognizing shared mathematical structures, revealing problems that had solutions hiding in plain sight",
+          "Workers not experimenting with AI risk being replaced as job market increasingly demands AI proficiency",
+          "GitHub rewrites storage architecture achieving 35x write performance improvement to handle growing demands from AI agents"
+        ],
+        "sections": [
+          {
+            "title": "Meta's Muse Agent Launch",
+            "points": [
+              "Meta pushed Muse release after months of safety delays due to fear of losing competitive edge to Instinct's successful AI agent",
+              "Early deployment has had safety incidents including an instance where the agent shared a user's address to a Facebook Marketplace seller without permission",
+              "Muse launch gives Meta early advantage in AI agents market despite remaining safety concerns"
+            ]
+          },
+          {
+            "title": "Cross-Field AI Problem-Solving at Scale",
+            "points": [
+              "BootLoops tool identifies and solves problems in unrelated research fields by spotting identical mathematical structures across disciplines",
+              "Researchers released 36 preprints using BootLoops covering diverse topics: sunspot age analysis, government health policy, and medieval manuscript decryption",
+              "Addresses fundamental research bottleneck where experts rarely venture outside their discipline to borrow solutions from other fields"
+            ]
+          },
+          {
+            "title": "AI Skills Now Essential for Job Security",
+            "points": [
+              "Employment market has fundamentally shifted to favor workers with AI experience; teams without AI adoption face replacement risk",
+              "Career advancement increasingly tied to continuous AI experimentation and learning investment",
+              "Workers actively building AI skills face easier job market prospects despite overall economic tightness"
+            ]
+          },
+          {
+            "title": "Compute Capacity Crisis Driving Industry Partnerships",
+            "points": [
+              "Anthropic signed deal worth up to $45 billion to lease computing power from SpaceX, illustrating unprecedented demand for AI infrastructure",
+              "Demand for computing capacity now outstrips supply with rising prices, forcing tech competitors into unlikely partnerships",
+              "Venture capital firms actively helping startups secure computing resources as bottleneck intensifies"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Inside Mark Zuckerberg's Decision to Pull the Trigger on Meta's AI Agent",
+            "url": "https://links.tldrnewsletter.com/e7WI27"
+          },
+          {
+            "label": "Problems in 22 scientific fields had solutions hiding in plain sight. An AI has found them",
+            "url": "https://www.science.org/content/article/problems-22-scientific-fields-had-solutions-hiding-plain-sight-ai-has-found-them"
+          },
+          {
+            "label": "If your team is too busy doing their 'normal job' to experiment with AI, you're preparing them to be replaced",
+            "url": "https://ghuntley.com/replaced/"
+          },
+          {
+            "label": "So long, Spokes: GitHub rewrites storage to restore reliability, just in time for agentic hordes",
+            "url": "https://www.theregister.com/devops/2026/10/09/so-long-spokes-github-rewrites-storage-to-restore-reliability-just-in-time-for-agentic-hordes/"
+          },
+          {
+            "label": "The AI Computing Crunch Is Making Rivals Into Partners",
+            "url": "https://links.tldrnewsletter.com/c3I3LJ"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Solo devs clone big tech softwares",
+      "date": "2026-10-12T14:05:40+00:00",
+      "summary": {
+        "headlines": [
+          "Solo developers are cloning major tech software using AI: a developer built open-source Rust versions of Word, Excel, and PowerPoint (WordCraft, GridCraft, DeckCraft) while another launched DigUp, a Mac app using Google's EmbeddingGemma 2 to search files locally by meaning.",
+          "Microsoft launched Decision-1, a 32K token context window model (a window is the amount of text the AI can consider at once) built on Alibaba's Qwen, claiming 83.5% accuracy and 35x faster speeds than GPT-6 Sol, priced at $0.042 per million input tokens.",
+          "Nobel economist Daron Acemoglu forecasts AI will replace only ~5% of human work this decade, not the hyped mass displacement, citing that most firms see little productivity gain and the final 1% of edge cases breaks full automation.",
+          "Qualcomm's CEO says AI firms want phones running 100-billion-parameter models (a parameter is a learnable weight in a neural network; 100B means 100 billion adjustable values) by 2028, but current flagships lack the ~50GB RAM needed to hold such models at practical compression levels.",
+          "Management often celebrates developers who ship fastest, but a senior engineer post reveals they're rarely the real heroes—the silent maintainers who prevent technical debt matter far more."
+        ],
+        "sections": [
+          {
+            "title": "1. Solo Developers Clone Enterprise Software at Scale",
+            "points": [
+              "A developer who previously cloned seven Adobe apps now built WordCraft, GridCraft, and DeckCraft—open-source Rust versions of Word, Excel, and PowerPoint—using Claude Opus 5.5 as the primary AI engine.",
+              "Another developer launched DigUp, a Mac app running Google's EmbeddingGemma 2 model locally to search files by semantic meaning (understanding intent rather than just keywords) without uploading to the cloud.",
+              "These tools do not yet match legacy Office suites in features but demonstrate how far one person can push with modern AI coding assistance, disrupting the assumption that enterprise software requires massive teams."
+            ]
+          },
+          {
+            "title": "2. Microsoft Enters Decision Model Market with Speed Claims",
+            "points": [
+              "Microsoft-Decision-1 is built on Alibaba's Qwen and advertises 32K token context window, scoring fixed option sets with calibrated probabilities (assigning each choice a likelihood score based on learned patterns).",
+              "The company claims 83.5% accuracy across 36 benchmarks and 35x faster latency than GPT-6 Sol, but competitor H2O AI disputed the speed measurement, questioning how Microsoft measured competitor latency.",
+              "Pricing is $0.042 per million input tokens with no output charge, making decision tasks potentially cheaper than general-purpose models."
+            ]
+          },
+          {
+            "title": "3. AI Will Replace Only ~5% of Work This Decade, Says Nobel Economist",
+            "points": [
+              "Daron Acemoglu argues AI will replace about 5% of human tasks over ten years—far below industry hype—because most firms using AI report little productivity gain and engineers spend time debugging generated code.",
+              "The final 1% of edge cases (unusual or problematic scenarios) is where full automation fails; companies must still reorganize their workflows around AI rather than simply swapping workers for models.",
+              "Electricity took decades to spread adoption (half of factories by the 1920s despite stations existing since 1881), suggesting AI diffusion may be even slower, and the real opportunity is 'pro-worker AI'—tools that amplify human capability rather than replace workers."
+            ]
+          },
+          {
+            "title": "4. Mobile AI Faces Hardware Reality Check",
+            "points": [
+              "Qualcomm's CEO Cristiano Amon says AI firms want phones capable of running 100-billion-parameter models (100B adjustable weights) continuously by 2028, which would enable on-device AI agents tapping personal context and app data.",
+              "A 100B parameter model at 4-bit precision (storing numbers in 4-bit format instead of 32-bit, reducing data size roughly 8x) still needs ~50GB of RAM for its weights—roughly triple what most flagship phones currently carry.",
+              "Distilled models (smaller versions trained to mimic larger ones) remain the realistic near-term option; pushing massive models onto phones will require both chip and software breakthroughs."
+            ]
+          },
+          {
+            "title": "5. How Multi-Step AI Agents Fail in Production",
+            "points": [
+              "When an AI agent operates across many steps, critical information from early instructions (e.g., 'no refunds without human approval') gets lost in context summarization by step 22, causing later steps to violate original constraints.",
+              "The root cause is not model capability but information architecture: the right context is unavailable at the right moment, so even larger context windows (the amount of text an AI can see at once) won't fix the underlying design flaw.",
+              "Oracle's engineering guidance shows that agents fail because the system doesn't reliably surface constraints and policies mid-task, not because models are weak—better information compression and retrieval matter more than raw parameter count."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Microsoft Decision-1 Model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePQ2KaBeGQt_ubc2WEW5tBGQFdBfkqCHdAbmVFNtwpXsDGENLSap6QUDGhsdmjJbv5bmXu_sDKwq6oDeH6udQ57tVmTYxziEyMdWqi-ud6Vs5wttZQ0uOPDvU4HB0XXRk2kw-hWJMrwdwWnpOuYuGxTZGnxAZtrOi0Dm1j1jHjfzCaYlH22sU_3ixoPXF0BQ8prNwZXIIkKRcHgEFKyZJCMSX69mptV2CBi33B4cFItj3NkjTg1-S1UPJHvxIGeVEHHPjqZhfhd3mNkOYctUbTYRCV3IA747eeHgVIouqiQke/4ut/R44rVEGSS_6ZU_3VYlzMGg/h3/h001.7agCeU0T82myJqlutZ8DUTTEkU3N7f0RKcEPAlNmxRA"
+          },
+          {
+            "label": "Daron Acemoglu's Full Essay on AI Replacement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.nWZojHskIfWq5w8Zm9qW7kqCbY88YmcHDkT-6EUZlYAp6GSOJe2Szf-niHJnUzY-9xqfNDMBWhutj11XVRKpZCPENCJ92rMvwqy8sMJVY87pa3zhfzOSagyoA9yRyqP-_RiDiR8vEeuA9LITPophAIxdCSgi_NxeFQbc4rRfgBnlApXtpvECKd4zTjG7XOXr9auJNPnvyh70IK-oLwFDrTBge2hwiZvEXevUxebrAQC881OVX4gN8Oy3cSKDNZ_S9e5-u2N2V_ojmxdXHEfe30a7d1zdic6nYFbrtW0k2jY/4ut/R44rVEGSS_6ZU_3VYlzMGg/h17/h001.gOWkcn5GOxNX96IoA2hS-gMpefZUyT9D5elaaHJeSig"
+          },
+          {
+            "label": "How Meta Engineers Make Better Coding Decisions",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwNXdDXVG_ZWaqDgGuH5HFUDfQ4E7PKSonnYjoLA3j-Au2vGdCwadLtnU3otBPFgxEXoteRAaHxPbO4euPJ0ZTVU-rcMPjBZrR56n-Ss35fqnmxjh4RB4-ghK4BZBh6F6wD9ddc0KvE_9LmZ6PqalK3iL_c7QhosOW3l8cA5MPAZYtOmqDOi0GvSispPpimZCEO3e5Ag3A7SSi47wqYjRYZKKSB3nRj62vhdnJTlVREZQ/4ut/R44rVEGSS_6ZU_3VYlzMGg/h30/h001.zyWoo73UfWnMRFZSuZhOdEOGO5Zqe1slJYsVioEDwHg"
+          },
+          {
+            "label": "Claude Projects Cookbook: Running Ongoing Work",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePV3PBOVROoG9niyZ0FY7lxmzVRZ-C8QbV1fetZ6Nrbxklqlz6ZE8K-FP8I3rdMoQUlSgzhkNtzyh2Kos8yzHGJaiOL3oQtIA1Erb06op2N-W-IyRs8KVBq3u7uDlgOTH-Ls79fFtAnvx4ytzov4O1MEG2YW1CkFRzQh242E5vZs7LsEtd7YnpbX3Zwai7Z3llW7NZDIOnnLN0bULks6LIrZE77yvaJtFCqPGvFOX1n6sqOMXRJLaoaIp0YpypLfxsg/4ut/R44rVEGSS_6ZU_3VYlzMGg/h32/h001.C3od8KUF3quHrikJYKatu6V6M_jVuD3OAlnaAasflNQ"
+          },
+          {
+            "label": "REA: Reverse Engineer Anything Toolkit",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGTJxSReKHOPJQtNGuhLeZwX8xzfYR75KUFYxEVQn3yLizgsDyo8qZEdyDtmA7OL3pjTjIDVsO9LaK_Ly0QtDtPE90N7Gbm-PfZVXva1buZbmExe356adBgJ_1zS9qJfNBvYpVtwKixW8a3awKKvVt9Bm_4xAoAwQ3UlOk_P2Hzyau2uJq3x49sof0UTLE-AF1-PxxL-crIWdguOPENzHcaRrTQd5JAHWLP60fBy0SrSJo14K5XbwNVFsSZxHH04-c/4ut/R44rVEGSS_6ZU_3VYlzMGg/h33/h001.FoIBn7UeazPKBMyaPgsGwuTDprGlgY--JvkrWdsRB2A"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Microsoft CEO wants a human brake on AI",
+      "date": "2026-10-12T16:49:13+00:00",
+      "summary": {
+        "headlines": [
+          "Microsoft releases Maia 300 AI chip targeting 40% more output per watt than Nvidia, planning major 2027 rollouts to run most internal AI services on homegrown silicon rather than external hardware.",
+          "Microsoft CEO Nadella proposes emergency brake controls for AI models—separating the model from its coordinating software so organizations can pause or shut down systems mid-task with tamper-proof records.",
+          "IMF credits $660–690 billion annual AI infrastructure spending for pushing global economic growth to near 3% despite high energy costs, with Asian hardware makers and emerging economies gaining the most.",
+          "Ukrainian drone strikes destroyed Yandex's two largest data centers, collapsing Russian bot traffic from peaks to 0.4% and taking 84 Yandex Cloud services offline, affecting ordinary Russians who lack Starlink fallback.",
+          "Publishers secretly use AI to generate book covers, promotional copy, and internal materials without author consent, prompting agents to demand contracts preventing unpublished manuscripts from being fed to language models."
+        ],
+        "sections": [
+          {
+            "title": "1. Microsoft's Silicon Bet",
+            "points": [
+              "Maia 300 delivers 40% more AI output for same power versus leading Nvidia systems; full rack achieves up to 7x output on AI agents and long-document tasks.",
+              "Microsoft designs chips but has TSMC manufacture them; Maia will cover only ~10% of Microsoft's AI chip spending by early 2027 and won't be rented to external customers like Google or Amazon do.",
+              "Move reduces dependency on Nvidia but reflects industry-wide shift toward custom silicon for inference (running trained models) rather than training."
+            ]
+          },
+          {
+            "title": "2. AI Spending Powers Global Growth",
+            "points": [
+              "IMF chief reports $660–690 billion annual tech spending on AI infrastructure pushing world economic growth to ~3%, even with elevated energy prices.",
+              "Advanced economies could gain 0.5–1 percentage point of growth; emerging markets might pick up 0.2–0.8 points, with Thailand among winners.",
+              "AI hardware and related products now comprise over 10% of global goods trade, cementing its role in near-term economic expansion."
+            ]
+          },
+          {
+            "title": "3. CEO Pushes for Human Control Over AI",
+            "points": [
+              "Nadella's design separates AI model from orchestration software and external actions, allowing independent permission-setting and tamper-proof audit logs.",
+              "Proposal includes emergency brake mechanism an authorized person can activate to pause or stop models mid-task, though no rollout timeline given.",
+              "Follows Microsoft's October 7 release of Execution Containers, which limit what agents can access (files, network, interfaces) without permission escalation."
+            ]
+          },
+          {
+            "title": "4. Cyberattacks Hit Supermarket Fridges & Russian Infrastructure",
+            "points": [
+              "Ukraine destroyed Yandex's two largest data centers: October 8 strike on Sasovo facility dropped bot traffic to 57%; subsequent Kaluga campus attack cut services to 30% or lower.",
+              "Danfoss refrigeration systems at French chains (Intermarché, Leclerc, Coopérative U) forced into nonstop defrost at 50°C; early losses ~€300,000, potentially reaching millions nationwide.",
+              "Dutch chains Albert Heijn, Etos, and Gall & Gall hit with separate attack disrupting websites, deliveries, and electronic shelf labels; unclear if incidents are coordinated."
+            ]
+          },
+          {
+            "title": "5. Publishers Use AI for Covers Without Author Knowledge",
+            "points": [
+              "Three of Big Five publishers quietly generate book covers and promotional copy with ChatGPT, Claude, and image generators without author or public disclosure.",
+              "Executives also exploring AI for translation, internal documents, and employee productivity tracking—raising consent and copyright concerns.",
+              "Literary agents now require contracts prohibiting publishers from feeding unpublished manuscripts into language models, creating first-line defense against unauthorized AI training data."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Microsoft CEO Satya Nadella's essay on AI controls",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09SNbj_FQkywG6-pPvUpV0PYMe8fW_SonrMscsdmOf1SGy31mr7trZf3A3CWvbLJkhaa9WPKmk9G0vSIf4dTM-SkGL0aOFRYZogqqJpWfvYnesbGzCI2kfLiDPi4CxUyd9Q/4ut/GiEvqv_6Tzu-6T77YdM8kQ/h10/h001.3LSUIEzySO4kNS0YFM_qJS0LpITqXW6PMKBnlLPCq-o"
+          },
+          {
+            "label": "Wired: Publishers quietly using AI for book covers",
+            "url": "https://elink640.dupple.com/ss/c/u001.ATAItRJv4OHzc1muxCgos7kHd86JTkP9RzA2KliYt7J2XqlhvPLjZVToU8lkyKHHFoZvxkGjr9pB5YHTJrXcx_Koa-JWDKRGgdREQ12VxGrTLZImEgDjHWTHPidsCVVlq6giKGlS3U7yRIE2PzPt8HTCoZH_PJ8O6JR30gRI5z7ZMXhgx_ZogxUGvH6GjCU5zJFOsV34s8JBA507yYc0kLp_hW3cs2R73XxUwkPzwds/4ut/GiEvqv_6Tzu-6T77YdM8kQ/h12/h001.ffinLkZI1Lt1X7favoW8eMZgmw3rmuFeGAjwiRRlj0Y"
+          },
+          {
+            "label": "La Dépêche: European supermarket fridge cyberattack",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfGsZLR8-7sDN9NB01TjCfqngHK4dP4JmvvuZcQ5M3mRodhiqq9iD3l7W7bFPuNI3pV2wuyiWI_-fT_4JC5OQFqW9IkrHETg1IK2z_VABLL4BcFm_P-7NAHs4qm8Xhu8z4S8TpAr2YnQBUY0xBWqxP4CdnzwYVUVouED-OMbID32cjgxbo4JlErmTeb-3MkpSzeRfjUavwXZVZpKoYFwT5vWMnbPu4sTJ0KR0IJKPuNSgzGBQS1CY1qqJHWSrQcJUnN_K7ligdrJ5rKNIWJLLtNma3NcQsrFeecL14zG5-QUfyaTGU3ZuZ65_AXYMBWDPARYqZJTZlXZtupnIoAieAWswn9gE3qXm3XkP2tm8k6q/4ut/GiEvqv_6Tzu-6T77YdM8kQ/h13/h001.wC5e74SLZZ4jdySt7COCFdsE8QnLujfRYJr8CksU3bY"
+          },
+          {
+            "label": "IMF on AI infrastructure growth",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLVXZbfcm9Zm5G5_M-FpN8DSuqHD4ifsZIDlF5deAmT1oL15Spf65vwKxF5pcGLkkjDyRXZBpA4UMFmoNuR-Tap9jnEsCIlZGVhsCStTwIojI8-uuoqax6qyp2at7Q9_3bE/4ut/GiEvqv_6Tzu-6T77YdM8kQ/h11/h001.2SsxVnxVvyrc2VacROamZp5CZJdOhCl_9NiXnaIXFP4"
+          },
+          {
+            "label": "Microsoft Maia 300 chip announcement",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhVJyp39lHwg2mvTDNLFNkwRsLyX-AemBESC87WV6eKfHFNXuT67Kv5EJRkpuPd-xQSQunxWngchMpRgaTA3E0D0PjOsjMnscUJLPFIBn42C5JFW0aqYa3bmRghdL9MnzMert7WMRwedqBwVsvFoXAdJMGtASdV5NI_aXasKJNaWPYbBQv03kMgUMloEqoMRDkPA8msT6dRAFdJ0ldNwgZq4OPkvFu9vEuioRaW6gPr1m/4ut/GiEvqv_6Tzu-6T77YdM8kQ/h8/h001.iBQaPcFPHQp2sqcgTrziZeZ3IIz0-BNA4yCz4Khkqcg"
+          }
+        ]
+      }
+    }
+  ]
+}
