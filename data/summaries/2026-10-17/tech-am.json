@@ -1,0 +1,200 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-17",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "REA (Reverse Engineer Anything): a new tool for decompiling and rebuilding app features",
+            "points": [
+              "REA is an MCP server (a protocol/standard that lets AI agents access external tools) that decompiles apps by converting compiled code back into human-readable pseudocode",
+              "It works iteratively: you ask your agent to analyze a feature, REA returns pseudocode with evidence, and your agent refines until the feature is fully rebuilt without copying original code",
+              "Setup requires running 'npx rea-agents setup' and restarting your agent; it should only be used on open-source software or devices/apps you own, since reverse engineering often violates terms of service",
+              "Workflow 1 - Game Modding: the 'universal-modder' plugin for Claude Code (requires Python 3.10+, ffmpeg, Git) auto-locates a game's engine, builds mods, generates sprites/audio, and tests them live (e.g., adding a homing missile launcher to Terraria)",
+              "Workflow 2 - Competitor Teardowns: REA can reveal how a competitor's feature works internally (e.g., whether a search feature queries on every keystroke or uses a local cached index), then build only the minimal components needed for your own project after confirming permission",
+              "Workflow 3 - Device Control Apps: REA can examine how a device's proprietary app communicates with hardware (e.g., an AC unit) and wrap those controls in an MCP to build a custom interface, after first checking for an official API"
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Apple bans AI 'nudify' apps from the App Store",
+            "points": [
+              "New Rule 1.2 explicitly bans AI apps that generate or distribute nonconsensual intimate imagery, requiring developers to actively prevent and remove such content or face removal",
+              "New guideline 2.5.19 targets developers who hide nudify features during review then activate them post-approval, risking permanent ban from the App Store and Developer Program",
+              "Earlier this year Apple threatened to remove xAI's Grok over nude deepfakes; Grok was later re-approved after adding safeguards"
+            ]
+          },
+          {
+            "title": "Anthropic AI solves a 25-year-old NSA cryptography mystery",
+            "points": [
+              "Anthropic's internal model identified five mysterious seeds the NSA distributed in the late 1990s, matching them to lrand48 (an older C library random-number generator) using 1997-1998 timestamps in under 30 minutes",
+              "The AI found the P-256 curve's published seed at the 1,842nd candidate position, making a hidden NSA backdoor in NIST curves significantly less likely",
+              "Researchers still can't explain why the generator skipped some candidates; bitcoin's secp256k1 curve was never implicated"
+            ]
+          },
+          {
+            "title": "Anthropic proposes federal AI safety bill",
+            "points": [
+              "The bill would require independent evaluators to flag risks to the Commerce Department within 72 hours before model deployment"
+            ]
+          },
+          {
+            "title": "Windows 11 performance boost",
+            "points": [
+              "Microsoft promises up to 20% faster system responsiveness and improved memory efficiency, especially benefiting 8GB machines"
+            ]
+          },
+          {
+            "title": "Fake WhatsApp app evades Google Play detection",
+            "points": [
+              "The fake app got over 500,000 downloads by exploiting Google Play's Early Access program, which hides user reviews during that phase"
+            ]
+          },
+          {
+            "title": "CoreWeave debt crisis rattles AI stock market",
+            "points": [
+              "CoreWeave, a cloud infrastructure provider renting GPU compute (graphics processing units used for AI workloads) to clients, has accumulated $51 billion in debt, with default insurance costs jumping 33% in one week",
+              "CEO Mike Intrator cited a backlog exceeding $100 billion from clients including Microsoft, Meta, and IBM, but analysts warn actual cash flows must still materialize",
+              "The debt concerns spooked investors across AI stocks and chipmakers in a single trading day despite CoreWeave's strong customer pipeline"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Code",
+      "subject": "🔥 You can finally reverse engineer any app",
+      "date": "2026-10-17T12:31:56+00:00",
+      "summary": {
+        "headlines": [
+          "REA (Reverse Engineer Anything) is a new GitHub tool that lets AI agents decompile and rebuild features from any app, enabling game modding, competitor teardowns, and custom device control software"
+        ],
+        "sections": [
+          {
+            "title": "What REA Does and How to Set It Up",
+            "points": [
+              "REA is an MCP server (a protocol that lets AI agents access external tools) that decompiles apps by converting compiled code back into human-readable pseudocode",
+              "It works iteratively: you ask your agent to analyze a feature, REA returns pseudocode with evidence, and your agent refines until the feature is fully rebuilt without copying original code",
+              "Setup requires running 'npx rea-agents setup' and restarting your agent—only use it on open-source software or devices/apps you own, as reverse engineering often violates terms of service"
+            ]
+          },
+          {
+            "title": "Workflow 1: Game Modding with Claude Code",
+            "points": [
+              "Install the 'universal-modder' plugin for Claude Code with dependencies Python 3.10+, ffmpeg, and Git",
+              "The plugin automatically locates the game engine, inspects code, builds mods, generates sprites and audio, and tests everything live in-game",
+              "Example: add a homing missile launcher and tactical nuke to Terraria by describing the mod; the agent handles the implementation end-to-end"
+            ]
+          },
+          {
+            "title": "Workflow 2: Reverse Engineer Competitor Features",
+            "points": [
+              "Use REA to understand how a competitor's app (like a notes app's instant search) actually works—revealing whether it queries on every keystroke or uses a local index (cached data you can access without network calls)",
+              "Send your agent a prompt that verifies you have permission to analyze the app, traces findings to specific code files, and outlines a plan before writing",
+              "Once approved, your agent builds only the minimum components you need for your own project, avoiding code duplication"
+            ]
+          },
+          {
+            "title": "Workflow 3: Build Better Device Control Apps",
+            "points": [
+              "REA can examine how a device's proprietary app communicates with hardware (like an AC unit), then wrap those controls in an MCP (protocol)",
+              "Build a custom interface (e.g., Mac menu-bar app) that drives the device without relying on the vendor's app",
+              "The prompt first checks for an official API to avoid reverse engineering when a supported option exists"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "REA GitHub repo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhkl22nSvLHZzHJVWnww7Onl4cxFE6MXB2Wc58Mv5-R5vbPrvRDPfce3AtKPgGwxo_UOB-i9cWJ5DQaJmI9LIDXfYPEhYnw39yP2hxVUWLdcyOVhQeT0S2oulqzRC6lBeYng4lnPDg-yOdf6lL3h3VYhJIbqkEro-UaTpS-iwQjhjwK8aBGc-wtmmRIpswLetQUh-RGekANVlTgACmgMAX70W_ph65BXKmrqkXYIhCXgV5Ks1brNv-6t3JbE3y0CPNYSHHtSfgqK1OA0O28b4W0Q4/4uy/Y9d3zcAdTOijvL2vq0UNhg/h3/h001.N-bR0jRSZjCbHkHUK9xVM2X532Q45j1ncp26PE71Khs"
+          },
+          {
+            "label": "universal-modder plugin for game modding",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhkrksa4rH6ImHfBU3xB4B8aTjUuZDmWhl9fLeqlI37-jaaoVGcyDjIIM1-3MWfT4t83bChQd42d94f8XQtQndy4Z-yOIt01vOl7EPrwUAgCTfePUftAsyvlDA_HPlmcqJXccvqCcbgzec4XOBeLmUA0fnpwYEHlQHJ8iWT2xCZxxHWlqscxyQ3KdJr-BEmi2fo6qC0waj1_8EMLOZ1uFPLgB_nAMvbc0lhGJolqpZrH2QYU5CKgLS1x9Jmf_4ZfF4p873A2LejyvL6ASr-f94PxQ0ZqxHLSX73RJNG2o6W0xBd_Ewma4F_W-RE0afTiX_qg/4uy/Y9d3zcAdTOijvL2vq0UNhg/h5/h001.cqkP-vfme5_ju8QPdnW5VpsaUiNBSyIqO13hGOPDX_Q"
+          },
+          {
+            "label": "Competitor teardown steps guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGTJxSReKHOPJQtNGuhLeZwX8xzfYR75KUFYxEVQn3yLizgsDyo8qZEdyDtmA7OL3pjTjIDVsO9LaK_Ly0QtDtPE90N7Gbm-PfZVXva1buZbnM9EsQ4Gf2MD8AFRWLg_nJAvWS8h80Hmpi1cqP251NTYRDlAY-zOuh11fvQknYSV7G9WXcmfQw-pH09y_1tkvvS8ZXS25MLmSlYEOLgQIQBlV7bgGNgLFd-cpDDGnhgf1-GgY_K8B5FNVYz2BKVN_bKRGqZxLKjsJWlsM6MeYwWwMWe9LonRvLoWVrDVgg6SQ/4uy/Y9d3zcAdTOijvL2vq0UNhg/h8/h001.v7wNrsShUnYVtoWKw4tnyD0ZnHfI-AqmXyfg5Xsqj84"
+          },
+          {
+            "label": "REA official guide for native apps and websites",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.9ylDIu4nAQWGe8bSlkKOpJtvZiZcdIR0KZZkuOLMF2jpeLwKlfGQ5GgRLM73Z8vgdCIqwbYxFupy3vyCQahSozA4MQYrchM84hTLFbtVLdI4wfL-A63kaka5EineVp-GMHt33gVsWF5QBxxkrlD7epAyx7Yk2QFSg9QFclIosp_makf80l12oerqmAhsbURZM6J1-fQ0DsP3TQTtcPXXBfLqY2ij7KxgOGTI9lHgKbgtlATx89BUr_-hmTjx5tk9GT8i4VmOQEK-Pj927AmmFjvf0tjP6u0Bs6yplIEVvAc/4uy/Y9d3zcAdTOijvL2vq0UNhg/h18/h001.eXbVWH1hkbSJq6j0dKpyIqq5v40"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Apple bans AI 'nudify' apps",
+      "date": "2026-10-17T15:28:08+00:00",
+      "summary": {
+        "headlines": [
+          "Apple bans AI 'nudify' apps from App Store with new rules targeting nonconsensual intimate imagery and bait-and-switch tactics during app review.",
+          "Anthropic AI model solved a 25-year NSA cryptography puzzle in under 30 minutes, tracing mysterious seeds to an ordinary 1997 random-number program.",
+          "Anthropic proposes federal AI safety bill requiring independent evaluators to flag risks to Commerce Department within 72 hours before model deployment.",
+          "Windows 11 promises up to 20% faster system responsiveness and improved memory efficiency, especially for 8GB machines.",
+          "Fake WhatsApp app with 500,000+ downloads evaded Google Play Store detection by exploiting Early Access program that hides user reviews."
+        ],
+        "sections": [
+          {
+            "title": "1. Apple's Updated App Store AI Policy",
+            "points": [
+              "Rule 1.2 now explicitly bans AI apps that generate or distribute nonconsensual intimate imagery, with developers required to actively prevent and remove such content or face app removal.",
+              "New guideline 2.5.19 targets developers who hide nudify features during review then activate them post-approval, threatening permanent removal from App Store and Developer Program.",
+              "Earlier this year Apple threatened to remove xAI's Grok over nude deepfakes; Grok received updated approval after adding safeguards."
+            ]
+          },
+          {
+            "title": "2. NSA Cryptography Mystery Solved by AI",
+            "points": [
+              "Anthropic's internal model identified five mysterious seeds the NSA distributed in the late 1990s, matching them to lrand48 (an older C library random-number generator) using 1997-1998 timestamps in under 30 minutes.",
+              "The AI found the P-256 curve's published seed at the 1,842nd candidate position, making a hidden NSA backdoor in NIST curves significantly less likely.",
+              "Researchers still cannot explain why the generator skipped some candidates; bitcoin's secp256k1 curve was never implicated."
+            ]
+          },
+          {
+            "title": "3. CoreWeave Debt Crisis Rattles AI Stock Market",
+            "points": [
+              "CoreWeave, a cloud infrastructure provider renting GPU compute for AI workloads, accumulated $51 billion in debt and faces credit distress signals: default insurance costs jumped 33% in one week.",
+              "CEO Mike Intrator cited a backlog exceeding $100 billion from clients including Microsoft, Meta, and IBM, but analysts warn actual cash flows must materialize.",
+              "Market reaction spooked investors across AI stocks and chipmakers on a single trading day, despite CoreWeave's strong customer pipeline."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple bans AI nudify apps",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQrqAzaBE9TY1HQ6YumqTzi3ZfDv-CZi0SoF2wdbmW4Gloi0mH5ByXMXI5O5He_00irEVwKQ6Nj-IK7MoC6DhWJK69bVOFrKqT5b6Y9mHngu6Aa35ovJbDmErpAAsU-ywOORGp3P4n8ZZSrJJULVjho/4uy/qEsygSWMQRamzKFjC9LXtQ/h8/h001.yb5batEcLqgkQSWx7EzrMuer0w5iXjVm1glYIcIpK-M"
+          },
+          {
+            "label": "AI solves 25-year NSA number mystery",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yheRBNQ7vWcJTVLODefhesTGneFPyl7NSIbYQY7CbAZcpQwZjr3Hs9dz8srr3B3A7C5cTRcus9CCt4OxPPY2DrNM0m8__zCt-YyjSqjR9r3CEPlOaJGrD0AdeJssF13gsYaGd5fmc887Xs5MLkjt7qHV74I6mGuyvz_d4uVykYy94nqYpmY3mUI2vIrMt-XVcy-JD5FBjqxVE3UDOj2godpA/4uy/qEsygSWMQRamzKFjC9LXtQ/h9/h001.YG3blgM2gfCOxgX5g1fVVBGmz-GPLRGLYpCHLN6C7nY"
+          },
+          {
+            "label": "Anthropic pitches its own AI safety bill",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhTlbcjYsMFbsjiDbUdD5n_oX08Kq3mcsikm7f85B93nXex9YFeI_yc-P6QLYCVafWLMNJaVVVX8VG3kmR9rrGoIzlC6ARkhrPZLi3_T3XP7xbe2JbZ1M2iV-LqKrYAkuR5Ve_P8DxPv30ELhcWzKt6Y/4uy/qEsygSWMQRamzKFjC9LXtQ/h10/h001.-gQKSBBKxoxrTmC1XD3KYV1BNcRyjmg6Ew1UJArg6Ns"
+          },
+          {
+            "label": "Windows 11 is getting a speed boost",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhbPLeHrhH3noKfVZIUrNiRH47J1gV6TNAr-yJV9nMrOxYdpw6qMLVYur50CZau5Wp7jdwm2YAtJd8SArQcktcjFNZfD59G7gcftxt9-d5IIHnWuB95HKnrSJO-fBjJPxy_eD6wIMI4CvcH_8g7zVloDsXAT0EDhHLsvqd0ffRpXk3XB-nINFsyp1KoDJenr0uljFznbEBwMPCYC5Qx5f22F-p7S0c9SvHvPl_qs34QgF/4uy/qEsygSWMQRamzKFjC9LXtQ/h11/h001.UG4oBvDDoJMOiPleKuR5U2DaDtUHLyEuj_enzX0AYNM"
+          },
+          {
+            "label": "Fake WhatsApp app hits Play Store",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhXbev86Tndx7vyh6tgYoBA7VClpLhdB2I_9KNPhZJxhirj1Ppb0lCKF4KFqGwIbWrluwai9qPh0ONJVcSRlOfbpJf6VsodBNPfvLe1J9LPfMlJKRZcQoOkzKOdeELdBEKV5ZjSwJZ2-PWzXNa-Tpi5Q/4uy/qEsygSWMQRamzKFjC9LXtQ/h12/h001.q5NnmLhuVJQUwjtZcip0NcZX0R8jHCgC3ZI3gd9kVtE"
+          }
+        ]
+      }
+    }
+  ]
+}
