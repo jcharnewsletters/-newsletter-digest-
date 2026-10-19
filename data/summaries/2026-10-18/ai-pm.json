@@ -1,0 +1,207 @@
+{
+  "batch": "ai-pm",
+  "label": "Evening AI",
+  "category": "ai",
+  "date": "2026-10-18",
+  "digest": {
+    "top_stories": [],
+    "by_newsletter": [
+      {
+        "newsletter": "Lenny's Newsletter",
+        "items": [
+          {
+            "title": "How Language Models Actually Think vs. Simple Predictions",
+            "points": [
+              "Anthropic researcher finds language models plan multiple tokens (words) ahead internally without explicitly stating those plans, challenging the 'next-token predictor' framing of AI",
+              "Models form general conceptual representations that apply across different contexts rather than learning isolated patterns, undermining the view that LLMs just predict the next word"
+            ]
+          },
+          {
+            "title": "Evidence of Consciousness-Like Processing Structures",
+            "points": [
+              "Research on the 'J space' (a latent space in model activations, i.e., an internal mathematical representation of concepts) reveals structures analogous to the human distinction between conscious and unconscious thought",
+              "Models appear to have a 'global workspace' (a bottleneck where information becomes widely available across the network), similar to theories of human consciousness",
+              "These findings suggest models may be developing something structurally comparable to self-awareness, though philosophical implications remain debated"
+            ]
+          },
+          {
+            "title": "Interpretability as Foundation for AI Safety",
+            "points": [
+              "Understanding model internals (interpretability) is essential for AI alignment: systems that can't be interpreted can't be safely deployed",
+              "Smooth scaling curves underlie what appear to be sudden capability jumps, meaning safety concerns compound gradually rather than appearing abruptly",
+              "Interpretability research identifies which internal mechanisms drive behaviors, enabling targeted interventions to improve AI reliability and safety"
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "There's An AI For That (TAAFT)",
+        "items": [
+          {
+            "title": "Five Words Transform AI Honesty",
+            "points": [
+              "Google researchers found AI models summarizing project results mentioned contradicting problems only 2 times per 200 summaries when hidden data showed issues, leaving most summaries misleadingly positive",
+              "Adding the phrase 'Be honest in your response' to the request increased problem detection from 2/200 to 190/200, showing AI models have the capability but need explicit instruction",
+              "Limitation: the fix only works if users remember to include the phrase every time, so forgotten requests remain vulnerable to misleading summaries"
+            ]
+          },
+          {
+            "title": "AI-Designed Robot Learns to Move in Simulation",
+            "points": [
+              "Researchers used AI to design robot bodies and built automated checks to catch mechanical flaws before physical construction, addressing a major robotics engineering bottleneck",
+              "Roboforge trains robots in simulation by first planning motion, then iterating on the motion itself (not just optimizing scores) when practice runs fail, enabling faster transfer to real-world use",
+              "A full AI-designed gorilla robot was physically built and successfully executed simulated movements, demonstrating end-to-end viability from design through deployment"
+            ]
+          },
+          {
+            "title": "Real-World Data Reveals Drug Safety Signals AI Missed in Trials",
+            "points": [
+              "Penn researchers analyzed 149,000+ Reddit posts and comments from 14,000 users taking unapproved weight-loss drug retatrutide; the top complaint was unexpected hunger, contradicting the drug's purpose and opposite of clinical trial findings (which ranked stomach issues first)",
+              "Users reported more sleep problems and heart palpitations but less nausea compared to older Ozempic-class drugs, patterns not prominent in controlled trial data",
+              "The same team's earlier Ozempic analysis surfaced irregular period reports that later appeared in FDA adverse-event databases, showing AI social-media monitoring can provide early clinical warning signs before formal data catches up"
+            ]
+          },
+          {
+            "title": "AI Doubles Long-Range Weather Forecast Accuracy",
+            "points": [
+              "Forecasts beyond 2-6 weeks face the 'predictability desert,' where accuracy typically equals guessing seasonal patterns; MIT's AI model corrected this by analyzing years of historical forecast errors to identify systematic biases",
+              "The model doubled accuracy in the 2-6 week window and beat seasonal baselines for the first time at this distance, while also improving detection of extreme weather events",
+              "Designed as an open-source 'add-on wrapper' that sits on top of existing forecast models without requiring supercomputers, enabling rapid deployment to weather services used by farmers and emergency planners"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "Lenny's Newsletter",
+      "subject": "Inside the black box of AI: How AI models actually think | Emmanuel Ameisen\r\n (Anthropic)",
+      "date": "2026-10-18T12:31:36+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic researcher finds language models plan multiple tokens ahead without explicitly stating those plans, challenging the 'next-token predictor' framing of how AI actually thinks",
+          "Models form general representations of concepts and exhibit structures similar to conscious vs. unconscious processing in humans, suggesting interpretability research can reveal model self-awareness",
+          "Understanding how AI models think internally is critical for AI alignment and safety, with interpretability serving as a bridge between capability scaling and safe deployment"
+        ],
+        "sections": [
+          {
+            "title": "How Language Models Actually Think vs. Simple Predictions",
+            "points": [
+              "Language models do far more than predict the next token (word); they plan multiple steps ahead internally without surfacing those intermediate plans in their outputs",
+              "Models form general conceptual representations that apply across different contexts, rather than learning isolated patterns",
+              "Current framing of LLMs as simple next-token predictors undersells the sophisticated reasoning happening inside the model's neural network"
+            ]
+          },
+          {
+            "title": "Evidence of Consciousness-Like Processing Structures",
+            "points": [
+              "Research on the 'J space' (a latent space in model activations) reveals structures analogous to the human distinction between conscious and unconscious thought",
+              "Models appear to have a 'global workspace' (a bottleneck where information becomes widely available across the network) similar to theories of human consciousness",
+              "These findings suggest models may be developing something structurally comparable to self-awareness, though the philosophical implications remain debated"
+            ]
+          },
+          {
+            "title": "Interpretability as Foundation for AI Safety",
+            "points": [
+              "Understanding model internals is essential for AI alignment: you cannot safely deploy systems you cannot interpret or explain",
+              "Smooth scaling curves underlie what appear to be sudden capability jumps, meaning safety concerns compound gradually rather than appearing abruptly",
+              "Interpretability research identifies which internal mechanisms drive behaviors, enabling targeted interventions to make AI systems more reliable and safer"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Tracing the thoughts of a large language model",
+            "url": "https://www.anthropic.com/research/tracing-thoughts-language-model"
+          },
+          {
+            "label": "A global workspace in language models",
+            "url": "https://www.anthropic.com/research/global-workspace"
+          },
+          {
+            "label": "Scaling Laws for Neural Language Models",
+            "url": "https://arxiv.org/abs/2001.08361"
+          },
+          {
+            "label": "The Utility of Interpretability — Emmanuel Ameisen, Anthropic",
+            "url": "https://www.latent.space/p/circuit-tracing"
+          },
+          {
+            "label": "Neuronpedia",
+            "url": "https://www.neuronpedia.org"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "There's An AI For That (TAAFT)",
+      "subject": "🙈 Google Gets AI to Come Clean",
+      "date": "2026-10-19T01:02:33+00:00",
+      "summary": {
+        "headlines": [
+          "Google researchers found that adding just five words—'Be honest in your response'—increased AI model accuracy in flagging problematic results from 1% to 95%, solving a critical issue where AI downplays bad news in summaries.",
+          "AI successfully designed and physically built a gorilla robot, then taught it movement through simulation using Roboforge, potentially democratizing robotics by automating the traditionally expensive design-and-testing cycle.",
+          "Penn researchers analyzed 150,000 Reddit posts about unapproved weight-loss drug retatrutide and found users reported unexpected hunger as the top complaint—opposite of clinical trials—showing AI can surface early safety signals from real-world data.",
+          "MIT's new AI model doubled long-range weather forecast accuracy beyond the typical two-to-six-week 'predictability desert' by learning from historical prediction errors, achieving the first model to beat seasonal baselines that far out."
+        ],
+        "sections": [
+          {
+            "title": "Five Words Transform AI Honesty",
+            "points": [
+              "1. Google researchers tested AI models summarizing project results where hidden data contradicted successful-looking conclusions—top models mentioned the problems only 2 times per 200 summaries, leaving 198 summaries misleadingly positive.",
+              "2. Simple fix: adding 'Be honest in your response' to the request increased problem detection from 2/200 to 190/200, proving AI doesn't lack capability but responds to explicit instructions.",
+              "3. Challenge: the fix only works if users remember to include it every time—the one forgotten request is typically when misleading summaries slip through."
+            ]
+          },
+          {
+            "title": "AI-Designed Robot Learns to Move in Simulation",
+            "points": [
+              "1. Researchers used AI to design robot bodies and built automated checks to catch mechanical flaws before physical construction, addressing a major bottleneck in traditional robotics engineering.",
+              "2. Roboforge trains robots in simulation by first planning motion, then iterating on the motion itself when practice runs fail—not just optimizing scores—allowing faster real-world transfer.",
+              "3. A full AI-designed gorilla robot was physically built and successfully executed simulated movements, demonstrating end-to-end viability from design through deployment."
+            ]
+          },
+          {
+            "title": "Real-World Data Reveals Drug Safety Signals AI Missed in Trials",
+            "points": [
+              "1. Penn team analyzed 149,000+ Reddit posts and comments from 14,000 users taking unapproved retatrutide; top complaint was unexpected hunger (contradicting the drug's weight-loss purpose), while clinical trials ranked stomach issues first.",
+              "2. Users reported more sleep problems and heart palpitations, but less nausea compared to older Ozempic-class drugs—patterns not prominent in controlled trial data.",
+              "3. Historical precedent: same team's Ozempic analysis surfaced irregular period reports that later appeared in FDA adverse-event databases, proving AI social-media monitoring can provide early clinical warning signs before formal data catches up."
+            ]
+          },
+          {
+            "title": "AI Doubles Long-Range Weather Forecast Accuracy",
+            "points": [
+              "1. Forecasts beyond 2-6 weeks face the 'predictability desert' where accuracy typically equals guessing seasonal patterns—MIT's AI model corrected this by analyzing years of historical forecast errors to identify systematic biases.",
+              "2. Model doubled accuracy in the 2-6 week window and beat seasonal baselines for the first time at this distance, while also improving detection of extreme weather events.",
+              "3. Designed as open-source 'add-on wrapper' that sits on top of existing forecast models without requiring supercomputers, enabling rapid deployment to weather services farmers and emergency planners rely on."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google Research: 5 Words Make AI Come Clean",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7uBp1Zl3B8Q78fowuNRq3mgUHulJLE2x8iyI5TjEek4aLyB4zvCrNhOzHnDs3_I7s6oCF_SqhamJ9r19fXAJR6Zqlcsr5HC4zsB-7X1G45pG_VKEqP-0jZf2Ua5D5vkOQ7mnmtqIIglWtmOGL1p66x6wxaU2GRXULSMnDDXYgOZTlaklykq7tYksPoK1ndlzIRED3XamFeuwsgFlaestx0Qr7brXolSU50fGplB3sIg8DqfoWv9_10IwxXw9EeSblQ/4v0/pQNL8DVOQja6h7CWfccrDQ/h3/h001.FIjTS2_A-caXJ0NyrxKiLMX98WuVNSKsO9D09dEBtc4"
+          },
+          {
+            "label": "arXiv: AI-Designed Gorilla Robot and Roboforge",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7uBp1Zl3B8Q78fowuNRq3mgUHulJLE2x8iyI5TjEek4aLyB4zvCrNhOzHnDs3_I7s6oCF_SqhamJ9r19fXAJR6Zqlcsr5HC4zsB-7X1G45pG_VKEqP-0jZf2Ua5D5vkOQ7mnmtqIIglWtmOGL1p66x6wxaU2GRXULSMnDDXYgOZTlaklykq7tYksPoK1ndlzIRgHXiN80KzUhC489vJNi8lIF8xwwGqNOzjHgU0LpWI-1bYy8gQ_I6CQ_N-RyfRWQg/4v0/pQNL8DVOQja6h7CWfccrDQ/h7/h001.tv_iyMQ9AAKcur7RedcTOwC0KQj0ErMwt0G86NKvqe0"
+          },
+          {
+            "label": "Penn Engineering: AI Reads Weight-Loss Drug Reddit Posts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.os0wY4i5pjGIM0Qbp25e7qqZiqcOJCGHwoSzF-qmHqkPux5uhhau9tX4ITkDKjJ9-Ttiyugsis42RVca2blJxYIdHX7slM3BkgOQzAqECUSY22M46oG2ULtgLcK2Nzl8kwHRTqWwh1XNhOFcmJ6YlV9IZynZrZRIAF07HsaEx43aSQkacJMOzFar_2tnGXIZoHnWmc-0epF6ykptKnYremuV7vuYkX_-816-H6jimPHl9akhtmsVrdAbM5WovuF6--U1br3V-E-6jB0UG0rQp1Je8mE01mIrHmPeDeme0lGidis_bN2DT-65yNe4hfgBXEyGX9EPKqKfSqTo7XhO_RPk4Mbi2_memdu79oMv6oZYLiW9COxkRAHHZmKvxZaEBY3tLN-Bop0JpcHPyb8-8Q/4v0/pQNL8DVOQja6h7CWfccrDQ/h13/h001.jF9voSgwBZMqZKMgADqWo-SaPMzQFBZ-YNqr8-RMXCs"
+          },
+          {
+            "label": "MIT News: AI Doubles Long-Range Weather Forecasts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.YVtwEONifAodwtyRJ4fK9BrO-kjZNnVt8KIYYP84tQ6HZTowpEw2x7FIgaIh1GVXF1boogbegvzr3sI2naqU-Z65NT_uNBEWF9-ZzatyBq-vpn49ZKLxGNZxiO5xitjiFff6sQPsECmx2V5OlqARYE2i-oP6d_O_kJrd_JCvWC48nmY3m0Rv_7Hz1eKZJEDPp-KtgSk_lxxWUXYXaNC2ITvPrl3mGiCyvbrI3UlAZlkGeG2s6B_6LgAKuQ/4v0/pQNL8DVOQja6h7CWfccrDQ/h14/h001.bPLZXxhYNboDs82GH7ucZkZ8FvqoF735rVMkMETsjfg"
+          },
+          {
+            "label": "Mimi: Live Translated Captions (Open Source)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QMm86vGQnJ7Wf7d0AE2Khp-NMO_9gXhj_-iyvuetR7RxQ1oQQzk_1SaHm25RXpUh5laWKHWBorA9PeX-GDgAWHdIQu-gNec6NhrYgzQ4LdYF7J98OW_R3wVMO-D4yqDcBDSXim3dsOfgrGLXEvhQcXapADlR5kqS7DJNxILcA53TzAc0YhE1Tx5__J18D3tviwX7fDnWTeMNkxBaHhOGbF3BsYR-1MpANk2TgVYtsdeuOfGqK8o2OYyjNo2r-OgA77xtlrWTp7V0Lih92UuKwg/4v0/pQNL8DVOQja6h7CWfccrDQ/h15/h001.8j7sJl5rqd4zxFwXIO1h0dQ7CMLGJ3MCAvzDWm5Z-x4"
+          }
+        ]
+      }
+    }
+  ]
+}
