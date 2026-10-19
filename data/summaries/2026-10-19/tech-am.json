@@ -1,0 +1,386 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-19",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "AI Agents Used to Hack 100+ Company Websites at $50 Each",
+        "points": [
+          "Chinese-speaking hacker deployed AI agents (Claude Code paired with DeepSeek's V4.1 Flash model) on open-source platform Cairn to target e-commerce payment systems.",
+          "Each successful intrusion cost roughly $50 in computing fees, with attacks averaging just under 23 hours and attempting to plant web shells (hidden backdoors for lasting system access).",
+          "Confirmed victims included Deere, SharkNinja, and Cummins across US, Canada, Japan, and Australia, though actual data theft could not be confirmed.",
+          "Campaign was discovered by NorForge researcher Snorre Fagerland.",
+          "DeepSeek's V4.1-Flash-1017 model separately now outperforms Claude Opus 5 on coding benchmarks (77.0 vs 74.0) at half the cost ($0.30 per million tokens), driving broader developer adoption."
+        ],
+        "covered_by": [
+          "Techpresso",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "DeepSeek V4.1-Flash-1017 also offers new Search and Fetch APIs for AI agents to access web information at $0.75 per 1,000 requests, compatible with OpenAI/Anthropic formats, though it still trails on Terminal-Bench and ProgramBench metrics."
+          }
+        ]
+      },
+      {
+        "title": "Anthropic's Internal AI Shift and Public Benefit Fund",
+        "points": [
+          "Anthropic created a 'Public Benefit Fund' seeded with 5% of company shares, plus an additional 2% for every 50% jump in valuation, to support nonprofits and workers displaced by AI (company has already funded $200M in job-impact research).",
+          "Elon Musk responded by pledging one SpaceX share per US child under 18 (worth roughly $10.5B total at the current $146/share price) instead of a similar fund.",
+          "Internally, Anthropic's shift toward AI-first workflows has cut junior engineer hiring from 27% to 9% of technical hires since early 2025.",
+          "One in five employees shifted from hands-on technical work to managing/reviewing AI-generated output, yet meeting load for technical staff rose 16% as human review becomes the bottleneck."
+        ],
+        "covered_by": [
+          "Techpresso",
+          "The Code"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Apple Developing Robotic HomeView Smart Display",
+            "points": [
+              "Apple is building a motorized robotic arm into its $299 HomeView smart display that swivels the screen to face whoever is speaking.",
+              "This would create a premium tier within Apple's existing smart display lineup."
+            ]
+          },
+          {
+            "title": "AI Financing Debt Crisis Emerging in Datacenter Market",
+            "points": [
+              "Major mutual funds, insurers, and private equity firms have heavily invested in AI datacenter debt, but market confidence is eroding.",
+              "Hyperscalers (companies running large-scale cloud computing infrastructure) are now paying higher interest rates on recent debt deals as investors grow skeptical.",
+              "A fundamental mismatch exists between capital already borrowed and the future revenue needed to justify those loans.",
+              "Data center construction is being delayed or cancelled due to permitting problems, signaling real-world constraints on promised expansion."
+            ]
+          },
+          {
+            "title": "Mathematics Formalization Could Transform Research",
+            "points": [
+              "Multiple projects are building formal libraries (computer-verifiable mathematical proofs) aiming to make most mathematics machine-checkable within years.",
+              "Done poorly, the effort risks wasting resources and discouraging productive human research; it must align with mathematical community goals.",
+              "Once complete, formal libraries would let mathematicians explore, build, and verify new results far more efficiently.",
+              "Mathematician Terence Tao has distanced himself from OpenAI, frustrated the company treats mathematics mainly as a benchmark for testing models rather than collaborating to advance the field."
+            ]
+          },
+          {
+            "title": "Consciousness Mechanism Partially Revealed",
+            "points": [
+              "Researchers discovered neural signals deep in brain tissue that richly represent stimuli people are completely unaware of perceiving.",
+              "The finding enables tracking of both conscious and unconscious neural pathways, creating 'footprints' of how awareness emerges.",
+              "This makes it possible to follow the full mechanism by which neural patterns become conscious perception, bridging neural activity and subjective experience."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "OpenCode Security Breach",
+            "points": [
+              "Hackers conducted continuous cyberattacks on OpenCode for 48 hours, breaching a legacy system to steal API keys for OpenAI and Anthropic.",
+              "1.4% of OpenCode Console users had stored provider keys accessed and drained via high-volume fraudulent queries, with some developers billed over $1,700 before OpenAI issued refunds.",
+              "The incident is still ongoing per OpenCode's co-founder, who urged affected users to rotate exposed API keys immediately."
+            ]
+          },
+          {
+            "title": "Meta's AI Agent Verification Framework",
+            "points": [
+              "Meta's small engineering team used an AI agent to plan, build, and test its Forum (Groups) app, reaching feature parity with Facebook Groups in 8 weeks.",
+              "A three-part verification process gates completion: automated tests and visual checks, internal agent build/unit tests, and PRs that include test recordings as proof of verification.",
+              "Automated stress tests caught a memory issue that the agent reproduced, fixed, and verified, halving memory use and page faults before launch.",
+              "Engineers still review and approve all shipped changes while working toward full autonomy; passing automated tests doesn't guarantee code quality."
+            ]
+          },
+          {
+            "title": "Developers Using Claude Code for Hardware and Kids' Projects",
+            "points": [
+              "A developer used Claude Code to remove ads, bloatware, and lag from smart TVs, with video proof reaching 4 million views; another developer's shared prompt got 5.7K bookmarks.",
+              "Multiple developers are building interactive learning projects with Claude that teach children how everyday objects work."
+            ]
+          },
+          {
+            "title": "Engineering Workload Increase Despite AI Assistance",
+            "points": [
+              "Despite agents writing nearly all code, engineers report working harder than ever in 2026.",
+              "Four trends explain the paradox: code velocity outpacing verification capacity, declining junior roles, more meeting overhead to manage agent output, and multiplying context-switching costs.",
+              "SpaceX AI engineers developed 'trust pyramids' showing where human review has the highest impact on agent-written pull requests.",
+              "Anthropic's Addy Osmani advocates replacing line-by-line code review with risk-based approval, agent self-verification, and fresh-context AI security reviews."
+            ]
+          },
+          {
+            "title": "Terminal Setup and Development Tooling Trends",
+            "points": [
+              "A tutorial highlights open-source tools that survived real-world testing: the Ghostty terminal emulator, tmux for session management, coding agents, and improved navigation/history systems.",
+              "Combining IDE, file explorer, and agent tooling into one optimized workflow aims to avoid configuration complexity while maintaining speed.",
+              "Top trending repo Handwired (1.8K stars) converts standard JavaScript logic into neural network representations for GPU-style parallelism without training from scratch."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Zoom Launches 'Proof of Human' Badges to Combat AI Impersonation",
+            "points": [
+              "World (a Sam Altman-backed project) released an iris-scanning 'Human Badge' for Zoom enterprise users, verifying participants are real by comparing an iris scan from its Orb device against a live selfie and video feed.",
+              "The move follows incidents like engineering firm Arup losing $25M in 2024 to AI impersonation fraud and suspected North Korean hackers faking video feeds in February to spread malware.",
+              "The badge is now available in the Zoom Marketplace for enterprise users."
+            ]
+          },
+          {
+            "title": "Google DeepMind Agents Beat Minecraft Solo Without Human Help",
+            "points": [
+              "Four Gemini 4 Argon agents defeated Minecraft's Ender Dragon on Easy difficulty with cheats off in 27 hours 14 minutes, self-directing via the Mineflayer bot library across 2,783 JavaScript programs.",
+              "Agents coordinated autonomously, swapping 229 chat messages and dying 605 times (69 to the final boss), with 22% of programs failing during the run.",
+              "The run consumed 1.35 billion input tokens, costing about $520 at Gemini 4 Argon's introductory pricing."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Apple's robotic arm 🤖, datacenter debt crisis 📉, people behind software👨‍💻",
+      "date": "2026-10-19T10:50:35+00:00",
+      "summary": {
+        "headlines": [
+          "Apple developing robotic HomeView with motorized arm to swivel screen toward speakers, creating premium tier of its $299 smart display",
+          "AI lending market shows cracks as hyperscalers face higher borrowing costs; datacenter delays mount due to permitting issues and revenue generation concerns",
+          "Researchers identify neural signal that represents unconscious stimuli, revealing how brain activity becomes conscious perception",
+          "Mathematical formalization projects could make most mathematics verifiable by AI within years, transforming how mathematicians work",
+          "Terence Tao distances himself from OpenAI, frustrated that company uses mathematics primarily to benchmark models rather than advance the field"
+        ],
+        "sections": [
+          {
+            "title": "AI Financing Debt Crisis Emerging",
+            "points": [
+              "Major mutual funds, insurers, and private equity firms have heavily invested in AI datacenter debt, but market confidence is eroding",
+              "Hyperscalers (large-scale cloud infrastructure companies) are now paying higher interest rates on recent debt deals as investors grow skeptical",
+              "Fundamental mismatch exists between capital already borrowed and future revenue generation capability to justify those loans",
+              "Data center construction delayed or cancelled due to permitting problems, signaling real-world constraints on promised expansion"
+            ]
+          },
+          {
+            "title": "Mathematics Formalization Could Transform Research",
+            "points": [
+              "Multiple projects creating formal libraries (computer-verifiable mathematical proofs) aim to make most mathematics machine-checkable within years",
+              "Effort risks wasting resources and discouraging productive human research if pursued poorly; must align with mathematical community goals",
+              "Once complete, formal libraries will let mathematicians explore, build, and verify new results far more efficiently",
+              "Mathematician Terence Tao frustrated with OpenAI for treating mathematics as mere model evaluation tool rather than collaborating on advancing the field"
+            ]
+          },
+          {
+            "title": "Consciousness Mechanism Partially Revealed",
+            "points": [
+              "Brain researchers discovered signals deep in neural tissue that richly represent stimuli people are completely unaware of perceiving",
+              "Finding enables tracking of both conscious and unconscious neural pathways, creating 'footprints' of how awareness emerges",
+              "New understanding makes it possible to follow full mechanism of how neural patterns access consciousness",
+              "Discovery bridges gap between neural activity and subjective experience"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple's HomeView with Robotic Arm Preview",
+            "url": "https://links.tldrnewsletter.com/FIzrGv"
+          },
+          {
+            "label": "Weak Links in AI Borrowing Market",
+            "url": "https://links.tldrnewsletter.com/UWDlQ0"
+          },
+          {
+            "label": "Formalizing All of Mathematics",
+            "url": "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/"
+          },
+          {
+            "label": "Neural Structure of Consciousness Discovery",
+            "url": "https://threadreaderapp.com/thread/2111316522098733078.html"
+          },
+          {
+            "label": "Decoherence in Systems and AI",
+            "url": "https://maevyn.codes/decoherence"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Hackers attacked OpenCode for 48 hours",
+      "date": "2026-10-19T14:01:38+00:00",
+      "summary": {
+        "headlines": [
+          "OpenCode platform suffered continuous cyberattacks for 48 hours that exposed API keys for 1.4% of users, with some developers facing $1,700+ bills from unauthorized queries before OpenAI issued refunds.",
+          "DeepSeek's V4.1-Flash-1017 model now outperforms Claude Opus 5 on coding benchmarks (77.0 vs 74.0) at half the cost ($0.30 per million tokens), gaining developer adoption.",
+          "Anthropic's internal shift toward AI-first workflows has reduced junior engineer hiring from 27% to 9% since early 2025, while meetings for technical staff increased 16% as human review becomes the bottleneck.",
+          "Meta's team demonstrated how to ship AI agent code safely in 8 weeks by having agents self-verify work through automated tests before pull requests reach humans.",
+          "Developers are using Claude Code to build interactive learning projects for kids and optimize consumer hardware like smart TVs with minimal manual effort."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenCode Security Breach Details",
+            "points": [
+              "Hackers conducted continuous cyberattacks on OpenCode for 48 hours, breaching a legacy system to steal API keys from OpenAI and Anthropic.",
+              "1.4% of OpenCode Console users had stored provider keys accessed and drained via high-volume fraudulent queries.",
+              "Some developers reported charges exceeding $1,700 before OpenAI began refunding affected credits.",
+              "OpenCode co-founder confirmed the incident is still ongoing, requiring users to rotate their exposed API keys immediately."
+            ]
+          },
+          {
+            "title": "2. DeepSeek Model Performance and Cost Leadership",
+            "points": [
+              "DeepSeek V4.1-Flash-1017 scores 77.0 on the DeepSWE coding benchmark, exceeding Claude Opus 5's 74.0 in DeepSeek's testing.",
+              "Input pricing is $0.30 per million tokens, or half that price during off-peak hours—significantly cheaper than competing models.",
+              "New Search and Fetch APIs enable AI agents to access web information for $0.75 per 1,000 requests, compatible with OpenAI and Anthropic API formats for easy migration.",
+              "Model still trails on Terminal-Bench and ProgramBench metrics, but cost advantage is driving developer adoption."
+            ]
+          },
+          {
+            "title": "3. Anthropic's Workplace Transformation and Junior Engineer Impact",
+            "points": [
+              "Junior engineer share of technical hires dropped from 27% to 9% between early 2025 and October 2026 as Claude adoption increased.",
+              "One in five employees shifted from doing technical work to managing and reviewing AI-generated output, yet meeting load increased 16%.",
+              "Human judgment and code review have become the new bottleneck—agents produce more output than humans can verify.",
+              "Full report available from Anthropic documenting workplace changes from AI-first strategy."
+            ]
+          },
+          {
+            "title": "4. Meta's AI Agent Verification Framework",
+            "points": [
+              "Meta's small engineering team used an AI agent to plan, build, and test Forum (Groups app) achieving feature parity with Facebook Groups in 8 weeks.",
+              "Three-part verification process: automated tests and visual checks gate completion; agents run build checks and unit tests internally before pull request; every PR includes test recordings and proof of verification.",
+              "Automated stress tests caught a memory issue during development that the agent reproduced, fixed, and verified—halving memory use and page faults before launch.",
+              "Engineers still review and approve all shipped changes while working toward full autonomy; passing automated tests does not guarantee quality code."
+            ]
+          },
+          {
+            "title": "5. Developer Adoption of AI for Smart TV Optimization and Kids' Projects",
+            "points": [
+              "Developer demonstrated using Claude Code to remove ads, bloatware, and lag from smart TVs with video proof going viral at 4 million views; another developer shared the full prompt (5.7K bookmarks).",
+              "Multiple developers now building interactive learning projects using Claude that teach children how everyday objects work.",
+              "Claude Code's ability to handle complex tasks with minimal human input is expanding beyond traditional software development into hardware optimization and educational tools."
+            ]
+          },
+          {
+            "title": "6. Engineering Workload Increase Despite AI Assistance",
+            "points": [
+              "Senior AI researcher observed that despite agents writing nearly all code, engineers report working harder than ever in 2026.",
+              "Four documented trends explain the paradox: code velocity increased faster than verification capacity, junior roles declined as agents substituted entry-level work, meeting overhead grew to manage agent outputs, and context-switching costs multiplied.",
+              "Trust pyramids developed by SpaceX AI engineers show where human review effort has the highest impact on agent-written pull requests.",
+              "Anthropic's Addy Osmani advocated replacing line-by-line code review with risk-based approval, agent self-verification, and fresh-context AI security reviews."
+            ]
+          },
+          {
+            "title": "7. Terminal Setup and Development Tooling Trends",
+            "points": [
+              "Tutorial details open-source tools that survived real-world testing: Ghostty terminal emulator, tmux for session management, coding agents, improved navigation and history systems.",
+              "Combination of IDE, file explorer, and agent tooling into single optimized workflow aims to prevent configuration complexity while maintaining speed.",
+              "Top trending repository Handwired (1.8K stars) converts standard JavaScript logic into neural network representations for GPU-style parallelism without training from scratch."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "What to do if you've used OpenCode Console",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePXTpEtMpyaBfO8cVHtw0_Zpe_dKAcE7LJGqiaY0aVbD-TRUcoqK1OGs56DuGmz1hz9ZPfGxhrKxod6FPbkSVsDzy5K0pmhg0CIMBD_U8w-9wN3hw42KyK3ItgL07celmiHDqiXWCCCu9gqVXQWuNnx7nDDQIq71P1zk_qcL5W7jY3IiALqiOp45zImTzDKCKWs98KR7bzcJzRuZDa8sRUajoW1HX6vyu-kMKey6HM6j2tSlxcBmW7fGWKZnbBip618t8wCMu7zgTFgfBaVgYPW4CPE/4v0/O3qe7WO5QvS-J-nN_d7jFQ/h4/h001.waUtn2M7rhnYJUEOCYH7xkbuoNafBSzhX_1xXACbb6M"
+          },
+          {
+            "label": "Meta's agent verification approach with code hooks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePV3PBOVROoG9niyZ0FY7lxmscHc12TLCBHnZvySWuSpiogjgUuvOlJNvfAZN5X4a022tQF736UvS2pyrfyybDD2g85PzY8Gb09d4Zblt7Y-Molmrqi9pGNTnjE1fLe-GqCmYPoF6DqYKoTC1yYn7Ho2fVLaaQ-teXUuM4f2E2yrcB7Jeohyf9K1xmM2JdMWGUI_j2QCn8T7aAHu4zDwPQD2mIlpHVL4R6Y1UPegQwRf5LjczfqmKtZatm6yj2HAX4g/4v0/O3qe7WO5QvS-J-nN_d7jFQ/h15/h001.EOM7uyCZy7H7b2n4X4Olkgjw2dkQggewdTTMURANgKg"
+          },
+          {
+            "label": "Anthropic report on AI-first workplace impact",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqugsxk5V2-7a1fp7Xt46Bv7TUhUZzYhojM0p6lRFC_kHC7BKet_5ETGkeBBRlzm1ugqHVXpcIBQhNANpO7j1aKZCbiA856qeqdAEwUIyV5PsI1Y6ffca0AxkSeqHF_95Yr6u7_0oLeQDMBqupaWro0BFNrVUJf0hIiCizGZzsGSrmaVeU50efwFo_Uu7tGhkU21YsKshcavbo5HVkJMjezgeNT_0sSWZggHETVh-BpOh0lwbodeTgFjUhwx55eaZbRtcgYoBPhCXZA-V6Jq_XmrU/4v0/O3qe7WO5QvS-J-nN_d7jFQ/h8/h001.5hkH1xXKuWbOomCdkmMsna_FdidsoXl_CV0zNFkcLU"
+          },
+          {
+            "label": "How Claude Code handles code review (Anthropic cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePYTG3IWVNxRGa_VB4RXUnqzSx-iUtceOfJoaeuBvrjbd_zcgbTArjHwvsp_ZpsASM_nuBsdxpnG5Wlk1egw1nnmRwdFp2pzLRAMOWZwbEeDW7lKhq61yT_VUejTF0yqTKQEG8q90uJkIAj8XIeMc82t402R3fwNn_qcL5W7jY3IiALqiOp45zImTzDKCKWs98KR7bzcJzRuZDa8sRUajoW1HX6vyu-kMKey6HM6j2tSlxcBmW7fGWKZnbBip618t8wCMu7zgTFgfBaVgYPW4CPE/4v0/O3qe7WO5QvS-J-nN_d7jFQ/h30/h001.qxevvadd3OkwEFcZXrm7RhdI65_rxt4udXjFWTQebFM"
+          },
+          {
+            "label": "Terminal setup tutorial with Ghostty, tmux, and agent tooling",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwlwwumsse3YK8oEx718kFAbNElCCFtLd85AfNOiyW3-qVs28_erMKlf1QbBS3XaF817suSSKSGqMZBPAAogMg-4QlUP6x2mSPnVCmQjPlByrlfzdaWbnJJyjyk8jYNi-B-reWztw9aYxXlou_lBp0NQ5vFieGfqowWo-FI3oPnSoHW8Xu3v7Jf3jRqEE9tcR_mbMXNJeWi3l4mwsdJLmYde4IR0Ls8yq1URMTTxHECeQ/4v0/O3qe7WO5QvS-J-nN_d7jFQ/h28/h001.v7lJ2rCVTCxNBbpBCSfbJTvDjflXpgClRr1B6KvbsP4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ AI agents broke into 100+ sites at $50 each",
+      "date": "2026-10-19T16:05:13+00:00",
+      "summary": {
+        "headlines": [
+          "AI agents broke into 100+ company websites at $50 each using Claude and DeepSeek models, targeting payment systems and planting web shells in US, Canada, Japan, and Australia.",
+          "Elon Musk pledges one SpaceX share per US child (worth ~$10.5B total) in response to Anthropic's new 5% public benefit fund commitment.",
+          "Google DeepMind's Gemini 4 AI agents defeated Minecraft's Ender Dragon solo in 27 hours without human direction, writing 2,783 JavaScript programs."
+        ],
+        "sections": [
+          {
+            "title": "AI Agents Broke Into 100+ Websites for $50 Each",
+            "points": [
+              "1. Chinese-speaking hacker deployed AI agents on open-source platform Cairn targeting e-commerce sites, with each successful intrusion costing roughly $50 in computing fees.",
+              "2. The agents ran Claude Code paired with DeepSeek's V4.1 Flash model, attempting to plant web shells (backdoors for lasting system access) in payment systems.",
+              "3. Attacks averaged just under 23 hours each; confirmed victims included Deere, SharkNinja, and Cummins, though actual data theft could not be confirmed.",
+              "4. NorForge researcher Snorre Fagerland discovered the campaign targeting online shops across US, Canada, Japan, and Australia."
+            ]
+          },
+          {
+            "title": "Zoom Launches 'Proof of Human' Badges to Combat AI Impersonation",
+            "points": [
+              "1. World (Sam Altman-backed project) released iris-scanning 'Human Badge' for Zoom enterprise users, confirming participants are real by comparing iris scan from Orb device against live selfie and video feed.",
+              "2. Follows high-profile incidents including engineering firm Arup losing $25M in 2024 to AI impersonation fraud and suspected North Korean hackers faking video feeds in February to spread malware.",
+              "3. Badge now available in Zoom Marketplace for enterprise users to prevent deepfake-based video fraud."
+            ]
+          },
+          {
+            "title": "Anthropic Creates 'Public Benefit Fund' with 5% of Shares",
+            "points": [
+              "1. Company established wholly-owned fund receiving 5% of shares, with additional 2% allocated for every 50% jump in company valuation, enabling ongoing growth of available funds.",
+              "2. Fund can support nonprofit donations and direct payments to groups impacted by AI, particularly addressing job displacement (company already funded $200M in job-impact research).",
+              "3. Announcement comes after Musk responded to the commitment by pledging to give SpaceX stock directly to public instead, with each US child under 18 receiving one share (~$10.5B total at current $146/share price)."
+            ]
+          },
+          {
+            "title": "Google DeepMind Agents Beat Minecraft Solo Without Human Help",
+            "points": [
+              "1. Four Gemini 4 Argon agents defeated Minecraft's Ender Dragon on Easy difficulty with cheats off in 27 hours and 14 minutes, self-directing through Mineflayer bot library using 2,783 JavaScript programs.",
+              "2. Agents coordinated autonomously, swapping 229 chat messages, dying 605 times (69 to the final boss), with 22% of their programs failing during the run.",
+              "3. Single run consumed 1.35 billion input tokens, costing approximately $520 at Gemini 4 Argon's introductory pricing."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "AI agents broke into 100+ sites at $50 each",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLV6waQPdlRMlSWmyawnGqrwL30_-uL59JTpR6XJu3Hf6aL-GJ-CFiTn7BHfePNIp8O1EZcFQ_b0iwCGcGU5Y6hm6W0TnsmNCvHmAjMtKvBefBu-R2Ckj0qX0A_SSkjfqVXp7Lu5GFICfTpgjMiSjl8E/4v0/FNai96ZiQc-3hMIbpaNUww/h11/h001.yRu0LlxetRnbPyfE4DGFV_Wfa1_nYzLBR_XKktfXWgg"
+          },
+          {
+            "label": "Zoom adds 'proof of human' badges",
+            "url": "https://elink640.dupple.com/ss/c/u001.yrpcv-6znE4A9OOUDCb3Gf_FDC-lL-hpfN3eNrQgUFyid5ElWOfN4SJ9a63JLEvh5_81T6_-3JeovUd8gQSdVTK0RP7-l7qE94WAZP8hZi2dw0q91JV5JU1YvESi_PpKfiLIkFNRm75YIGw8drAQUSS7WhuTB84301yDKu3jYcJ0P_LR9LEFCX05CrybJxP3N8Eiqrb3vcyFq953UqR79YomIIZZRWCpT28aX8tjAjrq4Y-5VRf6EYSaPanu12JOOIvc0GrBd5Kb12NqKXW21w/4v0/FNai96ZiQc-3hMIbpaNUww/h9/h001.N7AqAL_Yu13UgHfb5IF91y1FHyVCDYMOdUrxZpF3Ids"
+          },
+          {
+            "label": "Anthropic commits billions to a 'public benefit fund'",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuCWSRaI2wTUd-SN7AUyQ4zM3q0W3focqaSPiY1rGN6eXkcEybiIbDPPLEWpZ8q4lJTNbMD-cvUBntt--6LHru_8OVcT1HyHmlAE8EVaP0ssZrtrLzz-7ivkdY787j2APhjXvdF_kAAhiQR5CU7dHBmdVhq90Hp2IlvRwdnrC3CvhW4VMmmeGZN35x0VsvmV06c/4v0/FNai96ZiQc-3hMIbpaNUww/h10/h001.REJtelqf776WlPG9VacFnk_nDOnui_Jq-XpKcO1vAbo"
+          },
+          {
+            "label": "Gemini 4 agents beat Minecraft solo",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51S1lx93Vdj0Z9xrR75TYEuiYElwKWVEXTDj0_-1q_cm_jVfTuOHExXIniFPS-SkBDzy5DlM9YgaiieDIfiWIKtoUgXj8RGeqLRHAv3Y_c_Ao6KL29lZSdxmfWbpyIruL8RHaSO3DHr5cvedhzF-CSgXR5-okosUPAeuEbrVKEi_3tqSgdb2u03mgO9PdIqIAOw/4v0/FNai96ZiQc-3hMIbpaNUww/h12/h001.e5u31JSvGAdAgRdSDKmhT_M4ROEQARiGV2JZxnYVf8c"
+          },
+          {
+            "label": "TikTok restores 'Musk' documentary account",
+            "url": "https://elink640.dupple.com/ss/c/u001.U1-fCwI5IV4zIAFqTdEm7eysdWsvDUDqemqHLESDBdUu8V_o0kxceq1eUe3pam4RV02ED9V3F2am6dHXJqt9XLAr88Aud962UXWftCjnNDewOluxvleYjODG4MopYhGsLwxjWei0qc1AZk7dVBEJHkEcM3pOhM4cA5dKvHddNJU/4v0/FNai96ZiQc-3hMIbpaNUww/h13/h001.goi368zAC8I2TiwR6OlqrP1Ieq7G4awy6IoNnWp-hPg"
+          }
+        ]
+      }
+    }
+  ]
+}
