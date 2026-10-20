@@ -1,0 +1,459 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-20",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Apple to unveil first touchscreen MacBook Pro on October 28",
+        "points": [
+          "Apple's 'Pro and tell' event on October 28 in Los Angeles will debut the first touchscreen MacBook Pro, reversing 16 years of resistance to laptop touchscreens (Steve Jobs called vertical touchscreens 'ergonomically terrible' in 2010).",
+          "14- and 16-inch models feature OLED displays and Dynamic Island (a notch-like interface from iPhone that shows notifications and system status), both firsts for Mac.",
+          "Devices run M5 Pro and M5 Max chips (same chips used in March models); retail availability starts November 6.",
+          "Event also introduces an M6-based MacBook Pro, refreshed iMac, and improved iPad mini with landscape-edge front camera.",
+          "This is the MacBook Pro's first major redesign since 2021; Bloomberg reports the laptops will be 'significantly lighter' though expectations for major slimness gains have cooled."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "Apple executives were still defending the iPad as 'the ultimate touch device' as recently as June 2025, making this a notable strategic reversal."
+          }
+        ]
+      },
+      {
+        "title": "Cloudflare's Clairic extraction model cuts AI inference costs",
+        "points": [
+          "Cloudflare introduced Clairic, a new class of 'extraction models' that pull structured/typed values directly from messy, unstructured data in a single forward pass (rather than generating new text like a traditional LLM).",
+          "Clairic returns null when a value isn't present, avoiding the hallucination problem where LLMs invent false information.",
+          "Paired with an LLM for cleanup, the approach was 3.2x faster and 49% cheaper than using an LLM alone to parse messy inputs.",
+          "Separately, Cloudflare cut its own average AI inference cost from $2.43 to $0.77 per request (68% savings) by optimizing message ordering across sessions to maximize cache hits and minimize redundant computation.",
+          "Clairic works alongside Clef, a companion decision model, to give agents cleaner data before processing."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Waymo to quintuple autonomous vehicle fleet by 2027",
+        "points": [
+          "Waymo plans to grow its fleet from 4,000 vehicles (operating in 15 U.S. cities) to 20,000 by the end of 2027.",
+          "Expansion is funded by a $5 billion private credit raise and bulk vehicle imports from China."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI's AI proves the quasi-Riemann hypothesis",
+            "points": [
+              "OpenAI's AI proved the quasi-Riemann hypothesis, a weaker version of the unsolved Riemann hypothesis, marking a step toward understanding prime number distribution.",
+              "The result could help validate the broader Riemann hypothesis itself, one of math's biggest open problems."
+            ]
+          },
+          {
+            "title": "Underwater volcano tested as electricity source",
+            "points": [
+              "Endurance Energy successfully tested geothermal power generation from the active underwater Axial Seamount volcano in the Pacific, using a 3-ton prototype that generated net-positive electricity in September.",
+              "The startup plans a winter 2026–2027 trial to sustain higher output, targeting a commercial 2-megawatt generator deployment in Tonga by 2027."
+            ]
+          },
+          {
+            "title": "Former OpenAI engineer arrested for planting recording device",
+            "points": [
+              "Abdulrahman Alfozan was arrested for placing a hidden recording device in OpenAI's office; prosecutors say a Saudi royal family member tried to recruit him, offering bail support.",
+              "The case highlights geopolitical tensions around foreign governments attempting to poach talent from leading AI labs."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Agents gain creative and collaborative superpowers",
+            "points": [
+              "Sunra MCP server (Model Context Protocol, a standard letting AI tools connect to external services) installs image, video, and audio generation models into Claude Code, Cursor, and Codex via one npm command, letting agents create app assets without leaving the coding environment.",
+              "Wabi 2.0, built by Replika's founder, is a multiplayer personal agent that builds mini-apps inside group chats for real-time collaboration."
+            ]
+          },
+          {
+            "title": "Inception's Mercury 3 speeds up agentic coding",
+            "points": [
+              "Mercury 3 drafts answers in parallel at 1,068 tokens per second with a 1M-token context window (the full conversation history an AI can reference).",
+              "Beats GPT-6 Luna and Claude Haiku 5.5 on agentic coding tasks, though Haiku still wins on longer coding jobs.",
+              "Live on OpenRouter, Vercel, and Baseten starting at $0.10 per million input tokens."
+            ]
+          },
+          {
+            "title": "Cheap AI models need behavioral guardrails to match expensive ones",
+            "points": [
+              "A Specmatic founder tested GPT-6 Sol (expensive) vs. GPT-6 Luna (cheap) on 40 Java backend builds with and without a behavioral harness (a set of specs, examples, and tests).",
+              "Luna alone passed only 3 of 10 builds; with harness guidance it passed all 10, at $0.273 per run — 33% cheaper than unaided Sol's $0.406.",
+              "Strategy: cheaper models benefit from continuous testing guidance during development, while expensive models only need final validation, keeping overall costs down."
+            ]
+          },
+          {
+            "title": "Developer tips on prompting and interviewing",
+            "points": [
+              "A senior developer shared prompt techniques that reportedly improve coding results in practice.",
+              "A viral post claims Big Tech coding interviews come down mostly to luck rather than pure coding ability."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "AI estimates cancer survival risk from a selfie",
+            "points": [
+              "Mass General Brigham developed FAHR-Face, AI trained on 40M+ facial images to estimate biological age and predict cancer survival from a single photo.",
+              "In a 4,000-patient test, 53% of those scoring 0.9–1 on survival risk died within 90 days, versus only 2% of those scoring 0–0.1.",
+              "Looking 5+ years older than actual age correlated with 21% higher death risk over ~4 years among 38,000+ radiotherapy patients.",
+              "The survival model focused on areas beneath the eyes and nose bridge; the age model emphasized facial folds, forehead, and temples. Clinical impact on actual treatment decisions remains unproven."
+            ]
+          },
+          {
+            "title": "Japan launches Phobos sample return mission",
+            "points": [
+              "Japan's MMX spacecraft launched October 20 on a 5-year, $578M mission to retrieve material from Phobos, Mars' largest moon, to determine if it's a captured asteroid or planetary collision debris.",
+              "Expected to reach Mars in August 2027, with samples returning to Earth in 2031; a French-German rover called Idefix will scout landing sites in gravity less than one-thousandth of Earth's.",
+              "MMX will attempt up to two landings in 2029, using a coring device and nitrogen-powered sampler to collect at least 10 grams of surface material.",
+              "Two prior Soviet probes (1988) and Russia's Phobos-Grunt (2011) failed at similar missions; success could reveal how Mars' moons formed."
+            ]
+          },
+          {
+            "title": "Meta's Prometheus supercluster cuts training interruptions by 99%",
+            "points": [
+              "Meta completed phase one of Prometheus, a gigawatt-scale AI supercluster in Ohio linking hundreds of thousands of Nvidia GPUs, with plans to grow to ~1M chips.",
+              "In mid-2025 the cluster had ~1,000 interruptions per 8,000 GPUs per day; Meta and Nvidia spent a year cutting that rate by 99%, eliminating major wasted compute costs.",
+              "Each rack runs 64 chips operationally with 8 in reserve, so a failed chip is hot-swapped without halting training; software caps GPU power and batteries absorb electrical load swings of tens of megawatts per second.",
+              "These engineering lessons now feed into Hyperion, Meta's next system, and could influence the pace of the broader AI race."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "US bans DeepSeek AI from federal agencies",
+            "points": [
+              "DHS ordered all federal civilian agencies to remove DeepSeek AI from systems and banned future purchases, citing digital fingerprinting of users and unauthorized data transmission to China.",
+              "The ban follows DeepSeek's R1 model achieving competitive performance against OpenAI and Anthropic while reportedly being trained 30-50% cheaper on less powerful chips."
+            ]
+          },
+          {
+            "title": "US Army builds self-replicating AI cyber weapons",
+            "points": [
+              "Project ECHOTRIBBLE involves AI agents that replicate like computer worms across operating systems, cloud systems, and air-gapped networks (systems disconnected from the internet) to autonomously infiltrate and 'neutralize' enemy targets.",
+              "Leaked Cyber Command documents show agents operate with minimal human oversight and self-destruct after completing missions.",
+              "The project narrowed 65 vendor proposals to 5 finalists in an October 6-8 assessment; security experts warn the agents could damage civilian infrastructure if they malfunction."
+            ]
+          },
+          {
+            "title": "Chinese tech giants order $35B in Nvidia chips to skirt export limits",
+            "points": [
+              "ByteDance, Alibaba, and Tencent placed a $35 billion order for 3+ million RTX Pro 5500 cards at ~$11,400 each, structured to comply with US export rules.",
+              "The RTX Pro 5500 has the same compute cores as the flagship RTX 5090 but adds 84GB memory, making it useful for AI training.",
+              "Nvidia can only fulfill 5-10% of global demand for these 3 million cards in 2027, forcing long waiting lists for Chinese buyers."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Touchscreen MacBook Pro 💻, Waymo to 5x fleet 🚗, inference cost cuts👨‍💻",
+      "date": "2026-10-20T10:45:33+00:00",
+      "summary": {
+        "headlines": [
+          "Apple unveils first touchscreen MacBook Pro on October 28 with M5 Pro/Max chips, Dynamic Island, and OLED display; also introducing M6-based MacBook Pro, refreshed iMac, and improved iPad mini.",
+          "Waymo plans to grow autonomous vehicle fleet from 4,000 to 20,000 by end of 2027 after raising $5 billion in private credit funding.",
+          "OpenAI's AI achieved a significant math breakthrough by proving the quasi-Riemann hypothesis, a weaker version of one of mathematics' biggest unsolved problems.",
+          "Cloudflare reduced AI inference costs by 68% through optimization techniques, cutting average per-request cost from $2.43 to $0.77.",
+          "Endurance Energy successfully demonstrated underwater volcano as viable electricity source with 3-ton prototype at Axial Seamount, targeting commercial 2-megawatt deployment in Tonga by 2027."
+        ],
+        "sections": [
+          {
+            "title": "AI Mathematics & Extraction Models",
+            "points": [
+              "1. OpenAI proved the quasi-Riemann hypothesis, a foundational step toward understanding prime numbers and potentially validating the broader Riemann hypothesis itself.",
+              "2. Cloudflare introduced Clairic, a new class of extraction models that extract, compute, and forecast values from unstructured data with higher accuracy and lower latency than traditional large language models (LLMs—AI systems trained on vast text to predict and generate language).",
+              "3. Extraction models avoid the hallucination problem where LLMs generate false information by providing answers directly derived from input data rather than generating new text."
+            ]
+          },
+          {
+            "title": "Autonomous Vehicles & Renewable Energy",
+            "points": [
+              "1. Waymo is expanding its autonomous ride-hailing network from 4,000 vehicles operating in 15 U.S. cities to 20,000 vehicles by late 2027, funded by a $5 billion private credit raise and bulk vehicle imports from China.",
+              "2. Endurance Energy ran a successful test of geothermal energy generation using an active underwater volcano at the Axial Seamount in the Pacific, generating net-positive electricity from a 3-ton prototype in September.",
+              "3. The startup plans a winter 2026–2027 trial to sustain higher power generation, with a commercial 2-megawatt generator deployment targeted for the Kingdom of Tonga in 2027."
+            ]
+          },
+          {
+            "title": "Apple Hardware Refresh & Inference Optimization",
+            "points": [
+              "1. Apple's October 28 event will debut the first touchscreen MacBook Pro running M5 Pro and M5 Max chips with OLED displays and Dynamic Island interface (a notch-like area showing active app status), alongside new entry-level and refreshed desktop products.",
+              "2. Cloudflare reduced its average AI inference cost from $2.43 to $0.77 per request (68% savings) by optimizing message ordering across sessions to maximize cache hits and minimize redundant computation."
+            ]
+          },
+          {
+            "title": "Security & Workforce",
+            "points": [
+              "1. Former OpenAI engineer Abdulrahman Alfozan was arrested for placing a hidden recording device in the company's office; prosecutors say a Saudi royal family member attempted to recruit him while offering bail support.",
+              "2. The incident highlights ongoing geopolitical tensions in AI talent recruitment, with foreign governments actively trying to poach engineers from leading AI research organizations."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple Announces Oct. 28 Event for Touch-Screen MacBook Pro",
+            "url": "https://links.tldrnewsletter.com/RWdXgY"
+          },
+          {
+            "label": "Waymo plans to quintuple its fleet",
+            "url": "https://www.semafor.com/article/10/19/2026/waymo-plans-to-quintuple-its-fleet"
+          },
+          {
+            "label": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
+            "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/"
+          },
+          {
+            "label": "Cutting our inference bill by 68% by being obsessive about optimization",
+            "url": "https://blog.cloudflare.com/obsessive-inference-optimization"
+          },
+          {
+            "label": "Startup taps underwater volcano as energy source in proof point test",
+            "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🔥 New personal agent in your group chat",
+      "date": "2026-10-20T14:07:20+00:00",
+      "summary": {
+        "headlines": [
+          "Cloudflare launches Clairic, an extraction model that pulls typed values directly from messy data 3.2x faster and 49% cheaper than using an LLM alone",
+          "Wabi 2.0 lets personal agents build mini-apps inside group chats, while Sunra MCP server adds image, video, and audio generation to Claude Code and other AI coding tools",
+          "Inception releases Mercury 3, a new LLM generating text at 1,068 tokens per second with a 1M-token context window (the full conversation history an AI can reference), beating competitors on coding tasks",
+          "Cheaper AI models need behavioral guardrails to match expensive models' reliability—one developer proved GPT-6 Luna matched GPT-6 Sol's performance when given test-driven feedback during coding",
+          "Senior developer shares prompt techniques that actually work, while viral post claims Big Tech interviews come down mostly to luck rather than pure coding ability"
+        ],
+        "sections": [
+          {
+            "title": "1. Cloudflare's new data extraction model",
+            "points": [
+              "Clairic skips text generation and pulls structured data directly from input in one forward pass, returning null when values aren't present",
+              "When paired with an LLM after cleaning data, the setup was 3.2x faster and 49% cheaper than using an LLM alone to parse messy inputs",
+              "Works alongside Clef (decision model) to give agents cleaner data before processing"
+            ]
+          },
+          {
+            "title": "2. Agents get creative superpowers",
+            "points": [
+              "Sunra MCP server installs leading image, video, and audio models into Claude Code, Cursor, and Codex with one npm command, letting agents generate app assets and demo videos without leaving their coding environment",
+              "Wabi 2.0, built by Replika's founder, is a multiplayer personal agent that builds mini-apps inside group chats for real-time collaboration"
+            ]
+          },
+          {
+            "title": "3. Mercury 3 speeds up agentic workflows",
+            "points": [
+              "Inception's new LLM drafts answers in parallel at 1,068 tokens per second, reducing wait time for agents with a 1M-token context window (enough to hold entire conversation histories)",
+              "Beats GPT-6 Luna and Claude Haiku 5.5 on agentic coding, though Haiku still wins on longer coding tasks",
+              "Live on OpenRouter, Vercel, and Baseten starting at $0.10 per million input tokens"
+            ]
+          },
+          {
+            "title": "4. Cheap models need behavioral guardrails, not replacement",
+            "points": [
+              "Specmatic founder tested GPT-6 Sol (expensive) vs GPT-6 Luna (cheap) on 40 Java backend builds with and without a behavioral harness (a set of specs, examples, and tests)",
+              "Luna alone passed only 3 of 10 builds; with harness guidance, it passed all 10 at $0.273 per run (33% cheaper than unaided Sol's $0.406)",
+              "Strategy: cheaper models need continuous testing guidance during development; expensive models only need final validation, keeping costs down while maintaining quality"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Build always-on agents with Pi Durable tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjzhc43CBu1bhcrjqvPOGyRNsAFxuT8QOtiAgBFhlc4Y0Dgjze73iIqF9H9X1QzDM8-y3Y2nuYRkLGh2pjICbNBZ5-q2cLFudBDWmiCL7WocSiBSwaYwd_Yp4NpiugGkyRJqV3DN4c0AODY2LAZ9IGEUYCnXwH0bnwlQwuXJqqFqOnGGbZvcNt1nNYXqh9PSux9nj1ZtcHcsJwoFTffneHrvUVWE5lQlGgsaZ8Kc7nu-IdjvzAz5Znb9Dvw6sv6OOXMOy2pDrIbeEJHQHVY9t_xS/4v1/RLLxBve7Qm-GkbMt72hh_A/h26/h001.FdAT2hGfJIH5tiEbyWL8pNir61aUkBlDu4zChaKg0Fs"
+          },
+          {
+            "label": "How to review agents for security issues by Anthropic",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.y8XueU-stBfRyqUeoBxfLlHq_IXNb3MOcKdPmSAsUVAY2G5tfaSsFOkXmSTU2cE9_u4iqgibBGQzP0L8dNlfFLY2ggHddL3YansoXV0OPObZWazB6-Dy1GOhsQxVEXeF_D4PfIpbpVoCGK82EPFE_eL5G4E68ANnPAL4EPRkj6Y6JvUSLaOGzaH1pCogyCMBFTRNcUMvQTkxjUuadHXchVTIIn3-Xv4cHqXjeEOmhugLXr4E94-GliU3x9F_Gw-5vc6KHKsTs3bvm_mnb2uqyN5A7wAQFxCQ1Sq-1TmCDDPOpiknCwWlVa9BQof-m9dGP1HtKxpS_VHMUKQZMth1w-J1IND5Z1zfCKZiuZM_g9o/4v1/RLLxBve7Qm-GkbMt72hh_A/h28/h001._xd4WHrgqiBA6xo_FMNNcHqVUWQ7sS2jyRa5cpejZo8"
+          },
+          {
+            "label": "Specmatic harness application brief",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.pljPPsurrJ8ITcFAp15gIXN2zo7g8Va4yGn5jbgqmX_fzBuLCt0uAXp8Cv4wpBhuqt5VRXBHkdxq1audyW2ixjI53Nt1vpnYCDVPNs3dG49Yf8vr7sV4zayo34Lm51tBOuRscFnZWkbtNZ2qR0SqtBldGjfzUjJIQJ3V4uLlhnpJOkTBM-WFZF_Q_DcoPKwbeUU2uq4rrP8faWL2w431dcjTHksd7j5k5vUBoKpPPS-AbImTzLkTHO20NV4C4f3_CAbLUj3FEIThO0oX25Fa8lZvU7Cp3A4ptWZN_SjfRrRoA6ED5QdVNT7byRNnfJBoUHnH2aqOa0PD1X_QfhNG9FXPpecbzQCwQgdFRh0IgZ0/4v1/RLLxBve7Qm-GkbMt72hh_A/h15/h001.zIhAuh9Z9D6N4bYR9zE57yTcnMyBJaPBQ1SdshM6ywo"
+          },
+          {
+            "label": "Prompting mistakes guide from senior developer",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGyJ2JWQd-BjWqV073vo1wkf6-P-RmEtqAxwtT_jvTQ-pasWW0VNgOvASuwnP4ACi5F88IRe5syA0UaNfFABpptfd0gl8PGPhDor9PTvW0r0LywDZSZRHkM9zDrObwpk1KUBiw1DstFpu-JAdEOlfOyau8cJITfYUop_ysLigFWxVMeZZlUoUlokmCYJzFT209IhpWvQoIXnZt_Ko9U8Eso3RcB6ST3EFl1D3zi7iYNIRuuR-xVlkupSmre07Frx1qmBs-Sr3A34Kz5TN9T7vGc/4v1/RLLxBve7Qm-GkbMt72hh_A/h21/h001.iYEJ_p1mL867LdmzRlDogWT0NLlpjXMD5OShbwxfeZ0"
+          },
+          {
+            "label": "QA your launch with 5 synthetic users prompt",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcETfhKV90XWf27U7KJh2IwV6_6PtWMWPleHEnuojmBfJXe3nAVNO1qzIa1TVEFOTaf96OAP0jfJ99fgC67SPvUSZbqO1RjzRA1RxLeNlU3lJeFvWW36agL9emOQlDN-AxV3lgy2-eywvYFEjGWmXVCewtX359XzfM9UWrX6QTMz-nb7w-quZXNPBrhRAX1kSkdLYoNntXaVtd-aS5jH5iFIHbJLh92FvQYn1GNBdKi_MLDGJFHlzWi27p4gszQNXzQjsRJibPAvL8kavUJqLUZY/4v1/RLLxBve7Qm-GkbMt72hh_A/h30/h001.Z97r00sGx688lllhj383RcWTIxSHN7MkwPrloISeI3Y"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🤳🏽 What AI sees in your selfie",
+      "date": "2026-10-20T14:31:15+00:00",
+      "summary": {
+        "headlines": [
+          "AI trained on 40M faces can estimate cancer survival risk from a selfie, but clinical impact remains unproven.",
+          "Japan launched a $578M mission to retrieve samples from Mars' moon Phobos, with samples due home in 2031.",
+          "Apple to unveil touchscreen MacBook Pro with OLED display on Oct. 28, reversing 16 years of resistance to laptop touchscreens.",
+          "Meta's Phobos-scale AI supercluster reduced training interruptions by 99%, freeing up computing capacity for faster model development."
+        ],
+        "sections": [
+          {
+            "title": "Medical AI From Facial Photos",
+            "points": [
+              "Mass General Brigham developed FAHR-Face, AI tools trained on 40M+ facial images to estimate biological age and predict cancer survival from a single photo.",
+              "In a 4K-patient test, 53% of those scoring 0.9–1 on survival risk died within 90 days; among those scoring 0–0.1, only 2% died.",
+              "Looking 5+ years older than actual age correlated with 21% higher death risk over ~4 years among 38K+ radiotherapy patients.",
+              "The survival model focused on areas beneath the eyes and nose bridge; the age model emphasized facial folds, forehead, and temples. Next step is proving these predictions improve actual treatment decisions, not just forecast outcomes."
+            ]
+          },
+          {
+            "title": "Japan's Phobos Sample Return Mission",
+            "points": [
+              "Japan's MMX spacecraft launched Oct. 20 on a 5-year, $578M mission to bring back material from Phobos, Mars' largest moon, to determine if it's a captured asteroid or ancient planetary collision debris.",
+              "The spacecraft is expected to reach Mars in Aug. 2027, with samples returning to Earth in 2031; a French-German rover called Idefix will scout landing sites in gravity less than one-thousandth of Earth's.",
+              "MMX will attempt up to two landings in 2029, using a coring device and nitrogen-powered sampler to collect at least 10 grams of surface material.",
+              "Success would solve a decades-old puzzle: two Soviet probes (1988) and Russia's Phobos-Grunt (2011) both failed. Even 10 grams could reveal how Mars' moons formed, since the surface contains both Phobos' own material and impact debris blasted from Mars."
+            ]
+          },
+          {
+            "title": "Meta's Prometheus Supercluster Breakthrough",
+            "points": [
+              "Meta completed the first phase of Prometheus, a gigawatt-scale AI supercluster in Ohio linking hundreds of thousands of Nvidia GPUs, with plans to grow to ~1M chips.",
+              "In mid-2025, the cluster experienced ~1K interruptions per 8K GPUs per day; Meta and Nvidia spent a year cutting that rate by 99%, eliminating massive wasted computing costs.",
+              "Every rack runs 64 chips operationally and keeps 8 in reserve, so a failed chip gets hot-swapped without halting training. Meta also caps GPU power via software and absorbs power spikes with batteries to manage electrical load swings of tens of megawatts per second.",
+              "Reducing interruptions directly translates to more compute available for training and experimentation. These engineering lessons now feed into Hyperion, Meta's next system, and could influence the pace of the entire AI race as clusters grow larger."
+            ]
+          },
+          {
+            "title": "Apple's Touchscreen MacBook Pro Reversal",
+            "points": [
+              "Apple is holding an Oct. 28 event ('Pro and tell') to unveil the first touchscreen MacBook Pro, with 14- and 16-inch OLED models running M5 Pro and M5 Max chips and featuring a Dynamic Island (a notch-like indicator showing notifications and system status).",
+              "Steve Jobs called vertical touchscreens 'ergonomically terrible' in 2010, and Apple's own executives continued defending the iPad as 'the ultimate touch device' as recently as June 2025; this reversal breaks 16 years of official resistance.",
+              "Bloomberg reports the new MacBook Pros will be 'significantly lighter' but recent reporting has cooled expectations for a major slimness improvement. An OLED iPad mini with a landscape-edge front-facing camera is also expected.",
+              "This represents the MacBook Pro's first major redesign since 2021, signaling a strategic shift in Apple's input philosophy for laptops."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Mass General Brigham AI faces cancer survival study",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.3RzBeIrAYylQAXZli7v_d0IKe_r-ZirMZri_jwAmnNI4Qxmdg4yooo8SCIBuUc4LHcBh_iM2RmSkZLetTkhTPM0cXI1RGmqJLa0RzspLqKTNYgKaLPSGIAYuEpvUL3IieZ746OYYcKvFSXCRCv-RUQLeH2-PkpCIAQea0iPkhReonx3vb-OLCGF34udSrgSZ1jO7rkkJIiBQGjz-t05NtSpOQSoXwEh2OCFGvtKUzVrby8DF0JTJWxvCecOGEExe7PoKlM4nGu0aLiIIewW21tjGsXDi39qxF1Hnv2WlMrPErWUewuLBmJzYhVvUhFp5QR66dT8iSyISSeX8oDWOdQ/4v1/pp1EYSVTQ7eY3FzdVyYazg/h6/h001.ILPmjaY9kYY173Pe6W807xuq75mnCFloTpG3GLvoDn4"
+          },
+          {
+            "label": "Japan's Phobos sample return mission launch",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.TVOPfGDj18_US_EBC2XircCd6eDidJfavQWkkf6weEa4nC48abHTz8B1VFNzXv8Q49ju254i3JLDGp9-y90raNKs1R9gA4zUlLNFCuFebS97RkKcIK4Gn7nTd5LI_ax7j__27K-ie4r-35PrbqSxRK21ITnCdzCj_SADy2mS8ogItVVSVX-tfPCJvyN1UfcgFzke6DYfiJUsN-NZ6p0KY6HQckpJN5IgBCq9KK32d8jceJ0VB93MBrxLDPNomj32eF1bcifSNs0eMGh8CHtA53Nu4T5xhCR63uWzZa8Yeksa5zAQTgckt2xHUP-6nYa5/4v1/pp1EYSVTQ7eY3FzdVyYazg/h7/h001.B47IKYBKXzXMaaFZdeHWD53npurX5_JR4XjMI_WfTFU"
+          },
+          {
+            "label": "Apple Oct. 28 touchscreen MacBook Pro event",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.L60pePfQHq_u-_vOkKwFH5KohRhzrqcAWJCzSz1pbOUXPejWzpKBPKJrmIhpY-eNaYPEqNF8SaDuubbm7j3PCd4n4P7Slb0Uhl1SRfB9War_PLJDhy24Za7DSeKUUrVkGTEFJCyUR204RuMtYGa6gTn6FNWWHA2u3oNpI6exe_vvwPC3w9B7POWvAN2HQZah8PpI0EOMJG4WBsW12kuU8Q0te1H2ZkIQtC5H4EbvCSEBJoJEuqVvZcwEQ07OcPit5ade5Gkc9hwfp1sVlY9nATiXQhan_V5Roqy4jIzrWLq9V84cT--Zoo47bo7zdAVU/4v1/pp1EYSVTQ7eY3FzdVyYazg/h9/h001.PvLuHUGTdjQUXcASbXkhKVd5Tj_gZS_46TVirlqFslE"
+          },
+          {
+            "label": "Meta Prometheus AI supercluster engineering details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.swLyWH3ANzT5O5z0r3ZYnyufD0imLiFgqVNKs5S8tGqJtSBZdCFTBv0kakn-VcxmIMG0fSXbrmIo-7PWwcT6OM7K-2US7P1ABJ_vvoSdu4gNB71qifwZ9OmINEOsJmGgKhnPq7aF8VZfp2vP61t4hOfbNcZTAXkBX1lXCEZnMQ7ZcwSQs0AhPpeE2FG7pCXSynM6kLfyy6kYALiEvgNIAhnP6R4y4IU6NdoxBfr24LF1HDM6KHKrOUUifeAe-M4E6ziZpchUTYdj4aCIIE3Z26KzWY_IDsuURa-Qzn7GCoeodxMIQeG-w_KCBIuclpf1LXNfO73RS76VdT91i7mKNQWueRT19AdM2Gv7ZYTOdKs/4v1/pp1EYSVTQ7eY3FzdVyYazg/h14/h001.TrvrAutofbU_EGTMkFUb34MrjuUs5m-hUh09LODO-Q4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Apple's first touchscreen MacBook nears",
+      "date": "2026-10-20T16:58:06+00:00",
+      "summary": {
+        "headlines": [
+          "Apple's first touchscreen MacBook Pro arriving October 28 with Dynamic Island and OLED display, reversing years of iPad-Mac separation stance",
+          "US bans DeepSeek AI from federal agencies over data security risks despite its R1 model beating OpenAI on several benchmarks",
+          "US Army building ECHOTRIBBLE: self-replicating AI agents designed to autonomously infiltrate enemy networks and 'neutralize' targets",
+          "ByteDance, Alibaba, Tencent order $35B in Nvidia GPUs to skirt export restrictions, but chip shortage means only 5-10% of demand can be met",
+          "FBI arrests former OpenAI engineer for allegedly planting listening devices to steal lab secrets on behalf of Saudi government"
+        ],
+        "sections": [
+          {
+            "title": "Apple's Touchscreen MacBook Pro Launch",
+            "points": [
+              "Event 'Pro and tell' scheduled for Wednesday, October 28 in Los Angeles will debut the first touchscreen MacBook Pro",
+              "Device includes Dynamic Island (a notch-like interface borrowed from iPhone) and OLED display, both firsts for Mac",
+              "Machines use same M5 Pro and M5 Max chips as March models, retail availability starts November 6"
+            ]
+          },
+          {
+            "title": "US Blocks Chinese AI Technology Over Security Concerns",
+            "points": [
+              "Department of Homeland Security ordered all federal civilian agencies to remove DeepSeek AI from systems and ban future purchases",
+              "Order cites risks including digital fingerprinting of users and unauthorized data transmission to China",
+              "Ban follows DeepSeek's R1 model achieving competitive performance against OpenAI and Anthropic while being trained 30-50% cheaper on less powerful chips"
+            ]
+          },
+          {
+            "title": "Army's Autonomous Cyber Weapons Program",
+            "points": [
+              "ECHOTRIBBLE agents would replicate like computer worms across multiple operating systems, cloud systems, and air-gapped networks (systems disconnected from internet)",
+              "Leaked Cyber Command documents reveal agents operate with minimal human oversight and self-destruct after completing missions",
+              "Project narrowed 65 vendor proposals to 5 finalists during October 6-8 assessment; security experts warn agents could damage civilian infrastructure if they malfunction"
+            ]
+          },
+          {
+            "title": "China Tech Giants Race for Nvidia Chips Amid US Export Limits",
+            "points": [
+              "$35 billion order for 3+ million RTX Pro 5500 cards at ~$11,400 each complies with US export rules but represents massive demand surge",
+              "RTX Pro 5500 has same compute cores as flagship RTX 5090 but adds 84GB memory, making it useful for AI training work",
+              "Nvidia can only fulfill 5-10% of global demand for 3 million cards in 2027, forcing massive waiting lists for Chinese buyers"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple's first touchscreen MacBook nears",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhdZnh81_SV88Z8S9NiXNVfeSNDiQ1Q5zW6DenSSTFrpRMWiZrFKJPU9GesVCnEeP1gA8z2hImt4t37r46vU8SLhPT2HWoIrktxvLH73b7eKucDEJJXMoLONNPS85EGOFXoAiqBUJ6DnGtuZ734BDIgM9-MHzyxAlhrRqVWfhELnGjppCESq1cphChXT2HsSuj32Xj4Y-JW0ovlsV7A36fXvRQ6vnhDJj69Q6ow1Gp47FbNtB1DNa-Y2OvKGmIpiwv1QGlUiXJ8QYk4nGSBHWOYyYHovaCcRXz6M0Du0Qm3FbxHTKmmR6ZVpraZVkr9gtF8jKuYTpe38ZyEJAeuwwKS8xE_Btr3yKVxsZGVYY_WhBYcCcYbp7KOGA-pboKCwjwY7iiX68xIru5cda6aGqtcF5PykxJ7BVE4USnq15SH7Xx5xNefrCVVgqNRii2jxWvYL_smPc2X4wffOQJUGlkwmtnCXhxaMstNk27U8bNrTGqL944ALGf-8A-vNdvodBVk2ytvTTRo0eEECHmZeohYz0WPY9EF_mFRWxuM-daicUtgZnB1mzXNbTf5ue9kzvzfyMTMmHB8Avn_wSOGt0yng"
+          },
+          {
+            "label": "US bans DeepSeek from federal agencies",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20iiFJ4-arZHwyT9Z3lFJfc9tXLtjQQYpUfTs1Go_NmraVsxRW2AdBMBuIoagm0HjFK3Df-DoV80SSUIwjpQXxNF1gCDIqyGjBYMWxCi_7tmFG9LYZGl2cZBOA2xUk4NhboA-r4AdqmKG1MYOeL441SwnH5wHgJZB03gA7dlUDF5M5w"
+          },
+          {
+            "label": "US army builds AI to hack enemy networks",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfGsZLR8-7sDN9NB01TjCfqngHK4dP4JmvvuZcQ5M3mREPrxMHPLh1mrTSWIvMSLnakZMeIjjiRZvxNnNBRGWrdjERQExCVqbDHaYuv6dV3JNgZTyYlwrbltWa3zL0-7qV46IQeVERplBDYcu-ssGvmXLGAGG_wPrpkkI1eL5nhzP5rrJMkZJW4SiQB5CYOjtLmXv_v4CSSzqqCPOmsyeFHKb8ifs0rKlqv_1NVW0LUPPF__dJO9z0uTEnu7ZdwVsRF6xZF8TZNswH_UHPxIiQQvdrI5Id1Kfrs87A1OoWnNosKG7JMDwITe-UdkSTpjLqWG4yH5WqccY7bZ7SxUe-pZEwpBJGdZxUZH1d_il_-8wF1pH5omjUmM9UjKygwlh1BBGz8FclPIe8TN1piqfmaPB3UgIslr_l61LRwvqWwf"
+          },
+          {
+            "label": "China's tech giants order $35B in Nvidia chips",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfGsZLR8-7sDN9NB01TjCfpZYjwQ9F1MVKgEuvAYWWaOB7HsA3CRcq8e33srR0I_EUKxPQaQP_zecY2PVgAQgRZcyKtfVb-dCzkwwLNAwWpgdBdzjXhNmpBD9M5QllGFsaRzkWIvCQDuYLS1z3ibGzxwO9-5JvPgyeQjZKwtNDZntYwDiEVkp1_rRHNBqdQwg9iHoqTlsb-vPdWxxJ4kXayO6owD7xiYBiBsc_bPcvFs54nVirkoDjXhk4hYTqOWCp4XS9sIPIqiWhz8bPaY8dvfCaeJFQvwnifOnWqORe_8elOF4gsdlD-cxxHWIpoOM5XpbroumOpoEsOxJ2Dy_VSAw04fQYNi9n-1ZVQJVIBaFAi6_E9d7IAuFIep5yVQYzUMPyabX_isxubTb03z5i4SDRAABgE8hFgSUXdNbRMQhkDZDjYbFPTpqoUymIp8wNtzj7zLrBNlv-EeGbzgQUY"
+          },
+          {
+            "label": "Waymo plans to quintuple fleet to 20,000",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhSwhi3taDXRufKpSeu719jzrhybSzq7aYzI3zcAFlTpLQ4NGGgxl8PaSjQbZnFfXBXD0YmseupaEa_yay6xBM_k52hx8tDY6GeIDjY8eIn9CikPaGQQTagupEVwge_gZET1NspHKv5fw9vTUea8leDuCnyIutUB8XJbZdPPGYOXW"
+          }
+        ]
+      }
+    }
+  ]
+}
