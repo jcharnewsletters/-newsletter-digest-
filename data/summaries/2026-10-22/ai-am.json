@@ -1,0 +1,557 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-10-22",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Critical PHP Vulnerabilities Expose 70% of the Web",
+        "points": [
+          "Two decade-old bugs in PHP (coding language behind ~70% of websites) let hackers hijack servers with no login required.",
+          "Google-owned Wiz and security firm Calif used OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon to discover the flaws in August, with patches following a two-month collaboration with PHP maintainers.",
+          "NSA recommended immediate disconnection of unpatchable systems; Finland, Germany, and the Netherlands pulled sites offline, and Cloudflare reported early attacks emerging.",
+          "OpenAI disclosed it still has several significant vulnerabilities awaiting fixes and launched a coordinated global awareness effort plus a Codex skill/PHP vulnerability checker tool to help companies assess risk.",
+          "OpenAI called it 'one of the most impactful security issues in recent memory,' and the event is being referred to as a 'Black October' wake-up call about the fragility of pre-AI code."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR AI",
+            "point": "OpenAI also proposed an industry-wide framework for coordinating responses when AI discovers security flaws."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Separately, a tampered LiteLLM (a tool connecting apps to AI models) release stole credentials for about two hours before being caught and removed."
+          }
+        ]
+      },
+      {
+        "title": "Anthropic Launches Claude Duet: Proactive AI Agent",
+        "points": [
+          "Duet is a standalone app built on Claude Opus 5.5 that runs on its own dedicated cloud computer, working 24/7 even when your phone or laptop is off.",
+          "It carries over memory, skills, and connected apps from the existing Claude account, and uses the same Pro/Max usage limits.",
+          "Handles tasks like morning briefs, calendar tracking, and meeting booking, checking connected apps periodically and messaging you only when action is needed.",
+          "Gains payment capability via a one-time virtual card (Stripe's Link wallet/Shop Pay) for autonomous purchases, but requires explicit user approval before sending messages, making payments, signing documents, or deleting anything; it's blocked from trading securities or moving money between accounts.",
+          "A new classifier blocks sharing of credit card numbers, IDs, and health/finance details unless explicitly approved; Anthropic says it is weaker at personal errands than work tasks and can misread threads or urgency.",
+          "Now rolling out as a research preview to a waitlist for US Claude Pro and Max subscribers."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Opus 5.5 is currently the top-ranked model on the Artificial Analysis Intelligence Index."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Credentials are never shown directly to Claude, per Anthropic's 'Managed Agents' design."
+          }
+        ]
+      },
+      {
+        "title": "OpenAI Expands Distribution via Google Cloud",
+        "points": [
+          "OpenAI struck a deal to sell its frontier models and Codex through Google Cloud's Model Garden, with native access controls and governance for enterprise workloads.",
+          "OpenAI's models will also appear inside Google's own Antigravity coding app and Gemini Agent, expanding enterprise reach for agentic workflows (AI systems that autonomously plan and execute multi-step tasks)."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Major AI Funding Moves",
+            "points": [
+              "Flapping Airplanes secured $1B at a $6B valuation to build GPU software aimed at making AI training and inference cheaper.",
+              "Meta introduced a nonvoting share class to continue funding its AI buildout up to $145B, citing the success of its Muse agent as validation of prior spending."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Drug Discovery at Scale: 1,946 AI Agents in 32 Minutes",
+            "points": [
+              "OpenAI, PerturbAI, and Scripps ran parallel GPT-Rosalind agents on mouse-brain data, ranking potential drug-target leads in just 32 minutes.",
+              "Currently only a preprint with no lab validation yet; viral claims about quantization (model compression) worsening bias are unconfirmed, so results need peer review before being treated as proven."
+            ]
+          },
+          {
+            "title": "Git Worktrees: Running Multiple Coding Agents on One Repo",
+            "points": [
+              "A git worktree is an extra folder from the same repository with its own branch, letting multiple agents work without stomping each other's edits.",
+              "In Claude Code, use `claude --worktree feature-auth` in one terminal and `claude --worktree docs` in another; for Codex CLI, run `git worktree add ../project-bugfix -b bugfix-123`, then `cd` and start `codex`.",
+              "Commits are visible across worktrees but uncommitted edits are not; split work by file to avoid collisions, and merge one PR at a time to manage conflicts.",
+              "Gotchas: each worktree needs its own `npm ci` install, two dev servers can't share a port, and shared databases aren't isolated between worktrees."
+            ]
+          },
+          {
+            "title": "LLMs Show Bias Toward Japan in Cultural Questions",
+            "points": [
+              "Researchers (University of the Basque Country & Cardiff) found popular LLMs favor Japan when asked open-ended cultural questions.",
+              "The bias reportedly emerges during supervised fine-tuning, the stage where models learn to be 'helpful.'"
+            ]
+          },
+          {
+            "title": "Other Product Updates",
+            "points": [
+              "ChatGPT ads expanded to 89 countries with over 100,000 advertisers.",
+              "Notion Auto stretches agent credits 10x by automatically routing tasks to cheaper or stronger models as needed."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Agent-Flation: How Shopping Bots Could Raise Prices",
+            "points": [
+              "Amazon ($68B ad revenue in 2025) and Walmart ($6B) rely on advertising income to subsidize lower prices, free delivery, and perks\\u2014a model disrupted when AI agents shop without clicking ads.",
+              "As agents bypass ad-funded pathways, companies may compensate through higher prices, fees, or subscriptions.",
+              "Platforms are building defensive walls: Amazon blocked Meta's Muse agent in September, and Yelp, eBay, Zillow, Pizza Hut, Adidas, and airlines have followed with similar access restrictions.",
+              "Control over agent-driven shopping integration could determine future pricing leverage across e-commerce."
+            ]
+          },
+          {
+            "title": "UniqueHuman: AI Agents for Chronic Illness Monitoring",
+            "points": [
+              "Former Apple Watch lead Praneeta Pujari launched an iOS app that proactively monitors chronic conditions using data from wearables or medical records.",
+              "Targets migraines, long COVID, fibromyalgia, and POTS (postural orthostatic tachycardia syndrome\\u2014a condition causing heart rate spikes when standing).",
+              "Uses AI agents to turn raw health signals into personalized guidance, shifting from passive tracking to active condition management."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "Building a Verified Browser Agent with Playwright and OpenAI",
+            "points": [
+              "Author built a Python agent that navigates websites autonomously, searching for a Mark Twain quote containing 'truth' by breaking tasks into controlled, verified steps.",
+              "Architecture: model receives an ARIA snapshot (semantic page description using roles and accessible names) and proposes one of two actions (click a link or finish); Python code executes the validated action, looping up to 12 steps.",
+              "Setup requires pip install playwright openai pydantic, playwright install chromium, an OPENAI_API_KEY, and a model supporting Structured Outputs (enforced response format).",
+              "Verification layer checks exact quote text, confirms author, validates link existence, and tracks visited URLs to prevent loops\\u2014catching five failure modes: invented quotes, wrong attribution, missing links, repeated pages, and unverified success.",
+              "Production advice: start with narrow, provably-successful tasks, add verification for every new capability, trim tokens on large pages, and use real sandboxing rather than simple path checks.",
+              "Tools of the week: Tiden (spec-based verification for agent code changes), bmux (open-source split-pane browser for background agent sessions), and Rill Browser (Mac-only tool linking the current page to Claude Code or Codex)."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Recursive Flint: Efficient Local Coding Model",
+            "points": [
+              "40-billion-parameter mixture-of-experts model (multiple specialized sub-models that activate selectively) that only activates 2.5B parameters per token for efficiency.",
+              "Built in under 4 months by a small team of humans and AI agents, designed for coding tasks on consumer hardware.",
+              "Achieves 125+ tokens/second on an M4 Pro MacBook and 150+ on a 64GB NVIDIA GPU, fast enough for daily coding workflows.",
+              "Runs entirely locally, avoiding sending proprietary code to remote servers\\u2014addressing enterprise data privacy concerns."
+            ]
+          },
+          {
+            "title": "Long Lake's Service Business Acquisition Strategy",
+            "points": [
+              "Thesis: acquiring established service businesses overcomes AI deployment barriers like customer trust, domain expertise, and proprietary data that pure software struggles with.",
+              "Partnered with 40 businesses to convert AI automation into measurable operational gains in cost and revenue.",
+              "Backed by $7.5B in funding, signaling a venture-scale bet on this services-plus-AI model."
+            ]
+          },
+          {
+            "title": "Claude API Officially Versioned",
+            "points": [
+              "Anthropic released Claude API version 2026-10-21, its first official versioning since 2023; new SDK major versions default to this new API, though the old 2023-06-10 version isn't deprecated.",
+              "OpenAI also released new major SDK and CLI versions, with a migration guide available for breaking changes."
+            ]
+          },
+          {
+            "title": "Models Can Hide Messages in Images",
+            "points": [
+              "Research shows language models can encode hidden messages in images that only the same model can decode.",
+              "This is flagged as a potential precursor to steganography (hiding data inside other files) that would be hard to detect."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🚨 AI finds a security hole in 70% of the web",
+      "date": "2026-10-22T10:08:11+00:00",
+      "summary": {
+        "headlines": [
+          "AI models catch critical PHP flaws affecting 70% of the web—two decade-old bugs let hackers hijack servers with no login, prompting NSA warnings and emergency offline moves by Finland, Germany, and Netherlands.",
+          "Anthropic launches Claude Duet, a personal AI agent built on Opus 5.5 that works 24/7 on its own cloud computer with memory, skills, and payment capability via Stripe integration.",
+          "OpenAI says it has more major security vulnerabilities still waiting to be disclosed after GPT-5.6 Sol helped researchers identify the PHP flaws alongside Google's Gemini 4 Argon.",
+          "Flapping Airplanes secures $1B at $6B valuation to build GPU software making AI training and inference cheaper; OpenAI also sells its models through Google Cloud with Codex landing in Google's Antigravity and Gemini Agent."
+        ],
+        "sections": [
+          {
+            "title": "PHP Security Crisis: Two Critical Flaws in 70% of the Web",
+            "points": [
+              "1. Security firm Calif and Google-owned Wiz discovered two decade-old vulnerabilities in PHP (the coding language behind ~70% of websites) using OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon in August and weeks later.",
+              "2. The bugs allow hackers to hijack servers with no login required; PHP pushed patches after a two-month collaboration with maintainers, with OpenAI calling it 'one of the most impactful security issues in recent memory.'",
+              "3. Finland, Germany, and Netherlands pulled websites offline immediately; Cloudflare reported 'early attacks emerging,' marking a massive wake-up call that pre-AI code is far more fragile than imagined.",
+              "4. OpenAI disclosed it has 'several significant vulnerabilities' still being fixed—meaning the security implications are broader and the window for attackers using AI to find flaws has widened."
+            ]
+          },
+          {
+            "title": "Anthropic's Claude Duet: Personal Agent Era Arrives",
+            "points": [
+              "1. Duet is a standalone app powered by Claude Opus 5.5 that takes proactive actions, works 24/7 on its own cloud computer, and carries over memory, skills, and connectors from the Claude app.",
+              "2. Example tasks include morning briefs, calendar tracking, and meeting booking; Duet gains payment functionality via one-time virtual card from Stripe's Link wallet for autonomous transactions.",
+              "3. All deletions, payments, signatures, and outgoing messages require user sign-off first—Anthropic prioritized security and safety over autonomy speed, differentiating it from other agent launches.",
+              "4. Duet conversations count toward normal Claude usage limits; research preview rolling out in waves to waitlisted U.S. Max and Pro subscribers, positioning Opus 5.5 as the frontier edge against competitors."
+            ]
+          },
+          {
+            "title": "Major AI Funding & Partnership Moves",
+            "points": [
+              "1. Flapping Airplanes secured $1B at a reported $6B valuation to build GPU software designed to make training and running AI models cheaper—a direct bet on inference cost reduction.",
+              "2. OpenAI struck a deal to sell its models and Codex through Google Cloud; models will also land inside Google's own Antigravity coding app and Gemini Agent, expanding enterprise distribution.",
+              "3. Meta introduced a nonvoting share class to continue funding AI buildout up to $145B, with the success of Muse agent validating previous spending and signaling deepening capital commitment."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI's model helps catch critical PHP flaws",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa-IUY9yqSc2cx0km5OJXo-Mr5izkod9Kzp6ct8OFwJKYa4RYO7aif0xPpmzV2ziWVx0XXjUPHJJ96uxpVisy3qz078T4AFZcsPugSxXXoMHuQAHOmRM_oR6BPBgbkjSGecxfX56cCW7-kRTOXz-P-xulHNkomU5cSF5TLIrFaTQpvfu8RSJDpbv1N7Uge7N_70f1FKH6npn0V6573ENTADjhNdbU8mrKkxhMKa70XSrU7sM36f36xsT1PvxNCZJDVM7xL3HNfgTwMJa0CM7Fzkw/4v3/IXF-KfKaTomuwBNgBgeGiA/h5/h001.aPr2WPXJtThAB2nXIY9SBBc6JsRjDn8RxztG8k3eCaY"
+          },
+          {
+            "label": "Anthropic joins the personal agent game with Duet",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.a3gBHu6_kDRL6l3yEfNWAWDy46ctFwAnK03qq8-LvEEV2ucqWD6kAx9a57DA60VGGueKJkLR3EEJY5PWcCo3yNmh-nOzL-502McDLc0RvMAQm8b1qP4ioFVIlSHA_T-hs3ZqvzQsgsGYTNpaQa0bblyW4CgRoTvzPzh6z3_KCidwEPDHTHpG5cqQbHaor8hhFrHzZPo8x8swy50jC1M3k6M7cfgJs8wT2Am7YB8NBUIVVS9fBqyCSLcbRR1tZfGm/4v3/IXF-KfKaTomuwBNgBgeGiA/h17/h001.rBOcidOQfKm6VWp5uIj_wsnYpoawxWNGGS_YHDA4N9U"
+          },
+          {
+            "label": "Let Town prepare your next meeting brief",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJG_wjJXh0cpPSCgm3Rr9iDBYM2x4KcOVRL1dBBVZc8Q0Mi69dM_ZWIAIL5B_bs3bvmd2uO61Xk_LRqmf07rBggbhzYK1nRI33VrjI40zfCFnMsU_0umuFFeqllCxfkDN1hFNXDWFhA7clBlWPL1fFmAWxwkOLk9OUlx6rUk1mOwfMByGqzftHbp3FGiGxeVh0R8RtOhLJf2OF-ALeA3b_leve1J5uCbt3RxbxpKK2sfd_UEIDo-rBUHFx3TGWOiB4vJWncMzxPHBkgZnrT1iKsY/4v3/IXF-KfKaTomuwBNgBgeGiA/h12/h001.eyRSqE788n9zuJkysILs_CWDHpTy_7eVO5v_nldnmE4"
+          },
+          {
+            "label": "Nate's Notebook: If it's copy-paste, let AI do it",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJFFxxOajfF_IKX7iS9CnrHsWNd0GMSLhWc5fQlVbH28mMH39UAJUITG8s1sD3tkrYQVaUHl2S-WEh6hpHBXUEd0KZ0VlrrDZcUFc3ja2Z8gw8PNjP1JMdpixCXIfHa0PXIbmviIT7i1W6NoFqR34Ig_Lg-sBosS_y0lm3yB_VSMoeAVslTuSrBcv2xjh8W7EWI/4v3/IXF-KfKaTomuwBNgBgeGiA/h11/h001.2jiI3wXfCjDw3h_Y8mnenjgbZhSw_KRZteXa923Jyw4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 Claude Duet just launched. What's the catch?",
+      "date": "2026-10-22T10:32:49+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic launched Claude Duet, an agent that runs on its own cloud computer and works while you're away, but requires explicit approval before spending money or accessing sensitive data.",
+          "OpenAI and PerturbAI ran 1,946 parallel drug-discovery agents that ranked potential treatments in 32 minutes, though the study is only a preprint with no lab validation yet.",
+          "A tampered LiteLLM release stole credentials for two hours before SafeDep detected and reported it; LiteLLM connects apps to AI models.",
+          "ChatGPT ads expanded to 89 countries with 100,000+ advertisers; Notion Auto stretches agent credits 10x by automatically routing tasks to cheaper or stronger models as needed.",
+          "Researchers found that popular LLMs show a bias toward Japan when asked open-ended cultural questions, a tendency that emerges during supervised fine-tuning when models learn to be helpful."
+        ],
+        "sections": [
+          {
+            "title": "1. Claude Duet: AI That Works While You Sleep",
+            "points": [
+              "Runs on a dedicated virtual machine with browser access, so it keeps running when your phone and laptop are off.",
+              "Sends morning briefs, checks connected apps every few hours, and messages you only when action is needed; built on Claude Opus 5.5 and uses your existing plan limits.",
+              "Requires explicit approval before sending messages, making payments, signing documents, or deleting anything; blocked from trading securities or moving money between accounts.",
+              "Credentials never shown to Claude (uses Anthropic's Managed Agents design with Stripe's virtual card and Shop Pay); new classifier blocks sharing credit card numbers, IDs, and health/finance details unless you explicitly approve.",
+              "Weakness flagged by Anthropic: weaker at personal errands than work tasks, can misread threads, and determining urgency is the thin line between useful alerts and muted notifications."
+            ]
+          },
+          {
+            "title": "2. Drug Discovery at Scale: 1,946 AI Agents in 32 Minutes",
+            "points": [
+              "OpenAI, PerturbAI, and Scripps ran parallel GPT-Rosalind agents on mouse-brain data and ranked potential drug-target leads in 32 minutes, a massive speed gain.",
+              "Preprint only—no lab testing done yet, and the viral version circulating today adds unconfirmed claims like quantization (model compression) making the bias worse.",
+              "Represents the first real test of agents working together at massive scale, but requires caution: wait for peer review and experimental validation before treating results as proven."
+            ]
+          },
+          {
+            "title": "3. Git Worktrees: Three Coding Agents, One Repo",
+            "points": [
+              "Problem: multiple agents editing the same branch stomp each other's work; solution is a git worktree, an extra folder from the same repo with its own branch so each agent gets its own working space.",
+              "In Claude Code, run `claude --worktree feature-auth` in one terminal and `claude --worktree docs` in another (repo needs at least one commit); for Codex CLI, run `git worktree add ../project-bugfix -b bugfix-123`, then `cd` and start `codex`.",
+              "Commits are visible across worktrees, uncommitted edits are not—this is the safety point; split work by files (e.g., tests and docs are safe, two agents refactoring the same widely-used type will collide).",
+              "Merge one PR at a time to pick order and resolve conflicts; gotchas remain: each worktree needs its own `npm ci` install, two dev servers on the same port clash, and shared databases aren't isolated."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "University of the Basque Country & Cardiff research on LLM Japan bias",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.FsqOXv9Qp2p1svid1ILW2czCZOlGI9A74IleYiiaVkHEWkbZM8JOgFKhDPY0gA16xFWnlRD7fvnVS1G_pjTvtG1OrzNPi8RpJT-5HLdCJMH2S_V4NfejfHo36i3Z5T9ppSKqEsX7BC7kb0GC-eHysHyQWZ53Kt8WfN6ga8dmjZsya5fFWqOSyWd2h7R_m9nCXkW3-5W6Ny5B2zlxfOVC1TlT35xBh3nkAQFTcCpo8oRC4-kgTK2cU3GkD8yGnezfEDQAzJ8Zpsr2O8tjtl8Zpg/4v3/hCrdhg-VQm-KEcRMwHN6VA/h7/h001.xhyuIji4sXVkri9qxMe5ZM5Zm99wsalA0CvkOTqf21I"
+          },
+          {
+            "label": "Claude Duet waitlist for US Pro and Max subscribers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.CQ9fulephgR4eBDwcda_SpolE0VgOsNTT54YhMfxR0eUH0yGkfXLVXw-vntC2hPosX2BHXigPDts5088mqL4Stejx94OIyednvPd0dzHoeb9E1_juD3Rt602Jif2ooPBq_Xr966R1rEWz-FCoKlEpu1xKAS9BmWicdfKNqtV8KNpE--fas9Z8StePJ6QwQPeMfGh4mkA1mV9RUQ0uzVZIwFaztkJeXWFg-hrtORrKA7dLLn1b6VycMX7GSIUr_w7AJp4tyJaAwEe84vIOsmqQG2KUvyRzP5FjW1AcSNEU8U/4v3/hCrdhg-VQm-KEcRMwHN6VA/h13/h001.L5BJWVO3IhHMuTqE3BZghYLJntBZM_3cFjzZBB1MUfI"
+          },
+          {
+            "label": "Git worktree walkthrough for Codex CLI",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.MebLiM_wk3YBoaLiOYF2Vmqa2IWsKKstz3MDd0fZprcpmuPhaFELDZlgSVHDOHNGcCaFbEKlN6MGX3elCvzqd778gAQ2Jp6Nrc7OD4nqKpd_JLEfP25DF9Zr_gxq62YTrn9zWJG0nJeafB9TDCkQiP3TIxojl9FNdK2eY2oE1VxOOBtfN9c7jrijAXUwMdaqa-WEzeXHWAvimqu7Z1iEJf65H5Gp_QFH8QZ7y1e_M53lajKlcnyUZJ70YjYE_ftng4qr4IUBgY_RZWcphgr82UdmpdYaLsylmbSYA-fLIbbhw6kqW-fnGrENcUW5cXLZu07g1yFsS65i3bOLNlMoPAt8yYQNjK32KM9oYGjfLB4/4v3/hCrdhg-VQm-KEcRMwHN6VA/h17/h001.ODvhdKJb5THD7zXL-2uR4c2AYy87NpC4ZBsV7bdzBVs"
+          },
+          {
+            "label": "Nvidia OpenShell AI agent safety framework",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.61A547iBEE35JFS3SRVclz6A-qLHprC1DZBDZhWuPYJbtgpH-FnFxa9JshjVcgiu9u_HV1wjyvhuExe95VfqmgA3CMvFDzESrUVkaw_cc1jGPEbB5Vl0vaOg98fYT_tn-RvdUE1gZgGbpLZpfx5pVvIoG0oAt680_scbKKleMER1KTly1hN7aCu73FTXrM6kfEfd-fIbuXBQbHh-0lvjDpCJ2IVmk-_Z-Qb7yuDafVwUzFBAeanKCU02ppR8fcxpYr0QcQGI0hsL5OQ_gCDPYx3H8_HdxjbDRg13X4lSmo3ueReU-ho7LSr7CrIFEY6w/4v3/hCrdhg-VQm-KEcRMwHN6VA/h31/h001.vNcBqKoQyBrtf8Gdm4O_0PzxaE8bjuz-5Qq31yJk36w"
+          },
+          {
+            "label": "Read full issue of The Neuron",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtWmvSN7yjS-CyXSLiVgN-9WfGDtyiXwGlqjyU7F0tyZhShiK2sNyG7agnGUBvayeC2XJcmgmzAC8Rtif7NrO4E4-O1YK0gARNYpirfvV1AAXB4qVg5bokdIJwKbVZHYiotBL8bJecXAbnnIA3DHs76n44ygqV00rmE_Ha4ROlfHy2US1ZOnrUCWLxasYP2sIehRVV5KgFRwgb_e07SnMtZBhZ4snDfVW5xPYBauj0kuuS_r6mqGZ_X3ZrhtNCzhdEZ42TJRwC7mb9Q1PCmuERG-fRz6u0OrVqKRetcfpd1i2ieD_kYyPTyaIpiND6L-7DP9CebaALnxWZf_bl9I_fYU/4v3/hCrdhg-VQm-KEcRMwHN6VA/h33/h001.4tm0VPsB4z4DZaXrFqE55uaWIRn9cq91pzVv77I-Y5Q"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "😅 The day the internet broke ",
+      "date": "2026-10-22T11:12:43+00:00",
+      "summary": {
+        "headlines": [
+          "Critical PHP vulnerabilities affecting 70% of websites force major organizations offline; NSA recommends immediate system shutdowns and OpenAI launches coordinated global awareness effort.",
+          "Anthropic releases Claude Duet, a proactive AI agent that recommends and completes tasks autonomously while your phone is off, built on Opus 5.5 and now in public waitlist.",
+          "Former Apple Watch lead launches UniqueHuman, an iOS app using AI agents to proactively monitor chronic conditions like migraines, long COVID, and fibromyalgia by analyzing wearable and medical data.",
+          "Agent-driven shopping threatens retail ad revenue ecosystem worth $68B+ annually at Amazon alone; major platforms including Amazon, Yelp, and eBay blocking agent access to protect pricing power."
+        ],
+        "sections": [
+          {
+            "title": "1. Catastrophic Cybersecurity Wave Called 'Black October'",
+            "points": [
+              "Two critical vulnerabilities discovered in PHP, a language powering 70% of websites globally, causing widespread site outages.",
+              "NSA recommends immediate disconnection of any systems that cannot be patched right away, forcing organizations into defensive mode.",
+              "OpenAI announced a coordinated global awareness effort and released a new Codex skill (a specialized AI tool for particular tasks) to help companies assess their risk exposure.",
+              "Unverified reports of additional attacks are circulating, indicating the situation remains fluid and developing."
+            ]
+          },
+          {
+            "title": "2. Claude Duet: AI Agent That Works While You Sleep",
+            "points": [
+              "New Anthropic app recommends tasks it can complete autonomously, executes them even when user's phone is powered off, and loops in humans for final decision-making only.",
+              "Built on Opus 5.5, currently the highest-ranked model on Artificial Analysis Intelligence Index, carrying over all user memory, skills, and connected apps from existing Claude accounts.",
+              "Waitlist now open for Claude Pro and Max US plan subscribers, marking move toward autonomous AI taking action in the background without constant user supervision."
+            ]
+          },
+          {
+            "title": "3. Agent-Flation: How Shopping Bots Could Raise Prices",
+            "points": [
+              "Major retailers including Amazon ($68B ad revenue in 2025) and Walmart ($6B) use advertising income to subsidize lower prices, free delivery, and streaming perks—a model disrupted by autonomous shopping agents.",
+              "AI agents bypass websites entirely without clicking ads, reducing ad revenue that currently funds price subsidies; companies may compensate through higher prices, fees, or subscription costs.",
+              "Platforms already building defensive walls: Amazon blocked Meta's Muse agent in September; Yelp, eBay, Zillow, Pizza Hut, Adidas, and airlines have followed with access restrictions.",
+              "Control over how consumers shop through agent integration could determine future pricing leverage across entire e-commerce ecosystem."
+            ]
+          },
+          {
+            "title": "4. UniqueHuman App Turns Body Signals Into Actionable Health Guidance",
+            "points": [
+              "Former Apple Watch lead Praneeta Pujari launched iOS app that proactively monitors chronic conditions by pulling data from wearables or medical records, then logging symptoms and tracking episodes.",
+              "Targets common chronic issues including migraines, long COVID, fibromyalgia, and POTS (postural orthostatic tachycardia syndrome—a condition causing heart rate spikes when standing).",
+              "Uses AI agents to transform raw health signals into personalized guidance, moving from passive data collection to active condition management and early intervention."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI Coordinated Global Awareness Effort",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1FxDUWkbNuPKPw5uRCpR2uGSpKdR5Oxsq71SiE3ETtcrmspA66R6gMTHXLMhzTc1kF19-XFg5P8gPTXgaMitKCd8quFmaXdoui9BqRdDedF6x6Z2ANUdIpWFB0aDHwmcGEAIq8z-Rbw9tdzyL8qucqqM6ncNtWYd_yP2vcucFtDR5BQocIOpQScR1SiBaLIL5AO937Y0LdrufqYwlLY0FesyGQmY4xuVrKz-yNNmUEXuWGzOZJkcl5BEZo1lguCYOkwnD9II3zpQ5q3_kEp2SNWihEHsziglD-bPLDRSAKJVRO6toq7j0PvrDBwV-y2H/4v3/dZiziRkATT2--h2EkaYkPQ/h3/h001.kSClyTaeWFMVXgrWHTYFmaVH68A6RpNLG009v719B_U"
+          },
+          {
+            "label": "Claude Duet Waitlist",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTf2Wlbf102CFE-Rlv9Z3hw1Dst4xEda1HRE6LfgvScz7bGxlgY7TJBM-hS7LnIK2IESbyiqKEo28z5UUMEajOpNmfU8AS70HMDv_uWLkyIaXMXQDgGkxTfYp02lemt6IcWo99haSo4zPccXn0Bcxcb6CuQl9D87BICIwHScVQ2l3FOKrk0mjl-umm0Tl-61aWKE22wIcP-xZHEzT3SieQkIt-T06QTwTixcli645zQDU7ASW-aVA_cmQ2BkmRkjQQ/4v3/dZiziRkATT2--h2EkaYkPQ/h6/h001.s56BHka-RL52T1qcAx0AXkGF_-P5Pi5YESRzO65NHs8"
+          },
+          {
+            "label": "UniqueHuman Chronic Illness Monitoring App",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tBfRJWk4bJZl1FfE8m9IKIrb-4g6UXGHjhxmA9ifKO1doa9LAB2DwAt_qppxpd9Ty3qrLTr1V0Oc7tMxup-_lZGh0oXulSCqLY8T2qepH8hX8XLBPjoAiO9HlYje-3ph7gShI8vLH8Bpt3w3-pQmhrfQ-0qsySmlmrj1lmwFHpKPGne-RunsicGY7BUy_RP3SmsvxidNlO8BE7La72cL9wvlk50nEGK_nY4LkaM471wyIuttnLbmMGalOVKc1P0wlA/4v3/dZiziRkATT2--h2EkaYkPQ/h7/h001.FllyVzOh7TSU0ilChzt_lPUqB-ty1mTP3254G88FJfY"
+          },
+          {
+            "label": "How to Build Mobile Games with Claude Opus",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-FSEldgqQ7OeNkS-DxvZTYD4nI8fre2Moh6pWaI2VvgXVifUFgPdN3_0zxGDWLr9V4mXae2ODNVBLJVGIC1kF-e12w1xH3tYd8S9xOVoxk3e_ebsXBIJm2LW2TC4R7ZjzJx9-o2n1yKt0DWxuxdsC3o0H8SD0NAriYgppNKIKtB1gviYTzIbYXO_nvsWFrLJABCgME9N_hxWCrSjO3erhZb7Ka3vb75hOgzmEbhROKZZEgsRMZXtXpM3Bah7r2QU/4v3/dZiziRkATT2--h2EkaYkPQ/h14/h001.3BZdTk8-Ufn90trLtoDuIH-x-nVUIb3E0JQ04Ie6OCg"
+          },
+          {
+            "label": "Section Enterprise AI Agent Strategy Webinar",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgMfWLPfvJQlhDx2f06WlGqrQLVY4BjdvLJ10QrI8oni4crnSlCRuiS_G9c7OqXuk_SM1TREoiE4ts6c3dfx0WRFsW044bMVPlbezECsAk-WsL5uVZWJg1IJMWedQcTfAh6CDOFIQYnIgddM1QJnKwwRzCk2U9rwnbIOgCsYmbBbhLHeCnBBGHPwacrVpKtV9wDPnS1RaXGn7s-msjQHyxba6QUpPM7xccoFdQtQpqwUPbFKOEuhIQbeZ6nHvfpC4tlK0luo4KADTr_EgV907k2ONTXv1F32P_TufRzrtxfS_1YFrTP3QzXHT_rqCAMMGsMu3FiJ1I8mnHZAkdtfplbaCTZhqOYTh7M9X1pWD-j06/4v3/dZiziRkATT2--h2EkaYkPQ/h15/h001.CLx2_HkHftazhv1YyOUPMwGUNdIO0I-nPW7kCPKgflY"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "break my agent",
+      "date": "2026-10-22T12:55:15+00:00",
+      "summary": {
+        "headlines": [
+          "Author built a Python browser agent using Playwright and OpenAI that can navigate websites autonomously by breaking the task into controlled steps with verification checks.",
+          "The agent searches for a Mark Twain quote containing 'truth' across multiple pages, with the model only deciding what to click next and code controlling the actual action execution.",
+          "Five specific failure modes to test: invented quotes, wrong attribution, missing links, repeated pages, and unverified results—each caught by validation logic before reporting success.",
+          "Key principle for production agents: add verification for every new capability (form validation, file checks, account changes) before expanding task scope.",
+          "Using ARIA snapshots instead of screenshots gives models readable page structure without extra tokens, keeping costs down while maintaining accuracy on navigation tasks."
+        ],
+        "sections": [
+          {
+            "title": "1. Browser Agent Architecture",
+            "points": [
+              "Model receives ARIA snapshot (semantic page description using roles and accessible names) and proposes one of two actions: click a pagination link or finish with a quote.",
+              "Python code translates model decision into controlled action—agent cannot write selectors, inject scripts, or deviate from allowed behaviors.",
+              "Loop includes three checkpoints: snapshot → model decision → validated action → fresh snapshot, repeating up to 12 steps or until task completes.",
+              "Setup requires: pip install playwright openai pydantic, then playwright install chromium, plus OPENAI_API_KEY environment variable and a model supporting Structured Outputs (enforced response format)."
+            ]
+          },
+          {
+            "title": "2. Verification as Core Safety Layer",
+            "points": [
+              "After model proposes a quote, code searches current page for exact text match, confirms author is Mark Twain, and validates 'truth' appears in the quote.",
+              "Selectors are site-specific (uses .quote, .text, .author classes)—porting to new sites requires rewriting verification rules.",
+              "Link validation checks that proposed pagination link exists exactly once on page and starts with /page/ before following it.",
+              "State tracking prevents loops: agent maintains set of seen URLs and fails if it revisits the same page."
+            ]
+          },
+          {
+            "title": "3. Five Ways Agent Fails (and Why That's Good)",
+            "points": [
+              "Invented quote: verification rejects text not found on current page, blocking hallucinations.",
+              "Wrong author: matching text alone is insufficient; code checks author field separately.",
+              "Missing link: agent stops with error if link name doesn't exist or is ambiguous on page.",
+              "Repeated page: loop counter and URL tracking prevent cycles.",
+              "Unverified success: agent never reports completion without passing page verification checks."
+            ]
+          },
+          {
+            "title": "4. Production Recommendations",
+            "points": [
+              "Start with narrow tasks where success is objectively provable (e.g., finding a quote) before widening scope.",
+              "Add completion checks for each new capability together—form fields need validation, downloads need file checks, account changes need saved-state verification.",
+              "Reduce input tokens on large pages by sending only the relevant section to the model at each step.",
+              "Use browser sandbox (not just path checks) and network restrictions for real deployments; demo guardrails won't protect production systems."
+            ]
+          },
+          {
+            "title": "Tools of the Week",
+            "points": [
+              "Tiden: version-control your requirements as specs, have agents check changes against them, run tests in your environment before merging code changes.",
+              "bmux: open-source browser with split panes and CLI profiles; agents browse in background sessions while you work in another pane (early preview).",
+              "Rill Browser (Mac only): hands current page to Claude Code or Codex with ⌘E command; agent keeps working while you browse, runs on existing paid plans."
+            ]
+          },
+          {
+            "title": "Why This Matters",
+            "points": [
+              "AI systems produce confident answers from uncertain sources (training data, hallucination, or retrieval)—harder to distinguish once agents interact with live systems.",
+              "Verification transforms blind trust into auditable proof: every agent decision is logged, checked, and human-reviewable before taking effect.",
+              "Narrow action spaces (two choices per step) reduce failure surface and make debugging tractable compared to agents with unlimited tool access."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Quotes to Scrape practice site",
+            "url": "https://quotes.toscrape.com/"
+          },
+          {
+            "label": "OpenAI Structured Outputs documentation",
+            "url": "https://platform.openai.com/docs/guides/structured-outputs"
+          },
+          {
+            "label": "Playwright ARIA Snapshot documentation",
+            "url": "https://playwright.dev/docs/api/class-locator#locator-aria-snapshot"
+          },
+          {
+            "label": "Tiden agent code verification",
+            "url": "https://tiden.io/"
+          },
+          {
+            "label": "bmux browser for agents",
+            "url": "https://github.com/bnjmn/bmux"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Claude Duet 🤖, Anthropic API changes👨‍💻, Recursive’s local model 💻",
+      "date": "2026-10-22T13:53:54+00:00",
+      "summary": {
+        "headlines": [
+          "Claude Duet—Anthropic's new proactive AI agent powered by Opus 5.5—monitors apps, prioritizes tasks, and works autonomously with human approval gates, now available to US Pro/Max subscribers via waitlist.",
+          "Recursive Flint is a 40-billion-parameter mixture-of-experts model (activates only 2.5B per token for efficiency) that runs fast coding tasks locally—125+ tokens/second on MacBook Pro, 150+ on RTX GPU—without sending data to servers.",
+          "OpenAI's frontier models are coming to Google Cloud's Model Garden, integrating with Google's enterprise infrastructure for scalable agentic workflows (AI systems that autonomously plan and execute multi-step tasks).",
+          "Claude API officially versioned for first time since 2023; Anthropic moving to frequent releases so developers can manage breaking changes before new model launches.",
+          "Language models can encode hidden messages in images that only the same model can decode—a potential precursor to steganography (hiding data inside other files) that's hard to detect."
+        ],
+        "sections": [
+          {
+            "title": "1. Recursive Flint: Efficient Local Coding Model",
+            "points": [
+              "Mixture-of-experts architecture (multiple specialized sub-models that activate selectively): 40B total parameters but only 2.5B activate per token, reducing compute cost.",
+              "Built in under 4 months by small team of humans and AI agents, designed specifically for coding tasks on consumer hardware.",
+              "Performance: 125+ tokens/second on M4 Pro MacBook, 150+ on 64GB NVIDIA GPU—fast enough for daily coding workflows.",
+              "Runs locally without sending proprietary code to remote servers, addressing data privacy concerns for enterprise development."
+            ]
+          },
+          {
+            "title": "2. Long Lake's Service Business Acquisition Strategy",
+            "points": [
+              "Thesis: acquiring established service businesses solves AI deployment barriers that pure software struggles with—specifically customer trust, domain expertise, proprietary datasets, and aligned financial incentives.",
+              "Approach: partnered with 40 businesses to turn AI automation into measurable operational gains (cost reduction, revenue increase).",
+              "Backed by $7.5B in funding, suggesting venture-scale bet on this model vs. traditional software-only AI deployment."
+            ]
+          },
+          {
+            "title": "3. API and Infrastructure Updates",
+            "points": [
+              "Claude API version 2026-10-21 released with official versioning system; 2023-06-10 not deprecated but new SDK major versions default to new API.",
+              "OpenAI SDK and CLI also released new major versions; migration guide available to handle breaking changes.",
+              "OpenAI models now available on Google Cloud's Model Garden with native access controls and governance for enterprise workloads."
+            ]
+          },
+          {
+            "title": "4. Security and LLM Vulnerability Coordination",
+            "points": [
+              "OpenAI coordinated with PHP maintainers using GPT-5.6 Sol to discover and patch critical PHP vulnerabilities; released PHP vulnerability checker tool.",
+              "Proposed framework for coordinating industry response when AI discovers security flaws, addressing new class of vulnerability discovery.",
+              "LiteLLM v1.107.0 compromised with malicious package on PyPI for ~2 hours before removal—highlights supply chain risks in AI tooling ecosystem."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Claude Duet",
+            "url": "https://claude.com/resources/articles/claude-duet"
+          },
+          {
+            "label": "Recursive Flint",
+            "url": "https://recursive.com/updates/introducing-recursive-flint"
+          },
+          {
+            "label": "How Fable 5.1 Hides Messages in Images",
+            "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images"
+          },
+          {
+            "label": "Claude Mods: Flipping the Harness Inside Out",
+            "url": "https://www.latent.space/p/claude-mods"
+          },
+          {
+            "label": "Humming: Fast Kernels for Quantized Inference",
+            "url": "https://vllm.ai/blog/2026-10-21-humming"
+          }
+        ]
+      }
+    }
+  ]
+}
