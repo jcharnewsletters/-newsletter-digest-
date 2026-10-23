@@ -1,0 +1,565 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-10-23",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI Nears $1.25 Trillion Valuation in $30B Funding Round",
+        "points": [
+          "OpenAI is raising up to $30 billion in a new funding round led by UAE investors, pushing its valuation above $1 trillion for the first time to roughly $1.25 trillion.",
+          "The round is being positioned as bridge financing ahead of a potential future IPO (initial public offering, when a private company first sells shares to the public), with OpenAI targeting signatures by the end of next week.",
+          "DeepSeek separately raised $15 billion in one of China's largest funding rounds, just two days after U.S. federal agencies were ordered to remove its AI over security concerns."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Critical PHP Vulnerabilities Exploited at Massive Scale ('Black October')",
+        "points": [
+          "Two critical bugs in PHP (a programming language powering roughly 70% of websites) went unpatched since 2012; they were discovered by AI on August 1 and actively exploited by October 17, four days before the public fix shipped.",
+          "Within hours of the October 21 patch release, exploitation scaled from thousands to millions of attempts, aided by AI 'agent swarms' (coordinated automated attack systems); Microsoft reported a China-linked group reaching admin access in under 3 hours using an AI hacking tool.",
+          "Wikipedia, Archive.org, 4chan, government pages, the Dutch government, and Germany's Charité hospital took themselves offline preemptively rather than risk compromise.",
+          "Fix: update to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35; older versions have no official patch and need vendor patches or a full upgrade; shared hosting users should confirm their host has patched.",
+          "The severity of this attack wave was compared to the March 2020 pandemic crisis by a former OpenAI chief futurist; OpenAI also released a free PHP vulnerability checker for website owners."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Staying Ahead",
+            "point": "Storm-0940 hit Microsoft 365 accounts with 2,900 login attempts per minute, illustrating why passkeys/security keys (which can't be guessed or leaked from a breached server) matter more than strong passwords."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Attacks were simultaneous and global: state-linked actors targeted hundreds of organizations while unauthorized AI agents were found operating inside bank customer accounts across India, Latin America, and South Korea."
+          }
+        ]
+      },
+      {
+        "title": "Banks Restrict AI Agents After They Go Off-Script in Customer Accounts",
+        "points": [
+          "JPMorgan, Bank of America, Morgan Stanley, and Citi discovered third-party AI agents logging into customer accounts with credentials, calling support lines, and taking actions customers never explicitly requested.",
+          "The core risk is AI hallucination (the AI misreading instructions and making incorrect decisions) when agents are given authority to move money or make purchases; some executives called the situation 'horrifying.'",
+          "Response: Morgan Stanley is blocking third-party agents entirely, while JPMorgan, BofA, and Citi are moving most agents to read-only access (view-only, no actions) until proper authorization frameworks exist.",
+          "Superhuman additionally reported unauthorized agents were detected operating inside bank customer accounts across India, Latin America, and South Korea, prompting similar alerts at financial institutions in those regions."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Gaps Found in OpenAI's AI Agent Monitoring System",
+        "points": [
+          "Independent researchers (METR, and separately with Redwood Research) found that OpenAI's internal monitoring of AI agents only triggered when agents returned control to users, leaving a coverage gap.",
+          "This gap left about 10% of internal Codex (OpenAI's coding agent) traffic unmonitored from May to July 2026; OpenAI has since patched the issue.",
+          "A follow-up three-week security assessment by METR and Redwood Research found further vulnerabilities that could let agents evade monitoring, bypass sandbox restrictions (isolated testing environments), and conceal their actions."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "TLDR AI"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Protecting Yourself from Rising AI-Powered Scams and Social Engineering",
+        "points": [
+          "Voice cloning attacks now work from just seconds of audio, letting attackers convincingly impersonate family members or officials.",
+          "Defenses: set a family safe word shared only in person (never texted or posted online, since common choices like a pet's name are often public), hang up and call back on a known saved number for any urgent money request, use an authenticator app instead of SMS for two-factor authentication (2FA), and use a password manager with no duplicate passwords.",
+          "In India, 'digital arrest' scams (fake police video calls claiming legal detention) are not real under Indian law; victims should hang up, call 1930, or report at cybercrime.gov.in, since early reporting freezes stolen funds fastest.",
+          "General advice across newsletters: update all devices immediately with auto-updates enabled, freeze credit to block unauthorized account openings, and audit/revoke unused third-party AI app permissions (Google, ChatGPT, Claude) monthly."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Staying Ahead",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Staying Ahead",
+            "point": "SBI (State Bank of India) had 3,897 customer records (names, phone numbers, addresses) leaked online, enough for convincing scam calls, and when paired with stolen biometrics, enough to fraudulently obtain SIM cards in someone's name."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Microsoft's AI Diagnostic System Outperforms Doctors on Hard Cases",
+            "points": [
+              "Microsoft's MAI-DxO simulates a virtual panel of AI doctors that propose diagnoses, order tests, and challenge each other as new data arrives.",
+              "On 304 complex cases from the New England Journal of Medicine, it more than doubled physician diagnostic accuracy; on routine ER cases it hit 80% accuracy versus 47% for doctors, while ordering fewer and cheaper tests.",
+              "One configuration reached 81% accuracy on the hardest cases at under half the cost of comparable systems, with gains holding even on newer models like GPT-5.5.",
+              "Real-world clinical trials begin at Beth Israel Deaconess Medical Center in Boston to compare AI diagnoses against clinician assessments."
+            ]
+          },
+          {
+            "title": "Put Your Open Chrome Tabs to Work",
+            "points": [
+              "OpenAI's official ChatGPT Chrome extension adds a side panel that can read and compare multiple open browser tabs at once.",
+              "Example workflow: compare three pricing pages against team size, required features, budget, and billing period, then have ChatGPT verify the comparison against the actual pages before trusting the numbers.",
+              "The 'Work' feature can group only tabs you've manually confirmed, keeping trials, purchases, and unrelated items out of the task to maintain focus."
+            ]
+          },
+          {
+            "title": "Other Funding and Industry News",
+            "points": [
+              "Ex-OpenAI executive Kevin Weil's new venture Warp Sciences raised a $215 million Series A to build AI- and robotics-powered labs that help pharmaceutical companies develop medicines faster.",
+              "Baseten released two free open-source decision models, mammoth-1 and elephant-1, with mammoth ranking #1 on the Jev Decision Index."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Advanced Robotics and AI-Generated Content",
+            "points": [
+              "A martial arts robot demonstrates sophisticated AI-powered physical capabilities, blurring the line between automated fitness coaching and autonomous robotics.",
+              "AI-generated video has reportedly reached photorealism, with viral clips of AI cats working at a McDonald's that are nearly indistinguishable from real footage, raising authenticity and misinformation concerns.",
+              "A ChatGPT-powered talking fish video unexpectedly went viral, showing AI's growing entertainment and engagement potential beyond typical productivity uses."
+            ]
+          },
+          {
+            "title": "Practical AI Tools Gaining Traction",
+            "points": [
+              "The 'Fact Finder' prompt extracts essential information from any article within seconds and has become a reader favorite for productivity.",
+              "A new, comprehensive database of ChatGPT prompts lets workplace professionals apply advanced AI techniques without needing technical expertise."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Staying Ahead",
+        "items": [
+          {
+            "title": "OpenAI and Anthropic Push Into Biotech",
+            "points": [
+              "OpenAI acquired Orchestra Bio to build AI agents for drug development.",
+              "Anthropic's Claude spent 64 hours autonomously designing proteins to counter scorpion venom, with early lab validation results reported."
+            ]
+          },
+          {
+            "title": "Weak Certificate Keys Force Browser Vendors to Act Fast",
+            "points": [
+              "Certificate authority eMudhra issued absurdly weak cryptographic keys (one was literally the number 4), undermining the security certificates meant to verify website identity.",
+              "Chrome, Firefox, Apple, and Microsoft were forced to block eMudhra's certificates within hours to days of discovery."
+            ]
+          },
+          {
+            "title": "Anthropic's IPO Filing Reveals Frontier AI Economics",
+            "points": [
+              "Anthropic's IPO (initial public offering) filing shows $16.3 billion in revenue for H1 2026, against nearly $9 billion spent on compute (cloud computing power for running AI models) in the same period."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "Meta's Capital Strategy and Financial Results",
+            "points": [
+              "Meta is proposing a new nonvoting stock class to raise capital for $825 billion in AI infrastructure spending commitments while letting CEO Mark Zuckerberg pay a proposed 5% California wealth tax without losing voting control of the company.",
+              "Q3 earnings beat expectations with $64 billion in revenue, up 26% year-over-year."
+            ]
+          },
+          {
+            "title": "Image Generation Market Shake-Up",
+            "points": [
+              "Canva launched its first frontier image model, Canva Craft, which ranks 4th on the Design Arena leaderboard (behind only three OpenAI models); it uses a two-step process that plans layout before rendering for higher precision and supports 55 languages.",
+              "Getty Images filed for bankruptcy restructuring after a failed Shutterstock merger, squeezed by mounting debt, smartphone photography, and competition from AI-generated images; the company was valued at $5 billion four years ago."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "1Password Launches Agent Authentication Platform",
+            "points": [
+              "1Password launched a platform letting AI agents access user credentials securely without exposing the actual passwords to the agent."
+            ]
+          },
+          {
+            "title": "Claude Adds Invisible Watermark for EU Compliance",
+            "points": [
+              "Anthropic's latest Claude models embed a SynthID-Text watermark by subtly nudging word choices among near-equivalent options, rather than adding hidden characters, to comply with EU AI Act requirements.",
+              "The watermark carries no information about user identity and adds negligible performance overhead."
+            ]
+          },
+          {
+            "title": "New Model Training and Deployment Methods",
+            "points": [
+              "WorldTUI is a 360-million-parameter model fine-tuned to emulate a full computer terminal—including file system, vim text editor, tmux (terminal multiplexer), and command memory—without needing real backend infrastructure.",
+              "Perplexity's JOLT self-distillation method trains a model to act as both teacher and student, adapting feedback to the student's capability level, improving math, coding, and agentic task performance.",
+              "Cerebras demonstrated deployment of a trillion-parameter model split across multiple WSE-3T wafers, each with 44 GB of on-chip memory."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🏦 U.S. banks catch AI agents going off-script",
+      "date": "2026-10-23T10:09:56+00:00",
+      "summary": {
+        "headlines": [
+          "U.S. banks including JPMorgan, Bank of America, and Morgan Stanley are restricting third-party AI agents after catching them logging into customer accounts and taking unauthorized actions, with some executives calling the situation 'horrifying' due to risk of financial loss.",
+          "AI agents can now misinterpret instructions and act beyond their authority, prompting banks to move toward read-only access while they build frameworks to distinguish between authorized and rogue agents.",
+          "Microsoft's MAI-DxO diagnostic AI system outperformed physicians on complex medical cases (more than doubled accuracy) and routine ER visits (80% vs 47%), while ordering fewer and cheaper tests, with real-world clinical trials starting at Boston's Beth Israel Deaconess.",
+          "A spike in malicious AI attacks using voice cloning and social engineering is accelerating; key defenses include family code words, callback verification on saved numbers, 2FA with authenticator apps, and zero-duplicate passwords via password managers.",
+          "OpenAI is raising up to $30B at a $1.25 trillion valuation led by UAE investors, while DeepSeek raised $15B despite U.S. federal agencies being ordered to remove its AI over security concerns."
+        ],
+        "sections": [
+          {
+            "title": "Banks Crack Down on AI Agents' Account Access",
+            "points": [
+              "JPMorgan, Bank of America, Morgan Stanley, and Citi discovered third-party AI agents logging in with customers' credentials, calling support lines, and taking actions users never requested—most were user-authorized but some acted beyond instructions.",
+              "Bank executives are struggling to distinguish between user-approved agents operating as intended versus rogue agents (those going off-script), with the main risk being AI hallucination (misreading instructions and making incorrect decisions) when given authority to move funds or make purchases.",
+              "Response: Morgan Stanley is blocking third-party agents entirely; JPMorgan, BofA, and Citi are restricting them with most banks moving to read-only access (allowing agents to view information but not take actions) until they can build proper authorization frameworks.",
+              "Blanket blocks buy time for banks to develop systems that let cleared agents take defined, limited actions while catching unauthorized behavior—critical since agent use is growing and security gaps can't persist forever."
+            ]
+          },
+          {
+            "title": "Microsoft's AI Diagnostic System Outperforms Doctors on Hard Cases",
+            "points": [
+              "MAI-DxO works by simulating a virtual panel of doctors where AI agents propose diagnoses, order tests, and challenge each other as new data arrives, mirroring how expert medical teams reach difficult diagnoses.",
+              "On 304 complex cases from the New England Journal of Medicine, the system more than doubled physician accuracy with reference tools available; on typical ER cases, it achieved 80% accuracy versus 47% for doctors, while ordering fewer and cheaper tests.",
+              "One configuration reached 81% accuracy on the most difficult cases at less than half the cost of comparable systems, with performance gains holding even with newer AI models like GPT-5.5.",
+              "Real-world clinical trials will begin at Beth Israel Deaconess Medical Center in Boston, measuring how AI diagnoses compare to clinician assessments—diagnostic accuracy alone is only the first step; AI must also guide treatment and fit into patient-doctor decision-making to prove value at scale."
+            ]
+          },
+          {
+            "title": "Safeguard Yourself from AI Hacks (Spike in Malicious AI Attacks)",
+            "points": [
+              "Voice cloning attacks now work from seconds of audio, and AI can impersonate anyone; key defenses include setting a family code word that callers must state (shared in-person, never by text) and hanging up then calling back on saved numbers for any urgent money request.",
+              "Enable two-factor authentication (2FA) using an authenticator app rather than SMS, use a password manager like 1Password with zero duplicated passwords so one leaked login doesn't unlock your entire life, and confirm any payment request on a different channel than it arrived on.",
+              "Update all devices today (browsers, phones, laptops, desktop apps) because this week's certificate compromise exposed unpatched software as an open door; builders should also use OpenAI's free PHP vulnerability checker to test website exposure.",
+              "The spike in malicious AI attacks is accelerating and expected to worsen as attackers learn new techniques—taking these precautions now is critical and worth sharing with family."
+            ]
+          },
+          {
+            "title": "Put Your Open Chrome Tabs to Work",
+            "points": [
+              "Install OpenAI's official ChatGPT Chrome extension and use its side panel to read and compare multiple open pages; a good practice workflow compares three pricing pages against your team size, required features, budget, and billing period.",
+              "Have ChatGPT check the comparison against the actual pages to verify full team cost and confirm details rather than guessing, then verify missing information by reviewing the pages yourself before asking for recommendations with source links.",
+              "Use the Work feature (where available) to group only the tabs you've confirmed, then review the actual group in Chrome to ensure accuracy—keep trials, purchases, and unrelated messages outside the task to maintain focus."
+            ]
+          },
+          {
+            "title": "Key Funding and Industry News",
+            "points": [
+              "OpenAI is nearing a $30 billion funding round at a $1.25 trillion valuation, led by UAE investors per CNBC sources; DeepSeek raised $15 billion in one of China's largest rounds just two days after the U.S. ordered federal agencies to remove its AI over security concerns.",
+              "Ex-OpenAI executive Kevin Weil's Warp Sciences raised $215 million Series A to build AI- and robotics-powered labs to help pharmaceutical companies develop medicines faster, while Baseten released two free open-source decision models (mammoth-1 and elephant-1) with mammoth ranking #1 on the Jev Decision Index.",
+              "METR found that OpenAI's internal monitoring of AI agents only triggered when agents returned control to users, creating a coverage gap that left 10% of internal Codex traffic unmonitored from May to July—the issue has been patched."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Banks crack down on AI agents' account access",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf9JFvua7JJ7w4275sIFLhF5pdW6NV_PlzQxrLTq37hqwL5jxoaODqCsFlgyMOtEShzsx_vYOY45CqhVhdZy0P2998yBJM1ia0ygScsqGf-_Jf5aOC9suM1WO6KiZzHYGTmTugt6tD5p7pT8iPWW7m-SYwO9CAtvigZileVSsuwudzhWFYhFfD2QxPog8hHnFtxjPgyefSn_0HRt2XCWWnbo8gTl66hxVr1q9I8CKBHSjfXdoleJi04jVqFIb3zTuYyF6R7Zlcb5f5TVe_9Mq8IE/4v4/xcR1Md41SNO63ILYQ_Ci4g/h5/h001._w37Xfv4RfvoOpXHkfW2esb5HVEGOrgWxqDIfdoXBRQ"
+          },
+          {
+            "label": "Microsoft's AI out-diagnoses doctors on hard cases",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.BKH0F2yLXfXXfZz4rVL6MCJtxgWZrzggAXCYnh3rX-4hQFWfUiNeS1FZS4xwgyle-Mbqy3Jup_kyxVtbuiyP139me2XVOxeM0yimIKXrWkUK7vb_1wfugk5mDMDGSDCbP-un8qvYy5YFv-TIT1bbMAIQ9DiwvggP5XH5J_0AOm8C2pNwm6kRK1EIAkUG7EP33Wqzwx_xEMSB6fjepc1_As15XiPkST7TFg9OQyabxrBygIiQEQm4TzyjvuvkDVmx0ESs8Rp3HpAKmdAED_9VLw/4v4/xcR1Md41SNO63ILYQ_Ci4g/h17/h001.ZMrcHL7MUf67jsB15URSbiw4xQgsNERi-4NV7jx22tI"
+          },
+          {
+            "label": "Safeguard yourself from AI hacks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf75St_4h4uVDlb2B1USeB_EfqUFCjfYNaERASA-AjrVqxrkSZxNPeBItnHQaSBPq6rXojyomTtDrqlBAmDekv-POF8AjDyu8RI6zi0nPpr59xUP2O0GChjeHiS-QAbOs9ZaqjP_lZPaXjUG2KM-QHsY8dPnBeVwyi22_-q8VG-LRBFL5JqZigsS6WTRdiM41e_FSSMuFOnuqXSVYNcZDsfU/4v4/xcR1Md41SNO63ILYQ_Ci4g/h10/h001.KQ7NJcI_4hFfON954mvraz-3XCKQP9OPsbJLxF7F88"
+          },
+          {
+            "label": "Put your open Chrome tabs to work",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJH76kXsL6884vXV_7qMjxaFtcCk3ev4kbG_2vK4RiG0yCsSYu1K2IV7DHlDIkJps7PmZwwQgUPaQFcHfMOSip1mxf9fT-38p-mrkIr81RTEk0D5x74COjBuuuXECW54bRdyJWn7pxSJ5TimaiQ9eXzJvR1F_O35JBjaN39bslN767_S25BeHZg0q4Yvn2G1mcmoOUoLK6pyhyz3U_P8FOfAKEnhi1NQeFvOAGalITPdDQ/4v4/xcR1Md41SNO63ILYQ_Ci4g/h13/h001.PeUuNKyykFxK9H5ouP_sibmkWkqYVPLUNyD72ZUg7EI"
+          },
+          {
+            "label": "OpenAI's free PHP vulnerability checker",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.siHJl2oxYc5G1hfeCOvt3XjlBY_JcMtglD1wo5j8TWSXmzJqK_U8o-KKQqCuMQtUhRccu5SL5DvBsAwn8bv_Xy-iqrmubwy_RDdQi9e1_DPW3ve-X3zNGJH66HGDdGcivo6-widAveF-p0291okFeywVLP0cDDwKd5iFOP8gEXGdUiJW2XhLQL6eP_lSnAI5INhF1KJ9rkGFgCap3JlYLY1Jv0_frKJN6_YEL4EiYa9SwMSajbzgyxkB_LlQ7vmc/4v4/xcR1Md41SNO63ILYQ_Ci4g/h12/h001.11yxbIOjI4tByfrQBZWVFw20N82B6OdddwVUVsjm6Oc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😿 We're not being clingy, but... we miss you",
+      "date": "2026-10-23T12:19:52+00:00",
+      "summary": {
+        "headlines": [
+          "Martial arts robot demonstrates advanced physical AI capabilities with potential applications in personal training",
+          "AI-generated video technology now produces eerily realistic content, including cats working at McDonald's, raising concerns about synthetic media advancement",
+          "ChatGPT-powered talking fish video has become unexpectedly popular, highlighting AI's growing entertainment and engagement applications",
+          "Fact Finder prompt tool extracts key information from articles in seconds, becoming reader favorite for productivity",
+          "New database of ChatGPT prompts enables professionals to leverage AI more effectively in workplace tasks"
+        ],
+        "sections": [
+          {
+            "title": "Advanced Robotics and AI-Generated Content Dominate Recent Developments",
+            "points": [
+              "1. Martial arts robot showcases sophisticated AI-powered physical capabilities, blurring lines between automated fitness coaching and autonomous robotics",
+              "2. AI video generation has reached photorealism threshold with McDonald's cat clips demonstrating synthetic media quality indistinguishable from authentic footage",
+              "3. These breakthroughs signal major advances in embodied AI and generative video technology but raise authenticity and misinformation concerns"
+            ]
+          },
+          {
+            "title": "Practical AI Tools Gain Traction Among Professionals",
+            "points": [
+              "1. Fact Finder prompt extracts essential information from any article within seconds, positioning itself as essential productivity tool for busy professionals",
+              "2. ChatGPT-powered talking fish content unexpectedly demonstrates AI's viral entertainment potential beyond traditional applications",
+              "3. Comprehensive ChatGPT prompt database enables workplace professionals to apply advanced AI techniques without technical expertise"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Martial arts robot",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtQWyqsz4J3DjwFtWlDEWYocPE4JzrYoCqp0kqGlN9z7BVxCHXIfZRNJUdXFhb4K_vgtpiMHcaLBFZOeZCrxVdCoDqLBTwBDN5-1GhTX24LGs-_7OhKsAceQ7Alsp09evlPGINqz0m7SZw8lMMdnjtkT1AcZdJVOUyATZDYYLDjNWfMqhMJyEN-zfaHeRnCmdNVEgp8rj_qQRHiUu6dHWkvffehWQARmrb2s7zjuewe_WDECZad1MHNV1xweJavRhLkbTeUe-uyVXS1SIzHxAnMg/4v4/TiL0TBjnSimWVZG1-BJnAQ/h0/h001.awz8RO4w8yKauuQcto2rjqQUoP0VO6MqPjK1Z3yfgvg"
+          },
+          {
+            "label": "AI-generated cats at McDonald's",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtQWyqsz4J3DjwFtWlDEWYodVydMVAS5ajGLBwbLeWlUbRj77zrVuo4d_nwmsRYNucXxmNW77peopSKLr91IjSJ36pqhBjeUt61bVXrOtGt_ZbZ1h1qxhBwmY134_Pb9a9QL8AYFUhgR788XnRBwI73CSaeyNddWQ9-SPphLDzzL1k59s8Fhm6ZCbmMYJEBop1csHPpST1-fy3_Z7NdFd4Z9LvrIW2akRP06gXS2VURjluV4ftuNy79aFBKbuABTOk1zcd6Bq58bnt7i_ltu6Gr0/4v4/TiL0TBjnSimWVZG1-BJnAQ/h1/h001.L97cWT8NHkmILQfksGZL6pLBq4t2Fqqxox2AH3m3kMA"
+          },
+          {
+            "label": "ChatGPT-powered talking fish",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtQWyqsz4J3DjwFtWlDEWYofjDY3IrFPDVvpe_UqBGk5R-YNWP-raz8QP2xO4WDiWcvZ3jzam_3vVYwQh4UVendr8d-B7rohFRm7msJipWas_rhkcqHaeTUXzSQZoaTSkzn9lXxHanJiQ3dpG0UyvrGRbEhosnksk2_aFoh6aiXZuV0Ny-ecgnVuxiQ_3P7EfT6NSh9en9JAuTq47d3k6A8xnNW2rgPIeDHLV_p0TUtau/4v4/TiL0TBjnSimWVZG1-BJnAQ/h2/h001.p3PxeU_24RVOY39OuumBGwgJGKUn-DKlzqOv71uUJhA"
+          },
+          {
+            "label": "Fact Finder prompt tool",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.61A547iBEE35JFS3SRVcl3sDbOw8RW-PBvwJn2inEAQVZP4khHUhTPYnJcVa8UNpLem9YNTDDOV2VZid8OfmIGlZT__NIYSNyGjJmWV4t4SCfsQZUrCVmHr76JN6gSb2dXdS-ZvKPQoSY4tk7D0CvEOiJO07Wza1sh8Zjlq2Ic9usnYQdR6PfY5UCv5Tpmpv_KQc2-Mf7jUzupqhldPx-GciHuiTQS4McsUAxTNw5TaarPh4nlq2vxhAtOw40A4MymKLx8i8IOfohMlfAvfU3Q/4v4/TiL0TBjnSimWVZG1-BJnAQ/h3/h001.bcMFKipPXPuc8bWG8LaekIV_Z3XQQf-fABIE9veKC24"
+          },
+          {
+            "label": "Awesome ChatGPT prompts database",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.mO1vJr_3MzyzolZFeFVczqD4AsSocUjeKtQ95aHSAQcMGZmFkIvCKSV0vJKVI5e8Ukfguml76CSD2ORreGxAcmZfC03OyAHjXyaAsvSMIUAzfQZsV9LdxaWyn5moNCmmI-bImOBD_H7YaIEz8koUdMJeb_IarANNzoTH-EQCL0KKFP36DiKSct65QImftet0FD3i8tnJSXF94pl_HhJDcA/4v4/TiL0TBjnSimWVZG1-BJnAQ/h4/h001.AO3YHhzGXL-Z0Gh3r0bfVY4hgFvQazWuMbRH2WxgggI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Staying Ahead",
+      "subject": "rip strong passwords?",
+      "date": "2026-10-23T12:53:58+00:00",
+      "summary": {
+        "headlines": [
+          "PHP security holes open since 2012 found and exploited within days of patch release, affecting millions of websites—strong passwords won't protect you from server-level compromises.",
+          "OpenAI acquired Orchestra Bio to build AI agents for drug development, while Claude spent 64 hours designing proteins against scorpion venom with early lab validation results.",
+          "eMudhra's certificate keys were absurdly weak (one was literally the number 4), forcing Chrome, Firefox, Apple and Microsoft to block them within hours to days.",
+          "SBI reports 3,897 customer records leaked online with names and phone numbers—enough for convincing scam calls, especially paired with stolen biometrics for SIM fraud.",
+          "Anthropic's IPO filing shows frontier AI economics: $16.3 billion revenue in H1 2026 but nearly $9 billion spent on compute in the same period."
+        ],
+        "sections": [
+          {
+            "title": "The PHP Vulnerability That Bypasses Everything",
+            "points": [
+              "Two critical PHP bugs (unfixed since 2012) let attackers take over web servers without passwords and without any user clicking anything—found August 1 by AI, exploited by October 17, four days before the public fix.",
+              "Timeline shows how fast attacks happen: Within hours of patch release on October 21, Amazon detected widespread exploitation; Microsoft simultaneously reported a China-linked group using an AI hacking tool to reach admin access in under 3 hours.",
+              "Dutch government, German Charité hospital, and other critical infrastructure went offline preemptively on October 21 morning rather than risk compromise—the safe choice when you can't patch immediately.",
+              "Update required: PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35; older versions have no official patch, requiring Linux vendor patches or full upgrades; shared hosting users must contact their host to confirm patching."
+            ]
+          },
+          {
+            "title": "Why Your Password Strategy Is Now Irrelevant",
+            "points": [
+              "Your data sits on hundreds of servers controlled by people you've never met; you cannot patch their infrastructure and cannot control what happens on their end when breaches occur.",
+              "Even with strong passwords and 2FA, server-level exploits (like the PHP holes) bypass all client-side security entirely—the attacker doesn't need your credentials, they bypass authentication.",
+              "Storm-0940 attack fired 2,900 login attempts per minute at Microsoft 365 accounts, but passkeys and security keys cannot be guessed or leaked from compromised servers elsewhere.",
+              "AI agents used by labs testing vulnerabilities in Indian companies went undetected until disclosed by the AI providers themselves—companies had no visibility into what happened on their own systems."
+            ]
+          },
+          {
+            "title": "Immediate Actions to Limit Damage When Breaches Happen",
+            "points": [
+              "Email: Add security keys (passkeys cannot be guessed or leaked from other servers); founders should enable Google's free Advanced Protection Program requiring physical keys.",
+              "Banking: Disable online and international use on unused cards, reduce UPI transaction limits to daily spend amounts, ensure all alerts reach an active phone number—this caps damage if credentials are stolen.",
+              "Identity: 3,897 SBI customer records (names, phone numbers, addresses) are online and sufficient for convincing scam calls; paired with biometric theft, fraudsters can get SIM cards issued in your name.",
+              "AI tool permissions: Audit Google third-party connections, ChatGPT Apps section, and Claude Connectors monthly; revoke anything unused in 30 days; run AI agents in separate Chrome profiles with zero banking/government logins and set Claude to 'manually approve' mode."
+            ]
+          },
+          {
+            "title": "Social Engineering and Family Fraud Prevention",
+            "points": [
+              "Pick a family safe word never posted online (your dog's name doesn't work—it's been posted 400 times); any call about money or emergencies gets hung up on, then you call back on a known number and verify with the safe word.",
+              "'Digital arrest' does not exist in Indian law—it's a scam; if someone in police uniform on a video call claims otherwise, hang up, dial 1930, or report at cybercrime.gov.in; early reports freeze money fastest.",
+              "Warn non-technical family members that AI hacking tools and social engineering are the fastest path in after server exploits fail; no amount of caution on your end protects against breaches on the vendor's end."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "PHP security patches (8.5.12, 8.4.27, 8.3.36, 8.2.35)",
+            "url": "https://link.mail.beehiiv.com/v2/c/1026deb653a4544eb1384e4c52590919eb0510b928f88c661829c560b613cb54b94571eb64881da0e55b1fccb5a0e32397ff1aa8e549478dc7c868c2484b6d9997c135862474176f3f5d4696b891b2349d0e99d534718a862c3648aba5b12bc46a768d56bdf080d0343eaa02fab546fc5da89017f60196b9f37c4e41f73e6e361b396c8c60f682a94b19d481063c3f2f302897a800611481e1b05b0141619b2a/6071096944d948a1"
+          },
+          {
+            "label": "Google Advanced Protection Program (free security for founders)",
+            "url": "https://link.mail.beehiiv.com/v2/c/de0e70ac09333564892f10db1ddad93f9c599e9e9aa9b7b6e5234ff115d781adb4c6250ad8f3926bb69de3f4363e2f5ef035c70447cf7c8b29f8173f934a1d1660851b65dde9c13bee8bd9437811c1eaa64c7f4f8ac5aff1e84ccb957c7ec9adc89b9ee204a2e2e2a89e1b9457c44b37b57fc90cb992146c5ce0885e6e41450c49958d3b3873abb9437dbc656b17db31db20251622af941566769c9c8eb4d306/b261aa33048133d6"
+          },
+          {
+            "label": "Cybercrime reporting portal (India)",
+            "url": "https://link.mail.beehiiv.com/v2/c/c83dadfb7906c658c12e4bb4c5835129e7dba0f0725ba0aaff75d06117df65928af99caf792c8d4963a9a03af6834f6874762e47c12959be007b3459a6369e203c5bd16c802d0eeabc5bc930cf24fa2d43829c70dff5645d7f6408b7662faf2ed0eebd98493ddb68bc9cd8a1c7c5d0a1d0785d982cce3b6e6c4997025a1670c8c4c711deb2d1babd98e086b8e891f68d82c5745c138672b7dbaf0c63ca247016/340247f6d9cf0e5d"
+          },
+          {
+            "label": "Google third-party app connections audit",
+            "url": "https://link.mail.beehiiv.com/v2/c/a2e2d50fb0e5c0996ac7ae61d2634fb2a910985c30628fc63f470df0139f0064a7dd240f68acfeb606538aec2a4fb049ad469703c37ac9b4a9ee9ac17d68df545a0b0564ed6b52d994d64b9359ae466f28169372fc712f42ef73068a4a4752d29cc4510b7f06269407f5dc583db1c1ee032d16857dec420bb252c3656b186368a4852f98c087a0e1661f28d2d301bc86b7cf3bd77714b98c46ecf6f5dd6fa234/5312e8ceaa2083cb"
+          },
+          {
+            "label": "Anthropic IPO filing (revenue and compute spend details)",
+            "url": "https://link.mail.beehiiv.com/v2/c/de59874c1e02ce81510a4064b1c9bdec6600a31da3d7af8d3de86494dbddb581a41c2e4a798851df76a23e938b37c909d853442bb0388c0ba34be065adbc55c21ffeb0eae5b3d75095f3b64cc09ad33c26f472c3a563ca20e8d794d4a863acef034a0f2d3ad9c455d8f64afc088c401536e6dcc3e6d3d114a6430ffee6170f3bcb70133c7219f748a58128957eec4fbf0f5eddef69ed05aa590591eede767f0d/1f0c6e523f7b0468"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🔐 How to protect yourself during Black October",
+      "date": "2026-10-23T13:10:52+00:00",
+      "summary": {
+        "headlines": [
+          "Critical PHP vulnerabilities exploited at massive scale with AI agent swarms, forcing Wikipedia, Archive.org, and government sites offline within hours",
+          "Black October cyberattack period rivals March 2020 pandemic severity; state-sponsored actors and unauthorized agents detected in bank customer accounts across multiple regions",
+          "Meta proposes new nonvoting stock class to raise capital for $825B AI spending commitments while protecting CEO Zuckerberg's voting control amid proposed wealth tax",
+          "Canva launches its first frontier image model (Canva Craft) ranking 4th on leaderboards; Getty Images files for bankruptcy amid AI-generated image competition"
+        ],
+        "sections": [
+          {
+            "title": "Black October: Massive Cyberattack Period Fueled by AI",
+            "points": [
+              "Critical vulnerabilities in PHP (programming language used by 70% of websites) leaked before patches fully deployed; exploit attempts scaled from thousands to millions of attacks within hours using agent swarms (automated AI systems coordinated together)",
+              "Multiple simultaneous attacks detected: China-aligned state actors targeting hundreds of organizations globally, third-party agents operating inside customer bank accounts across India, Latin America, and South Korea, prompting financial institution alerts",
+              "Wikipedia, Archive.org, 4chan, and government pages took themselves offline during active exploitation; severity compared to March 2020 pandemic crisis by former OpenAI chief futurist Joshua Achiam"
+            ]
+          },
+          {
+            "title": "Protecting Yourself During Black October",
+            "points": [
+              "Use password manager and avoid reusing passwords across sites",
+              "Enable two-factor authentication (secondary security verification beyond password) preferably with authenticator app instead of SMS text",
+              "Update devices immediately and enable auto-updates to patch vulnerabilities",
+              "Freeze credit information to prevent unauthorized account opening",
+              "Ask LLM (language model AI like ChatGPT) to audit computer for vulnerabilities"
+            ]
+          },
+          {
+            "title": "Meta's Capital Strategy and Financial Results",
+            "points": [
+              "Proposed new nonvoting share class serves dual purpose: funding AI infrastructure expansion and allowing Zuckerberg to pay 5% California wealth tax without losing voting control of company",
+              "Q3 earnings exceeded expectations with $64B revenue (26% year-over-year growth); separate filing revealed approximately $825B in future spending commitments for AI development"
+            ]
+          },
+          {
+            "title": "Image Generation and Stock Market Disruptions",
+            "points": [
+              "Canva Craft model ranks 4th on Design Arena leaderboard (behind only three OpenAI models); uses two-step process planning layout before rendering for higher precision; available in Dream Lab and API with support for 55 languages",
+              "Getty Images filed for bankruptcy restructuring after failed Shutterstock merger; company valued at $5B four years ago but faced mounting debt, smartphone photography competition, and new AI-generated image market disruption"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Read more on Getty Images bankruptcy",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgHfI84fneQy7X7FQgfxns2-_oLaK7lIsSnEQj6ElUa1g6-Q8eY4uEn9XL-dmu7cIwzH47hshN1PAQoDRZHljevV0vUN1oR_tMFpfkscMTR9jcBI3T9iAu2adfM4tL6lte_E3XQk4ohwS2R1HTmHPwFPpfOQCQRhLCDT9SrcL7E3nxR-exD_D9h5YbttX-P-_9o-VztFZmSxInusl6YVxbqeSxkaIK35JFTFdLWyeSm4EqT3QHx1kempGDAyF8EAVoQ5Y-zOw7oFv_LAwQfDKjwUtYUA5xnSHAV6xLOgM7f16YVDG59q04WqEbzhdt3kcAdeXpvCJfFTTnux_03AavXM/4v4/6ooBgpwBS5qnrB-bMY93vA/h6/h001.XYwKd9ihOwa991Z8BbylTBwHZmYs7rQI8jqggbU2drs"
+          },
+          {
+            "label": "Canva Craft model details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tD7FypCP7bYmvwxL9DZxvaR3HLEckYzB5b9LQMWcoMQTli-MbNxWkNZGhecFXRbSGnQhL0722J77WrSC3fzpeV-uB0QFEQtIJFWN4EiRo_PeQyt5ODDUMX6S3lr4EQ3wCmvdQgQVL3tMK1kHy5GNZmnhTpnwiev4L2g9PwnLuOH1A6H2Oz8UbLgG2eq_0ivkIysVrI8LRZBDnEYVi3bCupbv0UubPa5mgwF5ScLByp-0w/4v4/6ooBgpwBS5qnrB-bMY93vA/h3/h001.rEhQK9lsTpn3UAKcM7bl92jCi96c388QWhSxiKQs8G0"
+          },
+          {
+            "label": "PHP vulnerability exploit scaling details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tDYfssdKIpsii39Hkr7m_oYrT4NXCMFcYxEyWM8A1VVYXy5XiilkXNKAlVaZIZuEpNa-xatJiATufFCh7HiGfxfyqTrgvsNocY-MbsKPo7TJllzzCcbnPrSQPa1P9pw0XSDP_iiDDhEPMJdS5Bqe1sSsOKffDMZCKt8aOGm7qnZlZIJo4ASwBPUTblLbq54nSjtwLHx6eyCtR18GeFtrH99LoKKasCr6z1EUuu1vWdvVA/4v4/6ooBgpwBS5qnrB-bMY93vA/h14/h001.j5SRbSB-FuAU-P8bvHFSsEtRvms5RZePC5mMpjPFJgM"
+          },
+          {
+            "label": "Peter Wildeford's security recommendations",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tBhhSZNm2CG1JaipBYrFlsQmY_09x_f4F2PiamrYDb0YcAU18xWLQAxRHy-9QkGRKKBohXiX_KXOS2AFeei2LL354UgOMazihNXtQ7sSKvsn70iLbnsTCQjLuwnMA7JV1e1M2oVJVGIqiAAeaGTWr_oKAQvSU28wSNeJMQToCGQponbFgKx28ub0QCmeZjlA6rheXz_2lQnZmR5N_QI0-0x-ZFKtr6NXamhjw99DcdlGg/4v4/6ooBgpwBS5qnrB-bMY93vA/h15/h001.bFED4p41yD-CgqKUVzrr_bT8H-9YG1eD8RWIltayaSo"
+          },
+          {
+            "label": "Viral Reddit post on domain and DNS security",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tAwnyq9KT84XciiGuWwOCuAldRy8C3LVFU-Vfn2tnjmMtFUHglar4n5CTDQdne2XSexsEornm1LsvMvtlCA92WGHaN1Bg-xTeVyUMzMvDM52U6uyX2tlTnZUf1joBOJlEDzOKyQffj-SBE4DKJu1vEJYjEVzQxSVXgCltAKiVFGl7u-WuF7c9pkG-CyOQCHx67xpqHRzsuuBW8ZecGJ0Nkk_6cafFvhoQaWZVKWj5eBig/4v4/6ooBgpwBS5qnrB-bMY93vA/h20/h001.DvdiSRrWTSHinOOcI7TFDDm6RnGGebtJr8ucqCvXhQc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "OpenAI nears $1.25T 💰,  ☁️, 1Password for Agents🔑, Gemini 3.5 Pro postmortem🤖",
+      "date": "2026-10-23T13:53:24+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI nears $1.25 trillion valuation with $30 billion funding round led by UAE investors, positioning as bridge ahead of potential IPO.",
+          "1Password launches agent authentication platform allowing AI agents to access user credentials securely without exposing passwords.",
+          "Anthropic embeds invisible watermark (SynthID-Text) in Claude output by subtly nudging word choices to comply with EU AI Act.",
+          "WorldTUI: 360-million-parameter model fine-tuned to emulate a full terminal with file system, vim, tmux, and command memory without backend infrastructure.",
+          "Researchers identified vulnerabilities in OpenAI's agent monitoring system that could allow AI to evade surveillance and bypass sandbox restrictions."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI's $1.25T Funding Round",
+            "points": [
+              "$30 billion round led by UAE investors values OpenAI above $1 trillion for first time.",
+              "Deal positioned as opportunistic bridge financing ahead of potential IPO.",
+              "OpenAI targeting signatures by end of next week; final round size still being determined."
+            ]
+          },
+          {
+            "title": "2. AI Security & Monitoring Gaps",
+            "points": [
+              "METR and Redwood Research conducted three-week security assessment of OpenAI's internal infrastructure.",
+              "Found vulnerabilities allowing agents to evade monitoring, bypass sandbox restrictions, and conceal actions.",
+              "Highlights ongoing challenge of monitoring increasingly autonomous AI systems."
+            ]
+          },
+          {
+            "title": "3. Claude Text Watermarking & Compliance",
+            "points": [
+              "Anthropic's latest Claude models embed SynthID-Text watermark to comply with EU AI Act requirements.",
+              "Watermark works by nudging choices among near-equivalent words rather than adding hidden tokens or characters.",
+              "Watermark carries no information about user identity and adds negligible performance overhead."
+            ]
+          },
+          {
+            "title": "4. New Model Training & Deployment Methods",
+            "points": [
+              "Perplexity's JOLT self-distillation method trains model as both teacher and student, adapting feedback to student capability level.",
+              "Improved performance across mathematical reasoning, coding, and agentic tasks with better training efficiency.",
+              "Cerebras demonstrates trillion-parameter model deployment by splitting across multiple WSE-3T wafers with 44 GB on-chip memory each."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI funding round at $1.25T valuation",
+            "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html"
+          },
+          {
+            "label": "1Password for Agents platform",
+            "url": "https://1password.com/blog/1password-for-ai-agents"
+          },
+          {
+            "label": "METR red teaming OpenAI agent monitoring",
+            "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring"
+          },
+          {
+            "label": "WorldTUI terminal emulation model",
+            "url": "https://simedw.com/2026/10/21/world-model-terminal/"
+          },
+          {
+            "label": "How US and China could verifiably slow AI development",
+            "url": "https://www.lesswrong.com/posts/ywrgeAPMn83FxzFBk/how-could-the-us-and-china-verifiably-slow-ai"
+          }
+        ]
+      }
+    }
+  ]
+}
