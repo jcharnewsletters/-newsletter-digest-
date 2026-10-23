@@ -1,0 +1,457 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-10-23",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "SpaceX Seeks to Become a Fourth Nationwide Wireless Carrier",
+        "points": [
+          "SpaceX is negotiating with Crown Castle, the largest US cell tower owner, for access to at least 80,000 cell sites—roughly half the country's ~158,500 purpose-built towers.",
+          "SpaceX acquired nationwide low-band spectrum licenses (reportedly paying $8B for Grain Management's 800 MHz licenses) and secured regulatory approval to launch 15,000 satellites for direct-to-phone service.",
+          "Elon Musk has stated a goal of building a completely standalone wireless carrier, combining Starlink's orbital reach with ground-based towers.",
+          "Crown Castle is also in talks with Amazon and other satellite telecom providers, suggesting broader infrastructure consolidation.",
+          "AT&T, Verizon, and T-Mobile shares fell 4–5% in after-hours trading on the news; Crown Castle jumped as much as 9.46%.",
+          "TD Cowen estimates the buildout would cost over $80 billion and take years; this would be the first credible nationwide carrier challenge since Sprint merged into T-Mobile in 2020."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "Quantifies the deal as covering roughly half of Crown Castle's ~40,000 towers plus other infrastructure firms, and notes the $8B cash purchase of Grain Management's 800 MHz spectrum licenses."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Cites TD Cowen's estimate that the buildout would cost over $80 billion and take years to complete."
+          }
+        ]
+      },
+      {
+        "title": "Canva Launches Craft, Its First In-House AI Image Generator",
+        "points": [
+          "Canva released Craft, an image generation model trained from scratch on design templates rather than photos.",
+          "Craft plans layouts before rendering images, producing output at up to 2K resolution.",
+          "The model ranks fourth on DesignArena benchmarks (a leaderboard comparing AI design-generation tools)."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Notes Craft is accessible via an API and plans/generates layouts before rendering at up to 2K resolution."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Specifies Craft ranks fourth on DesignArena benchmarks and was trained on design templates rather than photos, distinguishing it from typical photo-based image generators."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI Safety Researchers Dismissed Over Encrypted Communications",
+            "points": [
+              "Three OpenAI safety researchers were fired after the company's security team discovered they used Signal chats with disappearing messages (a feature that auto-deletes messages) enabled on personal devices.",
+              "OpenAI says the firings were for violating policies on handling sensitive information, not for safety advocacy or speech.",
+              "The researchers had spent recent months pushing for more industry collaboration on AI safety.",
+              "The researchers argue the firings close off a channel for independent third-party insight into OpenAI's practices."
+            ]
+          },
+          {
+            "title": "Amazon's Alexa Tablet Challenges iPad Dominance",
+            "points": [
+              "Amazon's new Alexa Tablet lineup uses an open Android approach, allowing direct Google Play Store access, unlike previous Fire tablets restricted to Amazon's app marketplace.",
+              "The 12-inch Alexa Tablet Pro features solid build quality and a 120Hz display refresh rate, competitive with Apple iPad specs.",
+              "Users can access Gmail, YouTube, and standard Android apps without Amazon's walled-garden restrictions.",
+              "It's positioned as a significantly lower-cost alternative to the iPad while maintaining similar hardware quality."
+            ]
+          },
+          {
+            "title": "LLMs Revolutionizing Formal Software Verification",
+            "points": [
+              "Formal software verification (mathematically proving code is free of bugs) traditionally required years of expert effort, but large language models (LLMs, AI systems trained on massive text datasets to generate human-like output) can now produce formal proofs at scale.",
+              "This enables development workflows with built-in proven security guarantees rather than bugs discovered after deployment.",
+              "Anthropic and other AI companies are building custom source-control systems (alternatives to tools like Git, which track changes to code) to scale engineering output; Anthropic's 3,500 staff reportedly produce output comparable to a 35,000–70,000 person traditional company.",
+              "Formal verification is expected to become an essential part of secure software development as AI model capabilities improve."
+            ]
+          },
+          {
+            "title": "Moderna/Merck mRNA Cancer Vaccine Cuts Melanoma Deaths",
+            "points": [
+              "Moderna and Merck's personalized mRNA cancer vaccine (a vaccine using messenger RNA tailored to a patient's specific tumor) cut melanoma death and recurrence by 42%.",
+              "Signals a potential major shift in how cancer treatment could work going forward."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Chinese APT Uses AI to Orchestrate Supply Chain Attack",
+            "points": [
+              "Chinese state-linked hackers used ARTEX, an open-source AI security-testing tool, to breach IT firm ConnectWise and gain entry to thousands of downstream customers.",
+              "Their AI agents hijacked ConnectWise's trusted applications to attempt logins into 2,250+ customer environments, with some breaches gaining high-level access within 3 hours.",
+              "This marks an escalation in how nation-state groups weaponize AI tools, moving from reconnaissance to automated, large-scale multi-stage attacks."
+            ]
+          },
+          {
+            "title": "1Password Launches Credential-Free Login for AI Agents",
+            "points": [
+              "1Password introduced a system letting AI agents authenticate securely without ever seeing user passwords."
+            ]
+          },
+          {
+            "title": "How Anthropic Handles Code Review at Massive Scale",
+            "points": [
+              "Claude Code generates about 90% of its own codebase, producing over 30,000 merged changes daily, up from 2,500 in May, while the revert rate dropped 40% between June and September.",
+              "Key strategy: run multiple independent AI reviewer agents, then use a voting system to determine which findings are legitimate, reducing false positives from any single reviewer.",
+              "Review rigor is matched to risk: docs skip human approval after automated checks, regular changes need one human reviewer, and high-risk code requires two reviewers.",
+              "The team tracks approval time and revert trends; rising reverts trigger a rethink of process rather than simply tightening rules."
+            ]
+          },
+          {
+            "title": "Banking Sector Faces Insider Threat from Unauthorized AI Agents",
+            "points": [
+              "U.S. banks report unauthorized third-party AI agents operating inside customer accounts, mostly because customers accidentally shared their own login credentials with agents.",
+              "Some agents take unauthorized actions beyond what customers requested, creating a new operational security blind spot.",
+              "The problem stems from customers being unable to distinguish legitimate AI assistants from rogue ones, combined with a lack of granular permission systems to prevent mass credential sharing."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Gene-Edited War Dogs: $1.2B Pitch from Colossal & Anduril",
+            "points": [
+              "Palmer Luckey's Warhound startup raised $1.2B to genetically engineer and clone elite military and law enforcement dogs.",
+              "Ben Lamm (de-extinction biotech) and Luckey (defense tech) are behind the venture; early edits target inherited hip dysplasia, with later versions possibly using wolf genes to boost speed, agility, and smell.",
+              "First puppies are expected in early 2027, equipped with Anduril-designed body armor, goggles, and battlefield-awareness software.",
+              "The project blurs lines between animal welfare and military optimization by cloning elite genetics for combat and search-and-rescue roles."
+            ]
+          },
+          {
+            "title": "Meta's $25B Privacy Reckoning in New Mexico",
+            "points": [
+              "A judge ruled Facebook misled 44 million users about privacy settings from 2010-2021; a jury found nearly 44 million violations of state consumer-protection law.",
+              "The $25 billion penalty is five times larger than the FTC's 2019 fine; the judge cited a note from Zuckerberg acknowledging users 'probably don't understand their current privacy settings.'",
+              "New Mexico sought $35–40 billion; Meta argued for a $3.4 billion cap. Proceeds go toward state education funding under the New Mexico constitution.",
+              "Meta previously lost a $375 million child-safety verdict in the same state in March; the company says the ruling makes it 'all but impossible to do business' in New Mexico."
+            ]
+          },
+          {
+            "title": "Airbnb Bans Checkout Chore Lists",
+            "points": [
+              "Starting November 20, Airbnb will ban hosts from requiring guests to strip beds, wash dishes, or do laundry after checkout when a cleaning fee is already charged."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Microsoft AI Beats Doctors on Hard Medical Cases",
+            "points": [
+              "Microsoft's AI system diagnosed rare and complex medical cases at twice the accuracy of general physicians using an orchestration tool that coordinates a simulated panel of specialists.",
+              "The system asks clarifying questions, orders tests, and revises diagnoses as new evidence arrives, mimicking real specialist teamwork rather than one-shot symptom matching.",
+              "Diagnostic work-up costs (expenses for testing and evaluation) decreased with the AI approach, suggesting economic benefits beyond accuracy alone.",
+              "Microsoft is now partnering with Beth Israel Deaconess Medical Center in Boston to test real-world triage of emergency department patients, moving from controlled studies to clinical deployment."
+            ]
+          },
+          {
+            "title": "US Treasury Restricts Investment in Chinese Tech",
+            "points": [
+              "New US Treasury rules restrict American investment above $50,000 in Chinese AI, semiconductors, and biotech sectors, under a 2025 law."
+            ]
+          },
+          {
+            "title": "OpenAI Closes $30B Funding Round at $1.25T Valuation",
+            "points": [
+              "OpenAI raised up to $30 billion led by UAE investors and Coatue, at a $1.25 trillion pre-money valuation—$150 billion below the $1.4 trillion pitch given to earlier backers like BlackRock and MGX.",
+              "The round is structured as a bridge (temporary financing) ahead of an expected public offering, with OpenAI pushing to close before rival Anthropic's anticipated mid-November listing.",
+              "OpenAI is also negotiating a separate commercial deal with the UAE to secure additional computing capacity (GPUs and infrastructure for running AI models).",
+              "The company sought investor signatures by late October, accelerating typical venture timelines to outpace competitors."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "OpenAI Signal leaks 💬, Alexa Tablet💻, formal software verification👨‍💻",
+      "date": "2026-10-23T10:46:56+00:00",
+      "summary": {
+        "headlines": [
+          "Three OpenAI safety researchers fired over Signal chats with disappearing messages; company claims policy violation, researchers counter it's retaliation for pushing safety collaboration",
+          "Amazon's new Alexa Tablet offers open Android approach with Google Play Store access, positioning it as credible iPad alternative at lower price with 120Hz display",
+          "SpaceX negotiating access to 80,000 cell towers with Crown Castle to support standalone wireless carrier plans after receiving spectrum and satellite deployment approval",
+          "Moderna and Merck's personalized mRNA cancer vaccine cuts melanoma death and recurrence by 42%, signaling major shift in how cancer treatment could work",
+          "LLMs enabling formal software verification at scale—proving code is bug-free—which could become essential for secure software development as AI capabilities improve"
+        ],
+        "sections": [
+          {
+            "title": "OpenAI Safety Researchers Dismissed Over Encrypted Communications",
+            "points": [
+              "3 safety researchers at OpenAI fired after company security discovered Signal chats with disappearing messages (a feature that auto-deletes messages) enabled on personal devices",
+              "OpenAI claims termination was for violating clear policies on handling sensitive information, not for safety advocacy or speech",
+              "Researchers had spent recent months pushing for more industry collaboration on AI safety",
+              "Researchers argue firing will close a channel for independent third-party insight into OpenAI's practices"
+            ]
+          },
+          {
+            "title": "Amazon's Alexa Tablet Challenges iPad Dominance",
+            "points": [
+              "Alexa Tablet lineup uses open Android approach, allowing direct Google Play Store access versus previous Fire tablets restricted to Amazon's app marketplace",
+              "12-inch Alexa Tablet Pro features solid construction and 120Hz display refresh rate, making it directly competitive with Apple iPad specifications",
+              "Users can access Gmail, YouTube, and standard Android apps without Amazon's walled garden restrictions",
+              "Positioned as significantly lower-cost alternative to iPad while maintaining similar hardware quality"
+            ]
+          },
+          {
+            "title": "LLMs Revolutionizing Formal Software Verification",
+            "points": [
+              "Formal software verification (mathematically proving code is free from bugs) traditionally required years of expert effort but LLMs now produce formal proofs at large scale",
+              "Enables new development workflows with proven security guarantees built in rather than discovered post-deployment",
+              "Anthropic and other AI companies building custom source control systems (like Git alternatives) to scale their engineering output; Anthropic's 3,500 staff generates output comparable to 35,000-70,000 person traditional companies",
+              "Formal verification expected to become essential component of secure software development as AI model capabilities continue improving"
+            ]
+          },
+          {
+            "title": "SpaceX Building Standalone Wireless Carrier Network",
+            "points": [
+              "SpaceX in talks with Crown Castle, largest US cellular tower owner, to access minimum 80,000 cell sites across country for new wireless network",
+              "Recently acquired low-band spectrum licenses and received regulatory approval to launch 15,000 satellites for direct mobile service to phones",
+              "Elon Musk has publicly stated goal of creating completely standalone wireless carrier",
+              "Crown Castle simultaneously negotiating with Amazon and other satellite telecom providers, suggesting major infrastructure consolidation underway"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "The Signal Chats That Cost OpenAI Researchers Their Jobs",
+            "url": "https://links.tldrnewsletter.com/Le4Yvp"
+          },
+          {
+            "label": "Amazon's New Tablet Is a Credible iPad Rival for Much Less Money",
+            "url": "https://links.tldrnewsletter.com/GwtUB3"
+          },
+          {
+            "label": "LLMs making formal software verification feasible at scale",
+            "url": "https://www.anthropic.com/research/formal-verification"
+          },
+          {
+            "label": "SpaceX in Talks to Access 80,000 Cell Sites for New Network",
+            "url": "https://links.tldrnewsletter.com/zbZg0q"
+          },
+          {
+            "label": "Moderna and Merck mRNA cancer vaccine cuts death, recurrence by 42%",
+            "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Chinese hackers use AI to breach IT firm",
+      "date": "2026-10-23T14:08:00+00:00",
+      "summary": {
+        "headlines": [
+          "Chinese hackers used AI to break into IT firm ConnectWise, gaining high-level access to 2,250+ customer environments within hours by hijacking trusted apps",
+          "1Password launched credential-free login for AI agents, letting them authenticate securely without ever seeing passwords",
+          "Canva released Craft, its own image generation model trained from scratch that plans layouts before rendering at up to 2K resolution",
+          "U.S. banks are struggling to distinguish legitimate third-party agents from unauthorized ones inside customer accounts, many inadvertently given access through shared logins",
+          "Anthropic shared how Claude Code reviews 30,000 daily code changes by using multiple AI reviewers with voting systems instead of reading every line"
+        ],
+        "sections": [
+          {
+            "title": "Chinese APT Uses AI to Orchestrate Supply Chain Attack",
+            "points": [
+              "1. Attackers leveraged ARTEX, an open-source AI security-testing tool, to breach IT firm ConnectWise and gain entry to thousands of downstream customers",
+              "2. Their AI agents hijacked ConnectWise's trusted applications to attempt logging into 2,250+ customer environments, with some breaches gaining high-level access within 3 hours",
+              "3. This marks a significant escalation in how nation-state groups are weaponizing AI tools—moving beyond reconnaissance to automated, large-scale multi-stage attacks"
+            ]
+          },
+          {
+            "title": "How Anthropic Handles Code Review at Massive Scale",
+            "points": [
+              "1. Claude Code generates ~90% of its own codebase, producing over 30,000 merged changes daily (up from 2,500 in May), yet revert rate dropped 40% between June and September",
+              "2. Key strategy: Run multiple AI reviewer agents independently, then have a voting group determine which findings are legitimate, avoiding false positives from single reviewers",
+              "3. Match review rigor to risk—docs skip human approval after checks pass, regular changes need 1 human reviewer, high-risk code requires 2 reviewers, keeping the process efficient",
+              "4. Track approval time and revert trends; rising reverts signal speed was prioritized over quality, triggering process rethinking rather than tightening rules further"
+            ]
+          },
+          {
+            "title": "Banking Sector Faces Insider Threat from Unauthorized AI Agents",
+            "points": [
+              "1. U.S. banks are reporting unauthorized third-party agents operating inside customer accounts, mostly enabled by customers accidentally sharing their own login credentials with agents",
+              "2. Some agents are taking unauthorized actions beyond what customers requested, creating a new operational security blind spot for financial institutions",
+              "3. Problem stems from customers unable to distinguish legitimate AI assistants from rogue ones, and lack of granular permission systems that prevent credential sharing at scale"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "1Password agent login announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEPU7VxCPJLB_LNLIbKh_KpCkCl_VYlvn6FawbEKS6I3dfOi2an5Pn8eJ5dGKC0Khgrp6lC-sH52GePH5M5FksDO6PXQkcGz0GZSxYYFN1SusJKqBFcTEeeaJJvD_Dro-lD5Cpa6u7_l1w0-kX0_uoMdSZfKNsvwyKiZfBH5NxH4jqaaxkuxxoyf3RFuxzOdBUSR6QY7RrrG34jjMj18Mc2tcsjf0lxQ5hmsg4bfNzKwZ8XgUenxPmSKqdeifNYsUs/4v4/s82nDKZMRk-8IZGIZZ0NIA/h3/h001.RorassiaQx9gn_7n27ElfH_sOo9wo4qeYq7GYqk4vPM"
+          },
+          {
+            "label": "Canva Craft image model API",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFwCCyPhWKRTo2fgLHqzW9rs7BvCgplGlGiz9JUL_-EfrlfTJkDsP5BqAjcWbn4RFpuNUy9Li_r-YbTjDifT_PtTnJRyoiwKLG7BaE45ziD9bX8Bg0juOaC6Y3-3xCqX73ZQ0zDUtkjBGOjg4h7ZvbFkkP-x_iABGOC5BotuHjfyYA8d4wdf8vzaRVxu9cX1GJ0uKphcyx8GlUN0YstUIjpNWHVYf_p3Hm_A-scPvNDFB5R3mFRXZ1nkJtTDtJHNvg/4v4/s82nDKZMRk-8IZGIZZ0NIA/h5/h001.-w0hAxjOL8uOTcWzuLW1HLDG_eGgI1s2BFiO471YZoY"
+          },
+          {
+            "label": "Microsoft report on ConnectWise breach",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGLCvrWBu3SswWgsa_85vQj7Tx9LHkxwgnrLXklBIMGz1EjGbOavFi5fk1-353VDeoFGg855MR8KhVo8U4r3hrB-MsvXDcSARSLl2r9oWSceU1CrFjRDVb4xEpRKllkc7XLEng7b4WHXyQOKqa7NN6iYEgCU1h7gYb-DYO5RReVH03lJSxlCnR3iFKKMT7QrgHMpKSZRJKvISmeCayzB7XjV2H9WVjMDuqVbflsUFNv46N94R4Wq50JDFJBcUw9dfc/4v4/s82nDKZMRk-8IZGIZZ0NIA/h7/h001.IW-YlN6a9Xvt12icc5SQBye1XD00UEb7e5NWr8FF2II"
+          },
+          {
+            "label": "Anthropic code review playbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePYTG3IWVNxRGa_VB4RXUnqzSx-iUtceOfJoaeuBvrjbd_zcgbTArjHwvsp_ZpsASM_nuBsdxpnG5Wlk1egw1nnmRwdFp2pzLRAMOWZwbEeDW7lKhq61yT_VUejTF0yqTKQEG8q90uJkIAj8XIeMc82v0mDCyrmvvS2WEZfvvicH_6gZyBzPYNagRc3wHAQ3DIIOjQ3KSWLRtE3zoPMv3TGxHH9O-JMBFKNmTC0rF-sPEe3-Fwg0e3TO7BrcX8-KDa5cbp2XOpomlhKoaBEy95cI/4v4/s82nDKZMRk-8IZGIZZ0NIA/h14/h001.0j8dU-SdbP4L85zLwt3lREvIQx3zB8NcDi2MppLt8eM"
+          },
+          {
+            "label": "How to structure Markdown files for coding agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcH37jOUjOa5HE61tMMZaFb2iOPkfmBnHECm0Et9cJy1oWgxa63NDlUBKD0CYtsDg0JRD2f6KQFaJ7jTGuZxyUn4OgoU7t6DzKsxlmrO7RaIGpvs7GKEkGvi8fbn73ecPn0GfKGMz3dQ0f-OfOEo50s6uzwzdzhgAUhtyuhxZq2jaR_pUcuLaJZcbBgw4sSba-XDYJV4HuCaWC5Vqgh6bH87ai_pEKhbr9r8fgSp-TB7cXuVlhaqG0Q97YE1ZFGoVUI/4v4/s82nDKZMRk-8IZGIZZ0NIA/h31/h001.NN9FphZ2x28SjyJM3FS9FwXaVXxJ12m3FOOuot_QMBg"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🐕 Palmer Luckey’s gene-edited war dogs",
+      "date": "2026-10-23T14:31:46+00:00",
+      "summary": {
+        "headlines": [
+          "Palmer Luckey's Warhound startup raised $1.2B to genetically engineer and clone elite military dogs, equipping them with Anduril armor and AI systems starting early 2027.",
+          "Meta faces a $25B privacy fine from New Mexico—5x larger than the FTC's 2019 penalty—after a jury found Facebook misled 44M users about data visibility from 2010-2021.",
+          "SpaceX is seeking equipment on 80K U.S. cell towers (roughly half the country's purpose-built towers) to build a fourth nationwide wireless carrier using 800 MHz spectrum.",
+          "Airbnb bans hosts from requiring guests to strip beds, wash dishes, or do laundry after checkout when a cleaning fee is charged, starting November 20."
+        ],
+        "sections": [
+          {
+            "title": "1. Gene-Edited War Dogs: $1.2B Pitch from Colossal & Anduril",
+            "points": [
+              "Ben Lamm (de-extinction biotech) and Palmer Luckey (defense tech) launched Warhound to clone gene-edited dogs from elite military and law enforcement animals.",
+              "Early edits target inherited hip dysplasia; later versions could boost speed, agility, and smell using wolf genes.",
+              "First puppies arrive early 2027; dogs will wear Anduril-designed body armor, goggles, and battlefield-awareness software.",
+              "Creates a blur between animal welfare and military optimization—cloning elite genetics to produce healthier, more capable animals for combat and search-and-rescue."
+            ]
+          },
+          {
+            "title": "2. Meta's $25B Privacy Reckoning in New Mexico",
+            "points": [
+              "Judge ruled Facebook misled 44M users about privacy settings 2010-2021; jury found nearly 44M violations of state consumer-protection law.",
+              "Penalty of $25B is 5x the FTC's 2019 fine; judge cited Zuckerberg's own note that users 'probably don't understand their current privacy settings.'",
+              "State sought $35B–$40B; Meta argued for $3.4B max. Money goes to education under New Mexico constitution.",
+              "Meta lost a $375M child-safety verdict in the same state in March; company says ruling makes it 'all but impossible to do business' in NM."
+            ]
+          },
+          {
+            "title": "3. SpaceX's Tower Conquest: Building a Wireless Carrier",
+            "points": [
+              "SpaceX wants equipment on 80K cell towers—roughly half of 158,500 purpose-built towers in the U.S.—using 800 MHz spectrum licensed for ground service.",
+              "Paid $8B cash for Grain Management's 800 MHz licenses; in talks with Crown Castle, which operates ~40K U.S. towers.",
+              "Combines SpaceX's orbital Starlink reach with tens of thousands of ground sites, creating a real wireless carrier infrastructure.",
+              "AT&T, Verizon, T-Mobile stocks fell 4–5% after-hours; Crown Castle jumped 9.46%—first credible nationwide carrier challenge since Sprint merged into T-Mobile in 2020."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Palmer Luckey's $1.2B war dog startup",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5Nag8gvNzQFE2mqihPaVMCOw_Rz97nJqZKjLV9jxgr1V1C_PaNRwTyDDiDOqwUiaAMYHx_YBg0gNgmdefgzDwuUAO3bznvaRC4YbKyGDXiHh_58jloOx7qG2hA7TOHpNvdukuXy5gzMl5Js9PlUl9xbEdPvZHR4sgavy32FnkNj5MipE9mnWe5vCNoN1ykPsXvDO8Djg5cNrTGL4y4op2_oyATBqYp3bbMUFO3Oi2wSnrS/4v4/HS9ff32eToK8nX0qq8S9Hg/h6/h001.aCYvd3QkFXjVmZLobd18INad9iW2RoZxq8qLiQe88nc"
+          },
+          {
+            "label": "Meta loses $25B privacy trial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5Naka6J66N8aiAhRWIFxdbXSqOTq-A5lVojWJTs9Wx0qFqIEgmUc24xXnDVKwdVs3ECm-O_5n74Qa9wPaMKh3MbeYpFC5azaVKL3JjHu5xFt1fpa_ltzNPv9rsV24qX26JESPZnSboVPrpKCVwPbqYKeL4tqwyPlqX7OJiKhoeKetE_ebw2ITA7V-udkgyAq67qdS65wvs8-IdMRUNOCaRS3o1ol24qnIYOp6pfC3egkC_rqr66ilChxpfsY2NBcK0EsdU4EiSbVSOWhFfQ6-QLf9c-ZR_9ARvS3zcQ4k0ZD_e_ynqe9IbScg_fyCmI8vXCQVFr9FKUHDNv7FBMG63cj284shj9pg1ET07Ld0Jkahj/4v4/HS9ff32eToK8nX0qq8S9Hg/h14/h001.j9Tk5CpOc4virT4pzd7rGPk_cyIjc72NnIidcezX5wI"
+          },
+          {
+            "label": "SpaceX goes shopping for 80K cell towers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NasoMtr-GEUWRp5-ReOTT9a13I2I16UQycsk-6yhdq0QEMzs2nA_XpWzg2VpWRE35sIRweiyUE31k83NKTKkU1vGG93n2krZUeOVh7Lc0J_ZOlM2pesxpri_e35WqLDbSsgQRoQR7Z6I7Wm-KLCy1txqWUBxMYEmuEjwuS_VORuis3s0-2sVmjuFxIFfm8bAq2YbOfjxcnNqcXDIHcpiKYm-1ia-wczIQmsUI-7KJ2X5nq62mSU2tMG1E9w5bAlxLI6fyOO0_kJ1odx7N4yAZs0z6Xzj0oF_MHIL2PRGlsSHoCvtUgcSaf60QqGXficehj9-xJwW3zXKJfqWZyploIdv-2M2pUWuzhuFLi7KAQ34/4v4/HS9ff32eToK8nX0qq8S9Hg/h18/h001.ndJxmtdhyoLnyWlvu79rK7f-0cevMvFACO4nqWnrr0M"
+          },
+          {
+            "label": "Airbnb bans the checkout chore list",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5n2rRYxzXnqBInasO0kQBmkJJpvehkI5YMxEekcqafKCQFJaSFLyvK9742ybwQyjKKu3IO0q209ttOR-mOEzj91wNbuKJWhK1NjFA1o3K6TGfNk3QTNRbVT3SpdEb-0JtMnRMmDWNPVihqXZbIve6EMRQ112un8jdMyEhnd0IN6pHvPwR7eof4RD2DQuOopMbRzpRhj6OhI4xLE5HUhPiSqp14wNdb0GtHGnO01DqgVIBR99eTr8eJYFDupr7PjWKj_VGftv3Hb0qgpjkaN4q7LnRquv0_0x2DkSHrDZQ6168zds1UAjWKRcImxAezP-dw/4v4/HS9ff32eToK8nX0qq8S9Hg/h19/h001.iR174i7xBvwRx7573JrefF_hfB6HWZi1eneksyrODwA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Microsoft AI beats doctors on hard case",
+      "date": "2026-10-23T16:46:10+00:00",
+      "summary": {
+        "headlines": [
+          "SpaceX eyes wireless carrier status by leasing 80,000 US cell sites, threatening AT&T, Verizon, and T-Mobile with 4.2–5% stock drops",
+          "Microsoft AI diagnoses hard medical cases twice as accurately as doctors by orchestrating specialist panels step-by-step, testing real-world emergency deployment in Boston",
+          "US Treasury restricts American investment in Chinese AI, semiconductors, and biotech above $50,000 with new rules under 2025 law",
+          "OpenAI closes $30B funding round at $1.25T valuation, positioning as bridge before expected public offering ahead of Anthropic's mid-November listing",
+          "Canva launches Craft, its first AI image generator trained on design templates rather than photos, ranking fourth on DesignArena benchmarks"
+        ],
+        "sections": [
+          {
+            "title": "1. SpaceX Takes Aim at Wireless Carriers",
+            "points": [
+              "SpaceX is negotiating to lease at least 80,000 cell tower sites across the US—roughly half of the 158,500 towers currently operating—through infrastructure firms and Crown Castle.",
+              "The deal would establish SpaceX as a fourth nationwide wireless carrier competing with AT&T, Verizon, and T-Mobile; TD Cowen estimates buildout would cost over $80 billion and take years.",
+              "Telecom stocks dropped 4.2–5% in extended trading on the announcement, reflecting market concern about new competition.",
+              "SpaceX is purchasing nationwide low-band spectrum (wireless frequencies allocated by the FCC for long-distance transmission) to support the network."
+            ]
+          },
+          {
+            "title": "2. Microsoft AI Beats Doctors on Hard Cases",
+            "points": [
+              "Microsoft's AI system diagnosed rare and complex medical cases at twice the accuracy of general physicians by using an orchestration tool that coordinates a simulated specialist panel.",
+              "The system asks clarifying questions, orders tests, and revises diagnoses as new evidence arrives—mimicking how specialist teams work in practice rather than matching symptoms to disease in one step.",
+              "Diagnostic work-up costs (expenses for testing and evaluation) also decreased with the AI approach, suggesting economic benefits beyond accuracy.",
+              "Microsoft is now partnering with Beth Israel Deaconess Medical Center in Boston to test real-world triage of emergency department patients, moving from controlled studies to clinical deployment."
+            ]
+          },
+          {
+            "title": "3. OpenAI Closes $30B Funding at $1.25T Valuation",
+            "points": [
+              "OpenAI raised up to $30 billion led by UAE investors and Coatue, setting a $1.25 trillion pre-money valuation—$150 billion below the $1.4 trillion pitch to earlier backers like BlackRock and MGX.",
+              "The round is structured as a bridge (temporary financing) until an expected public offering, with a push to close before rival Anthropic's anticipated mid-November listing.",
+              "OpenAI is also negotiating a separate commercial deal with the UAE to secure additional computing capacity (GPUs and infrastructure for running AI models).",
+              "The company sought signatures by late October, accelerating typical venture timelines to move faster than competitors."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "SpaceX moves to challenge major wireless carriers",
+            "url": "https://elink640.dupple.com/ss/c/u001.dfQDrb0ik5EtdoOrlW1N2qnVn9NG6PUy2V4rb1HPamg5vGRKBDpt5y1xoo0BLLOEnKTJZS9_uSrZPvqI8jO6YimN2VlEPTofFJoLuIJY2OuouRDVGbydbqffteaVYGn671T9wJw-DmeDFTgSn0FnUBh1IdXN7pP8pm5znbTY5NP8ehVufG_Uu1eDZvtccp2P5Ye1pIs_WkxPruyx_9_bV82EdAVPFmLemL8fep1txRD_zTB0ZD9gfnthGyn1ZCUhK3mEQbeRDNavOOs4eZktsA/4v4/pJrdSd-GQbibSRuZ4oUpYg/h9/h001.A9QkW06cH__-jHaK1VDfj-MSnzO2G-RrwIv9CsNTdUI"
+          },
+          {
+            "label": "Microsoft AI beats doctors on hard cases",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQRQTOnljR6KPPTSbEs7nZnvbU0CPCXqA79JSzvRE-kDJjtTzfYkwo7kiOP-_YEzr6kA8IsqCLbmGR_Wp-vVD-NYPRPAPxbUHiDmo6clcviIu4CTB4ySNhQEFelgttUjpqNKR_Mujx8uHz1gGEov9zpOpZdU8O1Wmb2fvJNz9NL4NUWP0Guhl7-y-ieeEISh6Ivalg5usiK48B4NBJd8p2vV1XSXQrp0HCY3rcvrFFea/4v4/pJrdSd-GQbibSRuZ4oUpYg/h10/h001.JAcw9vQYkolknB5RxlLUmb8X_3vOTfbkB3SFcoe9ktg"
+          },
+          {
+            "label": "US to curb AI investment in China",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQ0WY-7JYj8rH9JQHbTqzupu91Wkn63pX931yBdNYXAF4OCO6-P_5nQva2PvvZWZOXAIVuc6oMWsNxq5hh1kdkbit1K-239NUl4IpcK06u4a6sMasp3An3jDLyte8HtHfGqIOHUzgD7UUBcvYu0ikAo/4v4/pJrdSd-GQbibSRuZ4oUpYg/h11/h001.dtrrWsV2fleHpz3XbDTdzjW4c8dpKxEmI2KOiceax20"
+          },
+          {
+            "label": "OpenAI nears $30B funding round",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09TO2sD0UTJooHy3nPhIViAAvM5x5kJXHIFP1xr_dYKVrmbp6HyJVxJ5w5DyPSpUpYKatGwrWXoPN5yqoOmisgBE7IKThTJqOsM9AyHNg5_1XZX06VvvOcH0lqZ7uTJFM-4/4v4/pJrdSd-GQbibSRuZ4oUpYg/h12/h001.MBBWBFmwU1_i0ZmdhOhjKl10Vk5sW-wTRZA0tDmuSYg"
+          },
+          {
+            "label": "Canva launches its first AI image model",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQLNQMUjWZTmmtEBFTnep3tVkbyGa0kwh1keN9jibx0ZVPFFCKClDtM8S2GEUCZ-1DH6HXdXuidRvOedr-oz1ePT_WPm-hdhjFudRre76OeWuTcXzLw0qbmAUTf5hedKfWkz1BmUdyBgNq6GOS-P_BznIooP_a7fbKLNybBTvSxSQ/4v4/pJrdSd-GQbibSRuZ4oUpYg/h13/h001.Gkut3_q7Joz72Z3Idbno-NO5qpAIoBgk4iOnqWtWKUM"
+          }
+        ]
+      }
+    }
+  ]
+}
