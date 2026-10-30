@@ -1,0 +1,438 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-10-30",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Mistral Releases Downloadable Large 4, a Trillion-Parameter Model",
+        "points": [
+          "Nicknamed 'Le Chonk,' Large 4 uses mixture-of-experts architecture (only about 49B of 1 trillion parameters activate per query, like routing to specialists instead of using the whole system), cutting token use by 47% versus competitors.",
+          "Weights are freely downloadable via Hugging Face/API with a 1M-token context window (amount of prior conversation the model can reference), supports text and images, and ties GLM-5.3 on coding benchmarks.",
+          "Mistral withheld a stronger cyber-focused variant from public release, restricting it to vetted partners like Orange Cyberdefense for authorized penetration testing, after internal tests suggested it could meaningfully boost real-world attacker capability (despite refusing 96.6% of malicious requests in benchmarks).",
+          "Commercial use requires a separate license (stricter than Large 3's Apache 2.0); recommended deployment needs eight GPUs, letting banks, governments, and security teams self-host frontier AI without sending data to external APIs."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "TLDR AI"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR AI",
+            "point": "Separately, GLM 5.3 (a rival open-weight model) demonstrated it can automatically identify and exploit Firefox vulnerabilities using only published security patches before users have updated, shrinking the gap between patch disclosure and working exploits—a risk expected to worsen as open-weight models' cybersecurity skills improve."
+          }
+        ]
+      },
+      {
+        "title": "Cloud Giants Post Blockbuster AI-Driven Earnings, But Investors Punish Stocks",
+        "points": [
+          "AWS grew 39% to $46B in the latest quarter (fastest in nearly five years), with Bedrock (Amazon's AI model-building service) up 17x; Google Cloud jumped 103% to $31B and Azure rose 48% to $33B, all fueled by AI demand.",
+          "Despite the growth, Amazon's free cash flow (money left after operating expenses) swung $57B negative—from a $14.8B gain to a $42.4B outflow over 12 months—driven by AI infrastructure spending; Amazon is holding 2026 capex (capital expenditure, spending on equipment/infrastructure) at roughly $220B and signaled 2027 will be even larger.",
+          "Stock markets reacted negatively: Microsoft was flat, Amazon fell 4%, and Google plunged over 12% in its worst trading day ever, as investors questioned whether the roughly $750B in planned 2027 AI infrastructure spending across Big Tech will generate adequate returns.",
+          "Apollo's chief economist Torsten Slok flagged this return-on-investment uncertainty as the core driver of the sector's valuation concerns."
+        ],
+        "covered_by": [
+          "The Neuron",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "Nvidia CEO Spy Plot",
+            "points": [
+              "U.S. intelligence reportedly found Alice Huang, an exec at Singapore-based data center firm Megaspeed with close ties to Nvidia CEO Jensen Huang, allegedly passing intelligence to Beijing; Trump was briefed roughly a year ago but the White House took no public action.",
+              "Officials worried she could reveal Trump's views on chip sales to China and provide insight into Nvidia, though they don't believe Jensen knew of her alleged role; he was never given a defensive briefing (a standard security notification for targeted U.S. citizens).",
+              "Megaspeed is already under U.S. investigation for steering Nvidia chips to China, having bought at least $4.8B in Nvidia hardware via a sister company while remaining an Nvidia cloud partner.",
+              "The report spotlights loopholes letting Southeast Asian firms rent Nvidia-powered computing to Chinese AI labs—a practice Trump previously reopened but may now move to close."
+            ]
+          },
+          {
+            "title": "Anthropic's Claude Self-Monitors for Misuse",
+            "points": [
+              "Claude now performs 'self-assessment' after each reply, reviewing the conversation to flag potential misuse by harm type and urgency, helping prioritize cases for human review.",
+              "On Claude Fable 5 (an earlier model version), the system catches 78% of harmful conversations flagged by stronger safety classifiers, with 94% detection on high-priority cases and just a 1% false-positive rate.",
+              "It helped uncover 100,000+ child-abuse flags from a single API customer (reported to authorities) and detected an automated romance-scam operation run through Claude Code (an AI coding tool).",
+              "In red-team tests (controlled adversarial challenges), the system reduced attack success from 79% to 54% and made each successful attack cost roughly 4x more resources, though Anthropic notes it's a detection layer, not a complete blocker."
+            ]
+          },
+          {
+            "title": "ElevenLabs Adds Audio Tags for More Natural AI Voiceovers",
+            "points": [
+              "Audio Tags are bracketed formatting codes (similar to HTML tags) placed around text to guide Eleven v4's delivery—adding pauses, emotion, or emphasis—without changing the spoken words.",
+              "Workflow: paste a tagged script, pick a voice and model, and generate; comparing plain vs. tagged versions shows improved pacing and naturalness.",
+              "Best practices include saving a plain version for comparison, using Dialogue mode for multiple speakers, keeping tags short and placed before affected words, and testing one change at a time.",
+              "Common pitfall: if a tag gets read aloud, check you're using the correct model and square-bracket formatting; ElevenLabs provides a full cheat sheet and review checklist."
+            ]
+          },
+          {
+            "title": "Cohere and Anthropic Funding/Spending Milestones",
+            "points": [
+              "Cohere raised a Series E targeting up to $5B, driven by 165% year-over-year revenue growth and 20x customer expansion.",
+              "Anthropic became SpaceX's largest customer at $3.1B per month in AI compute spending."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "AI Mouse Cursor Tool Draws Live Diagrams",
+            "points": [
+              "Heyclicky, a new AI tool, draws live diagrams on-screen to explain any topic, running on OpenAI's fastest model and available today for Mac and Windows."
+            ]
+          },
+          {
+            "title": "Unverified Claim: AI Performs Autonomous Brain Surgery on Mouse",
+            "points": [
+              "Oxford PhD and Exin Therapeutics CEO Gabriel Ocana-Santero claims he gave an AI full control of a motorized surgery rig with cameras to reduce seizures in an epileptic mouse.",
+              "The AI allegedly chose the drug, targeted the specific brain region, and administered the injection autonomously, with a veterinarian on standby with a kill switch.",
+              "The claims have gone viral but remain unverified by independent sources; if confirmed, it would be the first documented autonomous AI surgery on a living mammal."
+            ]
+          },
+          {
+            "title": "Claude and OpenAI Product Updates",
+            "points": [
+              "Claude added seven new features, including support for 24 additional languages and hands-free voice mode for Apple CarPlay.",
+              "OpenAI doubled usage limits for its Pro and Business Premium tiers."
+            ]
+          },
+          {
+            "title": "Other Major Tech Product Launches",
+            "points": [
+              "Apple released its first MacBook Pro with a touchscreen, alongside new iMac and iPad mini models.",
+              "Google deployed Gemini 4 Carbon, which topped most AI leaderboards and is rolling out first to cybersecurity professionals; Genie 4 generated buzz for creating interactive 3D worlds with advanced physics and real-time controls.",
+              "Block Inc. (Square's parent) unveiled Dessa, a voice model small enough to run locally on a MacBook Pro M4 Max or better, enabling human-like conversation without cloud dependency."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Agent Swarm Leadership Dynamics",
+            "points": [
+              "Researchers tested eight agents from four different models resolving a simulated outage with no designated leader, observing emergent organizational patterns.",
+              "Leadership emergence was influenced by which underlying model powered each agent and by the alphabetical order agents appeared in prompts, showing that minor implementation details can significantly affect multi-agent coordination.",
+              "Findings suggest building multi-agent systems requires attention to subtle design choices beyond model selection alone."
+            ]
+          },
+          {
+            "title": "Sam Altman on Distributed vs. Centralized Superintelligence",
+            "points": [
+              "Altman advocates for a distributed model of superintelligence—a 'trillion' slightly-superhuman AIs—over one centralized superintelligence, citing resilience and dynamic equilibrium benefits similar to agent swarms."
+            ]
+          },
+          {
+            "title": "OpenAI Updates Model Spec",
+            "points": [
+              "The updated Model Spec centers on five core values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care."
+            ]
+          },
+          {
+            "title": "AI Economics and Labor Market Signals",
+            "points": [
+              "Individual AI competence (ability to complete self-contained deliverables) now matches or exceeds experienced specialists across dozens of professions, but coordinating across multiple tasks remains a bottleneck.",
+              "Current wages and job role definitions reflect today's AI capabilities rather than future potential, making labor market data a lagging indicator of AI's economic impact."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Reddit Shifts Toward Logged-In Browsing as Search Traffic Drops",
+            "points": [
+              "Reddit is testing a mostly logged-in browsing experience in select non-U.S. markets after losing over 1 million search referrals per week.",
+              "The move aims to retain users and reduce reliance on external search traffic following earlier API pricing changes that affected third-party apps and aggregators.",
+              "Logged-in requirements could boost engagement metrics and data collection but may add friction for casual readers and new visitors."
+            ]
+          },
+          {
+            "title": "Voice AI and Expert Profile Startups Gain Traction",
+            "points": [
+              "Deepgram agreed to acquire Daily, maker of the open-source voice-agent framework Pipecat, and committed to keeping Pipecat free and maintained for the community.",
+              "Wabi, founded by Replika creator Eugenia Kuyda, raised $55M at a $1.25B valuation to build personal agents powered by AI profiles of human experts.",
+              "These deals signal growing consolidation around voice interfaces and AI-driven personalization as infrastructure matures."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🕵️ Inside the spy plot aroundNvidia’s CEO",
+      "date": "2026-10-30T10:11:11+00:00",
+      "summary": {
+        "headlines": [
+          "U.S. intelligence reportedly found an alleged Chinese asset with close ties to Nvidia CEO Jensen Huang passing intelligence to Beijing, though White House took no public action despite Trump being briefed a year ago.",
+          "Anthropic's Claude now monitors its own conversations post-reply to flag potential misuse, catching 78% of harmful chats on Claude Fable 5 and helping uncover 100K+ child-abuse flags from a single customer.",
+          "ElevenLabs voice synthesis now supports Audio Tags (special formatting codes) that let creators add nuance and emotion to AI-generated voiceovers without changing the underlying script.",
+          "Cohere raised a Series E targeting up to $5B on 165% year-over-year revenue growth and a 20-fold customer expansion, while Anthropic became SpaceX's largest customer at $3.1B/month in AI compute spending."
+        ],
+        "sections": [
+          {
+            "title": "1. Nvidia CEO Spy Plot: What Happened and Why It Matters",
+            "points": [
+              "Alice Huang, an exec at Singapore-based data center firm Megaspeed, was allegedly passing intelligence to Beijing while maintaining close ties with Jensen Huang; U.S. officials briefed Trump about a year ago.",
+              "U.S. officials worried she could reveal Trump's views on chip sales to China and provide insight into Nvidia itself, though they didn't believe Jensen knew of her alleged espionage role and he was never given a defensive briefing (a standard security notification given to targeted U.S. citizens).",
+              "Megaspeed has already been under U.S. investigation for steering Nvidia chips to China; the firm bought at least $4.8B in Nvidia hardware via a sister company and remains an Nvidia cloud partner.",
+              "The report raises questions about loopholes allowing Southeast Asian firms to rent Nvidia-powered computing to Chinese AI labs—a practice Trump previously reopened but may now close in response."
+            ]
+          },
+          {
+            "title": "2. Anthropic's AI Self-Monitoring: How It Works and Early Results",
+            "points": [
+              "Claude now performs \"self-assessment\" after each reply: it reviews the conversation and flags potential misuse by categorizing harm type and urgency level, helping prioritize cases for human review.",
+              "On Claude Fable 5 (an earlier version of the model), the system catches 78% of potentially harmful conversations flagged by stronger safety classifiers, with 94% detection on high-priority cases and only a 1% false-positive rate.",
+              "Real-world impact: the system helped uncover 100,000+ child-abuse flags from a single API customer (reported to authorities) and detected an automated romance-scam operation run through Claude Code (an AI coding tool).",
+              "While self-assessment is a valuable detection layer, Anthropic acknowledges it's not a complete blocker—in red-team tests (controlled adversarial challenges), it reduced attack success only from 79% to 54%, though it made each successful attack cost roughly 4x more resources."
+            ]
+          },
+          {
+            "title": "3. ElevenLabs Audio Tags: Making AI Voiceovers Sound Natural",
+            "points": [
+              "Audio Tags are bracketed formatting codes (similar to HTML tags) placed around text to guide how ElevenLabs' Eleven v4 voice model should deliver those words—e.g., adding pauses, emotion, or emphasis without changing the actual words spoken.",
+              "Users paste tagged scripts into ElevenLabs, select a voice and model, and generate. Comparing plain vs. tagged versions reveals improved pacing, emotion, and naturalness in delivery.",
+              "Key workflow: save a plain version first for comparison, use Dialogue mode to add multiple speakers, keep tags short and specific (place them before the words they affect), and check one change at a time to isolate what works.",
+              "Common pitfall: if a tag gets read aloud, verify you're using the right model and that tags use square brackets; ElevenLabs provides a full cheat sheet with annotated scripts and review checklist."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "New York Times: Report on Nvidia CEO spy plot",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMfz3sRxipJonf99jMXlaKZFeJyz0xaiAnyq02lCZi2iPA3uU_u_uNReikyvV1ctoCx3uFHJDRZCDysiuYQzcq3k5R_Fot6k92YdDAZbKPq7gOnzUB2O5WoLYyXJpDjEwt6u7Mi_YtFQ8ae2HKQGDcgMbTI0fSL10BeNnw-GND37FZswt5dyIgslfGZo51xmH2PFkMFniXoRdiEUcDFnQ7XL7RfD_DD_B8cWKt99-dUQ01YYltvi_-b7p5fjNTL4BXFErw5EIQKeoe-Or6REz-BWI/4vb/CQi-0o_8TTe__7G0F4j9Vw/h5/h001.ceRnofPodtePk2QPToB7YKDxEzY31ajJfHZ32rNHIn4"
+          },
+          {
+            "label": "Anthropic self-assessment safety technique",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.7FjCl1Hhb45GEizGv1NNbHiafrsJZYVaqPqxnCUzNdUWBo2iA5-Jm84cg7Ubx-8jDbjTBB6Nwy7LAasLCWBZZP9hMuMUtE0VzfG7RAI3MhMUKym_o81EMJTIshHwWYM9X0iE4YvUGKF1wr9-rp516otMM32hy5I1tVLk59cRfyE2FqoZXE-hSlTaZyJ9F3LJCoPMY0b9l0ra0DRUt0jVm4GTmZV4Vdb-JegzFSBvNtx1zJzbU_CGSJPum76U4iONGQjP0aDyGlkMutIUYFJjSA/4vb/CQi-0o_8TTe__7G0F4j9Vw/h20/h001.6fRvl-wwh1sjMj2cF8iEKACsJPNr3hkJLA4E56RR7TE"
+          },
+          {
+            "label": "ElevenLabs Audio Tags guide and cheat sheet",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEyiLaHPwgHsrtjdKWxL2f4PY2gyItU_m2PuX0kl6NVW4upcbc-1UbvOewc-Ieh7gMcgOnLO6IKuxgZS7quzJHQPfxJiKxlJY7f3t30NsGaagmnpeohmd5vYWSFA_VagXF2UC1sw3VPVYA7tgOVyuVK24tDeeuS62hjl26vl-IkhLl_N3iRCCZQQsILS-pp52LRJv06DA1ChNS7wVSgIe1ws-KErxY3myIi1fB7Hoge7A/4vb/CQi-0o_8TTe__7G0F4j9Vw/h16/h001.YLGgUkpbI1ZhU9-rJfmPMar4dzFv7FbWHAbIPOzmcng"
+          },
+          {
+            "label": "Community AI Workflow Hub",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJHd9d3Qi3t-xcr2ITlH5Nu9_rrq04z_1xUdokV4YXj2yAit2nIW0iOVxfZGFXBAoHvv3YxJI4Cjvc_0QMKCFodiwlysgbSbwhN1bLojYfAP_yyxhzK9ffHDcdaEjsCnfSCJT3CirQSqju3pY-A3Jg8rWWdRhk2sx2rSkaBSJSwwWrcpMKrxhKqMJAYM3BIA4ZNAQG1wothyzm836D8wXcackC68Fv-PVhXHFaLQ80m5hHB5UwZ5bSov9PfQo-R-evg/4vb/CQi-0o_8TTe__7G0F4j9Vw/h22/h001.lJU35_1hToHWN04pYDI4MQ6VCkOgH_Jn7jEcnEC4r4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😸 You can now download Mistral Large 4",
+      "date": "2026-10-30T10:40:07+00:00",
+      "summary": {
+        "headlines": [
+          "Mistral releases downloadable weights for Large 4, a 1-trillion-parameter model, letting companies run frontier AI on their own servers instead of external APIs",
+          "Amazon's AWS growth hit 39% to $46B but free cash flow swung $57B negative due to AI spending, with capex holding at $220B in 2026 and expected to rise further",
+          "Reddit tests logged-in-only browsing as search referrals drop by 1M+ per week, signaling potential shift in how users access the platform",
+          "Deepgram acquires Daily (voice-agent maker) and commits to keeping Pipecat framework open-source; Wabi raises $55M at $1.25B for AI expert profiles"
+        ],
+        "sections": [
+          {
+            "title": "Mistral Large 4: Trillion-Parameter Model Now Downloadable",
+            "points": [
+              "1. Model nicknamed 'Le Chonk' uses mixture-of-experts architecture (a technique where only about 49B of 1 trillion parameters activate at once, like routing to specialists instead of using the whole system), reducing token use by 47% compared to competitors while tying GLM-5.3 on coding tasks.",
+              "2. Released on Hugging Face and via API with 1M-token context window (the amount of prior conversation the model can reference), handles text and images, and offers three reasoning settings.",
+              "3. Mistral split the release for security: general model is freely downloadable, but a stronger cyber variant is restricted to vetted partners like Orange Cyberdefense for authorized penetration testing only, after Mistral's own testing suggested the model could increase attackers' real-world abilities despite refusing 96.6% of malicious cyber requests on benchmarks.",
+              "4. Commercial usage requires a separate license (tighter than Large 3's Apache 2.0), and the recommended setup requires eight GPUs; banks, governments, and security teams can now host frontier-scale models in-house without sending sensitive data to external APIs."
+            ]
+          },
+          {
+            "title": "Amazon's AI Spending Swallows Record Cash Flow Gains",
+            "points": [
+              "1. AWS achieved 39% sales growth to $46B in the latest quarter, the fastest rate in nearly five years, with Bedrock (Amazon's service for building on AI models) growing 17x.",
+              "2. Free cash flow (money left after operating expenses) flipped from a $14.8B gain to a $42.4B outflow over the past 12 months—a $57B swing—driven primarily by AI infrastructure spending.",
+              "3. Amazon is holding its capex (capital expenditure, spending on equipment and infrastructure) at roughly $220B for 2026, mostly for AWS data centers, and signaled 2027 will be even larger.",
+              "4. The spending reflects intense competition to build AI capacity faster than competitors, even as the cash drain continues to accelerate."
+            ]
+          },
+          {
+            "title": "Reddit Shifts Toward Logged-In Browsing as Search Traffic Drops",
+            "points": [
+              "1. Reddit is testing a mostly logged-in browsing experience in select non-U.S. markets after losing over 1M search referrals per week.",
+              "2. The move reflects Reddit's effort to retain users and reduce reliance on external search traffic following API pricing changes that affected third-party apps and aggregators.",
+              "3. Logged-in requirements could increase user engagement metrics and data collection but may also raise friction for casual readers and new visitors."
+            ]
+          },
+          {
+            "title": "Voice AI and Expert Profile Startups Gain Traction",
+            "points": [
+              "1. Deepgram agreed to acquire Daily, the team behind open-source voice-agent framework Pipecat, and committed to keeping Pipecat free and maintained for the community.",
+              "2. Wabi (founded by Replika creator Eugenia Kuyda) raised $55M at a $1.25B valuation to build personal agents powered by AI profiles of human experts.",
+              "3. These deals signal growing consolidation around voice interfaces and AI-driven personalization as infrastructure matures."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Amazon AWS growth 39% to $46B",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.cbDz1iJEc6qINGi4wx-kpC4O5-iK0JgP1n-o9xjv5Xiqz8VmTNGlil6ATWngwJA9Vfs6IRCndIxxLGxZcDn7kdeKrcxf0hTlJf8GUzFNk2ZMz1CJPKHjgEn8-dlOsdDmnrqSSVND8RTwasOIEebRuyUAyAUNcX-yMUgiL9rrEIxFoEkiouc1ezpqajkusM9YGbAtcFCjggvJHND0eTAv8bqfb7Nhc3wge_Q1YSxWr1nm8_8zku3hxY002byRSIY3nJHwmCeghvvWbbMagHYgNmLsYdHyDAiPQZDAE4PiBuUwlu-jQrgLpDC90ebUDDW5mhcGzoIu8WEamNH0dqxQyoknbklRdoH6wJuSLsBWeRiILsPh-v0EGbMU014O6_it6JxzG8s6oxlw6ET0Nh09XQ/4vb/lw4P-KfcQjWlfl-K1_mZFw/h7/h001.czblqgIvHJLc0wt6eMhWltuwWNiQpE0wK0QSGupL9V8"
+          },
+          {
+            "label": "Mistral Large 4 release",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.N23ofZ-GjilcsDu1mbYvWaSIHlnpb4YCzYJU4UguoyV9wJgbh5ppY3stVK1wKMXlVWgEeKdtDKSvp509ee_PqeQA-IeV4n_kWWlxULiZGYQg9ZeKfqwipdUuNh_rJUD_hvtETd-8EbvcMXTIJIGT9Wfdf2IO8m4oe2TmBIqGHknZaUd5YiVogyzIh44kl652juKyjc2dQrNVXn6vfZdFBsZAv9U2fHITzjtxYbMU9Bm1Ljy49-rVWkOI35NalPYAQYMgxrrLkaLHE6TGIRuDTUOpZrdnDh4wIx0rRLpydlE/4vb/lw4P-KfcQjWlfl-K1_mZFw/h10/h001.r5V5hzsOwwzC9TrJULpOQ61QqXOsa7LOi3OKWSNOSOs"
+          },
+          {
+            "label": "Reddit tests logged-in browsing",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jszh1GkeCxEpLxcIiFru-JeDHYgLOY8cIFHZ4vwDVkfUH0GKh-JBEF0--zvAPDXKfImqq1yoc6zXZ7npEzDqbQo1Q9HDtf6LVwrEycfl9kTpiUMo1CYdM5YQjpoFPF64fck067rT_-s4E4VmW3HEc-Js4kn0FaRJFVKW4ipEySzVH5y3TMd5LslKKSkynRpZE2jt_BDXs_0Sscv0Y9a0EjxEQqWj8LEf7baLKjw__tD9xeIN_3IGc_65awjDpLGRHam92bHPEzj6U6lfL-LsJxzLKtu_84k_R8BdaUtPM7sm3QNdMVDCBl63Ih7kLUzGOSFM0LV5cqyTBhi1w__bSNpCsyQYMt9ax9hNzu6G6DNa/4vb/lw4P-KfcQjWlfl-K1_mZFw/h20/h001.HiGNB6nO0V_btERYxRWu7p92ZNvF7qrfKuGTjefkVPw"
+          },
+          {
+            "label": "Deepgram acquires Daily",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jszh1GkeCxEpLxcIiFru-JdLKLW3Of83aULUkzl4okTbDI2CmZlaOymRznX8QZB9SXhQxfN4uHo-9fNnxmfGXGyfas8pCgu_fDduCz_06-Bzb_mVGii90fXcmX-v1fMSYKnLqTSrOeWUV946Bej-ZQbxefLyPj1a8fpVGjputOcyAwicPus-jwbFpStQFjF69-egMqPyU1e_lc5plI6qzYpXwVyZBdbaU17_000Iu6wz3nkp_CmLK_d5_MYxDA76fBf5llTMkpHpe8ageSqGOyyl2Y02F4Ny1VA2Dfi9BVTo_PM72Z6JeapeD2dnnyJDlQbV40hJBV6wOebBJZnQjp-Y08YatSEcoFkTM6I6xERQ/4vb/lw4P-KfcQjWlfl-K1_mZFw/h21/h001.hg3A6f-tJx0lA_U61VC6KTianvS8uvHoVmseSSxLRfY"
+          },
+          {
+            "label": "Wabi raises $55M at $1.25B valuation",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._OugSEw6yWA3TacFS737Jszh1GkeCxEpLxcIiFru-JeXA9DBrUU0dZ8ku_mJY-SzGLFN9j1YB4r3NnNsjPboO6wBtxpUyD1_Hxk8MSk56hlXyxYoEJ_T0YoQVAGC1L1gtDdpSbWONUiQyiMwZUkCxQkTJQJI43zOeq5Gsq6PuugnQulnOcxUFrcGlk3BD4yBgQpHKhsIqXFNe6OTuxMKFaIrlSQsa771uxgaoR8zdikaBWtawoLx-SDwRU7iUwVwRQB6mLwvnfwSc1XjzLuLRMN0gLiwG34ii2mLxDghoXS504wFHfKADe8RYKTB6fMQFRMQKOSVaGc6eIbXN7lxlbAmAe_ElTOsLhoWcTAB9j7BfmiGgFaWyqGY1-q4Lf6i/4vb/lw4P-KfcQjWlfl-K1_mZFw/h22/h001.P8AAJk4HV2w08vdJKq86_P7BebNAoO4jbeA5eAbZhtY"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🐁 Yesterday's star? Mice",
+      "date": "2026-10-30T13:10:08+00:00",
+      "summary": {
+        "headlines": [
+          "Heyclicky mouse cursor AI now draws live diagrams on your screen to explain any topic, running on OpenAI's fastest model and available for Mac and Windows today.",
+          "Oxford scientist claims AI performed autonomous brain surgery on an epileptic mouse with motorized rig control—unverified claims suggest the AI chose the drug, targeted the brain region, and executed the injection.",
+          "Claude gets seven new features including 24 additional language support and hands-free voice mode for Apple CarPlay; OpenAI doubles usage limits for Pro and Business Premium tiers.",
+          "Big Tech plans $750B in 2027 AI infrastructure spending despite strong cloud revenue growth (Google Cloud +103%, Azure +48%, AWS +39%), causing investor concerns about return on investment.",
+          "Google Cloud, Azure, and AWS all reported blockbuster earnings fueled by AI adoption, but stock markets punished the tech giants—Google had its worst day ever with a 12% plunge."
+        ],
+        "sections": [
+          {
+            "title": "AI Performs Autonomous Brain Surgery (Unverified)",
+            "points": [
+              "Gabriel Ocana-Santero, Oxford PhD and Exin Therapeutics CEO, claims he gave an AI full control of a motorized surgery rig equipped with cameras and one goal: reduce seizures in an epileptic mouse.",
+              "The AI allegedly selected the therapeutic drug, identified the precise brain region to target, and autonomously administered the injection while a veterinarian stood by with a kill switch for safety.",
+              "No external sources have independently verified these extraordinary claims yet; the story went viral on social media but lacks third-party confirmation.",
+              "If validated, this would represent the first documented instance of an AI system performing autonomous surgical intervention on a living mammal."
+            ]
+          },
+          {
+            "title": "Wall Street Worries Despite Cloud Revenue Boom",
+            "points": [
+              "Google Cloud revenue skyrocketed 103% to $31 billion, Azure jumped 48% to $33 billion, and AWS grew 39% to $46 billion—all driven partly by AI demand.",
+              "Despite top-line revenue growth, Microsoft stock stayed flat, Amazon fell 4%, and Google plunged over 12% in its worst trading day ever.",
+              "The disconnect stems from Big Tech's announced $750 billion infrastructure spending for 2027, mostly on AI capabilities—investors want clear evidence this massive capital deployment will generate profits.",
+              "Apollo's chief economist Torsten Slok highlighted investor concerns that the infrastructure investment may not produce sufficient returns, creating a valuation crisis for the sector."
+            ]
+          },
+          {
+            "title": "Major Product Launches from Tech Giants",
+            "points": [
+              "Apple released its first MacBook Pro with a touchscreen, plus new iMac and iPad mini models.",
+              "Google deployed Gemini 4 Carbon, which topped most AI leaderboards and is rolling out to cybersecurity professionals first; Genie 4 created buzz with interactive 3D worlds featuring advanced physics and real-time controls.",
+              "Block Inc. (Square's parent) unveiled Dessa, a voice model small enough to run locally on a MacBook Pro M4 Max or better, capable of holding human-like conversations without cloud dependency."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Heyclicky live diagram drawing demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tDMNZot_8zwZ1Y4OSdm124Pb2BYvNvJRU94dKgfqJEYylFipYbHe6tGNbilW5ApwJ6YRDXTmvJaCB1OMfBexRN8O4v0imSAJuaCpo2Q5Ix22MM6DY7_LSW5C8eTRal3nzmCeBuSV09OVYESzMs-e2K27367lmeqn71IEhhJXpuu-zZpY_YGrxpYSlQDOM96eodOe9Y3zBGNnmPHz0vE1yObuiC_sDz9-v-R6llwGJrE4yZ5WVwwzEry1vhQBTK-jCU/4vb/LZycRE5gQpS9b2BzrT2jTQ/h3/h001.GAeE09PbM9Y_njU45Twaa0HPL1Q9VK73R6vF09kgzpA"
+          },
+          {
+            "label": "Gabriel Ocana-Santero's viral thread on autonomous brain surgery",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tCtyD3rOZqyH_qpZQbNBxrZrIj_2Gevu8HtOxLFAuIolhj56s7RMLIfryt5F4fRIVCdFP1jUs4ypwodV8Y9WESHMEwksAEC6SppH3ATdqWKMnctL-liO1udBsBrnolIoJngxk4HclFdXK4U_a8KJXe7MgJK1D21dYbh4RmRjbp7R4uu2mO-wwt42E2o6AIXhtGPUDv_m2JwpA8QyaFKrKRLgYQRmJ_OjYIs4sWe12fEj4F4ZZjI-oNBWrgbWnxxWs8/4vb/LZycRE5gQpS9b2BzrT2jTQ/h4/h001._AUoqPKydexWlgR9nCMpWIG8HTLwPAswwrwLJK41nlw"
+          },
+          {
+            "label": "Claude's seven new features including CarPlay voice mode",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tC631NCnaRXJIFZ8H8wQdNlR-7RoIgqaUbOnrkMIKQbofTKzWXowISjNIHN3kf2adNCBiNDuPbezWA9yKiCBfccs3gzhc6MBfyax6sEi-8R0HewLiY9SamUe9E9kq8uhZtmt0Jx2OcwYOI_4kuAhXTHyJhPSzJcpjBuLO-HjfS1Udy-aKLWzlmxOMMiD3uxyEFXk9dY9vMc3j9yf-7187AQpirkmWh2xuASpyl5GZa4WrrWNTNzj6XA2kBRrvGibgU/4vb/LZycRE5gQpS9b2BzrT2jTQ/h5/h001.25pNnuj0HhXUzlD75-DkL0R0B15D7v7v3wp9HUeFzMM"
+          },
+          {
+            "label": "OpenAI doubles usage limits for Pro and Business tiers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tAXz20IjdPvb-dRclmXKJnILroo-ZT5hGcZkydixWr0rqK224L4AFpu6IhqzyPlib69O20I41g-0oe6H4VpY3VzehNj0O5ZaakWr9pbjnv06vcoB4czMHEDcnv92jRjjzZx96Z65_JbDQPhoSJ7Xe3abNLhx0onT33Pj2D8vj5SkDRgHEm08hgOqh4WNskeJ9rAWi2W48xMndTxp1MEI-F3n8V2IpaW-X1fCUBfDeC4D8ejtJOEEoRf066R4DtssEU/4vb/LZycRE5gQpS9b2BzrT2jTQ/h6/h001.zPNwsUvX74CrdusxgxlB-vCdqg7P3hlDO8Dp8syGX1E"
+          },
+          {
+            "label": "Apollo chief economist on Big Tech AI spending concerns",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.QR8PDET7GVRZS9oWC_jpgB5It1kigpMaA-8wHEoys6kjWXXmlNov8rYVOJW2FmmqF03bpPmLDiopmvQtO2y4PWE6bw6-0z4f14tzP68-DOVRjr2K0EzuS89tX-CBD51zC3zd_Sja2cKIy8TzKHD-iB7pFaHD0RrekhISA084lcSO54a5OsM7X0YS5aLklfhFkjZAA4O2LwL851CpF58F5-Ww_p5p4FfGN1VJ08_D75bbTw8bMGy550fL__B2g5wOs6edkC-i5ZE1PT0BgoYu-_Qx5NeqVkpp9waf_AIFIdUaJalQSGbiQto3UMXihP2eIP3tqy4s4ybA2oPTGSrPAKwgI4CP28HEhFOEbgJzyGpDoiAkkdfe6ewgs2_JpqG1/4vb/LZycRE5gQpS9b2BzrT2jTQ/h15/h001.3I1xbr19J6V1-52CT5bDEICvTIeOFBBfnQDH0_W9QIs"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Mistral Large 4 OSS 🧠, agent swarm behavior 🤖, Sam Altman interview🍺f",
+      "date": "2026-10-30T13:52:22+00:00",
+      "summary": {
+        "headlines": [
+          "Mistral releases Mistral Large 4, a trillion-parameter open-weight model optimized for self-hosted deployment and cybersecurity tasks, claiming leading performance on agentic coding benchmarks.",
+          "AI models can now convert published security patches into working exploits before users receive updates, with GLM 5.3 demonstrating capability to identify and exploit Firefox vulnerabilities automatically.",
+          "Agent swarms show unexpected leadership dynamics based on underlying model architecture and prompt ordering, suggesting minor configuration details significantly influence multi-agent coordination.",
+          "Sam Altman advocates for distributed superintelligence—a trillion slightly-superhuman AIs—over centralized single superintelligence, citing resilience and dynamic equilibrium benefits of agent swarms.",
+          "OpenAI updates Model Spec around five core values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care."
+        ],
+        "sections": [
+          {
+            "title": "Agent Swarm Behavior and Leadership Emergence",
+            "points": [
+              "1. Researchers tested eight agents from four different models on simulated outage resolution without a designated leader and observed emergent organizational patterns.",
+              "2. Two factors influenced which agent assumed leadership: the underlying model powering each agent and the alphabetical order agents appeared in prompts, suggesting seemingly minor implementation details have outsized coordination effects.",
+              "3. Findings indicate that building multi-agent systems requires attention to subtle design choices beyond just model selection, as these choices shape how agents self-organize."
+            ]
+          },
+          {
+            "title": "Open-Weight Models Enable Rapid Exploit Development",
+            "points": [
+              "1. GLM 5.3 can identify and automatically exploit vulnerabilities in current Firefox versions using only published security fixes that haven't shipped to users yet.",
+              "2. Open-source projects face heightened risk because their codebases are publicly available for model training, compressing the window between patch disclosure and exploit availability.",
+              "3. As open-weight model cybersecurity capabilities improve, this attack vector—leveraging public security information before user updates—will likely accelerate, creating a systemic threat to software security timelines."
+            ]
+          },
+          {
+            "title": "Mistral Large 4 and Open-Weight Model Landscape",
+            "points": [
+              "1. Mistral Large 4 is a trillion-parameter model with weights released for self-hosted deployment, enabling organizations to run frontier-scale AI without relying on API providers.",
+              "2. Model claims leading performance on agentic coding benchmarks (measuring ability to solve multi-step programming tasks autonomously) and cybersecurity capabilities comparable to GLM 5.3.",
+              "3. Open-weight release at this scale democratizes access to large models but accelerates capability diffusion, including for potentially harmful applications like the exploit generation demonstrated by GLM 5.3."
+            ]
+          },
+          {
+            "title": "AI Economics and Labor Market Signals",
+            "points": [
+              "1. Individual AI competence (ability to complete self-contained deliverables) now matches or exceeds experienced specialists across dozens of professions, but coordination across tasks remains a bottleneck.",
+              "2. Current labor market wages and job role definitions reflect today's AI capabilities; these indicators will be the earliest signals of economic transformation as AI becomes increasingly capable.",
+              "3. Wages and employment patterns lag behind technological capability changes, making the labor market a lagging rather than leading indicator of AI economic impact."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Mistral Large 4 Release",
+            "url": "https://mistral.ai/news/mistral-large-4-oss/"
+          },
+          {
+            "label": "Agent Swarm Leadership Dynamics",
+            "url": "https://www.raindrop.ai/blog/agent-swarm-leadership/"
+          },
+          {
+            "label": "Open-Weight Models Enable Exploit Development",
+            "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
+          },
+          {
+            "label": "The Economics of Intelligence",
+            "url": "https://institute.deepmind.com/essays/the-economics-of-intelligence/"
+          },
+          {
+            "label": "Sam Altman on Distributed vs. Centralized Superintelligence",
+            "url": "https://cheekypint.substack.com/p/why-sam-altman-is-against-a-single"
+          }
+        ]
+      }
+    }
+  ]
+}
