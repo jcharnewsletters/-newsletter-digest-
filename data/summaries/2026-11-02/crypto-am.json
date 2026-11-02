@@ -1,0 +1,197 @@
+{
+  "batch": "crypto-am",
+  "label": "Morning Crypto",
+  "category": "crypto",
+  "date": "2026-11-02",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Binance Restores Withdrawals in Stages After $6.3B October Hack",
+        "points": [
+          "Attackers compromised a DevOps engineer's laptop on October 29 to access internal signing services, using EIP-7702 delegation (a transaction approval mechanism that temporarily grants another address control of your account) to drain $6.3B without stealing private keys.",
+          "Binance is reopening withdrawals in phases starting November 1, beginning with smaller priority groups and expanding based on monitoring data to detect anomalies and prevent further unauthorized transfers.",
+          "Enhanced identity verification and account security checks are part of each withdrawal stage to prevent attackers from exploiting the recovery process.",
+          "Binance replenished 90% of stolen funds using partial SAFU deployment (Secure Asset Fund for Users, an insurance reserve), the Futures insurance fund, and corporate treasury; all top-10 assets are now fully backed.",
+          "A new Proof of Reserves snapshot was taken October 31, with zero-knowledge proof verification expected by November 3.",
+          "North Korean groups attributed by Chainalysis are cycling stolen funds and using JustLend on Tron (a lending protocol) to bypass stablecoin freezes; roughly $2.8B in stablecoins have already been frozen by issuers."
+        ],
+        "covered_by": [
+          "CMC Spotlight",
+          "TLDR Crypto"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR Crypto",
+            "point": "The breach exploited signing systems using blocklists (lists of blocked transactions) rather than allowlists (lists of approved transactions), a design flaw shared with a separate Bitget breach, allowing unauthorized transactions after a single-key compromise."
+          },
+          {
+            "newsletter": "TLDR Crypto",
+            "point": "By comparison, Hyperliquid holds $5.6B of its $6.5B USDC in a single Coinbase-controlled treasury address (concentration risk), while Lighter uses zero-knowledge proofs with a 14-day forced-exit escape hatch, though its 4-of-7 security council has bypassed upgrade notice requirements five times in October."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "CMC Spotlight",
+        "items": []
+      },
+      {
+        "newsletter": "TLDR Crypto",
+        "items": [
+          {
+            "title": "Chainalysis Discloses Separate AI-Assisted Breach",
+            "points": [
+              "An AI-assisted hacker accessed customer names and emails in a breach unrelated to Binance's incident.",
+              "Chainalysis found no evidence that sensitive investigation data, passwords, or authentication secrets were compromised."
+            ]
+          },
+          {
+            "title": "Ethereum's Proposed L1.5: Stateless Execution via Three New EIPs",
+            "points": [
+              "New EIPs let user secrets stay in wallets while commitments, nullifiers, and verifiers live on Layer 1, enabling execution without any operator holding user state.",
+              "EIP-8141 lets contracts self-pay fees after proof verification; any prover can participate in these stateless jobs as long as output is verified by Layer 1 and no dedicated sequencer (centralized transaction orderer) is required.",
+              "Existing Layer 2 apps can migrate in three steps: move owned state into user wallets, let contracts issue their own verification transactions, and open proving to any party—enabling gasless payments and private data queries."
+            ]
+          },
+          {
+            "title": "Morpho Lending: Supply-Side Constraints Limit Growth",
+            "points": [
+              "$6.1B deployed across Morpho's variable-rate stablecoin vaults is capped by available supply, not borrowing demand; five curators control over 80% ($5.0B) of deployed capital.",
+              "Of $2.6B in traced capital sources, platform earn integrations (e.g., Coinbase) and Sky protocol balance sheets each contribute $1.1B, with platform integrations offering the best near-term growth runway.",
+              "Tokenized assets used as collateral face hard capacity ceilings from transfer restrictions, redemption terms, and thin secondary-market liquidity during stress; 50 companies worth over $25 trillion have objected to tokenized versions of their shares on OKXICE."
+            ]
+          },
+          {
+            "title": "Stablecoin Rails Expand: Walmart OnePay and Multi-Chain Settlement",
+            "points": [
+              "Stripe Bridge now powers USDC deposits into Walmart's OnePay app across 12 blockchain networks including Solana, Base, and Ethereum, letting US customers fund checking accounts from external crypto wallets with no conversion fees at launch.",
+              "Polygon's Open Money Stack (a single API linking bank deposits, stablecoin balances, and payouts) is now live on Solana after earlier launches on Polygon, Ethereum, Base, BNB Chain, and Tron.",
+              "Non-USD stablecoins remain fragmented, with six issuers per Brazilian real and three each for yen and Swiss franc; consolidation could help neobanks avoid 1%+ FX fees via local currency settlement, though standardized backing verification is still lacking."
+            ]
+          },
+          {
+            "title": "Market and Revenue Signals",
+            "points": [
+              "Aave's October revenue annualizes to roughly $77M with four consecutive months of growth.",
+              "Base saw $243M in card spend in October, an 80% increase since March, while Coinbase Tokenized Stocks passed $4B in all-time DEX trading volume.",
+              "Coinbase Q3 net income rose 66% to $719M from $433M a year earlier, but $715M of that came from crypto holdings gains rather than operating revenue, suggesting the headline is inflated by accounting even as prediction markets show incremental traction.",
+              "Y Combinator invested $500K in USDC on Base via MochaTrade and published a Crypto Request for Startups targeting AI agents, stablecoins, capital raising, and trading."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "CMC Spotlight",
+      "subject": "Binance Resumes Withdrawals in Phases After the October Hack",
+      "date": "2026-11-02T11:36:50+00:00",
+      "summary": {
+        "headlines": [
+          "Binance has resumed cryptocurrency withdrawals in phases following a major security breach in October, implementing staged roll-out to manage operational risk.",
+          "The phased withdrawal approach allows Binance to monitor system integrity and prevent further losses while gradually restoring customer access to their funds.",
+          "Exchange implemented additional security measures and verification protocols as part of the withdrawal resumption process."
+        ],
+        "sections": [
+          {
+            "title": "Binance Withdrawal Resumption After October Hack",
+            "points": [
+              "1. Binance is restoring withdrawals in phases rather than all at once, starting with smaller priority groups and expanding based on monitoring data.",
+              "2. Phased approach allows the exchange to verify security systems, detect anomalies, and prevent additional unauthorized fund transfers during the recovery period.",
+              "3. Withdrawal stages include enhanced identity verification and account security checks to prevent attackers from exploiting the resumption process."
+            ]
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "newsletter": "TLDR Crypto",
+      "subject": "Binance replenishes 90% of stolen funds 🪣,Ephemeral Rollup 🧳, Tokenization Blockers🪙",
+      "date": "2026-11-02T13:11:10+00:00",
+      "summary": {
+        "headlines": [
+          "Binance replenished 90% of $6.3B stolen October 29 when attackers compromised a DevOps engineer's credentials; all top-10 assets now fully backed with withdrawals reopening November 1.",
+          "Chainalysis disclosed a separate breach where an AI-assisted hacker accessed customer names and emails; the company found no evidence that sensitive investigation data, passwords, or authentication secrets were compromised.",
+          "Ethereum's proposed L1.5 pattern through three new EIPs separates stateless computation from state storage on Layer 1, enabling rollup-style execution without long-lived operators holding user funds.",
+          "Stripe now powers USDC deposits into Walmart's OnePay app across 12 blockchain networks, letting US customers fund checking accounts from external crypto wallets with no conversion fees at launch.",
+          "Non-USD stablecoins remain fragmented with multiple issuers per currency; platforms adopting multi-currency settlement could eliminate 1%+ FX fees but lack standardized backing verification."
+        ],
+        "sections": [
+          {
+            "title": "1. Binance Breach Technical Details & Recovery",
+            "points": [
+              "Attackers gained access to internal signing services through a compromised DevOps laptop, using EIP-7702 delegation (a transaction approval mechanism that temporarily grants another address control of your account) to drain $6.3B without stealing private keys.",
+              "Binance funded replenishment through partial SAFU deployment (the Secure Asset Fund for Users—an insurance reserve), Futures insurance fund, and corporate treasury; a new Proof of Reserves snapshot was taken October 31 with zero-knowledge proof verification expected by November 3.",
+              "North Korean groups attributed by Chainalysis are cycling stolen funds through addresses and using JustLend on Tron (a lending protocol) to bypass stablecoin freezes; approximately $2.8B in stablecoins have already been frozen by issuers."
+            ]
+          },
+          {
+            "title": "2. Ephemeral Rollup (L1.5): Stateless Execution Model",
+            "points": [
+              "Three new Ethereum Improvement Proposals enable user secrets to remain in wallets while commitments, nullifiers, and verifiers live on Layer 1, so execution can run without any operator holding user state; EIP-8141 lets contracts self-pay fees after proof verification.",
+              "Any prover can participate in L1.5 jobs (stateless functions over Layer 1 state and user inputs) provided output is verified by Layer 1, fees are paid without revealing payer identity, and submission requires no dedicated sequencer (a centralized operator ordering transactions).",
+              "Existing Layer 2 applications can migrate in three steps: move owned state into user wallets, enable contracts to issue their own verification transactions, and open proving to any party, targeting use cases like gasless payments and private data queries."
+            ]
+          },
+          {
+            "title": "3. Perpetual DEX Security vs. Centralized Exchanges",
+            "points": [
+              "Binance and Bitget breaches exploited signing systems configured with blocklists (lists of blocked transactions) rather than allowlists (lists of approved transactions), allowing unauthorized transactions to execute after single-key compromise.",
+              "Hyperliquid holds $5.6B of its $6.5B USDC in a Coinbase-controlled treasury address, meaning a single validator compromise or key leak exposes the bulk of user funds; Lighter uses zero-knowledge proofs with a 14-day forced-exit escape hatch (allowing users to withdraw even if the protocol fails).",
+              "Lighter's 4-of-7 security council has bypassed upgrade notice requirements five times in October, showing that even architecturally superior designs can suffer from governance centralization or inconsistent enforcement."
+            ]
+          },
+          {
+            "title": "4. Morpho Lending Supply Constraints & Tokenization Blockers",
+            "points": [
+              "$6.1B deployed across Morpho variable-rate stablecoin vaults is constrained by supply, not borrowing demand; five curators (Steakhouse, Sentora, Gauntlet, SparkDAO, RockawayX) control 80%+ of deployed capital at $5.0B.",
+              "Of $2.6B traced to sources, platform earn integrations (like on Coinbase) and Sky protocol balance sheets each provide $1.1B; platform earn integrations offer the most near-term growth runway while credit limits and redemption liquidity cap the other sources.",
+              "For tokenized assets as collateral, transfer restrictions, redemption terms, and secondary-market liquidity during market stress impose hard ceilings on lender capacity; 50 companies worth over $25 trillion have objected to tokenized versions of their shares on OKXICE, signaling regulatory or corporate resistance."
+            ]
+          },
+          {
+            "title": "5. Stablecoin Adoption: Walmart OnePay & Cross-Border Use",
+            "points": [
+              "Stripe Bridge now powers USDC deposits into Walmart OnePay across 12 chains including Solana, Base, and Ethereum; gig workers and cross-border earners can fund checking accounts from external wallets without holding separate stablecoin balances.",
+              "Polygon's Open Money Stack (a single API for bank deposits to stablecoin balances to payouts) is now live on Solana after launching on Polygon, Ethereum, Base, BNB Chain, and Tron, signaling multi-chain standardization of payment rails.",
+              "Non-USD stablecoins face fragmentation with six issuers per real, three per yen, and three per Swiss franc; the industry may benefit from consolidation as neobanks look to avoid 1%+ FX fees via local currency settlement."
+            ]
+          },
+          {
+            "title": "6. Market & Revenue Signals",
+            "points": [
+              "Aave's October revenue annualizes to ~$77M with four consecutive months of growth; Base saw $243M in card spend in October (80% increase from March) and Coinbase Tokenized Stocks crossed $4B all-time DEX trading volume.",
+              "Coinbase Q3 net income jumped 66% to $719M from $433M a year prior, though $715M of gains came from crypto holdings rather than operating revenue, suggesting prediction markets drove incremental traction but accounting distortion inflates the headline.",
+              "Y Combinator invested $500K in USDC on Base via MochaTrade and published a Crypto Request for Startups targeting AI agents, stablecoins, capital raising, and trading—signaling continued venture interest in infrastructure and financial applications."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Binance Security Incident Update #3: 90% of Stolen Assets Replenished",
+            "url": "https://links.tldrnewsletter.com/GLQc3A"
+          },
+          {
+            "label": "Ephemeral Rollup: The New L1.5 of Ethereum",
+            "url": "https://ethresear.ch/t/ephemeral-rollup-the-new-l1-5-of-ethereum/26187?utm_source=tldrcrypto"
+          },
+          {
+            "label": "Binance $6.3B Hack: Would Your Perp DEX Be Safer?",
+            "url": "https://links.tldrnewsletter.com/KBOYit"
+          },
+          {
+            "label": "Non-USD stablecoins are one of the most underrated segments",
+            "url": "https://threadreaderapp.com/thread/2116498867176833396.html?utm_source=tldrcrypto"
+          },
+          {
+            "label": "Coinbase Q3 net income jumps 66% as prediction markets gain traction",
+            "url": "https://links.tldrnewsletter.com/PMynga"
+          }
+        ]
+      }
+    }
+  ]
+}
