@@ -1,0 +1,377 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-02",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Meta's Humanoid Robot Prototype for Household Chores",
+        "points": [
+          "Meta built a humanoid robot prototype (named Max) in three months with a Chinese partner, weighing 106 pounds (48kg) and standing 1.5 meters tall.",
+          "Robot is capable of performing household chores.",
+          "Meta is already planning a Max 2 model with improved climbing and sensing abilities."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Linux Kernel Bug Enables Passwordless Root Access; Anthropic Demos Exploit",
+        "points": [
+          "Critical flaw in Linux's TCP connection handling (multipath TCP listeners, which let servers listen across multiple network paths at once) allows attackers to gain root access without passwords before applications even see the connection.",
+          "Go 1.24+ opens multipath TCP listeners by default, putting most modern Go servers at risk.",
+          "Debian, SUSE, Oracle Linux, and Amazon Linux have shipped patches; Ubuntu and RHEL fixes are still pending, requiring immediate attention for those distros.",
+          "Anthropic used its Claude AI model to successfully turn the kernel flaw into a working exploit with no password required, proving AI's capability to weaponize security vulnerabilities in real-world conditions."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Anthropic published a remediation guide alongside the exploit demonstration to help teams patch before attackers catch on."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI's Funding Round Falls Short of Target",
+            "points": [
+              "OpenAI's latest funding round closed at a $1.25 trillion valuation, below its $1.4 trillion target and raising substantially less than the $30 billion initially sought.",
+              "Investor caution followed disappointing earnings from Google, Amazon, and Intel, triggering a broader tech sector selloff.",
+              "The shortfall signals growing investor skepticism about AI valuations after a long run of enthusiasm."
+            ]
+          },
+          {
+            "title": "Cisco Bets on AI-Driven Code Modernization",
+            "points": [
+              "Cisco tasked Padmanabhan Krishnamurthy, a 27-year-old ex-startup founder, with rewriting 98% of its legacy codebase within 24 months.",
+              "He was given an unlimited AI token budget and a four-week proof-of-concept deadline to prove feasibility.",
+              "Cisco is now recruiting more young engineers who can use AI tools for large-scale code refactoring, signaling a broader shift in how enterprises deploy junior technical talent."
+            ]
+          },
+          {
+            "title": "SpaceX Pivots Away from NASA Dependence",
+            "points": [
+              "SpaceX now seeks most of its revenue from AI services rather than government spaceflight contracts, while still fulfilling existing NASA agreements.",
+              "The company is avoiding new large government contracts, reshaping America's space strategy.",
+              "This shift threatens NASA's relevance and signals the private space industry has matured beyond needing government as its primary customer."
+            ]
+          },
+          {
+            "title": "Binance Suffers $6.3 Billion Hack",
+            "points": [
+              "Binance was hit by a $6.3 billion hack that forced it to halt all deposits and withdrawals.",
+              "Unusual transactions drained the platform overnight before the exchange could respond."
+            ]
+          },
+          {
+            "title": "AI-Driven Bug Discovery Delays PostgreSQL 19",
+            "points": [
+              "PostgreSQL 19's release has been delayed into November or later, with several large features reverted late in the beta phase.",
+              "AI tools have made bug discovery much easier, producing a much higher volume of bug reports for committers to handle.",
+              "The development team is prioritizing quality assurance over feature completion, reflecting new resource constraints in open-source project management."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Why Traditional Productivity Metrics Miss AI's Real Value",
+            "points": [
+              "Industry claims of 10x developer speedup from AI lack supporting research; actual measured gains are closer to 20-30% for code output, while outages rose 30% and shipped features stayed flat.",
+              "Standard dashboards (tools tracking lines of code and deployment speed) completely miss transformative wins, like an engineer rebuilding an expensive licensed component with AI in weeks instead of 5-10 years.",
+              "If companies cut headcount based on false 10x assumptions, the senior engineers who generate these breakthroughs may be let go before their AI-amplified contributions are recognized.",
+              "Better metrics should track four areas: product success, compute efficiency, engineering capacity, and game-changing breakthroughs that velocity tools can't surface."
+            ]
+          },
+          {
+            "title": "Vercel's Agent Desktop Cuts AI Token Costs by 96%",
+            "points": [
+              "Vercel open-sourced agent-desktop, letting AI coding agents control apps across macOS, Windows, and Linux by reading accessibility structures (the same interface screen readers use) instead of interpreting screenshots.",
+              "This approach cuts token usage by 96% on complex apps, lowering API costs and speeding up agent execution for production use.",
+              "It runs in the background without taking over the human's cursor, letting developers keep working while agents operate the same apps."
+            ]
+          },
+          {
+            "title": "Karpathy Builds HackerTube in Two Hours Using AI Agents",
+            "points": [
+              "Andrej Karpathy built a YouTube alternative called HackerTube in two hours using Claude Opus 5.5 for pipeline/deployment and Sonnet 5.5 for comment labeling.",
+              "The system sifted through 43 million Hacker News comments to surface 6,454 recommended videos, using 504 million mostly-cached tokens to cut costs.",
+              "Human involvement was limited to providing an API key, server, and domain; AI agents handled all orchestration, coding, and deployment."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Grok Bot's Economics Unsustainable for xAI",
+            "points": [
+              "Elon Musk admitted Grok Bot's computing costs outpace revenue from its roughly 800,000 paying X Premium subscribers.",
+              "Hardware, data center operations, and electricity expenses scale with every new user request.",
+              "Musk declined to raise existing usage limits, suggesting pricing, usage caps, or service changes are likely coming."
+            ]
+          },
+          {
+            "title": "Hackers Remotely Overheat Supermarket Refrigeration Across Europe",
+            "points": [
+              "Hackers remotely raised refrigeration units to 50°C (122°F) at 40+ supermarkets across seven countries (Belgium, Luxembourg, Sweden, Ireland, Netherlands, Estonia, Finland), destroying hundreds of thousands of euros in product overnight.",
+              "One Belgian store alone discarded €100,000 of spoiled stock.",
+              "The attack mirrors an earlier assault on roughly 400 French supermarkets that targeted Danfoss refrigeration software, many of whose systems are too old to receive security patches."
+            ]
+          },
+          {
+            "title": "Deepfake Nude App Network Dismantled by Apple",
+            "points": [
+              "Apple removed 19 apps that disguised themselves with innocent features (like pet portraits) but secretly loaded AI deepfake nude-generation tools after installation.",
+              "Hidden functionality was triggered by ads on Facebook/Instagram, with servers deciding whether to activate legitimate or illicit features based on language and referral source.",
+              "Researchers traced 400+ related apps and domains to an operation linked to Hong Kong firm KeLing Technology; 27 apps on Google Play had collected over 350,000 downloads before removal."
+            ]
+          },
+          {
+            "title": "Anthropic Restricts Claude Code from Cloning Existing Games",
+            "points": [
+              "Anthropic restricted Claude Code from recreating existing video games, even when renamed, while still allowing original game development and genre-style projects."
+            ]
+          },
+          {
+            "title": "OpenAI Consolidates API Usage Limits",
+            "points": [
+              "Starting December 2026, OpenAI's Plus, Pro, and Business tiers will share one unified token limit (tokens measure units of reading/writing text) merging ChatGPT and Codex allowances, while Instant chat remains separate.",
+              "Harder models and tasks consume more tokens from the shared pool.",
+              "Users can check remaining balance and reset schedules in Settings; hitting the limit requires waiting for reset, upgrading plans, or buying additional credits."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "OpenAI funding issues 💰, Cisco rewrites code 👨‍💻, hiring junior devs💼 ",
+      "date": "2026-11-02T11:50:33+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's funding round landed just $1.25 trillion valuation—below its $1.4 trillion target—as investor enthusiasm cools following disappointing earnings from Google, Amazon, and Intel.",
+          "Cisco tasked a 27-year-old ex-founder with rewriting 98% of its legacy codebase in 24 months using unlimited AI tokens, signaling a shift in how enterprises deploy junior talent.",
+          "SpaceX has become largely independent from NASA, now seeking most revenue from AI services rather than government spaceflight contracts, reshaping America's space strategy.",
+          "Meta built a humanoid robot prototype capable of household chores in three months with a Chinese partner, weighing 106 pounds and standing 1.5 meters tall.",
+          "Binance suffered a $6.3 billion hack that forced the exchange to halt all deposits and withdrawals as unusual transactions drained the platform overnight."
+        ],
+        "sections": [
+          {
+            "title": "1. OpenAI Faces Investor Skepticism",
+            "points": [
+              "1. Latest funding round achieved $1.25 trillion valuation, down from $1.4 trillion target, indicating reduced investor confidence.",
+              "2. Broader tech sector selloff triggered by disappointing earnings from major companies (Google, Amazon, Intel) made investors more selective about funding terms.",
+              "3. Round raised substantially less than the $30 billion OpenAI initially sought, reflecting significant investor hesitation."
+            ]
+          },
+          {
+            "title": "2. Cisco's AI-Driven Code Modernization Bet",
+            "points": [
+              "1. Padmanabhan Krishnamurthy, 27-year-old acquired founder, given mandate to refactor 98% of Cisco's legacy code within 24 months.",
+              "2. Unlimited AI token budget allocated to accelerate modernization; four-week proof-of-concept deadline set.",
+              "3. Cisco is actively recruiting younger engineers with similar profile—those who can leverage AI tools for rapid large-scale refactoring."
+            ]
+          },
+          {
+            "title": "3. SpaceX Independence Reshapes U.S. Space Agency Dynamics",
+            "points": [
+              "1. SpaceX no longer depends on NASA for core revenue; fulfills existing contracts reliably but avoiding new large government spaceflight agreements.",
+              "2. Company pivoting focus toward AI-driven services as primary future revenue source, de-prioritizing traditional launch and in-space operations.",
+              "3. Shift threatens NASA's relevance and signals private space industry has matured beyond dependence on government customer."
+            ]
+          },
+          {
+            "title": "4. AI-Driven Bug Discovery Delays PostgreSQL Release",
+            "points": [
+              "1. PostgreSQL 19 release delayed into November or later; several large features reverted late in beta phase.",
+              "2. AI tools have made bug discovery significantly easier, resulting in substantially higher bug report volume that committers must address.",
+              "3. Development team prioritizing quality assurance over feature completion, reflecting new resource constraints in open-source project management."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round",
+            "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5"
+          },
+          {
+            "label": "Cisco gives 27-year-old engineer unlimited AI tokens to rewrite 98% of legacy code",
+            "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts"
+          },
+          {
+            "label": "How Binance's $6.3 Billion Hack Went Down",
+            "url": "https://www.nytimes.com/2026/10/31/technology/binance-hack-crypto-north-korea.html"
+          },
+          {
+            "label": "A proposal: how to hire junior engineers in the age of AI",
+            "url": "https://seldo.com/posts/a-proposal-how-to-hire-junior-engineers-in-the-age-of-ai/"
+          },
+          {
+            "label": "Postgres 19 is late, and it's AI's fault",
+            "url": "https://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚨Linux bug puts servers at risk",
+      "date": "2026-11-02T14:06:39+00:00",
+      "summary": {
+        "headlines": [
+          "Critical Linux TCP bug allows passwordless root access on servers running Go 1.24+ with multipath listeners; Ubuntu and RHEL patches still pending while Debian and others have shipped fixes.",
+          "Vercel open-sourced agent-desktop, letting coding agents control apps across macOS, Windows, and Linux with 96% fewer tokens by reading accessibility structures instead of screenshots.",
+          "Andrej Karpathy built HackerTube YouTube alternative in two hours using Claude Opus 5.5 and Sonnet 5.5, sifting through 43M Hacker News comments to surface 6,454 recommended videos using 504M cached tokens.",
+          "AI productivity claims of 10x improvements lack research support; actual gains appear closer to 20-30%, but breakthrough wins (like replacing expensive licensed components) escape traditional dashboards.",
+          "Anthropic demonstrated Claude turning a Linux kernel flaw into a working exploit, proving AI's capability to weaponize security vulnerabilities with no password required."
+        ],
+        "sections": [
+          {
+            "title": "1. Linux TCP Vulnerability Threatens Production Servers",
+            "points": [
+              "1. Flaw in Linux kernel's TCP connection handling allows attackers to gain root access without passwords before applications even see the connection attempt.",
+              "2. Affects servers with multipath TCP listeners (listening on multiple network paths simultaneously); Go 1.24+ opens these by default, putting most modern Go servers at risk.",
+              "3. Debian, SUSE, Oracle, and Amazon Linux have released patched kernels, but Ubuntu and RHEL still lack fixes—immediate action required if running these distributions.",
+              "4. Anthropic successfully weaponized the bug using Claude, demonstrating real-world exploit capability and underscoring the urgency of patching."
+            ]
+          },
+          {
+            "title": "2. Why Traditional Productivity Metrics Miss AI's Real Value",
+            "points": [
+              "1. Industry claims of 10x developer speedup lack supporting research; actual measured improvements range only 20-30% for code output, while outages increased 30% and features shipped remained flat.",
+              "2. Standard dashboards capture code lines written and deployment speed but completely miss transformative wins—like an engineer's quick suggestion to rebuild an expensive licensed component using AI in weeks instead of 5-10 years.",
+              "3. The hidden risk: if CTOs cut headcount based on false 10x assumptions, breakthrough-generating senior engineers disappear before their AI-amplified contributions are recognized.",
+              "4. Rethinking metrics requires tracking four areas: product success, compute efficiency, engineering capacity, and game-changing breakthroughs that traditional velocity tools cannot surface."
+            ]
+          },
+          {
+            "title": "3. Vercel's Agent Desktop Cuts Tokens by 96% on Complex UIs",
+            "points": [
+              "1. agent-desktop tool lets coding agents read app accessibility structures (the same interface screen readers use) instead of guessing from screenshots, enabling far more precise navigation.",
+              "2. Runs in background without hijacking your cursor, allowing human developers to keep working while agents operate the same applications they would use manually.",
+              "3. 96% token reduction on busy apps translates to lower API costs and faster agent execution, making agentic workflows practical for production use cases.",
+              "4. Open-sourced by Vercel Labs and available for macOS, Windows, and Linux, removing vendor lock-in for teams building agent-driven automation."
+            ]
+          },
+          {
+            "title": "4. Karpathy's HackerTube Shows Agentic Pipeline Scaling",
+            "points": [
+              "1. Two-hour build using Claude Opus 5.5 (pipeline and deployment) and Sonnet 5.5 (comment labeling) demonstrates how specialized models can divide work efficiently.",
+              "2. Processed 43M Hacker News comments to surface 6,454 high-signal videos, with most of 504M input tokens cached—showing cost optimization through token reuse across batch operations.",
+              "3. Human involvement limited to providing API key, server, and domain; all orchestration, coding, and deployment handled by AI agents, illustrating the 'agentic workflow' pattern.",
+              "4. Success metrics: functioning website, real data extraction, production deployment—all delivered without hand-coding any integration logic."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "agent-desktop GitHub (Vercel Labs)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcF22gJDyQCfTfKLYFNF2FXmzkM0QZnIgLBmJa0Bn7Qr3bvKUGgE1f82ech73p7bnZMkm47jnQXLfFMswv3rRo1RUqZIJMo48F9JlQuuI-ZBuwNZ0gBe4y_DjjHfhbcxHPa9_Vop9SFd8IkRdPbgt0k_mHbOzuJLNxt_YxexpdaoOLgwB7ZuufSdHDjw__m6PaeSfDpiTu3qNXO3rbbCyIXDee2GUxCkYnJAwBOBm4eqrzffyL0FIRIx6afBUL5D_Bo/4ve/bITkNgEESZe0KmA-iR9BRg/h3/h001.DnFZywCwFAHyAWx7ufjvEtYuyGHJ87DSWMVMG3qMQ9E"
+          },
+          {
+            "label": "Anthropic Linux Exploit & Remediation Guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.9gcMOkjOtNYGV3uudiXU2GAMvPxpw3TsFZ-OFc7FdxJh7eJ6fN02Vcp8MZH9Y0e_A_ilxHlpGuIDgmeE5veAR5EkYrK2pQWdpBxi1eMFJLYk_Y7jNANQR7B-dtQgA0ukwxNacgQ47bucr_XeYGoWB4Cgm-laIwM7MMOjn1Xhvb9khHt1xtfhampUorzRemL2KLk_XPKjjIyNJWGgU1tbwplrJ_4fCy-FvwXue-RTqkIgWOYtDgJGlIMTwk1_keAvLhICkmJdvclhiauRAMjClBSBtZOtVc7ecVqVCFLE0XABa3iranNkIB6Z60jm4fdmfrIbSMKUsgkCimBPn_3qVg/4ve/bITkNgEESZe0KmA-iR9BRg/h6/h001.d7qTUir_33ZXojC5oj93UOOxmc0FHzA0Idvokb5gyzg"
+          },
+          {
+            "label": "Titus Winters on Productivity Metrics & AI Impact",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.VbEOSrOul3-OJLQ24EO2NHDu1izkjMV_-j5sn31aAMSukmAFTzrkRYOP3Xlzomogmc3uAmOwJcyJpox8OE8f8RudZhg_EhK0-uJqW1kuFFnbxInBcMclAiZYy-s7WcOTbU_rR8Oubo7WM9znWEgCzvaaf2xKhQve0K-WFsxI9AxyeSNYUCdhxt_eKaRkICJbPteYEBGuxGF08oiiZW9SdPgLZdpa12UmWvmPxCRQJy19mU8-Xp1BOmuedqsk9DhLdE2QZfvmisY2Bl7Q7YEBKjGbREqm-3pkEsiLXLjpglfB6s8n6EjHWSIg5on56eU7KXVlzqEqWrzP7FWJwwTmTA/4ve/bITkNgEESZe0KmA-iR9BRg/h12/h001.PoGmmIE7TlzZaOEbtKgRE9o-i65nLbS1UHk2905XgWE"
+          },
+          {
+            "label": "How to Build an Agentic Coding Workflow (Tutorial)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxfuea8TVbPIoi13WwhiIEeSiecfKopv6U9Ka7Cs66A1oWGfDueV4jNDhGpXQXe7E7k2FTadvd_AG4CeV43CtMZwhHAN0tO1Sfv4Hp3Kr8VDI_A5DDTKZmCRPzK-LbTwRlY8vw8rAOz4KzaNAjT9z3ax0DYxW0AMqafysCLfrsCbiiuT8xvJGm4fVQf-vJcCQpp819fQ_wORmjG0KcddldB31k70qbLRzylm6WdP96P1ny8FzwStbwKtVR4hSN2vQo/4ve/bITkNgEESZe0KmA-iR9BRg/h23/h001.HVpzhV2lBVRMAb8hZHKXVxzDiRXadzR_3AWN2_VNDsE"
+          },
+          {
+            "label": "How to Stop Overprompting Claude (Anthropic Cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEenB6hUNypQLtt3N4COrXng9kIjboolSH0fsLIg2S39joa_OpQ1FgxtMT8zMo-YZ2pl7Wf3sfmXd3kbMnNOzfUewcTHEiNi19ayGxh0Epu_YP0KDAgeVdOCd1qXqt2c5mlMAO0mxRsMuJ041c3CRUQuvdlLzZ9Y9_rWru4SQctcIaYTj2Ts-Ha2p7Km3gkeJ0pZrSVOW82U4WwOgMvhKp2HRn9GlPj_oC5rb0gymSPwAyCmxuLN31hZAeeQThJJG4/4ve/bITkNgEESZe0KmA-iR9BRg/h25/h001.MMmxfvdbxGrnCrORpjoA6Mk2aVUXIHdrA_71XVM0yI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Anthropic stops Claude from cloning  games",
+      "date": "2026-11-02T17:49:07+00:00",
+      "summary": {
+        "headlines": [
+          "Meta built prototype humanoid robot (Max) weighing 48kg to handle household chores, already planning Max 2 with improved climbing and sensing abilities",
+          "Elon Musk admits Grok Bot costs too much to run relative to revenue with 800,000 paying users, suggesting future pricing or usage model changes needed",
+          "Hackers remotely overheated refrigeration systems at 40+ supermarkets across seven European countries, destroying products worth hundreds of thousands of euros",
+          "Apple removed 19 apps hiding AI deepfake nude-generation tools behind innocent features, with 400+ related apps traced to operation linked to Hong Kong firm KeLing Technology",
+          "Anthropic restricted Claude Code from recreating existing video games (renamed or otherwise), while still allowing original game development and genre projects"
+        ],
+        "sections": [
+          {
+            "title": "1. Grok Bot's Economics Unsustainable for xAI",
+            "points": [
+              "Grok Bot generates revenue from ~800,000 X Premium subscribers but computing costs outpace income",
+              "Heavy hardware, data center operations, and electricity expenses scale with every new user request",
+              "Musk declined to raise existing usage limits, signaling potential changes to pricing model, usage caps, or service configuration coming soon"
+            ]
+          },
+          {
+            "title": "2. Supermarket Hacker Attack Across Europe",
+            "points": [
+              "At least 40 stores hit across Belgium, Luxembourg, Sweden, Ireland, Netherlands, Estonia, and Finland overnight",
+              "Attackers remotely raised refrigeration units to 50°C (122°F), spoiling temperature-sensitive stock; one Belgian store discarded €100,000 of product",
+              "Attack mirrors earlier assault on ~400 French supermarkets targeting Danfoss refrigeration software; many systems too old to receive security patches"
+            ]
+          },
+          {
+            "title": "3. Deepfake Nude App Network Dismantled",
+            "points": [
+              "Apple pulled 19 apps that advertised innocent features (pet portraits, etc.) but loaded hidden explicit image generators after installation",
+              "Hidden functionality triggered by ads on Facebook/Instagram; servers used language and referral source to decide whether to activate legitimate or illicit features",
+              "Researchers identified 400+ related apps and domains, with 27 apps on Google Play collecting 350,000+ downloads before removal"
+            ]
+          },
+          {
+            "title": "4. OpenAI Consolidates API Usage Limits in December",
+            "points": [
+              "Beginning December 2026, Plus, Pro, and Business tiers will share one unified token limit, merging ChatGPT and Codex allowances (Instant chat remains separate)",
+              "Tokens measure reading and writing units; harder models and tasks consume more tokens from the shared pool",
+              "Users can view remaining balance and reset schedules in Settings; hitting limit requires waiting for reset, upgrading plan, or purchasing additional credits"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Meta's humanoid robot prototype",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRSsqn9n9t-JFlNkNu_UfV1c0H9ZAu3Kvv-DEpKCPzCTEYxb5Y5SlJE6k-pz5z1PewferVBvjXCV4deyD0CuWW0YdqbZ85Pz4WqSSp98TzPxoX75PkEIjWNENEAhUuwZ765urKL8cFht2RHljSpIS7e77S90QEfv7DBgT0vNMXixxhPr7qlvDVj9dgz0PQfvOLTGEVblANVKONH4vZ6MYAA/4ve/7uZRYufAQ9CVVq2Tcvfpkg/h9/h001.EJjwECQw6pvLWFv-o_zVKpbNxtPl33_N3XMYpVYV4i0"
+          },
+          {
+            "label": "Grok Bot running costs admission",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhctJ16WOZ0QjQsD3oBqDyr6Jv3VrIL5pTTuaxy1tPkVh9wWuFyqyb75iRVIyIIUxaO11UOKE8WAMDgOUCOKfY_aqmlpjnsZa2qzpuQYjXdi0SPIjXRfhMhVXXxROXNXzyiHOd5_uGk4oF78MSYLBOnXT-nPEQzk0rIj05ABBWFfpDFqUcBKd72W9sNsMZR847ElUmi8LzfFR1UMLrxNq3z0/4ve/7uZRYufAQ9CVVq2Tcvfpkg/h10/h001.SCMJknikCMzbZi3AvIwKtD5EHQnA-gywpODF4AmzhpU"
+          },
+          {
+            "label": "OpenAI merges ChatGPT and Codex usage limits",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yheCOPAMUGNHzQ3Zl_YM7iqIlBWfdcCp4QQwFlB3fY_TkpfPoCvNu0yp5mqo5GLRpBJxl84cdHQzvVoiegr407s-fgJ-XRLB6o1DR0cs_zt20cal3dCBqL39qsFpbbzz04letcHa9cvtVNVLQ_NMWbyO4-2d_4E81caieSff9aO4Q/4ve/7uZRYufAQ9CVVq2Tcvfpkg/h11/h001.lGzC1BI46qAVMOrYMUUhmuxHfzgU0JTVGjkVG0qYMqA"
+          },
+          {
+            "label": "European supermarket freezer hacking attack",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhbPLeHrhH3noKfVZIUrNiRHVZbu_CXRDtZyM09QlRs71Xg7i6aK-k97zGvJhRPFEWatdfUAl6ofRjF0PSdV0pLKNIeo3xLy7Y9bFiXsR-1m9zDJn0wt7BFdiPx5Z90ZWsnussKr5ej7sbfkmkk1JiPixB_yLcjzZVUyNzz3SBuy1m6JJQdvzikgC4Rf-Dke1gCzentaDIlVWjUmklMZfyc8ME_7C7Jbw2Uc24_elxrN8r9AUZki-sL6bp6XsU1qCWg/4ve/7uZRYufAQ9CVVq2Tcvfpkg/h12/h001.RMlJrxyY0-8zEjj6XfIwQvL7HSzQjgrKJKrwrxtsQSE"
+          },
+          {
+            "label": "Apple removes 19 deepfake nudes apps",
+            "url": "https://elink640.dupple.com/ss/c/u001.5-wdQ2MlRaGZ_6S42yjMx6mHUNk0NDrTxkDG60PJqlax9AFh0CNDEz2guO8XiHphuEezNPxNo7wf7x_Ud8l-lO5_QubDcTHKCqhwqaICh1Qn4iigR3kstl8Knmu3XIqMElGhYQ1FH21JxgYhG6MmN4slGDCsiPmDyxCUNc9O8VpKpHtCSs3swpLRSzt7hF5EeYJ9BGkTAZKwNjT6ZM1IcJvjcLNvf3lrAiic2ivWf4g-jp2yeqKEF7D3oRXkN7pWTboZ0HEXAE3kYLUcb20I5w/4ve/7uZRYufAQ9CVVq2Tcvfpkg/h13/h001.IvfvmNCvt8viIPOtbLRZ__R4SDcQgbck4NyHxeaSNL4"
+          }
+        ]
+      }
+    }
+  ]
+}
