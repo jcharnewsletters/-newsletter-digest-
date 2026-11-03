@@ -1,0 +1,460 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-03",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Apple's AI-powered home robot (HomeView Ultra, 2027 launch)",
+        "points": [
+          "Apple plans a $1,000+ AI home robot, code-named J595, targeting a 2027 launch (possibly slipping to 2028).",
+          "The robot will autonomously roam homes, host FaceTime calls, and automatically control lights when people enter rooms.",
+          "Project traces back to prototypes started in 2018 under former CEO Tim Cook; new CEO John Ternus is now pushing development forward.",
+          "Represents Apple's entry into home robotics, competing with existing home automation products."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Engineers are reportedly adding features beyond video calling to justify the premium price point."
+          }
+        ]
+      },
+      {
+        "title": "OpenAI's custom Git backend 'Pando' scales AI-driven code pushes",
+        "points": [
+          "OpenAI built a custom Git backend called Pando to handle its monorepo's exponential growth from heavy AI agent usage.",
+          "Agent-driven pushes had pushed traditional Git reliability below 90%, prompting the rebuild.",
+          "Pando cuts median push latency significantly (reported as 5x reduction, or roughly 80% less time) and now handles nearly 1 petabyte of Git data daily.",
+          "System is optimized for concurrent pushes to multiple branches and maximized read throughput while keeping existing engineer workflows and tools unchanged.",
+          "OpenAI is sharing some Git fixes and lessons with the community, though Pando itself remains internal."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "China-US Moon Race Accelerates",
+            "points": [
+              "China publicly committed to landing astronauts on the Moon within three years, using a lunar-orbit rendezvous technique similar to the Apollo program.",
+              "Both nations are racing for geopolitical advantage and long-term presence at the Moon's South Pole.",
+              "Marks a shift from privately-funded space efforts toward state-level competition for lunar dominance."
+            ]
+          },
+          {
+            "title": "SpaceX-EchoStar Mobile Network Talks",
+            "points": [
+              "SpaceX is negotiating with EchoStar to acquire Boost Mobile or gain access to its cell network to support Starlink's planned entry as a US mobile carrier."
+            ]
+          },
+          {
+            "title": "Agent Tool Architecture Simplification",
+            "points": [
+              "AI agents are collapsing large tool catalogs into a single 'exec' tool that runs short scripts in isolated sandboxes (secure, contained environments for running code safely).",
+              "This lets models chain multiple dependent actions in one pass, instead of the prior approach where tool-calling handled only one action at a time.",
+              "Reflects a broader shift toward more efficient agent design patterns in large language model (LLM, an AI system trained on vast text data to understand and generate language) workflows."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Proton's AI Transition and Engineering Leadership Lessons",
+            "points": [
+              "CEO Andy Yen proposed re-interviewing engineers based on AI adoption readiness, then reversed the policy after user cancellations and staff backlash.",
+              "CTO Bart Butler's manifesto urges treating AI models as team members: have them produce code directly, manage them like direct reports, and keep human judgment in the loop to catch hallucinations (AI-generated outputs that are incorrect or fabricated).",
+              "Key strategy: once AI speeds up coding, identify and redesign the next bottleneck, such as CI/CD (continuous integration/continuous deployment, the automated process of building, testing, and releasing code), code review, or specifications.",
+              "Industry reaction split: Rails creator DHH and Clean Code author Robert Martin backed the AI-first approach, while critics focused on workplace culture concerns."
+            ]
+          },
+          {
+            "title": "Audio AI and Plugin Development Platforms",
+            "points": [
+              "Hume's Audio Decision API consolidates 10+ audio models into a single API call (a way for software to request a service from another program), scoring 82% accuracy on detecting speaker emotion, frustration, and laughter versus 78% for Gemini 3.8 Flash.",
+              "DeepSeek's Creator Mode lets developers describe desired functionality in natural language prompts, with AI agents automatically building tools, skills, and interface tweaks under an 'everything is a plugin' architecture.",
+              "Both platforms aim to reduce developer workload: Hume eliminates stitching together multiple specialized audio models, while DeepSeek eliminates manual coding boilerplate (repetitive code needed to set up a project)."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Apple iPhone Duo Supply Crisis",
+            "points": [
+              "Apple's $1,999 foldable iPhone Duo sold out online within hours of its October launch, with some orders now slipping to January 2027.",
+              "New CEO John Ternus said only a 'very small percentage' of units have been returned for display problems, including cracked inner screens.",
+              "Apple declined to forecast when supply will catch up to demand despite ramping manufacturing.",
+              "Rising memory costs driven by AI demand are pressuring multiple products, widening the supply squeeze beyond the Duo.",
+              "Apple reported record September-quarter revenue of $114.5B, up 12% year-over-year, in Ternus's first earnings report."
+            ]
+          },
+          {
+            "title": "TikTok's Super App Expansion",
+            "points": [
+              "TikTok launched Must Eat, a restaurant guide in NYC, LA, and the Bay Area built from 40+ million posts and comments, with filters for cuisine, price, rating, and distance.",
+              "U.S. TikTok Shop sales hit $15.82 billion in 2025 (up 108%), following a 407% jump in 2024, per eMarketer.",
+              "The app now also includes hotel booking (TikTok GO), sports scores (World Cup hub), and reportedly code for in-DM money transfers (TikTok Pay).",
+              "TikTok claims 27 million Americans visited a local restaurant, cafe, or shop for the first time via the app last year, generating an estimated $4.7 billion in spending."
+            ]
+          },
+          {
+            "title": "BrainCo's Appetite-Suppression Wearable",
+            "points": [
+              "Beijing-based BrainCo is developing a wearable using electrical brain stimulation to suppress appetite as a drug-free alternative to GLP-1 injections (medications that slow stomach emptying and trigger fullness signals).",
+              "Targets a China launch within 2-3 years before potential U.S. expansion; the company already makes EEG-based medical devices and bionic hands that translate neural signals into movement.",
+              "Nearly 1 in 5 U.S. adults report using GLP-1 drugs, representing a large addressable market.",
+              "Key challenge: the device would only target appetite-control brain circuits, whereas GLP-1 drugs affect multiple receptors across the brain and body, and no comparable weight-loss results have been shown yet in large human trials."
+            ]
+          },
+          {
+            "title": "Automakers Scale 3D Printing for Parts",
+            "points": [
+              "Rivian spent $5 million on 3D printing equipment with $1.7 million in annual material costs, cutting parts delivery from weeks to days.",
+              "Ford operates 200+ printers and expects 3D-printing labs at 23+ plants by year-end, including a vending machine in Dearborn that dispenses printed tools.",
+              "GM uses 135 3D-printed components on the Cadillac Celestiq; a Stratasys executive called GM a model for 'standardizing and then scaling' the technology.",
+              "Automakers use 3D printing to bypass tooling delays, shrink inventories, and fix problems early—not to replace mass-production methods like stamping or injection molding."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Anthropic's Self-Improving AI Warning",
+            "points": [
+              "Anthropic filed a revised S-1A warning that it may soon reach recursive self-improvement, the point where AI becomes skilled enough at training itself to accelerate its own progress without human intervention.",
+              "The company confirmed its AI has already achieved skill jumps it failed to detect at the time, suggesting current detection methods are insufficient.",
+              "No current model has crossed the self-improvement threshold yet, but Anthropic is revising its Responsible Scaling Policy to maintain human oversight of frontier models like Claude."
+            ]
+          },
+          {
+            "title": "Google Dismantles 1.3M-Device TV Box Botnet",
+            "points": [
+              "A backdoor called XCPE, built into Android TV set-top boxes by manufacturer Videostrong, turned 1.3 million devices into a botnet (a network of hijacked devices controlled remotely) rented to criminal affiliates.",
+              "Criminals used the infected boxes for ad fraud, residential proxy networks (systems that mask traffic as coming from home users), and distributing additional malware.",
+              "Google cut ties with Videostrong, banned it from Android certification, and disrupted control servers, with an estimated 10 million additional infected devices to be cut off."
+            ]
+          },
+          {
+            "title": "Nvidia Restricts China Cloud Access",
+            "points": [
+              "Nvidia verbally instructed data center partners to direct at least 51% of new AI computing services to non-China clients, avoiding written documentation.",
+              "The rule applies only to new contracts, leaving existing Chinese customer relationships intact, closing a major loophole in US export restrictions.",
+              "Chinese companies had relied on renting computing power from providers outside China to train AI models after direct chip exports were blocked."
+            ]
+          },
+          {
+            "title": "Smuggling Route for Memory Chips into China",
+            "points": [
+              "Smugglers exploit export controls that only check processor performance by pairing banned Samsung and SK hynix HBM memory (high-bandwidth memory, a type of fast memory chip stacked for AI processing) with cheap, legal processors.",
+              "Shenzhen workshops heat circuit boards to extract the advanced memory chips after shipment through Hong Kong, discarding the cheap processors used as legal cover.",
+              "HBM3E memory prices surged from hundreds of dollars to $4,000 per unit, letting brokers earn $24,000–$32,000 profit per AI GPU sold to Chinese manufacturers like CXMT."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Apple's home robot 🤖, OpenAI scales git📈, open source value👨‍💻",
+      "date": "2026-11-03T11:46:06+00:00",
+      "summary": {
+        "headlines": [
+          "Apple plans to launch a $1,000+ AI home robot by 2027 that autonomously roams homes, supports FaceTime calls, and controls lights",
+          "OpenAI's new Git backend Pando reduced median push latency by 5x and now handles nearly a petabyte of Git data daily for its massive monorepo",
+          "China publicly committed to landing astronauts on the Moon within three years, intensifying the US-China space race",
+          "SpaceX is negotiating with EchoStar to acquire Boost Mobile or access its cell network to support Starlink's planned entry as a US mobile carrier"
+        ],
+        "sections": [
+          {
+            "title": "Apple's HomeView Ultra Home Robot (2027 Launch)",
+            "points": [
+              "Planned $1,000+ price tag with 2027 target launch, building on prototypes developed since 2018",
+              "Will support FaceTime calls and autonomously roam homes to control lights when people enter rooms",
+              "Represents Apple's entry into the robotics market, competing with other companies' home automation solutions"
+            ]
+          },
+          {
+            "title": "OpenAI Scales Git Infrastructure with Pando Backend",
+            "points": [
+              "Built custom Git backend (Pando) to handle monorepo's exponential growth without disrupting ongoing engineering work",
+              "Achieved 5x reduction in median push latency in production and now serves nearly 1 petabyte of Git data daily",
+              "Optimized for concurrent pushes to multiple branches and maximized read throughput, solving scalability bottleneck"
+            ]
+          },
+          {
+            "title": "China-US Moon Race Accelerates",
+            "points": [
+              "China publicly disclosed plans to land astronauts on Moon within three years using lunar-orbit rendezvous technique similar to Apollo program",
+              "Both countries racing for geopolitical advantage and establishing long-term presence at Moon's South Pole",
+              "Represents major shift from privately-funded space efforts to state-level competition for lunar dominance"
+            ]
+          },
+          {
+            "title": "Agent Tool Architecture Simplification",
+            "points": [
+              "Agents collapsing tool catalogs into single 'exec' tool that runs short scripts in isolated sandboxes",
+              "Enables models to reliably chain multiple dependent actions in single pass, versus previous tool-calling that only performed one action at a time",
+              "Represents shift toward more efficient agent design patterns in large language model workflows"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Scaling Git at OpenAI",
+            "url": "https://links.tldrnewsletter.com/sN4IQP"
+          },
+          {
+            "label": "Apple's home robot may do FaceTime, switch lights on, and more by 2027",
+            "url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/"
+          },
+          {
+            "label": "China releases timeline for lunar landing targeting before 2030",
+            "url": "https://arstechnica.com/space/2026/11/china-releases-timeline-for-lunar-landing-on-the-moon-targeting-before-2030/"
+          },
+          {
+            "label": "Why Agents Are Soon Only Going to Have 1 Tool",
+            "url": "https://www.philschmid.de/code-mode"
+          },
+          {
+            "label": "The value of open source",
+            "url": "https://haydenbleasel.com/writing/open-source"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 DeepSeek's new AI plugin builder",
+      "date": "2026-11-03T14:09:39+00:00",
+      "summary": {
+        "headlines": [
+          "DeepSeek launches Creator Mode for building AI agent plugins with natural language prompts, simplifying plugin development compared to traditional coding methods.",
+          "OpenAI rebuilt its Git infrastructure (called Pando) to handle massive code pushes from AI agents, reducing push time by 80% while maintaining compatibility with existing tools.",
+          "Hume's Audio Decision API consolidates 10+ audio models into a single API call, achieving 82% accuracy on understanding speaker emotions, frustration levels, and other nuanced audio characteristics.",
+          "Proton Mail's AI transformation sparked workplace backlash over performance re-interviews tied to AI adoption, though CEO reversed the decision after public criticism."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Git Redesign for AI-Driven Development",
+            "points": [
+              "1. OpenAI's AI agents were pushing code so frequently that traditional Git reliability dropped below 90%, forcing the company to build a custom solution.",
+              "2. Pando is the new server backend designed to handle parallel agent traffic without changing how engineers or Git workflows operate.",
+              "3. Code push times now take 80% less time compared to the previous system, demonstrating significant performance gains.",
+              "4. OpenAI is sharing Git fixes and lessons learned with the community even though Pando remains internal to the company."
+            ]
+          },
+          {
+            "title": "Proton's AI Transition and Engineering Leadership Lessons",
+            "points": [
+              "1. CEO Andy Yen proposed re-interviewing engineers based on AI adoption readiness, then reversed the policy after user cancellations and staff backlash.",
+              "2. CTO Bart Butler's manifesto advocates treating AI models as team members: direct code output rather than typing it manually, manage agents like direct reports, and keep human judgment in the loop for hallucination risks.",
+              "3. Key optimization strategy: when AI speeds up coding, identify the next bottleneck (CI/CD, code review, specifications) and redesign those processes around AI capabilities.",
+              "4. Industry split emerged: Rails creator DHH supported the AI-first approach while Clean Code author Robert Martin echoed similar arguments, but critics focused on workplace culture concerns."
+            ]
+          },
+          {
+            "title": "Audio AI and Plugin Development Platforms",
+            "points": [
+              "1. Hume's Audio Decision API trained on 10M+ human judgments scored 82% accuracy versus Gemini 3.8 Flash at 78%, enabling single API calls for speaker emotion, frustration, and laughter detection.",
+              "2. DeepSeek's Creator Mode uses 'everything is a plugin' architecture, letting developers describe desired functionality in text prompts and letting AI agents build tools, skills, and interface tweaks automatically.",
+              "3. Both platforms reduce developer burden: audio model consolidation eliminates stitching together multiple specialized models, while plugin builders eliminate manual coding boilerplate."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "DeepSeek Creator Mode",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XquldjczkZ9DsK84jFPDvE8HSVyjp6TxV1I7G6-GAqb-C8gPSSYevBoZhOOTyt9hwsMDEFqoun-3dzwfkybAQIrJ8t0-uf4HaYtpfdjRV2AslY-S3KibHUgVkoEtJwj5PzlfCHFPZxFZexj7Zg-oPP-aqEuKUlo5V0a2L1zoYcid1uRrtLB4WLzESAulmmboBLvDS6QVBPp1gBTE_CjjXo6ZRs5ZC-3QyBYP2nyiu_xrLWy90T4ElQsClI1z7AIFFIKA/4vf/QYZNdBMhTdqlEU7tVKM7SQ/h4/h001.9_1XKvcQmJk8Ma1rRzXGUZ7KmZ_Edb_zjcdIBS0gwI4"
+          },
+          {
+            "label": "OpenAI's Git Fixes and Pando Details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.wZN1XY49ssmkxVgHdsx183UNH4UTy36RoFEzZc0N1g_g6qrCg3dn0YnG_Nj_hIZV8JJ09TUaONg-rnEgmLWbPs03eC6V6893QtqvGYk_9cLRUkzN3QNqMKdBdeOdCnFAahXPOFAbId51tcBp9OXfGL_vIIQcSgO-3n4NLPEv6MbUoQCusSsAC1VDXKY5JVqTSYYiL-5R1OsP9fUteY2Hmn7OU5nG15KPkKH5rQd_3EbW3T5LJgD-CDZfOlOUMDh-yHgeuEA4YdbObOU3ShDytdttyh-by2UWKuMRjAwDAps/4vf/QYZNdBMhTdqlEU7tVKM7SQ/h6/h001.CscSTZzSI2N7lBY9QNu66inAaocpOQhq9BU1e9XD8Pg"
+          },
+          {
+            "label": "Hume's Audio Decision API",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFxTShwEqydnw-GyKU6NtCo-pmI-beXZNzbZDGhxzrQnWkradAEVJZMJUmOPRJT5wl-BATLSYL_faTdRzCNX7aLOMkZH8NZ9B8vuhzJ7SkiX5lki1-v4itYr5AUVSeW3B-XJ4jcyZFE3EVqIModSiIZeKYdNCUTYYrfh5iLscAZ3clrBHLvegli0q97Y_Sr2Nw3_HySDf4c2sJutiso9USFk_r0Nb31_HnoD-XJwAmSBlPPl8uPGDZQGyOwFugWpuKiAJhNsAoa1yoTeivsZT-r/4vf/QYZNdBMhTdqlEU7tVKM7SQ/h7/h001.jaGRk-LW14JPr0jIv_Nrh9aWe9OscybkSVa-SkTJ4ow"
+          },
+          {
+            "label": "Proton's AI Push and Workplace Culture",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xquo2fhnEwy8j4IS6Y2-Kqi220v1Pd5d-ny0rTfXqQeqZBWRll0MIMTc9h6YzDZqjsw0n4x-VKiQOW6-O5GRoPSFhwA7frzSLQl52c-KsOH696py49VP2-uKuxW-0B-RcDNP3x44WjCdYC_Si2N1nfmuNbeCZadyCTWZIVqPaYwTy12GqA55lvp0bm9zMJPqf3B-kiXtpLexSxlX035PTFcTzrKEZFvdnAzuoO-M2xx2ARZh0hUmnmiIO1y3RXPg9bTBR6ND7yHXcaNMnhuZBRSPREnTQFSUaRmg5Be-GvOr7XEFHnwPc-FscCXUb6mvkOmJ1zXaZRZxdrNF6mCfvp9iQ/4vf/QYZNdBMhTdqlEU7tVKM7SQ/h14/h001.sU-LFqVP91776F2DjxJTlV3xnHGyUE5gPCg3Y-mTg54"
+          },
+          {
+            "label": "Bart Butler's Full Manifesto on AI Engineering",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IFKgnKhChLEORPQcgirN7OlZc4MWA68dKs8oPujR3HaugcCM5wyo6E69yMBfTQyilcsR75Y99LBNhJYHhWcbXDbR_IbMFV-vU4jl_-W9Eziru-V2_MPScKti-5_-eNUN7oJsTGRAM0jLmZGkfARre6bgFGny0so27dqo9PfD31__XXTveCyJ4w-NNm26f0H_PBGS3_ZR41wb5sWUL3WE5qvr5mZ6qD9D4YRJ8QvJWXKXz4My7VXnfB2fQ8uPqhpUWTihI0ylFvk81TBOcxBJUaRKuhM7mgz_X8tGoopxTl0/4vf/QYZNdBMhTdqlEU7tVKM7SQ/h17/h001.xZtdxeiNoZPI4NsMwrfG0n8ayMO25zXHpUKmZjjsJ8M"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🍎 Apple can't build enough iPhone Duos",
+      "date": "2026-11-03T15:32:47+00:00",
+      "summary": {
+        "headlines": [
+          "Apple's $1,999 iPhone Duo sold out within hours but supply can't keep up, with some orders slipping to January 2027 as the company admits it cannot predict when availability will normalize.",
+          "TikTok expanded its super app with Must Eat, a restaurant guide using 40+ million posts, adding to existing shopping, hotel booking, and sports features as it targets $15.82B in U.S. Shop sales.",
+          "BrainCo is developing a wearable using brain stimulation to suppress appetite as a potential drug-free alternative to GLP-1 injections, aiming for a China launch within 2-3 years.",
+          "Rivian, Ford, and GM deployed 3D printers on factory floors to produce tools and low-volume parts in days instead of weeks, reducing supply chain delays without replacing mass production.",
+          "Apple's new CEO John Ternus posted record September-quarter revenue of $114.5B (up 12% year-over-year) in his first earnings report as the company navigates iPhone Duo supply constraints."
+        ],
+        "sections": [
+          {
+            "title": "1. Apple iPhone Duo Supply Crisis",
+            "points": [
+              "$1,999 foldable device sold out online within hours of October launch, with orders now slipping into January 2027.",
+              "CEO John Ternus said only a 'very small percentage' of units have been returned for display problems, including cracked inner screens.",
+              "Apple declined to forecast when supply will catch up to demand despite manufacturing ramping up.",
+              "Rising memory costs driven by AI demand are pressuring multiple products, extending supply squeeze beyond the Duo alone."
+            ]
+          },
+          {
+            "title": "2. TikTok's Super App Expansion",
+            "points": [
+              "Launched Must Eat restaurant guide in NYC, LA, and Bay Area using 40+ million posts and comments, with filters for cuisine, price, rating, and distance.",
+              "U.S. TikTok Shop sales hit $15.82 billion in 2025 (up 108%), following a 407% jump in 2024 according to eMarketer estimates.",
+              "App now includes hotel booking via TikTok GO (May), sports scores (World Cup hub in June), and reportedly has code for money-sending in DMs through TikTok Pay.",
+              "Company claims 27 million Americans visited a local restaurant, cafe, or shop for the first time via TikTok last year, generating an estimated $4.7 billion in spending."
+            ]
+          },
+          {
+            "title": "3. BrainCo's Appetite-Suppression Wearable",
+            "points": [
+              "Beijing-based startup aims to use electrical brain stimulation to reduce appetite as a non-drug alternative to GLP-1 injections (medications that slow stomach emptying and trigger fullness signals).",
+              "Targets China launch within 2-3 years before potential U.S. expansion; already makes EEG-based medical devices and bionic hands that translate neural signals into movement.",
+              "Nearly 1 in 5 U.S. adults report using GLP-1 drugs, creating a large addressable market.",
+              "Challenge: electrical stimulation would only target appetite-control circuits, whereas GLP-1 drugs affect multiple receptors across the brain and body; company has not yet publicly demonstrated weight-loss results comparable to GLP-1 in large human trials."
+            ]
+          },
+          {
+            "title": "4. Automakers Scale 3D Printing for Parts",
+            "points": [
+              "Rivian spent $5 million on 3D printing equipment with $1.7 million annual material costs; reports cuts to parts delivery from weeks to days.",
+              "Ford operates 200+ printers and expects 3D labs at 23+ plants by year-end, including a vending machine in Dearborn that dispenses printed tools.",
+              "GM places 135 3D-printed components on the Cadillac Celestiq; Stratasys executive called GM a model for 'standardizing and then scaling' the technology.",
+              "Use cases focus on bypassing tooling delays, shrinking inventories, and fixing problems before supply chain involvement—not replacing mass production methods like stamping or injection molding."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Apple iPhone Duo supply constraints",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5n2rRYxzXnqBInasO0kQBmlIXV-CPZ-4efzbg1miu_C91Z9JAh-oUcG1jW09_nlHUUEwJ7KAujTYzi4Rx2IedrvYk8MEd_hpByC-qQdMVprjbUagYNCDCHkWfCscA4ZF5YHDFKSuoJLzGiDjZBoeggpuoQkYpGmYQAn8YUJHZpwFSWiUs4mOkc7ceGM7yWgQgVlnnlc-KHEYeM_MF2bcto2HdOEstISRCbAswgLA4ooAf7ca_1ctzFp7HHqG4rMhJ_HlOVvMxaiNoJ1FAyD2pQuuhaNpzvgKFlJvmr9nUwpW80jzxGxmMkpfGRty8URlqrsEr107CPwtqIZXlEqOOls/4vf/4YDFStE3RQmrHHD9KrxXwA/h5/h001.81hhkNQKK1Om_mPybc5FVG3RSE2MhZlPker5vlbVwbo"
+          },
+          {
+            "label": "TikTok builds super app with Must Eat",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.iYaEL_hul6BTHS1Xop-c5n2rRYxzXnqBInasO0kQBmlAdDxEKKfMjfit6DK2VKg0ACQb2wLHxuDsaeS9nm0L6WflRerO8mA0VfnlRyXk6Ccb4sWC-wKMjEZnC1lReB-jXvHWLYG_D9L2eGB9Z6oll22rhD6EDdW2J_t4NeHPxk0OzIA8Yh6zBTa8tv04St5wkTlSOD51vlkiqSAN-kS9OzH8cJIMkMeVyTN9XIfvBYABQtacmGClSxEg2MzI7SXUxVrGNe5eKvcWm3DPhZyfYBb1jURgGwWLV0QSimKpZSCHvhRoJeNu75T14iA6QoTP/4vf/4YDFStE3RQmrHHD9KrxXwA/h13/h001.wf8Zc4kzu2HdzK7aWUXa0HFxCh9YzscLswcp8aKFoZw"
+          },
+          {
+            "label": "BrainCo electronic GLP-1 wearable",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NasoMtr-GEUWRp5-ReOTT9a13I2I16UQycsk-6yhdq0QEV1KbQY6B9WWZqLzNGa7022DtqQK3vpfgLPaw5YoEVWGcWmN9RTVB9dhVhIeCHvO3ICmspI14FbaqDs1hDNMCDFnM6hFJi0WncvQ3Njb-iQQxHuIOFw_cXmWisgpDe9Fau5Kch4zTuEN491bAN70CdyW6JqZvgmEWp2T7Z-VzkNVN-vZT1quz5jECU5ixv6_S2GWMecnFvQj_KlbHOEzl1zhM4qFmrEt6AvvpIbeC42iPEkguo_MILX1N-x4nezurBF-A8s9VJm_EQM_6zEpZm0xUfLDNi6XGtzWTABrzQG6ZCpO60-xD2qubZac_zJIw/4vf/4YDFStE3RQmrHHD9KrxXwA/h16/h001.xZCB-X6KWzhvUfG0_S973mjJEmqb5Zsfis2Y4L4fhzA"
+          },
+          {
+            "label": "Rivian Ford 3D printing auto parts",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NallU6gOLL2yXGXwZlApE0QE0rRehN-nnshiFlpsVKjyW2tcKoMhlkohIGtN_0btUTuUMb1dWLLBj8RSlHJK5EgFod5vSGZxXPDtgGNA_3EWHDWkGHZITPE8bIhmKHZbIvKdTm2v_3rs3fPIMEUeczhtBLUkuN69Cjvk7erhCTsyqeDuWCF0PeyMhmYu9iHL3wnRdeY6cJe5aLtbcATjE-thxLcELpvHd3QNpPfiwyfPfDHYciDy_oYHRr1eOGca7B6jXB4Jxz5ZKZBe9rzCZCq01P-FKzex1BXN2ux6KhMRY/4vf/4YDFStE3RQmrHHD9KrxXwA/h19/h001.ntPw83KGcra_5_b0aLH8qodc12sdlflwBhDsYy2ktgs"
+          },
+          {
+            "label": "Apple record Q3 revenue under new CEO Ternus",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NaofPuKjpgJXO2HrLmPYkGYcbHK2TGcn_L3A295clybt-X1US1RcFG5ryS9H0R4oL5E3VntdlvLiBjNk2uDDRwrb66buaKH0hi9z-tC8O68wvzjQtddtt-YqR9JvZFi2mKfCRSR8wXUCUe1A-OVJt1VZ6xAR-SxO3sbWu7Lu6ZoMQaULJIlXbg3aBNHZFopRqhq0DB3ATdVki3gJnbjFfxuuCYPMj8SW6Nij0DRh4A-UVK5mrNbZhYCFJSFXchl_mEaiouqVsM2ok0SZFJ3QQXSm3uzBXQF6wHobrE0Qvev8N/4vf/4YDFStE3RQmrHHD9KrxXwA/h7/h001.6_nZXlyCXAdcQ7L3OrZEykTFE9CMbwYFoVRZdCa1ZBE"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Anthropic warns self-improving AI is coming",
+      "date": "2026-11-03T17:48:37+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic warns it may soon reach recursive self-improvement threshold where AI trains itself faster than safety checks can be added",
+          "Google dismantles botnet hidden in 1.3M Android TV boxes that criminals used for ad fraud and malware distribution",
+          "Nvidia tells cloud partners to favor non-China clients, blocking a major workaround Chinese AI companies use to rent computing power",
+          "Smugglers slip export-controlled HBM memory chips into China by pairing them with cheap processors that legally bypass US and Korean controls",
+          "Apple's first home robot landing in 2027 at $1,000+ with AI-driven features like FaceTime hosting and automated lighting"
+        ],
+        "sections": [
+          {
+            "title": "Anthropic's Self-Improving AI Warning",
+            "points": [
+              "Anthropic filed revised S-1A warning that it may reach recursive self-improvement, the point where AI becomes good enough at training itself to accelerate its own progress without human intervention",
+              "Company confirmed AI has already achieved skill jumps it failed to detect at the time, indicating current detection methods are insufficient",
+              "Anthropic stated no current model has crossed the self-improvement threshold yet but is revising its Responsible Scaling Policy to maintain human supervision of frontier models like Claude"
+            ]
+          },
+          {
+            "title": "Google Takedown of 1.3M TV Box Botnet",
+            "points": [
+              "XCPE backdoor built into Android TV set-top boxes by manufacturer Videostrong turned devices into botnets rented to criminal affiliates for profit",
+              "Criminals used infected boxes for ad fraud, operating residential proxy networks (systems that mask traffic as coming from home users), and distributing additional malware to victims",
+              "Google cut ties with Videostrong, banned it from Android certification, and disrupted control servers; estimated disruption will cut off at least 10 million more infected devices"
+            ]
+          },
+          {
+            "title": "Nvidia Restricts China Cloud Access",
+            "points": [
+              "Nvidia verbally instructed data center partners to direct at least 51% of new AI computing services to non-China clients, bypassing written documentation",
+              "Rule only applies to new contracts, leaving existing Chinese customer relationships intact and demonstrating an effort to close a major loophole in US export restrictions",
+              "Chinese companies have relied on renting computing power from providers outside China to train AI models after direct semiconductor exports were blocked"
+            ]
+          },
+          {
+            "title": "Smuggling Route for Memory Chips into China",
+            "points": [
+              "Smugglers exploit legal export controls that only check processor performance, not internal components, by pairing banned Samsung and SK hynix HBM memory with cheap low-performing processors",
+              "Workshops in Shenzhen heat circuit boards to remove the advanced memory chips, discarding cheap processors that provided legal cover for shipment through Hong Kong",
+              "HBM3E memory price surged from hundreds of dollars to $4,000 per unit due to scarcity, enabling brokers to earn $24,000 to $32,000 profit per AI GPU sold to Chinese manufacturers like CXMT struggling with low production output"
+            ]
+          },
+          {
+            "title": "Apple Home Robot Coming 2027",
+            "points": [
+              "Apple's code-named J595 robot (possibly called HomeView Ultra) will launch in 2027 or slip to 2028 at expected price of $1,000 or more",
+              "Device will autonomously roam homes, host FaceTime calls, and automatically control lights when occupants enter rooms, powered by AI decision-making",
+              "Project originated under former CEO Tim Cook with prototypes dating to 2018; new CEO John Ternus is pushing development while engineers add features beyond video calling to justify premium pricing"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic S-1A filing warning on self-improving AI",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuC4XsLr2fX7nmTE3qeKhyxrdwW8DuRuumDDaSyqYxrS9zVyIjvGSPotlwpI5v1hWXLBhDGC08iLvPoNOrGqfkWWYK73K34juey4dVleXL4kSMy77hcTPO2X82DfbfzXybgEr_inRzU42BsSoPYEem5nuzzXBnuYancPHTu732SH4u95ZoKE-gO08K2M71x_AEY/4vf/j4ngKrO1RUmj0caeti1E5A/h8/h001.MuEbrXcCPwbTQXuzkByZTl8yHAI8NTiNFH7apZJZrmM"
+          },
+          {
+            "label": "Google's dismantling of XCPE botnet in TV boxes",
+            "url": "https://elink640.dupple.com/ss/c/u001.yrpcv-6znE4A9OOUDCb3GaTUwh4b7xMF29sb6-jQEdpvbDWz18HCZrKQDQ06lIqAres0BTapR2w5b2TqQrL28ubRc87ENdhGClnIqd0Gredx_HRUeir8mnhsMgJ2Odb6vb4gCNeyBGWdJ567_Vt89Jupuf1mAP0AnbTTtZrTcWOnpkv-HwRsLipUarNto61RXWx5G1TwbBEwVWKveMTxQw/4vf/j4ngKrO1RUmj0caeti1E5A/h9/h001.6_ChGZR6xCK2buQbps7emrqFDwFVXVpZRUCE5bT00Tc"
+          },
+          {
+            "label": "Nvidia restricting China cloud access",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLWmzE7JUyVqe2VJ_ez0HByWDbU1qAbmGj-phXDMe4uTswr5Idlh3QXoJdsvjj-YkSIXZFBJYLmIIhLPXDmq45ZbeUDoqlCBb_XBhj3N8OGDAdQmbxMOrMVfWn9tfvCpbRA/4vf/j4ngKrO1RUmj0caeti1E5A/h10/h001.DAIFliofkQFBxglva6CvYgtiNPl4jlXdnEJG_-QsWT4"
+          },
+          {
+            "label": "Chip smuggling investigation",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51UGb6FowuOPx4MyExYuiC2LfkNON6xDlM-WhN8-AcSxZlxkcUeCZYGk6Kc6F54CDhSfTY5v5pBxHeYsvGRMLPPibTx7ckffRXahSXNqwyWj-pzbIYWpeMVmbipQUJ46aVxJ2EkCHAuYDw4PYWJH_SW7E0Ink4vV4z1sODjsc4zZV_x18iONEJyadcbpBnmVAtFaQOsbi0WQ3tgOKGWXHmFLOW8BvRllXMkgd4iRZogG4/4vf/j4ngKrO1RUmj0caeti1E5A/h11/h001.TzrJ7w0JSYfUDcIRnlA7k3KS7qXALQkLdt3_7Aym2mg"
+          },
+          {
+            "label": "Apple's home robot expected 2027 launch",
+            "url": "https://elink640.dupple.com/ss/c/u001.5-wdQ2MlRaGZ_6S42yjMx6AXOHboTyQHsp8jPUD1FSAoZzrEuZ1ZZ3VjkSBBSzVeytvlUNtsXs08W0EW3Ro9Bpny_HuFAWOKDFS0Ygosz76QnmDjKQ5DH632kvysBjXBh1ISyRmt-CNyCXCKoI0p75IVmjDa_1gqshCi9kkeRL8dyT4QPa0Bn33E2pZCjurl1qUINlZHLH5sEcKcQNhwfMT3rCNKLcYPy5wYH1rg9U4/4vf/j4ngKrO1RUmj0caeti1E5A/h12/h001.EWWA9576-w0zfk_8rY3ukm0HajD68r0WKVkkTGOFZeg"
+          }
+        ]
+      }
+    }
+  ]
+}
