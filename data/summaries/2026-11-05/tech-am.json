@@ -1,0 +1,356 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-05",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI Ships Images 2.6 with GIF Generation",
+        "points": [
+          "New Images 2.6 model generates still images 50% faster than its predecessor, producing an image in about 6 seconds at low quality using the new 'Flare' model.",
+          "Can now create animated GIFs with editable, frame-by-frame control, including adjustable animation speed; users can upload rough drawings for the model to complete before animating.",
+          "A second new model, 'Sunburst,' handles detailed edits; both support SVGs and complexity settings to control planning depth.",
+          "Rolling out globally today across all ChatGPT and Codex subscription tiers."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "API access details and technical specs for developers integrating Images 2.6 are available via OpenAI's documentation."
+          }
+        ]
+      },
+      {
+        "title": "Apple Slashes Internal AI Spending Budgets",
+        "points": [
+          "Apple cut daily AI spending caps (budgets for internal use of tools like ChatGPT, Claude, and Gemini) for some engineers from $300 to $200 in October, with further cuts to $100 or less under consideration.",
+          "Non-engineering teams could see allowances drop from $100 to as little as $25 per day.",
+          "Limits aren't absolute — employees can request exemptions from senior executives for additional access, though approval criteria are unclear.",
+          "Few workers were using their full allocations, suggesting prior budgets were set higher than necessary."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Framed as the end of the 'tokenmaxxing era,' with Big Tech broadly beginning to ration token (a unit of text/data an AI model processes) usage as API subsidies that previously hid true costs start to tighten."
+          }
+        ]
+      },
+      {
+        "title": "SpaceX Launches Starfall Commercial Reentry Capsules",
+        "points": [
+          "Starfall is a disk-shaped capsule that can carry up to 1,000 kg of research payloads and supplies 1 kW of power.",
+          "Maintains Starlink internet connectivity throughout its time in orbit, letting researchers pull data in real time rather than waiting for post-splashdown recovery.",
+          "Targets biomedical, pharmaceutical, and materials science customers; three commercial missions already signed for future Starship launches, with no public pricing or operational date yet."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Competitor Varda Space Industries already runs three autonomous orbital factories simultaneously and plans seven missions in 2027 and ten in 2028, enabling research like new cancer drug development."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "X.com Rebuilt by Five Engineers Using AI in Six Months",
+            "points": [
+              "A team of five engineers used AI coding agents to rebuild X.com's web app in under six months.",
+              "New version loads significantly faster than the old app on slow connections and is already serving logged-out users and search-engine crawlers."
+            ]
+          },
+          {
+            "title": "Political Barriers Emerging for AI Infrastructure",
+            "points": [
+              "Nearly all local U.S. ballot measures opposing new data centers passed (except one in North Dakota), signaling growing public resistance to AI infrastructure expansion.",
+              "Data center siting is becoming a political flashpoint; continued opposition could keep AI compute scarcer and more geographically dispersed than expected."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "How AI Coding Agents Erode Critical Thinking",
+            "points": [
+              "An Anthropic engineer identified three stages of cognitive decline when using AI coding agents: cognitive offloading (delegating tasks), deferral (accepting outputs as truth), and cognitive surrender (adopting code without review).",
+              "Clean AI-generated code removes the friction that normally forces engineers to think, creating 'comprehension debt' — code that passes tests but that no one on the team actually understands.",
+              "Recommended fixes: form a hypothesis before running an agent, define verification criteria upfront, write edge-case tests to hunt for failure modes, inspect raw outputs rather than summaries, and challenge passing tests."
+            ]
+          },
+          {
+            "title": "Cognition Ships Faster, Cheaper Coding Model",
+            "points": [
+              "Cognition's SWE-2 Flash model runs three times faster than its SWE-2 model at one-fifth the cost, while slightly outperforming it on the FrontierCode 2.0 benchmark.",
+              "Optimized for routine coding agent tasks like code reviews, workflow automation, and documentation updates; currently only available within Devin."
+            ]
+          },
+          {
+            "title": "Claude Code Cuts Token Usage in Subagent Status Updates",
+            "points": [
+              "Claude Code subagents now use smaller models for status updates instead of rereading entire conversation logs every 30 seconds.",
+              "Change reduces token consumption by roughly 99% per update, yielding about 6% more available prompts for users."
+            ]
+          },
+          {
+            "title": "Node.js Warns of Unpatched High-Severity Security Flaws",
+            "points": [
+              "Node.js (a popular JavaScript runtime for running code outside web browsers) flagged high-severity security vulnerabilities in versions 26, 24, and 22.",
+              "Details are being withheld until fixes ship on November 11."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "OpenAI Pledges to Cover Data Center Energy Costs",
+            "points": [
+              "OpenAI promised to pay the full electricity and infrastructure costs for all AI data centers it builds and operates, under a 'National Community Compact' initiative.",
+              "Includes financial guarantees protecting utility customers if projects stall, plus transparency commitments on water/electricity usage data and noise studies.",
+              "Its Georgia deal lets Georgia Power cut electricity to an Effingham County campus by up to 1,000 megawatts during peak demand, part of an estimated $600 billion in planned computing spending by 2030."
+            ]
+          },
+          {
+            "title": "Apple to Scan Public iCloud Links for Harmful Content",
+            "points": [
+              "New scanning feature launches in iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3, covering files shared via the 'Anyone with the link' option in iCloud Photos and Drive.",
+              "Public links lose end-to-end encryption protection even with Advanced Data Protection enabled; private 'People you choose' links remain unscanned.",
+              "Apple can move or delete flagged files, block accounts, or involve law enforcement; the feature is in developer beta now with a December public release planned."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "ChatGPT GIFs 🖼️, Apple cuts AI budget 💰, rebuilding X.com👨‍💻",
+      "date": "2026-11-05T11:54:21+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's Images 2.6 generates images 50% faster and now creates GIFs with editable frames, rolling out globally in ChatGPT and Codex.",
+          "Apple slashed internal AI spending caps for employees—cutting some engineers from $300 to $200 daily and planning further reductions to as low as $25-$100 across teams.",
+          "Five engineers rebuilt X.com's web app using AI coding agents in six months, delivering faster page loads and already serving logged-out users and search engine crawlers.",
+          "SpaceX launched Starfall, a commercial reentry capsule carrying up to 1,000 kg of research payloads that can transmit data via Starlink while in orbit.",
+          "Voters across most U.S. ballot measures are blocking new data centers, making AI a potential scarcity as political constraints limit infrastructure expansion."
+        ],
+        "sections": [
+          {
+            "title": "X.com Rebuilt by Five Engineers Using AI in Six Months",
+            "points": [
+              "X.com's new web app was built by a team of five engineers working with AI coding agents, completing the rebuild in under six months.",
+              "Pages load significantly faster than the old app over slow connections; already serving logged-out users and pages that search engines crawl.",
+              "Post details why the rebuild happened, how rollout is occurring, and performance improvements achieved since logged-out traffic migrated to the new version."
+            ]
+          },
+          {
+            "title": "Commercial Space Manufacturing Takes Off",
+            "points": [
+              "SpaceX's Starfall capsule (disk-shaped, 1,000 kg payload capacity) launched commercially; supplies 1 kW power and Starlink internet connectivity for real-time data access from orbit.",
+              "Varda Space Industries operates three autonomous orbital factories simultaneously, with capsules returning to Earth after processing; plans seven missions in 2027 and ten in 2028.",
+              "Microgravity manufacturing enables new cancer drug development and pharmaceutical research; biomedical and materials science companies are primary customers."
+            ]
+          },
+          {
+            "title": "Apple Reduces AI Budget for Internal Teams",
+            "points": [
+              "Apple quietly cut daily AI spending caps: engineers reduced from $300 to $200, with further cuts to $100 or less planned for some engineering teams.",
+              "Non-engineering groups facing cuts from $100 to $25 daily allowance; employees noted few workers used full allocations, suggesting budgets were unnecessarily high.",
+              "Move reflects cost discipline as company manages internal AI tool usage across departments."
+            ]
+          },
+          {
+            "title": "Political Barriers Emerging for AI Infrastructure",
+            "points": [
+              "Nearly all local ballot measures opposing data centers won (except North Dakota), signaling public resistance to AI infrastructure expansion.",
+              "Data center constraints becoming political issue; AI may remain scarcer longer than expected if Americans maintain opposition to facility buildouts.",
+              "Post explores implications of continued public resistance on AI availability and geographic dispersion."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI launches Images 2.6 with GIFs and image reference",
+            "url": "https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference/"
+          },
+          {
+            "label": "Apple Cuts Internal AI Usage Budgets in Move to Reduce Spending",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending"
+          },
+          {
+            "label": "Rebuilding the global town square from scratch",
+            "url": "https://blog.x.com/en/engineering/rebuilding-the-global-town-square-from-scratch"
+          },
+          {
+            "label": "SpaceX's Starfall just went from secret to storefront",
+            "url": "https://www.teslarati.com/spacexs-starfall-just-went-from-secret-to-storefront/"
+          },
+          {
+            "label": "AI on the Ballot",
+            "url": "https://stratechery.com/2026/ai-on-the-ballot/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "⚡ OpenAI ships GPT-Image-2.6",
+      "date": "2026-11-05T14:07:25+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's GPT-Image-2.6 generates renders 50% faster, with new Flare model producing images in as little as six seconds for quick drafts and Sunburst for detailed edits.",
+          "Apple cut engineers' daily AI spending caps from $300 to $200 (with potential drops to $100), signaling the end of the \"tokenmaxxing era\" as Big Tech begins rationing token usage.",
+          "Cognition's SWE-2 Flash model runs three times faster than SWE-2 at one-fifth the cost, optimized for routine coding agent tasks like code reviews and feature development.",
+          "Coding agents are eroding critical thinking skills: engineers now skip reasoning steps because AI generates clean code, creating \"comprehension debt\" where no one understands the architecture.",
+          "Node.js warned of high-severity security flaws in versions 26, 24, and 22; details remain under wraps until fixes ship November 11."
+        ],
+        "sections": [
+          {
+            "title": "How AI Agents Damage Your Critical Thinking",
+            "points": [
+              "Anthropic engineer Addy Osmani identified three stages of cognitive decline: cognitive offloading (delegating tasks), deferral (accepting outputs as truth), and cognitive surrender (adopting code without review).",
+              "Clean AI-generated code eliminates friction that forces engineers to think, creating \"comprehension debt\" where repositories pass tests but no team member understands the architecture.",
+              "To break the cycle: form a hypothesis before running agents, define verification criteria upfront, hunt for failure modes with edge-case tests, inspect raw outputs before accepting summaries, challenge passing tests, and demand explicit trade-offs from the model."
+            ]
+          },
+          {
+            "title": "The Cost Crunch Begins: Token Rationing at Scale",
+            "points": [
+              "Apple's spending cap cuts from $300 to $200 per engineer per day (with teams potentially dropping to $100) require exemption requests from senior leadership for overages.",
+              "The shift reflects broader industry recognition that token subsidies hide elsewhere—APIs carry healthy margins but companies keep prices artificially low to maintain adoption.",
+              "Developers can reduce token waste by using smaller models for routine tasks, batching requests, and implementing caching strategies before token budgets tighten further."
+            ]
+          },
+          {
+            "title": "New Image and Coding Models Ship",
+            "points": [
+              "OpenAI's Flare model generates images in as fast as six seconds for quick drafts; Sunburst handles detailed edits. Both support SVGs, animated GIFs, and complexity settings to control planning depth.",
+              "Cognition's SWE-2 Flash runs 3x faster than SWE-2 at 1/5 the cost and slightly outperforms it on FrontierCode 2.0, designed for code reviews, workflow automation, and documentation updates but only available within Devin.",
+              "Claude Code subagents now use smaller models for status updates instead of rereading entire conversation logs every 30 seconds, reducing token consumption by approximately 99% per update and yielding roughly 6% more available prompts."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI Images 2.6 API Details",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IFKgnKhChLEORPQcgirN7DUPRWRdPsaLfmgqOHOTzZ8ATZWJp39iw0UoL7kZbmOEnOY0-_zdks6yYT2VeEZdS2owa_kKVa490golFLCQxa-ejO3ZOYhSFt-IVQe9v58ex4Ff46pXeyzvHwmmkJUnv4cqbk5D7fbeUa_8t_VOhKQ58e34gZqclj4j-qnbAVUHxh1kBxVqcNEz6RG6DgH6XoWPU8Kh93WeI3Mg0IptWTEILu3n4regXLMvGYatjbHS-ghOU-wPY2QHK12KWPs93wzHspM1Y4OVYd6W458haiQdytIG-n-0OKypvMsgmnuW4VWdrgDy36ahT3nVNVQ8FA/4vh/7b44cZsORNKGYnT59NdQzg/h4/h001.zMNGut7AuzKf3W7vmlbFLF5QoLUcHQpEBUddbkmKaLM"
+          },
+          {
+            "label": "How to Cut Down on Token Waste",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.9ylDIu4nAQWGe8bSlkKOpEB7eNtfC6ntMzw54qbJg6bBApESD_PWDDWrTHrIVkJnrqhDg8Ww1i1TbNe9aFGe9KhTEobBqNUdOuaEZ_-cKng_9Yx4parsSbTLNWZTO1sdkMbdfVHKKDgnjLO3BZT94W-QaJz8jHz7LLY5NrvelP7UCDH0hF8OoTXU28laZt31XZLT0IyHqsDkQu8ysdHiUg8o0GVP9EYExqH28nT_7gxJuQRhud4IHtI48BbU9Adkf6FR4D37idsfX_N90Rbp97RS-fcaqg-09ZKmjtZDc51IC-4WNUL0ZmSlmtgh-tNG/4vh/7b44cZsORNKGYnT59NdQzg/h7/h001.Xc4g53xcCyr9BsBIPZb5KmQegsn0h205Pud8dyEe2Kw"
+          },
+          {
+            "label": "AI Agents and UI Improvement Tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjx-w72gSJ9VhEuGaXuLiBjXgqSC8erCNypGqDcH6bLc8ooS_39b5JiBlrTtKNblOvq53V6-8Ji-iuxIeFkp0q8BCdL1BC2L27uh2ebgKekMMIGivDLwpyuwzdLO2j0vOSj4ydl-w_UjqEtcHfQUg28ej-QxmsQW1ZKHZzKUJIfa9g8WSJgF1uTlrmECjvMeum7qQb16biPocqLX188hbYjS1c9mKccvJHbaEYQrLaJL85AtPYnzX7zVhxXCS8QFLWY/4vh/7b44cZsORNKGYnT59NdQzg/h26/h001.MEY1WarXfqiR1fb4OwndJfkE8msZUuveS4UU4coSI74"
+          },
+          {
+            "label": "15 Projects to Defend Agents from Cyberattacks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFco6G1CXl5xg5Znz6yW3gLAMA_xvhanKZR00BSDKr1I8gaStu1gWNxSSiW18Kh1tGnZnSNVDxulQSgzzmS1_6C1yIwdXW5_P2oncDOtxKe53Gl6VVMzl2XsiwDxNr5AlGE1D9GQJtDi5T2imt-14Vz_DYkOCPZS3NwP8qf1uLyljSH2I0sTzfDgLSa8F8kdqmQx_Yk2nbEr9asiKmFU34km4x3H4mkahGe5GuDm0ZvGal_OOqFpeca1X59MXvqdhU8WjbgUf5mvutsKLe9GFcS/4vh/7b44cZsORNKGYnT59NdQzg/h19/h001.DgLikjREnu7mmhbINotyM24Nw7HE-joNm0T_vcfhBeU"
+          },
+          {
+            "label": "Full AI Stack Behind a 50-Person Company",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEehBq1CMoeyfppprrDhc2MEbdEfya9T3E4u-B_XnCDYHsHFci2gti9p6MmlqdflDgx7aMXODGgcJto_9Xcn4o6RvExKEKb4RIedUFMo3E9or2YegrDc8bwSyYw9UP0THxusts3yF0wKbuEjLcSKJJKncoDAEbsF_aVwjK3r2jQiOT-VAXtfcO0t4BVkWhm64GeFiG2LPawJxZzMArtwvDohNz02REh0nK1KBt9q3TEmJ-bROt_SkUH9n_6BxtqwNYBse7Qf32OQXtISTZQXd_b/4vh/7b44cZsORNKGYnT59NdQzg/h20/h001.hiU5tiRTGhIRxrENHxd6zlEKVSlogFvPudmWV2UG5AU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ ChatGPT now lets you generate GIFs",
+      "date": "2026-11-05T18:11:52+00:00",
+      "summary": {
+        "headlines": [
+          "ChatGPT now generates animated GIFs using Images 2.6 model, producing still images 50% faster at 6 seconds on low quality with frame-by-frame editing.",
+          "Apple cuts employee AI spending budgets from $300 to $200 daily for engineers, considering further reductions to $100, as it controls costs while expanding AI use.",
+          "OpenAI pledges to pay full electricity and infrastructure costs for its data centers, guaranteeing protection for utility customers if projects stall.",
+          "SpaceX opens Starfall commercial missions carrying up to 1,000 kg of payload with continuous Starlink connectivity, targeting biomedical and materials science sectors.",
+          "Apple to scan public iCloud links for harmful content starting iOS 27.3, with ability to remove files and involve law enforcement for violations."
+        ],
+        "sections": [
+          {
+            "title": "ChatGPT GIF Generation (Images 2.6)",
+            "points": [
+              "Converts text prompts or uploaded images into animated GIFs with adjustable animation speed and per-frame editing capability.",
+              "Produces still images 50% faster than previous model (Images 2.6 vs. 2.5), generating one image in approximately 6 seconds at low quality using Flare model.",
+              "Rolling out across all ChatGPT and Codex subscription tiers today; users can upload rough drawings for the model to complete before animating."
+            ]
+          },
+          {
+            "title": "Apple AI Budget Cuts",
+            "points": [
+              "Reduced daily AI token budgets (units measuring model processing) for some engineers from $300 to $200 in October, with consideration of further cuts to $100.",
+              "Non-engineering teams could see allowances shrink from $100 to as little as $25, affecting paid access to ChatGPT, Claude, and Gemini.",
+              "Limits are not absolute: employees needing additional access can request exemptions from senior executives, though approval scope is unclear."
+            ]
+          },
+          {
+            "title": "OpenAI Data Center Cost Pledge",
+            "points": [
+              "Promised to cover full electricity and infrastructure costs for all AI data centers it builds and operates through National Community Compact initiative.",
+              "Agreement includes financial guarantees protecting utility customers if projects stall, plus transparency commitments on water/electricity data and noise studies.",
+              "Georgia deal with Georgia Power allows utility to reduce electricity to Effingham County campus by up to 1,000 megawatts during peak demand, supporting estimated $600 billion computing spending by 2030."
+            ]
+          },
+          {
+            "title": "SpaceX Starfall Commercial Missions",
+            "points": [
+              "Disk-shaped reentry capsule carries up to 1,000 kg of payload with 1 kW of power and maintains Starlink connectivity throughout orbit for real-time data access.",
+              "Targets biomedical, pharmaceutical, and materials science customers; three commercial missions already signed for Starship launches with no public pricing or operational date disclosed.",
+              "Allows researchers to pull experimental data while capsule remains in orbit rather than waiting for post-splashdown recovery."
+            ]
+          },
+          {
+            "title": "Apple iCloud Link Content Scanning",
+            "points": [
+              "Launches in iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3 for files shared via 'Anyone with the link' option in iCloud Photos and Drive.",
+              "Public links lose end-to-end encryption protection even with Advanced Data Protection enabled; private 'People you choose' links remain unscanned.",
+              "Apple can move, delete files, block accounts, or involve law enforcement upon detecting harmful material; feature enters developer beta now with December public release."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "ChatGPT GIF Generation",
+            "url": "https://elink640.dupple.com/ss/c/u001.U1-fCwI5IV4zIAFqTdEm7eysdWsvDUDqemqHLESDBdUj185JM5cX1DwrNSV4d9AJlM8ss3u2_2S3QNwtbIkToyCpCITTHZ3uu0MCl5--bnfk9Z0IrkFBnU2y6zePyi5ry8JZvMgn-uMhYBVdD2F6-zRwQ--VcrUwHJAhR1emCIk/4vh/LXms43BNRD6-enPwB0liWA/h8/h001.6ymEGbjJKtBpf9hBVnvJ19HcFoUI3dyvoTPIQF-juXQ"
+          },
+          {
+            "label": "Apple AI Budget Cuts",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQRQTOnljR6KPPTSbEs7nZnC2S70YCM8-0sfVPUgclTY7_jnjqbp5lg2CpCNh8J3JssOdX7HHmmW9bxBMriksErKQr1CXL6x9zLjKd_8ieEqW_TVnToOesY0zMEurqPOSBUoJjF4KdwuceAjZRLrDjmGZFD6z1_HMDLr6ftoQfo5TGbSRIEZfloBxLVYEKBhVdTtr0R60d7QDXaf9aDxc2M8dYNb1hw-tjPZMbz5O4dB/4vh/LXms43BNRD6-enPwB0liWA/h9/h001.MHminlAmW4m4OAUZ7UINNloa7uH7QiGRtwgJWnrtaPI"
+          },
+          {
+            "label": "OpenAI Data Center Costs",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51Z2Cc2UfQTQ8iPuk3M4vXS1luY2HDJjuHXurnwxHnXcpoC8aOV3Z6M1wguwddy2KepvxYJAZgDGfbYDs_t1l4adzc4B2vUAx-fY3VevbukqSL4HfEvM4_Uq0y6MvdzDR1mJkXRkG6LsKRR9UvxICYvfQx5pUKGUnQ_Mp2xkMi0UG55dvLmz4AA-nKb_3QGpOCv6SgHpEsQ6886jCycT8dzu0RseuhCKxgqrB7SyVbUuwauhTZYllFTWhKzBEL2hG-w/4vh/LXms43BNRD6-enPwB0liWA/h10/h001.wRKfwAH8OFs03_wBkw8IuoHUOobj4hnCcRu7fJDgmBM"
+          },
+          {
+            "label": "SpaceX Starfall Missions",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhSVTce0Bgfad4ITpElAuFLBQr40M17m_rYQz0aD5AgHMPjtzXutC0Y2sB7kdtzuVsdEtiosamwvLY-1dSiVcL3FI4gTHp4nQZc5zUQRMOGlErIhO9qf_g-KbZuLM81zhLqO_HQBAvjsydbuc5_WNUhqpcHFFRrgJv2e4zSKS9tFQ/4vh/LXms43BNRD6-enPwB0liWA/h11/h001.6skGl12lNPBSU46GAfoXPSi7ibjstpPJgP2KML9vDV8"
+          },
+          {
+            "label": "Apple iCloud Link Scanning",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQrqAzaBE9TY1HQ6YumqTzhy9jWfLwxt_pK_z_t4gSWcfE5vWxxUqC5LKndtPky1e8b_OSwdRjyeX3DfoQWI1tSevcBtrjuwYO0GNXxYAQWAiuwaxWpBCp3IOjXVuMyiB8ZD-cO9bqSdiQSpTs6otw4/4vh/LXms43BNRD6-enPwB0liWA/h12/h001.uNZeGtabi2qFVfw6K49srUP5uA986Dbtt8dXRayi_O4"
+          }
+        ]
+      }
+    }
+  ]
+}
