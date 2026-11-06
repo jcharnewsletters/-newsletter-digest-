@@ -1,0 +1,460 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-06",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic's IPO Faces Mounting Pressure",
+        "points": [
+          "Target valuation widely expected to fall from $1.5T (or even $2T) toward ~$1T–$1.5T, raising ~$80B instead of a hoped-for $100B+.",
+          "Launch targeted before Thanksgiving/by Nov 30, but betting-market odds of a filing by Nov 30 dropped from 84% to 60% (and by Dec 31 from 90% to 74%) amid a tech stock selloff.",
+          "Post-election AI skepticism and voter opposition to data center buildouts are feeding investor caution, compounding an existing compute capacity shortage.",
+          "Offering is seen as a major test of investor appetite for AI valuations ahead of OpenAI's own expected debut."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Frames the pullback explicitly as tied to political backlash against data center expansion emboldening AI skeptics."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Gives specific betting-odds figures (84%→60% for Nov 30; 90%→74% for Dec 31) from a market tracking the filing."
+          }
+        ]
+      },
+      {
+        "title": "Tesla to Wind Down Cybertruck Production",
+        "points": [
+          "Production at Giga Texas (the only Cybertruck factory) will end by mid-2027 to free capacity for the Cybercab robotaxi.",
+          "Sales badly missed targets: estimates range from ~20,000 units sold in 2025 (down 48% from 2024) to ~71,000 total since late-2023 deliveries began, versus an original goal of 250,000/year.",
+          "Price promises were also broken — the vehicle never hit the promised $39,900 starting price, with the cheapest version costing $59,900 — and it faced multiple recalls and quality complaints.",
+          "Tesla frames the Cybertruck's engineering as 'living on' in the Cybercab, which began paid robotaxi rides in Austin in September but still faces NHTSA safety certification audits.",
+          "SpaceX bought $131M worth of Cybertrucks last year for support vehicles, a rare bright spot in weak demand."
+        ],
+        "covered_by": [
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "Notes SpaceX's $131M Cybertruck purchase and NHTSA robotaxi safety audits as context for the pivot."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Details the broken $39,900 price promise (actual starting price $59,900) and recall/quality issues."
+          }
+        ]
+      },
+      {
+        "title": "Data Center Backlash Collides With Hyperscaler Expansion",
+        "points": [
+          "Midterm/recent elections showed strong voter opposition to AI data center buildouts — one tally found 70% of voters rejected AI facility measures (40 of 41 ballot measures nationwide failed).",
+          "Despite this, Google committed $17B to its first Wyoming data center (Project Tembo, 716 acres, 2.7 GW capacity, full buildout by 2031), pledging to cover 100% of the facility's power costs to offset local resistance.",
+          "Analysts (Goldman Sachs) estimate political shifts could block roughly 45% of planned AI capacity expansion, with 'local consent' now seen as a bigger constraint than financing.",
+          "Stalled buildouts threaten to worsen existing compute shortages and could slow broader US tech/economic growth."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Rundown Tech"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "Provides the concrete Google Wyoming investment details and Goldman Sachs' 45% capacity-block estimate."
+          },
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Links the backlash directly to investor retreat from AI bets and Anthropic's IPO troubles."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "GitHub's Scalable Git Architecture",
+            "points": [
+              "New Git storage system handles 5,000 concurrent agents (automated tools making code changes) writing to the same repository while maintaining low read latency.",
+              "Supports thousands of writes per second with demand-scaled reads, aiming to enable agentic development for hundreds of millions of developers.",
+              "Represents a major infrastructure shift to support collaborative AI agents, not just human coders."
+            ]
+          },
+          {
+            "title": "Synthetic Biology Milestone: SpudCell",
+            "points": [
+              "SpudCell is an artificial cell built from lifeless ingredients that can grow, replicate DNA, divide, and restart its cell cycle autonomously.",
+              "Still preliminary, but could eventually enable production of medicines and foods impossible with ordinary biology.",
+              "Researchers deliberately engineered its DNA and proteins to require exotic chemicals not found in nature, preventing accidental contamination or misuse."
+            ]
+          },
+          {
+            "title": "*sshole SSH Vulnerability",
+            "points": [
+              "A newly disclosed Linux vulnerability nicknamed '*sshole' allows password-less remote login on systems running OpenSSH with musl (a lightweight C standard library used in some Linux systems).",
+              "Affects a large number of devices, though exploitation requires specific prerequisites."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "OpenAI's GPT-6 Cyber Security Model",
+            "points": [
+              "Model finds and fixes critical vulnerabilities, having already discovered 948 Linux kernel flaws and 81 high-severity Firefox bugs.",
+              "Critics say limited access to vetted customers is underutilizing the tool's potential."
+            ]
+          },
+          {
+            "title": "Aina's $399 AI Smart Ring",
+            "points": [
+              "New smart ring puts AI agent controls on your finger via a screen, joystick, mic, and speaker.",
+              "Lets users approve tasks and dictate commands without unlocking their phone; ships January 2027."
+            ]
+          },
+          {
+            "title": "Google's Gemini Omni 1.2 Flash",
+            "points": [
+              "Cuts video generation costs 30% to $0.07 per second for 720p video.",
+              "Allows editing videos through chat without regenerating from scratch."
+            ]
+          },
+          {
+            "title": "Why Developers Should Build Bigger With AI",
+            "points": [
+              "Senior engineer Dan Luu used AI to build a Rust interpreter that made cold builds 50x faster, yet didn't consider it especially noteworthy — illustrating how fast AI agent capabilities are expanding what's feasible.",
+              "Luu built a regex engine and a ripgrep fork in hours without prior experience, work that previously would have taken about a year.",
+              "Because most AI-generated code is flawed, Luu relies on fuzzing and property-based tests (automated methods that check code against random or rule-based inputs) rather than simple unit tests; strong programming skills remain key to spotting where AI still struggles."
+            ]
+          },
+          {
+            "title": "Grok Bot as a Coding Workflow Command Center",
+            "points": [
+              "Grok Bot orchestrates multiple coding agents (T3 Code, Codex, Claude Code) from a single interface, avoiding the need to switch between tools.",
+              "Supports delegation patterns, assigning specific tasks to specialized agents and managing the project lifecycle from one dashboard."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Big Tech Sues California Over Teen Feed Restrictions",
+            "points": [
+              "Meta, Google, and TikTok are suing over California's AB 1709, which bans autoplay and personalized recommendation feeds for users under 16 starting Jan. 1, 2027.",
+              "Penalties reach up to $50K per affected child for knowing violations, or $25K for negligence.",
+              "Companies argue the law violates free speech by overriding their editorial control over content curation.",
+              "Privacy advocates warn the law could force platforms to collect more data to verify users' ages, trading one safety issue for another.",
+              "Comes amid broader pressure on Big Tech over youth safety, including Meta's $18B in state settlements and a lawsuit against Google over a teen's alleged use of AI Mode to plan harm."
+            ]
+          },
+          {
+            "title": "Sony Revives Walkman Headphones",
+            "points": [
+              "Sony relaunched its 1979 Walkman-branded headphones as budget USB-C accessories priced at $60.",
+              "Move taps into nostalgia and a resurgence of wired audio among younger consumers."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Claude AI Gains Financial Data Access",
+            "points": [
+              "Anthropic launched a Personal Finance beta for Claude Pro/Max/Ultra subscribers, linking bank and card accounts via Plaid (a third-party service that never sees user passwords).",
+              "Access is read-only: Claude can explain spending, flag duplicate charges, and build charts, but cannot move or manage money.",
+              "Users can connect up to 16 US banks and access two years of transaction history; linked-account conversations stay private and excluded from Claude's shared memory."
+            ]
+          },
+          {
+            "title": "iPhone Keyboard's Hidden Blocked-Word List",
+            "points": [
+              "Researcher Derik Kauffman found Apple's keyboard contains a hidden list of roughly 100,000 words/phrases that won't trigger autocomplete suggestions.",
+              "Blocked terms include political phrases like 'Dictator Trump' and 'Sleepy Joe'; blocking is inconsistent (e.g., 'bad boy' and 'white man' are harder to enter than 'bad girl' or 'black man').",
+              "Doesn't prevent typing outright but blocks autocomplete and hampers swipe-typing (sliding a finger across the keyboard to type) for flagged terms."
+            ]
+          },
+          {
+            "title": "Thinking Machines' Inkling 2 Small",
+            "points": [
+              "New model claims to be the strongest Western open-weight AI model (one whose underlying parameters are publicly released for anyone to use).",
+              "Uses a mixture-of-experts architecture (only part of the model's total parameters activate per task) — 17 billion of 594 billion total parameters.",
+              "Offered at roughly one-fifth the cost of competing systems."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Anthropic IPO doubts 📉, datacenter bans🛑, GitHub's new storage👨‍💻",
+      "date": "2026-11-06T11:44:49+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic's IPO valuation expected to drop from $1.5T to ~$1T as major investors balk, with launch planned before Thanksgiving amid post-election AI skepticism",
+          "Election results show voter opposition to massive data center buildouts, threatening Silicon Valley's AI expansion plans and potentially slowing US tech growth",
+          "GitHub redesigned its Git storage to handle 5,000 concurrent agents per repository with thousands of writes per second, enabling agentic development at scale",
+          "SpudCell—an artificial cell that grows, copies DNA, and divides—demonstrates synthetic biology breakthroughs while designers engineer security constraints to prevent misuse",
+          "*sshole Linux SSH vulnerability allows password-less remote login on systems using OpenSSH with musl, affecting large numbers of devices despite specific prerequisites"
+        ],
+        "sections": [
+          {
+            "title": "Anthropic IPO Under Pressure",
+            "points": [
+              "1. Expected $1.5 trillion valuation now seen as unrealistic; major investors predict IPO will price closer to $1 trillion, raising ~$80 billion instead of $100 billion",
+              "2. Launch scheduled for week before Thanksgiving, but election results emboldened AI skeptics who oppose data center expansion, triggering investor retreat",
+              "3. Compute capacity shortage already plaguing tech companies, and political opposition to new infrastructure could worsen the problem significantly"
+            ]
+          },
+          {
+            "title": "Political Backlash Threatens AI Infrastructure",
+            "points": [
+              "1. Midterm election results show overwhelming voter opposition to Silicon Valley's massive compute buildouts required for AI development",
+              "2. Stalling data center construction could have severe ripple effects on tech companies' ability to scale AI and on broader US economic growth",
+              "3. Uncertainty around regulatory environment is causing investor pullback across AI bets this week"
+            ]
+          },
+          {
+            "title": "GitHub's Scalable Git Architecture",
+            "points": [
+              "1. New Git storage system handles 5,000 concurrent agents writing to the same repository while maintaining consistently low read latency",
+              "2. Architecture supports thousands of writes per second with demand-scaled reads, designed to enable agentic development (automated tools making code changes) for hundreds of millions of developers",
+              "3. Represents major infrastructure shift to support collaborative AI agents rather than just human developers"
+            ]
+          },
+          {
+            "title": "Synthetic Biology Milestone: SpudCell",
+            "points": [
+              "1. SpudCell is an artificial cell created from lifeless ingredients that can grow, replicate DNA, divide, and restart its cell cycle autonomously",
+              "2. Still preliminary but could eventually enable production of medicines and foods impossible with ordinary biology by engineering simple cells for useful purposes",
+              "3. Researchers deliberately engineered its DNA and proteins to require exotic chemicals not found in nature, preventing accidental contamination or misuse from the outset"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
+            "url": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b"
+          },
+          {
+            "label": "The Election Day Revolt That Threatens America's AI Boom",
+            "url": "https://www.wsj.com/tech/ai/the-election-day-revolt-that-threatens-americas-ai-boom-03a53b52"
+          },
+          {
+            "label": "Inside GitHub's new Git storage architecture",
+            "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
+          },
+          {
+            "label": "They Created a Cell That's Almost Alive. What to Do With It Now?",
+            "url": "https://www.nytimes.com/2026/10/14/science/spudcell-adamala-biotic.html"
+          },
+          {
+            "label": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices",
+            "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "💍 An AI ring to replace your phone",
+      "date": "2026-11-06T14:10:36+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's GPT-6 Cyber security model finds and fixes critical vulnerabilities, having already discovered 948 Linux kernel flaws and 81 high-severity Firefox bugs, but critics say limited access to vetted customers underutilizes the tool.",
+          "Aina's new $399 smart ring puts AI agent controls on your finger with screen, joystick, mic, and speaker, letting you approve tasks and dictate commands without unlocking your phone—ships January 2027.",
+          "Google's Gemini Omni 1.2 Flash drops video generation costs 30% to $0.07 per second for 720p and lets you edit videos through chat without regenerating from scratch."
+        ],
+        "sections": [
+          {
+            "title": "Why Developers Should Build Bigger With AI",
+            "points": [
+              "Senior engineer Dan Luu built a Rust interpreter that made cold builds 50x faster using AI, yet didn't consider it noteworthy—highlighting how rapidly AI agent capabilities are reshaping project feasibility.",
+              "Luu's workflow now tackles work that was previously too expensive: he built a regex engine and ripgrep fork in hours without prior experience, work that would have required a year in the traditional model.",
+              "Testing matters more than ever since most AI-generated code is flawed; Luu relies on fuzzing and property-based tests rather than unit tests, and programming skills remain critical for identifying where AI still struggles."
+            ]
+          },
+          {
+            "title": "How to Use Grok Bot as Your Coding Workflow Command Center",
+            "points": [
+              "Grok Bot orchestrates work across multiple coding agents (T3 Code, Codex, Claude Code) from a single interface, eliminating the need to bounce between tools.",
+              "The tutorial demonstrates delegation patterns, showing how to assign specific tasks to specialized agents and manage the entire project lifecycle from one dashboard.",
+              "This approach streamlines collaboration by centralizing agent coordination and decision-making."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Why devs should build more ambitious software",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IFKgnKhChLEORPQcgirN7Mye0t1QrQwCbnS4hfzJt-AVHKICoEkwDyaT7e3owbhFLarmf0mfgNwycvQa-R3rxxvaAIt5pmENAiTmKsdJ7p8iAFbp_3cpIuYn-w6J9b6OsY0GYbeCk6-Gnm1r6V-Z2tek2DnBGS6AUY0_TLZsQWwVRHGWZP1Lc7KE-4ownv00MvTYe1EVtjcGDYBN-EtJHQYZwr79E5k4dfYaVS3mREBrH-C0cRacGB_zygejkI2qHZl7cXwb-HkvGqeOJ3bkcg/4vi/03o5rOY0RGykPTdy6OmtUQ/h14/h001.IZAnU_sK2uTS5OEkCpXkp931Vex7rvQtfainES84dh8"
+          },
+          {
+            "label": "Aina's $399 AI ring preorder",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJWouiCzd8FaZEIOFVLrO0F-L35-TavVBfklH0epWPdw-2TSh524B2Cig_hGrWiQk_7Fp6FAAD7bQPUbSWFLMGuTLWNAcmZk1lDDw8iMfuU6NOHaV5psoEbkeM-oTPop-NVPR_Ktsj4ZoM2s7fGJq5_SMgFZofwzI9WGAz_Jwa3J28NNbgCdv1I0TI1WG9xdVo67OhGwDgrcxcGNPRlKUJaQbrZVOkpu9xCpK0xMXfjGp/4vi/03o5rOY0RGykPTdy6OmtUQ/h7/h001.mA80-rUUZxYY5-jhL7Ng-9w6vYN90CdQmmUcXKv9Zg0"
+          },
+          {
+            "label": "Gemini Omni 1.2 Flash API documentation",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIAGQZmb0x9YTiAbUsrUYpyBy4XF1hsbCO3McHypEEeIz9W9s9fhnQRzQj1l0mjLkj48I74sU0ckaoHYeCDNOJd18vw0913o0E0eKIu2JDjgTEZN7utBqKTgYmHW6vyR43vnRagcAfjGU3CrPQKncMly-8Ozhao6pnTTdhBwz_-MuVXILaXxm7TaNCBh3qdm2LmgXc_f6ZfQwCHcRqRDMo-JpEchcb9CUexj1EGeQgWdimlNXpAIxlQBNcpD7zgz8ZtFlWuObTN__pR-hydLjJfR3AHCV8hBRka2lxnphDVIP4wiZtD5Tj3MenNzv-T-yeCJYH22kipRya4kLT7fMs7BsR_yw4F8cBMyNRwvy4D8Vd/4vi/03o5rOY0RGykPTdy6OmtUQ/h9/h001.GV1u6wKZRUlQYFBfRXfoyr5a03DN1MjO-WlXoE-Mm3d0"
+          },
+          {
+            "label": "Grok Bot coding workflow tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxlge3b6msk3qXPR-fynWnp0aFBdV8Fh52ehNcntzmaH4PxbSX4es1qFoUJGjrfpFxuY2Lf9NbU9u7CLu7SsqTLqFuypLp099UYArqTCSexDjoTFppfk1QHI2iK_oFq8rRZo3RdUm6mb3eS6HEcbg6rYHipi6MT3dDDy3O7PSJ2BbJps07xCCSRv4M3hwKZrh-c8mNGWODbC8CP93RNg74GIUN0mKGTh_hoHIE75PXBd7IZMNOYcIO7xdYeoS32vmU/4vi/03o5rOY0RGykPTdy6OmtUQ/h24/h001.cVlgebbGPhEHC2EkcLWRNYNSGMj-9Paz0Xpt7PDoXyc"
+          },
+          {
+            "label": "Make your CI 20x faster cookbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGh5xPky-2HeVynVGqu6lXq2EcP2EOYhu5-BZqO3wvG02wgjGLdHdZVfbzMPIlL-xoHNTXxadmQqqV3Vj2ljyzjKNyOKRjSBj_rxOn4ZDmMYCFRoiDM7h9UG8mAFi_xlJnZBiWn05ZYV2oYGgaqpcTnwKut0jOnXKdXp6eOcgtx6RDLP-sgoZ1btbPJia5IcJK7RycJRahgwFRG2B94g7apiwLOmrpZXmKos5Z6A-e19_O9fsYVD4LtpMkSwU3rlQbSY_7XkApNqeKF5543g-tm/4vi/03o5rOY0RGykPTdy6OmtUQ/h26/h001.aXYYlStn7Fnp6u3kyws5a4ME4_7rdVQHfXHZKIdJjFM"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "📲 Big Tech sues to save the feed",
+      "date": "2026-11-06T15:31:51+00:00",
+      "summary": {
+        "headlines": [
+          "Meta, Google, and TikTok sued California over AB 1709, which bans autoplay and personalized feeds for under-16 users starting Jan. 1, framing it as a First Amendment fight over editorial control.",
+          "Tesla will wind down Cybertruck production at Giga Texas by mid-2027 to make room for Cybercab robotaxis, ending the run of a truck that sold only 20K units this year against original forecasts of 250K annually.",
+          "Google committed $17B to build its first Wyoming data center despite 70% of voters rejecting AI facility measures in this week's elections, signaling hyperscalers are pushing forward despite local backlash.",
+          "Sony revived its 1979 Walkman headphones as USB-C budget accessories for $60, tapping nostalgia and the resurgence of wired audio among younger consumers."
+        ],
+        "sections": [
+          {
+            "title": "Big Tech Sues California Over Teen Feed Restrictions",
+            "points": [
+              "1. AB 1709 strips autoplay and personalized recommendation feeds for users under 16, taking effect Jan. 1, 2027, with penalties up to $50K per affected child for knowing violations or $25K for negligence.",
+              "2. Meta, Google, and TikTok argue the law violates free speech by forcing platforms to restrict how they curate and display content, claiming states cannot override their editorial judgment.",
+              "3. Privacy advocates warn the law creates a new problem: platforms must collect more data to verify users' ages, swapping one safety concern for another.",
+              "4. The fight reflects broader government pressure on Big Tech over youth safety—Meta already agreed to $18B in state settlements and Google faces a lawsuit over a teen's alleged use of AI Mode to plan harm."
+            ]
+          },
+          {
+            "title": "Tesla Pivots Away From Cybertruck to Focus on Robotaxi",
+            "points": [
+              "1. Cybertruck sales plummeted to 20,237 units in 2025, down 48% from 2024 and far below Musk's original forecast of 250K annually, forcing a strategic pivot.",
+              "2. Production will cease mid-2027 at Giga Texas—the only Cybertruck factory—to free capacity for Cybercab robotaxis, which began paid rides in Austin in September but face NHTSA safety certification audits.",
+              "3. SpaceX bought $131M worth of Cybertrucks last year for support vehicles, representing a rare bright spot in otherwise weak demand.",
+              "4. Tesla argues Cybertruck's engineering 'lives on' in the Cybercab, giving the stalled truck model a second life in autonomous vehicles."
+            ]
+          },
+          {
+            "title": "Google Invests $17B in Wyoming Data Center Amid Anti-AI Backlash",
+            "points": [
+              "1. Google announced a long-term $17B commitment for Project Tembo near Cheyenne, a 716-acre facility with four data halls targeting 2.7 GW capacity and full buildout by 2031.",
+              "2. The investment comes two days after voters rejected AI data center measures in 40 of 41 ballot measures nationwide, with a University of Wyoming poll showing only 30% public support for new AI facilities.",
+              "3. Local opposition spans water use, power strain, pollution, and land concerns, with packed hearings from Utah to Amsterdam; Goldman Sachs estimates recent political shifts could block ~45% of planned capacity expansion.",
+              "4. Google pledged to cover 100% of the facility's power costs, a strategy hyperscalers are deploying to overcome 'local consent' as the biggest constraint on expansion, not financing."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Meta, Google, TikTok sue California over AB 1709",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5Nao05e2j4JnSft-SYFVEyf5RxbgfG2FO7pmd6HLs9-mBqW9JUnsIfmFa5JLmeHErJM28TYHr5fWyZ9OmtELUHrK2J6SarOV-XshGcGVHmZ41wAZYRe8IQEscY-6-q1j5FNg86gFMxU-t6DtMy3-4MO0BEulIwPWJOeGaI8lgyB_Y4swThm9-Z_TaWVzpeZ_A8GtI_-zOgun_zAr_CNsI6bN00xDgORcnY7PtqF_R0so4YZTXcG8-rVklm5-UA6kl1ERArt0LWeAoy7uhR3OkxE20mhkhnTbl41SoDsPvmHeHUiNJk5M8_aIpV_IyUBxxrVw3V3yyDQYAkKmLDYMaBf3I/4vi/itIEjBScRLSRPaSj-0NwyA/h6/h001.EG4tMa3fBVlbmvzi70EAMuagCsmPQV1A7iL0Vtbp5OM"
+          },
+          {
+            "label": "Tesla winds down Cybertruck production",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.HJ_S4LUeNGvavT5axro0c64OYsNDaRVSL-G8WPE7cB62NInj8NgQ86zyjSYo5vuhJfxik2MkHBiHfpe4PoXXfcsSI4amtx1t3xvVYgdjjmyjK3panAznygtHvL3SzRqnQuoHVvLqKReR3iw6ZnVLCNPw1eT0Zr_gGagU_XjMfVVaW2MtWqyeTJIaDLSk66hbRauiem_oV_YijaaLMJUYDF-15yvH3XN2hh-VeDEPYtzD8TuYBrTnoxlyKck-RRHo803K7KCfGCkp-jCVBbojXQ/4vi/itIEjBScRLSRPaSj-0NwyA/h10/h001.iEpxNCrTCNevX-zKvWs0h1YG3rXk3m_bITbdeKGH7gM"
+          },
+          {
+            "label": "Google announces $17B Wyoming data center",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001._1pfp198jIOr5bheVbwqIdSQnDXVRlTPZ0i5BBpGuYG1XqvgcEiPtZtnle9xBiRZRj3u4qUkIVkTf-Un4qAkwc_r-S4J3JREb_yzu8A2IVPBmcjtBySHKXMmpWmd9SO0KYENwVZgMfZmxcQyvatNRZ3B0RNp49c__T8gg5DNbxtk64odB7QRpH0mOpJpZxn1s0WzpWj5d_AxCOAdcd7p2qI8c76gJaZnJajzG5Ni_mTx4TNdRrat7rzPaEkaDSwfsyuX_GwWWfVxs_EowYpJ_GOHAgTewDHHHQBCMaRKsAGiWA0OiKvSVIy2-Kx_2DC94u1f0FKgI7jXSr7gDcGUnQ/4vi/itIEjBScRLSRPaSj-0NwyA/h15/h001.AWK9C1ZORGKvM8h_dETlcmQdQgxYAKZYfrzdnAuRzVo"
+          },
+          {
+            "label": "Sony revives Walkman headphones at $60",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.TVOPfGDj18_US_EBC2XirU5Ggmsf5u9Xg7vjXEbKAJaQz5BlJHjdltOQsIasi3EIuEiBxWO-jKNr0y0RgCyKrAXcvVFXEc48TJGY6moilQxBDd4pbYCtb1QgFihRdl4wUzYUtsldkdjTvtZOyPh40ih17jiGAzbvHfOUzZaGgGLDlHFft9tggzeHt8_1fQM2cD2moT-NMp2uG-OfWr_PlelpNu7iEN_r9ibo6URk2djGMhNvIxiSHq6wfWKLEMJjvUJYUYKn5l_rqFLqM9ioI1F56Aj7TS3CNm4iijEDJGcR1UnTqsLkumoIlwvNycRbR4pMyzIQtnT4BXfarIz7Ig/4vi/itIEjBScRLSRPaSj-0NwyA/h20/h001.5deBAknhE1Wtr0JpbaZx4V6P80mq6FBdXWZL6rkh3E8"
+          },
+          {
+            "label": "NYC data centers converting jet engines for power",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NargGgIisYbpCQUkD-71H72htopZMaUujERdx0h4WFsivwWNAyMhZZzlkNVvyOXOuMVw9cLU9z6BJB01G2TKWIKKjmm7vCVSCuKNOikbb0KCBE0KH58U3GVvO3ONfTVe6RIHdKN9Ye_OE_H8-TNpCNl1JQ5JekbZqnumuTPCXFmtnOUZw10AauC8AG6xTT4xwOFw0qpRuWsJqPDEirAzeRZADWyFL60p3f5_KNiAiSA2YbJAZ1w1Rbb-9FI2-C77nCsdCvGCIkIya500ig7qkOqNXTR7loE55wo6W_hhuouZAazPUdtrnJ1c01HoNfeRs_g/4vi/itIEjBScRLSRPaSj-0NwyA/h36/h001.66dNLxKq4ukR8VDrr0u1vk9Q3R66UuZ8-tNt8iOYtSg"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Tesla to end Cybertruck production",
+      "date": "2026-11-06T17:55:25+00:00",
+      "summary": {
+        "headlines": [
+          "Tesla winding down Cybertruck production by mid-2027 after selling only 71,000 units since late 2023, far below the 250,000-per-year goal, to free factory space for its driverless Cybercab robotaxi.",
+          "Anthropic's Claude AI can now read US bank accounts for Pro/Max/Ultra subscribers through Plaid integration, enabling spending analysis without giving the AI access to move money or see passwords.",
+          "Apple's iPhone keyboard hides a list of roughly 100,000 blocked words and phrases (like \"Dictator Trump\" and \"Sleepy Joe\") that won't autocomplete, blocking some political terms from easy entry.",
+          "Tech stock selloff threatens Anthropic's planned IPO scheduled before November 30, with betting odds on a filing dropping from 84% to 60% as the market cools on AI valuations.",
+          "Thinking Machines releases Inkling 2 Small, claiming the strongest Western open-weight AI model (mixture-of-experts using 17 billion of 594 billion parameters) at roughly one-fifth the cost of competing systems."
+        ],
+        "sections": [
+          {
+            "title": "1. Tesla Cybertruck Production Halt",
+            "points": [
+              "Elon Musk confirmed Tesla will stop Cybertruck production at its Texas Gigafactory by mid-2027 to make room for the Cybercab robotaxi.",
+              "Only 71,000 Cybertrucks sold since December 2023 deliveries began; original target was 250,000 per year, indicating massive demand shortfall.",
+              "Truck never achieved promised $39,900 starting price; cheapest version costs $59,900, plus it faced multiple recalls and quality complaints."
+            ]
+          },
+          {
+            "title": "2. Claude AI Gains Financial Data Access",
+            "points": [
+              "Anthropic launched Personal Finance beta for Claude subscribers, letting them link bank and card accounts through Plaid (third-party service that never sees passwords).",
+              "Read-only access only; Claude can explain spending, flag duplicate charges, and build charts but cannot move, manage, or invest money.",
+              "Users can connect up to 16 US banks and access two years of transaction history; conversations using linked accounts stay private and out of Claude's shared memory."
+            ]
+          },
+          {
+            "title": "3. iPhone Keyboard Word Blocking Revealed",
+            "points": [
+              "Researcher Derik Kauffman of startup Blacklight discovered Apple's keyboard contains a hidden list of ~100,000 words and phrases it will not suggest via autocomplete.",
+              "Blocked terms include political phrases like 'Dictator Trump' and 'Sleepy Joe'; blocking applies inconsistently (e.g., 'bad boy' and 'white man' harder to enter than 'bad girl' or 'black man').",
+              "System does not prevent typing but stops autocomplete suggestions and makes swipe-typing (sliding finger across keyboard) difficult for flagged terms."
+            ]
+          },
+          {
+            "title": "4. Anthropic IPO Faces Market Headwinds",
+            "points": [
+              "Sharp tech stock decline on Thursday reduced betting market odds of Anthropic filing IPO by November 30 from 84% to 60%.",
+              "Odds for filing by December 31 also fell from 90% to 74%, threatening company's plan to debut before year-end.",
+              "Expected valuation is $1.5 trillion to $2 trillion; offering will test investor appetite for AI firms ahead of OpenAI's own expected 2025 debut."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Tesla is 'winding down' Cybertruck production",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRSsqn9n9t-JFlNkNu_UfV1Hf19U4jDqWZkN9PQMtwH9N9vxx36hSTbT2V3fszGdsIyTViFImWLIgsUDJnMDmi-n65HUaqDPrtNeSVwSFT_alz1NReBQHNnaWKi2JYDkvqxflo2aJ64hcr21K0SbXhhBnrBQ0op7Vnrw6Sk4mexjMHAouuEIP3Xryhk-FHRhyQ/4vi/Sy4oBLKlTXanEWM6wgssqA/h8/h001.-_o-2fR90iHAK956i_x6k8sGy0EvmuDxKCuDuRUlO7U"
+          },
+          {
+            "label": "Claude can now read your bank accounts",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLWBl84Z5dd_NYbOS7vasKg64ytj8QPqcHNOmRmHa8a6J6EPm6EuqnjmXBFZEi45GHfuqfm1oFsBFbOcdL6rpoFQGtdVqOdk8RpyhZfHvHOwo6COhB9DE4hHrab0G-x623QyOdqHn9EsenNdErHf5xB/4vi/Sy4oBLKlTXanEWM6wgssqA/h9/h001.MUbcO0TfoHyrDszEF9Xwf_PTZH2Id6f1GqnQA0TRFgM"
+          },
+          {
+            "label": "Apple hides a blocked-words list in iPhone keyboard",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLUMy_i44deFg-1nR8ORRIi42b6HYrkAWxKazFpzHs_HyGCDk17JhY15v-VmdKd3dHQay06eS8Lt90kDIxIuEBv6NdpwEK7TrT-CZjJfmpkFxBYKKvkQhGtjrC75eWNBTOU/4vi/Sy4oBLKlTXanEWM6wgssqA/h10/h001.ACPZ_KE6fHI2me9BIH5-MxTV3fNqabwDXPv9ctc98IE"
+          },
+          {
+            "label": "Tech selloff puts Anthropic's IPO at risk",
+            "url": "https://elink640.dupple.com/ss/c/u001.FSQlig9bEUycH_wx1N5xPOyz-VB5U9GHGwYRvzZsvxalzqra38O1DqEtdPdqirgWk5pL166K7SjXWt4P_jNo9ozm6mfZ2mkXvHcp9heAMcZiDfn3dVF2ll9uhyUUjTtbeJA2MdKhTCG8wUJq5ZSdEcgJIV_Wr19IW0oz3kglJQ8lpNFiZeyoQWORmyT_bH2rqFfz2dVKmp_8-A9YMY0OcRZIukKF4dS10Oa9S9YsuAg/4vi/Sy4oBLKlTXanEWM6wgssqA/h11/h001.cRJbQbh42W_RmvB-kmQKwYZx97Q9_RXt-lCGyxReM3Q"
+          },
+          {
+            "label": "Thinking Machines claims top open-weight AI model",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51aYIMsXVVE3zFARwBtTFCjl5T1sryvHGhLJXaA-b6CS3vzD9Bgc5u0ZicZCTVtcN-KsH21cZnDEBC3NevdIGhgJiv-_86Cz2Uk_509Y690ZWcJxMnSj_GJBCVzhHoTujALN8vVye1eQxCg3XpsxVt6noou2V_iQNIXgOhoXd-gnEvUHqALjc_7AABf1OODjljzsu1-0b20vk1gMw7EWbpI4/4vi/Sy4oBLKlTXanEWM6wgssqA/h12/h001.dpvZRo5fs7EqANmeG3fG96QUL3XTCin0rtmlNeZvg7o"
+          }
+        ]
+      }
+    }
+  ]
+}
