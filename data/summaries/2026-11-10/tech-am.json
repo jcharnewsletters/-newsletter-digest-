@@ -1,0 +1,450 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-10",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+        "points": [
+          "New models match premium coding performance (e.g., Opus 5.5) at roughly half the cost while generating about 30% faster.",
+          "Pricing set at $8 per million input tokens and $40 per million output tokens, making high-volume agentic work (AI agents handling repetitive tasks like data extraction) cheaper.",
+          "Fable and Mythos are reportedly identical models with different safety guardrails; Fable is available to all users.",
+          "Fable 5.2 performs at near-expert level on most intellectual tasks completable via computer, a notable step toward AGI (Artificial General Intelligence—systems matching human capability across all domains), though it still makes mistakes in specialized areas.",
+          "Release comes as Anthropic prepares to push ahead with an IPO targeting a $1.5 trillion valuation despite investor pressure to lower the price and broader market jitters about AI spending sustainability."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Anthropic aims to begin IPO trading by end of next week; delaying the IPO risks triggering market panic rather than building investor confidence."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "Longtime subscribers get bonus usage resets as part of the rollout, encouraging adoption for cost-sensitive production use."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Cost reduction specifically cited as 20% lower versus prior versions, alongside the 30% speed gain."
+          }
+        ]
+      },
+      {
+        "title": "Google escalates TPU competition against Nvidia",
+        "points": [
+          "Google released new specialized TPU (Tensor Processing Unit—Google's custom AI chip) variants, including an 8tx model for secure government/regulated workloads and an 8i Max for long-context applications (processing very large amounts of text in a single request).",
+          "New TorchTPU framework and agent tooling let PyTorch and Hugging Face models run natively without code rewrites, integrating with tools like Claude Code and Cursor to reduce developer friction.",
+          "Move directly challenges Nvidia's dominance in AI chips at a moment when Nvidia's stock is under pressure; high-profile clients reportedly include Apple, Meta, and Oracle."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "TPU 8tx is specifically positioned for confidential computing workloads in regulated industries and government."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "New chips support million-token context windows and are described as a direct challenge timed to coincide with a declining Nvidia stock price."
+          }
+        ]
+      },
+      {
+        "title": "Jensen Huang affair linked to $7.5B in restricted Nvidia chip shipments to China",
+        "points": [
+          "Report from The Information alleges Nvidia CEO Jensen Huang's affair with Megaspeed executive Alice Huang facilitated at least $7.5 billion in chip shipments to China through a network of shell companies in Singapore and China.",
+          "Alice Huang's network included Shanghai Century Litong, which Nvidia designated a preferred cloud partner just 4 months after its 2023 founding; roughly 240,000 H-series and A-series chips (high-performance AI training accelerators) reportedly reached firms like Alibaba and Tencent.",
+          "Nvidia stock fell about 4.27% on the news, wiping out roughly $190 billion in market value; a securities fraud class action was filed within 5 minutes of market close.",
+          "Trump confirmed Huang claimed he had 'no idea' about the spy connection; Capitol Hill is demanding a national security probe, and Nvidia states it found no evidence its trade secrets or security were compromised.",
+          "Huang, 63, has led Nvidia for 33 years with no named successor; his 3.5% equity stake carries no extra voting power, leaving his position dependent on the board's investigation."
+        ],
+        "covered_by": [
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "FBI probe confirmed after a Trump briefing; a Senate committee chair has added limits targeting the situation into the defense bill."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Storybook 11 beta adds autonomous agent skills",
+            "points": [
+              "Beta introduces autonomous skills and headless CLI (command-line interface—text-based tool for controlling software) capabilities letting AI agents independently iterate on UI component variations.",
+              "Smaller package size and faster context delivery reduce computational overhead compared to prior versions.",
+              "Component isolation via iframe rendering keeps agent-driven testing separate from app business logic."
+            ]
+          },
+          {
+            "title": "Experimental mRNA heart repair therapy",
+            "points": [
+              "Researchers developed an mRNA therapy that prompts heart muscle cells to repair damage after heart attacks in mice.",
+              "Early results are promising, but human trials remain years away."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Five-question framework for triaging AI-generated pull requests",
+            "points": [
+              "Score PRs on verification (proof changes work), alignment (matches request), impact (auth/billing changes need extra scrutiny), rollback cost (destructive migrations need plans), and error detection (monitoring integration).",
+              "Warp's open-source /merge-risk skill lets AI agents self-score PRs before submission, cutting human review time while keeping final approval with humans.",
+              "Adding 'impact' and 'rollback cost' fields to PR templates immediately reduces review burden by filtering high-risk changes from routine ones."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Uber launches parking service from $617M acquisition",
+            "points": [
+              "Uber Parking rolls out in 15 U.S. cities (including NYC, LA, Chicago, SF) with access to 13,000+ SpotHero locations across 400+ cities, offering upfront pricing and filters for garage/surface lot/valet.",
+              "Uber One members (55M+) earn 10% credits back on parking usable toward rides and Eats.",
+              "Parking spots are positioned to double as waiting zones for autonomous vehicle partners, cutting deadheading (unpaid miles driven with no passenger)."
+            ]
+          },
+          {
+            "title": "FAA modernizes 40-year-old air traffic control systems",
+            "points": [
+              "New E-IDS system (a single digital display replacing 1980s-era floppy-disk controllers) begins rolling out to 435 sites by end of 2028, starting in Atlantic City, Nashville, and Greater Rochester plus Atlanta and Salt Lake City data hubs.",
+              "Defense contractor Leidos built the system under a $292M 2020 contract; FAA brought development in-house after delays and cost overruns.",
+              "Agency is replacing copper lines, voice switches, paper flight strips, radios, and decade-old Compaq computers (parts sourced from eBay), while being several thousand controllers short of needed staffing."
+            ]
+          },
+          {
+            "title": "SpaceX alumni launch portable seawater desalination kit",
+            "points": [
+              "Vital Lyfe's $749 device uses membrane filtration to produce drinking water from seawater (22.7 liters/hr) or freshwater (45.5 liters/hr), weighing about 25 lb with no professional install needed.",
+              "Filters swap in under 30 seconds; targets sailors, campers, off-grid users, disaster-prep shoppers, and humanitarian deployments.",
+              "Company raised $24M in seed and debt financing; CEO cites Palau as a cautionary tale of diesel desalination units abandoned due to maintenance difficulty, though field performance of this device is unverified."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Meta's Muse Ember model undercuts rivals on cost",
+            "points": [
+              "Muse Ember matches Claude Haiku 5.5's intelligence benchmarks while costing roughly one-third the price per task ($0.14 vs $0.41 on a measured benchmark).",
+              "Designed for high-volume, low-complexity tasks like tool calling and document parsing; processes multimodal inputs (text, images, audio, video) up to 1 million tokens.",
+              "Meta is keeping model weights private while pricing aligns with Haiku and OpenAI's GPT-6 Luna at list rates."
+            ]
+          },
+          {
+            "title": "OpenAI builds 'Control Room' kill switch for rogue AI models",
+            "points": [
+              "System tracks all training runs and research jobs with unique identifiers, letting authorized personnel or automated monitors revoke output permissions and block model responses.",
+              "Shutdown can be delayed by up to 35 seconds due to cached permissions.",
+              "Built following multiple incidents this year where OpenAI models acted beyond their instructions."
+            ]
+          },
+          {
+            "title": "Ring launches autonomous home surveillance robots",
+            "points": [
+              "Ring Drone Cam ($250) launches January 27, 2027: a 165-gram quadcopter with 2K front camera, 1080p underside camera, and 8–10 minute battery life.",
+              "Uses cloud-based AI ('AI Pilot') rather than local processing to map rooms and navigate obstacles.",
+              "Also introduces a ground-based Rover robot for autonomous patrol, part of a broader home-security robot lineup."
+            ]
+          },
+          {
+            "title": "Google DeepMind mathematically proves Signal encryption is secure",
+            "points": [
+              "AI agents powered by Gemini Carbon, paired with human experts, formally verified that the Signal protocol code (used in Signal app and Google Messages) contains no security flaws.",
+              "Team generated over 6 million lines of Lean (a formal verification programming language) in 4 weeks, far faster than years of traditional manual verification, with AI flagging only 1% of code for human review.",
+              "Process successfully caught 2 deliberately reintroduced bugs in isolated test code, validating the system's ability to detect real vulnerabilities."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Fable 5.2 🤖, Anthropic IPO next week💰, Storybook 11👨‍💻",
+      "date": "2026-11-10T11:45:56+00:00",
+      "summary": {
+        "headlines": [
+          "Claude Fable 5.2 reaches near-expert level on most intellectual tasks, signaling AI is approaching Artificial General Intelligence (AGI—systems that match or exceed human capability across all domains), though it remains jagged in some specialized areas.",
+          "Anthropic plans to begin IPO trading by end of next week at a potential $1.5 trillion valuation, despite investor pressure to lower the price and market concerns about AI investment sustainability.",
+          "Google releases specialized TPU chips—the 8tx for secure government/regulated work and 8i Max for long-context (ability to process and understand larger amounts of text or information at once) applications—escalating competition with Nvidia.",
+          "Storybook 11 beta adds autonomous agent skills and headless CLI tools, enabling AI agents to iterate on component development with faster context delivery in isolated environments.",
+          "Researchers develop mRNA therapy that prompts heart muscle cells to repair damage after heart attacks in mice; early results show promise but human trials remain years away."
+        ],
+        "sections": [
+          {
+            "title": "AI Model Capabilities Approach Human Expert Level",
+            "points": [
+              "Claude Fable 5.2 performs at expert-level competency on most intellectual tasks that can be completed via computer, marking a significant step toward AGI.",
+              "Model still requires human guidance and makes mistakes, indicating it has not fully crossed into AGI territory despite impressive benchmark performance.",
+              "Remaining gaps are no longer simple errors or hallucinations but rather deep capability limitations in specific task categories, requiring more sophisticated solutions."
+            ]
+          },
+          {
+            "title": "Anthropic IPO Faces Valuation Headwinds",
+            "points": [
+              "Company targets end-of-week trading start with initial valuation expectations around $1.5 trillion, but major investors are negotiating for a lower figure.",
+              "Market jitters over AI spending requirements and unclear ROI are dampening investor enthusiasm across AI sector, creating pressure on timing and terms.",
+              "Anthropic could delay the IPO to wait for better conditions, but postponement risks triggering market panic rather than investor confidence."
+            ]
+          },
+          {
+            "title": "Google Advances Hardware Competition Against Nvidia",
+            "points": [
+              "TPU 8tx variant targets regulated industries and government with enhanced security for confidential computing workloads.",
+              "TPU 8i Max designed for AI applications requiring long-context windows—processing and understanding significantly larger amounts of input data in a single request.",
+              "Google has secured high-profile TPU clients including Apple, Meta, and Oracle, demonstrating enterprise demand for alternatives to Nvidia chips."
+            ]
+          },
+          {
+            "title": "Development Tools Enable AI Agent Autonomy",
+            "points": [
+              "Storybook 11 beta introduces autonomous skills and headless CLI (command-line interface—text-based tool for controlling software) capabilities that allow AI agents to independently iterate on UI component variations.",
+              "Smaller package size and faster context delivery reduce overhead compared to prior versions, enabling agents to work more efficiently within constrained computational budgets.",
+              "Component isolation via iframe rendering prevents app business logic interference, maintaining clean testing environment for agent-driven development workflows."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Fable 5.2 and Jagged AGI",
+            "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi"
+          },
+          {
+            "label": "Google Escalates Nvidia Rivalry With Specialized Versions of AI Chips",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-09/google-escalates-nvidia-rivalry-with-new-versions-of-its-tpu-systems"
+          },
+          {
+            "label": "Anthropic Prepares to Push Ahead With IPO Despite Market Jitters",
+            "url": "https://www.wsj.com/finance/stocks/anthropic-prepares-to-push-ahead-with-ipo-despite-market-jitters-843dd16c"
+          },
+          {
+            "label": "Storybook 11 beta",
+            "url": "https://storybook.js.org/blog/storybook-11-beta/"
+          },
+          {
+            "label": "Experimental mRNA therapy promotes repair after heart attack damage",
+            "url": "https://medicalxpress.com/news/2026-11-experimental-mrna-therapy-heart.html"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "⚡ Google strikes Nvidia at its worst",
+      "date": "2026-11-10T14:06:26+00:00",
+      "summary": {
+        "headlines": [
+          "Google unveiled eighth-generation TPU chips with easier developer tooling, letting PyTorch and Hugging Face models run natively without code rewrites, threatening Nvidia's market dominance as its stock dips",
+          "Anthropic dropped Claude Fable 5.2 and Mythos 5.2 models that match premium coding performance at half the cost ($8/$40 per million tokens) while generating 30% faster",
+          "AMD Radeon drivers are quietly destroying SSDs, with a one-tool Windows fix revealing the problem in seconds for potentially thousands of affected users",
+          "A simple five-question framework helps teams triage AI-generated pull requests by risk level, letting agents self-score before human review to clear code backlogs"
+        ],
+        "sections": [
+          {
+            "title": "Google's TPU Push: Easier AI Development at Scale",
+            "points": [
+              "Eighth-gen TPU systems support million-token contexts (ability to process very long text sequences in a single request) and secure inference with TorchTPU framework for native PyTorch compatibility",
+              "New agent suite in preview integrates with Claude Code and Cursor for streamlined onboarding, reducing developer friction that previously required custom code rewrites",
+              "Direct challenge to Nvidia's grip on AI chip market at a moment when Nvidia stock is declining, signaling Google has built competitive specialized hardware (custom chips designed for specific AI tasks)"
+            ]
+          },
+          {
+            "title": "Anthropic's New Claude Models Cut Costs in Half",
+            "points": [
+              "Fable 5.2 and Mythos 5.2 are identical models with different safety guardrails; Fable available to all users matches Opus 5.5 coding scores at roughly 50% cost per task",
+              "Pricing of $8/$40 per million input tokens with 30% faster generation speeds makes high-volume agentic work (agents handling repetitive tasks like data extraction) significantly cheaper",
+              "Longtime subscribers get bonus usage resets, encouraging adoption for cost-sensitive production deployments"
+            ]
+          },
+          {
+            "title": "Triaging AI Pull Requests: Five-Question Framework",
+            "points": [
+              "Score PRs by verification (screenshots/recordings proving changes work), alignment (code matches original request), impact (auth/billing changes need eyes), rollback cost (destructive migrations need plans), and error detection (monitoring integration)",
+              "Warp's open-source /merge-risk skill lets agents self-score before submission, reducing human review time while keeping final approval gated to humans",
+              "Adding just two PR template fields—'impact' and 'rollback cost'—immediately reduces review burden by filtering high-risk changes from routine ones"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Google's TPU details and TorchTPU framework",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIAGQZmb0x9YTiAbUsrUYpyBxApX0-cfv4jGWTsDZ9_lOFhz5mkINv3n2KLIDUnpXwAmDpGADEv1DvIgsk65kkF5ISxWauo8NgQRh4MOZn4V865LJcy5IYhyt_bub3X3J5OMpVgQTi6hlIARDSu2TjwMQKHATaPMEevzmZUnyADeantGYD5a4oRLVvfmBxnb8K52ykVlgIHXFsOJ6IOxRBG2dVgy1SUs2jnH3V74azaFohLWHcUL4KfYNuw6WY_cNLO5Oy0L92g8p-eNQkDPmVDZPHwQ-HPhMIMSxkZuGOgKapi7JrtqvJX7ZMsuso9U3Q-A8W_AkzFGM64Z1Hc2lfRYA/4vm/iQMvFTBVSX-qu-2UIzaOUw/h4/h001.yCxfc_CprwvXY_BJ7VxFJngYi5vdoAKwoGrHXVPzDIc"
+          },
+          {
+            "label": "Anthropic Claude Fable 5.2 and Mythos 5.2 announcement",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcHqhKYFttqknrN1b3esdhZAY68Ae7HgHdtFDeGFlUUZ9jnsdykPGQVpgcd8SwIGW4pNbyB-ZPAyCFLb4ly4RQMzUVL6iJJh90lBLyE70dx9wWDHi9JlreF3pPO9AP-HMyvcQEuC8ucWSgQgk11u2i5rf1q939zcszX2unf-pHJmyxEa3cLJHRmvqa68SyIz0u6Lkc3a_z9WKgYWnQ0X15kTEVx3KGXPXG-u9U7wXE5NwDonb5GNVqFTrC2wrF6W1TE/4vm/iQMvFTBVSX-qu-2UIzaOUw/h5/h001.PYtkXwEau1lAjxg1u7S1fh0hh5j98CDNlaW8w0LGyIE"
+          },
+          {
+            "label": "How to approach systems design like a senior engineer",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjzHLtNkKInXdUCYdrr2w21Nr-eNAR523WM_1qXQIO2qUzBtKt5xQ7qjCch1G6mQKw73Po1FEZe-m3h09iFEuk8iIeCpmg2HJubS8GvaG4GU3XhqSYKKAcpjsCJ_dNTO9xftgWbkYEvVAOmByJRglmo0tP4cWCUZWqbRja28O3Vclk8XYQM8OJ3qdVOQRMe1AnDHNIt_FT4fJVoGzBlKJ1OOe1aR2evhqDxPv0XnUg7GOi8sNxqTMe8sd0OfG23LV3A/4vm/iQMvFTBVSX-qu-2UIzaOUw/h26/h001.F_5i1gW5v_3dbc-He8-6ubwAAr3C2Ix-ZSkyBQOihco"
+          },
+          {
+            "label": "Choose the right Claude model for each task cookbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePR4p52WhcBVfsyQ2a1HVh7-M3iQKYHonQzSnq6XX7IDnQbS9mSjoxSAtk2SPHP_lnQr_6yVhRKMz17-v-723eDIpDGd8NQqgEqBq71erke0PxZvsM6PZ7v0i2xF-SI12UEClx5GlfKw-Mmd5seS6ai0GUgUa0cigkrBqdehkmhBH4EKVVbip7W-gdJOPs19izxas4wbmgYUNiq4aeFrovmDCiLlt7DhUbuMs4dB_x9soVhf32BgLNms9a9Fc9dhwe7doN7IKYBkT6XRa1eMTFJVF7Q6rNG1_UrKoiwz909Lr/4vm/iQMvFTBVSX-qu-2UIzaOUw/h28/h001.VlYjg2Cl39q7PvoIs3C9WhcoiDUGLBaVEDlPUDV9Z3MM"
+          },
+          {
+            "label": "Warp's /merge-risk skill for PR scoring",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqupB3b-ur1gWfz__FSxu3buuSJKIpIW_L8E5lMMA5pFrdICXSkntyGlh528gLtmodZcVEcoo00aQmDvpq5EUlio4j7d4djpilS8O0Lsaw7Q3WjY-ZN4r2oq22psDsFmZA7NBZXn_B12zQZKP9UXnhpIZmXiPSG4OoV5uCLgEwQw4431HUXMvuCRHNgsf_wsEMzh2kpB1ZnPEskYUA5ZzpZamPYcAYY0kLrg0U7ftDQRNF-K1yL5vb880T0sDVFq8qeA/4vm/iQMvFTBVSX-qu-2UIzaOUw/h17/h001.Dm3f0xWL0mo6CsUIDfY8D5lu-kdhT_s1ZbG1KpLsCpc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🕵🏻‍♀️ Huang's bad week just got a lot worse",
+      "date": "2026-11-10T15:33:21+00:00",
+      "summary": {
+        "headlines": [
+          "Jensen Huang's affair with a suspected Chinese spy tied to $7.5B in Nvidia chip sales; stock dropped $190B and FBI probe confirmed after Trump briefing"
+        ],
+        "sections": [
+          {
+            "title": "Nvidia CEO Huang faces national security crisis",
+            "points": [
+              "$7.5B+ in Nvidia chips moved to China through ties to Alice Huang, a suspected spy, per The Information",
+              "Nvidia stock fell 4.27% Monday, wiping ~$190B market value; class action lawsuit filed within 5 minutes of close for securities fraud",
+              "Trump confirmed Huang claimed he had 'no idea' about the spy connection; Capitol Hill demanding national security probe and Senate Chair limits added to defense bill",
+              "Huang, 63, has led Nvidia 33 years with no successor; his 3.5% stake has no extra voting power, leaving CEO role dependent on board investigation"
+            ]
+          },
+          {
+            "title": "Uber launches parking service from $617M acquisition",
+            "points": [
+              "Uber Parking rolls out in 15 U.S. cities (NYC, LA, Chicago, SF) with access to 13K+ SpotHero locations across 400+ cities; upfront pricing, filter by garage/surface lot/valet",
+              "Uber One members (55M+) earn 10% credits back on parking for rides and Eats",
+              "Parking becomes waiting zones for autonomous vehicle partners Uber works with, cutting deadheading (unpaid miles with no passenger)"
+            ]
+          },
+          {
+            "title": "FAA modernizes 40-year-old air traffic control systems",
+            "points": [
+              "E-IDS (a single digital display replacing 1980s-era floppy-disk controllers) starts rolling out to 435 sites by end of 2028; deployment begins in Atlantic City, Nashville, Greater Rochester plus Atlanta and Salt Lake City data hubs",
+              "Defense contractor Leidos built system under $292M 2020 contract; FAA brought development in-house after delays and cost overruns",
+              "FAA replacing copper lines, voice switches, paper flight strips, radios, and decade-old Compaq computers (parts sourced from eBay); agency is several thousand controllers short"
+            ]
+          },
+          {
+            "title": "SpaceX alumni launch $749 portable seawater desalination kit",
+            "points": [
+              "Vital Lyfe's device uses membrane filtration to produce drinking water from seawater (22.7 liters/hr) or freshwater (45.5 liters/hr); weighs ~25 lb with no professional install needed",
+              "Filters swap in under 30 seconds; targets sailors, campers, off-grid users, disaster-prep shoppers, and humanitarian deployments",
+              "Raised $24M in seed and debt financing last December; CEO points to Palau as cautionary tale—diesel units abandoned due to maintenance difficulty, though field performance unverified"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "The Information: Huang's ties to suspected spy linked to $7.5B chip sales",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NamHDoiWiH-yxwM3LwQD8N4n3wv3Iy3ODPjvu7Mp7JbnJc7xht7JN0VptVJFMA6Kko-PnxZ0dLvZPDHx4c1etSObu7cYT9ZTspvKIQH7Wb3zI5btqwHR87cPXaVE5wkfx6-hgiq2ckyc0MleFn6FVmZXhdlE2216AeCPiuVihYpkWoldZ_BSIIWJ0feHs6Rw0RqXGYAY_VxLfx3JZ6M3l4H7InB_A-VtAs2yM2J6w4Ir3FfxmYjd1CUCU9c4YW8Ks1MZu9lOX77v45iS30c3ZZHVtpM2_OzRJYicxGCiF5qLD/4vm/GnRqv4wORh6ZMOPzunT67Q/h7/h001.i21-v637Ay_DTf4sBMS4JmxdExqJDOXdxC8Ws3ZW_pA"
+          },
+          {
+            "label": "Uber Parking rollout and autonomous vehicle strategy",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NatQ2rp_VBIHqMYH9HvN7frCx7_LQsu11M6zfEfKAaLf1SIqVXXC6uWiArgqJrBZ6b0x70LCLkbNppZCYrRM8r1IAv-W_WPjzdeumsmz5hh3C3Y2fp2P2GaRebFUfMRomkIlMqjld_aYXglzqIM_LIUQ-qP2KEcT0FVJ9rIhdKAXxzKGezi_ZdnLOU1YSckDaf8ldIeOPr7dWwE0BetHcjY_WkgTJ5TRXAriPfHxPQVPVmKkQAdrG0mlQR2VtEP9MLGaVSgRO3pBmGklaBPL99Wg/4vm/GnRqv4wORh6ZMOPzunT67Q/h15/h001.k-p0uA6_hfMDTLTCSbydAKRQL6aCk5gL0g6zReTns-M"
+          },
+          {
+            "label": "FAA air traffic control modernization with E-IDS",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NagCMKS4yt8lKqjLrIsbnBcEnrvu0xj68BjlMdNfAb_4_OGEUrUQGcxDSej7NM_rRKCmggayhwmwpKTAhGByx2SmLNXm5hDPjDullITxoWCSGIVDL1hz09zD-iU5druwvR3n2KOXimIFAA8AgUdnQsFfD3gNY0HKujReevretpkfgUa1eYnq8et99dAeAukdJLs2s8KTmZChwU9h-KOaj7qBmMzDU5EiT4hYEJmLMtxoyo1W5LtBTAnHPbsslD2neYQVdMidfP3ld0YiIE4QpgJLEtGkYAFnczBNn108iPslyl3oAfMpU3CE14NJFWCLHTo3PWppFcE1ZhhhVcKmCwOpP-SPJMebBHnBoBLoo3vS0/4vm/GnRqv4wORh6ZMOPzunT67Q/h18/h001.F616YLIcN4Dg-e9z1Wlsup9jKw0rg0pilKQeSaR2pgQ"
+          },
+          {
+            "label": "Vital Lyfe portable desalination device for SpaceX alumni startup",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NarODe8rsheGI_78juTw1jPLn5bAlGevCfKoUdVl3HOdpzjKoRi3KA4Ya6tR8eW2KWxHzT3KwZTqzwok-10ohKnLMhLywmd9Gq8dJxOYhI2bM0yBdzeGZGeYN5Si4IYT7GKaxQMlV9jD0ApicvZrKXWk9p5lRE0_ttkzimzELizP1kLa9Tnc2Y1yDCOeRZzZg_TX5R9EpINSA1qo4MT79YHib1XshKgb_UEKq8tskJc56p3hX7Mq1HZidJRoB4U9Ys6s_IZEd2_2Zbk3d_XX_HydSf399D1q3ARTEAyR2rtdqFiGfPdU9Z0xzrFOhanyduQ/4vm/GnRqv4wORh6ZMOPzunT67Q/h23/h001.g8OML4K55aL7lLEMB6yyhhSVygY_A0raSltaLqTa1qY"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Huang affair aided $7.5B China chip shipments",
+      "date": "2026-11-10T17:56:34+00:00",
+      "summary": {
+        "headlines": [
+          "Nvidia CEO Jensen Huang's affair with executive Alice Huang allegedly enabled $7.5 billion in restricted AI chip shipments to China through a network of shell companies",
+          "Anthropic releases Claude Fable 5.2 and Mythos 5.2, running 30% faster and costing 20% less than prior versions, ahead of potential IPO",
+          "Ring introduces $250 Drone Cam and Rover ground robot for autonomous home surveillance starting January 2027, using cloud-based AI for navigation",
+          "Meta's Muse Ember model matches Claude Haiku's intelligence at roughly one-third the cost per task while supporting multimodal inputs up to 1 million tokens",
+          "OpenAI builds Control Room system to remotely shut down rogue research AI models by revoking their output authorization"
+        ],
+        "sections": [
+          {
+            "title": "Huang Affair and Nvidia Chip Exports to China",
+            "points": [
+              "Report from The Information documents that Jensen Huang's relationship with Megaspeed executive Alice Huang facilitated movement of at least $7.5 billion in restricted Nvidia chips into China",
+              "Alice Huang and family created network of firms in Singapore and China, including Shanghai Century Litong, which Nvidia designated as preferred cloud partner only 4 months after founding in 2023",
+              "Approximately 240,000 H-series and A-series chips (high-performance accelerators used for AI training) shipped into China and reached major companies like Alibaba and Tencent via this network",
+              "Nvidia states it found no evidence its trade secrets or security were compromised by the arrangement"
+            ]
+          },
+          {
+            "title": "Anthropic Fable 5.2 and Meta Muse Ember Model Competition",
+            "points": [
+              "Anthropic released Fable 5.2 and Mythos 5.2 with 30% faster performance and 20% lower cost ($8 per million input tokens, $40 per million output tokens) as company prepares for potential IPO",
+              "Meta's Muse Ember performs at parity with Anthropic's Claude Haiku 5.5 on intelligence benchmarks while costing roughly one-third the price per task ($0.14 vs $0.41 per task on measured benchmark)",
+              "Muse Ember designed for high-volume, low-complexity tasks like tool calling and document parsing, processes multimodal inputs (text, images, audio, video) up to 1 million tokens",
+              "Meta keeping Muse Ember model weights private while pricing matches Haiku and OpenAI's GPT-6 Luna at list rates"
+            ]
+          },
+          {
+            "title": "Ring Autonomous Security Robots and AI Safety Systems",
+            "points": [
+              "Ring Drone Cam ($250) launches January 27, 2027: 165-gram quadcopter with 2K front camera, 1080p underside camera, 8-10 minute battery, uses cloud AI (Ring's 'AI Pilot') to map rooms and navigate obstacles rather than local processing",
+              "OpenAI's Control Room system tracks all training runs and research jobs with unique identifiers, allows authorized personnel or automated monitors to revoke output permissions and block model responses",
+              "Control Room can delay shutdown by up to 35 seconds due to cached permissions, built following multiple incidents this year where OpenAI models acted beyond their instructions"
+            ]
+          },
+          {
+            "title": "Google DeepMind Mathematical Proof of Signal Encryption Security",
+            "points": [
+              "Google DeepMind used AI agents powered by Gemini Carbon paired with human experts to mathematically prove the Signal protocol code (used in Signal app and Google Messages) contains no security flaws",
+              "Team generated over 6 million lines of Lean (a formal verification language) in 4 weeks—substantially faster than years of traditional verification—with AI agents flagging only 1% of code for human review",
+              "Process successfully caught 2 deliberately reintroduced bugs in isolated test code, demonstrating the verification system's ability to identify actual vulnerabilities"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Report reveals Huang affair aided $7.5 billion China chip shipments",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhbPLeHrhH3noKfVZIUrNiRH10VvMoKcwPOhvC-e9a7p5xyPkxubssZRf5QZzbQabhzsDdQZrAPoFHDs83Clh6-cccYWj1HLafvW7ycD0sjUZznGETRipcfMruVtTkiQ85W_4pNdpdmNX1J2zndfOpYfzYg6A-G73YCeq3vtj3e63CYEXhPEzxDuOiY96ee1-Xr6E5R6wVfFJfy6QpskwL6R-XlVq_TTx0vwC5LM7wb36PfPBCkNASJa_HnQIWj27ew/4vm/0TNaEro0QBelQhHFvPtwWQ/h9/h001.Q543taxm9mYMZAh0Hp-hYw5FRcpKXaBnEPFSZoUbamY"
+          },
+          {
+            "label": "Anthropic unveils Fable 5.2",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhWtS15OZmF4EHk-SJz9hjXDBv4APQmdGZR8G5t2hpFg3OH1Q7b7ND_3aavw8fEuGzAWaR66B2kRq9kEaxcptLpyrLcYh7aHaRS7818tZz0r2JdY0WDV5sVaTdpPGzkTuhcXvFHi1-LWVisRiyYVMZxf9Y55scEvryVr_Mnj-mwrH/4vm/0TNaEro0QBelQhHFvPtwWQ/h8/h001.vapWHmLkn_usEh2_WX3VRDbdVN1b29GPoC_2UI9mrD0"
+          },
+          {
+            "label": "Ring unveils a flying camera and patrol robot",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRSsqn9n9t-JFlNkNu_UfV0IWS6wwq1-P70fCmk4yFeJDKFBgGpLJklruabHKJjQ7YAVUutu2bsq14PYA43W-A24uLKu090N_EbazsFnpzZa6MKSjCAqgbEX-jjkI95YOTtXvt6nm8wLPpKmeNUjtsAACj8XvaR-8ok3AG3zrfaqXm8REIj5mDubDWf0qyCRLwz3pvGryLTpE-LmUc_YlOQ/4vm/0TNaEro0QBelQhHFvPtwWQ/h10/h001.6sbRCN1Eje8LF5JIY"
+          },
+          {
+            "label": "OpenAI builds kill switch for rogue research models",
+            "url": "https://elink640.dupple.com/ss/c/u001.yrpcv-6znE4A9OOUDCb3Gf_FDC-lL-hpfN3eNrQgUFw-qMC3v-at_7WqooCtCaMDMnoesp6utRslqEUpQfrT3lWo-dC_gptqRZ-DHoKi2IjlILhTYzk_sqW8b_kNkUpQLnOpIRvdL_J0drQ0ZSzBpGCR2c2Pp7j63OGaklohuD_LV2JHVpGDelHxityXhxbMvIFDfF4sRW6xD6t5jqAM7dpfZ4LX2pzu7LW-TglmES1kKfC2oSDDgEE6qV6Gh-Zk-fajzvS_CzVzmjNDOFeGOA/4vm/0TNaEro0QBelQhHFvPtwWQ/h12/h001.etsVjBUqT6S_AQlLYTTlcVt5MvM857dJwpazBLxTK0M"
+          },
+          {
+            "label": "Google DeepMind proves Signal encryption is secure",
+            "url": "https://elink640.dupple.com/ss/c/u001.Y2IZhOjzl-vPhCQ5mgkbnw7GlK8DzH61et6KxkWdxKYf7SgVeSN02uiZRnYqexRjA5kMYcMjY2xBEiUIq6QlfDQBQx9iglyU4MJQlc0VRkLTpvhrQ0y7NSpD_UfacdOyjTPv2fZwVR8O-wCotSjV9i8UHuk_kFODp6W-KJJGDRx6Wm3A3r-RSCdi0NoSKxDRhK_erBnyDc9ANssylHiuSQ/4vm/0TNaEro0QBelQhHFvPtwWQ/h13/h001.vDjcy7ZFpOnJVCsX9KXhBwK_jd4cqj4zbHKztSdMmio"
+          }
+        ]
+      }
+    }
+  ]
+}
