@@ -1,0 +1,391 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-12",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Nvidia CEO Jensen Huang Steps Down Amid Scandal",
+        "points": [
+          "Jensen Huang resigned/is being replaced after acknowledging extramarital affairs, including with an executive at Singapore-based Megaspeed whom U.S. intelligence suspects of Chinese espionage.",
+          "Finance chief Colette Kress is serving as interim CEO while Nvidia's board works with an outside search firm to find a permanent replacement; chairman Harvey Jones leads the board.",
+          "Nvidia shares fell as much as 14% and the company has lost over $1 trillion in market value this month, marking the most serious leadership crisis in its history.",
+          "China dismissed espionage allegations against the executive as 'smears.'"
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Huang's exit would reduce scrutiny from lawmakers, investors, customers, and staff over personal conduct, with ripple effects across the semiconductor and AI industries."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Huang had led the company for 33 years since co-founding it; incident raises broader questions about corporate espionage and executive vetting in semiconductor firms."
+          }
+        ]
+      },
+      {
+        "title": "Google Launches Gemini Decision 1 / Decisions API",
+        "points": [
+          "New specialized model answers yes/no, multiple-choice, and rubric-scoring questions (closed-set classification: picking from a fixed list of possible answers) instead of generating free-form text.",
+          "Processes up to 1,000 such decisions in a single pass, across text, images, audio, video, and PDF inputs, responding in 150–250ms on average.",
+          "Priced at $0.10 per million (TLDR cites per 2 million) input tokens with no charge for output tokens—roughly five times cheaper than Gemini 3.5 Flash-Lite.",
+          "Accepts up to 256,000 tokens (roughly 190,000 words) of context; available via the Gemini API and Google AI Studio.",
+          "Outperformed competing decision-focused models (OpenAI's Decisions API and TypeSafe's Jev) on most benchmarks tested."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Framed as part of a broader 'B2A economy' (business-to-agent) trend in AI tooling."
+          },
+          {
+            "newsletter": "The Code",
+            "point": "Because it skips generating extra tokens, applications can act directly on probability scores, useful for high-throughput production systems."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Signals an industry shift away from expensive general-purpose chatbots toward lightweight, task-specific models for narrow enterprise use cases."
+          }
+        ]
+      },
+      {
+        "title": "AWS Releases Public Emulator for Local AI-Agent Testing",
+        "points": [
+          "AWS Emulator lets AI coding agents build and test software against 200+ local AWS service stand-ins without hitting real cloud infrastructure, avoiding cost and delay.",
+          "Code is publicly available; autonomous agents reportedly wrote the entire emulator themselves.",
+          "Shifts engineers' role toward deciding what to build and validating correctness rather than writing routine code.",
+          "Does not yet simulate throttling, outages, or regional differences found in real AWS environments."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Highlighted as part of a broader shift where engineering leaders must personally re-engage with coding to stay relevant as agents accelerate implementation."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI's Proof Verification Process",
+            "points": [
+              "An OpenAI-appointed expert committee confirmed a proof of quantum Yang-Mills theory (a foundational mathematical framework underlying the Standard Model of particle physics), validating one of its cornerstone results.",
+              "The committee was formed after backlash over OpenAI releasing 700+ AI-generated mathematical proofs in a single day in October.",
+              "Committee members admit the proof is too long and complex for immediate full human comprehension, raising concerns about how such verification can scale.",
+              "Some mathematicians argue the oversight process is unnecessary gatekeeping rather than genuine rigorous validation."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Blue Phone and Agent-First Computing",
+            "points": [
+              "Y Combinator-backed startup launched a public beta of 'Blue Phone' at $1,299, running a custom Android OS (Blue OS) on Pixel 10 Pro/XL hardware.",
+              "Lets AI agents autonomously handle multi-app workflows and navigate apps directly instead of requiring manual UI taps.",
+              "Developers are encouraged to design agent-friendly, API-first or headless interfaces as agents increasingly interact with apps instead of humans."
+            ]
+          },
+          {
+            "title": "GitHub Account Hijacking Wave",
+            "points": [
+              "Over 4,800 GitHub accounts were compromised by malware targeting CI/CD (continuous integration/continuous deployment, the automated pipelines that build and deploy code) pipelines and cloud credentials.",
+              "Developers are urged to audit recent commits, revoke exposed tokens, enable multi-factor authentication, and check for unauthorized cloud access.",
+              "Risk is amplified as AI agents increasingly write and push code autonomously, meaning a single compromised account can spread damage across infrastructure."
+            ]
+          },
+          {
+            "title": "Engineering Leadership Must Return to Hands-On Coding",
+            "points": [
+              "Will Larson, former CTO of Carta and Calm, says he merged more pull requests (proposed code changes submitted for review) on a 25-person team than in his entire prior career, crediting AI tooling.",
+              "He warns traditional middle-management engineering roles may not exist in three years.",
+              "Recommended tactics: take on real tickets, ship to production, prioritize technical solutions over hiring, and avoid management structures that isolate leaders from actual implementation."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Starlink Speed Cap Undermines Ukraine's Drone Defense",
+            "points": [
+              "Starshield (the military version of Starlink) re-imposed a 161 km/h speed limit on satellite connections, crippling Ukraine's systems for intercepting fast-moving drones.",
+              "The cap prevents Ukrainian interceptors from reaching Russian Geran-4 drones flying at 300–400 km/h, allowing some strikes to get through.",
+              "Ukraine's Defense Ministry had recorded stable links above 400 km/h just three weeks earlier.",
+              "Musk says the U.S. government controls Starshield policy, while Washington says only Musk could authorize the restriction—leaving the source of the cap unclear."
+            ]
+          },
+          {
+            "title": "United Airlines Blocks Unauthorized AI Booking Agents",
+            "points": [
+              "United revised its Contract of Carriage to ban unauthorized third-party AI agents from booking, purchasing, or managing travel, including tools embedded in social media, browsers, or travel agencies.",
+              "Violations can result in canceled bookings, voided tickets, erased frequent-flyer miles, revoked elite status, and legal action.",
+              "AI tools may still be used for research and trip planning as long as they never access United's website, systems, or user credentials.",
+              "Bookings made before November 11, 2026 are grandfathered in and won't be canceled."
+            ]
+          },
+          {
+            "title": "Google's AlphaGenome 2 Links DNA Variants to Disease in Specific Cells",
+            "points": [
+              "AlphaGenome 2 predicts how genetic variants affect specific human cell types by analyzing DNA sequences against chosen cell states, including gene activity and methylation (a chemical modification that affects gene activity) patterns.",
+              "Trained on over 107 million individual cell profiles from 68 tissues in humans and mice.",
+              "Found about 30% of causal disease variants on immune-cell benchmarks, up from 16% in the prior version.",
+              "Reproduced an inflammatory bowel disease mechanism by pinpointing the variant overactivating the ETS2 gene in gut cells, aiding precision medicine."
+            ]
+          },
+          {
+            "title": "Tesla Extends Cybertruck Production",
+            "points": [
+              "Tesla extends Cybertruck production through summer 2027 to clear its backlog.",
+              "Only the Cyberbeast variant, priced at $110,000, will remain in production.",
+              "Manufacturing resources are shifting toward development of the Cybercab."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Nvidia's CEO search 🔍, AWS emulator👨‍💻, Gemini Decisions API💡",
+      "date": "2026-11-12T11:49:55+00:00",
+      "summary": {
+        "headlines": [
+          "Nvidia's board is searching for a CEO replacement following reports of Jensen Huang's extramarital affairs, considering a temporary chief while conducting a permanent search.",
+          "AWS released a public Emulator tool that lets AI coding agents test most software locally, shifting the engineer's role to deciding what gets built and validating correctness.",
+          "OpenAI's appointed expert committee verified a proof of quantum Yang-Mills theory, a cornerstone of particle physics, after backlash over releasing 700+ AI-generated proofs in October.",
+          "Google launched Gemini Decisions API, processing up to 1,000 yes/no and scoring questions in one pass across text, images, audio, video, and PDFs at $0.10 per 2 million tokens."
+        ],
+        "sections": [
+          {
+            "title": "Nvidia CEO Transition",
+            "points": [
+              "Jensen Huang's exit would reduce scrutiny from lawmakers, investors, customers, and staff regarding personal conduct.",
+              "Board is evaluating candidates through an outside search firm while considering a temporary chief executive.",
+              "Huang's leadership change has ripple effects beyond Nvidia's operations in the semiconductor and AI industries."
+            ]
+          },
+          {
+            "title": "AWS Emulator for AI-Assisted Development",
+            "points": [
+              "Local AWS Emulator allows AI coding agents to build and test software without cloud costs, with code publicly available.",
+              "Engineers retain control over what software gets built and validation that the work meets requirements.",
+              "Shifts engineer focus from writing routine code to strategic decision-making and quality assurance."
+            ]
+          },
+          {
+            "title": "OpenAI's Proof Verification Process",
+            "points": [
+              "Experts confirmed a quantum Yang-Mills theory proof, validating a fundamental component of the Standard Model of particle physics.",
+              "OpenAI created a shepherding committee after releasing over 700 AI-generated proofs in one day sparked controversy.",
+              "Committee members acknowledge the proof is too lengthy and complex for immediate human comprehension, raising questions about verification scalability.",
+              "Some mathematicians view the oversight approach as unnecessary gatekeeping rather than rigorous validation."
+            ]
+          },
+          {
+            "title": "Gemini Decisions API Launch",
+            "points": [
+              "Processes up to 1,000 yes/no, choice, and rubric-scoring decisions in a single pass with multimodal input support.",
+              "Accepts text, images, audio, video, and PDF files powered by new Gemini Decision 1 model.",
+              "Pricing: $0.10 per 2 million tokens with free output costs, available through Gemini API and Google AI Studio."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Nvidia CEO Search",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates"
+          },
+          {
+            "label": "AWS Emulator and Agent Code Generation",
+            "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"
+          },
+          {
+            "label": "OpenAI Proof Verification",
+            "url": "https://www.scientificamerican.com/article/openais-shepherds-affirm-blockbuster-physics-result/"
+          },
+          {
+            "label": "Gemini Decisions API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+          },
+          {
+            "label": "Welcome to the B2A Economy",
+            "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🔥 Another decision model for devs",
+      "date": "2026-11-12T14:08:03+00:00",
+      "summary": {
+        "headlines": [
+          "Google's Gemini Decision 1 model scores 1,000 questions at once in 150-250ms with no output token charges, enabling faster decision-making in production systems.",
+          "Blue Phone public beta launches at $1,299, running custom Android OS that lets AI agents autonomously handle tasks across apps instead of requiring manual UI taps.",
+          "4,800+ GitHub accounts were hijacked with malware stealing CI/CD and cloud credentials, prompting immediate security review for developers.",
+          "CTOs and engineering managers must return to writing code themselves to stay relevant as AI agents accelerate implementation 100x faster than traditional teams.",
+          "AWS Emulator ships 200+ local AWS service stand-ins, letting coding agents test changes offline without cloud costs or delays."
+        ],
+        "sections": [
+          {
+            "title": "1. Decision Models Reshape Production AI Architecture",
+            "points": [
+              "Gemini Decision 1 returns probabilities instead of tokens, designed for closed-set classification tasks (evaluating known outcomes) at $0.10 per million input tokens with no output charges.",
+              "Processes text, images, audio, video, or PDFs; responds in 150–250ms average; enables applications to act directly on probability scores without generating extra tokens.",
+              "Multimodal design means one call handles diverse input types—audio from customer calls, images from documents, or video streams—without separate models."
+            ]
+          },
+          {
+            "title": "2. Blue Phone and Agent-First Computing",
+            "points": [
+              "Y Combinator-backed startup launched Blue OS on Pixel 10 Pro/XL ($1,299), allowing AI agents to run multi-app workflows autonomously across your device.",
+              "Developers must now design UIs agent-friendly; instead of users tapping buttons, agents will navigate your app directly, making API-first or headless architecture increasingly valuable.",
+              "Raises the question of iPhone-era computing: if agents handle task flows, traditional manual mobile UI design becomes secondary to agent accessibility."
+            ]
+          },
+          {
+            "title": "3. Engineering Leadership Reskilling Required",
+            "points": [
+              "Will Larson, former CTO of Carta and Calm, moved to a 25-person team at Imprint and merged more PRs than his entire previous career; warns middle management roles may not exist in 3 years.",
+              "Fastest path to CTO now requires shipping code yourself: pick real tickets, merge to production, test your own work, and measure dashboards—not just hiring and meetings.",
+              "Specific tactics: step back to line management roles (where AI tooling is superior), tell people you want to code, prioritize technical solutions over headcount, and avoid middle management structures that isolate you from implementation."
+            ]
+          },
+          {
+            "title": "4. Local Cloud Testing and Security Breaches",
+            "points": [
+              "AWS Emulator allows coding agents to test against 200+ AWS services offline, eliminating delay and cost of hitting real infrastructure; autonomous agents wrote the entire emulator, but throttling/outages/regional differences are not yet simulated.",
+              "GitHub hijack compromised 4,800+ accounts with malware targeting CI/CD pipelines and cloud credentials; developers must audit recent commits, revoke tokens, and check for unauthorized cloud access.",
+              "Security gap underscores risk: as agents write and push code autonomously, account compromise spreads damage across CI/CD infrastructure, making token rotation and MFA audit critical."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Gemini Decision 1 API docs",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJTpEuzBNHRwpsMal9soRmMwmBVA5zP8Ewh2bi7-8gKnB38MtqzJ2nxbaCNBhxZXZFhvzy9eW1wLqPZSTby9wHzqmBelRhJUvGtcrae28wcUpKB2xpdFCM_Dy6oQiStlamihOk0F-8CRc3S5UPLw9Td-Ak8Xy3j4_XL3jV74ctTbU9MJ0mDUHCh8Xa48Tkq0Mg5M6nMv2DKuIaf5As1aA-zHxX3brd18iMrMyN7oiKvyMWwYB2n5D8BSZO-4v5BMFX_Ar-sz2wkHy05tM7pk15W4/4vo/S4UIbrlwTkG3d7n_tSC2Kg/h5/h001.l-EApu0BdQFb--114FYnvVNi9uVLQakRfN5oc9zPxbw"
+          },
+          {
+            "label": "Blue Phone launch and sign-up",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IqUZOML35pbZylK0LfuECG5v2IBCS7_bToqyTKyUHn9QhWzJYXLMP6fPSM1Ooz6d5s1Nkqsvl8QDPibm34V8rwhaq33ztbYUysmsIm46dbQlnHfarmi4JT8yFMqYIZqUdijhI2EBa1NP4dxRIz5dMOr_JTItTw4KnvOzRlLeUv6RN2KAxfZYp4dhj-7BTzn6LFs9JHqz3OoEEJaEh4d65mpT79KTFIxKEEG4w8vwOE5kP4fmem78xwyw-0WQPuOEIwSCBFQ8JzbiXByXJ_AAbg/4vo/S4UIbrlwTkG3d7n_tSC2Kg/h7/h001.MQbrYZuFj90O_Ynvk4AJzq2grZwkRyl7KSAKWdIpHO0"
+          },
+          {
+            "label": "AWS Emulator documentation",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhkpaz3sbQ3Am4LMJmm5f0CNQkl1omE5iaw_rMA2s-aky9_M2xdYxh5zKju10kpu9N-SjyKAyw72IygbvlyX3ZiEFNDNwx3TUOq92mcnE_uXEENaxC3XCWTq12mLZJjqD1WX06aPzMSi9NaEr_N2_iYJRLR7yNMctL5iGe3CMC3hJgEI6KhxWdfKDEuTisDR9CeaPIQdw2duOlAWJ2kFZc68vnvfM05nNa6eeZujFkRtvWqEyvziVRTjkM9UW3SarwBfMtBb0KRov1ENwXSai_xdk/4vo/S4UIbrlwTkG3d7n_tSC2Kg/h9/h001.RKFiOOJ2h4Q3MuqGmLMConPqZoYJacPxYxOdWUe9v0c"
+          },
+          {
+            "label": "GitHub account hijacking security alert",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcF58cvLJJftV1Vx3-moFS2zYJ270KxR_XWnPtBxw2xLx5CtXf0DJr6OpNhXk5HIvTZ0lCi2RKFY0ejMJ-8jgSHKYtlJPkzWaYoN6hl0XKPoqgFj59hy8RKt62poTT76YZNakBbUKwFANBBCMeUy_GBJcXppZfNpE1wcOShhCn6xFobjynnwwq88ri_b_eDRclJm44XyiLQMmR7NAp4N0Q9ezWK9lWXqrJhrwIoiSVtB33bt0W1m-zMFxQ2jGcUFAB-mV9CbuahEYc6wqoq6F2Zx/4vo/S4UIbrlwTkG3d7n_tSC2Kg/h24/h001.TlltwuIwu5FnuSZg47zqu_KMZ2vKoIU6J0QWqi5M_N0"
+          },
+          {
+            "label": "Fable 5.2 prompting guide (Anthropic)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.y8XueU-stBfRyqUeoBxfLlHq_IXNb3MOcKdPmSAsUVBmKAR73hkXhpew9UAfyNziLcEHm6K1snHTQezo3DrlC7vrXKFjYYQUSJOsbZtKkkS187TCgBIw6gLQ22780Ge8m04cHUZt4ARF0WecM3DQYPQc6ZxvqD2LZheRXfOEb2frcU_OI182ZYD9k69XxXHmfB9fJdUzNKSPc15-P-LUNtuLkw5nfUzit49FVk44H7kaxE_-xrmJ_KOWdITboXlbFMFFIxaelbGMTdoaOqC7NocWjyysPEI3pGlKAqtRqNig50SgMjA3ra8kh1ZDBEmoVL4NlJ3zFygw7jM5OG7wh2JHBFG3dcVvmKlqUQJrNFPc9HtCd5CUpQ-0O77Z018o/4vo/S4UIbrlwTkG3d7n_tSC2Kg/h32/h001.yPnwJa7LBMVNczUGCRSJyMBVnLwZEjB4cZ5S67V0LH0"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Nvidia CEO Jensen Huang resigns",
+      "date": "2026-11-12T17:50:05+00:00",
+      "summary": {
+        "headlines": [
+          "Nvidia CEO Jensen Huang resigns after acknowledging affairs, with finance chief Colette Kress taking interim role as shares fall 14% and the company loses over $1 trillion this month.",
+          "Starlink's speed cap on Ukraine's military internet cripples drone defenses by blocking links above 161 km/h, preventing interception of Russian jets flying 300-400 km/h.",
+          "United Airlines blocks unauthorized AI agents from booking flights, citing privacy and account security risks, with power to cancel tickets and void miles for violators.",
+          "Google releases Gemini Decision 1, a specialized AI model for yes/no and multiple-choice questions at one-fifth the cost of standard models, beating competitors on most benchmarks.",
+          "Tesla extends Cybertruck production through summer 2027 to clear backlog, keeping only the Cyberbeast variant at $110,000 as manufacturing shifts to Cybercab development."
+        ],
+        "sections": [
+          {
+            "title": "1. Nvidia Leadership Crisis and Stock Collapse",
+            "points": [
+              "Jensen Huang resigned as CEO after 33 years leading the company he co-founded, citing affairs with executives including one at Singapore-based Megaspeed whom U.S. intelligence suspects of Chinese espionage.",
+              "Colette Kress, Nvidia's finance chief, becomes interim CEO while the board searches for a permanent replacement; Harvey Jones chairs the board.",
+              "Nvidia shares fell as much as 14% today and have lost over $1 trillion in market value this month, making this the most serious leadership disruption in company history.",
+              "China dismissed spying allegations as \"smears,\" but the incident raises questions about corporate espionage and executive vetting in semiconductor companies."
+            ]
+          },
+          {
+            "title": "2. Starlink Speed Cap Undermines Ukraine's Drone Defense",
+            "points": [
+              "Starshield (military Starlink) re-imposed a 161 km/h speed limit on satellite connections, crippling Ukraine's drone interception systems designed to stop Russian Geran-4 drones flying at 300-400 km/h.",
+              "The limit prevents high-speed interceptors from reaching targets, allowing some Russian strikes to get through; Ukraine's Defense Ministry had recorded stable links above 400 km/h just three weeks prior.",
+              "Musk claims the U.S. government controls Starshield policy, while Washington states only Musk could authorize such restrictions, leaving unclear who imposed the speed cap and why.",
+              "The cap directly impacts Ukraine's ability to defend against aerial attacks and represents a significant tactical vulnerability in ongoing warfare."
+            ]
+          },
+          {
+            "title": "3. Google's Decision 1 Model Targets Specific AI Use Cases",
+            "points": [
+              "Gemini Decision 1 costs $0.10 per million input tokens with no output charges—approximately five times cheaper than Gemini 3.5 Flash-Lite—designed for organizations making repetitive yes/no, multiple-choice, or rating decisions.",
+              "Unlike general-purpose chatbots, Decision 1 only handles binary and categorical questions, returning terse answers with confidence scores, and accepts up to 256,000 tokens (roughly 190,000 words) of text, audio, images, or video.",
+              "The model outperformed TypeSafe's Jev and OpenAI's Decisions API on seven of nine benchmarks, signaling a shift toward specialized, cost-efficient models for narrow business applications.",
+              "This move reflects the broader industry trend away from expensive general models toward lightweight, task-specific AI for enterprise efficiency."
+            ]
+          },
+          {
+            "title": "4. Google AI Traces Disease DNA to Specific Cell Types",
+            "points": [
+              "AlphaGenome 2 predicts how genetic variants affect specific human cell types by analyzing DNA sequences against chosen cell states, calculating gene activity and methylation patterns unique to each cell.",
+              "Trained on over 107 million individual cell profiles from 68 tissues in humans and mice, the model found approximately 30% of causal disease variants on immune-cell benchmarks, up from 16% in the prior version.",
+              "The system reproduced an inflammatory bowel disease mechanism by isolating the exact genetic variant overactivating the ETS2 gene in gut cells, enabling precision medicine approaches.",
+              "This breakthrough enables researchers to link genetic variants directly to disease in specific tissues, accelerating drug discovery and personalized treatment development."
+            ]
+          },
+          {
+            "title": "5. United Airlines Blocks Third-Party AI Booking Agents",
+            "points": [
+              "United revised its Contract of Carriage to forbid unauthorized third-party AI agents from booking, purchasing, or managing travel, covering tools embedded in social media, browsers, and travel agencies.",
+              "Violations allow United to cancel bookings, void tickets, erase frequent-flyer miles, revoke elite status, and pursue legal action, citing privacy breaches, account security risks, and potential conflicts with federal aviation rules.",
+              "AI research and general trip planning remain permitted if tools never access United's website, systems, or user credentials; all bookings made before November 11, 2026 are grandfathered in and won't be canceled.",
+              "The restriction reflects growing airline concerns about uncontrolled automation creating liability and fraud risks while AI agents proliferate in travel booking."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Nvidia CEO Jensen Huang resigns",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09QYtiJgVM4UPuIQJUBKZ_pSezPR0yS2-y8HRyKyBHoPCvVPDRyaGBnEU-3X3kYIRxjLhVf_mIMxpvy6zJM7W6WUIhKqysg_njXhnjKasnU7JJL-KjxFwLOTIWAN0NEEJGY/4vo/RyCSQW7NSBuAP_G_rdVK4w/h8/h001.Y2XHteS57bQIu84iGZLNb5TxYbjTIirJ0Oz-3z2NZHc"
+          },
+          {
+            "label": "Starlink speed cap disrupts Ukraine's drone defense",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09RtUAHRuH38jFvMN-S8Hp6uKd8fvXN2naELG9WC1vIc82MJnXvk643bi9wZGbIZMx22tpxiX7nO1OdrognUJIrlw_Dmt69tk0aRQo715Bh5gC4dCsib7iclXMkQMURa9dM/4vo/RyCSQW7NSBuAP_G_rdVK4w/h9/h001.Wu7ifm13npHWW8Gns-h_MefXieIlBXE6Ml7a6FhydtU"
+          },
+          {
+            "label": "United bars AI agents from booking flights",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhXEDxeB1ng7JSBEe_FsEtb-FlY-AFYV_uIDi0p54O-mua6E3jWPq5zZ3lYlkvDs9rK8VtNpA6TVRanVwa74gV7Dt--kExxicWX19LBjNqtVaY7yg-f7sxXIn_Y7wlJyo42XzopiWph_uYAuP3RgtIJya_sVb8H1GtrZXYZfpoljM/4vo/RyCSQW7NSBuAP_G_rdVK4w/h10/h001.ubyesm4wx5e0I1DR7Mx-8YM9fhC0zSW1dNwkR3FY8Cg"
+          },
+          {
+            "label": "Google joins the decision-model wave",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20ijpxYQZZyWs8mziPh1Z6dNYeUi60xk5HM--WJ9vgAR-aAVDXgZiq2p-fQks98Ynv2vH0j_K0Yt5fU6wheG5eAeieydxu7jHYnNnQepoLyYcDlY9khgq3rzbNALb_7INfY8NVO8_xAsz06Y_OF1e3CFwBDRs_2iGKOhi_hDbak35Aw/4vo/RyCSQW7NSBuAP_G_rdVK4w/h11/h001._h8Z0Ll-7bM7j16TFQkIV2NC3tjVcWKuR1wqFhMS65Y"
+          },
+          {
+            "label": "Google's AI traces disease DNA to specific cells",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51aa4t492QKkGf_RdVinS46nsgXz2CEDDL_7it5V_6aFCtJFPB_0A_9LM4w794XOrkYmmpHp3S0IDmujVEiFTTtfUK5Qe8Nr9di-WU1qo5UDhJMXV7S5S_pTkLE_p7Lqaz1w/4vo/RyCSQW7NSBuAP_G_rdVK4w/h13/h001.uqZWy8r-NJUe6pA3MA_LM1DQCjz4lXVRxJCK3O3CaTc"
+          }
+        ]
+      }
+    }
+  ]
+}
