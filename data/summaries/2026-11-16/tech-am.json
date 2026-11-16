@@ -1,0 +1,383 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-16",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Jensen Huang Nvidia Return Petition Amid Security Concerns",
+        "points": [
+          "Over 160,000-165,000 signatories including Elon Musk, Tim Sweeney, Garry Tan, Travis Kalanick, and 7,500 Nvidia employees (18% of workforce) are demanding Huang's reinstatement as CEO.",
+          "Huang resigned following revelations of extramarital affairs, including one with a woman accused of spying for China, prompting investigations into national security implications.",
+          "US Treasury Secretary Scott Bessent said Nvidia needs an outside chief and a 'dramatic shake-up,' signaling government concern; investigations will likely prevent Huang's reinstatement despite the petition."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Huang has personally discussed the possibility of returning to the CEO role."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Signature count specifically reported at 165,000, slightly higher than TLDR's 160,000+ figure."
+          }
+        ]
+      },
+      {
+        "title": "SpaceX Catches Starship Mid-Air for First Time",
+        "points": [
+          "SpaceX successfully caught Starship using launch tower mechanical arms after it completed a full orbital mission, a major proof-of-concept for full rocket reusability.",
+          "The vehicle orbited Earth 14 times over about 22 hours and deployed 26 Starlink satellites before returning to Starbase, Texas.",
+          "SpaceX has now captured both sections of the launch system (Starship and Super Heavy booster) during separate missions, though the Super Heavy booster's engines shut down early during this descent, causing it to explode over the Gulf of Mexico."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Described as the 15th test flight; a prior Super Heavy catch attempt had been aborted due to slight engine underperformance, demonstrating safety protocols."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Engineers are now investigating the cause of the booster's early engine shutdown and explosion."
+          }
+        ]
+      },
+      {
+        "title": "Alibaba's Qwen4-Max Challenges Frontier Models on Price and Coding Performance",
+        "points": [
+          "New model prices at $1.50 per million input tokens and $4.50 per million output tokens (tokens are small text units AI processes), with cached input 70% cheaper.",
+          "Beats Claude Opus 5.5 and GPT-6.1 Sol specifically on the DeepSWE coding benchmark, while scoring 43 on the Artificial Analysis index; it falls behind on broader benchmarks like Terminal-Bench and loses to Kimi K3.1 on some tasks, suggesting specialized coding strength rather than all-around superiority.",
+          "Features a 1M-token context window (the amount of information a model can process in one conversation)."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Positioned primarily as a coding-benchmark competitor to frontier US models."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Reduced task completion costs by 62% using fewer active parameters (71 billion per token vs. 95 billion previously) and 35% fewer total tokens, bringing average cost per professional task from $4.43 to $1.67; also filtered training data to retain defensive cybersecurity knowledge while removing offensive hacking techniques (unverified externally)."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Apple's Smart Glasses Strategy Centers on Software Ecosystem",
+            "points": [
+              "Apple plans to ship smart glasses in 2027 with Siri AI as the main differentiator.",
+              "Strategy bets on third-party app integrations with existing iPhone apps rather than unique hardware, aiming to compete against Meta and Google.",
+              "Apple's large developer ecosystem could provide an advantage via numerous integrations available at launch."
+            ]
+          },
+          {
+            "title": "Marathon Fusion Claims to Create Gold From Mercury",
+            "points": [
+              "Company claims to have created gold from mercury through a fusion process.",
+              "Potentially unlocks abundant isotopes for medical and industrial use."
+            ]
+          },
+          {
+            "title": "Programming Language Development Fundamentals",
+            "points": [
+              "Compiler architecture (the software that translates code into executable programs) involves sequential stages: text → tokens → tree → validation → execution or binary compilation.",
+              "No single stage is inherently difficult; complexity lies in generating useful error messages and maintaining consistency across multiple backends.",
+              "Process requires careful engineering to transform reliably between different representations."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Security Breach: Cursor's Claude Code Extension Compromised",
+            "points": [
+              "Attacker used an exposed access key from a Fireworks AI breach to push malicious updates to the Cursor marketplace on October 29.",
+              "Versions 2.1.312 and 2.1.313 stayed live for about 11 hours, attempting to install a persistent SSH backdoor (a hidden remote access point that survives restarts) on nearly 5,000 machines.",
+              "Users who installed either version should inspect for unauthorized SSH access and rotate credentials immediately."
+            ]
+          },
+          {
+            "title": "Claude Code's Projects Feature Adds Coordination and Real-Time Updates",
+            "points": [
+              "A new coordinator agent answers questions in project chat and updates users on each parallel coding thread's progress without manual checking.",
+              "Desktop users get custom themes that react to session state, such as snow falling as the context window fills up.",
+              "New '/btw' and '/fork' commands let users tackle side tasks or try new approaches; feature is in public beta for Pro and Max subscribers with a waitlist."
+            ]
+          },
+          {
+            "title": "Developer Skills Shift: Technical Expertise Alone Won't Sustain Careers",
+            "points": [
+              "A GoDaddy principal engineer argues new languages, frameworks, and stacks lose value as each AI model upgrade makes 'hard technical problems' easier to solve.",
+              "New playbook: write user stories for AI prompts, think at 1,000-engineer scale, learn business-side skills (product, marketing, sales), and focus on creativity/psychology problems AI can't easily train on.",
+              "Complex enterprise software is now easier to build than a simple website was five years ago, suggesting engineers should shift from technical depth to human-centered and strategic skills."
+            ]
+          },
+          {
+            "title": "Grok Bot Achieves High-Velocity Code Review with 0.5% Revert Rate",
+            "points": [
+              "Grok Bot's team merges 11,000 pull requests monthly while maintaining just a 0.5% revert rate (code rolled back due to errors).",
+              "A specific code review rule, shared publicly and viewed 1.2M times, enables this high-speed collaboration.",
+              "Orchestration across specialized 'crewmate' bots and a central coordinator shows large-scale parallel development doesn't require sacrificing code quality."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Amazon Loses 40 Satellites in Failed Rocket Launch",
+            "points": [
+              "A United Launch Alliance Vulcan rocket failed 10 minutes after liftoff, destroying 40 Amazon satellites.",
+              "This marks ULA's first total mission loss since 2006.",
+              "The failure delays Amazon's planned competitor to SpaceX's Starlink satellite internet service."
+            ]
+          },
+          {
+            "title": "US Tightens AI Chip Export Controls to China",
+            "points": [
+              "New interim rule requires export licenses for any data center with over 750 Nvidia H100/H200 chips (12 million TPP, a measure of computing power) that may serve Chinese companies.",
+              "Restrictions expand to Malaysia, Singapore, Indonesia, Thailand, and Brazil, while eliminating the Biden-era AI Diffusion Rule.",
+              "Goal is to prevent Chinese firms from remotely accessing AI computing power through foreign data centers as a workaround to direct chip bans."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Jensen Huang discusses return 💼, SpaceX catches Starship 🚀, making a programming language👨‍💻 ",
+      "date": "2026-11-16T11:51:02+00:00",
+      "summary": {
+        "headlines": [
+          "160,000+ signatures petition for Jensen Huang's return as Nvidia CEO amid investigations into national security implications and Trump ties",
+          "SpaceX successfully caught Starship mid-air using launch tower mechanical arms, proving full recovery concept after space mission",
+          "Apple betting on Siri AI app integrations for 2027 smart glasses launch, leveraging developer ecosystem advantage over Meta and Google",
+          "Marathon Fusion claims to have created gold from mercury through fusion process, potentially unlocking abundant isotopes for medical and industrial use"
+        ],
+        "sections": [
+          {
+            "title": "Jensen Huang's Potential Nvidia Return Faces Obstacles",
+            "points": [
+              "Online petition has garnered 160,000+ signatures from high-profile supporters including Elon Musk, Tim Sweeney, and Garry Tan",
+              "Huang currently under investigation examining how his actions may have damaged U.S. AI dominance and national security interests",
+              "Huang has discussed possibility of returning to CEO role but investigations will likely prevent reinstatement"
+            ]
+          },
+          {
+            "title": "SpaceX Advances Starship Recovery Technology",
+            "points": [
+              "Successfully caught Starship booster with mechanical arms from launch tower after completing space mission—major proof of concept",
+              "SpaceX has now captured both sections of launch system (Starship and Super Heavy) during separate missions",
+              "Aborted Super Heavy catch attempt due to slight engine underperformance, demonstrating safety protocols"
+            ]
+          },
+          {
+            "title": "Apple's Smart Glasses Strategy Centers on Software Ecosystem",
+            "points": [
+              "Plans to ship smart glasses in 2027 with Siri AI as main differentiator",
+              "Betting on third-party app integrations with existing iPhone apps rather than unique hardware to compete against Meta and Google",
+              "Large developer ecosystem provides potential advantage: countless integrations available at launch"
+            ]
+          },
+          {
+            "title": "Programming Language Development Fundamentals",
+            "points": [
+              "Compiler architecture involves sequential transformation stages: text → tokens → tree → validation → execution or binary compilation",
+              "No single stage is inherently difficult; complexity lies in generating useful error messages and maintaining consistency across multiple backends",
+              "Process requires careful engineering to transform between different representations reliably"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Tech world's calls for Jensen Huang to return to Nvidia",
+            "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+          },
+          {
+            "label": "Apple Bets on Siri AI Apps as the Main Draw for Its Smart Glasses",
+            "url": "https://www.bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan"
+          },
+          {
+            "label": "SpaceX Catches Starship in Midair at Texas Site After Space Trip",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-14/spacex-to-attempt-first-full-recovery-of-new-starship-rocket"
+          },
+          {
+            "label": "Making a programming language",
+            "url": "https://alfonsocampodonico.com/posts/making-a-programming-language"
+          },
+          {
+            "label": "Building always-on agents",
+            "url": "https://claude.com/resources/articles/building-always-on-agents"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "👀 Chinese model takes on frontier US models",
+      "date": "2026-11-16T13:02:48+00:00",
+      "summary": {
+        "headlines": [
+          "Alibaba's Qwen4-Max model beats Claude Opus 5.5 and GPT-6.1 Sol on coding benchmarks while costing 70% less for cached input at $1.50/$4.50 per million tokens.",
+          "Cursor's Claude Code extension was compromised for 11 hours after attackers exploited a Fireworks AI breach, affecting nearly 5,000 users with malicious SSH backdoor attempts.",
+          "Anthropic upgraded Claude Code's Projects feature with a coordinator agent that tracks parallel coding threads and keeps you posted in real-time.",
+          "Senior developer argues that learning new AI tools won't keep you relevant—instead, focus on user stories, business strategy, creativity, and problems that tests can't solve.",
+          "Grok Bot's team merges 11,000 pull requests monthly with a 0.5% revert rate using a specific code review rule that enables high-velocity collaboration."
+        ],
+        "sections": [
+          {
+            "title": "Alibaba's Qwen4-Max: Cheap and Competitive Coding Performance",
+            "points": [
+              "1M-token context window (maximum amount of information the model can process in a single conversation) model achieves 43 on Artificial Analysis index but narrows beats Claude Opus 5.5 and GPT-6.1 Sol on DeepSWE coding benchmark specifically.",
+              "Pricing at $1.50/$4.50 per million input/output tokens with cached input 70% cheaper makes it cost-effective for developers, though performance varies—strong on coding tasks but weaker on Terminal-Bench and other general benchmarks.",
+              "Falls behind Kimi K3.1 on some benchmarks, suggesting specialized strength in coding rather than broad capability across all tasks."
+            ]
+          },
+          {
+            "title": "Security Breach: Cursor's Claude Code Extension Compromised",
+            "points": [
+              "Attacker leveraged exposed access key from Fireworks AI breach to push malicious updates to Cursor marketplace on October 29.",
+              "Versions 2.1.312 and 2.1.313 remained live for approximately 11 hours attempting to install persistent SSH backdoor (a hidden remote access point that survives system restarts) on nearly 5,000 machines.",
+              "If you installed either version, inspect your system for unauthorized SSH access and rotate credentials immediately."
+            ]
+          },
+          {
+            "title": "Claude Code's Projects Feature Adds Coordination and Real-Time Updates",
+            "points": [
+              "Coordinator agent now answers questions in project chat and updates you on each parallel thread's progress without requiring constant manual checks.",
+              "Desktop users gain custom themes that react to session state, like snow falling as context window fills up, improving visual feedback.",
+              "Users can employ '/btw' and '/fork' commands to tackle side tasks or try new approaches within projects, now in public beta for Pro and Max subscribers with waitlist available."
+            ]
+          },
+          {
+            "title": "Developer Skills Shift: Technical Expertise Alone Won't Sustain Careers",
+            "points": [
+              "Principal engineer at GoDaddy argues that new languages, frameworks, and stacks lose value as each AI model upgrade diminishes their relevance, making 'hard technical problems' easier than ever.",
+              "New playbook: write user stories for AI prompts, think in scale of 1,000-engineer capacity, learn business-side skills (product, marketing, sales), and focus on problems where creativity and psychology matter—areas without simple answers for AI to train on.",
+              "Complex enterprise software is now easier to build than a simple website was five years ago; engineers should shift focus from technical depth to human-centered and business-strategic skills."
+            ]
+          },
+          {
+            "title": "Grok Bot Achieves High-Velocity Code Review with 0.5% Revert Rate",
+            "points": [
+              "Merges 11,000 pull requests monthly while maintaining just 0.5% revert rate (code that gets rolled back due to errors), proving a specific review rule enables safe, high-speed collaboration.",
+              "Engineer shared the exact review methodology behind this velocity on social media with 1.2M views, showing how orchestration across specialized 'crewmate' bots and a central coordinator can scale engineering teams.",
+              "Demonstrates that large-scale parallel development doesn't require sacrificing code quality if the right coordination structure is in place."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Qwen4-Max API",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqutzW2RvpFm_cJfXm2TOF_OXbHXf8MAgF_HFscyzdixWI0JYdWw4zVIywVeFNfvpqPaeimLgkjwmxL2a1YeDhJN6MfDKxoShVwAzTkpLOJHeqp6xMPwOLBdJv944b018M8rH1RajNTBT3I3rqoxDxsYGl_N7QIsvcxndhwrh41pHIi2kdXJuaivn1rGW_Y9qxyqEnhAzevlSkNSjZTQ3BF_5eWSxPpW-cSzMByPlGrpMApy6IOFZ-TD-1kdwzpd69-axLRKvlkLs9lmZFu5JeK48/4vs/d-OGT3w-THqDlatSqxknaA/h4/h001.G18V_wngKNAr1UKkt8vn0bkKPaEpKedhXo4wiJnThPI"
+          },
+          {
+            "label": "Cursor's Unauthorized SSH Access Inspection Guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcF_wlIq9qY0yWRCpoH7TY72t05O-iEvNl8uAVSRsCNgHKHe-7Q0h9f3dykQDEI5K5aF65Wz1F7LB2F_hKEcgNYfawU0NI8QbcAaMSl1LkExjbxgMJ9-YYL2-ahl2-s4dwB35dnloG_9i1vFKNwUjXfhGWUQISFvJP_6S4Mk9kPdU_ns_vOQYzgl1eZBSwax-iG2BqARpVUgxoLcdRR5I5TlAO4zh9QSQNqHHzRCcJ6AvQ/4vs/d-OGT3w-THqDlatSqxknaA/h8/h001.Ji3nKhXTWhcSYWePvbT3DpWefHzUBUNyEUPt26ef9Ro"
+          },
+          {
+            "label": "How to Build Always-On Agents (Anthropic Cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePXL_VL4BijUY3Ee6xiPXXmoe9d0qR4aOwz0G04ok3rIDqF5rXlqaHz8y6ChJSuiOsaxXRlY_iuLvm6m9L-iKwhtX67o9TauRnZHJk1k8UQIV6tVmfmXa79jr_u6xAF0A2XLuFaaGGJw0SfDvKdIw5A5jAuQktElRzjiqdLflhk5zfhxHUT8Vm_f0vo9_XltcwvnEBDXx0thx7E_p8Q52BOREUxicihr2jY6FEe7H3uULgdghhEyJKcRpH9tU8qQLG8p9JmEEQKc4H6pQNQmYAGQ/4vs/d-OGT3w-THqDlatSqxknaA/h29/h001.e3MMZ35IiPEP6uFgWXWrE1jC1yKZFJz9E9XUmhN0s5k"
+          },
+          {
+            "label": "Token Economizer: Reduce Agent Costs 18-31% (GitHub)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.yBywWjiZ7oCsTrXLmaNhksbQsGlM4HRqOwfGA6UMsAf4Ikzn_V_K_uLgj5meOB45f_hGDxgev0ORs45SNuURjaTPRig9LwinyY3K7K-m-UOB-4da1KdGvIYyxmux8abtMfAqUpfB8ojkf9mmuE2u6QGT3P50uuka1u0VvgJroXl74OBDUdiuZmo7YarHEg0h7oZ8E11X7PZqexjA-Ytp040mljkBs1mI-zg7YOzuaBprJVGW-dyL6gDyxb8n62UrbHIocK142uXzW7DM8Td53A/4vs/d-OGT3w-THqDlatSqxknaA/h28/h001.4snGDFBzbcBCQ706-tiuw_k36-uXpnFcMxPQ6MbFtb0"
+          },
+          {
+            "label": "Engineer's Career Advice: Why New AI Tools Won't Keep You Relevant",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEHV3OTFjFv_nfCHCs0EarH58Rlrjp1m0iyt0BMNn3RdVbG8EzKqOGRtQUFy57NPgyGMwV8DiTgAsmWfx47jjaIndgfHZNI7Mh9u7Cw-BoZltJ0SJg-HlbKFan2rGXhtPFeQdwdBxT4CIociDc8SBnI_kcpQAbyi88IkMhj3k2YHehXh7QQrJ5c-SUwnoaww_t8YjRyvMZRBDoJsFV_uSGqxipnpTdE06TBSvgnb43cCw/4vs/d-OGT3w-THqDlatSqxknaA/h14/h001.ttJVYs9_Pb34QtJTx3VJFjinkLPkdPGMUMakX_0IQ-Q"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ 165,000 sign letter to reinstate Nvidia's Huang",
+      "date": "2026-11-16T17:47:47+00:00",
+      "summary": {
+        "headlines": [
+          "SpaceX successfully caught Starship with mechanical arms for the first time, orbiting Earth 14 times and deploying 26 Starlink satellites before returning, though the booster stage exploded during descent.",
+          "165,000 people including Elon Musk signed a letter urging Nvidia's board to reinstate Jensen Huang after his resignation over extramarital affairs involving a woman accused of Chinese espionage.",
+          "Amazon lost 40 satellites when a United Launch Alliance Vulcan rocket failed 10 minutes after liftoff, marking ULA's first total mission loss since 2006 and delaying Amazon's Starlink competitor.",
+          "US Commerce Department implemented new export controls requiring licenses for data centers with over 750 Nvidia H100/H200 chips to prevent China from renting AI computing power through foreign providers.",
+          "Alibaba's Qwen4-Max AI model reduced task costs by 62% while using 35% fewer tokens, bringing average cost from $4.43 to $1.67 per professional task."
+        ],
+        "sections": [
+          {
+            "title": "SpaceX Starship Milestone and Booster Setback",
+            "points": [
+              "Starship completed its 15th test flight with successful catch by launch tower's mechanical arms—a critical step toward fully reusable rockets.",
+              "Vehicle orbited Earth 14 times over roughly 22 hours, deployed 26 Starlink satellites, and returned to base at Starbase, Texas.",
+              "Super Heavy booster engines shut down early during descent, causing the stage to explode over the Gulf of Mexico; engineers are investigating the cause."
+            ]
+          },
+          {
+            "title": "Nvidia Leadership Crisis Amid Security Concerns",
+            "points": [
+              "Over 165,000 signatories—including 7,500 Nvidia employees (18% of workforce), Epic Games CEO Tim Sweeney, Y Combinator's Garry Tan, and Uber co-founder Travis Kalanick—demanded Huang's reinstatement.",
+              "Huang resigned Thursday following revelations of extramarital affairs, including one with a woman accused of spying for China.",
+              "US Treasury Secretary Scott Bessent stated Nvidia needs an outside chief and 'dramatic shake-up,' signaling government concern about leadership and security integrity."
+            ]
+          },
+          {
+            "title": "US Tightens AI Chip Export Controls to China",
+            "points": [
+              "New interim rule requires export licenses for any data center with over 750 Nvidia H100 or H200 chips (12 million TPP, a measure of computing power) that may serve Chinese companies.",
+              "Restrictions expand to Malaysia, Singapore, Indonesia, Thailand, and Brazil, and eliminate the Biden-era AI Diffusion Rule.",
+              "Targets prevent workarounds where Chinese firms remotely access AI computing through foreign data centers."
+            ]
+          },
+          {
+            "title": "Alibaba's Qwen4-Max Cuts AI Model Costs Dramatically",
+            "points": [
+              "New model reduced task completion costs 62% using fewer active parameters: 71 billion per token versus 95 billion previously, and 35% fewer total tokens needed.",
+              "New pricing: $1.50 per million input tokens and $4.50 per million output tokens (tokens are small units of text that AI processes).",
+              "Company filtered training data to retain defensive cybersecurity knowledge while removing offensive hacking techniques; external verification of this split and real-world cost savings recommended."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "SpaceX catches returning Starship for first time",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhTqt0O5JuyNVPbSLXmIZV7J2zBFIfOFyTdzz-6qiAKOomqzFroQOxTpNTxSgZAFyBIzYj-PBKpYzfb2oiUCmoJRoxHtUnWMqKwfOZwlqegbB_JRDYsIkBbVLyEtBIctBV7sziq2ymxEZNdPq9_qOKVs_19s_xvk49D1C964C0oqNA37wFxiabXYP1EyxJIAwnZY1rTyw9w4kXh7eCZU20vo/4vs/uPtcE_UXS3WYg9e7AAWUsA/h8/h001.1rn0N4ey2vUGuMDPlpmZyH4tRareZZW4RAumWsoykkM"
+          },
+          {
+            "label": "165,000 sign letter to reinstate Nvidia's Huang",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhWtS15OZmF4EHk-SJz9hjXAeT2yECPesoS4xRNDy88oQbU75b658Rziih6v9ZY9ybBUQaXDGyKQ1gr2obPWiMRRltPmsela0fOd3ol2gFm-2kdUsGoOIXJ3nrZHcvXckDnKzWKL0cIDEW0zSUcejzyE/4vs/uPtcE_UXS3WYg9e7AAWUsA/h9/h001.nWTFv1wM5hhJbdF1eCrEmMMPjMjvTi0piw1JZFA0qmY"
+          },
+          {
+            "label": "Amazon loses 40 satellites in failed rocket launch",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhVJyp39lHwg2mvTDNLFNkwRz7uE-OMGRwPOPvDt0pa0afl4lKrAPuKmjmryg8lVYcVXtF6JOWIiylMMrh0qmD2Vp1LmFNPEB04xXZ8Fq2w4Esh-ZYyJK0yVbDh9w4sD59varIWdMuIE_OqZanpRFoN6PETfDWNy2g6j0mYTHQe4xBirpEu1cbbTPlmRiSJwy1Ep9RhBVEasNGBoG94O1DOBt0EtYQLo-KjUGQ6p7w8V5/4vs/uPtcE_UXS3WYg9e7AAWUsA/h10/h001.x0yKtfcipeHRCyZj-oA1iN4PWM5UIsCszi30Ked3bkE"
+          },
+          {
+            "label": "US blocks China from renting AI chips abroad",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuBdMstUHQkwDyLWg3pnDHmNyskTFs-0BXDDtnqvSMxZybNp0-fXb9sZHmBQ59D_Nwvf3PZiTHJ6YuQr7qqR-T4gMriJV6spIypBo7EJgyUvSnr6JuIVyAsKnOOtBeC0f3rdVGGna4oRWFqE2IDoGwi64NbVS-OxWjLPxHiB9DAdcN6Bxs99KVrW3vFyZ01rJxAysBAjOVHyoWtqwp9o-qBq/4vs/uPtcE_UXS3WYg9e7AAWUsA/h11/h001.VI3aRwf1QHKtddRJwLJiT1WEXnye084IWcU3KlwqMzc"
+          },
+          {
+            "label": "Alibaba's Qwen4-Max cuts task costs 60%",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhf6gpSZ7LIi2QzgjMLv9opKn_rOgNudvk73JLjvXtnle0UIkawpyJOS97CNC04DFxSvzd7I3WO24JGvT7vYo-x8vL2fSjv9_PXDjpbEuYXDCs6p2X58VLHOAHrGVeD9ZZ2p3nv_0ll9YPmZMtBR5749z3DvwsaN90BRg6ZJp73THxQVjt9kpsT0JraFyqi7qG2BrIolH63Bu2v_5L7c0ulk/4vs/uPtcE_UXS3WYg9e7AAWUsA/h13/h001.CqPQP2xQMj0_04a_voJBlZrfccNAkktf1mO7_COKXhc"
+          }
+        ]
+      }
+    }
+  ]
+}
