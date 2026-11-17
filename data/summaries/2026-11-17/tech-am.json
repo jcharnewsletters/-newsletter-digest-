@@ -1,0 +1,461 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-17",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Jensen Huang's Nvidia CEO Comeback Saga",
+        "points": [
+          "Trump publicly backs Jensen Huang's potential return as Nvidia CEO, downplaying concerns about his relationship with a woman (Megaspeed executive Alice Huang) suspected of being a Chinese intelligence asset, saying she hasn't been proven to be a spy.",
+          "Huang himself said in his first public statement since resigning that he would be honored to return if the board decides it serves the company's interest; he's scheduled to testify before Congress on December 1.",
+          "An open letter urging his reinstatement drew over 10,000 current/former Nvidia staff and endorsements from figures like Elon Musk, and Silicon Valley executives are organizing a lobbying 'war room' targeting the White House.",
+          "Nvidia's board is reportedly not considering Huang and is actively searching for a new CEO, putting company leadership at odds with political and employee pressure; a board source told the Washington Post there are no plans to reinstate him.",
+          "Nvidia's board formed a national security and export control committee, chaired by director Suzanne Nora Johnson, to oversee trade compliance following the scandal tied to Megaspeed's alleged GPU shipments to China (Commerce and Justice have confirmed a probe since 2024)."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Silicon Valley executives are specifically organizing a coordinated lobbying effort ('war room') aimed at the White House to push for Huang's return."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Nvidia's board created a dedicated national security and export control committee in direct response to the scandal, separate from the CEO question."
+          }
+        ]
+      },
+      {
+        "title": "Optimizely Supply Chain Attack Hits 178+ Major Websites",
+        "points": [
+          "Attackers exploited a flaw in Optimizely Web (a website A/B testing and optimization platform) to inject malicious JavaScript through its trusted CDN (content delivery network, a system that distributes web content from servers close to users), compromising 178 organizations including Zoom, GitLab, BBC, HSBC, CNN, Equifax, Salesforce, and IKEA.",
+          "The malicious scripts swapped cryptocurrency wallet addresses to redirect payments to attackers, skimmed credit card details, grabbed cookies and screenshots, and deployed iOS exploit kits targeting iPhone users.",
+          "Salesforce disabled the unauthorized scripts preemptively after investigating; Equifax halted Optimizely use and found no evidence of system compromise.",
+          "Security researcher Scott Helme publicly revealed the scope of the compromise; affected organizations are advised to audit their Optimizely Project JavaScript immediately and consult Optimizely's remediation guidance."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Frames the incident explicitly as a supply-chain attack and urges readers whose teams use Optimizely Web to audit their JavaScript now, linking to a full list of affected sites."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Names the specific researcher (Scott Helme) who exposed the campaign and details Salesforce's and Equifax's individual incident responses."
+          }
+        ]
+      },
+      {
+        "title": "Meta Launches Direct, a Standalone Instagram Messaging App",
+        "points": [
+          "Meta is testing Direct, a standalone messaging app that splits Instagram's inbox into its own app and lets users sign up via email or phone without needing an Instagram account.",
+          "It's currently being tested in select markets including Thailand and Turkey, mirrors Instagram's existing inbox design, and carries over existing chats; non-Instagram users must add contacts manually via usernames or QR codes.",
+          "The app includes parental monitoring controls and uses Meta's existing detection technology to flag inappropriate interactions with minors, blocking accounts from messaging unconnected users."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Rundown Tech",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Provides the most detail on child-safety features, including parental monitoring controls and restrictions on messaging unconnected users."
+          },
+          {
+            "newsletter": "The Rundown Tech",
+            "point": "Frames the launch as part of Meta's broader strategy to expand its messaging reach beyond the core Instagram app."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Smartwatch-Based Full-Body Movement Tracking (EchoMotion)",
+            "points": [
+              "Cornell researchers developed EchoMotion, which uses ultrasonic sound waves (inaudible high-frequency sound) emitted from a smartwatch's built-in speaker and picked up by its microphone to track full-body position, similar to sonar.",
+              "The system works with off-the-shelf smartwatches and a lightweight AI model, making it practical for everyday consumer devices without special hardware.",
+              "Potential applications include fitness tracking, daily activity monitoring, physical rehabilitation progress tracking, and integration with smart glasses to track object handling."
+            ]
+          },
+          {
+            "title": "US Tightens AI Chip Export Controls",
+            "points": [
+              "The Commerce Department closed a loophole that let foreign companies remotely rent access to advanced AI chips via data centers in Indonesia, Malaysia, Singapore, Thailand, and Brazil.",
+              "Companies from higher-risk countries must now apply for licenses with strict know-your-customer controls when transferring high volumes of advanced chips.",
+              "The new rule requires monthly reports detailing all transaction parties and takes effect 90 days after posting in the Federal Register."
+            ]
+          },
+          {
+            "title": "Formal Verification's Limits",
+            "points": [
+              "Formal verification (using mathematical proofs to check that software behaves as intended) has gone mainstream alongside AI development, but the term means different things to different practitioners.",
+              "Formally verified systems can still contain bugs because formal verification only mathematically proves certain specified properties, not total correctness.",
+              "It does produce well-defined, reviewable code objects, making it a fairly reliable method for finding bugs compared to other testing approaches."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Decision Models Becoming an Industry Standard",
+            "points": [
+              "Liquid AI's d1.2 and d1.2-ultra are omnimodal (able to handle text, images, and audio) decision models that return structured answers with confidence scores, auto-approving high-confidence calls and routing uncertain ones to human review.",
+              "They refuse to fabricate missing values, responding 'not found' instead, which reduces hallucinations (false information generated by AI) in production systems; pricing starts at $0.02 per million tokens.",
+              "Tencent's competing Hy4 flash model has 224B total parameters but activates only 12B per token, matching Claude Haiku 5.5 performance at roughly 18x lower cost ($0.07 input/$0.281 output per million tokens)."
+            ]
+          },
+          {
+            "title": "Finding High-Impact Staff Engineer Work",
+            "points": [
+              "Four signal sources for prioritization: system health (postmortems, cloud costs, repetitive toil), user friction (workarounds reveal unmet needs), organizational goals (OKRs), and industry patterns (lessons competitors already learned).",
+              "Teams that never adopted your internal platform reveal gaps your solution left behind, and user workarounds function as free prototypes for missing features.",
+              "The loudest problem (e.g., the latest outage) is often not the highest-impact one; document and weigh signals systematically before prioritizing a backlog."
+            ]
+          },
+          {
+            "title": "Claude Code Integrates with Linear for Persistent Backlogs",
+            "points": [
+              "Connecting Linear's MCP server (Model Context Protocol, a standard letting AI tools interact with external systems) to Claude Code lets the model create scoped issues before starting work.",
+              "Claude can generate 40+ detailed Linear issues from a single feature description, breaking it into focused work items that persist across context windows (the amount of text an AI can process in one session).",
+              "Fresh coding sessions can resume exactly where previous ones stopped by reading existing issues, solving the problem of AI agents losing continuity when conversation history fills up."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Chase Banking Outage Disrupts U.S. Payment Processing",
+            "points": [
+              "A software bug in Chase's on-premises hardware caused roughly 5,000 complaints starting around 2 p.m. ET Monday, with payment delays rippling to Bank of America, U.S. Bank, Wells Fargo, and third-party apps like Plaid.",
+              "Chase attributed the incident to a software bug with no evidence of a cyberattack; services were restored by 6:30 p.m. ET while competitors' systems remained unaffected.",
+              "This was Chase's largest outage since 2010 and the third major U.S. infrastructure failure in five days, following Microsoft Outlook outages and an FAA ground stop, highlighting systemic fragility in interconnected digital systems."
+            ]
+          },
+          {
+            "title": "Amazon's Satellite Internet Venture Suffers First Total Launch Failure",
+            "points": [
+              "United Launch Alliance's Vulcan rocket failed about 10 minutes into flight Sunday, destroying all 40 Amazon Leo broadband satellites aboard—ULA's first total mission loss in its 20-year history.",
+              "Ars Technica reports the core booster likely fired its BE-4 engines seconds past cutoff, causing the rocket to spin; Blue Origin's BE-4 engine valve was also implicated in New Glenn's May pad explosion.",
+              "Amazon has about 400 Leo satellites in orbit but needs 3,200+ for full service; each launch delay matters as SpaceX's Starlink, which already has thousands of satellites in orbit, maintains a significant lead."
+            ]
+          },
+          {
+            "title": "Hyperscale Data Centers Rival National-Level Emissions",
+            "points": [
+              "403 U.S. hyperscale data centers consumed 82 TWh of electricity between May 2024 and April 2025 (1.8% of U.S. electricity demand), producing 25.7 million metric tons of CO2 annually—comparable to Denmark's total emissions.",
+              "54% of this electricity came from fossil fuels, primarily natural gas and coal; nearly 25% of data center electricity demand draws from grids dirtier than the U.S. average.",
+              "Virginia, Oregon, Ohio, and Iowa account for over half of consumption; researchers had to build their own facility-level analysis because almost no public energy data exists for the sector."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "OpenAI's Child Safety Enforcement Measures",
+            "points": [
+              "OpenAI deployed warning screens in ChatGPT that trigger 24-hour account suspensions when users attempt prompts aimed at sexualizing children, with permanent removal for repeated offenses.",
+              "A new image classifier built with the National Center for Missing and Exploited Children detects child sexual abuse material, including AI-generated images, and in testing flagged 48% fewer images while catching the same number of real abuse cases.",
+              "OpenAI is sharing the classifier free via its API with select companies, publishing child-safety guidelines for developers, and giving law enforcement investigative tools."
+            ]
+          },
+          {
+            "title": "Apple Restricts AI Agent Access to Mac Controls",
+            "points": [
+              "Apple's macOS 27.3 beta splits device control permissions, requiring users to grant AI agents access only to specific apps or folders for tasks rather than full system control.",
+              "A new menu bar indicator shows when an app is actively controlling other applications, giving users visibility into AI agent activity on their Mac."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Trump backs Huang 💼, Instagram Direct💬, formal verification limits👨‍💻",
+      "date": "2026-11-17T11:45:15+00:00",
+      "summary": {
+        "headlines": [
+          "Trump backs Jensen Huang's return as Nvidia CEO while the company's board searches for a replacement, creating a governance standoff over leadership of the AI chip giant",
+          "Meta launches Direct, a standalone Instagram messaging app that works without an Instagram account, expanding its messaging ecosystem",
+          "Cornell researchers develop EchoMotion to track full-body movement using only a smartwatch and ultrasonic waves, enabling new fitness and rehab applications",
+          "US Commerce Department closes loophole allowing foreign access to advanced AI chips via Southeast Asian and Brazilian data centers, requiring licenses and monthly reports",
+          "Formal verification tools, increasingly used for critical software, cannot guarantee correctness—they can find bugs but systems may still contain flaws"
+        ],
+        "sections": [
+          {
+            "title": "Nvidia CEO Uncertainty",
+            "points": [
+              "Trump publicly backs Huang's potential reinstatement, downplaying concerns about his relationship with a woman suspected of being a Chinese spy, saying she hasn't been proven to be a spy",
+              "Silicon Valley executives are organizing a war room to lobby the White House for Huang's return",
+              "Nvidia's board is reportedly not considering Huang and is actively searching for a new CEO, putting company leadership at odds with political pressure"
+            ]
+          },
+          {
+            "title": "Smartwatch Movement Tracking",
+            "points": [
+              "EchoMotion technology uses ultrasonic sound waves from a smartwatch's built-in speaker and microphone to track entire body position, similar to sonar",
+              "The system works with off-the-shelf smartwatches and a lightweight AI model, making it practical for consumer devices",
+              "Potential applications include fitness tracking, daily activity monitoring, physical rehabilitation progress, and integration with smart glasses to track object handling"
+            ]
+          },
+          {
+            "title": "US Chips Export Controls Tightened",
+            "points": [
+              "Commerce Department closed a loophole that allowed foreign companies to rent access to advanced chips from data centers in Indonesia, Malaysia, Singapore, Thailand, and Brazil",
+              "Companies from higher-risk countries must now apply for licenses with strict know-your-customer controls when transferring high volumes of advanced chips",
+              "New rule requires monthly reports detailing all transaction parties involved; takes effect 90 days after Federal Register posting"
+            ]
+          },
+          {
+            "title": "Formal Verification Limitations",
+            "points": [
+              "Formal verification (a process that uses mathematical proofs to check if software works as intended) has gone mainstream with AI, but the term means different things to different people",
+              "Formally verified systems can still contain bugs—formal verification doesn't guarantee correctness, only that certain properties are mathematically proven",
+              "Formal verification does produce well-defined, reviewable, understandable code objects, making it fairly reliable at finding bugs compared to other methods"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Trump Backs Huang Comeback While Nvidia Board Seeks New CEO",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-16/trump-backs-calls-for-huang-to-be-reinstated-as-nvidia-ceo"
+          },
+          {
+            "label": "Meta is testing Direct, a standalone messaging app for Instagram",
+            "url": "https://www.engadget.com/2318452/meta-is-testing-direct-a-standalone-messaging-app-for-instagram/"
+          },
+          {
+            "label": "Researchers track whole body movement with just a smartwatch",
+            "url": "https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch"
+          },
+          {
+            "label": "US moves to cut China's remote access to AI chips",
+            "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/"
+          },
+          {
+            "label": "Formal Verification is Not Verifiable",
+            "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚨 170+ tech giants hit by major breach",
+      "date": "2026-11-17T14:07:50+00:00",
+      "summary": {
+        "headlines": [
+          "Optimizely breach exposed 178 tech giants including Zoom and GitLab to malicious code that swapped crypto addresses and stole card details through the platform's CDN.",
+          "Liquid AI's new decision models (d1.2 and d1.2-ultra) handle text, images, and audio with structured answers and confidence scores, ranking first on Artificial Analysis Decision Index.",
+          "Tencent's Hy4 flash model matches Claude Haiku performance at 18x lower cost with 224B parameters but activates only 12B per token.",
+          "Microsoft's Outlook outage began in July but went undetected for months before spreading globally, revealing a cascade of overlooked system failures.",
+          "Staff engineers can find high-impact work by systematically examining system crashes, costs, user workarounds, and industry patterns rather than chasing the loudest problems."
+        ],
+        "sections": [
+          {
+            "title": "1. The Optimizely Supply Chain Attack",
+            "points": [
+              "178 websites including Zoom, GitLab, and BBC were compromised when attackers exploited a flaw in Optimizely Web and injected malicious code through their trusted CDN.",
+              "The malware swapped cryptocurrency wallet addresses, skimmed credit card details, and deployed iOS exploit kits to target iPhone users.",
+              "If your team uses Optimizely Web, audit your Project JavaScript immediately—a full list of affected sites and remediation steps are available from Optimizely."
+            ]
+          },
+          {
+            "title": "2. Decision Models Becoming Industry Standard",
+            "points": [
+              "Liquid AI's d1.2 and d1.2-ultra are omnimodal (handling text, images, and audio) decision models that return structured answers with confidence scores, automatically approving high-confidence calls and routing uncertain ones for human review.",
+              "They refuse to fabricate missing values, saying 'not found' instead—critical for reducing hallucinations (false information generated by AI) in production systems.",
+              "Pricing starts at $0.02 per million tokens; Tencent's competing Hy4 flash costs $0.07 input/$0.281 output per million tokens but achieves similar performance to Claude Haiku 5.5 at dramatically lower cost."
+            ]
+          },
+          {
+            "title": "3. Finding High-Impact Staff Work",
+            "points": [
+              "Four areas yield signal: system health (postmortems, cloud costs, repetitive toil), user friction (workarounds indicate unmet needs), organizational goals (OKRs), and industry patterns (what competitors have already learned).",
+              "Watch for teams that never adopted your platform—they reveal gaps your solution left behind; workarounds are free prototypes users built for missing features.",
+              "The loudest problem (latest outage, manager mention) is often not the highest-impact; document and weigh signals systematically before prioritizing your backlog."
+            ]
+          },
+          {
+            "title": "4. Claude Code Now Integrates Linear for Persistent Backlogs",
+            "points": [
+              "Connect Linear's MCP server (Anthropic's Model Context Protocol—a standard for AI tools to interact with external systems) to Claude Code, then ask the model to create scoped issues before beginning work.",
+              "Claude generates 40+ detailed linear issues from your feature description, breaking it into focused work items that persist across context windows (the amount of text an AI can process in one session).",
+              "Fresh sessions pick up exactly where the last one stopped by reading existing issues, solving the problem of agents losing continuity when conversation history fills up."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Liquid AI decision models",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFw0U9Bbjkbx-xJmX5ffhlMvF0Ee_gNkpQywfBvrrRpJVxzIyba3Rc1_u-NBtKZ0d_dUk8dRXea0rvGJg5slqWiwrHhHWqGGuvOE8OFyhDVqqkZHnBhTofJYeun1WcD4ZjoPSWHjsaeoYsYNz9KbH_M8JmejulfOBa37yx_VOhI-aweFI_7kw2HO4KRENeJQXbOB2k5efELzcuHTJyDgP41dmDcSsSdvUVzW46iJEMoCrVjZ4MhUU_h5YbFnasLyP8/4vt/DKvoANT6RguoEUseuzwMBg/h3/h001.Dchv6qnu4XbHWFuhzHRArwhprQvmPEdjEKSuqbqhmYM"
+          },
+          {
+            "label": "Optimizely affected sites list",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIACqSyXb3VDn_UOcuvHLcQMhAW6uZYg2eD6uE4wkCOXesdgNov33Yol4pXwdo_kyb7nEnWcChR3yc6jWB6kwotqUTWgn89WExJ3cLkDILdzng8HQfBdTgt4HT_gAQ4dvYSXUwpdFforCWOgofC218s5CxzDdiWRR7anpfGF3uZYbwlns40xwX4aYdvIHjtfxvhPwNr-Kb6ujyH4vhsRxk0uxld1uLCVMD6yyHeMaqx-0CGvCa7cH9XuteKpSN9dsRkV-Bdnsj1Qp4NqVqlflZQGYEb_SOn6d9LD4ibd-R9XYuMRFgpq4Uq_PsEot3atixCg/4vt/DKvoANT6RguoEUseuzwMBg/h5/h001.9wsAA_CdL0bxozaGmo3xZXTs8PL5Df1LgSVW1M3VXSQ"
+          },
+          {
+            "label": "Staff engineer playbook by Sujith Jay Nair",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.lj8E5PmaCEQWZtY8yZ5P0tpgo6ToCn2osZw7cAIqq_3nTbw4dZbMuFcNhUD16HMwb0Vt4EWp6GPJ0aSLdVHkGjItpL_9HxvI8IW54iRiJwctOa315J2JNdp36w3KFTFL8hSqWmqDg4_xSoX46IXCPTViivPYYrYa-MeSPaBxsbgBCjyVjcyv4qfIsG_5nnpJk4LE-i29i0jjDQLmqYpeEFlgv9amYZh6zzldb4hm0HXD6yJK4e55RIRdOgWJLnsSeZCHbClxjVY29OsLqguOLg/4vt/DKvoANT6RguoEUseuzwMBg/h15/h001.fRk3ZQtDSno8GWMIX5NOCgjQOLHYbZyaVM2pMxNOVqc"
+          },
+          {
+            "label": "Always-on agent tutorial with Pi",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxZ3wprmEUEK6qUetW8Im97lXATeCvozxTMv8co1uitfOdluDOd-Mx9xxAiGVyi8uW0rFbR2D4fSUJDVkHsR3L5wV83EJ59DBXGLCSMPZa0wAOZvc00EGm7UiWIk4RqtUan2zrm1SfTl6vLgrXQixrGzlq7ujf5LdYPCAD7pOLna0Kp8k0BhFqAA4F6I1l9s3OUMkBTGy0bqVqF4duB6Ts36Y1x5hbJ08iI3l53YgO6I9uzir8dlq83CmqgUyv6ynI/4vt/DKvoANT6RguoEUseuzwMBg/h28/h001.cwtVBPCP5mS9hi9s1SchX864jTtUrPU9Po0MECVBCXc"
+          },
+          {
+            "label": "Agentic engineering workflow cookbook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEWOS8EWZLqfQrZy1zak5EpD66iYVUwmM6m4TECNdmA0-28MMNo2D0XkH20ZbxemiQVWmOOusqt5VkwSVo_8nV6890EADlkb05vUITQabCVz7s52k_d9D-w0TUY9D3JMgUdtM9Suj_FvWmDxLDUxH3DPUQ4ykNS-RzwgQINglz2McTsiqvEEHmDkeHuADpbgHbV_wjKC2b_iMTUWPb-q9_E13rRS9ta637B1yDNuisSlaeyCZsMJonukcQHnrd88EI/4vt/DKvoANT6RguoEUseuzwMBg/h30/h001.BK1ZcD7DK_E1eSGYp2VBHYGNL5OeQrxEdshZn0pW8v4"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🔌 The U.S. has an outage problem",
+      "date": "2026-11-17T15:31:33+00:00",
+      "summary": {
+        "headlines": [
+          "Chase banking software bug disrupted payment processing across major U.S. banks for hours Monday, the third major system failure in five days following Microsoft Outlook outages and an FAA ground stop.",
+          "Meta is testing Direct, a standalone Instagram messaging app that works without an Instagram account, expanding its messaging reach in select markets like Turkey and Thailand.",
+          "United Launch Alliance's Vulcan rocket failed 10 minutes into flight, destroying all 40 Amazon satellite internet spacecraft—the company's first total mission loss in 20 years.",
+          "Hyperscale data centers consumed 82 TWh of electricity annually and emitted 25.7 million metric tons of CO2, rivaling entire countries' emissions and raising sustainability concerns."
+        ],
+        "sections": [
+          {
+            "title": "1. Chase Banking Outage Cascades Across U.S. Financial System",
+            "points": [
+              "Software bug in Chase's on-premises hardware caused ~5,000 complaints at 2 p.m. ET Monday, with payment delays rippling to Bank of America, U.S. Bank, Wells Fargo, and third-party apps like Plaid.",
+              "Chase blamed the incident on a software bug with no cyberattack evidence; services restored by 6:30 p.m. ET and competitors' systems remained operational.",
+              "This was Chase's largest outage since 2010 and the third major U.S. infrastructure failure in five days, highlighting systemic vulnerability in interconnected digital systems."
+            ]
+          },
+          {
+            "title": "2. Amazon's Starlink Competitor Loses 40 Satellites in First Mission Failure",
+            "points": [
+              "United Launch Alliance's Vulcan rocket failed 10 minutes after launch Sunday, destroying all 40 Amazon Leo broadband satellites in what marks ULA's first total mission loss in its 20-year history.",
+              "Ars Technica reports the core booster likely fired its BE-4 engines seconds past cutoff, causing the rocket to spin; Blue Origin's BE-4 valve also caused New Glenn's May pad explosion.",
+              "Amazon has 400 Leo satellites in orbit but needs 3,200+ to reach full service—each launch delay matters as SpaceX's Starlink (already thousands of satellites in orbit) maintains a significant lead."
+            ]
+          },
+          {
+            "title": "3. Hyperscale Data Centers Rival National Emissions",
+            "points": [
+              "403 U.S. hyperscale data centers consumed 82 TWh of electricity between May 2024 and April 2025 (1.8% of U.S. electricity demand), producing 25.7 million metric tons of CO2 annually—comparable to Denmark's emissions.",
+              "54% of this electricity came from fossil fuels (primarily natural gas and coal); nearly 25% of data center electricity demand comes from grids dirtier than the U.S. average.",
+              "Virginia, Oregon, Ohio, and Iowa account for over 50% of consumption; researchers built their own facility-level analysis because nearly no public energy data exists, highlighting transparency gaps in the sector."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Chase software bug jams U.S. banks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.D6CBBB5uhOv7hG9WGsvpCVe8RBwbKBTHfi1WZYu70iEtr9NzEn__8yrqGnVOdYIbhioOUPKvytYuS0B5_jE1Y9ebVAtvj-tkFQuBtFDHzoVYDjLEvm3joyoPEJ8D7GyleR5dpwFvQZeQZckGV06YgAaxtTqfPLi9KvQDSinBmvCdKopg_DVlRgnaK_p9ZifKZFTIWFWuwOZa7GJ7_UnqOZJfBJraGbbAomij-nclJs2luP08W_35toXlef38M6Rvzz3rDAwvr4jMX8xpDC8OLkyuhQvO0eoU5niALuvypH0J5bEhpTwMNV9YtZSNENTy/4vt/nmzY_8_wQMionrTm-BOMpg/h5/h001.SG30Cm-ESMvkS6AmxJU5KR7uIFpDQMgCEQeQq3fHptQ"
+          },
+          {
+            "label": "Instagram spins DMs into Direct, again",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.TVOPfGDj18_US_EBC2XirUGxFUNEHN5catXMZE9vHH7tXYda0XgB7sj3-r_kLeMHCzJI8CmzqP64HXyW8p280ClYsAbagvV0OCZ1IplfHBegk5M6jkVvOjW5rlKnz_DuV6X12vKiBZ1msI00Na6dEakPqI_N5nTLefXvj-DM7_p11itizfD2IaDUIWU_XXyo6y4947DfKlP2jciiFSCPkicLghzHLBag2F8iEoHTeHYCKFQWKekN9jzktmFa8-lAwJx9tiXOAzjQqC9SM9MBTc517v_I7PaCiG2H562NxbTY6n3ZaaVtJB_3149QSfyx/4vt/nmzY_8_wQMionrTm-BOMpg/h11/h001.-8mzBEM1LJ0dPt8m9PASxNoaTxN9g8Gi7OzO9gZxtMc"
+          },
+          {
+            "label": "Amazon's Starlink rival loses 40 satellites",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NallU6gOLL2yXGXwZlApE0QG8IdHno8rRhGRFxbmZaTX0czwwzoMQlTp8AjOm0BVlrvKFD9W4dNHVEpxn76K1qJdKLUGBpgt-FEgchXoR9_dGy4I8mh_BAp_fY52K8sBaoMsZaUQP5wve2EywbtZo4B5at9nTFQqpnUmThI21axfGocFJdtvQOwpPW3GLMW3U2FwcEXm7N2WeTGDkA0w7Ahshk7PCWFGTKA5pwVlDby2A9-z4B3zumroAm4o8ht8dZg_Kdw2DRf0d6eCguRPciCnCmjER9muQntJnbPFK-EiT/4vt/nmzY_8_wQMionrTm-BOMpg/h14/h001.aZGTgh-nF3BgLWRHMxDJSVFfBxTGD7mViGTCbKACpt0"
+          },
+          {
+            "label": "Hyperscale data centers rival Denmark's emissions",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ktdcOaomvZ_2QDOUW2LaA_ceSmLD7LkM_M2k7X6QdczJ-pj2-lLa2AhRV0tL_5kZ0d1t9-eqNA4s3vmLz4-xy87x2w_V9wQs0t03oUdfMcbAB87Cp4Zewo0p4U9QH0IU3_OvDJeWrY4dov5XhS-PtMybmHtBhrapO9puwXdQ8tRR9HFFy1ajC7ESlivbGLVzCV8kZnJj4x3zEToVZoTahffoC92XtrSLZc_1Ce1SYhfhzCp0qL0D-4wjz63tuAczjeO7BcF03GmZVovzrmJwwIfW4XXudbWI1Gl7x5q96lfz5bXKPZBd5pPz40q8VfTE1XNPN1W6dz6vh9pWEcDmZio7EQ0FhQXBsoOhsbIvU9k/4vt/nmzY_8_wQMionrTm-BOMpg/h17/h001.nyDBNUuMIal5NCedAkZjo1i9rbIlU92SiuBTjIF7zS8"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Jensen Huang breaks his silence",
+      "date": "2026-11-17T17:56:52+00:00",
+      "summary": {
+        "headlines": [
+          "Jensen Huang says he's willing to return as Nvidia CEO after resigning amid an affair with a Megaspeed executive under investigation for Chinese intelligence ties.",
+          "Attackers planted malicious JavaScript on websites of 178 major organizations (Zoom, HSBC, CNN, Equifax, Salesforce, IKEA) through Optimizely platform to steal crypto and infect iPhones.",
+          "Meta launches Direct, a standalone messaging app that works without an Instagram account and is testing in Thailand and Turkey with parental monitoring features.",
+          "Nvidia forms export-control board after Huang's exit amid investigation into Megaspeed shipping GPUs to China, with Commerce and Justice confirming Megaspeed probe since 2024.",
+          "OpenAI rolls out child sexual abuse material detection tools including 24-hour account suspensions for users attempting child sexualization prompts."
+        ],
+        "sections": [
+          {
+            "title": "Jensen Huang and Nvidia's Leadership Crisis",
+            "points": [
+              "1. Huang resigned as founder and CEO after admitting to an affair with Megaspeed executive Alice Huang, whom US authorities suspect of working for Chinese intelligence.",
+              "2. In his first public statement since leaving, Huang said he would be honored to return if the board decides it serves the company's interest; he is scheduled to testify before Congress on December 1.",
+              "3. An open letter calling for his return drew over 10,000 current and former Nvidia staff plus endorsements from figures like Elon Musk, but a board source told the Washington Post there are no plans to reinstate him.",
+              "4. Nvidia's board established a national security and export control committee chaired by director Suzanne Nora Johnson to oversee export compliance and trade risks following the scandal."
+            ]
+          },
+          {
+            "title": "Website Compromise Campaign Targeting Crypto and iOS Devices",
+            "points": [
+              "1. Security researcher Scott Helme revealed attackers planted malicious JavaScript on 178 organization websites (Zoom, HSBC, Equifax, CNN, Salesforce, IKEA, among others) through Optimizely, a website optimization platform.",
+              "2. The malicious scripts attempted to swap cryptocurrency payment addresses with attacker wallets, skim credit card numbers, grab cookies and screenshots, and deploy exploit code onto iOS devices.",
+              "3. Salesforce investigated unauthorized script changes by Optimizely and disabled them preemptively; Equifax halted Optimizely use and found no evidence of system compromise.",
+              "4. The attack chain exploited the trust organizations place in third-party optimization platforms, affecting millions of users across compromised sites."
+            ]
+          },
+          {
+            "title": "Meta's Standalone Messaging App and Apple's AI App Safeguards",
+            "points": [
+              "1. Meta is testing Direct, a standalone messaging app that separates Instagram's inbox into its own application and allows signup via email or phone without an Instagram account.",
+              "2. Direct mirrors Instagram's inbox design, carries over existing chats and customizations, and requires email/phone-only users to add contacts manually through usernames or QR codes; currently available only in Thailand and Turkey.",
+              "3. Direct includes parental monitoring controls through Meta's existing tools and technology to detect inappropriate interactions with minors, with accounts blocked from messaging unconnected users.",
+              "4. Apple's macOS 27.3 beta splits device control permissions, requiring users to grant AI agents access only to specific apps or folders for tasks; a menu bar indicator shows when apps are controlling other applications."
+            ]
+          },
+          {
+            "title": "OpenAI's Child Safety Enforcement and Export Control Measures",
+            "points": [
+              "1. OpenAI deployed warning screens in ChatGPT that suspend accounts for 24 hours when users attempt prompts aimed at sexualizing children; repeated offenses result in permanent account removal.",
+              "2. A new image classifier built with the National Center for Missing and Exploited Children detects sexual abuse material, including AI-generated images, and in testing flagged 48% fewer images while catching the same abuse count.",
+              "3. OpenAI is sharing the classifier free through its API with select companies, publishing child-safety guidelines for developers, and providing law enforcement with investigative tools."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Jensen Huang says he's willing to return as Nvidia CEO",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuAYHGmJYnbdCioX6prb9giqnEp3EvKQ6Zy7o-mybo5aQ5cwaRJ7VWfJWYgGgRAxImp0yDOY8J6bokpj63kxNqjLEDFDLfjXR9KlCAsQ7JF266m12pGWsSOLlAaw0y867w7AecwOq1_39dtlTvzypjYrtydP8X3aUBx2UB7MNQrqc5oyQN5rES9t_frb8_Xy880/4vt/84QFsWUhS8KQZcBDbF4ekQ/h8/h001.0tT4QaxtKUNiuZm7HUQQttEklYNITQZiiNjaCqGYRXc"
+          },
+          {
+            "label": "Popular websites subverted in bid to steal crypto",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQRQTOnljR6KPPTSbEs7nZlExUmyGk-M1OaTnSQo7d9e2ftyiyEAeW-wLCrAm0cEWF4oegqYazb9rdaHDP4RPHejJK0upgNgFVvQ3KXnigPo0gYLd0A-EwSnxJc0Qz1uXArKZp-9FNuhSIbOynIFOHwtibLSo56tJF4xd56XFpYGw5-7QlykyTFhE2hpHsqX29X8SsaiUzaX_91Xeo_LlxY/4vt/84QFsWUhS8KQZcBDbF4ekQ/h9/h001.GdGyH4HFSJO_q3-sSD8zpwjFhT6Z7BMlqm2QWa9b8J4"
+          },
+          {
+            "label": "Meta launches Direct, a standalone messaging app",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRSsqn9n9t-JFlNkNu_UfV2hxbjs0OBC2TXyEXIzB58pDXwhM7W4b9BquVO5sy3iuCyXbxgRc78RUA9i4qlHuEru-KG-3BPvpsjVXBzXbi6p1BI8yrHmqf6QtQVsWZao19KlMYOtZUdTodGJdGeqOlRrmub9LbcEj86_a6rVDsejAIX9JmdBHmh1pV5tdGnR3A/4vt/84QFsWUhS8KQZcBDbF4ekQ/h10/h001.4jrQbhmgj3Sy5xOtgj6JJ5hz5jxpd_2iYQxBEpz5J0Y"
+          },
+          {
+            "label": "macOS warns against giving AI apps full Mac control",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhQrqAzaBE9TY1HQ6YumqTzjquyq42y4oPHfJQBT1nK7s37xtgeKwPmWxNA86EeBaoqS16jXZ4DWl6bOBtEfRpqSukqA_w4ksunI1AkGZSIIwYcsUYwx4O1cdmiyTWtxJkBNbD2N3RgSS9_CTKnw8kBM/4vt/84QFsWUhS8KQZcBDbF4ekQ/h12/h001.m_0u_KBx-cliUYuPmkK6V-oH1rJGXnD4gsVDQkaPo7I"
+          },
+          {
+            "label": "OpenAI gives 24-hour bans for child abuse prompts",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuC1BywX0oAKOAQwdBflb6oQzaB1OhkN8sld3qUiqynwpd0alKYFvT3Ko4exADcpx6k2PmAYogCuZln4kSOfKX5V7WxUT_rNnRFxpZGsXQRf5icFi0shEUYD-F2ryED8nCDBJLB2X4NhkjsuZUeYUuR6TYUlaoC7y9aZgmplYXSg__V7sLIM8hG0YLNj75ZzbrA/4vt/84QFsWUhS8KQZcBDbF4ekQ/h13/h001.pKqD7ic94fofKOz48_1QT8yowobkHHzX9-T56ymUBow"
+          }
+        ]
+      }
+    }
+  ]
+}
