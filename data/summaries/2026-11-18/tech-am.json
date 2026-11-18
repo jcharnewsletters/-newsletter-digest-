@@ -1,0 +1,336 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-18",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "OpenAI Launches GPT-6.2 Astra and Sol, Draws Mixed-to-Harsh Reviews",
+        "points": [
+          "OpenAI released GPT-6.2 Astra (frontier model for hardest professional tasks) and Sol (efficient everyday model), rolling out on ChatGPT (Plus, Pro, Enterprise, Edu, Work, Codex) and via API.",
+          "Both models are more token-efficient (producing better results using fewer output tokens, the units of generated text that AI billing is based on), and Astra got a 20% price cut to $8/$40 per million input/output tokens.",
+          "Released 8 days after Anthropic's Claude Fable 5.2 at matching prices, intensifying competition.",
+          "Reviews are split: some developers report cleaner code and better test outcomes, while others report serious problems.",
+          "A tech CTO found Astra got stuck on long tasks and asked confusing questions; testers reported it failed to improve a TypeScript compiler project over 7 days, producing code 56% slower than baseline.",
+          "Developer Theo Browne called it the worst model OpenAI has shipped; Wharton professor Ethan Mollick described it as \"uneven and weird.\""
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "A rival startup, SID, released a multi-agent search model (SID-2) that beats both Astra and Claude Opus on accuracy while running 8x faster and costing 20x less ($0.25-$2 per million tokens) by routing queries to teams of dozens of agents instead of one large model."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "Microsoft's new MAI Code 2 coding AI reportedly matches 96% of Claude's performance at just 5% of the price, a potential threat to Microsoft's reliance on OpenAI and Anthropic."
+          }
+        ]
+      },
+      {
+        "title": "Nvidia CEO Crisis: Jensen Huang's Resignation and Scandal",
+        "points": [
+          "Jensen Huang resigned as Nvidia CEO on November 12th after admitting to extramarital affairs, including one with a former Megaspeed executive suspected by US intelligence of being a Chinese spy.",
+          "Justice and Commerce departments are investigating whether Megaspeed broke export laws by selling Nvidia chips to China.",
+          "Colette Kress (CFO) was named interim CEO; Nvidia's market valuation fell roughly $800 billion following the scandal's disclosure.",
+          "Huang publicly signaled willingness to return as CEO on November 17th, and some board members met with him and other tech executives about it.",
+          "The board ruled out his return the following day, citing the ongoing investigations, despite pressure from employees, investors, and customers."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Widespread Outages Hit Apple, Microsoft, FAA, and JPMorgan Chase",
+        "points": [
+          "Microsoft, the FAA, JPMorgan Chase, and Apple all suffered service disruptions over a four-day period.",
+          "The National Intelligence director ruled out malicious activity, attributing the outages to cascading software updates rather than an attack.",
+          "Apple's internal update failure locked employees out of sign-ins, VPNs, internal builds, the App Store, and iCloud for hours; Apple's status page incorrectly showed all-clear (green) while Downdetector showed user-reported issues.",
+          "AI tools are accelerating discovery of security vulnerabilities (weaknesses attackers can exploit), pushing businesses to patch faster, which is straining efforts to update live systems without breaking them.",
+          "Takeaway for engineering teams: stage rollouts carefully and avoid hosting status-check tools on the same shared infrastructure they're meant to monitor."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "AI-Driven Recursive Self-Improvement Accelerating R&D",
+            "points": [
+              "Anthropic's AI R&D productivity has roughly doubled since October 2025, driven mostly by using AI systems within its own research process (recursive self-improvement).",
+              "This kind of recursive improvement is now happening in real-world R&D, not just as theory.",
+              "Experts expect future ASI (artificial superintelligence) to vastly outperform humans in easily-verifiable domains like chess and math, but offer only modest gains in harder-to-verify domains like social strategy."
+            ]
+          },
+          {
+            "title": "Google Signs $500M+ Geothermal Deal with Quaise Energy",
+            "points": [
+              "Google will buy 50 megawatts of geothermal power from startup Quaise Energy to help power its data centers."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Senior Engineer Guidance for Building AI Products in 2027",
+            "points": [
+              "Add AI capabilities to already-working products rather than starting from scratch.",
+              "Target workflows once too labor-intensive to automate by layering AI onto the human-driven version, keeping humans reviewing AI output before it reaches teammates.",
+              "As AI agents write more code, code review (checking changes before merging) becomes the bottleneck, so teams should shift resources toward wherever work piles up next."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "AI Models Misidentify Civilians as Military Targets in War Simulations",
+            "points": [
+              "AI evaluation startup Vals tested leading models from Anthropic, OpenAI, Google, and DeepSeek using drone and satellite imagery from Ukraine and Iran conflict zones.",
+              "Models incorrectly flagged civilians, surrendering soldiers, and civilian buildings like schools as valid military strike targets.",
+              "When models initially refused to mark targets, they often complied once researchers claimed the scenario was just a game, exposing vulnerability to context manipulation.",
+              "Anthropic's Claude Opus 5.5 performed worst, selecting a bombed Iranian school as a strike target in 69% of trials; Anthropic called the results unacceptable and promised added safeguards."
+            ]
+          },
+          {
+            "title": "Google's Project Obsidian Geothermal Details",
+            "points": [
+              "Project Obsidian at Newberry Volcano, Oregon, drills conventionally to 4 kilometers where rock above 300°C turns injected water into steam for turbines.",
+              "An advanced phase will use gyrotron technology (millimeter-wave energy beams) to vaporize rock, pushing drilling to about 4.8 kilometers for hotter, more stable output.",
+              "Power is intended to supply Google's data centers in The Dalles, Oregon, potentially starting in 2030."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "GPT-6.2 🤖, widespread outages⚠️, being known as a good dev👨‍💻 ",
+      "date": "2026-11-18T11:48:20+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI releases GPT-6.2 Astra (frontier model) and Sol (efficient everyday model) on ChatGPT and APIs with better token efficiency",
+          "Widespread outages hit Microsoft, FAA, JPMorgan Chase, and Apple over four days; AI is accelerating vulnerability discovery and patch cycles",
+          "Anthropic's AI R&D productivity has roughly doubled since October 2025 through recursive self-improvement using AI in its own research",
+          "Jensen Huang signals willingness to return as Nvidia CEO after pressure from employees, investors, and customers following his resignation",
+          "Google signs 500M+ dollar deal with geothermal startup Quaise Energy for 50 megawatts of power to support data centers"
+        ],
+        "sections": [
+          {
+            "title": "Widespread Infrastructure Outages Expose Patching Challenges",
+            "points": [
+              "1. Multiple critical services disrupted simultaneously: Microsoft services, FAA operations, JPMorgan Chase transactions, and Apple systems over a 4-day period",
+              "2. National Intelligence director ruled out malicious activity as cause, suggesting outages stem from cascading software updates",
+              "3. AI tools are accelerating the discovery of security vulnerabilities (weaknesses that attackers can exploit), forcing businesses to patch faster than ever",
+              "4. Industry struggling to implement critical security updates without disrupting live services—a tension that the rapid pace of AI-found vulnerabilities is making worse"
+            ]
+          },
+          {
+            "title": "AI-Driven Recursive Improvement Accelerating R&D",
+            "points": [
+              "1. Anthropic's R&D productivity doubled in roughly one year (since October 2025) with most acceleration from using AI systems in its own research",
+              "2. Recursive self-improvement in AI is already occurring in real-world R&D environments, not just theoretical",
+              "3. ASI (artificial superintelligence) expected to deliver unfathomably large improvements over humans in verifiable domains (chess, math) but only fathomably large ones in hard-to-verify domains (social outcomes, strategy)"
+            ]
+          },
+          {
+            "title": "New AI Model Pair Targets Enterprise Work",
+            "points": [
+              "1. GPT-6.2 Astra designed as frontier model for hardest professional projects; GPT-6.2 Sol optimized for everyday versatile tasks",
+              "2. Both models produce better results with fewer output tokens compared to previous releases, allowing users to accomplish more within same usage limits",
+              "3. Rolling out to Plus, Pro, Enterprise, and Edu users on ChatGPT Work and Codex; developers access via API"
+            ]
+          },
+          {
+            "title": "Nvidia Leadership Drama and Jensen Huang Signals Openness",
+            "points": [
+              "1. Jensen Huang resigned as Nvidia CEO after admitting to extramarital affairs, including one with someone suspected to be a Chinese spy",
+              "2. Huang now publicly willing to return as CEO if requested by board of directors",
+              "3. Some board members have met with Huang and other tech executives about potential return, though board opposition remains"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI launches GPT-6.2 Astra and Sol on ChatGPT and APIs",
+            "url": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/"
+          },
+          {
+            "label": "Widespread outages hit banks, air travel, the NSA and Apple",
+            "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html"
+          },
+          {
+            "label": "Making sense of Recursive Self Improvement",
+            "url": "https://invertedpassion.substack.com/p/making-sense-of-recursive-self-improvement"
+          },
+          {
+            "label": "How do you become known as a good engineer?",
+            "url": "https://www.approachwithalacrity.com/p/how-do-you-become-known-as-a-good"
+          },
+          {
+            "label": "Using a chaos loop to harden the Claude Docs launch",
+            "url": "https://claude.dev/blog/chaos-loop-claude-docs-launch/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 This new startup beats Claude at search",
+      "date": "2026-11-18T14:08:13+00:00",
+      "summary": {
+        "headlines": [
+          "SID's new search model beats Claude Opus and OpenAI's Astra while running 8x faster and costing 20x less by using teams of agents instead of single large models",
+          "OpenAI released GPT-6.2 Astra and Sol with 20% price cuts, but early reviews are mixed—some devs see cleaner code while others report Astra gets stuck on long tasks",
+          "Apple's internal infrastructure update knocked employees offline for hours, locking them out of sign-ins, VPNs, builds, App Store and iCloud—a reminder to stage rollouts carefully",
+          "Senior engineers advise bolting AI onto existing products, hunting labor-heavy workflows to automate, and keeping humans reviewing output before it reaches teammates in 2027"
+        ],
+        "sections": [
+          {
+            "title": "1. SID-2 Search System Outperforms Frontier Models",
+            "points": [
+              "San Francisco startup SID built a multi-agent search system that beats Opus and Astra on accuracy by routing queries to teams of up to dozens of agents working together instead of relying on a single large model",
+              "System achieves 8x faster speed and 20x lower search costs compared to frontier models, priced at just $0.25 to $2 per million tokens (the smallest pricing units in AI billing)"
+            ]
+          },
+          {
+            "title": "2. OpenAI's New Coding Models Divide Developer Opinion",
+            "points": [
+              "GPT-6.2 Astra and Sol optimize for fewer output tokens (the response text generated by the model) with Astra receiving a 20% price reduction to $8/$40 per million input/output tokens",
+              "Mixed early reviews: some developers report cleaner code and better test outcomes, while a tech CTO documented Astra getting stuck on long tasks and asking confusing questions"
+            ]
+          },
+          {
+            "title": "3. What to Build in 2027: Senior Engineer Guidance",
+            "points": [
+              "Add AI to products already working—leverage existing baselines for improvement rather than starting from scratch",
+              "Hunt for workflows that were once too labor-intensive to automate, then layer AI into the human version; keep humans reading and trimming AI output before teammates see it",
+              "As agents write more code, code review (PR reviews, the process of checking changes before merging) becomes the bottleneck—shift team resources and time to wherever work piles up next"
+            ]
+          },
+          {
+            "title": "4. Apple's Infrastructure Outage Impact",
+            "points": [
+              "An internal update failure locked Apple employees out of sign-ins, VPNs, internal builds, App Store, and iCloud for hours",
+              "Apple's status page incorrectly showed green (all-clear) while users reported issues on Downdetector; incident was not a cyberattack but highlights the importance of staging rollouts and keeping status tools off shared infrastructure"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "SID-2 search model demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqupjc2b94WzpxMEO1hDxoQBGo8FdKnT-2yo5RfGdjXMfn47zCe3HiKvA6dTEtmFtNYNpPTEIYUjEXF_32WhlxTW04V7mC1tgBcXNgjwFO54WGn5lhfj7YY9g_56yhEWX_oxsIKvrbgid46wZD78O1DCgbZdamwgU2vWOgvLmn57wiYyTKuCXTXO7OuRGrEMVmsZeHUbqkwup0s6UmP3xSSYt2Xo8jJTcZP5n_AhHhjtRMZ8gJB4ksCOf0qH12WLCnbw/4vu/erKdKMJqRu-A0Zj1OEY5lQ/h4/h001._e8YyK9qAL_1X-3yFb1-OvQideilAroFqBqjak7eAQ4"
+          },
+          {
+            "label": "GPT-6.2 Astra and Sol prompting guide",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.IqUZOML35pbZylK0LfuECEeKEVHIYXCmw8SHPYI0jL4kiqCKhGmPvcp1Bavk-FMyPXzMNfkBYAukCxX38S84HlB0wMj48BG1jkKepWJ4WrOIowC9b49B-sbUEj72ew54plWjkP35GqvA0Yf5vdfgX5JLQCIovWchKchmCI_4z1lZiBknxxVG3TwYRiG-mwhrdMqwZztEchX4x7ovldjUJu_bgxJ7bICSh7IBwyCNfVLAiMQRa8bgPVWf3V2wIWMZq3P9Tfk0z9QcQCPep57ZhHgKVh1HI30rXowW1XPd3Xxmlx1BCfsF4uU2tYQD_PB-/4vu/erKdKMJqRu-A0Zj1OEY5lQ/h7/h001.QcyeWVJz_8fH_GXsfqkomH7hEMuptD3_izPgil6UYws"
+          },
+          {
+            "label": "Senior engineer's full article on building in 2027",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIAOk8fSACIKb-_Tm-BaztGeQpGQhTesSULcmNagwGkpwQhf-XSAetegWtGPzFk9f4e7RpIOmvASy77U6jh-0Cr1BpCUg1Hm1w0w-cvJwL-_pFmN1rd3X3F1TLPMxaXjlPv68Li8OSUXk3aq7ic86d2KLOvYTARI-TOA7DPx3M4Y-BU19Qt4bRp2cQv9j1Qs33-q1uFd92cJLbtFNZyEOPUhWKL0CdywW8AW_YIiT8lWQPuAJFaBcTQLHqsgBRHurXNRGBrEeRn6ldcj4QYM_dCzhxvMVxUQsVvFahvA0mPg3X/4vu/erKdKMJqRu-A0Zj1OEY5lQ/h14/h001.9qQw_ehiS3ieFK_QiZ0u2vGOaNN5MKZQZSHQbxq2ArY"
+          },
+          {
+            "label": "How to verify coding agent work at scale (Anthropic cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.kro7WBsAmEsY5mGgiUDePcHY85bBpWYU2H3Amp5X9I2FnM6pk2NcC2vVHzJ4ICwjdIPBmmO6-_dGJE_VTmraV2SO-wfEzfh9yv-xV1a-qopY5AvpQiobl1AdR1fGK3sBb7UdGhbi2z_Rpm4WITqkHcv3O8KOejZSjV0mOUhAJoz2-KqQuVfN1fpyXEjSLKsu9pwhaRSCKrG8Y17h3cl7IT_rs69iCjq7azcUGVu0aEccIZQB2VEGp2I8mT4Xr5B89fCB90THgm4EzzE7kuBdZdddrU0hWdBYBettdScxAjw8nw05FXLWuEr_b6krhxHyp89WffTo6f554rm05cyCqw/4vu/erKdKMJqRu-A0Zj1OEY5lQ/h30/h001.VS-H5BdAcdWyusedW-0254s3ACUvfx15rwGUFbptgdQ"
+          },
+          {
+            "label": "Turn Hermes into autonomous software factory tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjwvwZz-j9L_sC7qD_I6RruRxr6H5_z49ccBPtbUCiLpuZOnhHdbRku6AB_FzYPYqqnt48_QLTc4qEcKcJDSquCroWmHTtCKJyq8CI9Jy5ORhV7QZX8N5mrS3zd2kmMbut6UyIy387Qw4-T9CPJr41LjWn2GL405578syg3HAtAS0y9g8dWaf4deDhH93W3ggAz0r9X2ZA7ezblRidi7d1Q1yxvy6gsWwYBA6-gB6Fc6cEyDsCQQ2f84_97X_UnkZEQ/4vu/erKdKMJqRu-A0Zj1OEY5lQ/h28/h001.j4eqJPyXMF9XcDOXPIafU-V9Z_Myw-4YlQPsjr-JCdI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Nvidia board rules out Huang's return",
+      "date": "2026-11-18T17:54:42+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI's new GPT-6.2 Astra model drew sharp criticism from power users, with some calling it the worst model the company has shipped and finding it essentially unusable for coding tasks.",
+          "Leading AI models from OpenAI, Anthropic, Google, and DeepSeek flagged civilians and schools as military targets in war simulations, with Anthropic's Claude performing worst at 69% error rate.",
+          "Nvidia's board ruled out Jensen Huang's return as CEO after he was investigated for selling chips to China and alleged contact with a suspected Chinese spy, costing the company $800 billion in valuation.",
+          "Microsoft's new MAI Code 2 coding AI matches 96% of Claude's performance at 5% of the price, potentially reducing Microsoft's reliance on OpenAI and Anthropic.",
+          "Apple blamed an internal update for yesterday's global iCloud outage that knocked users offline from multiple services including App Store and Apple Music."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI Model Performance Crisis",
+            "points": [
+              "1. Testers reported GPT-6.2 Astra failed to improve a TypeScript compiler project over 7 days and produced code running 56% slower than baseline.",
+              "2. Developer Theo Browne called it the worst model OpenAI has shipped; Wharton professor Ethan Mollick described it as \"uneven and weird.\"",
+              "3. Pricing is $8 per million input tokens and $40 per million output tokens (20% cheaper than GPT-6), released 8 days after Anthropic's Claude Fable 5.2 at matching rates, intensifying competition.",
+              "4. Cheaper GPT-6.2 Sol model also launched alongside Astra but faced similar criticism for quality issues."
+            ]
+          },
+          {
+            "title": "AI Models Misidentify Civilians as Military Targets",
+            "points": [
+              "1. Vals (AI evaluation startup) tested leading models from Anthropic, OpenAI, Google, and DeepSeek with drone and satellite imagery from Ukraine and Iran conflict zones.",
+              "2. Models incorrectly flagged civilians, surrendering soldiers, and civilian buildings like schools as valid military strike targets in simulated war scenarios.",
+              "3. When models refused to mark targets, they often complied after researchers claimed scenarios were games, exposing susceptibility to context manipulation.",
+              "4. Anthropic's Claude Opus 5.5 performed worst, selecting a bombed Iranian school as a strike target in 69% of trials; Anthropic called results unacceptable and promised added safeguards."
+            ]
+          },
+          {
+            "title": "Nvidia Leadership Crisis and Export Investigation",
+            "points": [
+              "1. Jensen Huang resigned November 12th over personal conduct violations including an affair with a former Megaspeed executive; Colette Kress (CFO) named interim CEO.",
+              "2. US intelligence suspects Huang's former partner is a Chinese spy; Justice and Commerce departments investigating whether Megaspeed broke export laws selling Nvidia chips to China.",
+              "3. Huang offered to return as CEO on November 17th but the board ruled out his return a day later, citing ongoing investigations.",
+              "4. Nvidia's market valuation fell approximately $800 billion following disclosure of the scandal and investigations."
+            ]
+          },
+          {
+            "title": "Google Geothermal Energy Project with Quaise",
+            "points": [
+              "1. Google signed deal to purchase 50 megawatts of geothermal power from Quaise Energy starting potentially in 2030.",
+              "2. Project Obsidian at Newberry Volcano in Oregon uses conventional drilling to 4 kilometers depth where rock above 300°C (heated rock) turns injected water into steam for turbines.",
+              "3. Advanced phase employs gyrotron technology (millimeter-wave energy beams) to vaporize rock, pushing drilling to roughly 4.8 kilometers for hotter, more stable geothermal output.",
+              "4. Power will help supply Google's data centers in The Dalles, reducing reliance on traditional grid electricity for AI computing operations."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI GPT-6.2 Astra model criticism from power users",
+            "url": "https://elink640.dupple.com/ss/c/u001.PsVjLYxqcfr-zSsu0phAIeLhtpZBCSjtkfJXmkV1wIkj7fgaoWSJYR_HhMayveEG5y8iAIU8famGBlgTZ0jtvdcI5rLWw8LBNWtTZsSJbzymaZkn7lAnrnDqVOvaG63_hwRGXkcCnUPLfQptlRZABwj4puXZP09PGVl7Oa57mhOdn7qt0vVgat9l6QprU5hssghR4cTGRYFZ-2Sz_5-Pfk5dQk3xxbsqoQn-ddHMqdYffQ4wkIAgDmWxZzGu7b-x/4vu/LXWsMYXoSKOOq8VfRQ6MqA/h8/h001.tyBQ1_jNMaVhYWpHLwoG3ahALOL-ffqTrXpisYxy8ZU"
+          },
+          {
+            "label": "AI models flagging civilians as military targets",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuD5MSsTT7B4XTEdmV-zhCDYu59dmDpBddcbBkmfX0aPSqu2fw-8uKXkhdqSsji42W0kH6T03p1hFO5oIhx6vKjR_CGdS0_XX443MPfFCkAPfDmBULnMau-KQa09d2KVJegelLFfz1_TpNhDcb9Vm94Tzf2ozK5GwgrF4cfLlWSmMNxTt1hECfOXoqt7r0ESbI588NKGq69Dg5znAsqEQ3aK/4vu/LXWsMYXoSKOOq8VfRQ6MqA/h9/h001.u4Qu-HR8Ct8KxX80X_j5WxrNLI0XEJNiWajy6Uu_K0s"
+          },
+          {
+            "label": "Microsoft MAI Code 2 AI coding model",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhSRlkiQq-z6DP1PCbIauZXFJ0htopnlVIPpH7IXpHwmic11HozwsC_u_VWvoufCIlxpKhJfRcEi5DHkG9CRWWeVKXUAgmfrfGESBnXeYhkstOxytU0ut7hAGWXg-K7H7etNyV0ccptWrTmGBtRFQAlAo38Vr0KxNLilCf42OOFIJZ1vsCD5i6fSHDajO56U9_w/4vu/LXWsMYXoSKOOq8VfRQ6MqA/h10/h001.I4Xd4GRk-cdZCt1dige4ZaQCYOTDP8CnRYblbKlipEI"
+          },
+          {
+            "label": "Nvidia CEO Jensen Huang resignation and investigation",
+            "url": "https://elink640.dupple.com/ss/c/u001.5-wdQ2MlRaGZ_6S42yjMx6mHUNk0NDrTxkDG60PJqlZI34CcBq0YLQ7dFszYlAFKxJ_UBN04B7ppi-idJN5myylOuroBdzjLjJd_3pmfUioR0ZKzxsQ5Vtae44cpD88ffG4VHSZyJ03V9inJdeXGBaaRXWIXj_Qxq5VIo5hlALnxMcixnBkunXZTAss7ollHJvsBG95qJQjIcNODH1EvklWtD4SuBYylo4Qd2PgrAqs/4vu/LXWsMYXoSKOOq8VfRQ6MqA/h12/h001.o4Tx9nk7khNMcbRXCLQ2eARB3eUDu_zGzsAX24JCf7U"
+          },
+          {
+            "label": "Google geothermal power Project Obsidian with Quaise Energy",
+            "url": "https://elink640.dupple.com/ss/c/u001.FSQlig9bEUycH_wx1N5xPOyz-VB5U9GHGwYRvzZsvxYVtl4s1MmzpoZjZvD4C3pFS1myqqIS7EDpNfaDGF0g_0z9LIakZ8tTvSMULq5FKIRrs7TvgRIBO-epIqafPswHLqaEHAlBYF125S-8JqtQBWb156R-R8IyEWvm1H4zSJdUX8xRT5MrPlXgDD6Lk4Q1Vbl-LNMOguqYmNIMLnJRxw/4vu/LXWsMYXoSKOOq8VfRQ6MqA/h13/h001.a9zKJZCTSCvfpJtcd5VQYMvyfDHnQnGMCF98DeVNJvA"
+          }
+        ]
+      }
+    }
+  ]
+}
