@@ -1,0 +1,358 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-19",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic's Record-Breaking $81.3B IPO",
+        "points": [
+          "980 million shares sold at $83/share Wednesday, raising $81.3 billion — the largest IPO on record, surpassing SpaceX's previous $75 billion record.",
+          "Stock trades on Nasdaq under ticker 'ANT' with a $1.5 trillion fully diluted market cap.",
+          "Revenue surged to $16.2 billion in first half of 2026 (up from $4.6 billion all of 2025), but Anthropic still lost $104 billion over nine months, with compute costs (spending on AI chips and processing power) averaging $18.8 billion.",
+          "CEO Dario Amodei rang the Nasdaq opening bell; OpenAI expected to follow with its own IPO in 2027, likely intensifying competition for AI talent and resources."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "Despite the record raise, the company's massive losses and compute spend highlight the costly economics underlying frontier AI labs."
+          }
+        ]
+      },
+      {
+        "title": "Google's Gemini 4 Neon Challenges Claude on Price and Speed",
+        "points": [
+          "Gemini 4 Neon matches Claude Opus 5.5 on coding benchmarks while costing 75% less ($3 vs $15 per million tokens).",
+          "Outputs at 110 tokens per second, and runs roughly 3x faster than Google's prior 'Carbon' version.",
+          "In Google's Antigravity coding tool, Neon can delegate tasks to smaller parallel agents, tripling performance on one coding benchmark.",
+          "Google claims an edge over Claude and GPT on reasoning benchmarks, though independent testing against published benchmarks is advised before relying on vendor claims."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Tesla's Autonomous Vehicle Without Controls",
+            "points": [
+              "Tesla is developing a fully autonomous Model Y variant with no steering wheel or pedals, seating 6-7 passengers for group transport.",
+              "Standard Model Y production with traditional controls continues indefinitely as a separate product line.",
+              "The controls-free version requires full Level 5 autonomy (complete self-driving in all conditions without any human intervention) to operate legally."
+            ]
+          },
+          {
+            "title": "Hardware Design Becomes a Software Problem",
+            "points": [
+              "Most hardware engineering is actually calculation disguised as physical design — fundamentally a software problem.",
+              "Industry currently does these calculations manually, like arithmetic without algebra, lacking algorithmic abstraction layers.",
+              "If hardware engineers build algorithms for designing hardware, small teams could construct large-scale systems, echoing past abstraction breakthroughs that multiplied human capability."
+            ]
+          },
+          {
+            "title": "Foundation Software and Open Source at Scale",
+            "points": [
+              "AI-generated pull requests are flooding open source projects, overwhelming maintainers' review capacity.",
+              "Proposed fix: developers publish AI-generated forks separately without merge expectations, letting maintainers search forks and selectively pull improvements.",
+              "This lets AI agents hunt across forks for valuable patterns and changes automatically, addressing the structural scaling problem as AI democratizes code contribution."
+            ]
+          },
+          {
+            "title": "Gravity-Based Wireless Communication Demonstrated",
+            "points": [
+              "Researchers demonstrated gravity-based wireless communication as a practically unblockable alternative to electromagnetic (radio) signals.",
+              "It enables secure transmission even when conventional wireless is jammed or screened."
+            ]
+          },
+          {
+            "title": "AWS Launches ExtendDB 1.0",
+            "points": [
+              "Open-source DynamoDB-compatible database adapter lets developers run cloud workloads on PostgreSQL, SQLite, Cassandra, or MongoDB without rewriting code."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Prime Intellect Launches Model Factory for In-House AI Training",
+            "points": [
+              "Model Factory lets engineering teams train and fine-tune open-source AI models in-house instead of renting proprietary ones.",
+              "Teams can deploy with one click and improve models using real-world production results.",
+              "Users pay per GPU-hour of compute rather than recurring API fees, shifting costs from consumption to ownership — mirroring how frontier labs like OpenAI, Anthropic, and Google iterate on their own models."
+            ]
+          },
+          {
+            "title": "Decade-Old NGINX Bug Discovered by AI Scanner",
+            "points": [
+              "A memory bug in NGINX's HTTP/2 code has existed since 2015, potentially allowing unauthenticated remote code execution on affected servers.",
+              "Found simultaneously by Wiz (using an AI code scanner), Xint, and other researchers; Xint chained it with a Linux kernel bug to gain root access.",
+              "No attacks reported yet, but urgent patching is needed given NGINX's use on potentially millions of web servers."
+            ]
+          },
+          {
+            "title": "SpaceXAI Engineer Scales to 3,000 PRs a Month by Fixing Agent Environment",
+            "points": [
+              "Scaled from reviewing 3 human PRs/day in 2024 to managing 300/day from AI agents, then shipped 3,000 merged pull requests in one month.",
+              "Key strategy: stopped reviewing agent output directly and instead fixed root causes — wrote lint rules, removed outdated patterns, and banned risky code patterns (e.g., React useEffect in product code).",
+              "Created architectural constraints (separate directories with blocked imports) and a 99% comment ban to prevent agents from taking bad shortcuts.",
+              "Human code review now focuses on judgment calls; most product code merges without deep review."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "AI-Accelerated Security Patches Trigger Mass Outages",
+            "points": [
+              "Wall Street executives and the NSA told Congress that AI tools found critical software flaws, forcing rushed patches that overwhelmed banking and government systems.",
+              "Microsoft alone fixed roughly 1,400 security flaws in one update, versus about 170 yearly previously, creating urgent deployment pressure since attackers have access to the same AI detection tools.",
+              "Cascading outages since last Thursday hit Microsoft 365 email, FAA flight operations, Chase customer access, the NSA's classified network, and Apple iCloud/Pay."
+            ]
+          },
+          {
+            "title": "AI Datacenters Set to Double Electricity Use by 2030",
+            "points": [
+              "The International Energy Agency forecasts datacenters will consume twice today's electricity by 2030, with AI driving 75% of the increase — an extra 350 terawatt-hours annually, more than Great Britain's total yearly consumption.",
+              "Datacenter carbon emissions are projected to rise 70% in four years; China will source about 50% of datacenter power from coal by 2030, while the US relies on gas for about 60% of new capacity (180GW of new gas plants planned).",
+              "This expansion nearly equals the EU's entire current gas generation capacity, locking in fossil fuel infrastructure for decades."
+            ]
+          },
+          {
+            "title": "UK Rejects Apple Backdoor Order; Chip Export Curbs Tighten",
+            "points": [
+              "A UK tribunal struck down a government secrecy order demanding Apple build an iPhone backdoor, calling the national security claim 'fanciful.'",
+              "Apple deactivated Advanced Data Protection for UK users in response, leaving British iPhones less protected than elsewhere while the case continues in open court.",
+              "TSMC and Samsung halted some chip shipments to China after new US Commerce Department rules required licenses for semiconductors using American technology, closing loopholes that had benefited Chinese firms like Baidu, ByteDance, Xiaomi, and Oppo."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Anthropic's historic IPO 💰, autonomous Model Y 🚗, foundation software👨‍💻",
+      "date": "2026-11-19T11:51:45+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic's IPO raises $81.3 billion at $83/share, the largest public offering on record, valuing the AI lab at $1.5 trillion fully diluted—surpassing SpaceX's previous record and signaling massive capital flowing into frontier AI.",
+          "Tesla is developing a fully autonomous Model Y without steering wheel or pedals that seats 6-7 passengers, while continuing to sell traditional Models with controls for the foreseeable future.",
+          "Hardware engineering is revealed as fundamentally a software problem—most design is calculation—meaning small teams could build large systems if they algorithmically optimize the design process itself.",
+          "Gravity-based wireless communication demonstrated as practically unblockable alternative to electromagnetic signals, enabling secure transmission even when conventional wireless is jammed or screened.",
+          "AWS launches ExtendDB 1.0, an open-source DynamoDB-compatible database adapter enabling developers to run cloud workloads on PostgreSQL, SQLite, Cassandra, or MongoDB without rewriting code."
+        ],
+        "sections": [
+          {
+            "title": "1. Anthropic's Historic IPO Reshapes AI Funding",
+            "points": [
+              "980 million shares sold at $83 per share on Wednesday, raising $81.3 billion total capital.",
+              "Stock begins trading Thursday on Nasdaq under ticker 'ANT' with $1.5 trillion fully diluted market cap.",
+              "Largest IPO on record globally, exceeding SpaceX's previous record, signals institutional confidence in AI sector.",
+              "OpenAI expected to follow with its own IPO in 2027, likely increasing competition for AI talent and resources."
+            ]
+          },
+          {
+            "title": "2. Foundation Software and Open Source at Scale",
+            "points": [
+              "AI-generated pull requests are flooding open source projects; maintainers face impossible review workload.",
+              "Proposed solution: developers publish AI-generated forks separately without merging expectations, allowing maintainers to search through forks and selectively pull improvements.",
+              "This model lets AI agents hunt for patterns across forks and identify valuable changes automatically.",
+              "Addresses structural problem of scaling code review as AI tooling democratizes software contribution."
+            ]
+          },
+          {
+            "title": "3. Tesla's Autonomous Vehicle Without Controls",
+            "points": [
+              "Model Y variant planned with zero steering wheel or pedals, designed to seat 6-7 passengers for autonomous group transport.",
+              "Regular Model Y production with traditional controls continues indefinitely—autonomous version is separate product category.",
+              "Requires full Level 5 autonomy (complete self-driving in all conditions without human intervention) to operate legally."
+            ]
+          },
+          {
+            "title": "4. Hardware Design Becomes Software Engineering",
+            "points": [
+              "Most hardware engineering is actually calculation disguised as physical design—fundamentally a software problem.",
+              "Industry currently performs these calculations manually, like doing arithmetic without algebra; lacks algorithmic abstraction layers.",
+              "Hardware engineers should design algorithms for designing hardware, enabling small teams to build large-scale systems.",
+              "This paradigm shift mirrors past breakthroughs where abstraction (algebra vs. arithmetic) multiplied human capability."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic IPO raises over $81 billion",
+            "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+          },
+          {
+            "label": "Tesla Model Y Without A Steering Wheel Is Coming",
+            "url": "https://insideevs.com/news/815960/tesla-model-y-steering-wheel-remove/"
+          },
+          {
+            "label": "Hardware Is Software",
+            "url": "https://unchartedterritories.tomaspueyo.com/p/hardware-is-software"
+          },
+          {
+            "label": "Unblockable communication with gravity",
+            "url": "https://www.science.org/doi/10.1126/sciadv.aee0802"
+          },
+          {
+            "label": "Foundation Software",
+            "url": "https://jacobtomlinson.dev/posts/2026/foundation-software/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 Google is owning this November",
+      "date": "2026-11-19T14:06:37+00:00",
+      "summary": {
+        "headlines": [
+          "Google's Gemini 4 Neon matches Claude Opus 5.5 on coding benchmarks at 25% lower cost ($3 vs $15 per million tokens), with 110 tokens-per-second output speed",
+          "Prime Intellect launches Model Factory, letting engineering teams train and fine-tune open-source AI models in-house instead of renting proprietary ones",
+          "10-year-old memory bug in NGINX HTTP/2 code (since 2015) discovered by AI-powered scanner, could allow unauthenticated code execution on servers",
+          "SpaceXAI engineer shipped 3,000 pull requests to production in a month by fixing the environment agents work in rather than trying to review their output"
+        ],
+        "sections": [
+          {
+            "title": "Google's Model Pushes Frontier Race Forward",
+            "points": [
+              "Gemini 4 Neon performs nearly identically to Anthropic's Claude Opus 5.5 on two coding benchmarks while costing 75% less per token ($3/$15 per million tokens)",
+              "Generates 110 tokens per second output speed, allowing faster code completion workflows",
+              "In Google's Antigravity coding tool, Neon can delegate tasks to smaller parallel agents, with Antigravity tripling performance on one coding benchmark",
+              "Worth testing against published benchmarks before relying on vendor claims"
+            ]
+          },
+          {
+            "title": "In-House Model Training Becomes Accessible with Prime Intellect",
+            "points": [
+              "Model Factory enables teams to train open-weights models on company-specific tasks, deploy with one click, and improve using real-world production results",
+              "Users pay per GPU-hour of compute rather than recurring API fees for proprietary models, shifting cost structure from consumption to ownership",
+              "Mirrors how frontier labs (OpenAI, Anthropic, Google) iterate: train model → deploy → improve based on performance data → repeat"
+            ]
+          },
+          {
+            "title": "Critical NGINX Security Hole Hides for a Decade",
+            "points": [
+              "Memory bug in HTTP/2 code has existed since 2015, allowing remote code execution without authentication on affected servers",
+              "Found simultaneously by Wiz (using AI code scanner), Xint, and other researchers; Xint chained it with Linux kernel bug to achieve root access",
+              "No attacks reported yet, but patch urgently needed—affects potentially millions of web servers using NGINX"
+            ]
+          },
+          {
+            "title": "SpaceXAI Engineer Automates PR Review by Fixing Agent Environment",
+            "points": [
+              "Scaled from reviewing 3 PRs/day from humans (2024) to managing 300/day from AI agents, then shipped 3,000 merged PRs in one month",
+              "Key strategy: stopped trying to review agent output and instead fixed root causes—wrote lint rules, removed outdated patterns, banned footguns (e.g., React useEffect in product code)",
+              "Created architectural constraints (separate directories with blocked imports) and removed justifications (99% comment ban) so agents can't take bad shortcuts",
+              "Human code review shifted to decisions requiring judgment; most product code now merges without deep review"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Test Gemini 4 Neon in your setup",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJeEce2H8kqNL3YE4NsuX53Pl95kNS5jOlFbTD-v6nQAcQBKR4a5Xsxe_sqonv0_WqzyLf2f4K2lwRaiaEldN5dYuDWsTBUlKM720lAct7-uSDEE9cBqACCYuPMYvseo4oYn7wr6XxhUhWf3LxeyqwASXEcUsBZAH9V-EmqxjDpgx4_oWT0ZvJXZVNmJPoq4vgBXumQEIT9DjvlbkzezJsC7b2gz5O67PgciUmYdhjMSthlT1Ju1aecuve0Pao1v7f35agHW8jsSwLpZPn0OuNnij873N7M0xIgxXJvcPYpWsC7EIEZopJtPEJ_u4aqV7nQ/4vv/I4wEwLmGQCqrT1ok_Wnnrg/h4/h001.Po0naTLf3x81sIslNY5Kl2_7EIroh8lOCUzLQ_dHVkY"
+          },
+          {
+            "label": "Prime Intellect Model Factory setup",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xquoy6Wg9SjXkaazvA0alexDOzv_MDYfKRct256HbH9Xi2ypxdDDVF9hsYNLa3p2zcZM9n8nuI_rf7o0RY2JDnhWwnGRL345xg5yemmcVtwCUfU_5PLi6g1V5t_5Wh88rOYt6G333hV00wQ_nHhuO_ZIqfYtsS_Elurrj9iuKwDdFprxg9FT-qFX0dJOZPPxtcRPEu_n1KAZ4IUq0NZEBz04hSe90wH5pH6jknZKcm_Jx9OFTAgu6d3hBxj4L8B0_bsgA79aW6ykGFumgaiK0v4VDrvlV7LqPTKnY0WLbiVRAu/4vv/I4wEwLmGQCqrT1ok_Wnnrg/h6/h001.6j3APiAFeSt4rhDJfd7OyjvSRAWM01cjEhqY6TCzPKM"
+          },
+          {
+            "label": "NGINX security patch guidance",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.VbEOSrOul3-OJLQ24EO2NLxvnw3ePGYym8J5StOMJs3Q2BJm9AU731oqgTySpkMO0pJhovd_bcG4XxozD7HwjRWAJgY8zgfbMxmx4JqyYIa2CHKHn4U-325KLTfvT7bpcHpGR6NO0pmz3rbtZ1ziFWB3orS3L3RTOczKpaDGD0WUvS31gupatYwaH9u5q_w-jBaZOm5XSyN7YDuUqAYPsBkulOBFQ9oev_ITe2e7lNd9k0Hqzh0_S0dp6M-dqWyDW5ea03v7_K3SwEchjsr_Yw/4vv/I4wEwLmGQCqrT1ok_Wnnrg/h8/h001.7svUjGirRr0toH4emtnjS4_XJiqXBivmMKIE0K6yt44"
+          },
+          {
+            "label": "Lauren Tan's pstack methodology (ship 2,000 PRs/month)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcGkRgEyc71JIQYBwNrF1m_PMmiVYk9x-9MDrOklEfYMB2Rnjc8ni4Fv2EtWhoQyg2VjIO3Di1Ymm5m_e_BzlyxnHzf7FS1dQblQjW7SvnB2ZuQarBJrsyOzZJC1YgZGS5ffW9IDf_HdQUjPfmRvhHluCYPb-ARLZAhLfOHNxMlvd7Knt-j91Uq_LxE0nUkcw9GZoWV8Zn2wcgGZyND2wh3YNnm_1DSsPoYmaAtXjxtvj6VzCnkn6el-CGdkntc3rL5nadcYUl_5lmkvF6TStsq4/4vv/I4wEwLmGQCqrT1ok_Wnnrg/h16/h001.a9JESAEvlPqwyMhtCLQicdDVnpCvcyLWBnK9xCEzGKw"
+          },
+          {
+            "label": "LangChain cookbook: build proactive agents that improve over time",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcEIPzZgqdcMVnocXJHe0GPx6I90L1YVxK950uW6vTtULKCCOJfJR9Ioj5imRxhrODSGdT3hQSaknLtGiFoCNfibMphHkKQiRFxJXKaXgtSF4mY3ZGEp39I8G6LSVCLOVbd_Eg1AVQiDi6quy0qK1o1dZMBHwviU5oyWuDxXAqyk8oLBCKw9myGvPleaGuRfXREehjLbyS0mNo1CYCC5Zqbh2Rx-0q121kWx0DUOiQrEQKxFwRXc04G63AwlXkyfygETbb8PFvxU45HiAtElEaeB/4vv/I4wEwLmGQCqrT1ok_Wnnrg/h31/h001.5GIfvzgXoPJtt95pSAJVLj_mkxtsay6WLnDz707ON6Y"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Anthropic starts trading in largest IPO ever",
+      "date": "2026-11-19T17:52:12+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic raises record $81.3bn in IPO with market value of $1.5tn, largest public offering ever, though the AI company lost $104bn over nine months with compute costs at $18.8bn",
+          "AI-discovered software flaws triggered urgent patch cycles that overwhelmed systems this week, causing cascading outages at Microsoft 365, Chase, FAA, NSA, and Apple services",
+          "Google launches Gemini 4 Neon model at 3x speed of Carbon version for $3 per million input tokens, claiming edge over Claude and GPT on reasoning benchmarks",
+          "AI datacenters will double electricity consumption by 2030 (using 350 extra terawatt-hours yearly, more than Britain's total), with 70% rise in carbon emissions as coal and gas power expansion",
+          "UK tribunal rejected government secrecy order demanding Apple build iPhone backdoor, ruling the national security claim 'fanciful,' while TSMC and Samsung halt some China chip shipments under new US export rules"
+        ],
+        "sections": [
+          {
+            "title": "1. Anthropic's Historic IPO and Financial Reality",
+            "points": [
+              "$81.3bn raised, the largest IPO ever (prior record: SpaceX's $75bn in June), giving the five-year-old company a $1.5tn fully diluted market value",
+              "Shares opened at $83, above the expected range; CEO Dario Amodei rang the opening bell on Nasdaq",
+              "Revenue surged to $16.2bn in first half 2026 from $4.6bn in all of 2025, but the company still lost $104bn over nine months with compute costs (purchasing or renting AI chips and processing power) averaging $18.8bn"
+            ]
+          },
+          {
+            "title": "2. AI-Accelerated Security Patches Trigger Mass Outages",
+            "points": [
+              "Wall Street executives and NSA told Congress that AI tools found critical software flaws, forcing rushed patches that overwhelmed banking and government systems",
+              "Microsoft alone fixed approximately 1,400 security flaws in one update (versus ~170 yearly previously), creating urgent deployment pressure as attackers have access to the same AI detection tools",
+              "Cascading outages since last Thursday: Microsoft 365 email down for millions, FAA halted flights, Chase customer access blocked, NSA classified network failed, Apple iCloud and Pay disrupted"
+            ]
+          },
+          {
+            "title": "3. Energy Crisis: AI to Double Datacenter Power Use by 2030",
+            "points": [
+              "International Energy Agency forecasts datacenters will consume twice today's electricity by 2030, with AI driving 75% of that demand increase (an extra 350 terawatt-hours annually, exceeding Great Britain's yearly consumption)",
+              "Datacenter carbon emissions projected to rise 70% in four years; China will source ~50% of datacenters from coal by 2030, US relies on gas for ~60% of projected capacity with 180GW of new gas plants planned",
+              "This expansion nearly equals the entire EU's current gas generation capacity, locking in fossil fuel infrastructure for decades"
+            ]
+          },
+          {
+            "title": "4. Apple Backdoor Order and Chip Export Restrictions",
+            "points": [
+              "UK tribunal sided with Apple, striking down government secrecy and rejecting Home Office's 'fanciful' national security argument for a Technical Capability Notice demanding backdoor access to encrypted iPhone data worldwide",
+              "Apple deactivated Advanced Data Protection for UK users in response, leaving British iPhones less protected than those elsewhere globally as the case continues in open court",
+              "TSMC and Samsung halted shipments of some chips to China after new US Commerce Department rules required licenses for semiconductors using American technology, closing previous exemption loopholes that benefited Chinese AI companies and phone makers like Baidu, ByteDance, Xiaomi, and Oppo"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic IPO announcement",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yheejIuNv7KbiiYNNlk7a96qZ-tT-U6cRWcm-LnA4jj7Ya5TNwI6zAfxnmZf4VOdqm8Yp4Z0ItHK5g37Q0MmfmLidjSlPRegq-3zVHmwulIDsaeYLQGa5imWX69Hhb0g14lE36KVLk6LxBe3niLqt49QQiTuxdbO56PzQq4VX5xPa/4vv/Tgb9DUTnQti3Yok4V7QzWA/h8/h001.jq7TyWiwjzDSPzXSD4hWOtT6HDJrxopCxYtzxGt2eUQ"
+          },
+          {
+            "label": "AI-found bug fixes blamed for US outages",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20iiBNH9N8_Qvp1griY6cuANxcAYxyS3uPuuXJwSRB702_0GLJ-29EK8ZtRfXntMZ3V6iUEhopxXpCf0xj6iHnf58xgDpyPfyRGB9p02IO3_4eqz3omOsus5atz8PvIb0n25CBo-0t1deZ-xaG8gbuuwr6uGZT0PauMMCkil03jjqerS-NOew8P6Umo4rpuSiJAzJMNDFATKgp3pH9C1aG6TG/4vv/Tgb9DUTnQti3Yok4V7QzWA/h9/h001.oYj26UrUoB5OVOqbrZFmKTko9UuIi2vYPx3eaW86MjM"
+          },
+          {
+            "label": "Google Gemini 4 Neon launch",
+            "url": "https://elink640.dupple.com/ss/c/u001.PsVjLYxqcfr-zSsu0phAIeLhtpZBCSjtkfJXmkV1wIlGmXMHxA0m2aR5Os9ZAd71uiLw4UEr7madzuiRHdb4sRBVq9qk89WgDWzxZTGL2R6ochLHGUI_Qt1ReIeU7VtYTBUYu7BuZ9pZId0NY9tGzCSQRymgglCQRGgpXmHVvdseeEl1Xk-QhDjVSZL9P2FrcWR05FaXrT3UrIzzyZbE4YK-7Q4QzkB1e9peANmXeOTpSqeACF6v3OUHC8Q46JXI/4vv/Tgb9DUTnQti3Yok4V7QzWA/h10/h001.WXpPf19g6YBfPQb9DcNcCmBhSIztkGVx7_STVrB8kOw"
+          },
+          {
+            "label": "Datacenters to double power use by 2030",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yheejIuNv7KbiiYNNlk7a96pDlCNHJ2dolksMinVHZEr9C_771_oqqAS9IX3bdFPp6ZKE454AvXcDt1QeAgGUKDq5dct90IjrRsJpfiXzarwXry8QBKplsp5-De_2YIlRMHg7UMrNDwmdj9TTQwnMVyecpS3ftHUOQnqvYk9qOTh1QvTv6SKqZRNUOV3XXS8HeS3UfNQbWokZ3eK89WBrA5g/4vv/Tgb9DUTnQti3Yok4V7QzWA/h11/h001.gY5Z8vw0oLlu4o6wcs5BCRViPoLqEH-bBdEXa_hPYSo"
+          }
+        ]
+      }
+    }
+  ]
+}
