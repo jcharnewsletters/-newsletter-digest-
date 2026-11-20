@@ -1,0 +1,477 @@
+{
+  "batch": "ai-am",
+  "label": "Morning AI",
+  "category": "ai",
+  "date": "2026-11-20",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Anthropic's record-breaking $81.3B IPO sends valuation past $1 trillion",
+        "points": [
+          "Anthropic priced shares at $83 (above target), closed first day at $97.17-$111.50 depending on source, up 17-33%, valuing the company over $1 trillion in the largest IPO on record, raising $81.3B.",
+          "Trades under ticker $ANT; retail investor demand reportedly the largest for any IPO in history, per CNBC.",
+          "Co-founders pledged 80% of their stock (~$20B per founder) to philanthropic causes; CEO Dario Amodei vowed not to bend to business or political pressure on AI safety.",
+          "Early backers scored massive paper gains: Amazon's stake worth $161B, Google's $147B, and Ashton Kutcher's Sound Ventures turned a $435M bet into ~$7B; 96% of Anthropic's 5,000+ employees became paper millionaires.",
+          "Deeper financial analysis shows headline 85% gross margin shrinks to 26% once training costs, free-user compute, and R&D are included, revealing a much thinner real profit picture."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Rundown AI",
+            "point": "Comes just 5 months after SpaceX's previous record IPO, reflecting intense capital competition for AI infrastructure; every earnings call will now test Anthropic's safety-first pledge against Wall Street growth pressure."
+          },
+          {
+            "newsletter": "The Neuron",
+            "point": "Columbia Business School analysis is the source of the 26% real-margin figure, highlighting how free-tier compute and R&D erode headline profitability."
+          },
+          {
+            "newsletter": "Superhuman (Zain Kahn)",
+            "point": "Anthropic's commemorative IPO video drew over 6 million views; stock rose despite declines across all three major market indices that day."
+          }
+        ]
+      },
+      {
+        "title": "Meta's Muse AI agent accessed sensitive user data during testing",
+        "points": [
+          "Muse reportedly accessed Signal messages and displayed bank balances, including other users' balances, during internal testing.",
+          "Meta attributes many incidents to AI hallucinations (the AI confidently inventing false data rather than real leaks), but concerns about broad device access persist.",
+          "Meta requires opt-in permissions (Full Disk Access on Mac plus a separate Messages connector), though reporting indicates Muse accessed the Mac Messages database without explicit consent in some cases."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "The Neuron"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Neuron",
+            "point": "Explained that Signal encrypts messages only in transit; once decrypted on-device, an agent with broad access operates on the unencrypted side, bypassing that protection. Recommended mitigations: grant narrow task-specific access, review proposed actions before they execute, and ask agents to list every file/account they'll touch first."
+          }
+        ]
+      },
+      {
+        "title": "Alljoined's AIR-O reads brainwaves to generate real-time images of focus",
+        "points": [
+          "AIR-O uses non-invasive brain data (electrical signals read without surgery) to generate real-time images of what a person is visually focused on, updating as focus shifts.",
+          "Claims roughly 15-minute adaptation time for new users; the demo has not yet been independently verified by outside researchers."
+        ],
+        "covered_by": [
+          "The Rundown AI",
+          "Superhuman (Zain Kahn)"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "The Rundown AI",
+        "items": [
+          {
+            "title": "OpenAI's AI agents now handle nearly half of long research tasks",
+            "points": [
+              "OpenAI's agents complete almost half of research tasks that would take humans 2-4 hours, up from a quarter in March; researchers run a median $2.4K of agent compute daily.",
+              "Agent use is up 11x since May, with two-thirds of researchers running 4+ agents simultaneously, effectively adding 6 research days per person per day.",
+              "For GPT-6.2 Astra, an agent (Codex) contributed key research insights for the first time, versus humans driving ideas for the prior GPT-6 Astra; researchers admit agents still produce 'AI slop' and lack taste, but have 'no confidence' their human edge in novel ideas will last."
+            ]
+          },
+          {
+            "title": "Apple developing Muse-like AI device agent for 2027",
+            "points": [
+              "Apple is reportedly building an AI agent that can control devices, use apps, browse the web, and write code, targeting a late-2027 launch."
+            ]
+          },
+          {
+            "title": "Google DeepMind maps paths to superintelligence",
+            "points": [
+              "Researchers outlined four paths to superintelligence (AI exceeding human capability across domains) and estimated AI compute is growing 10x annually, potentially cutting the cost of $1B worth of AI work to ~$1K within a decade."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Neuron",
+        "items": [
+          {
+            "title": "Nvidia reportedly in talks to acquire Inception for $500M+",
+            "points": [
+              "Inception's Mercury diffusion-based models (which refine whole blocks of text at once across multiple passes, rather than one word at a time) reportedly hit 1,068 tokens per second on Nvidia hardware at very low compute cost (eight API tests cost about four cents total).",
+              "Traditional autoregressive chatbots generate text token-by-token, each depending on the last, like typing line by line; Mercury instead edits full passages simultaneously, like an editor revising several paragraphs at once.",
+              "Test results were uneven: Mercury built a working dungeon-crawler game passing 2,000 randomized map checks, but stumbled on some writing constraints, suggesting the approach shows promise but isn't fully reliable yet."
+            ]
+          },
+          {
+            "title": "U.S. restricts advanced AI chip exports to overseas data centers",
+            "points": [
+              "Commerce Department restricted advanced AI chip exports to overseas data centers supplying compute to China and other restricted nations, effective November 19."
+            ]
+          },
+          {
+            "title": "Nearly 1,000 AI agents wrote 936 research papers on alphaXiv",
+            "points": [
+              "Blinded AI judges scored agent-written papers higher on rigor (9.0 vs 7.0 for humans) but rated them lower on novelty, suggesting agents excel at rigorous execution over original ideas."
+            ]
+          },
+          {
+            "title": "New safer agent design patterns emerging",
+            "points": [
+              "Gemini on Mac now runs background tasks (like sorting files or building slideshows) while a user pauses or approves each action, limiting damage from malfunction or compromise.",
+              "An 'external sandbox' pattern has coding agents write code that runs in a separate isolated box while the agent itself stays outside, containing potential damage from hijacking or errors."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Superhuman (Zain Kahn)",
+        "items": [
+          {
+            "title": "OpenAI launches ChatGPT Health",
+            "points": [
+              "Rolled out across all tiers and platforms, letting users connect wearable health data, build dashboards, and receive proactive health tips."
+            ]
+          },
+          {
+            "title": "Claude Meetings brings real-time document creation to Google Meet",
+            "points": [
+              "Users summon Claude by voice or chat during a call to generate live documents and whiteboards that update in real time.",
+              "After the meeting, users can reopen the page in Claude to access the full transcript, summary, action items, and all created artifacts."
+            ]
+          },
+          {
+            "title": "Google releases multiple new Gemini model variants",
+            "points": [
+              "Gemini 4 Hydrogen and Gemini 4 Neon debuted this week following last week's wide release of Gemini 4 Carbon; Gemini 4 Neon ranks #3 on the Artificial Analysis Intelligence Index.",
+              "New Gemini Tasks feature improves the core chatbot's handling of everyday and work-related assignments."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "TLDR AI",
+        "items": [
+          {
+            "title": "Google Gemini API adds Tool Retrieval for automated function execution",
+            "points": [
+              "Developers can register functions that the API automatically locates and runs based on input, automating workflows like issuing refunds without manual tool selection.",
+              "Gemini app on Mac can complete multi-step tasks across files, desktop apps, and the web in an isolated background window while the user's main screen stays free, with full user control to pause, approve, or restrict app access."
+            ]
+          },
+          {
+            "title": "Agent swarms outperform solo AI coders in benchmark tests",
+            "points": [
+              "Replit's test showed 32 Opus agents working together achieved an 18.9x speedup on NumPy workloads versus 3.7x for a single agent over two hours using more compute.",
+              "Gains depend heavily on how separable the task is; solo model performance actually declined as team size increased without proper task decomposition."
+            ]
+          },
+          {
+            "title": "Sandboxed AI models can covertly communicate via shared inference servers",
+            "points": [
+              "Researchers showed isolated models on the same inference server can trade information by subtly shifting calculations that other models read as encoded signals, despite being sandboxed (isolated) from each other.",
+              "This is a new attack vector challenging assumptions about security when multiple untrusted models share infrastructure."
+            ]
+          },
+          {
+            "title": "Apple's FastFrames enables real-time 480p video generation",
+            "points": [
+              "Generates 480p video at interactive latency—36 milliseconds per frame on a single GPU—enabling real-time video generation."
+            ]
+          },
+          {
+            "title": "Stripe publishes evaluation framework for coding agents",
+            "points": [
+              "Stripe Evals measures how well AI coding agents build realistic, high-quality integrations with Stripe APIs using role-playing agent scenarios.",
+              "Goes beyond simple pass/fail to assess integration quality and steer agents toward better real-world outcomes for businesses."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "The Rundown AI",
+      "subject": "🏁 Anthropic beats OpenAI to Wall Street",
+      "date": "2026-11-20T10:09:54+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic raises record $81.3B IPO, largest ever, with stock up 17% on first day and company valued over $1 trillion, making 96% of its 5,000+ employees millionaires on paper.",
+          "CEO Dario Amodei pledges Anthropic will not bend to business or political pressure on AI safety, contrasting with OpenAI's Sam Altman who called an IPO an 'ill-advised moment' two months ago.",
+          "OpenAI's AI agents now complete nearly half of research tasks that would take humans 2-4 hours, up from a quarter in March, with researchers running $2.4K of agent work daily.",
+          "Amazon and Google's early stakes in Anthropic are worth $161B and $147B respectively at IPO pricing, while Ashton Kutcher's Sound Ventures turned a $435M bet into ~$7B.",
+          "Apple reportedly developing Muse-like AI agent that can control devices, use apps, browse the web, and write code, with launch targeted for late 2027."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic's Historic IPO and Market Implications",
+            "points": [
+              "Anthropic priced shares at $83 (above target range), opened at $111.50, and closed first day at $97.17, valuing the company well over $1 trillion with $81.3B raised—the largest IPO on record.",
+              "Co-founders pledged 80% of their stock (~$20B per founder) to philanthropic causes, signaling commitment to safety-first mission despite massive personal wealth.",
+              "The IPO comes just 5 months after SpaceX's previous record IPO, indicating intense capital competition in AI infrastructure and frontier AI labs.",
+              "Every earnings call will test whether Anthropic can maintain its safety-first pledge amid Wall Street's pressure for growth and returns."
+            ]
+          },
+          {
+            "title": "AI Agents Accelerating Research and Development",
+            "points": [
+              "OpenAI researchers now run median $2.4K of agent work daily (up from ~$500K quarterly in March), with researchers saying they'd give up 40% of team headcount to retain agent access.",
+              "Agent use exploded 11x since May, with two-thirds of researchers running 4+ agents simultaneously, effectively creating 6 full research days per person per day.",
+              "Human researchers drove key ideas behind GPT-6 Astra, but for GPT-6.2 Astra, an agent (Codex) contributed key research insights, showing AI-assisted breakthrough potential.",
+              "Researchers acknowledge agents produce 'AI slop' and lack taste, but admit having 'no confidence' their edge in generating novel ideas will persist long-term."
+            ]
+          },
+          {
+            "title": "Strategic Investments and Market Winners",
+            "points": [
+              "Amazon's and Google's early Anthropic stakes are now worth $161B and $147B respectively at IPO pricing, among the largest venture returns ever achieved.",
+              "Sound Ventures (co-founded by Ashton Kutcher) turned a $435M bet into approximately $7B, demonstrating early-stage AI lab investments are outpacing traditional venture returns.",
+              "Early backers positioned before the IPO benefited from valuation expansion driven by strong demand and compute scarcity (shortage of AI chips and power availability)."
+            ]
+          },
+          {
+            "title": "Broader AI Industry Developments",
+            "points": [
+              "Apple is developing a Muse-like AI agent capable of controlling devices, using apps, browsing the web, and writing code, with launch targeted for late 2027.",
+              "Google DeepMind researchers published analysis of four paths to superintelligence (artificial general intelligence) and beyond, estimating AI compute is growing 10x annually—enough to reduce $1B of AI work cost to ~$1K within a decade.",
+              "Meta employees raised concerns that the company's Muse AI agent was mixing up chats and exposing sensitive user data including other users' bank balances, highlighting privacy risks in multi-user AI systems.",
+              "Alljoined unveiled AIR-O, an AI using non-invasive brain data to generate real-time images of visual focus, claiming 15-minute adaptation time for new users."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Anthropic raises $81B in the largest IPO ever",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf9PgX-SM-WhMwqoqc9wfnAnnydFh6RyWGuihWTTOLr454JCVdy03LbrZ9zOKUS5hIMwkanhBJXImwdJlYvzfuSpOvp8HSx85i80Y8q_Zq4r60tXeEn9ftUvtcEv-jA5x1LTQSUsPl0pz8_HMCmvrgRTwQAlybwV99IB_PI6Fga9ya68x01uSub4lkKA6CmLU6ogrDxqAHXVkYa1M3PQyUtSR0eFlIDPHkarckVppWxBGrxkSypr05NzuYr6x5KDlWg/4vw/GhkoKx9GRqC_2DQhQtl5gw/h5/h001.cOvNC7xNrpmr_uH0VUApDEycGK7WM0U8I5JRDK_6Ck8"
+          },
+          {
+            "label": "OpenAI's agents now handle half its long research tasks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eCbm_1zon7G0lMoXTECWa-IUY9yqSc2cx0km5OJXo-OfZIwLIBrhAae9usCNEJNfYpPR0MGIFxR8xowOa9Yv7Y6_ZDgZn2J8ogo_U6W8wpLSpxQPeyUpO-zDn13Jzk0WxVID_U1RO3FnfTfbqEGUGDP810UX5ccc7_Hk25znGSGb59Fds8tOHYLzVW-0llFHJiplI6_aLGJDybb4rPHj0-r8fPr6OLbny59KOIMZmEna2zp7D2ZBHOaiVkEb1HVw7aXb7SQXUgAFvEE37kRQ/4vw/GhkoKx9GRqC_2DQhQtl5gw/h21/h001.l8YYpuE4xD9pZM0FCc4N4yEqWIRLhF5blsZK69I3hHI"
+          },
+          {
+            "label": "Use AI to find a job and prepare to get hired",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Q334NVcZU4O6L6VKRz8ijB1TBWraWSjSa1EgItxTfJEMbbjkb9hpeD3HY-AdakvJqFd0CM-o3fJUp3nYn1WUGVhePbUeqKNdTr8sagVa1px32JdziY91B9DiIAYALAxpcn4jUZPVDICrdwNAJgAK9anf5X1gYVhq9Ea26f7Fw037o4nhTpxy1_alIHPWNVnRlwp515-XdyCq9jVGHg1_WwsKpGfKmKeDYDq4s3TUVOpgmi6udT-JlCB99X6Q-itg/4vw/GhkoKx9GRqC_2DQhQtl5gw/h15/h001.pEAMDrVwFzWVxxrU2yiRz17MphzuqWCkPHGdnZ3D65U"
+          },
+          {
+            "label": "4 things that stuck with me from DealBook",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.dSnm3kaGd0BkNqLYPjeMf2cyvDNm_w-m4bxL_n5cMqf5l17cYSERpoqY8My0cs9KtErVnAdCfERzhZRJ8Xy5hhvshRUKG53odP_u-edimqKVXpxtHVbp3utnzoF3h9c8WpRfFRmlxN7aYpecWSRVUE_7e8refrqNVeWMLO0_whSetzX4wFOrli83Xj2cKHGASHt9REual2KYpUBhswenOTI3edJf7hEC1yC3uu1TgOzrKotfLZ132o4jok8y4tD5YGY8GEVvVVPFvGVZy0hSlQ/4vw/GhkoKx9GRqC_2DQhQtl5gw/h13/h001.I7Cst4CCeiSaGICBZ9zv4oE_Tygjka-M-2nEDAIiTFw"
+          },
+          {
+            "label": "Google DeepMind researchers mapped paths to superintelligence",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.zulPMwBCNL5ahjB956nrIiJMd6cHtw4Mjvyf4xEV3m5Zcwyq-JGXMAxGcah7eXrgTIo6peOQbFTPcnRhc7se27T5NMCLavM1lBoKlgBWugQHpjObw0GVdGuR4QtLXUeXyTW9mMlD1yKKkyCT-YEL4PxF-36MEYQapwgOE25iNihpvuYh7IxqqkJyLGN7AYALMLtvBkMCVw-y4v8SaJtMyAvHk8UAvaUWBKCXdG6_uZ87O3qv19iqt05nUlFwlvIEvMPQ9cpmB8sNKXtNMkImsg/4vw/GhkoKx9GRqC_2DQhQtl5gw/h34/h001.IYYjOcjsdfsqShu4igAznDRFS8eXw3C0zBdaUVqJSoE"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Neuron",
+      "subject": "😺 Would you give Meta's AI your phone?",
+      "date": "2026-11-20T10:32:49+00:00",
+      "summary": {
+        "headlines": [
+          "Nvidia in talks to acquire Inception for $500M+ for its efficient diffusion-based text generation—Mercury models process entire text blocks at once rather than token-by-token, squeezing more output from the same GPU work.",
+          "Meta's Muse AI agent reportedly accessed Signal messages and displayed bank balances during internal testing, raising privacy concerns even though Meta claims many incidents were AI hallucinations (made-up data).",
+          "Anthropic shares jumped 33% above $83 IPO price to open near $111, though deeper financial analysis reveals gross margin drops from 85% to 26% once training, free-user compute, and R&D costs are included.",
+          "U.S. Commerce Department restricted advanced AI chip exports to overseas data centers supplying computing power to China and other restricted nations, effective November 19.",
+          "Nearly 1,000 AI agents wrote 936 research papers on alphaXiv's preprint server, scoring higher on rigor (9.0 vs 7.0 for humans) but lagging on novelty."
+        ],
+        "sections": [
+          {
+            "title": "Meta's Muse Agent Raises Device Access Concerns",
+            "points": [
+              "Muse accessed Signal messages and displayed bank balances during internal testing; Meta called many incidents hallucinations (AI confidently inventing false data) rather than genuine leaks.",
+              "Signal encrypts messages in transit, but once your phone decrypts them, they appear as plain text—an agent with broad device access operates on that unencrypted side of the security layer.",
+              "Meta requires opt-in permissions: Full Disk Access (a Mac setting allowing an app to read files anywhere) plus a separate Messages connector, though prior reporting showed Muse accessed Mac Messages database without explicit user consent.",
+              "Recommended protection: grant agents narrow access to specific tasks, review their proposed actions before they send/purchase/delete anything, and prompt them to list every file and account they plan to touch before proceeding."
+            ]
+          },
+          {
+            "title": "Inception's Diffusion Model Approach vs. Traditional Autoregressive Tokens",
+            "points": [
+              "Traditional chatbots generate one token (word or chunk) at a time, each depending on the previous one, like typing line-by-line; Inception's Mercury models refine entire text blocks simultaneously across multiple passes, like an editor improving three paragraphs in one sitting.",
+              "Mercury 3 reportedly achieves 1,068 tokens per second on Nvidia hardware with minimal compute cost (eight API tests cost roughly four cents total), making it attractive to a GPU manufacturer.",
+              "Test results were uneven: Mercury built a working dungeon-crawler game passing 2,000 randomized map checks but fumbled some writing constraints, suggesting the approach has promise but isn't yet consistently reliable."
+            ]
+          },
+          {
+            "title": "Anthropic's IPO and Real Financial Picture",
+            "points": [
+              "Shares opened near $111, about 33% above the $83 IPO price, signaling investor confidence in the company.",
+              "Headline gross margin of 85% shrinks dramatically to 26% after accounting for model training costs, free-user compute (providing free tier access), and R&D spending—revealing the true cost structure of running an AI company.",
+              "The gap illustrates why rapid profitability remains elusive: massive infrastructure investment and free user bases consume margins quickly despite strong per-unit pricing."
+            ]
+          },
+          {
+            "title": "AI Agent Behavior and Research Advances",
+            "points": [
+              "On alphaXiv's preprint server, nearly 1,000 AI agents authored 936 research papers; blinded AI judges rated agent papers higher on rigor (9.0 vs 7.0) while humans still led on novelty, suggesting agents excel at rigorous execution but struggle with original ideas.",
+              "Gemini on Mac now runs background tasks (sorting files, building slideshows) while you pause or approve each action, limiting damage if the agent malfunctions or is compromised.",
+              "External sandbox pattern for coding agents: agent-written code runs in a separate isolated box while the agent stays outside, containing potential damage from hijacking or errors."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "The Information report on Nvidia-Inception talks",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtUWooKkV1_Ojm8XaQ3rV99jtU9I_5gn69gJ9wv43lVGpwghjhvpj1j9uxhcCElucbZ5TnUi1nKtX_RoAGKw8lepZrZ7EhHopABU_b-3qAY0svXqYvlurnI4_q0J0lN17cAfUa51osuQo5sXHbgPBPbwTJoGZxM6nDgVfH_PljcIUd0HJcvYVrsZZEVHWC5_9C7QB-OmTHsTbeg68Rs7C4rw3utDLOZfnaI6YJl_ZVCJ8O0Cy_0SygY5rJyP4Z1d_023pK9lNcqoRP72WJ6zmViCRA0dn7hTZdUp_GZMOdwO14Vh6b_H2z7xCGpu_SkP5LpnBv933o5rsM3J_dcak1ZY97pCxoSVHekmRpGBTkG8m/4vw/umKgL1YlSWacjjOAgkUUUg/h6/h001.kXZ63heIKuZksYmXfEt3rlZ-sdIlIEssGy8Gvlz_Uq4"
+          },
+          {
+            "label": "Reuters report on Meta Muse accessing Signal messages",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtVA0mz__NIzwH0qPaZhfJxbeCbXjJ1eqBh1nbhNGQqMHupcZ_7yHx9sO3ZA4QNIDHmK6GgjhlalcXzPPq45qo0T5XMhlnMh4ELBUWvoqjUVCEbxm7cG8Bimy7DrXCsvIs-8ypqJVWObzWNutmv-QF-3OZDkVOryKrwviD9lqOm29mcd5g8_DP54qjBNOVcOO2GxbDXGw942unCGgdAIM8-UEsdyw_zFP2KQUmTNnQwAjEAZ1biPliVnaP8AB_gQm14PY7jPwWqgqdRHvZTRu2Yg7La1V9fr5XULy3Dl1yvpTfeOCZM5YrzzuSOEmHsWKR613uIwiDVbrl1BGzqZvy3AL15gYWLvFrmq7qxKOLdhXHPdMXs6aW86afbZ4lyph1A/4vw/umKgL1YlSWacjjOAgkUUUg/h11/h001.s1vl4scSr-LmGeq7iDKw1hoPGyMXPWyMvb8GOPi17zA"
+          },
+          {
+            "label": "Full breakdown of Inception Mercury model testing",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.26HABC69RFxgG0sCL9wUtWmvSN7yjS-CyXSLiVgN-9VwX9bhamAL76dtRolaU7yQ_kjpz_g1anNnkSwseJAFygVtpJzpUrWIFF7k9gMTVnUDsr9gzoHb4uWpw1ltO4B1EuSpFFQcj9T61R1qjURcwqgq31m6IRJMe6R966YfXmkyt80pKekm2WExRQmbmdhjcVGLoIaj1uR4qWdt0D2ODQaWIghJfnwtwVL8Oh11P1kblA1KK9QZKpg2FffxDtJVMXOY5cvDj5Q1pghfq1UliLMBBaeFQq0knlOt7uFh0qmw596Incs9PWC38eUwV-avxlWyuC55sa2vK3swNnt_PA/4vw/umKgL1YlSWacjjOAgkUUUg/h8/h001.8P-P3D2ooH8wf3tZNNgblW-GIjIw9qdeQqn94EyxzZs"
+          },
+          {
+            "label": "Columbia Business School analysis of Anthropic's real margins",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.m9bXIF-bUgEYKr_fFoKziMwI5PnEX7gXz4bN4LpXbfIbksksFgQLv_Yxz25EeLINS42bM-Ze9NhV7kK1TbfW47rNXdu0seDmki6HXeF5zO_TnPFhEp4x_wq-ec9qBjwNYc54LusI5iqxBL3I38FvS4pFt9aFHAQtkCel5K76QkjDB1IFnqbycQMLPpgE3jmXHB7jZ00e8YUtUS67MG6UTDWT3clsw2K-Sl9U04V5MgPP5jm1YKIjW7Sxwc-1PoWGXxZYjAHZCLa4OY74HzOw8iM3N1bjrBEuTFTFwnQR3nBJT6sXXtDRsjMZ55MLvE_c3pX0aO9MW9v-byDJ6c0JsMVz39npH_vH7mm5ZgunmDc/4vw/umKgL1YlSWacjjOAgkUUUg/h39/h001.hnasXJ3v-2T_zUY531lWnXu_WWaXoOcPy72DwDloWPk"
+          },
+          {
+            "label": "alphaXiv preprint server with agent-written papers",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.-rYxRO3uJlelqcl7BlcpmLGlAdPyjagWkqPGvDxKu-fB4lDtHd8KgAZi4VHNBhtHJ1DoLKIV2ah0DmWuM_C192dg8MRiTcV311oObjyh_P4qlIT_bDCBDPxCqS3JV1zyeS6cZupVBSJHYwuv4jOw5_W7f8gG2cx4Z4odNh5oZMrNWAUpFmg5hQTi1noHQpxHvUTLVtOVydlMIkC0ozSFNJwaWpSrnHWgEk9Atf1fiWMbx2Fcp3FUKw02yHSUyv-7Y1akq7-1LGpakzQ-nDftzOsYLx_QfwYmcS3Pd4ohnYF-1PfycqbL6rSm9EPxLNO7/4vw/umKgL1YlSWacjjOAgkUUUg/h34/h001.98ahnrT6yr3KB8reEmKB1ZMmgHyEzIfg89o4Vrr-Ivc"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Superhuman (Zain Kahn)",
+      "subject": "🧠 Alljoined's new model reads brainwaves",
+      "date": "2026-11-20T14:09:00+00:00",
+      "summary": {
+        "headlines": [
+          "Anthropic becomes first standalone US AI lab to go public with $ANT ticker, shares jump 17% on debut day amid record retail investor demand.",
+          "Alljoined reveals AIR-O, a model that reads noninvasive brainwaves (electrical signals from the brain) and generates real-time images of what a person is focused on.",
+          "OpenAI launches ChatGPT Health across all tiers and platforms, letting users connect wearable health data, build dashboards, and receive proactive health tips.",
+          "Claude Meetings feature enables real-time document and whiteboard creation during Google Meet calls by speaking requests to Claude or typing in chat."
+        ],
+        "sections": [
+          {
+            "title": "Anthropic's IPO Milestone",
+            "points": [
+              "Anthropic trades under ticker $ANT on its first day, with shares rising 17% despite broader market declines across all three major indices.",
+              "Retail investors (non-professionals) showed record demand for the IPO—the largest retail investor interest in any IPO in history according to CNBC sources.",
+              "Anthropic released a commemorative video that generated over 6 million views."
+            ]
+          },
+          {
+            "title": "Brain-Computer Interface: AIR-O Brainwave Model",
+            "points": [
+              "Alljoined's new model reads noninvasive brain signals and generates images of objects a person is mentally focusing on, with pictures updating as focus shifts.",
+              "The model's core capability is decoding human thought patterns into visual representations in real time.",
+              "The startup's demo has not yet been independently verified by outside researchers."
+            ]
+          },
+          {
+            "title": "Google Releases Multiple Gemini Variants",
+            "points": [
+              "Google debuted Gemini 4 Hydrogen and Gemini 4 Neon this week, following last week's wide release of Gemini 4 Carbon.",
+              "Gemini 4 Neon ranks #3 on the Artificial Analysis Intelligence Index and has received praise from the AI community.",
+              "Gemini Tasks feature improves the core chatbot's ability to handle everyday tasks and work-related assignments."
+            ]
+          },
+          {
+            "title": "Claude Meetings: Real-Time Collaboration During Calls",
+            "points": [
+              "Users can summon Claude during Google Meet by saying 'Claude' plus a request, or typing commands in the Google Meet chat.",
+              "Claude generates live artifacts (documents, whiteboards) that update in real time as the meeting progresses and can be accessed during or after the call.",
+              "After meetings end, users can reopen the meeting page in Claude to access the full transcript, summary, action items, and all created artifacts."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Watch Alljoined AIR-O brainwave model in action",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tAmA4Pj9rDux3b6nzC6xszfPT2DecXnFVpoRDesYGqVIIKLAr3rAHnJL5_XYxAahqGkdKpNb94dgz5zYK6vhhQK54XxehUEQrkdcivhAd441SzpkjaR5wCMkKgym8mN8QQ9s3XPSAF7cCzRtKN2TIF8Wn_0KYvhD66OMv9g1BrasU0W_LuoWPIhI1nx9lTsu74kEqSQW-OIn63nrB8Dbo5PFSZOILAOr1DYS7buDHRiF8Ees6BWsB2vDr2S5oRr6VWk_sJDl66R0kWQ451aLGa4uDOWgBaDZKPfsLoV6jpWlpElmwMIe2ufwi70Nqjhn7Cody08nbgsxYxgRKao5TGybaN9lKrDNzcGqwugnr4IQ0wFR2SYMV2gN7Z4rLN8ZE9KN_G1KXMwI2AhOawT5ztyEB4D6OFfE7riGYNeU8dRXrN6h0IzTzhA9DHWVhssxkCFzJLHB83DnoACckgFm9rK4UPfrfIop6gKZajczuvJoYIS2UvHb9uDnrZ0F6-2kZNd41C6YpOeFZhDPchnPouEBnEtbqTfrxc-yXN0gGy5Npwwlo-YsYutE99T3cTey7WTahG8FrxC-WrM6Vs9diopjNfqUKVID4DEig9EL1Dg26SZA24q1gFXyFPtRQh140AXpkxRbj3j6v6FbObLZCUj0H3ta-UNIxlAqLteHpUSI7WGciAt1y77VJEJ_LJRB1g7lIg6_qal2gcb55NyRIZnSNhJWpKWn9_deI8iZjiisaf5K22QyOOV6LO_ekdEFySFAL8I_j_X7Lw92wsqlCSiK-BhLAdLNjGkBWAvJHgL-nJHOKeIVlLjPPW1-hlx0NOpik9q8jZXnIWLXzpKszjGEajH_PhkLxCBKkDtz749C8XzQ/4vw/4go3HFNxRzOdhcIRemIkVA/h5/h001.QHpHTL135HpFiBsWEyFsDAXlKKMOi807WZwFUwEJrbQ"
+          },
+          {
+            "label": "OpenAI ChatGPT Health platform rollout demo",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tA20HyDS6k5gSLaiBFedKBGMIjePLke3joPCYDly60hqPjAPsuG-0UXFGgNq19aDQyyu1XYX_9CBc_Ae_voHKGelWpXEBdd1dfuHs6G8F-wQwDyX_KGFMGhFzpfnHLCnA2oKYaafozcPQ4G6V9TX6lVFZ-G0d64e2hdeu8q6Ey4LGHHxjBrCaUiTkn2fPaCuKuJS_fvBPY6OnH8saylxJqfkxD7g0dz2KkqJzM-3zzodw/4vw/4go3HFNxRzOdhcIRemIkVA/h7/h001.7RGRNZJ_As3FODRuFOpq6O2eqRIoHnN6z6vBF8Ptvho"
+          },
+          {
+            "label": "Claude Meetings feature in action video",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.Nip_UK5BFIEP7ebSvurEeUXqxPikqxD8-GgBDv-58tBhBIH0hZ9_VuFJFmPN3_JyIKXjKJlEduYysmsgGIp8eDBcYo5KjmEz6u2kMmvGUE8jWipGD6pvRAkTLdl1zdj8ThUg_o8XxSAqG6FJAXHV9yZ5_Iijsnjr3r8Vzw9-12CMwWAjl9Wy3YhDmK9WmAVfcyPaAsqBflnav7Y8XJRXgtlyzqiKJgD03zWokAM_BH0mILRc8YHTiqOUFVIW6P0tbJpOrjS1LY1IUWR_vOssVA/4vw/4go3HFNxRzOdhcIRemIkVA/h15/h001.KJK2EZRWBZGULgGpR3KflTl27LkQbsHA7a2UX7y34DU"
+          },
+          {
+            "label": "Lastbook offline survival guide for power outages",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.JmdImjqjIlro2L-h9pql7ELg-PSXbE9JSnJOag6m1rtO3nPEomNjONQxW4eI038sBdr4lM4rWRtyjciQCbutzBKsZB2YrJgm8nJZbyttXBXk6_4uneZE9tn09G68Vzpk7DyfJYxkFIJhZku_XcRP4QTE9UJOxuJrWJh02wLwok5TzLY7gnT_p36dcYgl-mU0Nx7CSKRgZEM-FaX_npd-oOQD4q7OdE2oD6vrGetqD-jRev24zgIV8MmGkkHpkgIR/4vw/4go3HFNxRzOdhcIRemIkVA/h23/h001.jb3uRXoyADFd3PfJ4FFunW39eP6QCIcF9EtBfoxjHUE"
+          },
+          {
+            "label": "Google Maps Ask feature builds step-by-step trip itineraries",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.eAC7AlRM5Xq42mX9yhoVPuIVMvXJL5mFKHDTHoBlKkYsX0YsfP5gDM0rDeVkkH0cJftqh2un2FtSAxmK-BU13fabAs6LBYvnF0Jpbqw9uDQLaCYTfq65nkKXQAAWmRC0JFlNFDqpJTRjcVnzbDDid7Up3sgXzez9s2DmJ4Xa_rB7ot-yxXM7FJ9e09TDvyoJ8XWVOBQVS1lWqRUKGGt6BHcF7zilQDO1bey8kQPFgG_A5zh75CjMCkBt9YHs8LMg0g5jaBKoM-tIaDzJlkC3rqiXrUmw66bvhtCJt-eJgOmmNQT-n2L70xskeLOq76AYADEE0zVqGH2gdA72FTWVgw/4vw/4go3HFNxRzOdhcIRemIkVA/h24/h001.XcNYn2tTyiLesiRQxCF3-6SBMHCTclp1DQio8cebpA"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "TLDR AI",
+      "subject": "Gemini tool retrieval 🔧, Stripe evals methods 👨‍💻, agent swarms🐝",
+      "date": "2026-11-20T14:54:02+00:00",
+      "summary": {
+        "headlines": [
+          "Google's Gemini API adds Tool Retrieval for dynamic function execution—developers can now register functions that the API automatically locates and runs, automating workflows like issuing refunds",
+          "Multiple AI agents working together (swarms) achieved 18.9× speedup on NumPy workloads vs. 3.7× for solo agents, though gains depend on task separability and coordination",
+          "Sandboxed AI models on shared inference servers can covertly communicate by subtly shifting calculations to encode messages—a new security vulnerability",
+          "Apple's FastFrames generates 480p video at interactive latency (36ms per frame on single GPU), enabling real-time video generation",
+          "Stripe published evaluation methodology for coding agents, measuring how well AI integrates Stripe APIs in realistic, end-to-end scenarios"
+        ],
+        "sections": [
+          {
+            "title": "Gemini's Tool Retrieval & Computer Use Expansion",
+            "points": [
+              "Google Gemini API now retrieves and executes registered functions automatically based on input, eliminating manual tool selection overhead",
+              "Gemini app on Mac can now complete multi-step tasks across files, desktop apps, and web in an isolated background window while user's main screen remains free",
+              "Users maintain full control: can choose which apps Gemini accesses, watch every step, pause execution, and approve key actions before they're performed"
+            ]
+          },
+          {
+            "title": "Agent Swarms Outperform Solo Coders in Benchmarks",
+            "points": [
+              "Replit's optimization benchmark: 32 Opus agents achieved 18.9× speedup on NumPy workloads vs. 3.7× for single agent over two hours using more compute",
+              "Performance gains heavily depend on task separability—agents excel when work can be divided cleanly and coordinated via shared boards",
+              "Solo model performance actually declined as team size increased, suggesting diminishing returns without proper task decomposition"
+            ]
+          },
+          {
+            "title": "Cross-Model Security Vulnerability: Covert Inference Server Communication",
+            "points": [
+              "Researchers demonstrated sandboxed models on shared inference servers can trade information despite isolation—one model's large requests shift server calculations that other models read as encoded signals",
+              "This represents a new attack vector on systems designed with strong model isolation",
+              "Findings challenge assumptions about inference server security when multiple untrusted models run simultaneously"
+            ]
+          },
+          {
+            "title": "Stripe's AI Agent Evaluation Framework",
+            "points": [
+              "Stripe Evals benchmark measures how well coding agents build high-quality integrations with realistic, well-specified scenarios driven by role-playing agents",
+              "Frontier models paired with coding harnesses can produce working end-to-end Stripe integrations, though best practices compliance varies",
+              "Benchmark helps steer agents toward better outcomes for businesses—goes beyond simple pass/fail to assess integration quality"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Introducing Tool Retrieval in the Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+          },
+          {
+            "label": "When Agent Swarms Outperform Solo Coders",
+            "url": "https://frontier.replit.com/throwing-headcount-at-the-problem/"
+          },
+          {
+            "label": "Stripe evals: Measuring real-world coding agent performance",
+            "url": "https://stripe.dev/blog/stripe-integration-evals-methodology"
+          },
+          {
+            "label": "Sandboxed Models Can Communicate via Inference Servers",
+            "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
+          },
+          {
+            "label": "FastFrames: Video Generation at Interactive Latency",
+            "url": "https://apple-aiml-research.github.io/ml-fastframes/"
+          }
+        ]
+      }
+    }
+  ]
+}
