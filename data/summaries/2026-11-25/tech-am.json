@@ -1,0 +1,364 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-25",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "Jensen Huang Discloses Daily Therapy After Code-of-Conduct Violation and Brief Ouster as Nvidia CEO",
+        "points": [
+          "Huang attended an all-hands meeting disclosing he undergoes daily therapy for over an hour to address behavioral issues that led to his temporary removal as CEO.",
+          "He acknowledged violating Nvidia's code of conduct, related to extramarital relationships, and said the board will continue holding him accountable.",
+          "Huang rejected any notion he received special treatment as a 'tech bro' and expressed gratitude for a second chance to lead the company he co-founded 30 years ago."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      },
+      {
+        "title": "Epochal: xAI Founders Launch AI Startup for Time-Traveling Predictions",
+        "points": [
+          "Three former xAI founders launched Epochal, a startup whose Time Portal lets AI agents browse archived internet snapshots from any specific past date.",
+          "Time Portal offers three APIs: Search (browse the web as of a past date), Fetch (retrieve historical page versions), and Sandbox (run time-gated agents).",
+          "Core thesis: by training on simulated historical internet states, AI models can learn patterns enabling superhuman predictions about future events.",
+          "Use cases include financial strategy backtesting, historical counterfactual analysis, and agent evaluation without leaking future data into training (a common pitfall in forecasting models), targeting enterprise decision-making."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "The Code"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "The Code",
+            "point": "Explicitly framed as solving the ML problem of future-data leakage in reinforcement learning (training models by rewarding good decisions) environments and forecasting evaluations."
+          }
+        ]
+      },
+      {
+        "title": "Major AI-Driven Mathematics Breakthroughs: Riemann Hypothesis and Matrix Multiplication",
+        "points": [
+          "Anthropic researcher Levent Alpöge, with AI assistance, claims to have solved the Riemann Hypothesis, one of math's most famous unsolved problems, via a 17-million-line proof.",
+          "The Riemann proof has already been independently verified by two research groups, exceeding typical journal publication standards, though some mathematicians remain resistant to accepting AI-generated proofs.",
+          "Separately, OpenAI published a preprint claiming to have pinpointed the exact exponent (2.25) for fast square matrix multiplication, a decades-old open problem, with matching upper and lower bounds across all mathematical fields.",
+          "OpenAI's matrix multiplication paper includes a Lean formalization (a machine-checkable proof framework) but has not yet been peer-reviewed by the mathematical community."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "If the Riemann proof withstands scrutiny, Alpöge would become one of history's most prominent mathematicians, underscoring AI's accelerating ability to crack decades-old problems."
+          },
+          {
+            "newsletter": "Techpresso",
+            "point": "The matrix multiplication result counts minimum arithmetic operations mathematically rather than measuring real hardware speed, and builds on an October result that only established an upper bound over complex numbers."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Developers Delegate Coding Entirely to LLM Agents",
+            "points": [
+              "Developers increasingly hand off all coding tasks to LLM agents, shifting their own focus to prompting strategies, context window management (the amount of prior conversation an AI can 'remember'), and code review rather than manual coding.",
+              "The workflow now supports large-scale operations including QA automation, data migration, and greenfield software development with minimal human coding effort."
+            ]
+          },
+          {
+            "title": "Meta Integrates Muse AI Assistant into Instagram DMs",
+            "points": [
+              "Meta has built its Muse AI assistant directly into Instagram direct messages to provide contextual information about posts, places, and products."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "SWE-2.1 Cyber Closes the Frontier Coding-Security Model Gap",
+            "points": [
+              "Cognition's SWE-2.1 coding model scored 80/100 on ExploitBench (a security vulnerability detection benchmark), up sharply from its predecessor and nearing Claude Opus 5.5 (91) and GPT-6.2 Sol (100).",
+              "On CWE-Bench (a Common Weakness Enumeration test for real-world security flaws), SWE-2.1 is within 2 points of both frontier models.",
+              "An ultrafast version runs 10x faster for quick fixes, plus a specialized Cyber variant for security teams; free trial available through December 8 for Pro, Max, and Teams users."
+            ]
+          },
+          {
+            "title": "T3 Code Platform Collected Telemetry Without Consent",
+            "points": [
+              "Since March 2026, T3 Code (an agent orchestration platform) collected model choices, token counts, and permission modes by default with no consent prompt, and older versions hashed account IDs from Claude and Codex login files.",
+              "The founder claims only user counting occurred with no prompts or files transmitted, but the unauthorized collection raises trust concerns for teams handling sensitive code.",
+              "Version 0.1.12 stops reading login files, but telemetry collection continues; teams should review access controls or consider alternatives for proprietary or regulated code."
+            ]
+          },
+          {
+            "title": "Standing Out as an Engineer in the AI Era",
+            "points": [
+              "Hiring managers now receive hundreds of nearly identical AI-generated resumes and cover letters, making traditional differentiation harder.",
+              "The winning formula is picking ambitious multi-week projects that teach something peers haven't learned, then writing publicly about the work on Hacker News, Reddit, or Lobsters.",
+              "Example: a Ramp engineer who wrote about unglamorous internal infrastructure, then built indie web games that reached the New York Times, now gets approached by companies without applying.",
+              "Visibility from shipping interesting work plus consistent writing and community participation can end traditional job hunting altogether."
+            ]
+          },
+          {
+            "title": "OpenAI and Anthropic May Stop Publicly Releasing Models",
+            "points": [
+              "According to sources cited in recent reporting, OpenAI and Anthropic may halt public model releases due to competitive and safety concerns."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Tidal to Delete 29 Million AI-Generated Songs",
+            "points": [
+              "Tidal will begin deleting roughly 29 million fully AI-generated tracks starting December 9, and will block 80,000-85,000 newly submitted AI tracks daily through early 2027.",
+              "AI submissions jumped to 43% of music sent to Tidal in the past 90 days, up from earlier July labeling efforts that cut royalties but proved insufficient since 96% of labeled AI tracks receive no plays.",
+              "Tidal's detection tools sometimes mislabel songs, so the platform will let users request manual review of flagged tracks through support."
+            ]
+          },
+          {
+            "title": "Microsoft Declares 'Code Red' After Historic 24-Hour Outage",
+            "points": [
+              "A defective networking gateway introduced in July left over 80% of servers unresponsive during a nearly 24-hour outage on November 12-13, disabling Outlook, Teams, and Copilot worldwide and disrupting governments, trading firms, and airlines.",
+              "Microsoft's 'Code Red' (highest internal alert level) response aims to resolve worldwide incidents within one hour using AI agents for automated diagnosis, load shedding (reducing customer traffic during failures), and geographic traffic partitioning (routing around affected regions).",
+              "Security experts warn the automated fix approach could spread errors globally just as fast as it resolves problems."
+            ]
+          },
+          {
+            "title": "CIA Open-Source Intelligence System Hacked",
+            "points": [
+              "Attackers, possibly from China, accessed an open-source intelligence (OSINT) system used by the CIA and ODNI that analyzes public internet data, commercial satellite imagery, and data broker information.",
+              "Only unclassified information was exposed; officials confirmed no classified data was compromised, though the breach reveals US intelligence priorities and blind spots to adversaries.",
+              "OSINT systems are inherently hard to secure since they must connect to the public internet, and exposure of analyst search patterns can reveal strategic intelligence gaps."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Jensen's all hands 💼, math breakthroughs🧠, 2027 tech predictions 🔮",
+      "date": "2026-11-25T11:46:00+00:00",
+      "summary": {
+        "headlines": [
+          "Jensen Huang says he's in daily therapy to address behavior that led to his brief ouster as Nvidia CEO, and acknowledges violating the company's code of conduct.",
+          "AI solves the Riemann Hypothesis—one of math's most famous unsolved problems—with a 17-million-line proof already verified by independent researchers.",
+          "xAI founders launch Epochal, an AI startup that simulates past internet versions to train models for superhuman prediction capabilities.",
+          "Developers increasingly delegate all coding to LLM agents, shifting focus to prompting, context management, and code review rather than writing code themselves.",
+          "Meta integrates Muse AI assistant directly into Instagram DMs to provide context about posts, places, and products."
+        ],
+        "sections": [
+          {
+            "title": "Nvidia Leadership Crisis and Recovery",
+            "points": [
+              "1. Jensen Huang attended an all-hands meeting where he disclosed undergoing daily therapy to address behavioral issues that precipitated his temporary removal as CEO.",
+              "2. Huang acknowledged violating Nvidia's code of conduct and stated the board will continue holding him accountable, rejecting any notion he received special treatment as a 'tech bro.'",
+              "3. He expressed gratitude for a second chance to lead the company he co-founded 30 years ago, signaling commitment to behavioral change."
+            ]
+          },
+          {
+            "title": "Mathematical Breakthrough: Riemann Hypothesis Solved by AI and Human Collaboration",
+            "points": [
+              "1. Levent Alpöge, a Harvard and Princeton-trained mathematician at Anthropic, claims to have solved the Riemann Hypothesis—arguably math's most famous unsolved problem—with AI assistance.",
+              "2. The proof spans 17 million lines and has already been independently verified by two research groups, meeting formal certification standards that exceed typical journal publication requirements.",
+              "3. If the proof withstands further scrutiny, Alpöge will become one of history's most prominent mathematicians; the achievement demonstrates AI's accelerating ability to solve decades-old mathematical problems.",
+              "4. Expert consensus indicates there are no technical issues with the proofs, though some mathematicians are publicly resistant to accepting AI-generated mathematics."
+            ]
+          },
+          {
+            "title": "Epochal and Future Prediction via AI",
+            "points": [
+              "1. Three former xAI founders launched Epochal, which developed a product enabling AI agents to browse archived internet snapshots from specific dates.",
+              "2. The startup's core thesis: by simulating historical internet states, AI can learn patterns to make superhuman predictions about future events.",
+              "3. The company targets enterprise decision-making applications where advanced prediction capabilities could provide significant competitive advantage."
+            ]
+          },
+          {
+            "title": "LLM Agents Transform Developer Workflows",
+            "points": [
+              "1. LLM usage in development has evolved so rapidly that developers now delegate entire coding tasks to AI agents rather than writing code manually.",
+              "2. Modern agentic coding requires new skill sets: developers focus on prompting strategies, context window management (the amount of previous conversation an AI can 'remember'), skill orchestration, and code review.",
+              "3. The workflow supports large-scale operations including QA automation, data migration, and greenfield software development with minimal human coding effort."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Jensen Huang apologizes to Nvidia staff and discusses therapy",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-24/nvidia-s-huang-to-host-all-hands-meeting-a-day-after-his-return"
+          },
+          {
+            "label": "Riemann Hypothesis solved by AI and mathematician Levent Alpöge",
+            "url": "https://www.wsj.com/tech/ai/riemann-hypothesis-anthropic-math-levent-alpoge-75351bcb"
+          },
+          {
+            "label": "xAI founders launch Epochal AI startup for prediction",
+            "url": "https://www.bloomberg.com/news/articles/2026-11-24/xai-founders-unveil-new-ai-startup-to-predict-future-events"
+          },
+          {
+            "label": "AI mathematics breakthroughs and formal verification",
+            "url": "https://scottaaronson.blog/?p=10362"
+          },
+          {
+            "label": "Tech predictions for 2027 and beyond",
+            "url": "https://www.allthingsdistributed.com/2026/11/tech-predictions-for-2027-and-beyond.html"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🔥 AI agents can now travel back in time",
+      "date": "2026-11-25T14:07:49+00:00",
+      "summary": {
+        "headlines": [
+          "Epochal's Time Portal lets AI agents backtest strategies by accessing historical web data from any date, enabling better forecasting and training without future data leaks.",
+          "Cognition's SWE-2.1 coding model closes the cybersecurity gap with frontier models, scoring 80 on ExploitBench and within 2 points of GPT-6.2 Sol on CWE-Bench.",
+          "T3 Code platform has been collecting model choices, token counts, and permission data since March without user consent; version 0.1.12 stops reading login files but telemetry remains.",
+          "Standing out in the AI era requires shipping interesting long-term projects and writing about your work publicly rather than relying on AI-generated resume content.",
+          "OpenAI and Anthropic may stop releasing models publicly due to competitive and safety concerns, according to sources cited in recent reporting."
+        ],
+        "sections": [
+          {
+            "title": "1. Epochal's Time Portal: AI agents that learn from history",
+            "points": [
+              "Three former xAI engineers launched Epochal with Time Portal, a point-in-time environment providing three APIs: Search (browse web as of any date), Fetch (retrieve past versions of pages), and Sandbox (run time-gated agents).",
+              "Solves a critical ML problem: you can now backtest strategies, run forecasting evaluations, and build reinforcement learning (training models by rewarding good decisions) environments without accidentally leaking future data into training.",
+              "Use cases include financial strategy testing, historical counterfactual analysis, and agent evaluation on past scenarios."
+            ]
+          },
+          {
+            "title": "2. SWE-2.1 Cyber closes the frontier model gap",
+            "points": [
+              "Cognition's latest coding model scored 80/100 on ExploitBench (security vulnerability detection benchmark), up dramatically from its predecessor, now nearly matching Claude Opus 5.5 (91) and GPT-6.2 Sol (100).",
+              "On CWE-Bench (Common Weakness Enumeration test), SWE-2.1 is within 2 points of both frontier models, demonstrating it can handle real-world security flaws.",
+              "Ultrafast version runs 10x faster for quick fixes; specialized Cyber variant for security teams; free trial through December 8 for Pro, Max, and Teams users."
+            ]
+          },
+          {
+            "title": "3. T3 Code telemetry breach: what happened and what to do",
+            "points": [
+              "Since March 2026, T3 Code (an agent orchestration platform) collected model choices, token counts, and permission modes by default with no consent prompt; older versions also hashed account IDs from Claude and Codex login files.",
+              "Founder claims only user counting occurred and no prompts or files were transmitted, but the unauthorized collection raises trust concerns for teams handling sensitive code.",
+              "Version 0.1.12 stops reading login files, but telemetry collection continues; teams should review access controls and consider alternatives if handling proprietary or regulated code."
+            ]
+          },
+          {
+            "title": "4. Career advice: how to stand out when AI makes resumes uniform",
+            "points": [
+              "Hiring managers receive hundreds of nearly identical AI-generated cover letters and resumes, making differentiation harder through traditional channels; instead, build and publicize genuinely interesting engineering work.",
+              "Winning formula: pick ambitious multi-week projects that teach you something peers haven't learned, then document your thinking in blog posts and share widely on Hacker News, Reddit, or Lobsters.",
+              "Example: a Ramp engineer who built unglamorous internal infrastructure but wrote about it became well-known; his later indie web games reached the New York Times—hiring managers now approach him without applications.",
+              "Well-known engineers stop job hunting because companies approach them proactively; this visibility flows from shipping interesting work plus consistent writing and community participation."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Epochal Time Portal preview",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ewyx0VA-ZCEh4luIETE-YlpOygBECovCOQejItj4OiWTneo7yKPZJLotM0LM0ZLNLJ8oE5k9QR6g8Uk3_46QDpyCp_lj5fhAk-4yIJGeY4Pvi0L9oMVgR382if2JEV3KqFFyAU7-_Le3CDBGXvAC4QCAGrlkl1uOq6UErCVGzIN_oyGora6TcfkXPct0IdjaBdSAkb5vxHkbRvcB11SLtpYZ3HZr6YdsV5mpoT8eXPxZhGTciHsRkpvgi6BB5iYZwJGVy3xMNVz8KK2b2YDypQ/4w1/e4nLZ1x6S12OUUXuHw7B0A/h4/h001.8eAXW-JC9OIHcwF0CW9R6_Gga4UhxWWzVSPBasGv2Fc"
+          },
+          {
+            "label": "Cognition SWE-2.1 release",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcFAPYS8Imgy3QZnfhSyIA-9Gb4Qb1S9nZacTdl3hAEi1HnB8O204MZcnAmpPz3V3D_Xa1UIa6UrPAo4XAqO72bOSJwGv87XQS9b78sTHmNoCzFe-xu9XGpXYSNwJwSH3Wl86C32vsms0T65kwU8JZpJ2yFJSTuzbWrplhHGM4i-dBSI0D1miw1IRdQSZp_Er0TfoJpVks2WLIhZLcWlieV0kH-yYK5vHOkvmwQUEXAoRM8PYNKi24BnugeBQFzbnRBtJ3hzLYj0zF8vysBcYwf7/4w1/e4nLZ1x6S12OUUXuHw7B0A/h5/h001.vYq9ySy_SeK8v1qFOyJe8kw7O9WCHCZwLwW9yN0t0JM"
+          },
+          {
+            "label": "T3 Code telemetry issue explanation",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.tgWOPLtqyPb9_0gOXDT9Lyg6TyHMAJiTpj2h9TEH_HzXV6nxUuyA8VdLcQsF_dIo50Xk6pSRDRNLv4rPnQ2_CuEwVdrOILP4b56U7uJzU0w1VL3cXxaYNct_GmUJSRKNvtEwm_tKMN7aBoAs2_H_n7yGFB6N0LJ8v922BVIiDjcYLMwcq2Xsiyp8NxOn7ykKfYA7K6YfgfQeZ4YwVF5o82IUjCjkUnXn1gKjIQix_U_jtV6fJN42HaDyxig9CJaLKWpknkcHFVZRRy-35YHXXsFxC1S3HPzE12zdfuhcHEdtXQ5Q8LJFGS2z7dE0tGU8/4w1/e4nLZ1x6S12OUUXuHw7B0A/h7/h001.B6JTE8C6Z2vYN7R0eaQjz3EJa6NEHUzGAUnCuzdWlHQ"
+          },
+          {
+            "label": "How to actually code with AI without wrecking your codebase",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxxl_3gXBjPheyQnqQc0kjm3SSi84GP1lFa8aObH-qfpwgxCxrZw1GhZTb84zGjI1x2HyLKKLYV90DwVzQx7bGmabYDJMFYxPmSUnhCY07_IHOV6KqZXeMHcmv5ETW6RBJu4I5r19Y5EjGMc8pi528RlLvK4caM0y613IzUYoBOANzpOmqKDfEnG15ggCNbsOQT9iCej60oHg7QxbOWJAO7Kt3yUMH2VtR64piJK5J41IGQUE22JLAas0TdtfrRrOw/4w1/e4nLZ1x6S12OUUXuHw7B0A/h31/h001.It9sdTuCOv8Tikq8RSg-lRQV-jbGAEUwdBv6A9E9gXQ"
+          },
+          {
+            "label": "An engineer's guide to standing out in the AI era",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqukLrH9m4BSL-WUnk_kj6WidoUdMxX-MGbgrYt9hU6HOlDMSvruDsBVYoOYN-lIE13AuQcPtwVke-46rtDT-xHCds9vL-9UNlafVPUoG8DbHS3K5tYV-uTZedEcwJP4GdOuXbB5vMBrdEzSTr9lh8ZTek0Xy_q3QdLWUqrSlmn-EG8WJW1ZKcYu_9R2E9sB97beAcrRAzQHxMtPsKlUfmSGdldVUIsblhHKiEtrbgpMtK9WIiRHGyA5GiWKi-OCINZLi0Ilhnyr6PNcz0VLcpaGgWdko_mSXCofNjY1UDaYJHHY42E2ppYDEXTcYhCjBgCg/4w1/e4nLZ1x6S12OUUXuHw7B0A/h16/h001.drtyQ7mHlebkvqPMiX1TZS7NbLdCS_hjYtth1RncxJI"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Jensen Huang says he's in daily therapy",
+      "date": "2026-11-25T17:01:07+00:00",
+      "summary": {
+        "headlines": [
+          "OpenAI claims to have solved a 1960s mathematics problem about matrix multiplication exponents, pinpointing the value at 2.25 with matching upper and lower bounds and machine-verified proofs.",
+          "Nvidia CEO Jensen Huang says he is in daily therapy for over an hour after his reinstatement following a code-of-conduct breach related to extramarital relationships.",
+          "Tidal will delete 29 million AI-generated songs from its platform starting December 9, blocking 80,000-85,000 AI tracks daily after finding 43% of recent submissions were AI-made.",
+          "Microsoft declared 'Code Red' alert following a historic 24-hour outage on Nov. 12-13 that knocked Exchange Online and Microsoft 365 services offline worldwide, affecting governments and airlines.",
+          "CIA's open-source intelligence system was hacked, possibly by China, exposing unclassified data about US intelligence priorities, though no classified information was compromised."
+        ],
+        "sections": [
+          {
+            "title": "OpenAI's Matrix Multiplication Breakthrough",
+            "points": [
+              "OpenAI researchers published a preprint settling a decades-old mathematical question: the exact exponent for fast square matrix multiplication is 2.25.",
+              "Unlike an October result that only set an upper bound over complex numbers, the new paper claims matching upper and lower bounds across every mathematical field (algebraic structures for arithmetic operations), counting minimum arithmetic operations rather than measuring real hardware speed.",
+              "The November 24 paper includes a Lean formalization (machine-checkable proof framework) and supporting research on Euclidean geometry providing the lower-bound method, though the mathematical community has not yet peer-reviewed the claims."
+            ]
+          },
+          {
+            "title": "Microsoft's Service Outage and Emergency Response",
+            "points": [
+              "A defective networking gateway introduced in July left over 80% of servers unresponsive during the November 12-13 outage, which lasted nearly 24 hours and disabled Outlook, Teams, and Copilot, disrupting governments, trading firms, and airlines.",
+              "Microsoft's 'Code Red' (highest internal alert level) response aims to resolve worldwide incidents within one hour using AI agents for automated diagnosis, supplemented by load shedding (reducing customer traffic during failures) and geographic traffic partitioning (routing around affected regions).",
+              "Security experts warn that Microsoft's automated fix approach could spread errors globally just as quickly as it fixes problems, raising concerns about unintended consequences."
+            ]
+          },
+          {
+            "title": "Tidal's Mass AI Song Removal",
+            "points": [
+              "Tidal plans to delete every fully AI-generated track starting December 9, targeting roughly 29 million songs, with daily blocks of 80,000-85,000 newly submitted AI-made tracks continuing through early 2027.",
+              "AI submissions jumped to 43% of music sent to Tidal over the past 90 days, up from earlier labeling efforts in July that cut royalties but proved insufficient since 96% of labeled AI tracks receive no plays.",
+              "Tidal's detection tools sometimes mislabel songs, so the platform plans to let users request manual review of flagged tracks through support."
+            ]
+          },
+          {
+            "title": "CIA Intelligence System Breach",
+            "points": [
+              "Attackers, possibly from China, accessed an open-source intelligence (OSINT) system used by the CIA and Office of the Director of National Intelligence that collects and analyzes publicly available internet data, commercial satellite imagery, and third-party data broker information.",
+              "Only unclassified information was exposed; officials confirmed no classified data was compromised, though the breach itself reveals US intelligence priorities and blind spots to adversaries.",
+              "OSINT systems are inherently difficult to secure since they must connect to the public internet to gather data, yet such visibility of analyst search patterns can expose strategic intelligence gaps."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "OpenAI matrix multiplication paper",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yheCOPAMUGNHzQ3Zl_YM7iqL0ar0SQOrvycl4EKneSotRo7upAWu2BQBZM9WfIXC5tmkNKLTn56zZhAYV1Ub_SzB0IYDGyLz0krFs2lZPBk6TQUUHZZXHjRfalYGGYb45X7rgY5SgWmYvvYkGymrB7P1IolCdNDZNMS0IoXofo9Tz/4w1/CduTLKALQayYAFDWH8xDUQ/h8/h001.BTH0_fvWeJI4lE6z1awPb89WbZI4IFy65ZPg-tEERfY"
+          },
+          {
+            "label": "Jensen Huang therapy statement",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLW3lhaJtl-zYlm2bo32pZZN2IwZvXv4qGMtuhoXpR48SSNKBjdH1CxNOdEKuLIXjjs3Iu1uxbwSftT-QMhGNbIjBQR8ogPmcNjWLoiMRzJKn6Jg5TkYm5vq_8dbil_CGHi3PLlB4jJKdx4D6C_k_Ffq/4w1/CduTLKALQayYAFDWH8xDUQ/h9/h001._JiYnehjXfFvZd1b4fDYRgoIvOYcHm7qZmITZwTsSz4"
+          },
+          {
+            "label": "Tidal AI song deletion plan",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51U7LnZ46HWNWz0NtbIJBiLXCbGNBEHgFgnBhdPENeDV9VakpZGE6-doUyLiGT_1UAxh6-_UP9wBCs0-U3c8aC6z-Zq335e71r0BX0kh-BrKFEhR3iDGj8JdR7pTg91dFVA10lSPZG6lpkjO3jRVHunk/4w1/CduTLKALQayYAFDWH8xDUQ/h10/h001.oDBe_Z8yPwHKseZ9IoyuhC_1N2S1I6uRcRfZQ4Fo2d0"
+          },
+          {
+            "label": "Microsoft Code Red outage response",
+            "url": "https://elink640.dupple.com/ss/c/u001.Sll-WiRclj5nwkRHzETs8Hej_1o8aG0T0RMqSTn20ij-xscseiRNIG8FviakiQp2sSv5s84CinSMFBo9wPea032IFX_MH-2AATHOCwlA54Cnv_zsvQ_mSngNjmKGL79xtZWh-Qy9YNGYOZGvlzqSivcQcnHuANkuaa_GtQ2D4iQcLz3XChLbPYZYbByhnv5NgapubSoxmmhpkqq1ydLKspjpiNiMAHcVIjwwIDDHDXI/4w1/CduTLKALQayYAFDWH8xDUQ/h11/h001.8q2k0VRczIIO5ru-4dTFZcdkzihtAqq_M_YQ59aEc4M"
+          },
+          {
+            "label": "CIA OSINT system breach",
+            "url": "https://elink640.dupple.com/ss/c/u001.ATAItRJv4OHzc1muxCgos4--rtJZMkmi5Ga4Nm0gqjOxuy6wQkB4__FdYSx_QDlhmPF33dPrevL_EwZnIRMxJXZggSQ07iK6lhfifOGP803bq06mkCnoLQGgHAvcjG5QDqO1sTkoBQoiQKNJUxkXpp9SuGU5EV4mujfu8RvlLTA/4w1/CduTLKALQayYAFDWH8xDUQ/h12/h001.HWB25I2_YKfRwYDmSB4Y-WYgPVLn6XLvgI4VGvis5bE"
+          }
+        ]
+      }
+    }
+  ]
+}
