@@ -1,0 +1,377 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-26",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "SpaceX Wins FCC Approval for 1 Million Orbital Data-Center Satellites",
+        "points": [
+          "FCC approved SpaceX to deploy up to 1 million data-center satellites in orbit under a 15-year license, with first satellite required by 2033 and full constellation by 2040.",
+          "Anthropic and Google have already committed billions of dollars in fees to rent orbital compute capacity, signaling strong enterprise demand.",
+          "Orbital deployment aims to solve terrestrial AI bottlenecks like power consumption, cooling, and infrastructure constraints that limit large language model (AI systems trained on massive text datasets to generate human-like responses) development.",
+          "FCC Chair Brendan Carr and President Trump have framed the project as essential to maintaining US AI competitiveness.",
+          "Significant technical and regulatory hurdles remain, including satellite deployment logistics, orbital debris management, and long-term reliability in space."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "Techpresso",
+            "point": "SpaceX submitted the original authorization request in January 2026, well before this approval."
+          }
+        ]
+      },
+      {
+        "title": "Neuralink Gets FDA Approval for Pivotal ALS Brain-Computer Interface Trial",
+        "points": [
+          "FDA granted 'pivotal' (late-stage, final-phase) trial status for Neuralink's LINK brain-computer implant in ALS (a degenerative nerve disease) patients in the US.",
+          "The surgical robot R1 performs the implant procedure, followed by about 24 months of monitoring as patients learn to control a cursor using thought alone.",
+          "US adults with ALS can now apply through Neuralink's Patient Registry.",
+          "Over 30 people already have Neuralink implants from earlier non-pivotal studies across the US, Canada, and UK, logging thousands of hours of use.",
+          "Positive results could lead to expanded trials and eventual commercial release of the technology."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Framed as a milestone in moving invasive neural interface technology from animal testing toward human therapeutic applications."
+          }
+        ]
+      },
+      {
+        "title": "1Password Breach via Compromised Employee GitHub Account",
+        "points": [
+          "Attackers compromised a single employee's corporate GitHub account on November 19, gaining access to 1Password's source code, CI/CD pipeline (automated systems that build and deploy code), and backend servers.",
+          "Malicious code was pushed to backend services, exposing account identifiers, names, emails, sign-in times, public keys, and tokens from invitation/recovery emails.",
+          "Customer password vaults and recovery keys remained encrypted and were not accessed.",
+          "1Password rotated all exposed credentials; the incident highlights how one hijacked developer account can compromise an entire platform."
+        ],
+        "covered_by": [
+          "The Code",
+          "Techpresso"
+        ],
+        "unique_angles": []
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "Public AI Models Surpass Theoretical Physicists",
+            "points": [
+              "As of August 2026, public AI models outperform most theoretical physicists on the majority of technical tasks.",
+              "Models can now execute complex analytical calculations, derive lengthy mathematical proofs, and convert well-specified problems into working code with minimal guidance.",
+              "This shift raises questions about the nature of human scientific discovery in an era where frontier models handle technical heavy lifting."
+            ]
+          },
+          {
+            "title": "Software Engineering Shifts Toward Human Judgment and Automation Separation",
+            "points": [
+              "A growing frontier of software work is now fully automatable via black-box agent teams/swarms (AI systems working collaboratively to solve problems) with verifiable success criteria.",
+              "Work resistant to automation centers on problem selection, creative intent, and aesthetic judgment—areas where human taste remains irreplaceable.",
+              "Engineers must continuously rediscover which tasks can be fully automated versus which still require human expertise.",
+              "Engineers given real ownership, good AI tools, and proper incentives are building guardrails and proofs they previously lacked time to implement."
+            ]
+          },
+          {
+            "title": "OpenAI Claims Matrix Multiplication Breakthrough",
+            "points": [
+              "OpenAI claims a mathematical breakthrough proving the matrix multiplication exponent omega equals exactly 9/4, a long-studied problem in computational complexity theory."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Karpathy Builds a Civilization-Style Map of America with Claude",
+            "points": [
+              "Andrej Karpathy used Claude Opus 5.5 to synthesize 31 public data sources into a Civilization-style map of America spanning 45,000 lines of code.",
+              "The project demonstrates Claude's expanded context window (the amount of text an AI can consider at once) is now sufficient for complex, multi-source architectural projects.",
+              "Karpathy burned half his weekly Claude quota during a seven-hour session, showing resource constraints still apply to intensive AI work."
+            ]
+          },
+          {
+            "title": "Hugging Face's 1,000-Agent Swarm Built PyBot in Nine Days",
+            "points": [
+              "1,000 DeepSeek agents worked for nine days, merging over 8,500 pull requests across 175,000 messages, nearly breaking Git in the process.",
+              "Strict merge gates (approval requirements) proved more effective than consensus voting or management layers; agents even began approving each other's pull requests.",
+              "The team open-sourced Legion and Msgboard, the tools that enabled this multi-agent coordination.",
+              "Key lesson: rigid rule-based governance beats democratic decision-making when managing autonomous agent workflows at scale."
+            ]
+          },
+          {
+            "title": "Developers Shifting Toward System Architecture Roles as AI Handles Implementation",
+            "points": [
+              "AI coding tools now handle implementation while shifting architecture responsibility—decisions on performance, data models, and trade-offs—onto developers.",
+              "Example: an AI agent made repeated redundant API calls to fetch user email data, causing a 15-second delay for a simple welcome screen instead of using a timestamp.",
+              "Developers are spending more time challenging requirements, designing systems, and reviewing code, though companies may not yet value this shifted work equally."
+            ]
+          },
+          {
+            "title": "Building Always-On AI Agents",
+            "points": [
+              "Always-on agents require event inboxes, timers, memory persistence, and permission controls to act and resume work without constant human prompting.",
+              "An 18-minute tutorial demonstrates Anthropic's agent architecture with concrete patterns for building production-ready always-on systems."
+            ]
+          },
+          {
+            "title": "Linus Torvalds Reacts to Massive AI-Generated Patch",
+            "points": [
+              "Linux founder Linus Torvalds publicly reacted to a 41,000-line AI-generated patch submission at an inopportune moment, sparking viral discussion about code quality and AI contributions to open source."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "Nvidia Halts AI Server Shipments to Southeast Asia",
+            "points": [
+              "Nvidia halted AI server shipments to Malaysia, Singapore, Thailand, and Indonesia after new US export rules citing 'higher-than-normal risk' of chip diversion to China.",
+              "The US Commerce Department issued export licenses on November 16 requiring approval for advanced chip sales to these countries plus Brazil.",
+              "Nvidia earned $104 billion through its Singapore subsidiary in 2025, up 72% year-over-year, making this a critical market disruption.",
+              "Dell and Supermicro have warned affected customers; the duration of the shipment halt remains unclear."
+            ]
+          },
+          {
+            "title": "WhatsApp Rolls Out Global Message Scheduling",
+            "points": [
+              "WhatsApp now lets users schedule texts, photos, or videos up to 14 days in advance worldwide.",
+              "End-to-end encryption (a security method ensuring only sender and recipient can read messages) is preserved for scheduled messages."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "SpaceX Starmind 🚀, Neuralink for ALS🧠, late mid-game engineering👨‍💻",
+      "date": "2026-11-26T11:52:17+00:00",
+      "summary": {
+        "headlines": [
+          "FCC approves SpaceX to launch 1 million orbital data centers with Anthropic and Google already committing billions in rental fees, targeting full deployment by 2040",
+          "Neuralink receives FDA approval for pivotal trial testing brain-computer interface implants in ALS patients to enable thought-controlled device operation",
+          "Public AI models now exceed theoretical physicists' abilities on most technical tasks, performing complex calculations, proofs, and code generation with minimal input",
+          "Late-stage software engineering increasingly separates work into black-box automation via agent teams versus tasks requiring human judgment and taste",
+          "OpenAI claims mathematical breakthrough proving matrix multiplication exponent omega equals exactly 9/4"
+        ],
+        "sections": [
+          {
+            "title": "SpaceX Orbital Data Center Initiative",
+            "points": [
+              "1. FCC grants SpaceX authorization to deploy constellation of 1 million data-center satellites in orbit, with operational deadline of 2033 for first satellite and 2040 for full constellation",
+              "2. Anthropic and Google have already committed billions in fees to rent compute capacity, suggesting strong enterprise demand for offloaded AI training infrastructure",
+              "3. Orbital deployment solves terrestrial AI bottlenecks: power consumption, cooling requirements, and infrastructure constraints that currently plague large language model development",
+              "4. Significant technical and regulatory hurdles remain despite FCC approval, particularly around satellite deployment, orbital debris management, and long-term reliability in space environment"
+            ]
+          },
+          {
+            "title": "Neuralink ALS Trial and Brain-Computer Interfaces",
+            "points": [
+              "1. FDA grants 'pivotal' trial status for Neuralink's LINK brain-computer interface, enrolling limited cohort of ALS patients in United States",
+              "2. Trial will measure patients' ability to control digital devices through neural signals alone and assess long-term safety and system reliability",
+              "3. Positive trial outcomes could enable progression to expanded trials and eventual commercial market release of brain-computer interface technology",
+              "4. Represents significant milestone for invasive neural interface technology moving from animal testing toward human therapeutic applications"
+            ]
+          },
+          {
+            "title": "AI Model Capabilities Surpass Human Experts",
+            "points": [
+              "1. Public AI models have crossed threshold where they outperform most theoretical physicists on majority of technical tasks as of August 2026",
+              "2. Models now capable of executing complex analytical calculations, deriving lengthy mathematical proofs, and converting well-specified problems into working code with minimal guidance",
+              "3. Capability shift raises questions about nature of human scientific discovery and intellectual work in age where frontier models handle technical heavy lifting"
+            ]
+          },
+          {
+            "title": "Software Engineering Transformation via Automation",
+            "points": [
+              "1. Growing frontier of software work now fully automatable via black-box agent teams/swarms (AI systems working collaboratively to solve problems) with verifiable success criteria",
+              "2. Work resistant to automation centers on problem selection, creative intent, and aesthetic judgment—tasks where human taste remains irreplaceable",
+              "3. Continuous rediscovery required to identify which engineering tasks can be fully automated versus which still require human expertise and decision-making",
+              "4. Smart engineers given real ownership, good AI tools, and proper incentives build necessary guardrails and proofs they previously lacked time to implement"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "SpaceX Receives FCC Approval for Orbital Data Centers",
+            "url": "https://www.wsj.com/business/fcc-authorizes-spacex-to-build-1-million-data-centers-in-space-0eb20ee7"
+          },
+          {
+            "label": "Neuralink FDA Approval for ALS Trial",
+            "url": "https://www.engadget.com/2329008/neuralink-receives-fda-approval-for-brain-implant-trial-in-als-patients/"
+          },
+          {
+            "label": "Late Mid-Game Software Engineering",
+            "url": "https://benjamincongdon.me/blog/2026/11/25/Late-Mid-Game-Software-Engineering/"
+          },
+          {
+            "label": "The Business of Anthropic",
+            "url": "https://mhdempsey.substack.com/p/the-business-of-anthropic"
+          },
+          {
+            "label": "Angel Investing Guide for Beginners",
+            "url": "https://www.julian.com/guide/angel/intro"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🚀 Karpathy builds a digital America",
+      "date": "2026-11-26T14:06:05+00:00",
+      "summary": {
+        "headlines": [
+          "1Password suffered a breach through a single compromised employee GitHub account that exposed source code and user metadata like names and emails, highlighting how one hijacked developer account can compromise an entire platform.",
+          "Andrej Karpathy built a Civilization-style map of America using Claude Opus 5.5 and 31 public data sources, demonstrating AI's ability to synthesize large datasets into meaningful visualizations across 45K lines of code.",
+          "Hugging Face ran 1,000 DeepSeek agents for nine days to build PyBot, merging 8,500+ pull requests and demonstrating that strict merge gates beat consensus voting when managing agent-driven development.",
+          "AI is quietly shifting developer roles toward architecture and system design, with AI handling implementation while developers make critical decisions about performance, data models, and technical trade-offs.",
+          "Linux founder Linus Torvalds publicly reacted to a 41,000-line AI-generated patch submission at the worst possible moment, sparking viral discussion about code quality and AI contributions."
+        ],
+        "sections": [
+          {
+            "title": "1Password Breach: From Single Account to Source Code Exposure",
+            "points": [
+              "1. A single compromised employee GitHub account gave attackers access to 1Password's private source code and CI/CD pipeline (continuous integration/continuous deployment—the automated systems that build and deploy code).",
+              "2. Attackers pushed malicious code to backend services, exposing some users' names, emails, and account metadata, though password vaults themselves remained untouched.",
+              "3. All exposed credentials have been rotated by the company, demonstrating the critical importance of credential hygiene after any breach.",
+              "4. This incident underscores how a single developer account can serve as the entry point to compromise entire systems, making developer credential security a top priority."
+            ]
+          },
+          {
+            "title": "Developers Evolving Into System Architects as AI Handles Implementation",
+            "points": [
+              "1. AI coding tools have shifted the architecture responsibility to developers—the AI focuses on making things work while prioritizing security and backward compatibility, potentially sacrificing performance.",
+              "2. Example: An AI agent tracked Google Forms add-on installations by calling Google's API multiple times looking for user email data, forcing users to wait 15 seconds just for a welcome screen instead of using a simple timestamp.",
+              "3. Developers should own decisions about data models, performance trade-offs, backward compatibility requirements, and architectural constraints rather than letting AI agents make these choices.",
+              "4. This shift means developers spend more time challenging requirements, designing systems, and reviewing code—less time writing code—but companies may not yet value this work equally."
+            ]
+          },
+          {
+            "title": "Hugging Face's 1,000-Agent Swarm Built PyBot in Nine Days",
+            "points": [
+              "1. 1,000 DeepSeek agents worked for nine days and merged 8,500+ pull requests with 175,000 messages, nearly breaking Git in the process.",
+              "2. Strict merge gates (approval requirements) proved more effective than consensus voting or management layers—agents even started approving each other's pull requests, with one agent exploring the team's infrastructure.",
+              "3. The team open-sourced Legion and Msgboard, the tools that enabled this multi-agent coordination and demonstrated viability of large-scale agent-driven development.",
+              "4. Key lesson: rigid rule-based governance beats democratic decision-making when managing autonomous agent workflows at scale."
+            ]
+          },
+          {
+            "title": "Building Always-On AI Agents: Architecture and Practical Methods",
+            "points": [
+              "1. Agents require event inboxes, timers, memory persistence, and permission controls to work without constant human prompting—letting them wake up, act, and resume work asynchronously.",
+              "2. An 18-minute tutorial demonstrates Anthropic's agent architecture in practice, providing developers with concrete patterns for building production-ready always-on systems.",
+              "3. Claude's ability to handle 45K lines of code across multiple data sources in a single session shows context window (the amount of text an AI can consider at once) has become sufficient for complex architectural projects.",
+              "4. Weekly quota management matters: Karpathy burned half his weekly Claude quota on a seven-hour session, showing resource constraints still apply to intensive AI work."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "1Password breach details and remediation steps",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.lznXd49QiNGJYJE2EWz2vXod57Es_y-hO6H9iWg0qyorWFG2xNsxmi0l7Yl-_y1DqMRb1rGyQHBwlEzVChZ2zwin6MpZXT5XsQ2U5ljgrvUtDWVSX88nJEM8rjy0RrDPv-0UEHn_-UF5Lkr2aoMMihoVgEdFj7TbXIctzDcarKoaCgEPAJzI0kf4EBAZDL-6i9_32A4iUwadVM4JJZeOBLUMffpDLYKFOX7dXvEURaBU76-ljoIi2n6o2dyr5SRE12qKTEDY-1Mu0QDmuLUWgqjfh42_AaapwFEvWbtbDUN6H-vRUDjtYDsGmmZRo9wlUZEMat7y2V2vy4DnC06QnKtX_Xtkc3dFoyFg_7Nuc6v-AKslwOKBcCJmXELqvXd-4m77jbOFAAsN1hXYg7Lnt8MvuXRYRCKreOhyXcZ-Tx4/4w2/1L8FMSMtQkCZXPWwXdS3MQ/h4/h001.4HqMlTjdoOxwFUlBN-wy4Fpv7jTw9BQi3x0JP4GXyZY"
+          },
+          {
+            "label": "Watch Karpathy's Civilization-style map of America",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.YkWaMlfmurywZ72vhb-m6iFZEbLe9Mc7Q9vW1tyVzO599cfNkecE10sG6Rd_Hbbfp1r4BjHhFtbW1Kzly_GHufahyrOCf5RRHUCn6z8P61YG3EPiLxUJcX-ogO5tZACZOU_1i3j60vr07OxhGzTfpXJYNjuir96qsmR2l-qDfvdFgYPQOcaCGb9tHbb1seOyb2dD9uu8BcAnPo1fgAJ5svad_gR_HDSQwO2a7QrrU2UozKnDFM47xrx2JjKtX9Ztq4CLSHYUC16nu9kv9UKFJg/4w2/1L8FMSMtQkCZXPWwXdS3MQ/h6/h001.4FH_N83YdReu-Q8IbStzt3jywIXwdeYm5HEz4xgzYW0"
+          },
+          {
+            "label": "How to build always-on AI agents in 18 minutes",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjx_OwAYwdYKesEc0FoG8t0PpHBKTltUTBqbNdYtqoVEXE4bZJpoqYgvxqVtaJFBymW3nXUyfFYuZQVsvaxwgeMNHI13BcagVUezxsVlA6us0AmOjZUrvPnM9hQ64CQJuJAntM_saeUzrbs3d4Y74cMsCLxxYAKLwJvrrVu1oLBK9T4IOcKmQrb882phniu1EmIe6H-PMJ4iXZtATB-cAeCOVwnJaYjWeT2pzpgiMHc37X6cV93COTonTVSXhq9shUo/4w2/1L8FMSMtQkCZXPWwXdS3MQ/h25/h001.cvtPiuaUDXQWKTzimERxJBf0mLl3QoAjHaXoOT19Fms"
+          },
+          {
+            "label": "Migrate a production codebase with AI (Anthropic cookbook)",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4Xqugsxk5V2-7a1fp7Xt46Bv7QGPdCQu4i8lC6RxPSF20B36kOY0tUKKEkfR6q3I9rYHL36DAyED_guvKXvummVIylNVt7ma0lYfmuDoooUX-pJwXi5dxbGnDrxXjZwoVYbsZvmvFJjtUFqvEL-jMvi0W9HrCMSg_wnDVJRvcsLTDIrwpctemV7M_w3EYIR9QmD25ydk7gvfx14lO3DVZXMwHeJozH2au_8B7g-kvEFrJa8cfqzU13QCppY6xUUPreLJbpRpz6vnd5eiWtIq5EsAI4/4w2/1L8FMSMtQkCZXPWwXdS3MQ/h27/h001.G9rBLcC2tnpOqc-16C1xbtOWQAt3BOTX-t7YL2wxTaM"
+          },
+          {
+            "label": "Developers becoming architects: Why performance matters",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.pljPPsurrJ8ITcFAp15gIeiCi2l_mm8DOtRs7Ml6EgCFGP24CjxPwadDEJuWVjDWxPWfPYsB_QV6Dq3ywF-SVeCVr7f5etCgIBsShIAg632uaeeR9zuk0v6nBPmRuN5apg5UI3O1-EFUg1IS0C2NZI5WHEFE2ADuWn_NCs30JEO4w6MYsbO1lxRpJZyZ7WcaPSgaC2z2yJpHphys3e_IrqfMz5RIw2KSwzjnIhAG3S9xvkfllne4fZNuA9cyK5tM/4w2/1L8FMSMtQkCZXPWwXdS3MQ/h15/h001.gUQ2gKpCsGm_M3D9CBNSd8kUSX0k5e_TyjGjLq6bVks"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ 1Password has been hacked",
+      "date": "2026-11-26T17:52:25+00:00",
+      "summary": {
+        "headlines": [
+          "1Password password manager suffered a backend breach on November 19 when attackers accessed an employee's GitHub account and deployed malicious code, but the company says customer vaults remained encrypted and unreached.",
+          "Neuralink received FDA clearance to begin its LINK Pivotal Study, a late-stage trial of its brain-computer implant for ALS patients, with applications now open for US adults with the degenerative nerve disease.",
+          "Nvidia halted AI server shipments to Malaysia, Singapore, Thailand, and Indonesia after new US export rules citing \"higher-than-normal risk\" of diversion to China, impacting a market where Nvidia booked $104 billion in 2025.",
+          "SpaceX won FCC approval to deploy up to 1 million orbital data-center satellites under a 15-year license, framed by regulators as essential for US artificial intelligence leadership.",
+          "WhatsApp rolled out message scheduling worldwide, letting users send texts, photos, or videos up to 14 days in advance with end-to-end encryption preserved."
+        ],
+        "sections": [
+          {
+            "title": "1. 1Password Breach Details",
+            "points": [
+              "Attackers compromised an employee's corporate GitHub account on November 19, gaining access to 1Password's source code and backend servers.",
+              "Stolen data includes account identifiers, sign-in times, public keys, and tokens from invitation and recovery emails; customer vault encryption and recovery keys were not accessed.",
+              "1Password rotated all exposed credentials and advises customers to watch for phishing scams but says no immediate action is required."
+            ]
+          },
+          {
+            "title": "2. Nvidia Export Controls Impact Asia Operations",
+            "points": [
+              "The US Commerce Department issued export licenses on November 16 requiring advanced chip sales to Malaysia, Singapore, Thailand, Indonesia, and Brazil to undergo approval, citing diversion risk to China.",
+              "Dell and Supermicro have warned affected customers; the halt's duration is unclear but affects a critical market—Nvidia earned $104 billion through its Singapore subsidiary in 2025, up 72% year-over-year.",
+              "Manufacturing partners received orders to stop shipments, with potential disruption to AI server deployment across Southeast Asia."
+            ]
+          },
+          {
+            "title": "3. Neuralink FDA Approval and Trial Launch",
+            "points": [
+              "The LINK Pivotal Study represents a late-stage human trial of Neuralink's brain-computer implant (a device surgically placed to read neural signals) for people with severe ALS-related paralysis.",
+              "US adults with ALS can now apply through the Patient Registry; the robot R1 performs the implant surgery, followed by roughly 24 months of monitoring as patients learn to control a cursor using thoughts alone.",
+              "Over 30 people already carry Neuralink implants from earlier non-pivotal studies in the US, Canada, and UK, logging thousands of hours for education, entertainment, and family communication."
+            ]
+          },
+          {
+            "title": "4. SpaceX Orbital Data Centers Approved",
+            "points": [
+              "The FCC approved Elon Musk's plan to deploy up to 1 million data-center satellites in orbit under a 15-year license, with FCC Chair Brendan Carr tying the decision to maintaining US AI competitiveness.",
+              "SpaceX submitted the authorization request in January; President Trump has publicly endorsed the idea, framing it as an economic and technological advantage.",
+              "The constellation aims to process massive data volumes in space, addressing growing computational demands as AI systems scale."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Neuralink FDA LINK Study",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhRSsqn9n9t-JFlNkNu_UfV3SjGmejisbV6QQtHnV0MoJ2nb1MfOnikF9JA7jh7uugZfqoSCchFrJAjI4-T5qbFFFXuF4byjVQkn0s7m7Umktzb_3lhr4ZjqAKf9RuIvV_wBar4RJrHQ8te1P7EU17u7UwrU7hJ7UgSBUe33Oh5vOrdGt8kiw4lQLrEq6ARKRVqT7ldVQY1Xgiz5wf0XRzpA/4w2/NU5DGBQgQPCzXBXR-msWzQ/h9/h001.BrVVGxXfp_ONIkm4Ql4CoFR8JxZw2_augFFZ8JxGsDg"
+          },
+          {
+            "label": "Nvidia Halts Shipments to Asian Nations",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhXWrAQGOO7-2Rv2mMIg47SLwdCDEjcSoGztN8t_JwHUZKEJjAFOmnEUIm4-_gtV30L-Tfjto37Hjm09sIb26bMtfhM4NmCbIkcjYtcZOx8ZcO-OnfDI0BkYk_hP7uzGrBBYJPc5NoMRwH2TdT2NcPfMYpt83Pr-HRqFfbm3h1jb1xdteu26248sK4R4WFaL418BnIonP-ywFLCPmLgHAQHMSz-EpBTjQGyBocLaTJxTXTRS5qDLL1oLhN7apkagSSfRpWgKZnAgO0fFPvQXyIoxUm6Wc3nFW6sZFL_bIcVrN/4w2/NU5DGBQgQPCzXBXR-msWzQ/h10/h001.pfDnmtIu6mSSVx3a4tSe-IL9a5Kr8rJeldxacV56L4o"
+          },
+          {
+            "label": "SpaceX Orbital Satellites FCC Approval",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhTlbcjYsMFbsjiDbUdD5n_rtyzrCqd0BjguTTvi1UGUIRHK4lWmTlEZ6LhE_hH05httWsvzE-bJlkEOmlpp_nPdSaxee1Od3AEzvPHJuo_KevnNhCnp6km-o7GqCzm4HJy1R0n1nSO_PsTXrn90cgAF4Cn9zElSl3WEv4n8pPb5R/4w2/NU5DGBQgQPCzXBXR-msWzQ/h11/h001.r-KrP8J0D1b0Uc_Ja7oemxBT6DKREQRYhRMQPr8nzPY"
+          },
+          {
+            "label": "WhatsApp Message Scheduling",
+            "url": "https://elink640.dupple.com/ss/c/u001.U1-fCwI5IV4zIAFqTdEm7eysdWsvDUDqemqHLESDBdW6fp6EehH7S8jLvKFVWYgqgl_gBup1Z7-uJWA_z1lBkuxmvFhziPQ_buvcwBnGB7ZFw2fIyaB2uyVVSaQWwnzL2mpiLQCbAU_U6deju94Kjg/4w2/NU5DGBQgQPCzXBXR-msWzQ/h12/h001.QRrGNeT_r4I-ZblBVrvP_oxFQllcp8oRUeIjlj9nKSA"
+          },
+          {
+            "label": "1Password Breach Report",
+            "url": "https://elink640.dupple.com/ss/c/u001.i8ligEAMODugkGN-qAs51SbZzRJ8tGH9gL0xIzVsPuCPdXCl7INNuJjwo_XNMFQuCZ8jJ6cUbZ37ohJ1j7_7oDN85Dq3mYF_dvI_KbaqMB3cKhD0_KgoAazb_9A03_fPIkXTydQpSJH93VSUtPnKdDOWzYVo7fNsp4GZ3ItQDSe5zFokQulS5Zr4E5cDXBDRzqBcl_mtLwoopaSl923sZGijXRvHGPSDJlJMxkGN8JtLtaJwjzG6NVkx6dRwlDW9/4w2/NU5DGBQgQPCzXBXR-msWzQ/h13/h001.6Tl9vswx8lQ2Zv-l0yzUxBJ7JkBT0O4LLxYcoa7j83U"
+          }
+        ]
+      }
+    }
+  ]
+}
