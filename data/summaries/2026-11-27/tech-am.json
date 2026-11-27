@@ -1,0 +1,445 @@
+{
+  "batch": "tech-am",
+  "label": "Afternoon Tech",
+  "category": "tech",
+  "date": "2026-11-27",
+  "digest": {
+    "top_stories": [
+      {
+        "title": "US Tightens Nvidia Chip Export Controls to China, While Blackwell Chips Still Surface There",
+        "points": [
+          "Trump administration rule announced November 16 blocks remote access to Nvidia's advanced semiconductors, closing a loophole that let Chinese firms rent GPU capacity through overseas data centers (neoclouds).",
+          "Chip sellers now require buyers to certify no computing capacity will be rented to Chinese companies, directly restricting neocloud business models and pressuring neocloud stocks.",
+          "Despite controls, two Shanghai firms were found with Nvidia Blackwell processors (GB300 NVL72 racks and GB200 servers) that require US export licenses to ship to China.",
+          "Shanghai Shuoyao pledged a GB300 rack as loan collateral for $14 million, while Shanghai Kezhan listed a GB200 server in filings; hardware was traced via a public warranty database to Taiwan's Gigabyte.",
+          "Both firms work with Megaspeed, founded by Singapore businesswoman Alice Huang, whose company the Trump administration blacklisted this month amid a chip smuggling investigation."
+        ],
+        "covered_by": [
+          "TLDR (Tech)",
+          "Techpresso"
+        ],
+        "unique_angles": [
+          {
+            "newsletter": "TLDR (Tech)",
+            "point": "Policy intensifies investor questions about the sustainability of the broader AI infrastructure boom."
+          }
+        ]
+      }
+    ],
+    "by_newsletter": [
+      {
+        "newsletter": "TLDR (Tech)",
+        "items": [
+          {
+            "title": "OpenAI's Cost Optimization Strategy",
+            "points": [
+              "Output tokens and reasoning tokens per task both dropped significantly in OpenAI's Astra 6.2 and Sol 6.2 models, indicating deliberate tuning for cost savings over reasoning depth.",
+              "Models use substantially less internal reasoning than competitors, suggesting a trade-off between capability depth and operational expense.",
+              "Reflects broader industry pressure to manage inference costs (the computational expense of running deployed models) as token prices keep falling."
+            ]
+          },
+          {
+            "title": "Multiagent Coding Gains Momentum as Core Development Paradigm",
+            "points": [
+              "Multiple AI agents collaborating on code tasks show potential to reshape developer workflows, with early community experiments proving viable.",
+              "AI labs have not yet shipped mature multiagent coding products, possibly waiting for best practices to stabilize.",
+              "Risks exist: highly capable autonomous agent swarms (groups of coordinated AI agents) interacting with infrastructure without safeguards could cause system-wide failures.",
+              "MCP (Model Context Protocol, a standardized way for AI agents to access tools and data) traffic is rebounding after initial backlash, aided by improved client implementations."
+            ]
+          },
+          {
+            "title": "Jevons Paradox Weakening in AI Economics",
+            "points": [
+              "AI token usage has exploded despite falling prices, historically pushing total spending higher—this is Jevons Paradox (efficiency gains increase total consumption rather than cutting costs).",
+              "Recent months show this pattern breaking: token consumption stays high but spend growth has slowed, suggesting price declines may now be outpacing usage growth.",
+              "Signals AI infrastructure economics may be shifting from pure cost-per-operation reduction toward questions about absolute spending sustainability."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Code",
+        "items": [
+          {
+            "title": "Cloudflare Launches Search for Agents",
+            "points": [
+              "New toggle automatically indexes a site, creates a search endpoint, and tags pages so AI agents can query directly instead of crawling inefficiently.",
+              "Agents send keyword or natural-language queries and get Markdown excerpts back, skipping multi-page crawling for single answers.",
+              "Update also adds free email sending on Cloudflare Workers' entry plan, cutting costs for team notifications."
+            ]
+          },
+          {
+            "title": "OpenAI's GPT-6.2 Billing Fix Comes With a Catch",
+            "points": [
+              "OpenAI offers one banked usage reset per user to compensate for a launch-day billing error that undercharged GPT-6.2 Astra and Sol usage.",
+              "Trade-off: tokens now burn 40% faster on Astra and 25% faster on Sol, so monthly limits are consumed quicker than before.",
+              "OpenAI is simultaneously testing Private Inference to shield business prompts during processing, addressing data privacy concerns."
+            ]
+          },
+          {
+            "title": "Running AI Coding Agents Fully Offline",
+            "points": [
+              "PrismML's Ternary Bonsai 2.5 27B uses ternary-weight compression (representing model weights with only three values instead of full precision) to fit in 5.9 GB on a single machine.",
+              "Paired with a local agent harness, it can explore repositories, run tests, and revise fixes without sending proprietary code to external APIs.",
+              "Benchmarks show slightly lower performance than full-size models but remain viable for privacy-constrained teams."
+            ]
+          },
+          {
+            "title": "Jane Street Rethinks Engineering Interviews for the AI Era",
+            "points": [
+              "Traditional interviews focused on typing speed and syntax are becoming obsolete as AI makes code generation cheap; new focus is on taste, clean abstractions, and correctness.",
+              "Experimental onsite rounds now test design thinking, code review skill, and ability to collaborate with AI models rather than pure coding speed.",
+              "Signals that hiring broadly should weigh AI judgment and collaboration skills alongside traditional coding ability."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "Techpresso",
+        "items": [
+          {
+            "title": "US Air Force Cloud Platform Breached",
+            "points": [
+              "Attackers exploited a software flaw to reach Cloud One's control plane (the administrative layer for managing cloud resources), discovered during an upgrade within the past month.",
+              "It remains unclear who was behind the attack or whether data was stolen.",
+              "The intrusion froze migration plans, blocked software fixes, caused some users to lose admin access, and prompted US Cyber Command involvement."
+            ]
+          },
+          {
+            "title": "Apple Captures 57% of US Smartphone Market",
+            "points": [
+              "Apple's share grew from 50% to 57% year-over-year in Q3 2026, the only major manufacturer to avoid a shipment decline as the overall US market fell 9%.",
+              "Rising memory component costs hurt Android makers disproportionately due to reliance on low-margin budget phones; Samsung held 25% share while Motorola dropped 4 points to 8%.",
+              "Google's Pixel 11 launch failed to halt a small decline in its market share amid memory price pressure on budget Android demand."
+            ]
+          },
+          {
+            "title": "SAP Plans AI-Driven Job Cuts",
+            "points": [
+              "Management asked all departments to identify possible cuts, targeting roughly 10,000 positions (about 9% of global workforce), with product development, engineering, and sales under most scrutiny.",
+              "SAP's 2024 restructuring cut a similar 10,000 roles at a cost of €3.1 billion, yet headcount still grew to 111,397 by end of 2025 due to new hires offsetting departures.",
+              "German employment protections run through 2028, so final cuts depend on negotiations with employee representatives."
+            ]
+          },
+          {
+            "title": "Memory Chip Shortage Triggers Corporate 'War Rooms'",
+            "points": [
+              "Global DRAM (a common type of computer memory chip) shortage has pushed prices up 500%, prompting companies to set up procurement war rooms.",
+              "Teams are hunting for chips on eBay and negotiating directly with manufacturers to secure supply."
+            ]
+          }
+        ]
+      },
+      {
+        "newsletter": "The Rundown Tech",
+        "items": [
+          {
+            "title": "Neuralink's Brain Chip Reaches Late-Stage Trial",
+            "points": [
+              "FDA approved a late-stage LINK trial for Neuralink's N1 brain implant in adults with ALS, a major step toward commercial clearance.",
+              "30+ people have received implants in early trials, logging thousands of hours controlling computers, playing games, and communicating via neural signals.",
+              "Rival Synchron paused its own second-generation device trials this month after a signal-carrying cable underperformed, underscoring engineering challenges.",
+              "Long-term safety and reliability over years remains the key hurdle before broader medical use."
+            ]
+          },
+          {
+            "title": "Amazon Faces Coordinated Global Strikes Over Black Friday Weekend",
+            "points": [
+              "UNI Global Union and Progressive International coordinated strikes and protests in 20+ countries Nov. 27-30, following an arbitrator's award of Amazon's first North American union contract in British Columbia.",
+              "German Verdi union struck 11 Amazon sites, citing inadequate wages and digital tracking of roughly 40,000 workers.",
+              "British Columbia workers secured North America's first Amazon union contract, winning raises to about $20 CAD per hour and improved benefits.",
+              "Teamsters organized Cyber Monday demonstrations in Los Angeles and Chicago demanding safer workplaces, better pay, and union recognition."
+            ]
+          },
+          {
+            "title": "X Adds Parental Controls for Teens",
+            "points": [
+              "X rolled out parental controls allowing screen-time limits and follower approval, its first such tools after two decades without them."
+            ]
+          },
+          {
+            "title": "FCC Approves SpaceX's Million-Satellite 'Starmind' Constellation",
+            "points": [
+              "FCC granted the first-ever license allowing SpaceX to fly up to 1 million Starmind satellites operating as orbital AI data centers for AI workload processing.",
+              "SpaceX says solar-powered satellites could cut AI's heavy energy use on Earth, though cooling chips, shielding from radiation, and launch scale remain major obstacles.",
+              "Amazon, Viasat, and astronomers objected, citing radio interference, orbital debris, and risks to scientific observation.",
+              "Starlink already has ~10,000 satellites (1% of authorized Starmind capacity); Starcloud seeks 88,000 more and Blue Origin plans 51,600, raising orbital congestion concerns."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "issues": [
+    {
+      "newsletter": "TLDR (Tech)",
+      "subject": "Nvidia's China crackdown ⚡, OpenAI cost control 💰, multiagent coding👨‍💻",
+      "date": "2026-11-27T11:47:09+00:00",
+      "summary": {
+        "headlines": [
+          "Trump administration restricts remote access to advanced Nvidia chips in overseas data centers, forcing neocloud providers to ban Chinese customers from renting GPU capacity.",
+          "OpenAI's latest models (Astra 6.2 and Sol 6.2) show significant reductions in token usage per task, signaling the company may be optimizing for cost efficiency over reasoning capability.",
+          "Multiagent coding—where multiple AI agents collaborate on tasks—is emerging as the next major shift in software development, though safety concerns remain around autonomous agent swarms.",
+          "China's second-largest hog producer deploys barn robots that monitor livestock health, temperature, and feed intake to detect disease early at scale.",
+          "AI demand growth continues but spend growth is slowing as token prices fall, challenging the Jevons Paradox (the economic principle that improved efficiency increases overall consumption)."
+        ],
+        "sections": [
+          {
+            "title": "Export Controls on Advanced AI Chips Tighten",
+            "points": [
+              "Trump administration rule announced November 16 blocks remote access to Nvidia's advanced semiconductors, closing a loophole that let Chinese firms rent GPU capacity through overseas data centers.",
+              "Chip sellers now require buyers to certify no computing capacity will be rented to Chinese companies, directly restricting neocloud business models.",
+              "Neocloud stocks facing renewed investor pressure as this policy intensifies questions about the sustainability of the AI infrastructure boom."
+            ]
+          },
+          {
+            "title": "OpenAI's Cost Optimization Strategy",
+            "points": [
+              "Output tokens per task and reasoning tokens per task both dropped significantly in Astra 6.2 and Sol 6.2, indicating deliberate tuning for cost savings.",
+              "Models appear to be using substantially less internal reasoning compared to competitors, suggesting a trade-off between capability depth and operational expense.",
+              "This shift reflects broader industry pressure to manage inference costs (the computational expense of running deployed models) as token prices continue falling."
+            ]
+          },
+          {
+            "title": "Multiagent Coding Gains Momentum as Core Development Paradigm",
+            "points": [
+              "Multiple agents collaborating on code tasks show potential to reshape how developers work, with early community experiments demonstrating viable multiagent workflows.",
+              "AI labs have not yet shipped mature multiagent coding products, possibly waiting for community approaches to stabilize and best practices to emerge.",
+              "Significant risks exist: highly capable autonomous agent swarms (groups of coordinated AI agents) interacting with infrastructure without proper safeguards could cause unintended system-wide failures.",
+              "Protocol adoption growing: MCP (Model Context Protocol, a standardized way for AI agents to access tools and data) traffic rebounding after initial backlash, with improved client implementations making it more practical."
+            ]
+          },
+          {
+            "title": "Jevons Paradox Weakening in AI Economics",
+            "points": [
+              "Usage of AI tokens has exploded despite falling prices, historically pushing total spending higher—this is Jevons Paradox (efficiency improvements lead to increased total consumption rather than reduced costs).",
+              "Recent months show this pattern breaking: token consumption remains high but spend growth has slowed significantly, indicating price declines may finally outpacing usage growth.",
+              "This suggests AI infrastructure economics may be shifting from rapid cost-per-operation reduction as the primary driver toward questions about absolute spending sustainability."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs",
+            "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html"
+          },
+          {
+            "label": "OpenAI may be in cost control mode",
+            "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/"
+          },
+          {
+            "label": "Multiagent coding is the future",
+            "url": "https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/"
+          },
+          {
+            "label": "Why I'm Bullish on MCP for 2027",
+            "url": "https://www.philschmid.de/mcp-2027"
+          },
+          {
+            "label": "Is Jevons Paradox holding?",
+            "url": "https://openrouter.ai/blog/insights/is-jevons-paradox-holding/"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Code",
+      "subject": "🤖 Make your site searchable by agents",
+      "date": "2026-11-27T14:09:08+00:00",
+      "summary": {
+        "headlines": [
+          "Cloudflare launches Search for Agents feature that indexes websites and creates clean search endpoints, enabling AI agents to query sites directly instead of crawling pages inefficiently",
+          "OpenAI's GPT-6.2 billing fix comes with a 40% faster token burn rate for Astra and 25% for Sol, trading earlier undercharging for accelerated limit consumption that developers dislike",
+          "PrismML releases Ternary Bonsai 2.5 27B, a compressed model fitting in 5.9 GB, letting teams run coding agents fully offline without sending private code to external APIs",
+          "Jane Street revamps engineering interviews to emphasize design, code review, and AI judgment skills over raw typing speed as AI makes code generation trivial"
+        ],
+        "sections": [
+          {
+            "title": "1. How AI Agents Are Becoming Web-Ready",
+            "points": [
+              "Cloudflare's Search for Agents toggle automatically indexes your site, creates a search endpoint, and tags every page so AI agents locate answers precisely",
+              "Agents can now send keyword or natural-language queries and receive Markdown excerpts directly, eliminating the need to crawl multiple pages hunting for single answers",
+              "Same update includes free email sending on Cloudflare Workers entry plan, reducing upgrade costs for team notifications and alerts"
+            ]
+          },
+          {
+            "title": "2. The Catch With OpenAI's GPT-6.2 Compensation",
+            "points": [
+              "OpenAI is offering one banked reset per user to compensate for a launch-day billing error that undercharged GPT-6.2 Astra and Sol usage",
+              "The trade-off: users will now consume tokens 40% faster on Astra and 25% faster on Sol, effectively burning through monthly limits quicker than before",
+              "OpenAI simultaneously began testing Private Inference to shield business prompts during processing, addressing data privacy concerns"
+            ]
+          },
+          {
+            "title": "3. Running AI Agents Without External APIs",
+            "points": [
+              "PrismML's Ternary Bonsai 2.5 27B uses ternary-weight compression (reducing model size by using three values instead of full precision) to fit in 5.9 GB on a single machine",
+              "Paired with a local agent harness, it can explore code repositories, execute tests, and revise fixes if steps fail—all while keeping proprietary code private",
+              "Benchmarks show slightly lower performance than full-size models but remain viable for teams unable to send code to external AI APIs"
+            ]
+          },
+          {
+            "title": "4. Jane Street Rethinks Hiring Around AI",
+            "points": [
+              "Traditional coding interviews focused on typing speed and syntax are becoming obsolete as AI makes code generation cheap; Jane Street now emphasizes taste (knowing what's worth building), abstractions (clean structure), and correctness",
+              "New experimental onsite rounds test design thinking, code review capability, and ability to collaborate with AI models rather than pure coding ability",
+              "The shift signals that hiring teams should evaluate AI judgment and collaboration skills alongside or instead of raw coding output"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Cloudflare Search for Agents",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIANzD25CChcaJb-TvcB9M3nRUTB1ZnHX1Vd2hoLYPDO-WfLACbOyl5AviMFSsl2Wjj6kjIOzvVnalyE3PHdiFeqVGv8Nscu9CIfBvly6irx0xmhTJxvZN2U4Q1plwMqhCBa6GDpyreJl-rKgEU-86qW9DREHHFmsC1aw2ZigI38pSvrYHpsW2FwoG3Th67Dqfu2c56OdEFQE0yIwavwf0r1eZNpIPyWIjHkrA9bN-r1s7PJe9DpQB7NW_1LPKW0omVpf0NiGwj_qWZqtoQnZhIXToXYJtjRdzCHnzEeuF-Udl/4w3/PvscJJS0QEicNp20mgbD3Q/h3/h001.f8IvNXA06IbzHEcquQeG3d6Q0UYDHebpDzhhZQxg_8U"
+          },
+          {
+            "label": "PrismML Ternary Bonsai 2.5 27B model",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.y8XueU-stBfRyqUeoBxfLk-x1vRu23pYqha80EEUDw98iwsQVNqdrZz3yTm61BGNl5DPaNKZntZSHEM_8sQS44PscflKR7Q1jdWLTME43Sn96p6-HBYtUHy7KF7mokd-PkOh0_G8GBz8RgW_9PzXNFRhQz-UrkQx7goDB9PZ35Gi-c86ySb00ydKdqBf63EXmP-tvjhZZCRIs4fqOZM5C0oFCNX6-BSPn5Pnb5J9junR_Ey-jQQ43s_MYLhmyJMe5vXHc7E4bltLZZhc29DbwfCHEhcl0ta1X6cFKJD0la4/4w3/PvscJJS0QEicNp20mgbD3Q/h7/h001.vZKgo3hYavf3P5uYcQGMK40PIicmMj8QB9dlx2k8CnE"
+          },
+          {
+            "label": "Jane Street engineering interview changes",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.ZELe4XSJUXiTVID8fUzIAA5KOYpjsPDxC6-37mWsVrnmUZI-b1BjeHC7ADSsheWD5b_qR4hKh3oInRuTe2vQ4feP5HLC1yK9K6h8HZhaEq22Ke5Luvf7d_Eihwto2LdNYJvFw_15texL534bXG_cxj8DjNasoeitFxAzbUEiKOFIpS1g5u6bUVDx_Rx5NJxOBqjnPZUUZ842K3zNWVAz7rbzQ9Hfr8sXfPNgCLrv7o9PfuAC51wOO3wzEusMIk2Ht0lvT7nORfaNxgKCBADLSx4k4v2R-v9DqskFqVMH_ZnmbN7QA61eY_7-JrZJa6ZlIGDSQXbz0ppoG6zZ1zHSKaedU7p_n68zueNSYVTB7gc/4w3/PvscJJS0QEicNp20mgbD3Q/h14/h001.75fugwzKTMhH_it-9Uvu6015-__E1oUCmgdQeFEVIXM"
+          },
+          {
+            "label": "How to do AI automation with Claude Code tutorial",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.AtRzLqL3EQmRcf6rV4XqurfUThgThGIbYFq2GU1iJjxWN7EITcrz3vkbYyInslpIaU58ohTBY0PfvRmIaATRIEW_ANwCZI5EzbipHHlmi7pO7H7mgbP65aIh0y1ZgXB1KwUpGdkLBZIfjSwmySJ66PjeFEu0ZYh6VL6NCuEWCVmpJfTT9700pBN_mYjxo6xTB_McBRE2tfqWV_OEpdtB0RHmmORv_mshEK4MJ6mfpO0FqEJKHCLGlLLWNgpRKZZesn3Kv3PPwL44r9NoG4Fh33-z0k6GSL-eNHDstY0KNfw/4w3/PvscJJS0QEicNp20mgbD3Q/h26/h001.HKA7j_V6PTgVC0aowJPL-t-w6Xli7B6FZ2PSzp_bbrs"
+          },
+          {
+            "label": "Cloudflare engineer's guide to running agents 24/7 for $0",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.NH9KF4GoWlrG6bVA-B2EJc5HI2THLgeYmsOoM5E0hcG1oRK_sY9UuDhLOEbexvISEUi-JPNVCSUVxt2Rd8O9r2UOLcdpwKMkWrQv18ldNokxajfzdd16ex8-BzjilGlsz5ErHtf0fDKP7CE1Fl2frEEutL5BwDw-7Ma9i_rpD_AlYg6ScznVZafumdI-6dXbXewJnclXDR1vpjvSSlPoQFSZOwLDuCQ-98HuyPnduUihNntHbei6BcE0UF8MXgNy9ILgi2OGHWHdDZ4_Wv2JWiJ2q6iVNcg8QefQjVygOyGf0sM4dJtgZggApmvR2Lpn/4w3/PvscJJS0QEicNp20mgbD3Q/h21/h001.r_NJK81BxbQ-ueKFMi1IL8D72XXC5LuyKlS3Op6jAYU"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "Techpresso",
+      "subject": "☕️ Nvidia's top AI chips found at blacklisted China site",
+      "date": "2026-11-27T17:46:44+00:00",
+      "summary": {
+        "headlines": [
+          "Hackers breached the US Air Force's main cloud platform (Cloud One) used for military software, exploiting a software flaw in the control plane (administrative layer for managing cloud resources) discovered during an upgrade within the past month.",
+          "Apple captured 57% of US smartphone shipments in Q3 2026, up from 50% a year earlier, as rising memory costs squeezed low-end Android phones while Apple remained unaffected.",
+          "SAP plans to cut at least 10,000 jobs (roughly 9% of its workforce) to restructure around artificial intelligence, though final numbers depend on employee negotiations.",
+          "Nvidia's top-tier Blackwell processors—which require US export licenses to ship to China—were discovered at a Shanghai data center linked to a blacklisted chip smuggling operation run by Singapore businesswoman Alice Huang.",
+          "Global memory chip shortage has become so severe that companies are setting up procurement war rooms to hunt for DRAM on eBay and negotiate directly with manufacturers, with prices up 500%."
+        ],
+        "sections": [
+          {
+            "title": "1. Air Force Cloud Breach Details",
+            "points": [
+              "Attackers exploited a software flaw to reach Cloud One's control plane, the administrative layer where military staff manage cloud resources for systems ranging from payroll to air defense.",
+              "The intrusion was discovered during a system upgrade within roughly the past month; it remains unclear who was behind the attack or whether data was stolen.",
+              "The breach froze plans to migrate additional applications to the platform, blocked software fixes, and caused some users to lose administrator access; US Cyber Command was brought in to assess damage."
+            ]
+          },
+          {
+            "title": "2. Apple Dominates US Smartphone Market",
+            "points": [
+              "Apple grew from 50% to 57% market share year-over-year in Q3 2026, the only major manufacturer to avoid a shipment decline as the wider US market fell 9%.",
+              "Rising memory component costs hurt Android makers disproportionately because they rely on low-margin budget phones vulnerable to price increases; Samsung held 25% share while Motorola dropped 4 points to 8%.",
+              "Google's Pixel 11 launch failed to stop a small decline in its market share, as memory price pressures dampened demand for lower-priced Android alternatives."
+            ]
+          },
+          {
+            "title": "3. SAP's AI-Driven Restructuring",
+            "points": [
+              "Management has asked all departments to identify possible job cuts, with product development, engineering, and sales facing the most scrutiny for a potential 10,000-position reduction (9% of global workforce).",
+              "SAP's 2024 restructuring cut a similar 10,000 positions at a cost of €3.1 billion, yet headcount still grew to 111,397 by end of 2025 due to new hires offset by departures.",
+              "German employment protections extend through 2028, so final headcount reductions depend on negotiations with employee representatives and may differ from current plans."
+            ]
+          },
+          {
+            "title": "4. Nvidia Chips Surface in China Despite Export Controls",
+            "points": [
+              "Two Shanghai firms installed Nvidia Blackwell processors—GB300 NVL72 racks and GB200 servers that require US export licenses to ship to China—as collateral or operational hardware.",
+              "Shanghai Shuoyao pledged a GB300 rack as security for a $14 million loan, while Shanghai Kezhan listed a GB200 server in regulatory filings; the hardware was traced through a public warranty database to Taiwan's Gigabyte.",
+              "Both firms work with Megaspeed, the company founded by Singapore businesswoman Alice Huang, which the Trump administration blacklisted this month as part of an ongoing chip smuggling investigation."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Hackers breach US Air Force's main cloud platform",
+            "url": "https://elink640.dupple.com/ss/c/u001.yrpcv-6znE4A9OOUDCb3GeutIX09SsAOFYaT9u-4sUy69KA2-Jk-9J1Z3TC60Nrnk2n02BkBQH2wJ-zgmiQ0oT2QJ687BvR_HyOeIjLpgrUmWm-bJAKZZmd4de7DBxQ5DQv50v5sPeY8vKbcvBwWCcG196DkJNriS_nxAu2H3Pk/4w3/ab0299iHRg2mQgjJtOJJ6A/h8/h001.V3oTs8_S-2oRKN-03WXRr4AanwaMpmNNolUfLa3birE"
+          },
+          {
+            "label": "Apple now ships 57% of US smartphones",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09QMnJejRhcPzbpS8bNjLcVr5q3QRIQ4NOHoHLfZi47l9FRsTL_4C8w8u8_4ocuAr6uF621mvW8uIAONKiQSLOMmKbMXMBL2ZhrMFxj6hAj3EQRO-d-euQe70cRzDY2NcmYjy-e5ZCA0HvcxFSPx5tXD/4w3/ab0299iHRg2mQgjJtOJJ6A/h9/h001.2wx7VWmQACbJaxZ3KATalU_BngbugemKB0Lp7IEe720"
+          },
+          {
+            "label": "SAP may cut 10,000 jobs in AI overhaul",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yha3nS6D6qvz7WW9LWUdy09QD4W4-OysHTxYGhl7fB2PEydsXxhsLeRgTRDt1vbfP1Lm2vTMDbsx-cweSVXOwsNK7YtC26HRtTR_q8RqhXpd2OgSk1PI2ai7v_RAf6WQg8ORr9unQi_dRw-0aDPHJ07WU6S0bLHAPVYiFJMbMsVp0/4w3/ab0299iHRg2mQgjJtOJJ6A/h10/h001.sJd5SNduigvPi4c0nSaQsuMzTySHx3Jo8io1YdnwTtU"
+          },
+          {
+            "label": "Nvidia's top AI chips found at blacklisted China site",
+            "url": "https://elink640.dupple.com/ss/c/u001.ATAItRJv4OHzc1muxCgos4p8A2K_dhIFrn1X9pIULdKgvPny5FmS0FihX_Cn8gc7hmtOa9RCI8y2eMNb4cfwLLpTuxTLN95QY-79jXeZAkGTRGkEb2KlSY_qRKfzwABnTvUI7xTz_SFDsW3_AJEyUt0wn6kfKrpGWrI_8Qj-fLA_89GQjUDM137ds5yVHaoYZPWlSHrBmbn_rC_WYTTIFZoFYZwxj29BbAIJfa-9Lto/4w3/ab0299iHRg2mQgjJtOJJ6A/h11/h001.R2tLIKSjCpguINPrcTfFmcs6h9vfah8y8fkYygfZ_Tk"
+          },
+          {
+            "label": "Firms open memory 'war rooms' as prices soar",
+            "url": "https://elink640.dupple.com/ss/c/u001.QT9-cN0mZn-HYCKnMP3yhfGsZLR8-7sDN9NB01TjCfpZYjwQ9F1MVKgEuvAYWWaOUpnlfX7yGF9Q3LLPqZjQ32QDzPZTedSA4aSlyZ-YnuuPekW2M_QMiSqQtFL5NyszSNljH1cpMmi0sJgN2vgW9gxkgqAedimRbt78PZ4zN3iOr-4EkJwqbBYE5PPLUeTJPUXg39d42B1LLOInVPc1PoZ6ONZdZJ5HFRWAAgAK9AruUyJJYcqohNgFDzjfZu5JESixwDMh-HAT3BaYx4-gjbQadGEkrWb3eQe42zZZoPLNLmBQvkFjUC6WgCXYDkJiaV0qGdjz8wpiec-ATr1zmIzFNDnVa4MJCe3Gssqd54wF936NZ0YHvEEFjOgclMA9fPJlJ8iXXL1Q_DP-QacdLzQiQedjy1eP3NFczdI3WFI/4w3/ab0299iHRg2mQgjJtOJJ6A/h13/h001.Go6JXgv1nd3qpunzKSN-mHpSTbjauzHAjs1F7Pb1F8E"
+          }
+        ]
+      }
+    },
+    {
+      "newsletter": "The Rundown Tech",
+      "subject": "🧠 Neuralink's brain chip enters the big leagues",
+      "date": "2026-11-27T15:31:17+00:00",
+      "summary": {
+        "headlines": [
+          "Neuralink wins FDA approval for late-stage LINK trial, moving Elon Musk's brain implant closer to market after 30+ successful early implants",
+          "Amazon faces coordinated strikes across 20+ countries during Black Friday weekend as unions push for better pay and safety protections",
+          "X finally rolls out parental controls for teens, allowing parents to set screen-time limits and approve followers after two decades without such tools",
+          "FCC authorizes SpaceX to deploy up to 1 million Starmind satellites as orbital AI data centers, despite rival and astronomer objections"
+        ],
+        "sections": [
+          {
+            "title": "1. Neuralink's Critical LINK Trial Launch",
+            "points": [
+              "FDA approved late-stage LINK trial for Neuralink's N1 brain implant in adults with ALS, marking a major step toward commercial clearance",
+              "30+ people have received implants in early trials and logged thousands of hours controlling computers, playing games, and communicating via neural signals",
+              "Rival Synchron paused its own second-generation device trials this month after a signal-carrying cable underperformed, highlighting the engineering challenges ahead",
+              "Long-term safety and reliability over years remains the key hurdle before Neuralink can move toward broader medical use"
+            ]
+          },
+          {
+            "title": "2. Amazon's Global Labor Fight Escalates",
+            "points": [
+              "UNI Global Union and Progressive International coordinated strikes and protests in 20+ countries Nov. 27-30, following an arbitrator's award of Amazon's first North American union contract in British Columbia",
+              "German Verdi union struck 11 Amazon sites, citing inadequate wages that don't cover living costs and digital tracking of roughly 40,000 workers",
+              "British Columbia workers won first Amazon union contract in North America, securing raises to roughly $20 CAD per hour and improved benefits",
+              "Teamsters are organizing Cyber Monday demonstrations in Los Angeles and Chicago demanding safer workplaces, better pay, and union recognition"
+            ]
+          },
+          {
+            "title": "3. SpaceX's Million-Satellite Constellation Approved",
+            "points": [
+              "FCC granted first-ever license authorizing SpaceX to fly up to 1 million Starmind satellites operating as orbital AI data centers for processing artificial intelligence workloads",
+              "SpaceX claims solar-powered satellites could reduce AI's enormous energy consumption on Earth, though keeping chips cool, shielding from radiation, and launching at scale present major engineering obstacles",
+              "Amazon, Viasat, and astronomers objected to the authorization, citing concerns about radio interference, orbital debris, and impact on scientific observations",
+              "With Starlink already at ~10,000 satellites (1% of authorized Starmind capacity), Starcloud seeking 88,000 more satellites, and Blue Origin planning 51,600, the FCC faces unprecedented orbital congestion"
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Neuralink FDA approval",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.HJ_S4LUeNGvavT5axro0c3-fESZqqJErx_75xnzFljo2bx1HagoakXnFqn9irFYLNzdeMqHHIbcu37ANsYxXDv6LwxkMyAhMHg2fbXzsRJy38hwCC3DTKq615n9RqzNn17UrUFKl2WrmX7Z8ltRUZGrIU-zpm89LmfZ-hEm0yVnfU-C99w0iyD5OUH8CsLgvyDiVX2lLtcBHe4KSue5D8ERU-eZqHE7NrSf_lN5vjDRICAeMSdBZ0t8op6z6d-FFkqgFp61RfhbyMMtoTJeLi3Wtih4Lh4GCtHI53su62P0/4w3/IloOPNe8Rm-5BSFslKBTAw/h6/h001.0M4V70lcaznYG"
+          },
+          {
+            "label": "Synchron trial pause",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NakwzfceTCcaEhYeZSn6pof6LgQzSuGkyExdrH-MJgWxmN8mLODkn2k_kXYW_nrG3gkdLil-4VPJL_zbnxi6oqjyA2p1RNZzLdbaXJlnjEkX2RrWprD9kHDGPJGOKLRd_wNMM1-NepBNGtfnUo15rs4_9Ns90YtVkcOdPVZKGPnGa07q9MIt_aszOh61huA75fSz0d31Hi33a-McKulTMz1Nb4KGHasP-uBYfE7NRrCEHUT7p4fu-sEoyBTx7UDbMJOimDUYlNioBqMZEKMwCXO2Bre3EnHtrq952ou_O8rV5rIBwxtEoxYKYGknmNgLXlrN8MSQA3mWiNMCmycBSyY0/4w3/IloOPNe8Rm-5BSFslKBTAw/h7/h001.H3hUayBxHpMQYnSZro2ylml2-ovXIT1p87uDo6vApJk"
+          },
+          {
+            "label": "Amazon Black Friday strikes",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.1TjqLuaflHqUvi82SIPtfT1lARURRRS_tiIPqOnySya6pOE2HjUDo-6ukyc4O8QCb15ssl48ugnxJ3ug6oCrsUuEqhvtmuFbVREHpt5g6GbBNe4ghkv-GBiJ1Y_6_5TVP5Sz-zx2m0Z6W_13_khdxATZzi9dq81k-6UKrljoFgCqc3kgFfcgYfst32yz1cCt2FmPpSpqCScMQw-zdaYtG5XWB_XG30hrPync1pVMSow1qRsBKYq8yh1uy1yJivGTXqUuqFVKUtk8TiWz8HgFkg/4w3/IloOPNe8Rm-5BSFslKBTAw/h13/h001.ycGNO5UWBO7nb6IL6zxGyvWIZ2vhqdKS4qP-QdyQJUg"
+          },
+          {
+            "label": "SpaceX Starmind authorization",
+            "url": "https://link.mail.beehiiv.com/ss/c/u001.DL04T5Gzv1AMR80B-C5NallU6gOLL2yXGXwZlApE0QFl6NtrcbR_Y_xfMZ_GLao0qiEuykW81ggBtVy0Cuy6lEavMOUByf9ZB5sX7A9qjyOT7GU2nnHH3hRZDw_Q1faaKJoO4-_I2YPcLuHuHTWhP1qeFqxduplo9UAmbzyyyALiHST0BrSTAYysnYcd_XGFdA_1S67gIRfTjY8GS7Es6RrGDqVeG0MqtKl6PePDD8K6TE8NezoIUgXKGjvxDG-n-QhXW0CsBvX-vf7XLE56gThGO_-7_wRpKtkqj0f3l5lrbdc7Q2Mm3srBSETMFWbr/4w3/IloOPNe8Rm-5BSFslKBTAw/h19/h001.VUKLtdvZGTrfB_M5wVU1_nEaP3C_ovMvKtYvp5EOS1Y"
+          }
+        ]
+      }
+    }
+  ]
+}
